@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.NCAS.Server.Beans.DoorEnvironmentAlarmArc, Cgp.NCAS.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdDoorEnvironmentAlarmArc">
+      <generator class="guid" />
+    </id>
+    <many-to-one name="DoorEnvironment" column="DoorEnvironment" class="Contal.Cgp.NCAS.Server.Beans.DoorEnvironment, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <property name="AlarmType" not-null="false"></property>
+    <many-to-one name="AlarmArc" column="AlarmArc" class="Contal.Cgp.NCAS.Server.Beans.AlarmArc, Cgp.NCAS.Server.Beans" not-null="false"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.NCAS.Server.Beans.SecurityTimeZone, Cgp.NCAS.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdSecurityTimeZone">
+      <generator class="guid" />
+    </id>
+    <bag name="DateSettings" cascade="all-delete-orphan">
+      <key column="SecurityTimeZone" />
+      <one-to-many class="Contal.Cgp.NCAS.Server.Beans.SecurityTimeZoneDateSetting"  />
+    </bag>
+    <many-to-one name="Calendar" column="Calendar" class="Contal.Cgp.Server.Beans.Calendar, Cgp.Server.Beans" not-null="false"/>
+    <property name="Description" not-null="false">
+      <column name="Description" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+
+    <property name="Version" not-null="false"></property>
+
+    <join table="CentralNameRegister">
+      <key column="Id" foreign-key="none"/>
+      <property name="Name" not-null="true"/>
+      <property name="ObjectType" not-null="true"/>
+    </join>
+  </class>
+</hibernate-mapping>
+

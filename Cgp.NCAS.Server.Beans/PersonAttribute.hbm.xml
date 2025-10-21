@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.NCAS.Server.Beans.PersonAttribute, Cgp.NCAS.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdPersonAttribute">
+      <generator class="guid" />
+    </id>
+    <many-to-one name="Person" column="Person" class="Contal.Cgp.Server.Beans.Person, Cgp.Server.Beans" not-null="true"/>
+  </class>
+</hibernate-mapping>

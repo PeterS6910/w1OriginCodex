@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.NCAS.Server.Beans.TimetecSetting, Cgp.NCAS.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdTimetecSetting"></id>
+    
+    <property name="IsEnabled" not-null="false"></property>
+    <property name="IpAddress" not-null="false"></property>
+    <property name="Port" not-null="false"></property>
+    <property name="LoginName" not-null="false"></property>
+    <property name="LoginPassword" not-null="false"></property>
+    <property name="DefaultStartDateTime" not-null="false"></property>
+    <property name="CertificateData" not-null="false" length="2147483647"></property>
+    <property name="DoNotImportDepartments" not-null="false"></property>
+
+    <bag name="CardReaders" cascade="all-delete-orphan">
+      <key column="ReportEventsToTimetec" />
+      <one-to-many class="Contal.Cgp.NCAS.Server.Beans.CardReader"  />
+    </bag>
+  </class>
+</hibernate-mapping>

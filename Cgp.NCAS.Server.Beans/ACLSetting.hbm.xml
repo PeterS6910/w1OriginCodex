@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.NCAS.Server.Beans.ACLSetting, Cgp.NCAS.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdACLSetting">
+      <generator class="guid" />
+    </id>
+    
+    <many-to-one name="AccessControlList" column="AccessControlList" class="Contal.Cgp.NCAS.Server.Beans.AccessControlList, Cgp.Server.Beans" not-null="false" unique-key="ACLCardRederTimeZone"/>
+    <property name="GuidCardReaderObject" not-null="true" unique-key="ACLCardRederTimeZone"/>
+    <property name="CardReaderObjectType" not-null="true" unique-key="ACLCardRederTimeZone"/>
+    <many-to-one name="TimeZone" column="TimeZone" class="Contal.Cgp.Server.Beans.TimeZone, Cgp.Server.Beans" not-null="false" unique-key="ACLCardRederTimeZone"/>
+    <property name="Disabled" not-null="false"></property>
+    <property name="Description" not-null="false">
+      <column name="Description" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+    <property name="Version" not-null="false"></property>
+  </class>
+</hibernate-mapping>

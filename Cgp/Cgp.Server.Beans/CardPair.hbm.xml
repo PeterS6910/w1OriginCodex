@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.Server.Beans.CardPair, Cgp.Server.Beans" select-before-update="true">
+    <composite-id>
+      <key-property name="FirstCard"></key-property>
+      <key-property name="SecondCard"></key-property>
+    </composite-id>
+  </class>
+</hibernate-mapping>

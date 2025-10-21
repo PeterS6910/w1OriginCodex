@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{869F99AF-FEFA-43D9-98A0-6D8CF0987074}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>PlatformPC\Properties</AppDesignerFolder>
+    <RootNamespace>Contal.Cgp.Globals</RootNamespace>
+    <AssemblyName>Cgp.Globals.PC45</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Designer|AnyCPU' ">
+    <OutputPath>bin\Designer\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus, Version=6.1.1.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EPPlus.6.1.1\lib\net35\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.Interfaces, Version=6.1.1.0, Culture=neutral, PublicKeyToken=a694d7f3b0907a61, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EPPlus.Interfaces.6.1.1\lib\net35\EPPlus.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.System.Drawing, Version=6.1.1.0, Culture=neutral, PublicKeyToken=2308d35469c9bac0, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EPPlus.System.Drawing.6.1.1\lib\net35\EPPlus.System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="IwQuick.PC45">
+      <HintPath>..\..\lib\IwQuick.PC45.dll</HintPath>
+    </Reference>
+    <Reference Include="LwSerialization2.PC45">
+      <HintPath>..\..\lib\LwSerialization2.PC45.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SLA.ClientModule">
+      <HintPath>..\..\lib\SLA.ClientModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrossPlatform\AlarmEnumerations.cs" />
+    <Compile Include="CrossPlatform\CardReaderSceneType.cs" />
+    <Compile Include="CrossPlatform\ExcelCreator.cs" />
+    <Compile Include="CrossPlatform\IdAndObjectType.cs" />
+    <Compile Include="CrossPlatform\Alarm.cs" />
+    <Compile Include="PlatformPC\CgpUIDesign.cs" />
+    <Compile Include="PlatformPC\ChangeAlarmsHandler.cs" />
+    <Compile Include="PlatformPC\CgpClientGlobals.cs" />
+    <Compile Include="CrossPlatform\LwRemotingEvents.cs" />
+    <Compile Include="PlatformPC\ComparerForIModifyObject.cs" />
+    <Compile Include="PlatformPC\Enumerations.cs" />
+    <Compile Include="PlatformPC\CgpServerGlobals.cs" />
+    <Compile Include="CrossPlatform\ObjectType.cs" />
+    <Compile Include="PlatformPC\IdStringAndObjectType.cs" />
+    <Compile Include="PlatformPC\IModifyOrmObject.cs" />
+    <Compile Include="PlatformPC\IShortObject.cs" />
+    <Compile Include="PlatformPC\LicenseValidator.cs" />
+    <Compile Include="PlatformPC\ObjTypeHelper.cs" />
+    <Compile Include="PlatformPC\PasswordHelper.cs" />
+    <Compile Include="PlatformPC\Properties\AssemblyInfo.cs" />
+    <Compile Include="PlatformPC\ServerAlarmCore.cs" />
+    <Compile Include="PlatformPC\UpsMonitorHelper.cs" />
+    <Compile Include="Versioning\NovaVersion.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

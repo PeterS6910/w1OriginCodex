@@ -1,0 +1,1138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{24C026A6-1C57-4CF3-9034-A8296A9C2A2A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Contal.Cgp.NCAS.Client</RootNamespace>
+    <AssemblyName>Cgp.NCAS.Client.plugin</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Designer|AnyCPU' ">
+    <OutputPath>bin\Designer\</OutputPath>
+    <DefineConstants>DESIGNER</DefineConstants>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release - CodeProtection|AnyCPU' ">
+    <OutputPath>bin\Release - CodeProtection\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CardReaderDrivers.PC45">
+      <HintPath>..\lib\CardReaderDrivers.PC45.dll</HintPath>
+    </Reference>
+    <Reference Include="CardReaderDriversDefinitions.PC45">
+      <HintPath>..\lib\CardReaderDriversDefinitions.PC45.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>..\Cgp\Cgp.Components\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="IwQuick.PC45">
+      <HintPath>..\lib\IwQuick.PC45.dll</HintPath>
+    </Reference>
+    <Reference Include="LwRemoting2.PC45">
+      <HintPath>..\lib\LwRemoting2.PC45.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACgpPluginEditFormWithAlarmInstructions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAACardReaderDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAACardReaderDialog.Designer.cs">
+      <DependentUpon>AddAACardReaderDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAAInputsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAAInputsDialog.Designer.cs">
+      <DependentUpon>AddAAInputsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="APBZConflictDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APBZConflictDialog.Designer.cs">
+      <DependentUpon>APBZConflictDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="APBZConflictDialogModel.cs" />
+    <Compile Include="CcuConfigurePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CcuConfigurePassword.Designer.cs">
+      <DependentUpon>CcuConfigurePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlModifyAlarmArcs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlModifyAlarmArcs.Designer.cs">
+      <DependentUpon>ControlModifyAlarmArcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlAlarmTypeSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlAlarmTypeSettings.Designer.cs">
+      <DependentUpon>ControlAlarmTypeSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlModifySpecialOutput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlModifySpecialOutput.Designer.cs">
+      <DependentUpon>ControlModifySpecialOutput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateDoorsForElevatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateDoorsForElevatorForm.Designer.cs">
+      <DependentUpon>CreateDoorsForElevatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateDoorsForMultiDoorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateDoorsForMultiDoorForm.Designer.cs">
+      <DependentUpon>CreateDoorsForMultiDoorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExcelExportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcelExportForm.Designer.cs">
+      <DependentUpon>ExcelExportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicSymbolsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraphicSymbolsForm.Designer.cs">
+      <DependentUpon>GraphicSymbolsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicSymbolsViewer.xaml.cs">
+      <DependentUpon>GraphicSymbolsViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ImageSourceViewer.xaml.cs">
+      <DependentUpon>ImageSourceViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InsertGraphicsSymbolDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertGraphicsSymbolDialogForm.Designer.cs">
+      <DependentUpon>InsertGraphicsSymbolDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Localization.English.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localization.English.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization.Slovak.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localization.Slovak.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization.Swedish.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localization.Swedish.resx</DependentUpon>
+    </Compile>
+    <Compile Include="LookupedCCUsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LookupedCCUsForm.Designer.cs">
+      <DependentUpon>LookupedCCUsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LookupedAlarmTramsmitersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LookupedAlarmTramsmitersForm.Designer.cs">
+      <DependentUpon>LookupedAlarmTramsmitersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LookupedLprCamerasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LookupedLprCamerasForm.Designer.cs">
+      <DependentUpon>LookupedLprCamerasForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiDoorTypeItem.cs" />
+    <Compile Include="NCASACLGroupsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASACLGroupsForm.Designer.cs">
+      <DependentUpon>NCASACLGroupsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASACLGruopEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASACLGruopEditForm.Designer.cs">
+      <DependentUpon>NCASACLGruopEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASActualListAccessedCR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASActualListAccessedCR.Designer.cs">
+      <DependentUpon>NCASActualListAccessedCR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASAlarmArcEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASAlarmArcEditForm.Designer.cs">
+      <DependentUpon>NCASAlarmArcEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASAlarmArcsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASAlarmArcsForm.Designer.cs">
+      <DependentUpon>NCASAlarmArcsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASAlarmTransmittersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASAlarmTransmittersForm.Designer.cs">
+      <DependentUpon>NCASAlarmTransmittersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASAlarmAreaEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASAlarmAreaEditForm.Designer.cs">
+      <DependentUpon>NCASAlarmAreaEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASAlarmTransmitterEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASAlarmTransmitterEditForm.Designer.cs">
+      <DependentUpon>NCASAlarmTransmitterEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASAntiPassBackZoneEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASAntiPassBackZoneEditForm.Designer.cs">
+      <DependentUpon>NCASAntiPassBackZoneEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASAntiPassBackZoneEditForm.ViewModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASAntiPassBackZonesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASAntiPassBackZonesForm.Designer.cs">
+      <DependentUpon>NCASAntiPassBackZonesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASCatSmsConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASCatSmsConfiguration.Designer.cs">
+      <DependentUpon>NCASCatSmsConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASDevicesAlarmSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASDevicesAlarmSettingsForm.Designer.cs">
+      <DependentUpon>NCASDevicesAlarmSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASDoorEnvironmentEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASDoorEnvironmentEditForm.Designer.cs">
+      <DependentUpon>NCASDoorEnvironmentEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASDoorEnvironmentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASDoorEnvironmentsForm.Designer.cs">
+      <DependentUpon>NCASDoorEnvironmentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreatorRPN.cs" />
+    <Compile Include="NCASAccessControlListEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASAccessControlListEditForm.Designer.cs">
+      <DependentUpon>NCASAccessControlListEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASAccessControlListsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASAccessControlListsForm.Designer.cs">
+      <DependentUpon>NCASAccessControlListsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASAccessZonePersonEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASAccessZonePersonEditForm.Designer.cs">
+      <DependentUpon>NCASAccessZonePersonEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASACLPersonEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASACLPersonEditForm.Designer.cs">
+      <DependentUpon>NCASACLPersonEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASActiveCardReaderForPersonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASActiveCardReaderForPersonForm.Designer.cs">
+      <DependentUpon>NCASActiveCardReaderForPersonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASAlarmAreasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASAlarmAreasForm.Designer.cs">
+      <DependentUpon>NCASAlarmAreasForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASCardReaderEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASCardReaderEditForm.Designer.cs">
+      <DependentUpon>NCASCardReaderEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASCardReadersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASCardReadersForm.Designer.cs">
+      <DependentUpon>NCASCardReadersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASCCUEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASCCUEditForm.Designer.cs">
+      <DependentUpon>NCASCCUEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASCCUsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASCCUsForm.Designer.cs">
+      <DependentUpon>NCASCCUsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASClient.cs" />
+    <Compile Include="NCASClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASClientForm.Designer.cs">
+      <DependentUpon>NCASClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASDCUEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASDCUEditForm.Designer.cs">
+      <DependentUpon>NCASDCUEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASDCUsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASDCUsForm.Designer.cs">
+      <DependentUpon>NCASDCUsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASFloorEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASFloorEditForm.Designer.cs">
+      <DependentUpon>NCASFloorEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASFloorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASFloorsForm.Designer.cs">
+      <DependentUpon>NCASFloorsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASGraphicsViewEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASGraphicsViewEditForm.Designer.cs">
+      <DependentUpon>NCASGraphicsViewEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASGraphicsViewsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASGraphicsViewsForm.Designer.cs">
+      <DependentUpon>NCASGraphicsViewsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASInputEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASInputEditForm.Designer.cs">
+      <DependentUpon>NCASInputEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASInputsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASInputsForm.Designer.cs">
+      <DependentUpon>NCASInputsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASLprCameraEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASLprCameraEditForm.Designer.cs">
+      <DependentUpon>NCASLprCameraEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASLprCamerasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASLprCamerasForm.Designer.cs">
+      <DependentUpon>NCASLprCamerasForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASMultiDoorEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASMultiDoorEditForm.Designer.cs">
+      <DependentUpon>NCASMultiDoorEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASMultiDoorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASMultiDoorsForm.Designer.cs">
+      <DependentUpon>NCASMultiDoorsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASMultiDoorElementEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASMultiDoorElementEditForm.Designer.cs">
+      <DependentUpon>NCASMultiDoorElementEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASMultiDoorElementsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASMultiDoorElementsForm.Designer.cs">
+      <DependentUpon>NCASMultiDoorElementsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASOutputEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASOutputEditForm.Designer.cs">
+      <DependentUpon>NCASOutputEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASOutputsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASOutputsForm.Designer.cs">
+      <DependentUpon>NCASOutputsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASSceneEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASSceneEditForm.Designer.cs">
+      <DependentUpon>NCASSceneEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASScenesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASScenesForm.Designer.cs">
+      <DependentUpon>NCASScenesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASSecurityDailyPlanEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASSecurityDailyPlanEditForm.Designer.cs">
+      <DependentUpon>NCASSecurityDailyPlanEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASSecurityDailyPlansForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASSecurityDailyPlansForm.Designer.cs">
+      <DependentUpon>NCASSecurityDailyPlansForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASSecurityTimeZonesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASSecurityTimeZonesForm.Designer.cs">
+      <DependentUpon>NCASSecurityTimeZonesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASSupport.cs" />
+    <Compile Include="NCASTimetecSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASTimetecSettingsForm.Designer.cs">
+      <DependentUpon>NCASTimetecSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParserRPN.cs" />
+    <Compile Include="PersonAclAssignment .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonAclAssignment .Designer.cs">
+      <DependentUpon>PersonAclAssignment .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReferencedByHandler.cs" />
+    <Compile Include="NCASSecurityTimeZoneEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASSecurityTimeZoneEditForm.Designer.cs">
+      <DependentUpon>NCASSecurityTimeZoneEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCASSecurityTimeZoneCalendarChangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCASSecurityTimeZoneCalendarChangeForm.Designer.cs">
+      <DependentUpon>NCASSecurityTimeZoneCalendarChangeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceGlobal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceGlobal.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDCUHWTypeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectDCUHWTypeDialog.Designer.cs">
+      <DependentUpon>SelectDCUHWTypeDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectImageSourceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectImageSourceForm.Designer.cs">
+      <DependentUpon>SelectImageSourceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextBoxRPN.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TextBoxRPN.designer.cs">
+      <DependentUpon>TextBoxRPN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimetecResendEventResultDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimetecResendEventResultDialog.Designer.cs">
+      <DependentUpon>TimetecResendEventResultDialog.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cgp.NCAS.Server\Cgp.NCAS.Server.csproj">
+      <Project>{E9AA864F-8019-4281-87BE-6E47085E756C}</Project>
+      <Name>Cgp.NCAS.Server</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.BaseLib\Cgp.BaseLib.csproj">
+      <Project>{4B649633-3110-4CBD-AC66-43685FFDC808}</Project>
+      <Name>Cgp.BaseLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.Client.Common\Cgp.Client.Common.csproj">
+      <Project>{F13A1A13-4773-4744-820B-43DA34DFAE7B}</Project>
+      <Name>Cgp.Client.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.Client\Cgp.Client.csproj">
+      <Project>{FABCD5E9-CFDE-40D6-9BEF-9D57F24276A9}</Project>
+      <Name>Cgp.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.Components\Cgp.Components.csproj">
+      <Project>{C192E586-21CB-45CA-86C7-9CE602F4726E}</Project>
+      <Name>Cgp.Components</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.Globals\Cgp.Globals.csproj">
+      <Project>{869F99AF-FEFA-43D9-98A0-6D8CF0987074}</Project>
+      <Name>Cgp.Globals</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.NCAS.Client.Common\Cgp.NCAS.Client.Common.csproj">
+      <Project>{AE4EF016-B541-4C93-98C1-CDEE1C63AC11}</Project>
+      <Name>Cgp.NCAS.Client.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.NCAS.Definitions\Cgp.NCAS.Definitions.csproj">
+      <Project>{84E07D7F-09B6-4894-BBE4-4FCFA73A85E1}</Project>
+      <Name>Cgp.NCAS.Definitions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.NCAS.Globals\Cgp.NCAS.Globals.csproj">
+      <Project>{08E546F9-45B8-4A33-A0FE-0D83FB132560}</Project>
+      <Name>Cgp.NCAS.Globals</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.NCAS.RemotingCommon\Cgp.NCAS.RemotingCommon.csproj">
+      <Project>{7DA1465B-3029-43E8-801C-BAC87581B99C}</Project>
+      <Name>Cgp.NCAS.RemotingCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.NCAS.Server.Beans\Cgp.NCAS.Server.Beans.csproj">
+      <Project>{2EB9DDDF-0719-4A79-8CB7-FBD410743C92}</Project>
+      <Name>Cgp.NCAS.Server.Beans</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.ORM\Cgp.ORM.csproj">
+      <Project>{91F9BB39-37AA-4831-91AD-882EEE262722}</Project>
+      <Name>Cgp.ORM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.RemotingCommon\Cgp.RemotingCommon.csproj">
+      <Project>{1A33974B-B787-4E35-BE4B-BCF6F50DB953}</Project>
+      <Name>Cgp.RemotingCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.Server.Beans.Extern\Cgp.Server.Beans.Extern.csproj">
+      <Project>{8DB7364B-5E6B-4869-A3DD-DB9B95DA7064}</Project>
+      <Name>Cgp.Server.Beans.Extern</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.Server.Beans\Cgp.Server.Beans.csproj">
+      <Project>{0A152990-C767-4D19-ABD5-9CC4FDDDBC95}</Project>
+      <Name>Cgp.Server.Beans</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.Server\Cgp.Server.csproj">
+      <Project>{E4AA19DF-B369-4979-A2A0-D3D2BCFED985}</Project>
+      <Name>Cgp.Server</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WcfServiceNovaConnection\WcfServiceNovaConnection.PC45.csproj">
+      <Project>{2224e287-fbf1-4268-890e-a04a1a194a5d}</Project>
+      <Name>WcfServiceNovaConnection.PC45</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WpfGraphicsControl\Cgp.NCAS.WpfGraphicsControl.csproj">
+      <Project>{337782F6-B38E-4D67-A290-6DF3CF53DF5E}</Project>
+      <Name>Cgp.NCAS.WpfGraphicsControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddAACardReaderDialog.resx">
+      <DependentUpon>AddAACardReaderDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAAInputsDialog.resx">
+      <DependentUpon>AddAAInputsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APBZConflictDialog.resx">
+      <DependentUpon>APBZConflictDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CcuConfigurePassword.resx">
+      <DependentUpon>CcuConfigurePassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlModifyAlarmArcs.resx">
+      <DependentUpon>ControlModifyAlarmArcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlAlarmTypeSettings.resx">
+      <DependentUpon>ControlAlarmTypeSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlModifySpecialOutput.resx">
+      <DependentUpon>ControlModifySpecialOutput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateDoorsForElevatorForm.resx">
+      <DependentUpon>CreateDoorsForElevatorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateDoorsForMultiDoorForm.resx">
+      <DependentUpon>CreateDoorsForMultiDoorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExcelExportForm.resx">
+      <DependentUpon>ExcelExportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphicSymbolsForm.resx">
+      <DependentUpon>GraphicSymbolsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertGraphicsSymbolDialogForm.resx">
+      <DependentUpon>InsertGraphicsSymbolDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization.Swedish.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Localization.Swedish.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LookupedCCUsForm.resx">
+      <DependentUpon>LookupedCCUsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LookupedAlarmTramsmitersForm.resx">
+      <DependentUpon>LookupedAlarmTramsmitersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASACLGroupsForm.resx">
+      <DependentUpon>NCASACLGroupsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASACLGruopEditForm.resx">
+      <DependentUpon>NCASACLGruopEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASActualListAccessedCR.resx">
+      <DependentUpon>NCASActualListAccessedCR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASAlarmArcEditForm.resx">
+      <DependentUpon>NCASAlarmArcEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASAlarmArcsForm.resx">
+      <DependentUpon>NCASAlarmArcsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASAlarmTransmitterEditForm.resx">
+      <DependentUpon>NCASAlarmTransmitterEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASAlarmTransmittersForm.resx">
+      <DependentUpon>NCASAlarmTransmittersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASAlarmAreaEditForm.resx">
+      <DependentUpon>NCASAlarmAreaEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASAntiPassBackZoneEditForm.resx">
+      <DependentUpon>NCASAntiPassBackZoneEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASAntiPassBackZonesForm.resx">
+      <DependentUpon>NCASAntiPassBackZonesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASCatSmsConfiguration.resx">
+      <DependentUpon>NCASCatSmsConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASDevicesAlarmSettingsForm.resx">
+      <DependentUpon>NCASDevicesAlarmSettingsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASDoorEnvironmentEditForm.resx">
+      <DependentUpon>NCASDoorEnvironmentEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASDoorEnvironmentsForm.resx">
+      <DependentUpon>NCASDoorEnvironmentsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization.English.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.English.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization.Slovak.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.Slovak.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASAccessControlListEditForm.resx">
+      <DependentUpon>NCASAccessControlListEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASAccessControlListsForm.resx">
+      <DependentUpon>NCASAccessControlListsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASAccessZonePersonEditForm.resx">
+      <DependentUpon>NCASAccessZonePersonEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASACLPersonEditForm.resx">
+      <DependentUpon>NCASACLPersonEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASActiveCardReaderForPersonForm.resx">
+      <DependentUpon>NCASActiveCardReaderForPersonForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASAlarmAreasForm.resx">
+      <DependentUpon>NCASAlarmAreasForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASCardReaderEditForm.resx">
+      <DependentUpon>NCASCardReaderEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASCardReadersForm.resx">
+      <DependentUpon>NCASCardReadersForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASCCUEditForm.resx">
+      <DependentUpon>NCASCCUEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASCCUsForm.resx">
+      <DependentUpon>NCASCCUsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASClientForm.resx">
+      <DependentUpon>NCASClientForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASDCUEditForm.resx">
+      <DependentUpon>NCASDCUEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASDCUsForm.resx">
+      <DependentUpon>NCASDCUsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASFloorEditForm.resx">
+      <DependentUpon>NCASFloorEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASFloorsForm.resx">
+      <DependentUpon>NCASFloorsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASGraphicsViewEditForm.resx">
+      <DependentUpon>NCASGraphicsViewEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASGraphicsViewsForm.resx">
+      <DependentUpon>NCASGraphicsViewsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASInputEditForm.resx">
+      <DependentUpon>NCASInputEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASInputsForm.resx">
+      <DependentUpon>NCASInputsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASLprCameraEditForm.resx">
+      <DependentUpon>NCASLprCameraEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASLprCamerasForm.resx">
+      <DependentUpon>NCASLprCamerasForm.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>NCASLprCamerasForm.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASMultiDoorEditForm.resx">
+      <DependentUpon>NCASMultiDoorEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASMultiDoorsForm.resx">
+      <DependentUpon>NCASMultiDoorsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASMultiDoorElementEditForm.resx">
+      <DependentUpon>NCASMultiDoorElementEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASMultiDoorElementsForm.resx">
+      <DependentUpon>NCASMultiDoorElementsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASOutputEditForm.resx">
+      <DependentUpon>NCASOutputEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASOutputsForm.resx">
+      <DependentUpon>NCASOutputsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASSceneEditForm.resx">
+      <DependentUpon>NCASSceneEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASScenesForm.resx">
+      <DependentUpon>NCASScenesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASSecurityDailyPlanEditForm.resx">
+      <DependentUpon>NCASSecurityDailyPlanEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASSecurityDailyPlansForm.resx">
+      <DependentUpon>NCASSecurityDailyPlansForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASSecurityTimeZonesForm.resx">
+      <DependentUpon>NCASSecurityTimeZonesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASTimetecSettingsForm.resx">
+      <DependentUpon>NCASTimetecSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonAclAssignment .resx">
+      <DependentUpon>PersonAclAssignment .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceGlobal.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceGlobal.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASSecurityTimeZoneEditForm.resx">
+      <DependentUpon>NCASSecurityTimeZoneEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCASSecurityTimeZoneCalendarChangeForm.resx">
+      <DependentUpon>NCASSecurityTimeZoneCalendarChangeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDCUHWTypeDialog.resx">
+      <DependentUpon>SelectDCUHWTypeDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectImageSourceForm.resx">
+      <DependentUpon>SelectImageSourceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimetecResendEventResultDialog.resx">
+      <DependentUpon>TimetecResendEventResultDialog.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconCardreader128.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACL16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACL48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlarmArea16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlarmArea48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlarmsSettings16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconACL16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dcu128.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconSecurityDailyPLan16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconSecurityTimeZone16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SecurityDailyPLan16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SecurityDailyPLan48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SecurityTimeZone16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SecurityTimeZone48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlarmSettings48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconAlarmSettingsNew16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlarmSettingsNew48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlarmAreasNew48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconAlarmAreas16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cardreader48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconCardreader16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Doorenvironment48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconDoorenvironment16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconInputs16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconOutputs16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inputs48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Outputs48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconDCUNew16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconCCUNew16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconMultiObjects16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconCardreaderBlocked_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ACLGroup16.png" />
+    <Content Include="Resources\ACLGroup48.png" />
+    <None Include="Resources\hide12.png" />
+    <None Include="Resources\AlarmArc48.ico" />
+    <None Include="Resources\AlarmArc48.png" />
+    <Content Include="Resources\AntiPassBackZone48.png" />
+    <None Include="Resources\Floor48.png" />
+    <None Include="Resources\Cat48.png" />
+    <None Include="Resources\Delete.png" />
+    <None Include="Resources\Edit.png" />
+    <None Include="Resources\dcu_16.png" />
+    <None Include="Resources\dcu_48.png" />
+    <None Include="Resources\dcu_offline_16.png" />
+    <None Include="Resources\ccu_16.png" />
+    <None Include="Resources\ccu_48.png" />
+    <None Include="Resources\ccu_offline_16.png" />
+    <None Include="Resources\clienticon.ico" />
+    <None Include="Resources\clienticon.ico_128x128.png" />
+    <Content Include="Resources\camera-icon-9199.png" />
+    <Content Include="Resources\camera.ico" />
+    <Content Include="Resources\lprCamera_48.png" />
+    <Content Include="Resources\IconACLGroup16.ico" />
+    <None Include="Resources\IconAntiPassBackZone16.ico" />
+    <None Include="Resources\IconFloor16.ico" />
+    <None Include="Resources\MultiDoor48.png" />
+    <None Include="Resources\MultiDoorElement48.png" />
+    <None Include="Resources\IconMultiDoorElement16.ico" />
+    <None Include="Resources\IconMultiDoor16.ico" />
+    <None Include="Resources\IconCat16.ico" />
+    <None Include="Resources\IconAlarmArc16.ico" />
+    <None Include="Resources\insert.png" />
+    <None Include="Resources\information.png" />
+    <Content Include="Resources\IconLprCamera_48.ico" />
+    <Content Include="Resources\Scenes.ico" />
+    <None Include="Resources\Warning.png" />
+    <None Include="Resources\Scene48.png" />
+    <None Include="Resources\show12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="GraphicSymbolsViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ImageSourceViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>  -->
+  <Target Name="AfterBuild">
+    <GetAssemblyIdentity AssemblyFiles="$(TargetPath)">
+      <Output TaskParameter="Assemblies" ItemName="CurrentAssembly" />
+    </GetAssemblyIdentity>
+    <Message Text="CGP.NCAS.Client assemblyVersion: %(CurrentAssembly.Version)" Importance="high" />
+    <!--<Exec Command="echo %(CurrentAssembly.Version)"></Exec>-->
+  </Target>
+  <PropertyGroup>
+    <PostBuildEvent>setlocal
+
+REM Cp stands for code protection
+set CpBuildName=Release - CodeProtection
+
+set UseCodeProtection=false
+if "$(ConfigurationName)"=="%25CpBuildName%25" set UseCodeProtection=true
+
+set FinalSubfolder=Final
+
+echo ** Postbuild for "$(ConfigurationName)" "$(ProjectName)" **
+
+if %25UseCodeProtection%25==false goto NoCodeProtection
+
+echo USING CODE PROTECTION
+
+RMDIR /Q /S "$(SolutionDir)Cgp.NCAS.Client\bin\$(ConfigurationName)\%25FinalSubfolder%25\"
+
+set CodeProtectorPath="$(SolutionDir)Tools\Obfuscator Client\ObfuscatorConsoleApp.exe"
+
+if not exist %25CodeProtectorPath%25 goto CodeProtectorNotFound
+
+call %25CodeProtectorPath%25 "$(SolutionDir)Cgp.NCAS.Client\ClientNCAS.cls"
+
+set CodeProtectionResult=%25errorlevel%25
+if %25CodeProtectionResult%25 neq 0 goto CodeProtectionFailed
+
+REM need to copy files, that are not part of the obfuscation process
+C:\Windows\System32\xcopy.exe /C /Y "$(SolutionDir)Cgp.NCAS.Client\bin\$(ConfigurationName)\*xmlserializers.dll" "$(SolutionDir)Cgp.NCAS.Client\bin\%25CpBuildName%25\%25FinalSubfolder%25\"
+C:\Windows\System32\xcopy.exe /C /Y "$(SolutionDir)Cgp.NCAS.Client\bin\$(ConfigurationName)\*interop*.dll" "$(SolutionDir)Cgp.NCAS.Client\bin\%25CpBuildName%25\%25FinalSubfolder%25\"
+C:\Windows\System32\xcopy.exe /C /Y "$(SolutionDir)Cgp.NCAS.Client\bin\$(ConfigurationName)\*ionic*.dll" "$(SolutionDir)Cgp.NCAS.Client\bin\%25CpBuildName%25\%25FinalSubfolder%25\"
+C:\Windows\System32\xcopy.exe /C /Y "$(SolutionDir)Cgp.NCAS.Client\bin\$(ConfigurationName)\*pcap*.dll" "$(SolutionDir)Cgp.NCAS.Client\bin\%25CpBuildName%25\%25FinalSubfolder%25\"
+C:\Windows\System32\xcopy.exe /C /Y "$(SolutionDir)Cgp.NCAS.Client\bin\$(ConfigurationName)\*NHibernate*.dll" "$(SolutionDir)Cgp.NCAS.Client\bin\%25CpBuildName%25\%25FinalSubfolder%25\"
+C:\Windows\System32\xcopy.exe /C /Y "$(SolutionDir)Cgp.NCAS.Client\bin\$(ConfigurationName)\ComponentFactory.Krypton.Toolkit.dll" "$(SolutionDir)Cgp.NCAS.Client\bin\%25CpBuildName%25\%25FinalSubfolder%25\"
+
+REM CadLib binaries
+C:\Windows\System32\xcopy.exe /C /Y "$(SolutionDir)Cgp.NCAS.Client\bin\$(ConfigurationName)\WW*.dll" "$(SolutionDir)Cgp.NCAS.Client\bin\%25CpBuildName%25\%25FinalSubfolder%25\"
+C:\Windows\System32\xcopy.exe /C /Y "$(SolutionDir)Cgp.NCAS.Client\bin\$(ConfigurationName)\Xceed*.dll" "$(SolutionDir)Cgp.NCAS.Client\bin\%25CpBuildName%25\%25FinalSubfolder%25\"
+C:\Windows\System32\xcopy.exe /C /Y "$(SolutionDir)Cgp.NCAS.Client\bin\$(ConfigurationName)\Writeable*.dll" "$(SolutionDir)Cgp.NCAS.Client\bin\%25CpBuildName%25\%25FinalSubfolder%25\"
+C:\Windows\System32\xcopy.exe /C /Y "$(SolutionDir)Cgp.NCAS.Client\bin\$(ConfigurationName)\Wpf*.dll" "$(SolutionDir)Cgp.NCAS.Client\bin\%25CpBuildName%25\%25FinalSubfolder%25\"
+
+REM need to copy folders, that are not part of the obfuscation process
+REM mkdir "$(SolutionDir)Cgp.NCAS.Client\bin\%25CpBuildName%25\%25FinalSubfolder%25\Sounds"
+REM mkdir "$(SolutionDir)Cgp.NCAS.Client\bin\%25CpBuildName%25\%25FinalSubfolder%25\Client Upgrader"
+
+goto AfterCodeProtection
+
+:CodeProtectionFailed
+
+echo Code protection failed with result %25CodeProtectionResult%25, trying to replicate unsecure variant
+
+:CodeProtectorNotFound
+C:\Windows\System32\xcopy.exe /C /Y  "$(SolutionDir)Cgp.NCAS.Client\bin\$(ConfigurationName)\*.exe" "$(SolutionDir)Cgp.NCAS.Client\bin\%25CpBuildName%25\%25FinalSubfolder%25\"
+C:\Windows\System32\xcopy.exe /C /Y  "$(SolutionDir)Cgp.NCAS.Client\bin\$(ConfigurationName)\*.dll" "$(SolutionDir)Cgp.NCAS.Client\bin\%25CpBuildName%25\%25FinalSubfolder%25\"
+
+:AfterCodeProtection
+
+
+C:\Windows\System32\xcopy.exe /C /Y /E "$(SolutionDir)Cgp.NCAS.Client\bin\$(ConfigurationName)\Sounds" "$(SolutionDir)Cgp.NCAS.Client\bin\%25CpBuildName%25\%25FinalSubfolder%25\Sounds\"
+C:\Windows\System32\xcopy.exe /C /Y /E "$(SolutionDir)Cgp.NCAS.Client\bin\$(ConfigurationName)\Client Upgrader" "$(SolutionDir)Cgp.NCAS.Client\bin\%25CpBuildName%25\%25FinalSubfolder%25\Client Upgrader\"
+
+call "$(SolutionDir)Cgp.NCAS.CCU\Binaries\FilePackerTool.exe" /t Client /s "$(SolutionDir)Cgp.NCAS.Client\bin\$(ConfigurationName)\%25FinalSubfolder%25" /va "$(SolutionDir)Cgp.NCAS.Client\bin\$(ConfigurationName)\%25FinalSubfolder%25\Contal Nova Client.exe" /f "$(SolutionDir)Cgp.NCAS.Client\bin\ClientUpgrade.gz" /e *.pdb
+
+:NoCodeProtection
+
+
+if "$(ConfigurationName)"=="Release" (
+"$(SolutionDir)Cgp.NCAS.CCU\Binaries\FilePackerTool.exe" /t Client /s "$(SolutionDir)Cgp.NCAS.Client\bin\Release" /va "$(SolutionDir)Cgp.NCAS.Client\bin\Release\Contal Nova Client.exe" /f "$(SolutionDir)Cgp.NCAS.Client\bin\ClientUpgrade.gz" /e *.pdb
+)
+
+if "$(ConfigurationName)"=="Release (Special)" (
+"$(SolutionDir)Cgp.NCAS.CCU\Binaries\FilePackerTool.exe" /t Client /s "$(SolutionDir)Cgp.NCAS.Client\bin\Release" /va "$(SolutionDir)Cgp.NCAS.Client\bin\Release\Contal Nova Client.exe" /f "$(SolutionDir)Cgp.NCAS.Client\bin\ClientUpgrade.gz" /e *.pdb
+)
+endlocal
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

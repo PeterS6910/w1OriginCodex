@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.Server.Beans.CustomAccessControl, Cgp.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdCustomAccessControl">
+      <generator class="guid" />
+    </id>
+    <property name="Access" not-null="true"></property>
+    <property name="AccessControlGroup" not-null="false"></property>
+
+    <join table="CentralNameRegister">
+      <key column="Id" foreign-key="none"/>
+      <property name="Name" column="Name" not-null="true"/>
+      <property name="ObjectType" not-null="true"/>
+    </join>
+  </class>
+</hibernate-mapping>

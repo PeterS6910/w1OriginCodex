@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.NCAS.Server.Beans.GraphicSymbolTemplate, Cgp.NCAS.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="Id">
+      <generator class="guid" />
+    </id>
+    <property name="Name" not-null="true" unique="false"></property>
+    <property name="Description" not-null="false" unique="false"></property>
+  </class>
+</hibernate-mapping>

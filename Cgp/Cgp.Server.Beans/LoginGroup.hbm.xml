@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.Server.Beans.LoginGroup, Cgp.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    
+    <id name="IdLoginGroup">
+      <generator class="guid"></generator>
+    </id>
+    
+    <property name="IsDisabled" not-null="true"></property>
+    <property name="ExpirationDate" not-null="false"></property>
+
+    <bag name="Logins" cascade="none" lazy="true">
+      <key column="LoginGroup" />
+      <one-to-many class="Contal.Cgp.Server.Beans.Login"/>
+    </bag>
+
+    <bag name="AccessControls" cascade="all-delete-orphan" lazy="true">
+      <key column="LoginGroup" />
+      <one-to-many class="Contal.Cgp.Server.Beans.AccessControl"/>
+    </bag>
+
+    <property name="Description" not-null="false">
+      <column name="Description" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+    
+    <join table="CentralNameRegister">
+      <key column="Id" foreign-key="none"/>
+      <property name="LoginGroupName" column="Name" not-null="true"/>
+      <property name="ObjectType" not-null="true"/>
+    </join>
+  </class>
+</hibernate-mapping>

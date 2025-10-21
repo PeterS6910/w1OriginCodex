@@ -1,0 +1,634 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5775202E-96B4-44E8-904D-625154D7D524}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>PlatformPC\Properties</AppDesignerFolder>
+    <RootNamespace>Contal.IwQuick</RootNamespace>
+    <AssemblyName>IwQuick.PC35</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>PlatformPC\SigningKey.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Designer|AnyCPU' ">
+    <OutputPath>bin\Designer\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" 1 == 1 ">
+    <DefineConstants>$(DefineConstants),PC35</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrossPlatform\ABatchWorkerBase.cs" />
+    <Compile Include="CrossPlatform\AGetter.cs" />
+    <Compile Include="CrossPlatform\AGetterSetter.cs" />
+    <Compile Include="CrossPlatform\BatchWorkerWithPriority.cs" />
+    <Compile Include="CrossPlatform\Bits.cs" />
+    <Compile Include="CrossPlatform\ACache.cs" />
+    <Compile Include="CrossPlatform\APoolable.cs" />
+    <Compile Include="CrossPlatform\AProgram.cs" />
+    <Compile Include="CrossPlatform\ASingleton.cs" />
+    <Compile Include="CrossPlatform\BatchWorker.cs" />
+    <Compile Include="CrossPlatform\Common\FilterTimedObject.cs" />
+    <Compile Include="CrossPlatform\Common\ITimeoutProvider.cs" />
+    <Compile Include="CrossPlatform\Common\ITimerArgs.cs" />
+    <Compile Include="CrossPlatform\Common\ITimerWrapper.cs" />
+    <Compile Include="CrossPlatform\Common\SingleParamEventArgs.cs" />
+    <Compile Include="CrossPlatform\CreateOnDemandGetter.cs" />
+    <Compile Include="CrossPlatform\Crypto\Crc32.cs" />
+    <Compile Include="CrossPlatform\Crypto\Crc8.cs" />
+    <Compile Include="CrossPlatform\Crypto\CryptoProcessor.cs" />
+    <Compile Include="CrossPlatform\Crypto\CryptoTranformPool.cs" />
+    <Compile Include="CrossPlatform\Crypto\DecryptorPool.cs" />
+    <Compile Include="CrossPlatform\Crypto\EncryptorPool.cs" />
+    <Compile Include="CrossPlatform\Data\AAsyncThreadPoolQueue.cs" />
+    <Compile Include="CrossPlatform\Data\ABinaryHeap.cs" />
+    <Compile Include="CrossPlatform\Data\ACountedReleasable.cs" />
+    <Compile Include="CrossPlatform\Data\AObjectPoolWithSizeLimit.cs" />
+    <Compile Include="CrossPlatform\Data\AsyncProcessingQueue.cs" />
+    <Compile Include="CrossPlatform\Data\AsyncThreadPoolQueue.cs" />
+    <Compile Include="CrossPlatform\Data\AThreadPoolQueue.cs" />
+    <Compile Include="CrossPlatform\Data\BaseBinarayHeapItem.cs" />
+    <Compile Include="CrossPlatform\Data\BinaryHeap.cs" />
+    <Compile Include="CrossPlatform\Data\BinaryHeapSupportedRemoval.cs" />
+    <Compile Include="CrossPlatform\Data\HashTableHelper.cs" />
+    <Compile Include="CrossPlatform\Data\LwSerialization.cs" />
+    <Compile Include="CrossPlatform\Data\BCD.cs" />
+    <Compile Include="CrossPlatform\Data\BitArray.cs" />
+    <Compile Include="CrossPlatform\Data\BitArray8.cs" />
+    <Compile Include="CrossPlatform\Data\ByteBufferPool.cs" />
+    <Compile Include="CrossPlatform\Data\ByteConverter.cs" />
+    <Compile Include="CrossPlatform\Data\ByteDataCarrier.cs" />
+    <Compile Include="CrossPlatform\Data\ChunkedMemoryStream.cs" />
+    <Compile Include="CrossPlatform\Data\IByteBufferPool.cs" />
+    <Compile Include="CrossPlatform\Data\InstanceParameters.cs" />
+    <Compile Include="CrossPlatform\Data\IProcessingQueue.cs" />
+    <Compile Include="CrossPlatform\Data\IWaitCollection.cs" />
+    <Compile Include="CrossPlatform\Data\LevelSortedQueue.cs" />
+    <Compile Include="CrossPlatform\Data\PreallocBdcPool.cs" />
+    <Compile Include="CrossPlatform\Data\PriorityBinaryHeap.cs" />
+    <Compile Include="CrossPlatform\Data\ProcessingQueue.cs" />
+    <Compile Include="CrossPlatform\Data\QuantizedStreamReader.cs" />
+    <Compile Include="CrossPlatform\Data\ResizeableArray.cs" />
+    <Compile Include="CrossPlatform\Data\SimpleSortedList.cs" />
+    <Compile Include="CrossPlatform\Data\ThreadPoolQueue.cs" />
+    <Compile Include="CrossPlatform\Data\ThreadPoolQueueWithLimit.cs" />
+    <Compile Include="CrossPlatform\Data\ThreadPoolQueueWithPriority.cs" />
+    <Compile Include="CrossPlatform\Data\TinyCache.cs" />
+    <Compile Include="CrossPlatform\Data\StringBuilderPool.cs" />
+    <Compile Include="CrossPlatform\Data\SyncDictionary.cs" />
+    <Compile Include="CrossPlatform\Data\TimeoutDictionary.cs" />
+    <Compile Include="CrossPlatform\Data\WaitableProcessingItem.cs" />
+    <Compile Include="CrossPlatform\Delegates.cs" />
+    <Compile Include="CrossPlatform\Enumerations.cs" />
+    <Compile Include="CrossPlatform\EnumHelper.cs" />
+    <Compile Include="CrossPlatform\EventHandlerGroup.cs" />
+    <Compile Include="CrossPlatform\Extensions\BinaryRWExtensions.cs" />
+    <Compile Include="CrossPlatform\Extensions\BoolExtensions.cs" />
+    <Compile Include="CrossPlatform\Extensions\DelegateExtensions.cs" />
+    <Compile Include="CrossPlatform\Extensions\IntegerExtensions.cs" />
+    <Compile Include="CrossPlatform\Extensions\ObjectExtensions.cs" />
+    <Compile Include="CrossPlatform\Extensions\StringBuilderExtensions.cs" />
+    <Compile Include="CrossPlatform\Extensions\StringExtensions.cs" />
+    <Compile Include="CrossPlatform\Extensions\TypeExtensions.cs" />
+    <Compile Include="CrossPlatform\Extensions\XmlReaderExtensions.cs" />
+    <Compile Include="CrossPlatform\JetBrainsAnnotations.cs" />
+    <Compile Include="CrossPlatform\Data\LimitedQueue.cs" />
+    <Compile Include="CrossPlatform\LambdaGetterSetter.cs" />
+    <Compile Include="CrossPlatform\LibraryInfoDescriptor.cs" />
+    <Compile Include="CrossPlatform\LimitedCollection.cs" />
+    <Compile Include="CrossPlatform\Net\AESSettingsBase.cs" />
+    <Compile Include="CrossPlatform\Net\AESStream.cs" />
+    <Compile Include="CrossPlatform\Net\AESStream2.cs" />
+    <Compile Include="CrossPlatform\Net\CNMPAgent.cs" />
+    <Compile Include="CrossPlatform\Net\DataChannelPeer.cs" />
+    <Compile Include="CrossPlatform\Net\INetworkInfo.cs" />
+    <Compile Include="CrossPlatform\Net\ISerialPortAdapter.cs" />
+    <Compile Include="CrossPlatform\Net\ISimpleTcpConnection.cs" />
+    <Compile Include="CrossPlatform\Net\MessagingPeer.cs" />
+    <Compile Include="CrossPlatform\Net\NetworkInfoFactory.cs" />
+    <Compile Include="CrossPlatform\StaticDestructor.cs" />
+    <Compile Include="CrossPlatform\ALibraryInfo.cs" />
+    <Compile Include="CrossPlatform\IwQuickLibraryInfo.cs" />
+    <Compile Include="CrossPlatform\Sys\Microsoft\RegistryHelper.cs" />
+    <Compile Include="CrossPlatform\Sys\StopwatchPool.cs" />
+    <Compile Include="CrossPlatform\Threads\ASafeThreadBase.cs" />
+    <Compile Include="CrossPlatform\Threads\Enumerations.cs" />
+    <Compile Include="CrossPlatform\Threads\ThreadPool.cs" />
+    <Compile Include="CrossPlatform\Threads\ThreadPoolGetter.cs" />
+    <Compile Include="PlatformPC\Exceptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CrossPlatform\Net\ANetworkInfo.cs" />
+    <Compile Include="PlatformPC\IwQuickLibraryInfo.dynamic.cs" />
+    <Compile Include="PlatformPC\Net\Microsoft\SystemSerialPortAdapterBase.cs" />
+    <Compile Include="PlatformPC\Net\NetworkInfo.cs" />
+    <Compile Include="CrossPlatform\Net\SimpleUdpPeer.cs" />
+    <Compile Include="CrossPlatform\Net\SocketBufferSize.cs" />
+    <Compile Include="CrossPlatform\Net\TcpUdpPort.cs" />
+    <Compile Include="CrossPlatform\Parsing\APhdParsingContext.cs" />
+    <Compile Include="CrossPlatform\Parsing\PreambleHeaderDataParser.cs" />
+    <Compile Include="CrossPlatform\Sys\FilePacker.cs" />
+    <Compile Include="CrossPlatform\Sys\FilePackerStream.cs" />
+    <Compile Include="CrossPlatform\Sys\FileStreamExtensions.cs" />
+    <Compile Include="CrossPlatform\Sys\HandledExceptionAdapter.cs" />
+    <Compile Include="CrossPlatform\Sys\PatchedFileStream.cs" />
+    <Compile Include="CrossPlatform\Sys\QuickPath.cs" />
+    <Compile Include="CrossPlatform\Sys\RotaryFileLog.cs" />
+    <Compile Include="CrossPlatform\Threads\DefaultSafeThreadContextFactory.cs" />
+    <Compile Include="CrossPlatform\Threads\EventWaitHandlePool.cs" />
+    <Compile Include="CrossPlatform\Threads\InternalThreadAbortKey.cs" />
+    <Compile Include="CrossPlatform\Threads\ISafeThreadContextFactory.cs" />
+    <Compile Include="CrossPlatform\Threads\ITimer.cs" />
+    <Compile Include="CrossPlatform\Threads\SafeThreadContext.cs" />
+    <Compile Include="CrossPlatform\Threads\SafeThreadWithContext.cs" />
+    <Compile Include="CrossPlatform\Threads\TimerCarrier.cs" />
+    <Compile Include="CrossPlatform\Threads\TimerManager.cs" />
+    <Compile Include="CrossPlatform\Threads\TimerPool.cs" />
+    <Compile Include="CrossPlatform\Validator.cs" />
+    <Compile Include="PlatformPC\Crypto\AesDecryptor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\Crypto\AesEncryptor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\Crypto\AesProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\Crypto\Microsoft\CapiNative.cs" />
+    <Compile Include="PlatformPC\Crypto\Microsoft\SafeCapiHandleBase.cs" />
+    <Compile Include="PlatformPC\Crypto\Microsoft\SafeCapiHashHandle.cs" />
+    <Compile Include="PlatformPC\Crypto\Microsoft\SafeCapiKeyHandle.cs" />
+    <Compile Include="PlatformPC\Crypto\Microsoft\SafeCspHandle.cs" />
+    <Compile Include="CrossPlatform\ADisposable.cs" />
+    <Compile Include="CrossPlatform\DebugHelper.cs" />
+    <Compile Include="CrossPlatform\Exceptions.cs" />
+    <Compile Include="CrossPlatform\ExtendedArray.cs" />
+    <Compile Include="CrossPlatform\ExtendedEnvironment.cs" />
+    <Compile Include="CrossPlatform\GeneralConstants.cs" />
+    <Compile Include="CrossPlatform\AObjectPool.cs" />
+    <Compile Include="PlatformPC\Data\SortableBindingList.cs" />
+    <Compile Include="PlatformPC\Net\AESSettings.cs" />
+    <Compile Include="CrossPlatform\Net\SystemSerialPortAdapter.cs" />
+    <Compile Include="PlatformPC\Net\TFTPClient.cs" />
+    <Compile Include="PlatformPC\Remoting\RemotingConstants.cs" />
+    <Compile Include="PlatformPC\Remoting\MultihomingConfigurationClientSinkProvider.cs" />
+    <Compile Include="PlatformPC\Remoting\MultihomingConfigurationServerSinkProvider.cs" />
+    <Compile Include="PlatformPC\Crypto\PasswordDeriveBytesSHA1.cs" />
+    <Compile Include="PlatformPC\Crypto\QuickHashes.cs" />
+    <Compile Include="PlatformPC\Crypto\QuickCrypto.cs" />
+    <Compile Include="PlatformPC\Crypto\XTEA.cs">
+    </Compile>
+    <Compile Include="PlatformPC\Data\UnifiedFormat.cs" />
+    <Compile Include="PlatformPC\Localization\Localization.cs" />
+    <Compile Include="PlatformPC\Localization\LocalizationAssistant\ChooseLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\Localization\LocalizationAssistant\ChooseLanguage.designer.cs">
+      <DependentUpon>ChooseLanguage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformPC\Localization\LocalizationAssistant\LocalizationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\Localization\LocalizationAssistant\LocalizationDialog.designer.cs">
+      <DependentUpon>LocalizationDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformPC\Localization\LocalizationAssistant\LocalizationAssistentMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\Localization\LocalizationAssistant\LocalizationAssistentMainForm.designer.cs">
+      <DependentUpon>LocalizationAssistentMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformPC\Localization\LocalizationAssistant\Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\Localization\LocalizationAssistant\Options.designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformPC\Localization\LocalizationAssistant\PasswordDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\Localization\LocalizationAssistant\PasswordDialog.Designer.cs">
+      <DependentUpon>PasswordDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformPC\Localization\LocalizationHelper.cs" />
+    <Compile Include="PlatformPC\Localization\TranslateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\Log.cs" />
+    <Compile Include="PlatformPC\Net\AESLayer.cs" />
+    <Compile Include="PlatformPC\Net\CNMPLookupResultItem.cs" />
+    <Compile Include="PlatformPC\Net\IAESSettings.cs" />
+    <Compile Include="PlatformPC\Net\ITransportLayer.cs" />
+    <Compile Include="PlatformPC\Net\ITransportSettings.cs" />
+    <Compile Include="PlatformPC\Net\Microsoft\SNTP.cs" />
+    <Compile Include="PlatformPC\Net\PlainLayer.cs" />
+    <Compile Include="PlatformPC\Net\SerialPortDescriptor.cs" />
+    <Compile Include="PlatformPC\Net\SslLayer.cs" />
+    <Compile Include="PlatformPC\Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformPC\Remoting\ARemotingAuthentication.cs" />
+    <Compile Include="PlatformPC\Remoting\ARemotingAuthenticationParameters.cs" />
+    <Compile Include="PlatformPC\Remoting\ARemotingCallbackHandler.cs" />
+    <Compile Include="PlatformPC\Remoting\ARemotingClient.cs" />
+    <Compile Include="PlatformPC\Remoting\ARemotingService.cs" />
+    <Compile Include="PlatformPC\Remoting\ClientIdentificationClientSink.cs" />
+    <Compile Include="PlatformPC\Remoting\ClientIdentificationClientSinkProvider.cs" />
+    <Compile Include="PlatformPC\Remoting\ClientIdentificationServerSink.cs" />
+    <Compile Include="PlatformPC\Remoting\ClientIdentificationServerSinkProvider.cs" />
+    <Compile Include="PlatformPC\Remoting\AesCryptoClientSink.cs" />
+    <Compile Include="PlatformPC\Remoting\AesCryptoClientSinkProvider.cs" />
+    <Compile Include="PlatformPC\Remoting\AesCryptoServerSink.cs" />
+    <Compile Include="PlatformPC\Remoting\AesCryptoServerSinkProvider.cs" />
+    <Compile Include="PlatformPC\Remoting\GenericRemotingEventSurrogate.cs" />
+    <Compile Include="PlatformPC\Remoting\Delegates.cs" />
+    <Compile Include="PlatformPC\Remoting\Enumerations.cs" />
+    <Compile Include="PlatformPC\Remoting\Exceptions.cs" />
+    <Compile Include="PlatformPC\Remoting\IRemotingAuthentication.cs" />
+    <Compile Include="PlatformPC\Remoting\IRemotingProxyKeeper.cs" />
+    <Compile Include="PlatformPC\Remoting\IRemotingService.cs" />
+    <Compile Include="PlatformPC\Remoting\RemotingEventSurrogate.cs" />
+    <Compile Include="PlatformPC\Remoting\RemotingProxyKeeper.cs" />
+    <Compile Include="PlatformPC\Remoting\RemotingSession.cs" />
+    <Compile Include="PlatformPC\Remoting\RemotingSessionHandler.cs" />
+    <Compile Include="CrossPlatform\StringConstants.cs" />
+    <Compile Include="PlatformPC\Sys\AServiceAndConsoleApp.cs" />
+    <Compile Include="PlatformPC\Sys\Microsoft\DllUxTheme.cs" />
+    <Compile Include="PlatformPC\Sys\Microsoft\RegistryHelper.cs" />
+    <Compile Include="PlatformPC\Threads\SafeThreadTT.cs" />
+    <Compile Include="PlatformPC\Threads\SafeThread.cs" />
+    <Compile Include="PlatformPC\Threads\ASafeThreadBase.cs" />
+    <Compile Include="PlatformPC\Threads\SafeThreadT.cs" />
+    <Compile Include="PlatformPC\Threads\SafeThreadTTT.cs" />
+    <Compile Include="PlatformPC\Threads\Enumerations.cs" />
+    <Compile Include="PlatformPC\UI\Accordion\Accordion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\UI\Accordion\OpacityEx.cs" />
+    <Compile Include="PlatformPC\UI\Accordion\ResizeBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\UI\AsyncBindingHelper.cs" />
+    <Compile Include="PlatformPC\UI\ComponentList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\UI\ComponentList.Designer.cs">
+      <DependentUpon>ComponentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformPC\UI\ConsoleTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\UI\ConsoleTextBox.Designer.cs">
+      <DependentUpon>ConsoleTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformPC\UI\ControlNotificationProfile.cs" />
+    <Compile Include="PlatformPC\UI\ControlNotificationSettings.cs" />
+    <Compile Include="PlatformPC\UI\DataGridViewNumericUpDownColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\UI\DateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\UI\DateForm.Designer.cs">
+      <DependentUpon>DateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformPC\UI\DateMatrix.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\UI\DateMatrix.Designer.cs">
+      <DependentUpon>DateMatrix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformPC\UI\DayHourButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\UI\DayMatrixSchedule.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\UI\DDX\ADDXLink.cs" />
+    <Compile Include="PlatformPC\UI\DDX\DDXIntLink.cs" />
+    <Compile Include="PlatformPC\UI\DDX\Interfaces.cs" />
+    <Compile Include="PlatformPC\UI\ExtendedPropertyGrid\BrowsableTypeConverter.cs" />
+    <Compile Include="PlatformPC\UI\ExtendedPropertyGrid\CustomChoices.cs" />
+    <Compile Include="PlatformPC\UI\ExtendedPropertyGrid\CustomColorScheme.cs" />
+    <Compile Include="PlatformPC\UI\ExtendedPropertyGrid\CustomProperty.cs" />
+    <Compile Include="PlatformPC\UI\ExtendedPropertyGrid\CustomPropertyCollection.cs" />
+    <Compile Include="PlatformPC\UI\ExtendedPropertyGrid\CustomPropertyCollectionSet.cs" />
+    <Compile Include="PlatformPC\UI\ExtendedPropertyGrid\ExtendedPropertyGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\UI\ExtendedPropertyGrid\ExtendedPropertyGrid.Designer.cs">
+      <DependentUpon>ExtendedPropertyGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformPC\UI\ExtendedPropertyGrid\UIComboBoxEditor.cs" />
+    <Compile Include="PlatformPC\UI\ExtendedPropertyGrid\UICustomEventEditor.cs" />
+    <Compile Include="PlatformPC\UI\ExtendedPropertyGrid\UIFilenameEditor.cs" />
+    <Compile Include="PlatformPC\UI\ExtendedPropertyGrid\UIListboxEditor.cs" />
+    <Compile Include="PlatformPC\UI\IConsoleTextBox.cs" />
+    <Compile Include="PlatformPC\UI\ImageComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\UI\ImageComboBox.Designer.cs">
+      <DependentUpon>ImageComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformPC\UI\ImageListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\UI\ImageListBox.Designer.cs">
+      <DependentUpon>ImageListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformPC\UI\ImageTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\UI\ImageTextBox.designer.cs">
+      <DependentUpon>ImageTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformPC\UI\IValueConvertor.cs" />
+    <Compile Include="PlatformPC\UI\NumericUpDownWithCustomTextFormat.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\UI\ProgressBarWithText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\UI\ProgressColumn.cs" />
+    <Compile Include="PlatformPC\UI\TextBoxDateTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\UI\TextBoxDateTime.Designer.cs">
+      <DependentUpon>TextBoxDateTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformPC\UI\TextBoxMenu\MenuSelectionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\UI\TextBoxMenu\MenuSelectionControl.Designer.cs">
+      <DependentUpon>MenuSelectionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformPC\UI\SimpleValueConvertor.cs" />
+    <Compile Include="PlatformPC\UI\TextBoxBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\UI\TextBoxBrowser.designer.cs">
+      <DependentUpon>TextBoxBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformPC\UI\TextBoxDatePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\UI\TextBoxDatePicker.Designer.cs">
+      <DependentUpon>TextBoxDatePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformPC\UI\TextBoxMenu\TextBoxMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\UI\TextBoxMenu\TextBoxMenu.Designer.cs">
+      <DependentUpon>TextBoxMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformPC\UI\Thread2UI.cs" />
+    <Compile Include="PlatformPC\UI\ExtendedPropertyGrid\UINumericUpDownEditor.cs" />
+    <Compile Include="PlatformPC\UI\TreeViewWithFilter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\UI\WindowManipulation.cs" />
+    <Compile Include="PlatformPC\UI\WinFormsHelper.cs" />
+    <Compile Include="PlatformPC\UI\WpfTreeview.xaml.cs">
+      <DependentUpon>WpfTreeview.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformPC\Web\HtmlColorConvertor.cs" />
+    <Compile Include="CrossPlatform\ExtendedVersion.cs" />
+    <Compile Include="PlatformPC\Data\HexEncoding.cs" />
+    <Compile Include="PlatformPC\Data\PriorityQueue.cs" />
+    <Compile Include="PlatformPC\Data\Serialization.cs" />
+    <Compile Include="PlatformPC\Data\StringKeyArray.cs" />
+    <Compile Include="PlatformPC\Data\TwoStateValueT.cs" />
+    <Compile Include="PlatformPC\Data\VersionedStreamingContext.cs" />
+    <Compile Include="PlatformPC\Data\XmlSerializableDictionary.cs" />
+    <Compile Include="PlatformPC\Data\Interfaces.cs" />
+    <Compile Include="PlatformPC\Localization\LwLocalization.cs" />
+    <Compile Include="PlatformPC\Localization\LwLocalizationHelper.cs" />
+    <Compile Include="PlatformPC\Remoting\ARemotingPeer.cs" />
+    <Compile Include="PlatformPC\Net\EmailAddress.cs" />
+    <Compile Include="PlatformPC\Net\SimpleGeneralTcpConnection.cs" />
+    <Compile Include="PlatformPC\Net\ASimpleTcpPeer.cs" />
+    <Compile Include="PlatformPC\Net\SimpleSerialPort.cs" />
+    <Compile Include="PlatformPC\Net\ISimpleSerialPort.cs" />
+    <Compile Include="PlatformPC\Net\ISimpleUdpPeer.cs" />
+    <Compile Include="PlatformPC\Net\ISslSettings.cs" />
+    <Compile Include="PlatformPC\Net\Microsoft\EthernetLayer.cs" />
+    <Compile Include="PlatformPC\Net\Microsoft\NetworkManagement.cs" />
+    <Compile Include="PlatformPC\Net\PlainTcpTunnel.cs" />
+    <Compile Include="PlatformPC\Remoting\IpcRemotingPeer.cs" />
+    <Compile Include="PlatformPC\Net\SecureTunnel.cs" />
+    <Compile Include="PlatformPC\Net\SimpleTcpClient.cs" />
+    <Compile Include="PlatformPC\Net\SimpleTcpServer.cs" />
+    <Compile Include="PlatformPC\Net\Hostname.cs" />
+    <Compile Include="PlatformPC\Net\IPHelper.cs" />
+    <Compile Include="PlatformPC\Remoting\TcpRemotingPeer.cs" />
+    <Compile Include="PlatformPC\Net\SslSettings.cs" />
+    <Compile Include="PlatformPC\Net\CNMPAgent.cs" />
+    <Compile Include="PlatformPC\Net\CNMPLookupResultList.cs" />
+    <Compile Include="PlatformPC\Net\Delegates.cs" />
+    <Compile Include="PlatformPC\Net\Enumerations.cs" />
+    <Compile Include="PlatformPC\Net\Exceptions.cs" />
+    <Compile Include="PlatformPC\Net\Microsoft\NetShare.cs" />
+    <Compile Include="PlatformPC\Net\Microsoft\NetUse.cs" />
+    <Compile Include="PlatformPC\Parsing\EscapeString.cs" />
+    <Compile Include="PlatformPC\Parsing\QuickParser.cs" />
+    <Compile Include="PlatformPC\Parsing\TokenString.cs" />
+    <Compile Include="PlatformPC\Properties\AssemblyInfo.cs" />
+    <Compile Include="PlatformPC\Sys\QuickApp.cs" />
+    <Compile Include="PlatformPC\Sys\Microsoft\DllKernel32.cs" />
+    <Compile Include="PlatformPC\Sys\Microsoft\DllMpr.cs" />
+    <Compile Include="PlatformPC\Sys\Microsoft\DllUser32.cs" />
+    <Compile Include="PlatformPC\Sys\EnvironmentVariable.cs" />
+    <Compile Include="PlatformPC\Sys\PathVariable.cs" />
+    <Compile Include="PlatformPC\Sys\Enumerations.cs" />
+    <Compile Include="PlatformPC\Sys\Interfaces.cs" />
+    <Compile Include="PlatformPC\Sys\Microsoft\DllWinmm.cs" />
+    <Compile Include="PlatformPC\Sys\Microsoft\LocalDrive.cs" />
+    <Compile Include="PlatformPC\Sys\Microsoft\LocalUsers.cs" />
+    <Compile Include="PlatformPC\Threads\Delegates.cs" />
+    <Compile Include="PlatformPC\UI\ColorPair.cs" />
+    <Compile Include="PlatformPC\UI\ExtendedConsole.cs" />
+    <Compile Include="PlatformPC\UI\Dialog.cs" />
+    <Compile Include="PlatformPC\UI\RadioGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PlatformPC\UI\ControlNotification.cs" />
+    <Compile Include="PlatformPC\UI\Delegates.cs" />
+    <Compile Include="PlatformPC\UI\Enumerations.cs" />
+    <Compile Include="PlatformPC\Web\SessionAuthentication.cs" />
+    <Compile Include="PlatformPC\Xml\QuickXml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlatformPC\SigningKey.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PlatformPC\Localization\LocalizationAssistant\ChooseLanguage.resx">
+      <DependentUpon>ChooseLanguage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlatformPC\Localization\LocalizationAssistant\LocalizationDialog.resx">
+      <DependentUpon>LocalizationDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlatformPC\Localization\LocalizationAssistant\LocalizationAssistentMainForm.resx">
+      <DependentUpon>LocalizationAssistentMainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlatformPC\Localization\LocalizationAssistant\Options.resx">
+      <DependentUpon>Options.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlatformPC\Localization\LocalizationAssistant\PasswordDialog.resx">
+      <DependentUpon>PasswordDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlatformPC\Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlatformPC\UI\ComponentList.resx">
+      <DependentUpon>ComponentList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlatformPC\UI\ConsoleTextBox.resx">
+      <DependentUpon>ConsoleTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlatformPC\UI\DateForm.resx">
+      <DependentUpon>DateForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlatformPC\UI\DateMatrix.resx">
+      <DependentUpon>DateMatrix.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlatformPC\UI\DayMatrixSchedule.resx">
+      <DependentUpon>DayMatrixSchedule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlatformPC\UI\ImageTextBox.resx">
+      <DependentUpon>ImageTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlatformPC\UI\TextBoxBrowser.resx">
+      <DependentUpon>TextBoxBrowser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlatformPC\UI\TextBoxDatePicker.resx">
+      <DependentUpon>TextBoxDatePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlatformPC\UI\TextBoxDateTime.resx">
+      <DependentUpon>TextBoxDateTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlatformPC\UI\TextBoxMenu\MenuSelectionControl.resx">
+      <DependentUpon>MenuSelectionControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlatformPC\UI\TextBoxMenu\TextBoxMenu.resx">
+      <DependentUpon>TextBoxMenu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlatformPC\Resources\folder-saved-search.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlatformPC\Resources\Calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlatformPC\Resources\CalendarBlank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlatformPC\Resources\DefaultImage.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlatformPC\Resources\TransparentImage.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlatformPC\Resources\IconTexbBoxMenu.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="PlatformPC\UI\WpfTreeview.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

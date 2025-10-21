@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.Server.Beans.CentralNameRegister, Cgp.Server.Beans" select-before-update="true" lazy="false">
+    <cache usage="read-write"/>
+    <id name="Id">
+      <generator class="guid" />
+    </id>
+    <property name="Name" not-null="true" unique-key="ObjectName"  index="IndexName"></property>
+    <property name="AlternateName" ></property>
+    <property name="FullTextSearchString" ></property>
+    <property name="ObjectType" not-null="true" unique-key="ObjectName"></property>
+    <property name="CkUnique" unique-key="ObjectName"></property>
+  </class>
+</hibernate-mapping>

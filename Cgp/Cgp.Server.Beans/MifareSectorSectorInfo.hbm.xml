@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.Server.Beans.MifareSectorSectorInfo, Cgp.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="Id">
+      <generator class="native"></generator>
+    </id>
+    <property name="SectorNumber" not-null="true" unique-key="SectorNumber"></property>
+    <!--<property name="Reserved" not-null="true"></property>-->
+    <property name="InheritAKey" not-null="true"></property>
+    <property name="InheritBKey" not-null="true"></property>
+    <property name="AKey" not-null="false" type="BinaryBlob" length="8"></property>
+    <property name="BKey" not-null="false" type="BinaryBlob" length="8"></property>
+    <property name="Bank" not-null="false"></property>
+    <property name="Offset" not-null="false"></property>
+    <property name="Length" not-null="false"></property>
+    <many-to-one name="MifareSectorData" class="Contal.Cgp.Server.Beans.MifareSectorData, Cgp.Server.Beans" not-null="false" unique-key="SectorNumber" />
+  </class>
+</hibernate-mapping>

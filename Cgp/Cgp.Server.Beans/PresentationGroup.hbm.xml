@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="true">
+  <class name="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdGroup">
+      <generator class="guid" />
+    </id>
+    <property name="Email" not-null="false"></property>
+    <property name="Sms" not-null="false"></property>
+    
+    <property name="cisClass" not-null="false"></property>
+    <property name="cisPriority" not-null="false"></property>
+    <property name="cisExpirationType" not-null="false"></property>
+    <property name="cisLifetime" not-null="false"></property>
+    <property name="cisDatetime" not-null="false"></property>
+    <property name="cisCyclecount" not-null="false"></property>
+    <property name="cisUnicitygroup" not-null="false"></property>
+    <property name="cisUnicitygroupTimeout" not-null="false"></property>
+    <property name="cisShowtime" not-null="false"></property>
+    <property name="cisIdle" not-null="false"></property>
+    <property name="cisFullscreen" not-null="false"></property>
+    <property name="cisImmediate" not-null="false"></property>
+    <property name="cisNoscrolling" not-null="false"></property>
+
+    <property name="AlarmTransmitterId" not-null="false"></property>
+    <property name="PhoneNumbers" not-null="false"></property>
+    <property name="MessagesPrefix" not-null="false"></property>
+   
+    <many-to-one name="PresentationFormatter" column="IdFormatter" class="Contal.Cgp.Server.Beans.PresentationFormatter, Cgp.Server.Beans"/>
+    <set name="CisNG" table="PGCisNGRelation" cascade="none" >
+      <key column="IdGroup"></key>
+      <many-to-many column="IdCisNG" class="Contal.Cgp.Server.Beans.CisNG"></many-to-many>
+    </set>
+    <set name="CisNGGroup" table="PGCisNGGroupRelation" cascade="none">
+      <key column="IdGroup"></key>
+      <many-to-many column="IdCisNGGroup" class="Contal.Cgp.Server.Beans.CisNGGroup"></many-to-many>
+    </set>
+    <set name="SystemEvents" table="SystemEventPresentationGroup" cascade="none" >
+      <key column="IdGroup"></key>
+      <many-to-many column="IdSystemEvent" class="Contal.Cgp.Server.Beans.SystemEvent"></many-to-many>
+    </set>
+    
+    <property name="ResponseAlarm" not-null="false"></property>
+    <property name="ResponseAlarmNotAck" not-null="false"></property>
+    <property name="ResponseNormalNotAck" not-null="false"></property>
+    <property name="ResponseNormal" not-null="false"></property>
+    <property name="ResponseNormalOffAck" not-null="false"></property>
+    <property name="ResponseDateTimeUpdate" not-null="false"></property>
+
+    <property name="InheritedEmailSubject" not-null="false"></property>
+    <property name="EmailSubject" not-null="false"></property>
+
+    <property name="Description" not-null="false">
+      <column name="Description" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+
+    <join table="CentralNameRegister">
+      <key column="Id" foreign-key="none"/>
+      <property name="GroupName" column="Name" not-null="true"/>
+      <property name="ObjectType" not-null="true"/>
+    </join>
+
+  </class>
+</hibernate-mapping>

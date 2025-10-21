@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  
+  <class name="Contal.Cgp.NCAS.Server.Beans.AntiPassBackZone, Cgp.NCAS.Server.Beans" select-before-update="true">
+    
+    <cache usage="read-write"/>
+    
+    <id name="IdAntiPassBackZone">
+      <generator class="guid" />
+    </id>
+
+    <property name="ProhibitAccessForCardNotPresent"/>
+    <many-to-one name="DestinationAPBZAfterTimeout" class ="Contal.Cgp.NCAS.Server.Beans.AntiPassBackZone, Cgp.NCAS.Server.Beans"/>
+    <property name="Timeout"/>
+    
+    <property name="Description" not-null="false">
+      <column name="Description" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+
+    <map name="EntryCardReaders" table="APBZCardReaders" lazy="true" where="Direction=1">
+      <key column="GuidAntiPassBackZone"/>
+      <index-many-to-many column="GuidCardReader" class="Contal.Cgp.NCAS.Server.Beans.CardReader, Cgp.NCAS.Server.Beans"/>
+      <composite-element class="Contal.Cgp.NCAS.Server.Beans.APBZCardReader, Cgp.NCAS.Server.Beans">
+        <property name="Direction"/>
+        <property name="EntryExitBy"/>
+      </composite-element>
+    </map>
+
+    <map name="ExitCardReaders" table="APBZCardReaders" lazy="true" where="Direction=0">
+      <key column="GuidAntiPassBackZone"/>
+      <index-many-to-many column="GuidCardReader" class="Contal.Cgp.NCAS.Server.Beans.CardReader, Cgp.NCAS.Server.Beans"/>
+      <composite-element class="Contal.Cgp.NCAS.Server.Beans.APBZCardReader, Cgp.NCAS.Server.Beans">
+        <property name="Direction"/>
+        <property name="EntryExitBy"/>
+      </composite-element>
+    </map>
+
+    <property name="Version" not-null="false"></property>
+
+    <join table="CentralNameRegister">
+      <key column="Id" foreign-key="none"/>
+      <property name="Name" not-null="true"/>
+      <property name="ObjectType" not-null="true"/>
+    </join>
+    
+  </class>
+  
+</hibernate-mapping>

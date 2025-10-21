@@ -1,0 +1,624 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AAcannotBeSet" xml:space="preserve">
+    <value>AA cannot be set some sensors are active</value>
+  </data>
+  <data name="AlarmAreaHasBeenInAlarmStateDuringSetPeriod" xml:space="preserve">
+    <value>Alarm Area has been in alarm state during set period.</value>
+  </data>
+  <data name="BoughtTime" xml:space="preserve">
+    <value>Bought time</value>
+  </data>
+  <data name="DoorEnvironmentBlockedByLicence" xml:space="preserve">
+    <value>Door environment blocked by licence</value>
+  </data>
+  <data name="EISWaiting" xml:space="preserve">
+    <value>EIS-Waiting</value>
+  </data>
+  <data name="FailedAlarmAreaNotFound" xml:space="preserve">
+    <value>Alarm area was not found.</value>
+  </data>
+  <data name="FailedBoughtTimeDurationExceeded" xml:space="preserve">
+    <value>Requested time to buy is bigger than one time limit.</value>
+  </data>
+  <data name="FailedCCUOffline" xml:space="preserve">
+    <value>CCU is offline.</value>
+  </data>
+  <data name="FailedDueError" xml:space="preserve">
+    <value>Error.</value>
+  </data>
+  <data name="FailedInputInAlarm" xml:space="preserve">
+    <value>Input is in alarm state.</value>
+  </data>
+  <data name="FailedInsufficientRights" xml:space="preserve">
+    <value>Insufficient rights.</value>
+  </data>
+  <data name="FailedTimeAlreadyBought" xml:space="preserve">
+    <value>Time was already bought.</value>
+  </data>
+  <data name="FailedTimeBuyingNotEnabled" xml:space="preserve">
+    <value>Time buying is not enabled.</value>
+  </data>
+  <data name="FailedTimeToBuyIsZero" xml:space="preserve">
+    <value>Time to buy is zero.</value>
+  </data>
+  <data name="FailedTotalBoughtTimeReached" xml:space="preserve">
+    <value>Requested time to buy is bigger than limit for AA.</value>
+  </data>
+  <data name="MENUACKNOWLEDGEAA" xml:space="preserve">
+    <value>Acknowledge AA</value>
+  </data>
+  <data name="MENUACKNOWLEDGEALL" xml:space="preserve">
+    <value>Acknowledge all</value>
+  </data>
+  <data name="MENUACKNOWLEDGEANDPERMANENTLYBLOCKSENSORALARM" xml:space="preserve">
+    <value>Ack. and perm. block</value>
+  </data>
+  <data name="MENUACKNOWLEDGEANDTEMPORARILYBLOCKSENSORALARM" xml:space="preserve">
+    <value>Ack. and temp. block</value>
+  </data>
+  <data name="MENUACKNOWLEDGESENSORALARM" xml:space="preserve">
+    <value>Acknowledge</value>
+  </data>
+  <data name="MENUALALARMSTATEACKNOWLEDGE" xml:space="preserve">
+    <value>Acknowledge alarm</value>
+  </data>
+  <data name="MENUALALARMSTATEACKNOWLEDGEANDBLOCK" xml:space="preserve">
+    <value>Ack. and block alarm</value>
+  </data>
+  <data name="MENUALALARMSTATEBLOCK" xml:space="preserve">
+    <value>Block alarm</value>
+  </data>
+  <data name="MENUALALARMSTATEUNSETAA" xml:space="preserve">
+    <value>Unset AA</value>
+  </data>
+  <data name="MENUALARMAREAEDIT" xml:space="preserve">
+    <value>Alarm area edit</value>
+  </data>
+  <data name="MENUALARMAREAS" xml:space="preserve">
+    <value>Alarm areas</value>
+  </data>
+  <data name="MENUALARMAREASGIN" xml:space="preserve">
+    <value>Alarm areas GIN</value>
+  </data>
+  <data name="MENUALARMAREASINALARMSTATE" xml:space="preserve">
+    <value>AA in alarm state</value>
+  </data>
+  <data name="MENUALARMAREASNOTACKNOWLEDGED" xml:space="preserve">
+    <value>AA not acknowledged</value>
+  </data>
+  <data name="MENUALARMAREASPIN" xml:space="preserve">
+    <value>Alarm areas (+PIN)</value>
+  </data>
+  <data name="MENUBLOCKSENSORPERMANENTLY" xml:space="preserve">
+    <value>Permanently block</value>
+  </data>
+  <data name="MENUBLOCKSENSORTEMPORARILYAREAUNSET" xml:space="preserve">
+    <value>Temporarily block `29</value>
+  </data>
+  <data name="MENUBLOCKSENSORTEMPORARILYSENSORSTATENORMAL" xml:space="preserve">
+    <value>Temporarily block `31</value>
+  </data>
+  <data name="MENUEMERGENCYCODE" xml:space="preserve">
+    <value>Emergency</value>
+  </data>
+  <data name="MENUEVENTLOGEDIT" xml:space="preserve">
+    <value>Event log edit</value>
+  </data>
+  <data name="MENUEVENTLOGS" xml:space="preserve">
+    <value>Eventlog</value>
+  </data>
+  <data name="MENUSENSORACKNOWLEDGEALL" xml:space="preserve">
+    <value>Acknowledge all</value>
+  </data>
+  <data name="MENUSENSORACKNOWLEDGEANDBLOCKALL" xml:space="preserve">
+    <value>Acknowledge and block all</value>
+  </data>
+  <data name="MENUSENSORBLOCKALL" xml:space="preserve">
+    <value>Block all(temp.block)</value>
+  </data>
+  <data name="MENUSENSORINALARM" xml:space="preserve">
+    <value>Sensor in alarm</value>
+  </data>
+  <data name="MENUSENSORINSABOTAGE" xml:space="preserve">
+    <value>Sensor in sabotage</value>
+  </data>
+  <data name="MENUSENSORNOTACKNOWLEDGED" xml:space="preserve">
+    <value>Sensor not acknowledged</value>
+  </data>
+  <data name="MENUSENSORPERMANENTLYBLOCKED" xml:space="preserve">
+    <value>Sensor perm. blocked</value>
+  </data>
+  <data name="MENUSENSORS" xml:space="preserve">
+    <value>Sensors</value>
+  </data>
+  <data name="MENUSENSORSGIN" xml:space="preserve">
+    <value>Sensors GIN</value>
+  </data>
+  <data name="MENUSENSORSPIN" xml:space="preserve">
+    <value>Sensors (+PIN)</value>
+  </data>
+  <data name="MENUSENSORTEMPORARILYBLOCKED" xml:space="preserve">
+    <value>Sensor temp. blocked</value>
+  </data>
+  <data name="MENUSENSORUNBLOCKALL" xml:space="preserve">
+    <value>Unblock all</value>
+  </data>
+  <data name="MENUSET" xml:space="preserve">
+    <value>Set</value>
+  </data>
+  <data name="MENUSETAA" xml:space="preserve">
+    <value>Set AA</value>
+  </data>
+  <data name="MENUSETAANOPREWARNING" xml:space="preserve">
+    <value>Set AA w/o prewarning</value>
+  </data>
+  <data name="MENUSETALL" xml:space="preserve">
+    <value>Set all</value>
+  </data>
+  <data name="MENUSHOWEVENTLOGS" xml:space="preserve">
+    <value>Show all eventlogs</value>
+  </data>
+  <data name="MENUSHOWSENSORS" xml:space="preserve">
+    <value>Show sensors</value>
+  </data>
+  <data name="MENUTIMEBUYING1HOD" xml:space="preserve">
+    <value>01:00</value>
+  </data>
+  <data name="MENUTIMEBUYING1MIN" xml:space="preserve">
+    <value>00:01</value>
+  </data>
+  <data name="MENUTIMEBUYING30MIN" xml:space="preserve">
+    <value>00:30</value>
+  </data>
+  <data name="MENUTIMEBUYINGMAX" xml:space="preserve">
+    <value>max. time</value>
+  </data>
+  <data name="MENUTIMEBUYINGUNSET" xml:space="preserve">
+    <value>Unset</value>
+  </data>
+  <data name="MENUUNBLOCKINPUT" xml:space="preserve">
+    <value>Unblock</value>
+  </data>
+  <data name="MENUUNCONDINTIONALSET" xml:space="preserve">
+    <value>Uncodintional set AA</value>
+  </data>
+  <data name="MENUUNSET" xml:space="preserve">
+    <value>Unset</value>
+  </data>
+  <data name="MENUUNSETAA" xml:space="preserve">
+    <value>Unset AA</value>
+  </data>
+  <data name="MENUUNSETALL" xml:space="preserve">
+    <value>Unset all</value>
+  </data>
+  <data name="MENUUNSETANDACKNOWLEDGEAA" xml:space="preserve">
+    <value>Unset and acknowledge AA</value>
+  </data>
+  <data name="Missing" xml:space="preserve">
+    <value>Missing</value>
+  </data>
+  <data name="NoAAtoSetOrUnset" xml:space="preserve">
+    <value>No alarm areas to set or unset.</value>
+  </data>
+  <data name="NoActionForCurrentCard" xml:space="preserve">
+    <value>No action for current card.</value>
+  </data>
+  <data name="PerformAction" xml:space="preserve">
+    <value>Perform an action?</value>
+  </data>
+  <data name="PerformedBy" xml:space="preserve">
+    <value>Performed by</value>
+  </data>
+  <data name="Remining" xml:space="preserve">
+    <value>Remining</value>
+  </data>
+  <data name="SeeClientForMoreInfo" xml:space="preserve">
+    <value>See Client for more info</value>
+  </data>
+  <data name="SetAAfailed" xml:space="preserve">
+    <value>Set alarm area failed</value>
+  </data>
+  <data name="SetAAsucceeded" xml:space="preserve">
+    <value>Set alarm area succeeded</value>
+  </data>
+  <data name="SetFailure" xml:space="preserve">
+    <value>Set alarm areas failed. Set alarm areas: {0}</value>
+  </data>
+  <data name="SetSuccess" xml:space="preserve">
+    <value>Set alarm areas succeeded</value>
+  </data>
+  <data name="TimeBuyingFailed" xml:space="preserve">
+    <value>Time buying failed.  Reason:</value>
+  </data>
+  <data name="TimeBuyingRequired" xml:space="preserve">
+    <value>Some alarm areas require time buying.</value>
+  </data>
+  <data name="TimeBuyingSucceeded" xml:space="preserve">
+    <value>Time buying succeeded.</value>
+  </data>
+  <data name="UnconditionalSetAAfailed" xml:space="preserve">
+    <value>Unc. set alarm area failed</value>
+  </data>
+  <data name="UnconditionalSetAAsucceeded" xml:space="preserve">
+    <value>Unc. set alarm area succeeded</value>
+  </data>
+  <data name="UNKNOWN" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="UnsetAAfailed" xml:space="preserve">
+    <value>Unset alarm area failed</value>
+  </data>
+  <data name="UnsetAAsucceeded" xml:space="preserve">
+    <value>Unset alarm area succeeded</value>
+  </data>
+  <data name="UnsetFailure" xml:space="preserve">
+    <value>Unset for some alarm areas failed. Unset alarm areas: {0}</value>
+  </data>
+  <data name="UnsetSuccess" xml:space="preserve">
+    <value>Unset alarm areas succeeded</value>
+  </data>
+  <data name="WaitingForEIS" xml:space="preserve">
+    <value>Waiting for EIS</value>
+  </data>
+  <data name="Alarm" xml:space="preserve">
+    <value>Alarm</value>
+  </data>
+  <data name="Block" xml:space="preserve">
+    <value>Block</value>
+  </data>
+  <data name="Break" xml:space="preserve">
+    <value>Break</value>
+  </data>
+  <data name="intrusion" xml:space="preserve">
+    <value>Intrusion</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="Object" xml:space="preserve">
+    <value>Object: </value>
+  </data>
+  <data name="sabotage" xml:space="preserve">
+    <value>Sabotage</value>
+  </data>
+  <data name="Short" xml:space="preserve">
+    <value>Short</value>
+  </data>
+  <data name="Tamper" xml:space="preserve">
+    <value>Tamper</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type: </value>
+  </data>
+  <data name="Acknowledge" xml:space="preserve">
+    <value>Acknowledge</value>
+  </data>
+  <data name="AcknowledgeAndBlock" xml:space="preserve">
+    <value>Acknowledge and block</value>
+  </data>
+  <data name="AcknowledgeInputAlarm" xml:space="preserve">
+    <value>Acknowledge input alarm</value>
+  </data>
+  <data name="AlarmAreaAlarmStateChangeAlarm" xml:space="preserve">
+    <value>Alarm area state changed alarm</value>
+  </data>
+  <data name="AlarmAreaAlarmStateChanged" xml:space="preserve">
+    <value>Alarm Area alarm state changed</value>
+  </data>
+  <data name="AlarmAreaBoughtTimeChanged" xml:space="preserve">
+    <value>Alarm area bought time changed</value>
+  </data>
+  <data name="AlarmAreaBoughtTimeExpired" xml:space="preserve">
+    <value>Alarm area bought time expired</value>
+  </data>
+  <data name="AlarmAreaSabotageStateChanged" xml:space="preserve">
+    <value>Alarm area sabotage state changed</value>
+  </data>
+  <data name="AlarmAreaSetFromCRFailed" xml:space="preserve">
+    <value>Alarm area set from CR failed</value>
+  </data>
+  <data name="AlarmAreaTimeBuyingFailed" xml:space="preserve">
+    <value>Alarm area time buying failed</value>
+  </data>
+  <data name="BlockedInputChanged" xml:space="preserve">
+    <value>Blocked input changed</value>
+  </data>
+  <data name="BuyTime" xml:space="preserve">
+    <value>BuyTime</value>
+  </data>
+  <data name="Card" xml:space="preserve">
+    <value>Card</value>
+  </data>
+  <data name="InputStateChanged" xml:space="preserve">
+    <value>Input state changed</value>
+  </data>
+  <data name="lastBoughtTime" xml:space="preserve">
+    <value>Last bought time</value>
+  </data>
+  <data name="locked" xml:space="preserve">
+    <value>locked</value>
+  </data>
+  <data name="NotConfirmSetUnsetAAFromEIS" xml:space="preserve">
+    <value>Not confirm set/unset alarm area from EIS</value>
+  </data>
+  <data name="ObjectType" xml:space="preserve">
+    <value>Object type</value>
+  </data>
+  <data name="Off" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="On" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="Prewarning" xml:space="preserve">
+    <value>Prewarning</value>
+  </data>
+  <data name="RemainingTime" xml:space="preserve">
+    <value>Remaining time</value>
+  </data>
+  <data name="Set" xml:space="preserve">
+    <value>Set</value>
+  </data>
+  <data name="SetAlarmAreaByObjectForAutomaticActivation" xml:space="preserve">
+    <value>Set alarm area by object for automatic activation</value>
+  </data>
+  <data name="SetAlarmAreaFromCardReader" xml:space="preserve">
+    <value>Set alarm area</value>
+  </data>
+  <data name="SetAlarmAreaFromClient" xml:space="preserve">
+    <value>Set alarm area from client</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>State:</value>
+  </data>
+  <data name="TemporarilyBlockedInputChanged" xml:space="preserve">
+    <value>Temporarily blocked input changed</value>
+  </data>
+  <data name="TimeToBuy" xml:space="preserve">
+    <value>Time to buy</value>
+  </data>
+  <data name="totalBoughtTime" xml:space="preserve">
+    <value>Total bought time</value>
+  </data>
+  <data name="UnconditionaSet" xml:space="preserve">
+    <value>Unconditiona set</value>
+  </data>
+  <data name="unlocked" xml:space="preserve">
+    <value>unlocked</value>
+  </data>
+  <data name="Unset" xml:space="preserve">
+    <value>Unset</value>
+  </data>
+  <data name="UnsetAlarmAreaByObjectForAutomaticActivation" xml:space="preserve">
+    <value>Unset alarm area by object for automatic activation</value>
+  </data>
+  <data name="UnsetAlarmAreaFromCardReader" xml:space="preserve">
+    <value>Unset alarm area from card reader</value>
+  </data>
+  <data name="UnsetAlarmAreaFromClient" xml:space="preserve">
+    <value>Unset alarm area from client</value>
+  </data>
+  <data name="UsedTime" xml:space="preserve">
+    <value>Used time</value>
+  </data>
+  <data name="MENUSENSORACKNOWLEDGEALLALARMAREAS" xml:space="preserve">
+    <value>Acknowledge all</value>
+  </data>
+  <data name="AlarmArea" xml:space="preserve">
+    <value>Alarm area</value>
+  </data>
+  <data name="AlarmAreaCanNotBeSet" xml:space="preserve">
+    <value>Alam area cannot be set, some sensors are in alarm state</value>
+  </data>
+  <data name="EventlogState_Set" xml:space="preserve">
+    <value>Set</value>
+  </data>
+  <data name="EventlogState_Unset" xml:space="preserve">
+    <value>Unset</value>
+  </data>
+  <data name="TimeBuyingErrors" xml:space="preserve">
+    <value>Time buying failed for some alarm areas.</value>
+  </data>
+  <data name="ObjectType_DailyPlan" xml:space="preserve">
+    <value>Daily plan</value>
+  </data>
+  <data name="ObjectType_Input" xml:space="preserve">
+    <value>Input</value>
+  </data>
+  <data name="ObjectType_Output" xml:space="preserve">
+    <value>Output</value>
+  </data>
+  <data name="ObjectType_TimeZone" xml:space="preserve">
+    <value>Time zone</value>
+  </data>
+  <data name="Blocked" xml:space="preserve">
+    <value>Blocked</value>
+  </data>
+  <data name="Unblocked" xml:space="preserve">
+    <value>Unblocked</value>
+  </data>
+  <data name="Unlimited" xml:space="preserve">
+    <value>Unlimited</value>
+  </data>
+  <data name="MissingTime" xml:space="preserve">
+    <value>Missing time</value>
+  </data>
+  <data name="MENUEVENTLOGEMPTY" xml:space="preserve">
+    <value>No events</value>
+  </data>
+  <data name="Acknowledged" xml:space="preserve">
+    <value>Acknowledged</value>
+  </data>
+  <data name="MENUSENSORSINALARM" xml:space="preserve">
+    <value>Sensors in alarm</value>
+  </data>
+  <data name="MENUSENSORSINSABOTAGE" xml:space="preserve">
+    <value>Sensors in sabotage</value>
+  </data>
+  <data name="MENUSENSORSNOTACKNOWLEDGED" xml:space="preserve">
+    <value>Sensors not acknowledged</value>
+  </data>
+  <data name="MENUSENSORSPERMANENTLYBLOCKED" xml:space="preserve">
+    <value>Sensors perm. blocked</value>
+  </data>
+  <data name="MENUSENSORSTEMPORARILYBLOCKED" xml:space="preserve">
+    <value>Sensors temp. blocked</value>
+  </data>
+  <data name="QuestionDoYouWantToProceedWithUnblockingInput" xml:space="preserve">
+    <value>There are actions bound to this inputs's state. They will be executed after the input is unblocked. Do you want to proceed with unblocking?</value>
+  </data>
+  <data name="QuestionDoYouWantToProceedWithUnblockingInputs" xml:space="preserve">
+    <value>There are actions bound to state of some inputs. They will be executed after the inputs are unblocked. Do you want to proceed with unblocking?</value>
+  </data>
+  <data name="AlarmAreaSensorAlarmAcknowledged" xml:space="preserve">
+    <value>Sensor alarm acknowledged</value>
+  </data>
+  <data name="AlarmAreaSensorBlockingTypeChanged" xml:space="preserve">
+    <value>Sensor blocking type changed</value>
+  </data>
+  <data name="AlarmAreaSensorStateChangedOnlyForCardReader" xml:space="preserve">
+    <value>Sensor state changed</value>
+  </data>
+  <data name="UnsetNotAcknowledgedInSetPeriodList" xml:space="preserve">
+    <value>AAs with nonack. alarm during set period:</value>
+  </data>
+  <data name="UnsetNotAcknowledgedInSetPeriodAll" xml:space="preserve">
+    <value>+{0} more. Press 'Yes' to see them all</value>
+  </data>
+  <data name="NoAlarmAreasToDisplay" xml:space="preserve">
+    <value>There are no alarm areas to display in this menu</value>
+  </data>
+  <data name="NoAlarmAreasWithEventlogsToDisplay" xml:space="preserve">
+    <value>There are no alarm areas with eventlogs to be displayed</value>
+  </data>
+  <data name="NoEventsToDisplay" xml:space="preserve">
+    <value>There are no events to display for this alarm area</value>
+  </data>
+  <data name="NoItemsToDisplay" xml:space="preserve">
+    <value>There are no items to display</value>
+  </data>
+  <data name="MenuAlarmAreaPanel" xml:space="preserve">
+    <value>Alarm panel</value>
+  </data>
+</root>

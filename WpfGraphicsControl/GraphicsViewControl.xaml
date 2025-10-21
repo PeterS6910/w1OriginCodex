@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="Contal.Cgp.NCAS.WpfGraphicsControl.GraphicsViewControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="500" Width="900" KeyUp="GraphicsViewControl_OnKeyUp" Loaded="GraphicsViewControl_OnLoaded" Focusable="True">
+    <Grid Name="_mainGrid" Background="Beige">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <ToolBar HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,0" Name="_tbMainMenu" Grid.Row="0" Grid.ColumnSpan="2">
+            <Button  HorizontalAlignment="Left" VerticalAlignment="Top"   Name="_bSaveScene" ToolTip="Save scene" Click="_bSaveView_OnClick">
+                <Image Width="50" Height="50" Source="Resources\save.png"></Image>
+            </Button>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,0,0,0" Name="_bSwitchToEditMode" ToolTip="Switch to Edit mode" 
+                    Click="_bSwitchToEditMode_OnClick">
+                <Image Width="50" Height="50" Source="Resources\switch_to_editmode.png"></Image>
+            </Button>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,0,0,0" Name="_bAddSceneBox" ToolTip="Add a scene box" 
+                    Click="_bAddScene_Click">
+                <Image Width="50" Height="50" Source="Resources\ShowScenes.png"></Image>
+            </Button>
+            <Button  HorizontalAlignment="Left" VerticalAlignment="Top" Name="_bGoHome" ToolTip="Home" Click="_bGoHome_OnClick">
+                <Image Width="50" Height="50" Source="Resources\GoHome.png"></Image>
+            </Button>
+            <Button  HorizontalAlignment="Left" VerticalAlignment="Top" Name="_bGoBack" ToolTip="Back" Click="_bGoBack_OnClick">
+                <Image Width="50" Height="50" Source="Resources\GoBack.png"></Image>
+            </Button>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top"  Name="_bDelete" ToolTip="Delete" Click="_bRemoveScene_OnClick">
+                <Image Width="50" Height="50" Source="Resources\Delete.png"></Image>
+            </Button>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,0,0,0" Name="_bSwitchToViewMode" ToolTip="Switch to View mode" 
+                    Click="_bSwitchToRunMode_OnClick">
+                <Image Width="50" Height="50" Source="Resources\SwitchToViewMode.png"></Image>
+            </Button>
+        </ToolBar>
+        
+        <Canvas  Grid.Column="0" Grid.Row="1" Margin="0,0,0,0" Name="_canvasScenes" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" ClipToBounds="True"
+                MouseDown="_canvasScenes_OnMouseDown" MouseMove="_canvasScenes_OnMouseMove" MouseUp="_canvasScenes_OnMouseUp" Background="Aqua"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,569 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EC67C840-3C7F-470E-9E50-1F8598E038F9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Contal.Cgp.NCAS.CCU</RootNamespace>
+    <AssemblyName>CCU</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.0</OSVersion>
+    <DeployDirSuffix>\nandflash\CCU</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <DeployDirPrefix>\</DeployDirPrefix>
+    <SccProjectName></SccProjectName>
+    <SccLocalPath></SccLocalPath>
+    <SccAuxPath></SccAuxPath>
+    <SccProvider></SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>3</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Designer|AnyCPU' ">
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+    <OutputPath>bin\Designer\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug - EMULATOR|AnyCPU' ">
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug - EMULATOR\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WindowsCE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release - Setup|AnyCPU' ">
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <OutputPath>bin\Release - Setup\</OutputPath>
+    <DefineConstants>TRACE;WindowsCE</DefineConstants>
+    <Optimize>true</Optimize>
+    <WarningLevel>3</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release %28Special%29|AnyCPU' ">
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <OutputPath>bin\Release %28Special%29\</OutputPath>
+    <DefineConstants>TRACE;WindowsCE</DefineConstants>
+    <Optimize>true</Optimize>
+    <WarningLevel>3</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BoolExpressions, Version=1.0.8319.15969, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\BoolExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="CardReaderDrivers.CF35, Version=1.5.8319.15038, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\CardReaderDrivers.CF35.dll</HintPath>
+    </Reference>
+    <Reference Include="CardReaderDriversDefinitions.CF35, Version=1.0.8319.15037, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\CardReaderDriversDefinitions.CF35.dll</HintPath>
+    </Reference>
+    <Reference Include="CatCom.CF35, Version=1.0.8319.15759, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\CatCom.CF35.dll</HintPath>
+    </Reference>
+    <Reference Include="ClspDrivers.CF35, Version=1.0.8319.16428, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\ClspDrivers.CF35.dll</HintPath>
+    </Reference>
+    <Reference Include="ClspDriversDefinitions, Version=1.0.8319.16401, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\ClspDriversDefinitions.dll</HintPath>
+    </Reference>
+    <Reference Include="ClspHwCommDrivers, Version=1.0.8319.16076, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\ClspHwCommDrivers.dll</HintPath>
+    </Reference>
+    <Reference Include="DoorStateMachine.CF35, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\DoorStateMachine.CF35.dll</HintPath>
+    </Reference>
+    <Reference Include="IwQuick.CF35, Version=2.9.7815.12474, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\IwQuick.CF35.dll</HintPath>
+    </Reference>
+    <Reference Include="LPC3250Drivers, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\LPC3250Drivers.dll</HintPath>
+    </Reference>
+    <Reference Include="LwMessaging.CF35, Version=1.0.8319.15717, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\LwMessaging.CF35.dll</HintPath>
+    </Reference>
+    <Reference Include="LwRemoting2.CF35, Version=1.0.8319.15862, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\LwRemoting2.CF35.dll</HintPath>
+    </Reference>
+    <Reference Include="LwSerialization2.CF35, Version=1.0.8319.15622, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\LwSerialization2.CF35.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=3be235df1c8d2ad3, processorArchitecture=MSIL" />
+    <Reference Include="System.Linq.Expressions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlarmAreaAccessRightsManager.cs" />
+    <Compile Include="AlarmArea\AlarmAreas.cs" />
+    <Compile Include="DCUCardReaderSettings.cs" />
+    <Compile Include="DcuRunningTest.cs" />
+    <Compile Include="DevicesAlarmSettings.cs" />
+    <Compile Include="DoorEnvironmentSettings.cs" />
+    <Compile Include="EventParameters\EventParameters.cs" />
+    <Compile Include="GuidAndObjectType.cs" />
+    <Compile Include="IConfigObjectsEngine.cs" />
+    <Compile Include="InterCCUCommunication.cs" />
+    <Compile Include="UpsProto2750.cs" />
+    <Compile Include="Tampers.cs" />
+    <Compile Include="CardAccessRightsManager.cs" />
+    <Compile Include="CardReaderMechanism\ACardReaderSettings.cs" />
+    <Compile Include="CardSystemData.cs" />
+    <Compile Include="CCUConfigurationState.cs" />
+    <Compile Include="CcuCore.cs" />
+    <Compile Include="CcuCoreRemotingProvider.cs" />
+    <Compile Include="CcuSpecialInputs.cs" />
+    <Compile Include="CCUs.cs" />
+    <Compile Include="BlockFile.cs" />
+    <Compile Include="ConfigurePass.cs" />
+    <Compile Include="DB\DevicesAlarmSetting.cs" />
+    <Compile Include="DB\SecurityTimeZone.cs" />
+    <Compile Include="DB\SecurityTimeZoneDateSetting.cs" />
+    <Compile Include="ObjectsToSend.cs" />
+    <Compile Include="SecurityTimeZones.cs" />
+    <Compile Include="TimeZones.cs" />
+    <Compile Include="DailyPlans.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="DB\AACardReader.cs" />
+    <Compile Include="DB\AAInput.cs" />
+    <Compile Include="DB\AccessZone.cs" />
+    <Compile Include="DB\ACLPerson.cs" />
+    <Compile Include="DB\ACLSetting.cs" />
+    <Compile Include="DB\IDbObject.cs" />
+    <Compile Include="DB\ACLSettingAA.cs" />
+    <Compile Include="DB\AlarmArea.cs" />
+    <Compile Include="DB\Calendar.cs" />
+    <Compile Include="DB\CalendarDateSettings.cs" />
+    <Compile Include="DB\Card.cs" />
+    <Compile Include="DB\CardReader.cs" />
+    <Compile Include="DB\CardSystem.cs" />
+    <Compile Include="DB\CCU.cs" />
+    <Compile Include="DB\DCU.cs" />
+    <Compile Include="DB\SecurityDailyPlan.cs" />
+    <Compile Include="DB\SecurityDayInterval.cs" />
+    <Compile Include="DB\DailyPlan.cs" />
+    <Compile Include="DB\DayType.cs" />
+    <Compile Include="DB\DoorEnvironment.cs" />
+    <Compile Include="DB\Input.cs" />
+    <Compile Include="DB\Output.cs" />
+    <Compile Include="DB\TimeZone.cs" />
+    <Compile Include="DB\TimeZoneDateSetting.cs" />
+    <Compile Include="CardReaders.cs" />
+    <Compile Include="DCUs.cs" />
+    <Compile Include="DoorEnvironments.cs" />
+    <Compile Include="Events.cs" />
+    <Compile Include="Inputs.cs" />
+    <Compile Include="IPSettings.cs" />
+    <Compile Include="Outputs.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RPN\ConstantsRPN.cs" />
+    <Compile Include="RPN\PerformRPN.cs" />
+    <Compile Include="RPN\SupportRPN.cs" />
+    <Compile Include="SecurityDailyPlans.cs" />
+    <Compile Include="Serialization.cs" />
+    <Compile Include="UPSMonitor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cgp.NCAS.Definitions\Cgp.NCAS.DefinitionsCF.csproj">
+      <Project>{7A441AF7-53A8-4D8B-A9E7-4E6BC8671E45}</Project>
+      <Name>Cgp.NCAS.DefinitionsCF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.NCAS.Globals\Cgp.NCAS.GlobalsCF.csproj">
+      <Project>{09782216-EB53-4E3E-8DE0-33B7672618E0}</Project>
+      <Name>Cgp.NCAS.GlobalsCF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.Globals\Cgp.GlobalsCF.csproj">
+      <Project>{97389416-25F1-4AE3-98D7-D45934DD7F98}</Project>
+      <Name>Cgp.GlobalsCF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CrSceneFramework\CrSceneFrameworkCF.csproj">
+      <Project>{ADA63675-FC96-4F70-9D77-5381171C35C0}</Project>
+      <Name>CrSceneFrameworkCF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NodeDataProtocol\NodeDataProtocol.csproj">
+      <Project>{3D6CFE32-CED7-4BAC-97E7-FE41E1339234}</Project>
+      <Name>NodeDataProtocol</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Binaries\FilePackerTool.exe" />
+    <Content Include="Binaries\IwQuick.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Binaries\Siaqodb.dll" />
+    <Content Include="Binaries\System.Linq.Expressions.dll" />
+    <None Include="CEKickstart.exe">
+      <Link>CEKickstart/CEKickstart.exe</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="CLSP_HWC.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlarmAreaStates.cs" />
+    <Compile Include="AlarmArea\AlarmAreaStateAndSettings.cs" />
+    <Compile Include="AlarmArea\AAlarmAreaController.OnOffObjectHandlers.cs" />
+    <Compile Include="Alarms\AlarmAreaAAlarm.cs" />
+    <Compile Include="Alarms\AlarmAreaAlarm.cs" />
+    <Compile Include="Alarms\CcuBatteryLowAlarm.cs" />
+    <Compile Include="Alarms\CcuCoprocessorFailureAlarm.cs" />
+    <Compile Include="Alarms\CcuExtFuseAlarm.cs" />
+    <Compile Include="Alarms\CcuFileSystemProblemAlarm.cs" />
+    <Compile Include="Alarms\CcuHighMemoryLoadAlarm.cs" />
+    <Compile Include="Alarms\CcuPrimaryPowerMissingAlarm.cs" />
+    <Compile Include="Alarms\CcuSdCardNotFoundAlarm.cs" />
+    <Compile Include="Alarms\CcuTamperAlarm.cs" />
+    <Compile Include="Alarms\CcuUpsBatteryFaultAlarm.cs" />
+    <Compile Include="Alarms\CcuUpsBatteryFuseAlarm.cs" />
+    <Compile Include="Alarms\CcuUpsOutputFuseAlarm.cs" />
+    <Compile Include="Alarms\CcuUpsOvertemperatureAlarm.cs" />
+    <Compile Include="Alarms\CcuUpsTamperSabotageAlarm.cs" />
+    <Compile Include="Alarms\CrAccessDeniedAlarm.cs" />
+    <Compile Include="Alarms\CrAccessPermittedAlarm.cs" />
+    <Compile Include="Alarms\CrCardBlockedOrInactiveAlarm.cs" />
+    <Compile Include="Alarms\CrInvalidEmergencyCodeAlarm.cs" />
+    <Compile Include="Alarms\CrInvalidCodeAlarm.cs" />
+    <Compile Include="Alarms\CrInvalidCodeRetriesLimitReached.cs" />
+    <Compile Include="Alarms\CrInvalidPinAlarm.cs" />
+    <Compile Include="Alarms\CrOfflineAlarm.cs" />
+    <Compile Include="Alarms\CrTamperAlarm.cs" />
+    <Compile Include="Alarms\CrUnknownCardAlarm.cs" />
+    <Compile Include="Alarms\DcuOfflineAlarm.cs" />
+    <Compile Include="Alarms\DcuTamperAlarm.cs" />
+    <Compile Include="Alarms\DeDoorAjarAlarm.cs" />
+    <Compile Include="Alarms\DeIntrusionAlarm.cs" />
+    <Compile Include="Alarms\DeSabotageAlarm.cs" />
+    <Compile Include="Alarms\IAlarmsStorage.cs" />
+    <Compile Include="Alarms\IccuPortAlreadyUsedAlarm.cs" />
+    <Compile Include="Alarms\IccuSendingOfObjectStateFailedAlarm.cs" />
+    <Compile Include="Alarms\InputAlarm.cs" />
+    <Compile Include="Alarms\InputTamperAlarm.cs" />
+    <Compile Include="Alarms\OutputAlarm.cs" />
+    <Compile Include="Alarms\SendAlarmsToServerDispatcher.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Access\AAccessAuthorizationProcess.cs" />
+    <Compile Include="CardReaderMechanism\CardPinAccessManager.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\AlarmAreas\AlarmAreaEditSceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\EmergencyCodeSceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\Sensors\AllSensorsForAlarmAreaSceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\RootSceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\Sensors\SensorEditSceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\Sensors\SensorsForAlarmAreaMenuScene.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\Sensors\FilteredSensorsForAlarmAreaSceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\Common\IAuthorizedSceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\Sensors\CategorizedSensorsMenuScene.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\Sensors\FilteredCategorizedSensorsSceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\Sensors\ASensorsForAlarmAreaSceneGroupBase.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\Sensors\GlobalAcknowledgeAllMenuItem.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\Eventlog\RootEventlogSceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\Eventlog\EventlogSceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\Common\ARootAlarmAreasSceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\AlarmAreas\ASetUnsetAllAlarmAreasQuestionSceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\AlarmAreas\UnconditionalSetAlarmAreaSceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\AlarmAreas\UnsetAllAlarmAreasProcess.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\AlarmAreas\TimeBuyingMenuScene.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\AlarmAreas\FilteredAlarmAreasSceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\AlarmAreas\AlarmAreasMenuScene.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\Common\AAlarmAreaSceneGroupBase.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\AlarmAreas\AShowInfoAlarmAreaSceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\AlarmAreas\ASetAlarmAreaMenuItemBase.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\AlarmAreas\AlarmAreaTimeBuyingSceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\Common\NoAccessToThisMenuSceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\AShowInfoScene.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Access\AccessSceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\CrSceneGroupWrapperScene.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\Eventlog\EventInfoSceneGroup.cs" />
+    <Compile Include="DB\AlarmArc.cs" />
+    <Compile Include="DB\AlarmTransmitter.cs" />
+    <Compile Include="EventParameters\EventParametersForAlarms.cs" />
+    <Compile Include="EventParameters\ICreateEventAlarmChanged.cs" />
+    <Compile Include="EventParameters\ICreateEventAlarmOccured.cs" />
+    <Compile Include="ExclusiveFilterForEventTypes.cs" />
+    <Compile Include="Alarms\AlarmsManager.cs" />
+    <Compile Include="AntiPassBackZones.cs" />
+    <Compile Include="AntiPassBackZoneSettings.cs" />
+    <Compile Include="PersonAccessRightsForCardReader.cs" />
+    <Compile Include="CardReaderMechanism\CrAlarmAreasManager.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\Sensors\RootCategorizedSensorsSceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\AlarmAreas\RootAlarmAreasSceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\HomeMenuSceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\CardReaderMechanism.InputChangeListeners.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\MenuItems.cs" />
+    <Compile Include="CardReaderMechanism\CrDisplayProcessor.cs" />
+    <Compile Include="CardReaderMechanism\CrEventlogProcessor.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\Common\ASceneAuthorizationSceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\MenuConfigurations.cs" />
+    <Compile Include="CardReaderMechanism\DoorEnvironmentAdapter.cs" />
+    <Compile Include="CardReaderMechanism\IDoorEnvironmentAdapter.cs" />
+    <Compile Include="CardReaderMechanism\MultiDoorAdapter.cs" />
+    <Compile Include="CcuCardReadersSettings.cs" />
+    <Compile Include="CCUCardInAntiPassBackZone.cs" />
+    <Compile Include="CcuCardReaders.cs" />
+    <Compile Include="CcuLiveConfigurator.cs" />
+    <Compile Include="DateIntervalTimeZone.cs" />
+    <Compile Include="DB\AntiPassBackZone.cs" />
+    <Compile Include="DB\MultiDoor.cs" />
+    <Compile Include="DB\MultiDoorElement.cs" />
+    <Compile Include="DCUStateAndSettings.cs" />
+    <Compile Include="EventParameters\EventParametersForAlarmAreas.cs" />
+    <Compile Include="EventParameters\EventParametersForAntiPassbackZones.cs" />
+    <Compile Include="EventParameters\EventParametersForCardReaders.cs" />
+    <Compile Include="EventParameters\EventParametersForDcus.cs" />
+    <Compile Include="EventParameters\EventParametersForDoorEnvironments.cs" />
+    <Compile Include="EventParameters\EventParametersForInputs.cs" />
+    <Compile Include="EventParameters\EventParametersForOutputs.cs" />
+    <Compile Include="EventParameters\EventParametersForSystem.cs" />
+    <Compile Include="EventParameters\EventParametersForUpcMonitor.cs" />
+    <Compile Include="EventParameters\EventParametersForUpgrade.cs" />
+    <Compile Include="EventsForCardReadersDispatcher.cs" />
+    <Compile Include="ICard.cs" />
+    <Compile Include="ICardsStorage.cs" />
+    <Compile Include="IEventDispatcher.cs" />
+    <Compile Include="InputChangedEventHandlers.cs" />
+    <Compile Include="InputStateAndSettings.cs" />
+    <Compile Include="ICrEventlogEventsStorage.cs" />
+    <Compile Include="Localization\Localization.English.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localization.English.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\Localization.Slovak.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localization.Slovak.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\Localization.Swedish.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localization.Swedish.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MultiDoorElements.cs" />
+    <Compile Include="MultiDoorElementSettings.cs" />
+    <Compile Include="MultiDoors.cs" />
+    <Compile Include="MultiDoorSettings.cs" />
+    <Compile Include="OldEventsSettings.cs" />
+    <Compile Include="OutputController.cs" />
+    <Compile Include="OutputStateAndSettings.cs" />
+    <Compile Include="SendEventsToServerDispatcher.cs" />
+    <Compile Include="GlobalEventIds.cs" />
+    <Compile Include="DB\StoredCardInAntiPassBackZone.cs" />
+    <Compile Include="UniqueDateTime.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Localization\Localization.English.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.English.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\Localization.Slovak.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.Slovak.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\Localization.Swedish.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.Swedish.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alarms\CcuCatUnreachableAlarm.cs" />
+    <Compile Include="Alarms\CcuTransferToArcTimedOutAlarm.cs" />
+    <Compile Include="Alarms\CatAlarmsManager.cs" />
+    <Compile Include="Alarms\BlockingAlarmListener.cs" />
+    <Compile Include="Alarms\BlockedAlarmsManager.cs" />
+    <Compile Include="Alarms\ICreateCatAlarms.cs" />
+    <Compile Include="Alarms\IGetCreateAlarmFactoryWhenAlarmWasEnabled.cs" />
+    <Compile Include="Alarms\ICreateAlarmFactoryWhenAlarmWasEnabled.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Access\AccessRedundantScene.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\AlarmAreas\QuickSetUnsetSceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\BaseRootScene.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\ImplicitCodeScene.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\Common\AAlarmAreasMenuItemsProviderBase.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\Common\ASceneAuthorizationProcess.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\AlarmAreas\ASetAlarmAreaRouteProviderBase.cs" />
+    <Compile Include="CardReaderMechanism\CrIconSymbol.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlarmArea\AAlarmAreaController.cs" />
+    <Compile Include="AlarmArea\CcuAlarmAreaController.cs" />
+    <Compile Include="AlarmArea\CcuAlarmAreaController.SensorStateAndSettings.cs" />
+    <Compile Include="AlarmArea\ExternalAlarmAreaController.cs" />
+    <Compile Include="AlarmArea\IAlarmAreaController.cs" />
+    <Compile Include="AlarmArea\IAlarmAreaEventHandler.cs" />
+    <Compile Include="AlarmArea\IAlarmAreaSensorsEventHandler.cs" />
+    <Compile Include="AlarmArea\IAlarmAreaStateAndSettings.cs" />
+    <Compile Include="AlarmArea\ISensorStateAndSettings.cs" />
+    <Compile Include="Alarms\AlarmAreaSetByOnOffObjectFailedAlarm.cs" />
+    <Compile Include="Alarms\CatAlarmsCollection.cs" />
+    <Compile Include="Alarms\CatComClientEventHandler.cs" />
+    <Compile Include="Alarms\CrInvalidPinRetriesLimitReached.cs" />
+    <Compile Include="Alarms\IAlarmLoadFromDatabasePostprocessing.cs" />
+    <Compile Include="Alarms\SensorAlarm.cs" />
+    <Compile Include="Alarms\SensorTamperAlarm.cs" />
+    <Compile Include="AlarmTransmitters.cs" />
+    <Compile Include="AQueuedStateAndSettingsObject.cs" />
+    <Compile Include="AStateAndSettingsObject.cs" />
+    <Compile Include="AStateAndSettingsObjectBase.cs" />
+    <Compile Include="AStateAndSettingsObjectCollection.cs" />
+    <Compile Include="CardReaderMechanism\ICrAlarmAreaEventHandler.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\AccessDeniedSceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Access\AccessDeniedScene.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\ACcuAuthorizationProcess.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\AlarmAreas\AlarmAreaAccessManager.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\AlarmAreas\SetAllAlarmAreasQuestionSceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\AlarmAreas\UnsetAllAlarmAreasSceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\Common\AAlarmAreaAccessInfoBase.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\Common\AAlarmAreaAccessManagerBase.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\Common\ASceneAuthorizationSceneGroupByEntrySL.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\Common\FilteredAlarmAreasSceneGroupBase.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\FunctionKeys\FunctionKeySceneGroup.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\Sensors\AlarmAreaSensorListener.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\Sensors\CategorizedSensorsAccessInfo.cs" />
+    <Compile Include="CardReaderMechanism\Scenes\Menu\Sensors\CategorizedSensorsAccessManager.cs" />
+    <Compile Include="CardReaderUpgradeProcess.cs" />
+    <Compile Include="DB\IDbObjectChangeListener.cs" />
+    <Compile Include="DB\Person.cs" />
+    <Compile Include="IAACardReadersStorage.cs" />
+    <Compile Include="IAccessZonesStorage.cs" />
+    <Compile Include="IAclPersonsStorage.cs" />
+    <Compile Include="IAclSettingAAsStorage.cs" />
+    <Compile Include="IAclSettingsStorage.cs" />
+    <Compile Include="IApbzStorage.cs" />
+    <Compile Include="IAutonomousEventsEngine.cs" />
+    <Compile Include="IdCardReaderApbzCrEntryExitBy.cs" />
+    <Compile Include="IDcuStateAndSettings.cs" />
+    <Compile Include="IDoorEnvironmentsStorage.cs" />
+    <Compile Include="IPersonsStorage.cs" />
+    <Compile Include="LogicalConfigurator\LogicalConfigurator.cs" />
+    <Compile Include="LogicalConfigurator\LogicalConfigurator.SpecialOuputsConfigurator.cs" />
+    <Compile Include="MaximumVersionAndIds.cs" />
+    <Compile Include="NandFlashInfo.cs" />
+    <Compile Include="SdCardInfo.cs" />
+    <Compile Include="SqlCeDbEngine\ASqlCeDbAccessorBase.cs" />
+    <Compile Include="SqlCeDbEngine\ASqlCeDbAccessor.cs" />
+    <Compile Include="SqlCeDbEngine\ASqlCeDbDelayedAccessor.cs" />
+    <Compile Include="SqlCeDbEngine\ISqlCeDbAccessorBase.cs" />
+    <Compile Include="SqlCeDbEngine\ISqlCeDbAccessor.cs" />
+    <Compile Include="SqlCeDbEngine\SqlCeDbAACardReadersAccessor.cs" />
+    <Compile Include="SqlCeDbEngine\SqlCeDbConfigObjectsAccessor.cs" />
+    <Compile Include="SqlCeDbEngine\SqlCeDbAccessZonesAccessor.cs" />
+    <Compile Include="SqlCeDbEngine\SqlCeDbAclPersonsAccessor.cs" />
+    <Compile Include="SqlCeDbEngine\SqlCeDbAclSettingAAsAccessor.cs" />
+    <Compile Include="SqlCeDbEngine\SqlCeDbAclSettingsAccessor.cs" />
+    <Compile Include="SqlCeDbEngine\SqlCeDbAlarmsStorage.cs" />
+    <Compile Include="SqlCeDbEngine\SqlCeDbApbzStorage.cs" />
+    <Compile Include="SqlCeDbEngine\SqlCeDbAutonomousEventsAcessor.cs" />
+    <Compile Include="SqlCeDbEngine\SqlCeDbAutonomousEventsEngine.cs" />
+    <Compile Include="SqlCeDbEngine\SqlCeDbCardsAccessor.cs" />
+    <Compile Include="SqlCeDbEngine\SqlCeDbCommand.cs" />
+    <Compile Include="SqlCeDbEngine\SqlCeDbCrEventlogEventsStorage.cs" />
+    <Compile Include="SqlCeDbEngine\SqlCeDbDoorEnvironmentsAccessor.cs" />
+    <Compile Include="SqlCeDbEngine\SqlCeDbConfigObjectsEngine.cs" />
+    <Compile Include="SqlCeDbEngine\ASqlCeDbEngine.cs" />
+    <Compile Include="SqlCeDbEngine\SqlCeDbMultiDoorElementsAccessor.cs" />
+    <Compile Include="SqlCeDbEngine\SqlCeDbPersonsAccessor.cs" />
+    <Compile Include="SqlCeDbEngine\SqlCeDbResultSet.cs" />
+    <Compile Include="SqlCeDbEngine\SqlCeDbVersionHelper.cs" />
+    <Compile Include="StateObjects.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CEKickstart\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <CcuUpgraderBinaries Include="$(SolutionDir)Cgp.NCAS.CCUUpgrader\bin\$(ConfigurationName)\*.exe" />
+    <CcuUpgraderBinaries Include="$(SolutionDir)Cgp.NCAS.CCUUpgrader\bin\$(ConfigurationName)\*.txt" />
+    <CcuUpgraderBinaries Include="$(SolutionDir)Cgp.NCAS.CCUUpgrader\bin\$(ConfigurationName)\*.dll" />
+  </ItemGroup>
+  <Target Name="AfterBuild">
+    <Copy DestinationFolder="$(OutputPath)CEKickstart" SourceFiles="$(OutputPath)IwQuick.CF35.dll;$(OutputPath)LPC3250Drivers.dll" SkipUnchangedFiles="true">
+    </Copy>
+    <!--Section for copying CCUUpgrader build output into CCU build output-->
+    <Copy SourceFiles="@(CcuUpgraderBinaries)" DestinationFolder="$(TargetDir)CCUUpgrader\">
+      <Output TaskParameter="CopiedFiles" ItemName="SuccessfullyCopiedFiles" />
+    </Copy>
+    <GetAssemblyIdentity AssemblyFiles="$(TargetPath)">
+      <Output TaskParameter="Assemblies" ItemName="CurrentAssembly" />
+    </GetAssemblyIdentity>
+    <Message Text="\tCCU.exe assemblyVersion: %(CurrentAssembly.Version)" Importance="high" />
+    <!--BEWARE of the spaces after the $(TargetDir) and before &quot; for proper recognition of the quoted sequences-->
+    <!--Section for packing the CCU build output into *.gz-->
+    <Exec Command="&quot;$(ProjectDir)Binaries\FilePackerTool.exe&quot; /t CCU  /va &quot;$(TargetPath)&quot;  /s &quot;$(TargetDir) &quot; /f &quot;$(ProjectDir)bin\CCU.gz &quot; /e *.pdb" />
+  </Target>
+  <PropertyGroup>
+    <!--<PostBuildEvent>"$(ProjectDir)Binaries\FilePackerTool.exe" /t CCU  /va "$(TargetPath)"  /s "$(TargetDir)\" /f "$(ProjectDir)bin\CCU.gz " /e *.pdb</PostBuildEvent>
+    &quot;$(ProjectDir)Binaries\FilePackerTool.exe&quot; /t CCU  /va &quot;$(TargetPath)&quot;  /s &quot;$(TargetDir)&quot; /f &quot;$(ProjectDir)bin\CCU.gz &quot; /e *.pdb" -->
+  </PropertyGroup>
+</Project>

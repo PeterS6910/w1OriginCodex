@@ -1,0 +1,4846 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ErrorEnterIPAddress" xml:space="preserve">
+    <value>IP Adresu je potrebné zadať.</value>
+  </data>
+  <data name="ErrorLanguageSelect" xml:space="preserve">
+    <value>Jazyk je potrebné zvoliť.</value>
+  </data>
+  <data name="GeneralOptionsFormGeneralOptionsForm" xml:space="preserve">
+    <value>Hlavné nastavenia</value>
+  </data>
+  <data name="General_bSave" xml:space="preserve">
+    <value>Uložiť</value>
+  </data>
+  <data name="LocalOptionsForm_bSaveLng" xml:space="preserve">
+    <value>Uložiť</value>
+  </data>
+  <data name="LocalOptionsForm_cbAES" xml:space="preserve">
+    <value>AES kryptovanie</value>
+  </data>
+  <data name="LocalOptionsForm_lAesKey" xml:space="preserve">
+    <value>Kľúč pre kryptovanie</value>
+  </data>
+  <data name="LocalOptionsForm_lFriendlyName" xml:space="preserve">
+    <value>Názov klienta</value>
+  </data>
+  <data name="LocalOptionsForm_lIPAddress" xml:space="preserve">
+    <value>IP Adresa</value>
+  </data>
+  <data name="LocalOptionsForm_lPort" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="LocalOptionsForm_tpLanguageSettings" xml:space="preserve">
+    <value>Nastavenie jazyka</value>
+  </data>
+  <data name="LocalOptionsForm_tpRemotingSettings" xml:space="preserve">
+    <value>Nastavenia remotingu</value>
+  </data>
+  <data name="PersonsFormDeleteConfirm" xml:space="preserve">
+    <value>Zmazať účet z tabuľky</value>
+  </data>
+  <data name="PersonsFormDeleteConfirmLabel" xml:space="preserve">
+    <value>Mazanie</value>
+  </data>
+  <data name="ErrorConnection" xml:space="preserve">
+    <value>Spojenie na vzdialený server nedostupné.</value>
+  </data>
+  <data name="ErrorInsertDateBirthday" xml:space="preserve">
+    <value>Dátum nie je správny.</value>
+  </data>
+  <data name="ErrorInsertName" xml:space="preserve">
+    <value>Zadajte meno</value>
+  </data>
+  <data name="ErrorInsertSurname" xml:space="preserve">
+    <value>Zadajte priezvisko</value>
+  </data>
+  <data name="ErrorInvalidData" xml:space="preserve">
+    <value>Vstupné dáta sú neplatné</value>
+  </data>
+  <data name="General_bCancel" xml:space="preserve">
+    <value>Zrušiť</value>
+  </data>
+  <data name="General_bDelete" xml:space="preserve">
+    <value>Zmazať</value>
+  </data>
+  <data name="General_bEdit" xml:space="preserve">
+    <value>Editovať</value>
+  </data>
+  <data name="General_bFilterClear" xml:space="preserve">
+    <value>Zrušiť</value>
+  </data>
+  <data name="General_bInsert" xml:space="preserve">
+    <value>Vložiť</value>
+  </data>
+  <data name="General_bOk" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="General_bRunFilter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="PersonEditForm_lDate" xml:space="preserve">
+    <value>Dátum narodenia</value>
+  </data>
+  <data name="PersonsForm_lDateFromFilter" xml:space="preserve">
+    <value>Dátum narodenia od</value>
+  </data>
+  <data name="PersonEditForm_lName" xml:space="preserve">
+    <value>Meno</value>
+  </data>
+  <data name="PersonsForm_lNameFilter" xml:space="preserve">
+    <value>Meno</value>
+  </data>
+  <data name="PersonEditForm_lNumber" xml:space="preserve">
+    <value>Osobné ID</value>
+  </data>
+  <data name="PersonsForm_lNumberFilter" xml:space="preserve">
+    <value>Osobné ID</value>
+  </data>
+  <data name="PersonEditForm_lSurname" xml:space="preserve">
+    <value>Priezvisko</value>
+  </data>
+  <data name="PersonsForm_lSurnameFilter" xml:space="preserve">
+    <value>Priezvisko</value>
+  </data>
+  <data name="PersonsForm_lFullTextSearch" xml:space="preserve">
+    <value>Celé meno</value>
+  </data>
+  <data name="PersonsForm_cbActivePersons" xml:space="preserve">
+    <value>Aktívne osoby</value>
+  </data>
+  <data name="PersonsForm_cbInactivePersons" xml:space="preserve">
+    <value>Neaktívne osoby</value>
+  </data>
+  <data name="PersonsForm_lDepartmentFilter" xml:space="preserve">
+    <value>Oddelenie</value>
+  </data>
+  <data name="PersonsFormPersonsForm" xml:space="preserve">
+    <value>Osoby</value>
+  </data>
+  <data name="PersonEditFormPersonEditForm" xml:space="preserve">
+    <value>Editovanie užívateľa</value>
+  </data>
+  <data name="ErrorDateRange" xml:space="preserve">
+    <value>Dátum je mino rozsahu</value>
+  </data>
+  <data name="ErrorInserPerson" xml:space="preserve">
+    <value>Pridanie užívateľa zlyhalo.</value>
+  </data>
+  <data name="ErrorUpdatePerson" xml:space="preserve">
+    <value>Editovanie užívateľa zlyhalo.</value>
+  </data>
+  <data name="ErrorDateFailed" xml:space="preserve">
+    <value>Dátum nie je platný</value>
+  </data>
+  <data name="ErrorDeleteFailed" xml:space="preserve">
+    <value>Chyba pri vymazávaní</value>
+  </data>
+  <data name="ErrorEditFailed" xml:space="preserve">
+    <value>Chyba pri editácii</value>
+  </data>
+  <data name="ErrorEntryUserName" xml:space="preserve">
+    <value>Užívateľské meno musí byť zadané</value>
+  </data>
+  <data name="ErrorFillPersonFailed" xml:space="preserve">
+    <value>Chyba pri načítavaní užívateľov</value>
+  </data>
+  <data name="ErrorGetValuesFailed" xml:space="preserve">
+    <value>Chyba pri čítaní dát z formulára</value>
+  </data>
+  <data name="ErrorInsertFailed" xml:space="preserve">
+    <value>Chyba pri vkladaní</value>
+  </data>
+  <data name="ErrorSelectFailed" xml:space="preserve">
+    <value>Chyba pri selecte z databázy</value>
+  </data>
+  <data name="ErrorSetValuesFailed" xml:space="preserve">
+    <value>Chyba pri nastavovaní dát do formulára</value>
+  </data>
+  <data name="LoginsFormLoginsForm" xml:space="preserve">
+    <value>Prihlásenia</value>
+  </data>
+  <data name="LoginsForm_lDisabledFilter" xml:space="preserve">
+    <value>Zablokovaný</value>
+  </data>
+  <data name="LoginsForm_lExpirationSetFilter" xml:space="preserve">
+    <value>Expirovaný</value>
+  </data>
+  <data name="LoginsForm_lUserNameFilter" xml:space="preserve">
+    <value>Užívateľské meno</value>
+  </data>
+  <data name="LoginEditFormDeleteConfirm" xml:space="preserve">
+    <value>Vymazať prihlásenie z tabuľky</value>
+  </data>
+  <data name="LoginEditFormLoginEditForm" xml:space="preserve">
+    <value>Editovanie prihlásenia</value>
+  </data>
+  <data name="LoginEditFormNoPerson" xml:space="preserve">
+    <value>Žiadny užívateľ</value>
+  </data>
+  <data name="LoginEditForm_lDisabled" xml:space="preserve">
+    <value>Zablokovaný</value>
+  </data>
+  <data name="LoginEditForm_lExpirationDate" xml:space="preserve">
+    <value>Dátum expirácie</value>
+  </data>
+  <data name="LoginEditForm_lExpirationSet" xml:space="preserve">
+    <value>Expirovaný</value>
+  </data>
+  <data name="LoginEditForm_lPassword" xml:space="preserve">
+    <value>Heslo</value>
+  </data>
+  <data name="LoginEditForm_lPerson" xml:space="preserve">
+    <value>Užívateľ</value>
+  </data>
+  <data name="LoginEditForm_lPublicKey" xml:space="preserve">
+    <value>Verejný kľúč</value>
+  </data>
+  <data name="LoginEditForm_lUserName" xml:space="preserve">
+    <value>Užívateľské meno</value>
+  </data>
+  <data name="CgpClientMainForm_generalOptionsMi" xml:space="preserve">
+    <value>Hlavné nastavenia</value>
+  </data>
+  <data name="CalendarFormCalendarForm" xml:space="preserve">
+    <value>Kalendár</value>
+  </data>
+  <data name="LoginEditForm_bCalendar" xml:space="preserve">
+    <value>Kalendár</value>
+  </data>
+  <data name="PersonsFormDeleteFail" xml:space="preserve">
+    <value>Operácia mazania zlyhala.</value>
+  </data>
+  <data name="PersonEditForm_tbLogins" xml:space="preserve">
+    <value>Prihlásenia</value>
+  </data>
+  <data name="ErrorRmovePersonFailed" xml:space="preserve">
+    <value>Chyba pri rušení referencie na užívateľa</value>
+  </data>
+  <data name="General_bModify" xml:space="preserve">
+    <value>Zmeniť</value>
+  </data>
+  <data name="General_bRemove" xml:space="preserve">
+    <value>Zrušiť</value>
+  </data>
+  <data name="LoginEditFormAddPersonFormText" xml:space="preserve">
+    <value>Pridávanie užívateľa</value>
+  </data>
+  <data name="ErrorAddLogin" xml:space="preserve">
+    <value>Chyba pri pridávaní loginu pre užívateľa</value>
+  </data>
+  <data name="ErrorDeleteLogin" xml:space="preserve">
+    <value>Chyba pri vymazávaní loginu pre užívateľa</value>
+  </data>
+  <data name="ErrorGetDataLogins" xml:space="preserve">
+    <value>Chyba pri načítavaní loginov</value>
+  </data>
+  <data name="PersonEditFormAddLoginConfirm" xml:space="preserve">
+    <value>Pridať login pre tohto užívateľa</value>
+  </data>
+  <data name="PersonEditFormAddLoginFormText" xml:space="preserve">
+    <value>Pridávanie loginov</value>
+  </data>
+  <data name="PersonEditFormDeleteLoginConfirm" xml:space="preserve">
+    <value>Vymazať prihlásenie pre tohto užívateľa</value>
+  </data>
+  <data name="General_bAdd" xml:space="preserve">
+    <value>Pridať</value>
+  </data>
+  <data name="LoginEditFormDeleteExpirationDateConfirm" xml:space="preserve">
+    <value>Zrušiť dátum expirácie</value>
+  </data>
+  <data name="LoginEditFormDeletePersonConfirm" xml:space="preserve">
+    <value>Vymazať užívateľa z tohto loginu</value>
+  </data>
+  <data name="LoginEditForm_bRemoveExpirationDate" xml:space="preserve">
+    <value>Zrušiť</value>
+  </data>
+  <data name="ErrorAuthenticationFailed" xml:space="preserve">
+    <value>Prihlasovanie zlyhalo</value>
+  </data>
+  <data name="ErrorWrongUsernamePassword" xml:space="preserve">
+    <value>Zlé meno alebo heslo</value>
+  </data>
+  <data name="LoginPasswordFormLoginPasswordForm" xml:space="preserve">
+    <value>Prihlásenie</value>
+  </data>
+  <data name="LoginPasswordForm_lPassword" xml:space="preserve">
+    <value>Heslo</value>
+  </data>
+  <data name="LoginPasswordForm_lUserName" xml:space="preserve">
+    <value>Užívateľské meno</value>
+  </data>
+  <data name="LoginEditFormErrorUniqueColumn" xml:space="preserve">
+    <value>Toto užívateľské meno už existuje v databáze</value>
+  </data>
+  <data name="ErrorAlreadyEdited" xml:space="preserve">
+    <value>Editovanie tohto záznamu je už spustené</value>
+  </data>
+  <data name="ErrorInsertNotFree" xml:space="preserve">
+    <value>Vloženie účtu je už spustené</value>
+  </data>
+  <data name="ErrorDeleteEditing" xml:space="preserve">
+    <value>sa edituje, nie je možné ho zmazať</value>
+  </data>
+  <data name="ErrorWrongObjectType" xml:space="preserve">
+    <value>Nevhodný object</value>
+  </data>
+  <data name="ErrorFailObtainLogin" xml:space="preserve">
+    <value>Nepodarilo sa získať pPrihlásenia.</value>
+  </data>
+  <data name="ErrorMissConfirmPassword" xml:space="preserve">
+    <value>Zadajte potvdenie hesla.</value>
+  </data>
+  <data name="ErrorMissNewPassword" xml:space="preserve">
+    <value>Zadajte nové heslo.</value>
+  </data>
+  <data name="ErrorPasswordsNotSame" xml:space="preserve">
+    <value>Nové heslo sa nezhoduje s potvrdením hesla.</value>
+  </data>
+  <data name="ErrorSaveLogin" xml:space="preserve">
+    <value>Uloženie zlyhalo.</value>
+  </data>
+  <data name="ErrorUseNewPassword" xml:space="preserve">
+    <value>Nové heslo musí byť iné ako staré heslo.</value>
+  </data>
+  <data name="ErrorWrongPasswords" xml:space="preserve">
+    <value>Nesprávne heslo.</value>
+  </data>
+  <data name="LoginPasswordChangeFormLoginPasswordChangeForm" xml:space="preserve">
+    <value>Zmena hesla</value>
+  </data>
+  <data name="LoginPasswordChangeForm_lConfirmPassword" xml:space="preserve">
+    <value>Potvrdenie hesla</value>
+  </data>
+  <data name="LoginPasswordChangeForm_lLogin" xml:space="preserve">
+    <value>Užívateľské meno</value>
+  </data>
+  <data name="LoginPasswordChangeForm_lNewPassword" xml:space="preserve">
+    <value>Nové heslo</value>
+  </data>
+  <data name="LoginPasswordChangeForm_lOldPassword" xml:space="preserve">
+    <value>Staré heslo</value>
+  </data>
+  <data name="ErrorInsertPresentationGroup" xml:space="preserve">
+    <value>Chyba pri vkladaní prezentačnej skupiny</value>
+  </data>
+  <data name="PresentationGroupsFormDeleteConfirm" xml:space="preserve">
+    <value>Zmazať prezentačnú skupinu?</value>
+  </data>
+  <data name="PresentationGroupsFormDeleteFail" xml:space="preserve">
+    <value>Zmazanie prezentačnej skupiny zlyhalo.</value>
+  </data>
+  <data name="PresentationGroupsFormPresentationGroupsForm" xml:space="preserve">
+    <value>Prezentačné skupiny</value>
+  </data>
+  <data name="PresentationGroupsForm_lEmailFilter" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="PresentationGroupsForm_lFormatFilter" xml:space="preserve">
+    <value>formát správy</value>
+  </data>
+  <data name="PresentationGroupsForm_lNameFilter" xml:space="preserve">
+    <value>Názov skupiny</value>
+  </data>
+  <data name="PresentationGroupsForm_lSmsFilter" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="ErrorInserPresentationGroup" xml:space="preserve">
+    <value>Vloženie záznamu prezentačnej skupiny zlyhalo.</value>
+  </data>
+  <data name="ErrorInsertGroupName" xml:space="preserve">
+    <value>Názov prezentačnej skupiny musí byť zadaný.</value>
+  </data>
+  <data name="ErrorUpdatePresentationGroup" xml:space="preserve">
+    <value>Aktualizácia záznamu prezentačnej skupiny zlyhala.</value>
+  </data>
+  <data name="PresentationGroupEditFormPresentationGroupEditForm" xml:space="preserve">
+    <value>Editovanie prezentačnej skupiny</value>
+  </data>
+  <data name="PresentationGroupEditForm_lEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="PresentationGroupEditForm_lFormatMsg" xml:space="preserve">
+    <value>Formát správy</value>
+  </data>
+  <data name="PresentationGroupEditForm_lGroupName" xml:space="preserve">
+    <value>Názov skupiny</value>
+  </data>
+  <data name="PresentationGroupEditForm_lSms" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="ErrorInserPresentationFormatter" xml:space="preserve">
+    <value>Vloženie záznamu zlyhalo.</value>
+  </data>
+  <data name="ErrorInsertForamtterMsg" xml:space="preserve">
+    <value>Formát správy je nutné zadať.</value>
+  </data>
+  <data name="ErrorInsertFormatterName" xml:space="preserve">
+    <value>Názov formátora je nutné zadať.</value>
+  </data>
+  <data name="ErrorUpdatePresentationFormatter" xml:space="preserve">
+    <value>Editovanie záznamu zlyhalo.</value>
+  </data>
+  <data name="PresentationFormatterEditFormPresentationFormatterEditForm" xml:space="preserve">
+    <value>Editovanie prezentačného formátora</value>
+  </data>
+  <data name="PresentationFormatterEditForm_lForamtterMsg" xml:space="preserve">
+    <value>Formát správy</value>
+  </data>
+  <data name="PresentationFormatterEditForm_lFormatterName" xml:space="preserve">
+    <value>Názov formátora</value>
+  </data>
+  <data name="PresentationFormattersFormDeleteConfirm" xml:space="preserve">
+    <value>Zmazať aktuálny záznam?</value>
+  </data>
+  <data name="PresentationFormattersFormDeleteFail" xml:space="preserve">
+    <value>Zmazanie presentačného formátora zlyhalo.</value>
+  </data>
+  <data name="PresentationFormattersFormPresentationFormattersForm" xml:space="preserve">
+    <value>Prezentačné formáty</value>
+  </data>
+  <data name="PresentationFormattersForm_lFormatterNameFilter" xml:space="preserve">
+    <value>Názov formátora</value>
+  </data>
+  <data name="PresentationFormattersForm_lMsgFormattlFilter" xml:space="preserve">
+    <value>Formát správy</value>
+  </data>
+  <data name="PresentationGroupEditFormSetFormatterFormText" xml:space="preserve">
+    <value>Nastavenie prezentačného formátora.</value>
+  </data>
+  <data name="ErrorAlreadyUsedGroupName" xml:space="preserve">
+    <value>Prezentačná skupina s takýmto názvom už existuje, zvoľte iný.</value>
+  </data>
+  <data name="PresentationGroupEditFormAddFormatterConfirm" xml:space="preserve">
+    <value>Vložit prezentačného formátora?</value>
+  </data>
+  <data name="ErrorWrongEmail" xml:space="preserve">
+    <value>Email nie je správne zadaný, ako oddeľovač použite ";" ","  " " (medzera)</value>
+  </data>
+  <data name="ErrorWrongSms" xml:space="preserve">
+    <value>Telefónne číslo nie je správne zadané, ako oddeľovač použite ";" ","  " " (medzera)</value>
+  </data>
+  <data name="ErrorAlreadyUsedFormatterName" xml:space="preserve">
+    <value>Prezentačný formátor s takýmto názvom už existuje, zvoľte iný.</value>
+  </data>
+  <data name="PresentationGroupEditForm_bClear" xml:space="preserve">
+    <value>Zmazať</value>
+  </data>
+  <data name="PresentationGroupEditForm_bSet" xml:space="preserve">
+    <value>Nastav</value>
+  </data>
+  <data name="PresentationGroupEditForm_lForamtterMsg" xml:space="preserve">
+    <value>Formát správy</value>
+  </data>
+  <data name="PresentationGroupEditForm_lFormatName" xml:space="preserve">
+    <value>Názov formátora</value>
+  </data>
+  <data name="SureToCloseAll" xml:space="preserve">
+    <value>Naozaj zavrieť všetky okná?</value>
+  </data>
+  <data name="CgpClientMainFormaboutToolStripMenuItem" xml:space="preserve">
+    <value>O aplikáciíí</value>
+  </data>
+  <data name="CgpClientMainFormcloseToolStripMenuItem" xml:space="preserve">
+    <value>Zavrieť</value>
+  </data>
+  <data name="CgpClientMainFormfileToolStripMenuItem" xml:space="preserve">
+    <value>Súbor</value>
+  </data>
+  <data name="CgpClientMainForm_changePwd" xml:space="preserve">
+    <value>Zmena hesla</value>
+  </data>
+  <data name="CgpClientMainForm_closeMi" xml:space="preserve">
+    <value>Zavrieť</value>
+  </data>
+  <data name="CgpClientMainForm_goHome" xml:space="preserve">
+    <value>Domov                                       </value>
+  </data>
+  <data name="CgpClientMainForm_loginMmi" xml:space="preserve">
+    <value>Prihlásiť</value>
+  </data>
+  <data name="CgpClientMainForm_loginsForm" xml:space="preserve">
+    <value>Prihlásenia</value>
+  </data>
+  <data name="CgpClientMainForm_logoutMmi" xml:space="preserve">
+    <value>Odhlásiť</value>
+  </data>
+  <data name="CgpClientMainForm_personsForm" xml:space="preserve">
+    <value>Osoby</value>
+  </data>
+  <data name="CgpClientMainForm_presentationFormatterForm" xml:space="preserve">
+    <value>Prezentačné formáty</value>
+  </data>
+  <data name="CgpClientMainForm_presentationGroupsForm" xml:space="preserve">
+    <value>Prezentačné skupiny</value>
+  </data>
+  <data name="CgpClientMainForm_windowsMMI" xml:space="preserve">
+    <value>Okná</value>
+  </data>
+  <data name="ColumnBirthday" xml:space="preserve">
+    <value>Dátum narodenia</value>
+  </data>
+  <data name="ColumnEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="ColumnExpirationDate" xml:space="preserve">
+    <value>Dátum vypršania</value>
+  </data>
+  <data name="ColumnFormatterName" xml:space="preserve">
+    <value>Názov formátora</value>
+  </data>
+  <data name="ColumnGroupName" xml:space="preserve">
+    <value>Názov skupiny</value>
+  </data>
+  <data name="ColumnLp" xml:space="preserve">
+    <value>ŠPZ</value>
+  </data>
+  <data name="ColumnBrand" xml:space="preserve">
+    <value>Značka</value>
+  </data>
+  <data name="ColumnValidityDateFrom" xml:space="preserve">
+    <value>Platnosť od</value>
+  </data>
+  <data name="ColumnValidityDateTo" xml:space="preserve">
+    <value>Platnosť do</value>
+  </data>
+  <data name="ColumnSecurityLevel" xml:space="preserve">
+    <value>Úroveň zabezpečenia</value>
+  </data>
+  <data name="ColumnSymbol" xml:space="preserve">
+    <value>Symbol</value>
+  </data>
+  <data name="ColumnIdentification" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="ColumnTimetecSync" xml:space="preserve">
+    <value>CT Synch.</value>
+  </data>
+  <data name="ColumnTimetecValidFrom" xml:space="preserve">
+    <value>Platnosť od</value>
+  </data>
+  <data name="ColumnTimetecValidTo" xml:space="preserve">
+    <value>Platnosť do</value>
+  </data>
+  <data name="ColumnIdFormatter" xml:space="preserve">
+    <value>Id formátora</value>
+  </data>
+  <data name="ColumnIdGroup" xml:space="preserve">
+    <value>Id skupiny</value>
+  </data>
+  <data name="ColumnIdPerson" xml:space="preserve">
+    <value>Id osoby</value>
+  </data>
+  <data name="ColumnIsDisabled" xml:space="preserve">
+    <value>Je zakázaný</value>
+  </data>
+  <data name="ColumnMessageFormat" xml:space="preserve">
+    <value>Formát správy</value>
+  </data>
+  <data name="ColumnFirstName" xml:space="preserve">
+    <value>Meno</value>
+  </data>
+  <data name="ColumnPasswordHash" xml:space="preserve">
+    <value>Hash hesla</value>
+  </data>
+  <data name="ColumnPerson" xml:space="preserve">
+    <value>Užívateľ</value>
+  </data>
+  <data name="ColumnPublicKey" xml:space="preserve">
+    <value>Verejný kľúč</value>
+  </data>
+  <data name="ColumnSms" xml:space="preserve">
+    <value>Sms</value>
+  </data>
+  <data name="ColumnSurname" xml:space="preserve">
+    <value>Priezvisko</value>
+  </data>
+  <data name="ColumnUsername" xml:space="preserve">
+    <value>Meno užívateľa</value>
+  </data>
+  <data name="CgpClientMainForm_eventlogsForm" xml:space="preserve">
+    <value>Logy udalostí</value>
+  </data>
+  <data name="ColumnCGPSource" xml:space="preserve">
+    <value>Reportér</value>
+  </data>
+  <data name="ColumnDate" xml:space="preserve">
+    <value>Dátum</value>
+  </data>
+  <data name="ColumnDescription" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="ColumnEventSource" xml:space="preserve">
+    <value>Zdroj udalosti</value>
+  </data>
+  <data name="ColumnLocalization" xml:space="preserve">
+    <value>Lokalizácia</value>
+  </data>
+  <data name="ColumnType" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="ColumnValue" xml:space="preserve">
+    <value>Hodnota</value>
+  </data>
+  <data name="ErrorNoParameters" xml:space="preserve">
+    <value>Žiadne parametre</value>
+  </data>
+  <data name="ErrorOpenParametersFailed" xml:space="preserve">
+    <value>Chyba pri načítavaní parametrov</value>
+  </data>
+  <data name="ErrorParameterAreOpened" xml:space="preserve">
+    <value>Parametre sú už otvorené</value>
+  </data>
+  <data name="EventlogParametersFormEventlogParametersForm" xml:space="preserve">
+    <value>Parametre logu udalosti</value>
+  </data>
+  <data name="EventlogParametersForm_lELCGPSource" xml:space="preserve">
+    <value>Reportér</value>
+  </data>
+  <data name="EventlogParametersForm_lELDate" xml:space="preserve">
+    <value>Dátum</value>
+  </data>
+  <data name="EventlogParametersForm_lELDescription" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="EventlogParametersForm_lELEventSource" xml:space="preserve">
+    <value>Zdroj udalosti</value>
+  </data>
+  <data name="EventlogParametersForm_lELLocalization" xml:space="preserve">
+    <value>Lokalizácia</value>
+  </data>
+  <data name="EventlogParametersForm_lELType" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="EventlogParametersForm_lEventlog" xml:space="preserve">
+    <value>Log udalosti:</value>
+  </data>
+  <data name="EventlogsFormEventlogsForm" xml:space="preserve">
+    <value>Logy udalostí</value>
+  </data>
+  <data name="EventlogsForm_bParameters" xml:space="preserve">
+    <value>Parametre</value>
+  </data>
+  <data name="EventlogsForm_lCGPSourceFilter" xml:space="preserve">
+    <value>Reportér</value>
+  </data>
+  <data name="EventlogsForm_lDateFromFilter" xml:space="preserve">
+    <value>Dátum od</value>
+  </data>
+  <data name="EventlogsForm_lDescription" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="EventlogsForm_lEventSourceFilter" xml:space="preserve">
+    <value>Zdroj udalosti</value>
+  </data>
+  <data name="EventlogsForm_lLocalization" xml:space="preserve">
+    <value>Lokalizácia</value>
+  </data>
+  <data name="EventlogsForm_lTypeFilter" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="ConfirmRemovePresentationGroup" xml:space="preserve">
+    <value>Odobrať prezentačnú skupinu?</value>
+  </data>
+  <data name="ErrorAddPresentationGroup" xml:space="preserve">
+    <value>Pridanie prezentačnú skupiny zlyhalo.</value>
+  </data>
+  <data name="ErrorGetOwnedPresentationGroup" xml:space="preserve">
+    <value>Získanie prezentačných skupín zlyhalo.</value>
+  </data>
+  <data name="ErrorInsertEventName" xml:space="preserve">
+    <value>Pridanie systémovej udalosti zlyhalo.</value>
+  </data>
+  <data name="ErrorRemovePresentationGroup" xml:space="preserve">
+    <value>Odobranie prezentačnej skupiny zlyhalo.</value>
+  </data>
+  <data name="ErrorUpdateSystemEvent" xml:space="preserve">
+    <value>Úprava systémovej udalosti zlyhala.</value>
+  </data>
+  <data name="QuestionAddPresentationGroup" xml:space="preserve">
+    <value>Pridať prezentačnú skupinu?</value>
+  </data>
+  <data name="SystemEventsEditFormSystemEventsEditForm" xml:space="preserve">
+    <value>Editovanie systémových udalosti</value>
+  </data>
+  <data name="SystemEventsEditForm_lPresentationGroups" xml:space="preserve">
+    <value>Prezentačné skupiny:</value>
+  </data>
+  <data name="SystemEventsEditForm_lSystemEventName" xml:space="preserve">
+    <value>Názov systemovej udalosti</value>
+  </data>
+  <data name="SystemEventsFormSystemEventsForm" xml:space="preserve">
+    <value>Systémové udalosti</value>
+  </data>
+  <data name="ErrorInsertSystemEvent" xml:space="preserve">
+    <value>Vytvorenie systémovej udalosti zlyhalo.</value>
+  </data>
+  <data name="EventlogsForm_lDateToFilter" xml:space="preserve">
+    <value>Dátum do</value>
+  </data>
+  <data name="PersonsForm_lDateToFilter" xml:space="preserve">
+    <value>Dátum narodenia do</value>
+  </data>
+  <data name="ErrorDateTo" xml:space="preserve">
+    <value>Dátum do musí byť väčší ako dátum od</value>
+  </data>
+  <data name="EventlogsForm_bFilterDateOneDay" xml:space="preserve">
+    <value>Jeden deň</value>
+  </data>
+  <data name="CgpClientMainForm_miClose" xml:space="preserve">
+    <value>Zavrieť</value>
+  </data>
+  <data name="CisNGEditFormCisNGEditForm" xml:space="preserve">
+    <value>Editovanie Cis.NG</value>
+  </data>
+  <data name="CisNGEditForm_lIpAddress" xml:space="preserve">
+    <value>IP Adresa</value>
+  </data>
+  <data name="CisNGEditForm_lName" xml:space="preserve">
+    <value>Názov</value>
+  </data>
+  <data name="CisNGEditForm_lPassword" xml:space="preserve">
+    <value>Heslo</value>
+  </data>
+  <data name="CisNGEditForm_lPort" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="CisNGEditForm_lUser" xml:space="preserve">
+    <value>Meno</value>
+  </data>
+  <data name="CisNGsFormCisNGsForm" xml:space="preserve">
+    <value>Cis.NG</value>
+  </data>
+  <data name="CisNGsForm_lIpAddressFilter" xml:space="preserve">
+    <value>IP Adresa</value>
+  </data>
+  <data name="CisNGsForm_lNameFilter" xml:space="preserve">
+    <value>Názov</value>
+  </data>
+  <data name="CisNGsForm_lPortFilter" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="DeleteCisNGConfirm" xml:space="preserve">
+    <value>Naozaj zmazať Cis.NG?</value>
+  </data>
+  <data name="ErrorInsertCisNG" xml:space="preserve">
+    <value>Vytvorenie Cis.NG zlyhalo.</value>
+  </data>
+  <data name="ErrorInsertCisNGName" xml:space="preserve">
+    <value>Názov Cis.NG je nutné zadať.</value>
+  </data>
+  <data name="ErrorInsertIPAddress" xml:space="preserve">
+    <value>IP Adresu je nutné zadať.</value>
+  </data>
+  <data name="ErrorInsertPassword" xml:space="preserve">
+    <value>Heslo je nutné zadať.</value>
+  </data>
+  <data name="ErrorInsertPort" xml:space="preserve">
+    <value>Port je nutné zadať.</value>
+  </data>
+  <data name="ErrorInsertUserName" xml:space="preserve">
+    <value>Prihlasovacia meno je nutné zadať</value>
+  </data>
+  <data name="ErrorUpdateCisNG" xml:space="preserve">
+    <value>Zmena Cis.NG zlyhala.</value>
+  </data>
+  <data name="PresentationGroupEditForm_bClearCisNg" xml:space="preserve">
+    <value>Zmazať</value>
+  </data>
+  <data name="PresentationGroupEditForm_bSetCisNg" xml:space="preserve">
+    <value>Pridaj Cis.NG</value>
+  </data>
+  <data name="ColumnCisNGName" xml:space="preserve">
+    <value>Cis.NG názov</value>
+  </data>
+  <data name="ColumnIdCisNG" xml:space="preserve">
+    <value>Id Cis.NG</value>
+  </data>
+  <data name="ColumnIpAddress" xml:space="preserve">
+    <value>IP adresa servera</value>
+  </data>
+  <data name="ColumnPassword" xml:space="preserve">
+    <value>Heslo</value>
+  </data>
+  <data name="ColumnPort" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="ErrorInsertIpAddres" xml:space="preserve">
+    <value>Nesprávna IP adresa.</value>
+  </data>
+  <data name="ErrorInsertSerialPortPin" xml:space="preserve">
+    <value>Chybne zadaný PIN kód.</value>
+  </data>
+  <data name="GeneralOptionsForm_bSaveSerialPort" xml:space="preserve">
+    <value>Uložiť</value>
+  </data>
+  <data name="GeneralOptionsForm_bSaveSmtp" xml:space="preserve">
+    <value>Uložiť</value>
+  </data>
+  <data name="GeneralOptionsForm_chbPortCarrierDetect" xml:space="preserve">
+    <value>Detekovať carrier</value>
+  </data>
+  <data name="GeneralOptionsForm_chbPortParityCheck" xml:space="preserve">
+    <value>Kontrola parity</value>
+  </data>
+  <data name="LocalOptionsForm_cnmpLookup" xml:space="preserve">
+    <value>Vyhľadať</value>
+  </data>
+  <data name="GeneralOptionsForm_lBaud" xml:space="preserve">
+    <value>Rýchlosť prenosu</value>
+  </data>
+  <data name="GeneralOptionsForm_lBits" xml:space="preserve">
+    <value>Počet bitov</value>
+  </data>
+  <data name="GeneralOptionsForm_lFlowControl" xml:space="preserve">
+    <value>Riadenie toku</value>
+  </data>
+  <data name="GeneralOptionsForm_lParity" xml:space="preserve">
+    <value>Parita</value>
+  </data>
+  <data name="GeneralOptionsForm_lPin" xml:space="preserve">
+    <value>PIN</value>
+  </data>
+  <data name="GeneralOptionsForm_lSmtpPort" xml:space="preserve">
+    <value>Smtp port</value>
+  </data>
+  <data name="GeneralOptionsForm_lSmtpServer" xml:space="preserve">
+    <value>Smtp server</value>
+  </data>
+  <data name="GeneralOptionsForm_lSourceEmail" xml:space="preserve">
+    <value>Zdrojová emailová adresa</value>
+  </data>
+  <data name="GeneralOptionsForm_lStopBits" xml:space="preserve">
+    <value>Stop bity</value>
+  </data>
+  <data name="GeneralOptionsForm_lSubject" xml:space="preserve">
+    <value>Predmet správy</value>
+  </data>
+  <data name="GeneralOptionsForm_PortNumber" xml:space="preserve">
+    <value>Číslo portu</value>
+  </data>
+  <data name="GeneralOptionsForm_tpSerialPort" xml:space="preserve">
+    <value>Nastavenia Sériový port</value>
+  </data>
+  <data name="GeneralOptionsForm_tpRemoteServicesSettings" xml:space="preserve">
+    <value>Nastavenia vzdialených služieb</value>
+  </data>
+  <data name="QuestionGenOptNotSameReload" xml:space="preserve">
+    <value>Nastavenia sú odlišné ako serverové, načítať ich znova?</value>
+  </data>
+  <data name="SystemEventsEditFormAddPgFormText" xml:space="preserve">
+    <value>Pridanie Prezentačnej skupiny</value>
+  </data>
+  <data name="AddCisNGConfirm" xml:space="preserve">
+    <value>Pridať Cis.NG do Prezentačnej skupiny?</value>
+  </data>
+  <data name="ErrorAddCisNGtoPG" xml:space="preserve">
+    <value>Pridanie Cis.NG zlyhalo.</value>
+  </data>
+  <data name="ErrorAddFormatter" xml:space="preserve">
+    <value>Pridanie formátera zlyhalo.</value>
+  </data>
+  <data name="ErrorCisNGNeeded" xml:space="preserve">
+    <value>Cis.NG je nutné zadať.</value>
+  </data>
+  <data name="ErrorInsertClassName" xml:space="preserve">
+    <value>Názov triedy nie je vyplnený,</value>
+  </data>
+  <data name="ErrorInsertCycleCount" xml:space="preserve">
+    <value>Počet cyklov nie je zadaný.</value>
+  </data>
+  <data name="ErrorInsertDatetime" xml:space="preserve">
+    <value>Dátum nie je zadaný.</value>
+  </data>
+  <data name="ErrorInsertLifetimeDays" xml:space="preserve">
+    <value>Dni nie sú vyplnené.</value>
+  </data>
+  <data name="ErrorInsertLifetimeHours" xml:space="preserve">
+    <value>Hodiny nie sú vyplnené.</value>
+  </data>
+  <data name="ErrorInsertLifetimeMinutes" xml:space="preserve">
+    <value>Minúty nie sú zadané.</value>
+  </data>
+  <data name="ErrorInsertLifetimeSeconds" xml:space="preserve">
+    <value>Sekundy nie sú zadané.</value>
+  </data>
+  <data name="ErrorInsertShowtime" xml:space="preserve">
+    <value>Doba zobrazovania nie je zadaná.</value>
+  </data>
+  <data name="ErrorInsertUnicityGroup" xml:space="preserve">
+    <value>Jednoznačná skupina nie je zadaná.</value>
+  </data>
+  <data name="ErrorInsertUnicityGroupTimeOut" xml:space="preserve">
+    <value>Skupinivý odpočet nie je zadaný.</value>
+  </data>
+  <data name="ErrorSerialPortNotSet" xml:space="preserve">
+    <value>Chyba, Sériový port nie je nastavený.</value>
+  </data>
+  <data name="ErrorSMTPNotSet" xml:space="preserve">
+    <value>Chyba, SMTP server nie je nastavený.</value>
+  </data>
+  <data name="ColumncisClass" xml:space="preserve">
+    <value>Trieda Cis.NG</value>
+  </data>
+  <data name="ErrorIncorrectForamtterMsg" xml:space="preserve">
+    <value>Formátor musí obsahovať reťazec %msg, ktorý bude nahradený posielanou správou.</value>
+  </data>
+  <data name="ErrorDeleteRowInRelationship" xml:space="preserve">
+    <value>Záznam nie je možné zmazať, je priradený vo vzťahu.</value>
+  </data>
+  <data name="ErrorUnigueColumn" xml:space="preserve">
+    <value>Hodnota musí buť unikátna, táto už bola použitá.</value>
+  </data>
+  <data name="CisNGGroupEditAddCisNG" xml:space="preserve">
+    <value>Skupiny Cis.NG pridanie Cis.NG</value>
+  </data>
+  <data name="CisNGGroupEditFormCisNGGroupEditForm" xml:space="preserve">
+    <value>Editovanie skupiny Cis.NG</value>
+  </data>
+  <data name="CisNGGroupEditForm_lCisNG" xml:space="preserve">
+    <value>Cis.NG</value>
+  </data>
+  <data name="CisNGGroupEditForm_lDescription" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="CisNGGroupEditForm_lGroupName" xml:space="preserve">
+    <value>Názov skupiny Cis.NG</value>
+  </data>
+  <data name="CisNGGroupsFormCisNGGroupsForm" xml:space="preserve">
+    <value>Skupiny Cis.NG</value>
+  </data>
+  <data name="CisNGGroupsForm_lDescriptionFilter" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="CisNGGroupsForm_lGroupNameFilter" xml:space="preserve">
+    <value>Názov skupiny Cis.NG</value>
+  </data>
+  <data name="ColumnCisNG" xml:space="preserve">
+    <value>Cis.NG</value>
+  </data>
+  <data name="ColumnCisNGGroup" xml:space="preserve">
+    <value>Skupina Cis.NG</value>
+  </data>
+  <data name="ColumnIdCisNGGroup" xml:space="preserve">
+    <value>ID skupiny Cis.NG</value>
+  </data>
+  <data name="ColumnPresentationGroup" xml:space="preserve">
+    <value>Prezentačná skupina</value>
+  </data>
+  <data name="ConfirmRemoveCisNG" xml:space="preserve">
+    <value>Odobrať Cis.NG zo skupiny Cis.NG?</value>
+  </data>
+  <data name="ErrorInserCisGroups" xml:space="preserve">
+    <value>Vloženie skupiny Cis.NG zlyhalo.</value>
+  </data>
+  <data name="ErrorRemoveCisNG" xml:space="preserve">
+    <value>Odobranie Cis.NG zlyhalo.</value>
+  </data>
+  <data name="ErrorUpdateCisGroups" xml:space="preserve">
+    <value>Úprava skupiny Cis.NG zlyhala.</value>
+  </data>
+  <data name="QuestionAddCisNG" xml:space="preserve">
+    <value>Pridať Cis.NG do  skupiny Cis.NG?</value>
+  </data>
+  <data name="ErrorCisAllreadySet" xml:space="preserve">
+    <value>Cis.NG je už priradený.</value>
+  </data>
+  <data name="ErrorCisGroupAllreadySet" xml:space="preserve">
+    <value>Skupina Cis.NG je už priradená.</value>
+  </data>
+  <data name="ConfirmRemoveCisNGGroup" xml:space="preserve">
+    <value>Odobrať skupinu Cis.NG?</value>
+  </data>
+  <data name="ErrorRemoveCisNGGroup" xml:space="preserve">
+    <value>Odobranie skupiny Cis.NG zlyhalo.</value>
+  </data>
+  <data name="PresentationGroupEditForm_bSetCisGroup" xml:space="preserve">
+    <value>Pridaj skupinu CisNG</value>
+  </data>
+  <data name="CardsEditFormCardsEditForm" xml:space="preserve">
+    <value>Editovanie karty</value>
+  </data>
+  <data name="CardsEditForm_lCardNumber" xml:space="preserve">
+    <value>Číslo karty</value>
+  </data>
+  <data name="CardsEditForm_lCardState" xml:space="preserve">
+    <value>Stav karty</value>
+  </data>
+  <data name="CardsEditForm_lCardSystem" xml:space="preserve">
+    <value>Kartový systém</value>
+  </data>
+  <data name="CardsEditForm_lDateStateLastChange" xml:space="preserve">
+    <value>Dátmu pos. zmeny stavu</value>
+  </data>
+  <data name="CardsEditForm_lPin" xml:space="preserve">
+    <value>Pin</value>
+  </data>
+  <data name="CardsFormCardsForm" xml:space="preserve">
+    <value>Karty</value>
+  </data>
+  <data name="CardsForm_lCardNumberFilter" xml:space="preserve">
+    <value>Číslo karty</value>
+  </data>
+  <data name="CardsForm_lCardState" xml:space="preserve">
+    <value>Stav karty</value>
+  </data>
+  <data name="CardsForm_lCardSystemFilter" xml:space="preserve">
+    <value>Kartový systém</value>
+  </data>
+  <data name="CardSystemsEditFormCardSystemsEditForm" xml:space="preserve">
+    <value>Editovanie kartového systému</value>
+  </data>
+  <data name="CardSystemsEditForm_lCardDataLength" xml:space="preserve">
+    <value>Dĺžka kartových dát</value>
+  </data>
+  <data name="CardSystemsEditForm_lCardType" xml:space="preserve">
+    <value>Typ karty</value>
+  </data>
+  <data name="CardSystemsEditForm_lCompanyCode" xml:space="preserve">
+    <value>Firemný kód</value>
+  </data>
+  <data name="CardSystemsEditForm_lCompanyCodeLength" xml:space="preserve">
+    <value>Dĺžka firemného kódu</value>
+  </data>
+  <data name="CardSystemsEditForm_lName" xml:space="preserve">
+    <value>Názov</value>
+  </data>
+  <data name="CardSystemsEditForm_lPinLength" xml:space="preserve">
+    <value>Dĺžka pinu</value>
+  </data>
+  <data name="CardSystemsFormCardSystemsForm" xml:space="preserve">
+    <value>Kartové systémy</value>
+  </data>
+  <data name="CardSystemsForm_lCardTypeFilter" xml:space="preserve">
+    <value>Typ karty</value>
+  </data>
+  <data name="CardSystemsForm_lCompanyCodeFilter" xml:space="preserve">
+    <value>Firemný kód</value>
+  </data>
+  <data name="CardSystemsForm_lNameFilter" xml:space="preserve">
+    <value>Názov</value>
+  </data>
+  <data name="CarsFormCarsForm" xml:space="preserve">
+    <value>Autá</value>
+  </data>
+  <data name="CarsForm_bFilterClear" xml:space="preserve">
+    <value>Zrušiť</value>
+  </data>
+  <data name="CarsForm_bRunFilter" xml:space="preserve">
+    <value>Filtrovať</value>
+  </data>
+  <data name="CarsForm_lBrand" xml:space="preserve">
+    <value>Značka</value>
+  </data>
+  <data name="CarsForm_lLp" xml:space="preserve">
+    <value>ŠPZ</value>
+  </data>
+  <data name="CarsForm_lSecurityLevel" xml:space="preserve">
+    <value>Bezpečnostná úroveň</value>
+  </data>
+  <data name="CarEditForm_lAssignedCards" xml:space="preserve">
+    <value>Priradené</value>
+  </data>
+  <data name="CarEditForm_lAvailableCards" xml:space="preserve">
+    <value>Dostupné</value>
+  </data>
+  <data name="CarEditForm_tpCards" xml:space="preserve">
+    <value>Karty</value>
+  </data>
+  <data name="CarEditForm_tpInformation" xml:space="preserve">
+    <value>Informácie</value>
+  </data>
+  <data name="CarEditFormlabel1" xml:space="preserve">
+    <value>ŠPZ</value>
+  </data>
+  <data name="CarEditFormlabel2" xml:space="preserve">
+    <value>Značka</value>
+  </data>
+  <data name="CarEditFormlabel3" xml:space="preserve">
+    <value>Platné od</value>
+  </data>
+  <data name="CarEditFormlabel4" xml:space="preserve">
+    <value>Platné do</value>
+  </data>
+  <data name="CarEditFormlabel5" xml:space="preserve">
+    <value>Bezpečnostná úroveň</value>
+  </data>
+  <data name="CarEditFormlabel6" xml:space="preserve">
+    <value>Verzia</value>
+  </data>
+  <data name="CarEditFormlabel8" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="CgpClientMainForm_cardsForm" xml:space="preserve">
+    <value>Karty</value>
+  </data>
+  <data name="CgpClientMainForm_cardSystemsForm" xml:space="preserve">
+    <value>Kartové systémy</value>
+  </data>
+  <data name="CgpClientMainForm_carsForm" xml:space="preserve">
+    <value>Autá</value>
+  </data>  
+  <data name="ColumnCardSystem" xml:space="preserve">
+    <value>Kartový systém</value>
+  </data>
+  <data name="ColumnNumber" xml:space="preserve">
+    <value>Číslo karty</value>
+  </data>
+  <data name="ColumnstrState" xml:space="preserve">
+    <value>Stav</value>
+  </data>
+  <data name="DeleteCisNGGroupConfirm" xml:space="preserve">
+    <value>Zmazať skupinu Cis.NG?</value>
+  </data>
+  <data name="RemotingStatusConnected" xml:space="preserve">
+    <value>Pripojený</value>
+  </data>
+  <data name="RemotingStatusDisconnected" xml:space="preserve">
+    <value>Odpojený</value>
+  </data>
+  <data name="UnauthenticatedStatus" xml:space="preserve">
+    <value>Neoverený</value>
+  </data>
+  <data name="ErrorUsedGroupName" xml:space="preserve">
+    <value>Názov skupiny už je použitý.</value>
+  </data>
+  <data name="QuestionDeleteCisNG" xml:space="preserve">
+    <value>Odobrať Cis.NG zo skupiny?</value>
+  </data>
+  <data name="ErrorCardNumberExists" xml:space="preserve">
+    <value>Karta s týmto kartovým číslom už existuje</value>
+  </data>
+  <data name="ErrorNameOrCompanyCodeExists" xml:space="preserve">
+    <value>Kartový systém s týmto menom alebo firemným kódom už existuje</value>
+  </data>
+  <data name="CardsEditFormAddCardSystem" xml:space="preserve">
+    <value>Vložiť kartový systém</value>
+  </data>
+  <data name="ErrorEntryCardNumber" xml:space="preserve">
+    <value>Zadajte číslo karty</value>
+  </data>
+  <data name="ErrorEntryCardState" xml:space="preserve">
+    <value>Zadajte stav karty</value>
+  </data>
+  <data name="ErrorEntryCardType" xml:space="preserve">
+    <value>Zadajte typ karty</value>
+  </data>
+  <data name="ErrorEntryName" xml:space="preserve">
+    <value>Zadajte názov</value>
+  </data>
+  <data name="ErrorWrondLengthCardNumber" xml:space="preserve">
+    <value>Počet znakov v čísle karty musi byť: </value>
+  </data>
+  <data name="ErrorWrondLengthCompanyCode" xml:space="preserve">
+    <value>Počet znakov vo firemnom kóde musí byť: </value>
+  </data>
+  <data name="ErrorWrongPinLength" xml:space="preserve">
+    <value>Dĺžka PIN musí byť od {0} do {1} znakov.</value>
+  </data>
+  <data name="QuestionDeleteConfirm" xml:space="preserve">
+    <value>Zmazať záznam</value>
+  </data>
+  <data name="PresentationGroupEditAddCisNG" xml:space="preserve">
+    <value>Pridanie Cis.NG</value>
+  </data>
+  <data name="PresentationGroupEditAddCisNGGroup" xml:space="preserve">
+    <value>Pridanie skupiny Cis.NG</value>
+  </data>
+  <data name="QuestionAddCisNGGroup" xml:space="preserve">
+    <value>Pridať Cis.NG do prezentačnej skupiny?</value>
+  </data>
+  <data name="QuestionCisNGGroupRelationConfirm" xml:space="preserve">
+    <value>Skupina Cis.NG je použitá vo vzťahu, zrušiť ju?</value>
+  </data>
+  <data name="CardSystemsEditForm_lCards" xml:space="preserve">
+    <value>Karty:</value>
+  </data>
+  <data name="CardsEditForm_lFullCardNumber" xml:space="preserve">
+    <value>Celé číslo karty</value>
+  </data>
+  <data name="ErrorEntryPin" xml:space="preserve">
+    <value>Zadajte pin</value>
+  </data>
+  <data name="PersonEditForm_tbCards" xml:space="preserve">
+    <value>Karty</value>
+  </data>
+  <data name="CardsForm_lPersonFilter" xml:space="preserve">
+    <value>Uzívateľ</value>
+  </data>
+  <data name="ErrorAddCard" xml:space="preserve">
+    <value>Chyba pri pridávaní karty pre užívateľa</value>
+  </data>
+  <data name="ErrorDeleteCard" xml:space="preserve">
+    <value>Chyba pri vymazávaní karty pre užívateľa</value>
+  </data>
+  <data name="PersonEditFormAddCardConfirm" xml:space="preserve">
+    <value>Pridať kartu pre tohto užívateľa</value>
+  </data>
+  <data name="PersonEditFormDeleteCardConfirm" xml:space="preserve">
+    <value>Vymazať kartu pre tohto užívateľa</value>
+  </data>
+  <data name="PersonEditForm_bAddCard" xml:space="preserve">
+    <value>Pridať</value>
+  </data>
+  <data name="PersonEditForm_bDeleteCard" xml:space="preserve">
+    <value>Zmazať</value>
+  </data>
+  <data name="ColumnstrCompanyCode" xml:space="preserve">
+    <value>Celý prefix karty</value>
+  </data>
+  <data name="ColumnStringCardType" xml:space="preserve">
+    <value>Typ karty</value>
+  </data>
+  <data name="General_lDescription" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="PersonEditFormAddAddedCardConfirm" xml:space="preserve">
+    <value>Pridať kartu užívateľovi? Karta už je pridaná užívateľovi: </value>
+  </data>
+  <data name="PersonEditFormAddAddedLoginConfirm" xml:space="preserve">
+    <value>Pridať prihlásenie užívateľoví? Prihlásenie už je priradené užívateľovi: </value>
+  </data>
+  <data name="PersonEditFormAddCardAlreadyInList" xml:space="preserve">
+    <value>Karta už je priradená užívateľovi</value>
+  </data>
+  <data name="PersonEditFormAddLoginAlreadyInList" xml:space="preserve">
+    <value>Prihlásenie už je priradený užívateľovi</value>
+  </data>
+  <data name="PersonsForm_lDescriptionFilter" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="CisNGEditForm_lOnlineState" xml:space="preserve">
+    <value>Stav pripojenia</value>
+  </data>
+  <data name="CardsEditForm_bModifyPerson" xml:space="preserve">
+    <value>Zmeniť</value>
+  </data>
+  <data name="CardsEditForm_bRemovePerson" xml:space="preserve">
+    <value>Zrušiť</value>
+  </data>
+  <data name="CardsEditForm_lCardType" xml:space="preserve">
+    <value>Typ karty</value>
+  </data>
+  <data name="CardsEditForm_lPerson" xml:space="preserve">
+    <value>Užívateľ</value>
+  </data>
+  <data name="CardSystemsEditForm_lCardSubType" xml:space="preserve">
+    <value>Podtyp karty</value>
+  </data>
+  <data name="CardSystemsEditForm_lFullCompanyCode" xml:space="preserve">
+    <value>Celý prefix karty</value>
+  </data>
+  <data name="ErrorEntryCardSubType" xml:space="preserve">
+    <value>Zadajte podtyp karty</value>
+  </data>
+  <data name="General_bCreate" xml:space="preserve">
+    <value>Vytvoriť</value>
+  </data>
+  <data name="CardsEditFormAddPerson" xml:space="preserve">
+    <value>Vložiť užívateľa</value>
+  </data>
+  <data name="ErrorEntryCardSystem" xml:space="preserve">
+    <value>Zadajte kartový systém</value>
+  </data>
+  <data name="General_tbDescription" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="General_tbProperties" xml:space="preserve">
+    <value>Vlastnosti</value>
+  </data>
+  <data name="DailyPlanEditFormDailyPlanEditForm" xml:space="preserve">
+    <value>Editovanie denného plánu</value>
+  </data>
+  <data name="DailyPlanEditForm_lHours" xml:space="preserve">
+    <value>Vyber hodinu</value>
+  </data>
+  <data name="DailyPlanEditForm_lName" xml:space="preserve">
+    <value>Názov denného plánu</value>
+  </data>
+  <data name="DailyPlanEditForm_lSchedule" xml:space="preserve">
+    <value>Plán</value>
+  </data>
+  <data name="DailyPlanEditForm_tpDescription" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="DailyPlanEditForm_tpSchedule" xml:space="preserve">
+    <value>Plán</value>
+  </data>
+  <data name="DailyPlansFormDailyPlansForm" xml:space="preserve">
+    <value>Denné plány</value>
+  </data>
+  <data name="DailyPlansForm_lNameFilter" xml:space="preserve">
+    <value>Názov denného plánu</value>
+  </data>
+  <data name="ErrorInsertDailyPlan" xml:space="preserve">
+    <value>Uloženie denného plánu zlyhalo.</value>
+  </data>
+  <data name="ErrorInsertDailyPlanName" xml:space="preserve">
+    <value>Chyba, názov denného plánu je nutné zadať.</value>
+  </data>
+  <data name="ErrorSaveIntervals" xml:space="preserve">
+    <value>Uloženie intervalov zlyhalo.</value>
+  </data>
+  <data name="ErrorUpdateDailyPlan" xml:space="preserve">
+    <value>Editovanie denného plánu zlyhalo.</value>
+  </data>
+  <data name="ColumnDailyPlanName" xml:space="preserve">
+    <value>Názov</value>
+  </data>
+  <data name="TimeZoneDays_AllDays" xml:space="preserve">
+    <value>Všetky dni</value>
+  </data>
+  <data name="TimeZoneMonths_AllMonths" xml:space="preserve">
+    <value>Všetky mesiace</value>
+  </data>
+  <data name="TimeZoneMonths_April" xml:space="preserve">
+    <value>Apríl</value>
+  </data>
+  <data name="TimeZoneMonths_August" xml:space="preserve">
+    <value>August</value>
+  </data>
+  <data name="TimeZoneMonths_December" xml:space="preserve">
+    <value>December</value>
+  </data>
+  <data name="TimeZoneMonths_February" xml:space="preserve">
+    <value>Február</value>
+  </data>
+  <data name="TimeZoneMonths_January" xml:space="preserve">
+    <value>Január</value>
+  </data>
+  <data name="TimeZoneMonths_July" xml:space="preserve">
+    <value>Júl</value>
+  </data>
+  <data name="TimeZoneMonths_June" xml:space="preserve">
+    <value>Jún</value>
+  </data>
+  <data name="TimeZoneMonths_March" xml:space="preserve">
+    <value>Marec</value>
+  </data>
+  <data name="TimeZoneMonths_May" xml:space="preserve">
+    <value>Máj</value>
+  </data>
+  <data name="TimeZoneMonths_November" xml:space="preserve">
+    <value>November</value>
+  </data>
+  <data name="TimeZoneMonths_October" xml:space="preserve">
+    <value>Oktober</value>
+  </data>
+  <data name="TimeZoneMonths_September" xml:space="preserve">
+    <value>September</value>
+  </data>
+  <data name="TimeZoneWeeks_AllWeeks" xml:space="preserve">
+    <value>Všetky týždne</value>
+  </data>
+  <data name="TimeZoneYears_AllYears" xml:space="preserve">
+    <value>Všetky roky</value>
+  </data>
+  <data name="DailyPlanEditForm_gbInfo" xml:space="preserve">
+    <value>Denný plán nastavenie farieb</value>
+  </data>
+  <data name="DailyPlanEditForm_gbStatus" xml:space="preserve">
+    <value>Stav</value>
+  </data>
+  <data name="DailyPlanEditForm_lMouse" xml:space="preserve">
+    <value>Tlačidlá myš</value>
+  </data>
+  <data name="DailyPlanEditForm_lMouseColorLeft" xml:space="preserve">
+    <value>Ľ</value>
+  </data>
+  <data name="DailyPlanEditForm_lMouseColorRight" xml:space="preserve">
+    <value>P</value>
+  </data>
+  <data name="DailyPlanEditForm_lStatusOff" xml:space="preserve">
+    <value>Vypnuté</value>
+  </data>
+  <data name="DailyPlanEditForm_lStatusOn" xml:space="preserve">
+    <value>Zapnuté</value>
+  </data>
+  <data name="ErrorUsedDailyPlanName" xml:space="preserve">
+    <value>Názov denného plánu je už použitý, zvolte iný názov.</value>
+  </data>
+  <data name="TimeZoneDays_Friday" xml:space="preserve">
+    <value>Piatok</value>
+  </data>
+  <data name="TimeZoneDays_Monday" xml:space="preserve">
+    <value>Pondelok</value>
+  </data>
+  <data name="TimeZoneDays_Saturday" xml:space="preserve">
+    <value>Sobota</value>
+  </data>
+  <data name="TimeZoneDays_Sunday" xml:space="preserve">
+    <value>Nedeľa</value>
+  </data>
+  <data name="TimeZoneDays_Thursday" xml:space="preserve">
+    <value>Štvrtok</value>
+  </data>
+  <data name="TimeZoneDays_Tuesday" xml:space="preserve">
+    <value>Utorok</value>
+  </data>
+  <data name="TimeZoneDays_Wednesday" xml:space="preserve">
+    <value>Streda</value>
+  </data>
+  <data name="TimeZoneDays_Weekdays" xml:space="preserve">
+    <value>Pracovné dni</value>
+  </data>
+  <data name="TimeZoneDays_Weekend" xml:space="preserve">
+    <value>Víkend</value>
+  </data>
+  <data name="TimeZoneWeeks_EvenWeeks" xml:space="preserve">
+    <value>Párny týždeň</value>
+  </data>
+  <data name="TimeZoneWeeks_OddWeeks" xml:space="preserve">
+    <value>Nepárny týždeň</value>
+  </data>
+  <data name="TimeZonesEditFormTimeZonesEditForm" xml:space="preserve">
+    <value>Editovanie časovej zóny</value>
+  </data>
+  <data name="TimeZonesEditForm_StatusOff" xml:space="preserve">
+    <value>Vypnuté</value>
+  </data>
+  <data name="TimeZonesEditForm_StatusOn" xml:space="preserve">
+    <value>Zapnuté</value>
+  </data>
+  <data name="TimeZonesFormTimeZonesForm" xml:space="preserve">
+    <value>Časové zóny</value>
+  </data>
+  <data name="CgpClientMainForm_TimeZonesForm" xml:space="preserve">
+    <value>Časové zóny</value>
+  </data>
+  <data name="ColumnName" xml:space="preserve">
+    <value>Názov</value>
+  </data>
+  <data name="ErrorEntryTimeZoneDailyPlan" xml:space="preserve">
+    <value>Zadajte denný plán</value>
+  </data>
+  <data name="ErrorEntryTimeZoneDay" xml:space="preserve">
+    <value>Zadajte deň</value>
+  </data>
+  <data name="ErrorEntryTimeZoneMonth" xml:space="preserve">
+    <value>Zadajte mesiac</value>
+  </data>
+  <data name="ErrorEntryTimeZoneName" xml:space="preserve">
+    <value>Zadajte názov</value>
+  </data>
+  <data name="ErrorEntryTimeZoneWeek" xml:space="preserve">
+    <value>Zadajte týždeň</value>
+  </data>
+  <data name="ErrorEntryTimeZoneYear" xml:space="preserve">
+    <value>Zadajte rok</value>
+  </data>
+  <data name="ErrorTimeZoneNameExists" xml:space="preserve">
+    <value>Časová zóna s týmto názvom už existuje</value>
+  </data>
+  <data name="TimeZonesEditFormAddDailyPlan" xml:space="preserve">
+    <value>Pridat denný plán</value>
+  </data>
+  <data name="TimeZonesEditForm_bCancelEdit" xml:space="preserve">
+    <value>Zrušiť editáciu</value>
+  </data>
+  <data name="TimeZonesEditForm_bCreateDateSetting" xml:space="preserve">
+    <value>Vytvoriť dátumové obmedzenie</value>
+  </data>
+  <data name="TimeZonesEditForm_bUpdateDateSetting" xml:space="preserve">
+    <value>Uložiť zmeny v dátumovom nastavení</value>
+  </data>
+  <data name="TimeZonesEditForm_lDailyPlan" xml:space="preserve">
+    <value>Denný plán</value>
+  </data>
+  <data name="TimeZonesEditForm_lDay" xml:space="preserve">
+    <value>Deň</value>
+  </data>
+  <data name="TimeZonesEditForm_lDescriptionDateSettings" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="TimeZonesEditForm_lMonth" xml:space="preserve">
+    <value>Mesiac</value>
+  </data>
+  <data name="TimeZonesEditForm_lName" xml:space="preserve">
+    <value>Názov</value>
+  </data>
+  <data name="TimeZonesEditForm_lStatus" xml:space="preserve">
+    <value>Stav</value>
+  </data>
+  <data name="TimeZonesEditForm_lWeek" xml:space="preserve">
+    <value>Týždeň</value>
+  </data>
+  <data name="TimeZonesEditForm_lYear" xml:space="preserve">
+    <value>Rok</value>
+  </data>
+  <data name="TimeZonesForm_lDescriptionFilter" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="TimeZonesForm_lNameFilter" xml:space="preserve">
+    <value>Názov</value>
+  </data>
+  <data name="ColumnDailyPlan" xml:space="preserve">
+    <value>Denný plán</value>
+  </data>
+  <data name="ColumnstrDay" xml:space="preserve">
+    <value>Deň</value>
+  </data>
+  <data name="ColumnstrMonth" xml:space="preserve">
+    <value>Mesiac</value>
+  </data>
+  <data name="ColumnstrWeek" xml:space="preserve">
+    <value>Týždeň</value>
+  </data>
+  <data name="ColumnstrYear" xml:space="preserve">
+    <value>Rok</value>
+  </data>
+  <data name="TimeZonesEditForm_bCalendar" xml:space="preserve">
+    <value>Kalendár</value>
+  </data>
+  <data name="TimeZonesEditForm_lDate" xml:space="preserve">
+    <value>Dátum</value>
+  </data>
+  <data name="TimeZonesEditForm_tbDailyStatus" xml:space="preserve">
+    <value>Denné stavy</value>
+  </data>
+  <data name="TimeZonesEditForm_tbDateSettings" xml:space="preserve">
+    <value>Dátumové nastavenia</value>
+  </data>
+  <data name="CalendarEditFormCalendarEditForm" xml:space="preserve">
+    <value>Editovanie kalendára</value>
+  </data>
+  <data name="CalendarsFormCalendarsForm" xml:space="preserve">
+    <value>Kalendáre</value>
+  </data>
+  <data name="CgpClientMainForm_calendarForm" xml:space="preserve">
+    <value>Kalendáre</value>
+  </data>
+  <data name="CgpClientMainForm_dayTypeForm" xml:space="preserve">
+    <value>Typy dní</value>
+  </data>
+  <data name="DayTypeEditFormDayTypeEditForm" xml:space="preserve">
+    <value>Editovanie typu dňa</value>
+  </data>
+  <data name="DayTypesFormDayTypesForm" xml:space="preserve">
+    <value>Typy dní</value>
+  </data>
+  <data name="CalendarEditFormAddDayType" xml:space="preserve">
+    <value>Pridanie typu dňa.</value>
+  </data>
+  <data name="CalendarEditForm_bCancelEdit" xml:space="preserve">
+    <value>Zrušiť editovanie</value>
+  </data>
+  <data name="CalendarEditForm_bCreateCalendarSetting" xml:space="preserve">
+    <value>Vytvoriť nastavenie</value>
+  </data>
+  <data name="CalendarEditForm_lDay" xml:space="preserve">
+    <value>Deň</value>
+  </data>
+  <data name="CalendarEditForm_lDayType" xml:space="preserve">
+    <value>Typ dňa</value>
+  </data>
+  <data name="CalendarEditForm_lDescription" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="CalendarEditForm_lName" xml:space="preserve">
+    <value>Názov kalendára</value>
+  </data>
+  <data name="CalendarEditForm_lWeek" xml:space="preserve">
+    <value>Týždeň</value>
+  </data>
+  <data name="CalendarEditForm_lYear" xml:space="preserve">
+    <value>Rok</value>
+  </data>
+  <data name="CalendarEditForm_tpCalendarSettings" xml:space="preserve">
+    <value>Nastavenie kalendára</value>
+  </data>
+  <data name="CalendarEditForm_tpDescription" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="ColumnCalendar" xml:space="preserve">
+    <value>Kalendár</value>
+  </data>
+  <data name="ColumnCalendarName" xml:space="preserve">
+    <value>Názov kalendára</value>
+  </data>
+  <data name="ColumnDayType" xml:space="preserve">
+    <value>Typ dňa</value>
+  </data>
+  <data name="ErrorEntryCalendarDay" xml:space="preserve">
+    <value>Zadajte deň.</value>
+  </data>
+  <data name="ErrorEntryCalendarDayType" xml:space="preserve">
+    <value>Zadajte typ dňa.</value>
+  </data>
+  <data name="ErrorEntryCalendarMonth" xml:space="preserve">
+    <value>Zadajte mesiac.</value>
+  </data>
+  <data name="ErrorEntryCalendarName" xml:space="preserve">
+    <value>Zadajte názov kalendára,</value>
+  </data>
+  <data name="ErrorEntryCalendarWeek" xml:space="preserve">
+    <value>Zadajte týždeň.</value>
+  </data>
+  <data name="ErrorEntryCalendarYear" xml:space="preserve">
+    <value>Zadajte rok.</value>
+  </data>
+  <data name="ErrorInsertDayType" xml:space="preserve">
+    <value>Vloženie typu dňa zlyhalo.</value>
+  </data>
+  <data name="ErrorInsertDayTypeName" xml:space="preserve">
+    <value>Názov typu dňa musí byť zadaný.</value>
+  </data>
+  <data name="ErrorUpdateDayType" xml:space="preserve">
+    <value>Úprava typu dňa zlyhala.</value>
+  </data>
+  <data name="ErrorUsedCalendarName" xml:space="preserve">
+    <value>Názov typu kalendára je už použitý, zloľte iný.</value>
+  </data>
+  <data name="ErrorUsedDayTypeName" xml:space="preserve">
+    <value>Názov typu dňa je už použitý, zloľte iný.</value>
+  </data>
+  <data name="CalendarEditForm_bUpdateDateSetting" xml:space="preserve">
+    <value>Uložiť nastavenie</value>
+  </data>
+  <data name="ColumnDayTypeName" xml:space="preserve">
+    <value>Názov</value>
+  </data>
+  <data name="CalendarEditFormInsertText" xml:space="preserve">
+    <value>Vytváranie kalendára</value>
+  </data>
+  <data name="CardsEditFormInsertText" xml:space="preserve">
+    <value>Vytváranie karty</value>
+  </data>
+  <data name="CardSystemsEditFormInsertText" xml:space="preserve">
+    <value>Vytváranie kartového systému</value>
+  </data>
+  <data name="CisNGEditFormInsertText" xml:space="preserve">
+    <value>Vytváranie Cis.NG</value>
+  </data>
+  <data name="CisNGGroupEditFormInsertText" xml:space="preserve">
+    <value>Vytváranie skupiny Cis.NG</value>
+  </data>
+  <data name="DailyPlanEditFormInsertText" xml:space="preserve">
+    <value>Vytváranie denného plánu</value>
+  </data>
+  <data name="DayTypeEditFormInsertText" xml:space="preserve">
+    <value>Vytváranie typu dňa</value>
+  </data>
+  <data name="LoginEditFormInsertText" xml:space="preserve">
+    <value>Vytváranie loginu</value>
+  </data>
+  <data name="PersonEditFormInsertText" xml:space="preserve">
+    <value>Vytváranie užívateľa</value>
+  </data>
+  <data name="PresentationFormatterEditFormInsertText" xml:space="preserve">
+    <value>Vytváranie prezentačného formátora</value>
+  </data>
+  <data name="PresentationGroupEditFormInsertText" xml:space="preserve">
+    <value>Vytváranie prezentačnej skupiny</value>
+  </data>
+  <data name="TimeZonesEditFormInsertText" xml:space="preserve">
+    <value>Vytváranie časovej zóny</value>
+  </data>
+  <data name="implicitDayTypeHoliday" xml:space="preserve">
+    <value>Sviatok</value>
+  </data>
+  <data name="implicitDayTypeVacation" xml:space="preserve">
+    <value>Celodenná dovolenka</value>
+  </data>
+  <data name="ErrorDeleteImplicitDayType" xml:space="preserve">
+    <value>Implicitný typ dňa nemôže byť vymazaný.</value>
+  </data>
+  <data name="ColumnstrDailyPlan" xml:space="preserve">
+    <value>Denný plán</value>
+  </data>
+  <data name="CalendarEditForm_bCalendar" xml:space="preserve">
+    <value>Kalendár</value>
+  </data>
+  <data name="CalendarEditForm_lDate" xml:space="preserve">
+    <value>Dátum</value>
+  </data>
+  <data name="CalendarEditForm_tpDayTypeStatus" xml:space="preserve">
+    <value>Stav typu dňa</value>
+  </data>
+  <data name="implicitCalendarDefaultCalendar" xml:space="preserve">
+    <value>Štandardný kalendár</value>
+  </data>
+  <data name="ErrorDeleteImplicitCalendar" xml:space="preserve">
+    <value>Štandardný kalendár nemôže byť zmazaný.</value>
+  </data>
+  <data name="QuestionLoadActualData" xml:space="preserve">
+    <value>Editovaný objekt bol zmenený iným používateľom. Chcete načítať posledne uložené dáta? Neuložene zmeny budú stratené.</value>
+  </data>
+  <data name="ErrorDuplicatedCalendarSettingPair" xml:space="preserve">
+    <value>Dvojica kalendár a dátumové nastavenie už existuje.</value>
+  </data>
+  <data name="ErrorEntryCalendar" xml:space="preserve">
+    <value>Kalendár musí byť zadaný.</value>
+  </data>
+  <data name="ErrorCalendarMissDayTypes" xml:space="preserve">
+    <value>Kalendár nedefinuje typy dní:</value>
+  </data>
+  <data name="ErrorDuplicatedTimeZoneSettingPair" xml:space="preserve">
+    <value>Dvojica časová zóna a dátumové nastavenie už existuje.</value>
+  </data>
+  <data name="TimeZonesEditFormAddCalendar" xml:space="preserve">
+    <value>Pridať kalendár do časovej zóny?</value>
+  </data>
+  <data name="TimeZonesEditForm_lCalendar" xml:space="preserve">
+    <value>Kalendár</value>
+  </data>
+  <data name="ErrorControlDuplicitPairFailed" xml:space="preserve">
+    <value>Kontrola duplicitnných párov zlyhala.</value>
+  </data>
+  <data name="ColumnstrDayType" xml:space="preserve">
+    <value>Typ dňa</value>
+  </data>
+  <data name="PresentationGroupEditForm_tpDescription" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="ErrorUsedIPAddress" xml:space="preserve">
+    <value>IP adresa je už použitá, zadajte inú.</value>
+  </data>
+  <data name="ErrorUsedFormatterName" xml:space="preserve">
+    <value>Názov formátora je už použitý.</value>
+  </data>
+  <data name="LoginEditForm_tbAccessControl" xml:space="preserve">
+    <value>Prístupové práva</value>
+  </data>
+  <data name="Access_CardMgmt_Admin" xml:space="preserve">
+    <value>Kartový manažment - editovanie</value>
+  </data>
+  <data name="Access_CardMgmt_View" xml:space="preserve">
+    <value>Kartový manažment - prezeranie</value>
+  </data>
+  <data name="Access_Eventlog_View" xml:space="preserve">
+    <value>Logy udalostí - prezeranie</value>
+  </data>
+  <data name="Access_GeneralSettings_Admin" xml:space="preserve">
+    <value>Hlavné nastavenia - editovanie</value>
+  </data>
+  <data name="Access_Login_Admin" xml:space="preserve">
+    <value>Prihlásenia - editovanie</value>
+  </data>
+  <data name="Access_Login_View" xml:space="preserve">
+    <value>Prihlásenia - prezeranie</value>
+  </data>
+  <data name="Access_Person_Admin" xml:space="preserve">
+    <value>Osoby - editovanie</value>
+  </data>
+  <data name="Access_Person_View" xml:space="preserve">
+    <value>Osoby - prezeranie</value>
+  </data>
+  <data name="Access_Presentation_Admin" xml:space="preserve">
+    <value>Prezentačné formuláre - editovanie</value>
+  </data>
+  <data name="Access_Presentation_View" xml:space="preserve">
+    <value>Prezentačné formuláre - prezeranie</value>
+  </data>
+  <data name="Access_SystemEvent_Admin" xml:space="preserve">
+    <value>Systémové udalosti - editovanie</value>
+  </data>
+  <data name="Access_SystemEvent_View" xml:space="preserve">
+    <value>Systémové udalosti - prezeranie</value>
+  </data>
+  <data name="Access_TimeMgmt_Admin" xml:space="preserve">
+    <value>Časový manažment - editovanie</value>
+  </data>
+  <data name="Access_TimeMgmt_View" xml:space="preserve">
+    <value>Časový manažment - prezeranie</value>
+  </data>
+  <data name="ErrorDeleteAccessDenied" xml:space="preserve">
+    <value>Chyba pri vymazávaní. Nedostatčné práva.</value>
+  </data>
+  <data name="ErrorDeleteSuperAdmin" xml:space="preserve">
+    <value>Prihlásenie nie je možné vymazať. Je nastavený ako super admin.</value>
+  </data>
+  <data name="ErrorEditAccessDenied" xml:space="preserve">
+    <value>Chyba pri editácii. Nedostatčné práva.</value>
+  </data>
+  <data name="ErrorInsertAccessDenied" xml:space="preserve">
+    <value>Chyba pri vkladaní. Nedostatčné práva.</value>
+  </data>
+  <data name="ErrorLoadTableAccessDenied" xml:space="preserve">
+    <value>Načítavanie dát zlyhalo. Nedostatocné práva.</value>
+  </data>
+  <data name="LoginEditForm_lIsSuperAdmin" xml:space="preserve">
+    <value>Prihlásenie je nastavené ako super admin</value>
+  </data>
+  <data name="ErrorSetCalendarFailed" xml:space="preserve">
+    <value>Zmena kalendára zlyhala.</value>
+  </data>
+  <data name="QuestionSetNewCalendar" xml:space="preserve">
+    <value>Typy dní budú odstránené, použiť nový kalendár?  </value>
+  </data>
+  <data name="QuestionSetOldCalendar" xml:space="preserve">
+    <value>Použiť pôvodný kalendár?</value>
+  </data>
+  <data name="TimeZoneCalendarChangeFormTimeZoneCalendarChangeForm" xml:space="preserve">
+    <value>Zmena kalendára</value>
+  </data>
+  <data name="TimeZoneCalendarChangeForm_bNewCalendar" xml:space="preserve">
+    <value>Nový</value>
+  </data>
+  <data name="TimeZoneCalendarChangeForm_bOldCalendar" xml:space="preserve">
+    <value>Pôvodný</value>
+  </data>
+  <data name="TimeZoneCalendarChangeForm_lInfo" xml:space="preserve">
+    <value>Kalendárom nepodporované typy dní:</value>
+  </data>
+  <data name="ErrorLoadTable" xml:space="preserve">
+    <value>Načítavanie dát zlyhalo</value>
+  </data>
+  <data name="ErrorStopServerAccessDenied" xml:space="preserve">
+    <value>Zastavenie servera zlyhalo. Nedostatočné práva.</value>
+  </data>
+  <data name="ErrorStopServerFailed" xml:space="preserve">
+    <value>Zastavenie servera zlyhalo</value>
+  </data>
+  <data name="GeneralOptionsForm_lStopServer" xml:space="preserve">
+    <value>Zastavenie servera</value>
+  </data>
+  <data name="GeneralOptionsForm_tpServerControl" xml:space="preserve">
+    <value>Správa servera</value>
+  </data>
+  <data name="General_bStop" xml:space="preserve">
+    <value>Zastaviť</value>
+  </data>
+  <data name="Access_UnlockClientAplication" xml:space="preserve">
+    <value>Odomknutie klientskej aplikácie</value>
+  </data>
+  <data name="LoginEditForm_lLockClientAplication" xml:space="preserve">
+    <value>Uzamknutie klientskej aplikácie</value>
+  </data>
+  <data name="SureToLogout" xml:space="preserve">
+    <value>Chcete sa odhlásiť?</value>
+  </data>
+  <data name="ErrorLogoutAccessDenied" xml:space="preserve">
+    <value>Odlhasovanie zlyhalo. Nedostatočné práva.</value>
+  </data>
+  <data name="ErrorLogoutFailed" xml:space="preserve">
+    <value>Odhlasovanie zlyhalo</value>
+  </data>
+  <data name="PersonEditForm_tpActiveCardReaders" xml:space="preserve">
+    <value>Aktívne snímače kariet</value>
+  </data>
+  <data name="PersonEditForm_tpAddAccessControlList" xml:space="preserve">
+    <value>Zoznamy prístupových práv</value>
+  </data>
+  <data name="ErrorEntryPersonalKey" xml:space="preserve">
+    <value>Osobné ID musí byť zadané</value>
+  </data>
+  <data name="ErrorUsedPersonalKey" xml:space="preserve">
+    <value>Toto osobné ID je už priradené inému užívateľovi</value>
+  </data>
+  <data name="GeneralOptionsForm_cbUniqueNotNullPersonalKey" xml:space="preserve">
+    <value>Osobné ID musí byť zadané a musí byť unikátne</value>
+  </data>
+  <data name="_tpDatesRestrictions" xml:space="preserve">
+    <value>Dátové obmedzenia</value>
+  </data>
+  <data name="AlarmDetailsFormAlarmDetailsForm" xml:space="preserve">
+    <value>Detaily alarmu</value>
+  </data>
+  <data name="AlarmDetailsForm_lAlarmState" xml:space="preserve">
+    <value>Stav alarmu</value>
+  </data>
+  <data name="AlarmDetailsForm_lCreatedDateTime" xml:space="preserve">
+    <value>Dátum a čas vytvorenia</value>
+  </data>
+  <data name="AlarmDetailsForm_lParentObject" xml:space="preserve">
+    <value>Rodičovský objekt</value>
+  </data>
+  <data name="AlarmDetailsForm_lRelativeUniqueIdentificate" xml:space="preserve">
+    <value>Relatívna unikátna identifikácia</value>
+  </data>
+  <data name="AlarmsDialogAlarmsDialog" xml:space="preserve">
+    <value>Alarmy</value>
+  </data>
+  <data name="AlarmsDialog_gbAlarmsCount" xml:space="preserve">
+    <value>Počty alarmov</value>
+  </data>
+  <data name="AlarmsDialog_lAlarm" xml:space="preserve">
+    <value>Alarm</value>
+  </data>
+  <data name="AlarmsDialog_lAlarmNotAcknowledged" xml:space="preserve">
+    <value>Alarm nepotvrdený</value>
+  </data>
+  <data name="AlarmsDialog_lNormalNotAcknowledged" xml:space="preserve">
+    <value>Alarm skončil nepotvrdený</value>
+  </data>
+  <data name="AlarmStates_Alarm" xml:space="preserve">
+    <value>Alarm</value>
+  </data>
+  <data name="AlarmStates_AlarmNotAcknowledged" xml:space="preserve">
+    <value>Alarm nepotvrdený</value>
+  </data>
+  <data name="AlarmStates_Normal" xml:space="preserve">
+    <value>Alarm skončil</value>
+  </data>
+  <data name="AlarmStates_NormalNotAcknowledged" xml:space="preserve">
+    <value>Alarm skončil nepotvrdený</value>
+  </data>
+  <data name="CgpClientMainForm_Alarms" xml:space="preserve">
+    <value>Alarmy</value>
+  </data>
+  <data name="CgpClientMainForm_NoAlarms" xml:space="preserve">
+    <value>Žiadne alarmy</value>
+  </data>
+  <data name="CgpClientMainForm_NotAcknowledged" xml:space="preserve">
+    <value>Nepotv.</value>
+  </data>
+  <data name="ColumnCreatedDateTime" xml:space="preserve">
+    <value>Dátum a čas vytvorenia</value>
+  </data>
+  <data name="ColumnstrAlarmState" xml:space="preserve">
+    <value>Stav alarmu</value>
+  </data>
+  <data name="General_bAcknowledgeState" xml:space="preserve">
+    <value>Potvrdiť stav</value>
+  </data>
+  <data name="General_bViewDetails" xml:space="preserve">
+    <value>Pozrieť detaily</value>
+  </data>
+  <data name="QuestionAddTimeZoneDateSetting" xml:space="preserve">
+    <value>Pridať tento denný plán s predvolenými nastaveniami</value>
+  </data>
+  <data name="PersonEditForm_tpAccessZone" xml:space="preserve">
+    <value>Prístupová zóna</value>
+  </data>
+  <data name="GeneralOptionsForm_tpSecuritySettings" xml:space="preserve">
+    <value>Bezpečnostné nastavenia</value>
+  </data>
+  <data name="ObjectsSearchFormObjectsSearchForm" xml:space="preserve">
+    <value>Vyhľadávanie v databáze</value>
+  </data>
+  <data name="ObjectsSearchForm_bDockUndock" xml:space="preserve">
+    <value>Ukotviť</value>
+  </data>
+  <data name="ObjectsSearchForm_bSearch" xml:space="preserve">
+    <value>Hľadať</value>
+  </data>
+  <data name="ObjectsSearchForm_gbSearch" xml:space="preserve">
+    <value>Vyhľadávanie</value>
+  </data>
+  <data name="ObjectsSearchForm_lName" xml:space="preserve">
+    <value>Názov</value>
+  </data>
+  <data name="ObjectsSearchForm_lObjectType" xml:space="preserve">
+    <value>Typ objektu</value>
+  </data>
+  <data name="ObjectsSearchForm_bUndock" xml:space="preserve">
+    <value>Dialog</value>
+  </data>
+  <data name="ErrorEnterSearchSring" xml:space="preserve">
+    <value>Zadajte hľadaný reťazec</value>
+  </data>
+  <data name="InfoFullTextSearch" xml:space="preserve">
+    <value>Vyhľadávanie podľa reťazca</value>
+  </data>
+  <data name="InfoParamsSearch" xml:space="preserve">
+    <value>Vyhľadávanie podľa parametra</value>
+  </data>
+  <data name="ObjectsSearchForm_cbFullTextSearch" xml:space="preserve">
+    <value>Fultextové vyhľadávanie</value>
+  </data>
+  <data name="ColumnObject" xml:space="preserve">
+    <value>Názov</value>
+  </data>
+  <data name="ColumnObjectType" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="CgpClientMainForm_ormObjectSearch" xml:space="preserve">
+    <value>Hľadať</value>
+  </data>
+  <data name="TextInfoDock" xml:space="preserve">
+    <value>Ukotviť okno</value>
+  </data>
+  <data name="TextInfoMaximize" xml:space="preserve">
+    <value>Maximalizovať</value>
+  </data>
+  <data name="TextInfoNormalSize" xml:space="preserve">
+    <value>Pôvodná veľkosť</value>
+  </data>
+  <data name="TextInfoUndock" xml:space="preserve">
+    <value>Uvoľniť okno</value>
+  </data>
+  <data name="AlarmStates_NormalOffAcknowledged" xml:space="preserve">
+    <value>Alarm mino potvrdenia</value>
+  </data>
+  <data name="PresentationGroupEditForm_chbAlarm" xml:space="preserve">
+    <value>Alarm</value>
+  </data>
+  <data name="PresentationGroupEditForm_chbAlarmNotAck" xml:space="preserve">
+    <value>Alarm nepotvrdený</value>
+  </data>
+  <data name="PresentationGroupEditForm_chbNormal" xml:space="preserve">
+    <value>Alarm skončil</value>
+  </data>
+  <data name="PresentationGroupEditForm_chbNormalNotAck" xml:space="preserve">
+    <value>Alarm skončil nepotvrdený</value>
+  </data>
+  <data name="PresentationGroupEditForm_chbNormalOffAck" xml:space="preserve">
+    <value>Alarm vypnutý potvrdený</value>
+  </data>
+  <data name="PresentationGroupEditForm_gbAlarmResponse" xml:space="preserve">
+    <value>Reagovanie na alarmy</value>
+  </data>
+  <data name="PresentationGroupEditForm_tpAlarmSettings" xml:space="preserve">
+    <value>Alarmové nastavenia</value>
+  </data>
+  <data name="General_bTest" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="GeneralOptionsForm_lFunctionalProperties" xml:space="preserve">
+    <value>Funkčné vlastnosti</value>
+  </data>
+  <data name="GeneralOptionsForm_lLicenceExpiration" xml:space="preserve">
+    <value>Dátum vypršania platnosti</value>
+  </data>
+  <data name="GeneralOptionsForm_lLicenceFile" xml:space="preserve">
+    <value>Licenčný súbor</value>
+  </data>
+  <data name="GeneralOptionsForm_tpLicence" xml:space="preserve">
+    <value>Informácie o licencii</value>
+  </data>
+  <data name="LicenceExpirationNotSet" xml:space="preserve">
+    <value>Nie je nastavený</value>
+  </data>
+  <data name="GeneralOptionsForm_tpDHCPServer" xml:space="preserve">
+    <value>DHCP server</value>
+  </data>
+  <data name="ErrorEmptyValue" xml:space="preserve">
+    <value>Hodnota nesmie byť prázdna</value>
+  </data>
+  <data name="ErrorIPNotValid" xml:space="preserve">
+    <value>IP adresa je neplatná</value>
+  </data>
+  <data name="ErrorIPNotValidOrNotInNetwork" xml:space="preserve">
+    <value>IP adresa je neplatná alebo nepatrí do danej siete</value>
+  </data>
+  <data name="ErrorIpRangeCollision" xml:space="preserve">
+    <value>Kolízia IP rozsahov</value>
+  </data>
+  <data name="ErrorIpRangeMinMaxSwitch" xml:space="preserve">
+    <value>Počiatočná IP adresa pre daný rozsah je väčšia ako koncová</value>
+  </data>
+  <data name="ErrorUnableToConnectToServer" xml:space="preserve">
+    <value>Nie je možné pripojiť sa na server</value>
+  </data>
+  <data name="ErrorWrongFormat" xml:space="preserve">
+    <value>Zlý formát</value>
+  </data>
+  <data name="GeneralOptionsForm_bDHCPSave" xml:space="preserve">
+    <value>Ulož</value>
+  </data>
+  <data name="GeneralOptionsForm_bMaxRange" xml:space="preserve">
+    <value>&lt;min,max&gt;</value>
+  </data>
+  <data name="GeneralOptionsForm_chbEnable" xml:space="preserve">
+    <value>Zapnuté</value>
+  </data>
+  <data name="GeneralOptionsForm_gbDNS" xml:space="preserve">
+    <value>DNS server</value>
+  </data>
+  <data name="GeneralOptionsForm_gbIPGroup" xml:space="preserve">
+    <value>IP skupina</value>
+  </data>
+  <data name="GeneralOptionsForm_gbNetwork" xml:space="preserve">
+    <value>Sieť</value>
+  </data>
+  <data name="GeneralOptionsForm_gbRange" xml:space="preserve">
+    <value>Rozsah pre špecifickú MAC masku</value>
+  </data>
+  <data name="GeneralOptionsForm_lAlternateDNSServer" xml:space="preserve">
+    <value>Alternatívny</value>
+  </data>
+  <data name="GeneralOptionsForm_lDNSSuffix" xml:space="preserve">
+    <value>Sufix</value>
+  </data>
+  <data name="GeneralOptionsForm_lGateway" xml:space="preserve">
+    <value>Brána</value>
+  </data>
+  <data name="GeneralOptionsForm_lIPGroup" xml:space="preserve">
+    <value>IP skupiny</value>
+  </data>
+  <data name="GeneralOptionsForm_lIPRangeFrom" xml:space="preserve">
+    <value>Od</value>
+  </data>
+  <data name="GeneralOptionsForm_lIPRangeTo" xml:space="preserve">
+    <value>do</value>
+  </data>
+  <data name="GeneralOptionsForm_lLeaseTime" xml:space="preserve">
+    <value>Čas vypožičania</value>
+  </data>
+  <data name="GeneralOptionsForm_lMACMask" xml:space="preserve">
+    <value>MAC maska</value>
+  </data>
+  <data name="GeneralOptionsForm_lMaxLeaseTime" xml:space="preserve">
+    <value>Maximálny čas vypožičania</value>
+  </data>
+  <data name="GeneralOptionsForm_lPrefferedDNSServer" xml:space="preserve">
+    <value>Preferovaný</value>
+  </data>
+  <data name="GeneralOptionsForm_lSubnet" xml:space="preserve">
+    <value>Adresa</value>
+  </data>
+  <data name="GeneralOptionsForm_lSubnetMask" xml:space="preserve">
+    <value>Maska</value>
+  </data>
+  <data name="ErrorIpGroupCollision" xml:space="preserve">
+    <value>Pre danú sieť už existuje IP skupina</value>
+  </data>
+  <data name="ErrorRemoveIpGroupFailed" xml:space="preserve">
+    <value>Nepodarilo sa odstrániť IP skupinu</value>
+  </data>
+  <data name="GeneralOptionsForm_bDeleteIpGroup" xml:space="preserve">
+    <value>Odstrániť</value>
+  </data>
+  <data name="GeneralOptionsForm_chbAutoStartDHCP" xml:space="preserve">
+    <value>Automaticky spustiť DHCP na servri</value>
+  </data>
+  <data name="IPGroupSuccessfullyRemoved" xml:space="preserve">
+    <value>IP skupina bola úspešne odstránená</value>
+  </data>
+  <data name="QuestionRemoveIPGroup" xml:space="preserve">
+    <value>Odstrániť IP skupinu?</value>
+  </data>
+  <data name="ColumnSecurityLevelDSM" xml:space="preserve">
+    <value>Bezpečnostná úroveň</value>
+  </data>
+  <data name="ErrorNotSecurityPin" xml:space="preserve">
+    <value>Málo bezpečný PIN s opakovanim rovnakej cislice (2222) alebo sekvenciou čísel (45678, 4321)</value>
+  </data>
+  <data name="GeneralOptionsForm_bStartDHCP" xml:space="preserve">
+    <value>Štart</value>
+  </data>
+  <data name="ColumnParameterType" xml:space="preserve">
+    <value>Typ parametra</value>
+  </data>
+  <data name="ColumnParameterValue" xml:space="preserve">
+    <value>Hodnota parametra</value>
+  </data>
+  <data name="General_lShown" xml:space="preserve">
+    <value>Zobrazených:</value>
+  </data>
+  <data name="PersonEditFormAddCardsConfirm" xml:space="preserve">
+    <value>Pridať karty pre tohto užívateľa?</value>
+  </data>
+  <data name="PersonEditFormAddLoginsConfirm" xml:space="preserve">
+    <value>Pridať prihlásenia pre tohto užívateľa?</value>
+  </data>
+  <data name="QuestionAddCisNGs" xml:space="preserve">
+    <value>Pridať viaceré Cis.NG do skupiny Cis.NG?</value>
+  </data>
+  <data name="QuestionAddCisNGsGroup" xml:space="preserve">
+    <value>Pridať viaceré Cis.NG do prezentačnej skupiny?</value>
+  </data>
+  <data name="QuestionAddPresentationGroups" xml:space="preserve">
+    <value>Pridať prezentačné skupiny?</value>
+  </data>
+  <data name="relative_unique_identificate_alarm_area" xml:space="preserve">
+    <value>Alarm - alarmová zóna:</value>
+  </data>
+  <data name="relative_unique_identificate_alarm_a_area" xml:space="preserve">
+    <value>A-alarm - alarmová zóna:</value>
+  </data>
+  <data name="relative_unique_identificate_alarm_input" xml:space="preserve">
+    <value>Alarm - vstup:</value>
+  </data>
+  <data name="relative_unique_identificate_ccu_clock_unsynchronized" xml:space="preserve">
+    <value>CCU čas nezosynchronizovaný</value>
+  </data>
+  <data name="relative_unique_identificate_ccu_offline" xml:space="preserve">
+    <value>CCU odpojené</value>
+  </data>
+  <data name="relative_unique_identificate_ccu_unconfigured" xml:space="preserve">
+    <value>CCU nenakonfigurované</value>
+  </data>
+  <data name="relative_unique_identificate_cr_access_denied" xml:space="preserve">
+    <value>Alarm snímač kariet - prístup zakázaný.</value>
+  </data>
+  <data name="relative_unique_identificate_cr_access_permitted" xml:space="preserve">
+    <value>Alarm snímač kariet - prístup povolený.</value>
+  </data>
+  <data name="relative_unique_identificate_cr_card_blocked_inactive" xml:space="preserve">
+    <value>Alarm snímač kariet - karta blokovaná alebo neaktívna.</value>
+  </data>
+  <data name="relative_unique_identificate_cr_invalid_gin" xml:space="preserve">
+    <value>Alarm snímač kariet - neplatný GIN.</value>
+  </data>
+  <data name="relative_unique_identificate_cr_invalid_pin" xml:space="preserve">
+    <value>Alarm snímač kariet - neplatný PIN.</value>
+  </data>
+  <data name="relative_unique_identificate_cr_offline" xml:space="preserve">
+    <value>Alarm snímač kariet - offline</value>
+  </data>
+  <data name="relative_unique_identificate_cr_unknown_card" xml:space="preserve">
+    <value>Alarm snímač kariet - neznáma karta</value>
+  </data>
+  <data name="relative_unique_identificate_de_door_ajar" xml:space="preserve">
+    <value>Dvere pootvorené - dverné prostredie:</value>
+  </data>
+  <data name="relative_unique_identificate_de_intrusion" xml:space="preserve">
+    <value>Vniknutie - dverné prostredie:</value>
+  </data>
+  <data name="relative_unique_identificate_de_sabotage" xml:space="preserve">
+    <value>Sabotáž - dverné prostredie:</value>
+  </data>
+  <data name="relative_unique_identificate_tamper_input" xml:space="preserve">
+    <value>Tamper - vstup:</value>
+  </data>
+  <data name="ColumnstrName" xml:space="preserve">
+    <value>Názov</value>
+  </data>
+  <data name="CgpClientMainForm_alarmsMI" xml:space="preserve">
+    <value>Alarmy</value>
+  </data>
+  <data name="CgpClientMainForm_localOptions" xml:space="preserve">
+    <value>Lokálne nastavenia</value>
+  </data>
+  <data name="LocalOptionsFormLocalOptionsForm" xml:space="preserve">
+    <value>Lokálne nastavenia</value>
+  </data>
+  <data name="ObjectType_AACardReader" xml:space="preserve">
+    <value>AA snímač kariet</value>
+  </data>
+  <data name="ObjectType_AAInput" xml:space="preserve">
+    <value>AA vstup</value>
+  </data>
+  <data name="ObjectType_AccessControlList" xml:space="preserve">
+    <value>Prístupový kontrolný list</value>
+  </data>
+  <data name="ObjectType_AccessZone" xml:space="preserve">
+    <value>Prístupová zóna</value>
+  </data>
+  <data name="ObjectType_ACLPerson" xml:space="preserve">
+    <value>ZPP osoba</value>
+  </data>
+  <data name="ObjectType_ACLSetting" xml:space="preserve">
+    <value>Nastavenie ZPP</value>
+  </data>
+  <data name="ObjectType_ACLSettingAA" xml:space="preserve">
+    <value>Nastavenie ZPP pre AA</value>
+  </data>
+  <data name="ObjectType_AlarmArea" xml:space="preserve">
+    <value>Alarmová zóna</value>
+  </data>
+  <data name="ObjectType_Calendar" xml:space="preserve">
+    <value>Kalendár</value>
+  </data>
+  <data name="ObjectType_CalendarDateSetting" xml:space="preserve">
+    <value>Nastavenie kalendára</value>
+  </data>
+  <data name="ObjectType_Card" xml:space="preserve">
+    <value>Karta</value>
+  </data>
+  <data name="ObjectType_CardReader" xml:space="preserve">
+    <value>Snímač kariet</value>
+  </data>
+  <data name="ObjectType_CardSystem" xml:space="preserve">
+    <value>Kartový systém</value>
+  </data>
+  <data name="ObjectType_CCU" xml:space="preserve">
+    <value>CCU</value>
+  </data>
+  <data name="ObjectType_DailyPlan" xml:space="preserve">
+    <value>Denný plán</value>
+  </data>
+  <data name="ObjectType_DayInterval" xml:space="preserve">
+    <value>Denný interval</value>
+  </data>
+  <data name="ObjectType_DayType" xml:space="preserve">
+    <value>Typ dňa</value>
+  </data>
+  <data name="ObjectType_DCU" xml:space="preserve">
+    <value>DCU</value>
+  </data>
+  <data name="ObjectType_DevicesAlarmSetting" xml:space="preserve">
+    <value>Nastavenie alarmov zariadení</value>
+  </data>
+  <data name="ObjectType_DoorEnvironment" xml:space="preserve">
+    <value>Dverné prostredia</value>
+  </data>
+  <data name="ObjectType_Expression" xml:space="preserve">
+    <value>Logický výraz</value>
+  </data>
+  <data name="ObjectType_Input" xml:space="preserve">
+    <value>Vstup</value>
+  </data>
+  <data name="ObjectType_Output" xml:space="preserve">
+    <value>Výstup</value>
+  </data>
+  <data name="ObjectType_Person" xml:space="preserve">
+    <value>Osoba</value>
+  </data>
+  <data name="ObjectType_SecurityDailyPlan" xml:space="preserve">
+    <value>Bezpečnostný denný plán</value>
+  </data>
+  <data name="ObjectType_SecurityDayInterval" xml:space="preserve">
+    <value>Bezpečnostný denný interval</value>
+  </data>
+  <data name="ObjectType_TimeZone" xml:space="preserve">
+    <value>Časová zóna</value>
+  </data>
+  <data name="ObjectType_TimeZoneDateSetting" xml:space="preserve">
+    <value>Časová zóna dátumové nastavenie</value>
+  </data>
+  <data name="ParameterType_DateTimeCCU" xml:space="preserve">
+    <value>Dátum a čas CCU</value>
+  </data>
+  <data name="ParameterType_DateTimeServer" xml:space="preserve">
+    <value>Dátum a čas Server</value>
+  </data>
+  <data name="ErrorLoggedCount" xml:space="preserve">
+    <value>Nie je možné pripojiť viac užívateľov (licenčné obmedzenie)</value>
+  </data>
+  <data name="Access_Alarms_Admin" xml:space="preserve">
+    <value>Alarmy - editovanie</value>
+  </data>
+  <data name="AlarmsDialog_bClear" xml:space="preserve">
+    <value>Zmazať</value>
+  </data>
+  <data name="AlarmsDialog_bFilter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="AlarmsDialog_gbFilter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="AlarmsDialog_lDateFrom" xml:space="preserve">
+    <value>Dátum od</value>
+  </data>
+  <data name="AlarmsDialog_lDateTo" xml:space="preserve">
+    <value>Dátum do</value>
+  </data>
+  <data name="AlarmsDialog_lFilteredText" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="ErrorInsertFilterDateFrom" xml:space="preserve">
+    <value>Dátum od nie je platný</value>
+  </data>
+  <data name="ErrorInsertFilterDateTo" xml:space="preserve">
+    <value>Dátum do nie je platný</value>
+  </data>
+  <data name="AlarmPriority_Critical" xml:space="preserve">
+    <value>Kritická</value>
+  </data>
+  <data name="AlarmPriority_High" xml:space="preserve">
+    <value>Vysoká</value>
+  </data>
+  <data name="AlarmPriority_Low" xml:space="preserve">
+    <value>Nízka</value>
+  </data>
+  <data name="AlarmPriority_Medium" xml:space="preserve">
+    <value>Stredná</value>
+  </data>
+  <data name="ColumnstrAlarmPriority" xml:space="preserve">
+    <value>Priorita alarmu</value>
+  </data>
+  <data name="ErrorDateInterval" xml:space="preserve">
+    <value>Interval dátumov nie je správny.</value>
+  </data>
+  <data name="FormLicenceRequestFormLicenceRequest" xml:space="preserve">
+    <value>Požiadavka na licenciu</value>
+  </data>
+  <data name="ErrorOnCreateRequest" xml:space="preserve">
+    <value>Počas vytvárania požiadavky došlo k chybe</value>
+  </data>
+  <data name="ErrorOnCreateRequestCIID" xml:space="preserve">
+    <value>Počas vytvárania požiadavky došlo k chybe (nepoadrilo sa získať CIID)</value>
+  </data>
+  <data name="FormLicenceRequest_groupBoxCustomerInfo" xml:space="preserve">
+    <value>Informácie o zákazníkovi</value>
+  </data>
+  <data name="FormLicenceRequest_buttonCancel" xml:space="preserve">
+    <value>Ukončiť</value>
+  </data>
+  <data name="FormLicenceRequest_buttonSave" xml:space="preserve">
+    <value>Uložiť</value>
+  </data>
+  <data name="FormLicenceRequest_labelContactEmail" xml:space="preserve">
+    <value>Kontaktný email</value>
+  </data>
+  <data name="FormLicenceRequest_labelContactFirstName" xml:space="preserve">
+    <value>Kontaktné meno</value>
+  </data>
+  <data name="FormLicenceRequest_labelContactLastName" xml:space="preserve">
+    <value>Kontaktné priezvisko</value>
+  </data>
+  <data name="FormLicenceRequest_labelContactPhone" xml:space="preserve">
+    <value>Kontaktný telefón</value>
+  </data>
+  <data name="FormLicenceRequest_labelCustAddr" xml:space="preserve">
+    <value>Adresa zákazníka</value>
+  </data>
+  <data name="FormLicenceRequest_labelCustName" xml:space="preserve">
+    <value>Meno zákazníka</value>
+  </data>
+  <data name="RequestSuccessfullyCreated" xml:space="preserve">
+    <value>Požiadavka bola úspešne vytvorená</value>
+  </data>
+  <data name="DemoLicence" xml:space="preserve">
+    <value>Demo licencia</value>
+  </data>
+  <data name="RemainingTime" xml:space="preserve">
+    <value>Zostávajúci čas</value>
+  </data>
+  <data name="GeneralOptionsForm_buttonLicenceRequest" xml:space="preserve">
+    <value>Vytvoriť požiadavku na licenciu</value>
+  </data>
+  <data name="AlarmsDialog_cbShowOnlyBlockedAlarm" xml:space="preserve">
+    <value>Zobraziť iba blokované alarmy</value>
+  </data>
+  <data name="General_bBlock" xml:space="preserve">
+    <value>Blokovať</value>
+  </data>
+  <data name="General_bUnblock" xml:space="preserve">
+    <value>Odblokovať</value>
+  </data>
+  <data name="ErrorDirectoryNotExits" xml:space="preserve">
+    <value>Chyba, adresár neexistuje.</value>
+  </data>
+  <data name="ErrorDirectoryWriteNotEnabled" xml:space="preserve">
+    <value>Chyba, zápis do adresára nie je povolený.</value>
+  </data>
+  <data name="GeneralOptionsForm_bForceDBSBackup" xml:space="preserve">
+    <value>Vynútená záloha</value>
+  </data>
+  <data name="GeneralOptionsForm_bSaveDatabaseBackup" xml:space="preserve">
+    <value>Uložiť</value>
+  </data>
+  <data name="GeneralOptionsForm_bSelectPathDB" xml:space="preserve">
+    <value>Adresár</value>
+  </data>
+  <data name="GeneralOptionsForm_gbBackupPath" xml:space="preserve">
+    <value>Cesta k zálohe databázy</value>
+  </data>
+  <data name="GeneralOptionsForm_gbTimeZone" xml:space="preserve">
+    <value>Časová zóna</value>
+  </data>
+  <data name="GeneralOptionsForm_lName" xml:space="preserve">
+    <value>Názov</value>
+  </data>
+  <data name="GeneralOptionsForm_lInfoDatabaseBackup" xml:space="preserve">
+    <value>Databáza sa uloží pri každom prechode časovej zóny do stavu ON</value>
+  </data>
+  <data name="ErrorNotTimeZoneDatabaseBackup" xml:space="preserve">
+    <value>Časová zóna pre zálohu databázy musí byť nastavená.</value>
+  </data>
+  <data name="ErrorForceBackupFail" xml:space="preserve">
+    <value>Vynútená záloha databázy zlyhala.</value>
+  </data>
+  <data name="ErrorPathForceBackupInUse" xml:space="preserve">
+    <value>Cesta pre vynútenú zálohu databázy sa používa pre pravidelnú zálohu.</value>
+  </data>
+  <data name="InfoForceBackupSuccess" xml:space="preserve">
+    <value>Vynútená záloha databázy úspešne skončila.</value>
+  </data>
+  <data name="ErrorPathAccess" xml:space="preserve">
+    <value>Prístup na zadanú cestu zakázaný.</value>
+  </data>
+  <data name="ErrorInsertValidIPAddress" xml:space="preserve">
+    <value>IP adresa nie je platná.</value>
+  </data>
+  <data name="SystemEventsEditForm_gbEventClient_connected" xml:space="preserve">
+    <value>Klient pripojený</value>
+  </data>
+  <data name="SystemEventsEditForm_gbEventClient_disconnected" xml:space="preserve">
+    <value>Klient odpojený</value>
+  </data>
+  <data name="SystemEventsEditForm_gbEventDatabase_disconnected" xml:space="preserve">
+    <value>Databáza odpojená</value>
+  </data>
+  <data name="General_lNameFilter" xml:space="preserve">
+    <value>Názov</value>
+  </data>
+  <data name="CgpClientMainForm_cisNgForm" xml:space="preserve">
+    <value>Cis.NG</value>
+  </data>
+  <data name="CgpClientMainForm_cisNgGroupForm" xml:space="preserve">
+    <value>Skupiny Cis.NG</value>
+  </data>
+  <data name="CgpClientMainForm_dailyPlanForm" xml:space="preserve">
+    <value>Denné plány</value>
+  </data>
+  <data name="CgpClientMainForm_systemEventForm" xml:space="preserve">
+    <value>Systémové udalosti</value>
+  </data>
+  <data name="GeneralOptionsForm_buttonSaveSecuritySettings" xml:space="preserve">
+    <value>Uložiť</value>
+  </data>
+  <data name="ColumnFullName" xml:space="preserve">
+    <value>Celý názov</value>
+  </data>
+  <data name="AllPluginsFormAllPluginsForm" xml:space="preserve">
+    <value>Pluginy</value>
+  </data>
+  <data name="CgpClientMainForm_plugins" xml:space="preserve">
+    <value>Pluginy</value>
+  </data>
+  <data name="ErrorWrongEmailAddress" xml:space="preserve">
+    <value>Emailová adresa nie je platná</value>
+  </data>
+  <data name="GeneralOptionsForm_bCeateGroup" xml:space="preserve">
+    <value>Vytvor</value>
+  </data>
+  <data name="ErrorReadLicencePublisherAndProperties" xml:space="preserve">
+    <value>Nepodarilo sa načítať potrebné licenčné informácie (certifikát, vlastnosti).
+(*.crt and *.ldsc súbory musia by prítomné)</value>
+  </data>
+  <data name="NewIpGroup" xml:space="preserve">
+    <value>Nová IP skupina</value>
+  </data>
+  <data name="GeneralOptionsForm_buttonSetMacGroup" xml:space="preserve">
+    <value>Nastaviť</value>
+  </data>
+  <data name="IPRangeSet" xml:space="preserve">
+    <value>IP rozsah bol úspešne nastavený</value>
+  </data>
+  <data name="ErrorServerNetwork" xml:space="preserve">
+    <value>Server nemá pripojenie do danej siete</value>
+  </data>
+  <data name="IPGroupAdded" xml:space="preserve">
+    <value>IP skupina bola úspešne pridaná</value>
+  </data>
+  <data name="IPGroupUpdated" xml:space="preserve">
+    <value>IP skupina bola úspešne aktualizovaná</value>
+  </data>
+  <data name="GeneralOptionsForm_gbAlarmColour" xml:space="preserve">
+    <value>Alarm</value>
+  </data>
+  <data name="GeneralOptionsForm_gbAlarmNotAcknowledged" xml:space="preserve">
+    <value>Alarm nepotvrdený</value>
+  </data>
+  <data name="GeneralOptionsForm_gbDropDownColour" xml:space="preserve">
+    <value>Odkaz na objekt (povolený drop)</value>
+  </data>
+  <data name="GeneralOptionsForm_gbNoAlarmsInQueueColour" xml:space="preserve">
+    <value>Front bez alarmov</value>
+  </data>
+  <data name="GeneralOptionsForm_gbNormalColour" xml:space="preserve">
+    <value>Normálny</value>
+  </data>
+  <data name="GeneralOptionsForm_gbNormalNotAcknowledgedColour" xml:space="preserve">
+    <value>Normálny nepotvrdený</value>
+  </data>
+  <data name="GeneralOptionsForm_gbReferenceObjectsColour" xml:space="preserve">
+    <value>Odkaz na objekt</value>
+  </data>
+  <data name="GeneralOptionsForm_lColourBackground" xml:space="preserve">
+    <value>Farba pozadia</value>
+  </data>
+  <data name="GeneralOptionsForm_lColourText" xml:space="preserve">
+    <value>Farba textu</value>
+  </data>
+  <data name="InfoColorPreview" xml:space="preserve">
+    <value>Ukážka</value>
+  </data>
+  <data name="GeneralOptionsForm_tpUiSettings" xml:space="preserve">
+    <value>Nastavenia užívateľského rozhrania</value>
+  </data>
+  <data name="ErrorWrondDirectSerialLengthCardNumber" xml:space="preserve">
+    <value>Počet znakov v čísle karty môže byť: iba 12,14,20,30. Aktuálne je: </value>
+  </data>
+  <data name="General_bClear" xml:space="preserve">
+    <value>Zmazať</value>
+  </data>
+  <data name="relative_unique_identificate_cr_invalid_emergency_code" xml:space="preserve">
+    <value>Alarm snímač kariet - neplatný núdzový kód.</value>
+  </data>
+  <data name="ColumnstrValue" xml:space="preserve">
+    <value>Hodnota</value>
+  </data>
+  <data name="ColumnstrLocalization" xml:space="preserve">
+    <value>Lokalizácia</value>
+  </data>
+  <data name="CgpClientMainForm_closeAllButThis" xml:space="preserve">
+    <value>Zavrieť všetky okrem tohto</value>
+  </data>
+  <data name="General_tpDescription" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="General_tpReferencedBy" xml:space="preserve">
+    <value>Referencie</value>
+  </data>
+  <data name="General_bRoClear" xml:space="preserve">
+    <value>Zrušiť</value>
+  </data>
+  <data name="General_bRoRefresh" xml:space="preserve">
+    <value>Obnoviť</value>
+  </data>
+  <data name="General_bRoSearch" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="General_lRoText" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="CgpClientMainForm_userFoldersStructuresForm" xml:space="preserve">
+    <value>Adresárová štruktúra</value>
+  </data>
+  <data name="CreateFolderFormCreateFolderForm" xml:space="preserve">
+    <value>Vytváranie adresára</value>
+  </data>
+  <data name="CreateFolderForm_lFolderName" xml:space="preserve">
+    <value>Názov adresára</value>
+  </data>
+  <data name="ErrorFolderNameAlreadyExists" xml:space="preserve">
+    <value>Adresár s týmto menom už existuje</value>
+  </data>
+  <data name="ErrorInsertFolderName" xml:space="preserve">
+    <value>Zadajte názov adresara</value>
+  </data>
+  <data name="ErrorSaveUserFoldersStructureFailed" xml:space="preserve">
+    <value>Ukladanie užívateľskej adresárovej štruktúry zlyhalo</value>
+  </data>
+  <data name="ErrorTheSameFolderName" xml:space="preserve">
+    <value>Nový názov adresára musí byť iný ako pôvodný názov adresára</value>
+  </data>
+  <data name="General_bRename" xml:space="preserve">
+    <value>Premenovať</value>
+  </data>
+  <data name="QuestionDeleteFolder" xml:space="preserve">
+    <value>Vybraný adresár a všetký jeho podadresáre budú vymazané zo štruktúry. Vymazať adresár?</value>
+  </data>
+  <data name="RenameFolderFormRenameFolderForm" xml:space="preserve">
+    <value>Premenovnie adresára</value>
+  </data>
+  <data name="RenameFolderForm_lNewFolderName" xml:space="preserve">
+    <value>Nový názov adresára</value>
+  </data>
+  <data name="RenameFolderForm_lOldFolderName" xml:space="preserve">
+    <value>Pôvodný názov adresára</value>
+  </data>
+  <data name="UserFoldersStructuresFormUserFoldersStructuresForm" xml:space="preserve">
+    <value>Adresárová štruktúra</value>
+  </data>
+  <data name="UserFoldersStructuresForm_miCreate" xml:space="preserve">
+    <value>Vytvoriť adresár</value>
+  </data>
+  <data name="UserFoldersStructuresForm_miDelete" xml:space="preserve">
+    <value>Zmazať adresár</value>
+  </data>
+  <data name="UserFoldersStructuresForm_miRename" xml:space="preserve">
+    <value>Premenovať adresár</value>
+  </data>
+  <data name="Info_Cgp" xml:space="preserve">
+    <value>Hlavná skupina</value>
+  </data>
+  <data name="Info_Ncas" xml:space="preserve">
+    <value>Prístupová skupina</value>
+  </data>
+  <data name="QuestionOverwriteDatabaseBackup" xml:space="preserve">
+    <value>Prepísať predchádzajúcu zálohu?</value>
+  </data>
+  <data name="InfoDBSBackupDirectory" xml:space="preserve">
+    <value>Adresár: </value>
+  </data>
+  <data name="InfoDBSBackupFile" xml:space="preserve">
+    <value>Súbor: </value>
+  </data>
+  <data name="ErrorOrmObjectAlreadyExists" xml:space="preserve">
+    <value>Tento objekt v tomto adresáry už existuje</value>
+  </data>
+  <data name="General_tpUserFolders" xml:space="preserve">
+    <value>Umiestnenia objektu</value>
+  </data>
+  <data name="QuestionDeleteOrmObject" xml:space="preserve">
+    <value>Odobrať vybraný objekt</value>
+  </data>
+  <data name="UserFoldersStructuresForm_bAssignObject" xml:space="preserve">
+    <value>Pridať objekt</value>
+  </data>
+  <data name="UserFoldersStructuresForm_bOpenEditForm" xml:space="preserve">
+    <value>Otvorit editovací formulár</value>
+  </data>
+  <data name="UserFoldersStructuresForm_miAssignObject" xml:space="preserve">
+    <value>Pridať objekt</value>
+  </data>
+  <data name="UserFoldersStructuresForm_miOpenEditForm" xml:space="preserve">
+    <value>Otvorit editovací formulár</value>
+  </data>
+  <data name="UserFoldersStructuresForm_bCreateObject" xml:space="preserve">
+    <value>Vytvoriť objekt</value>
+  </data>
+  <data name="UserFoldersStructuresForm_miCreateObject" xml:space="preserve">
+    <value>Vytvoriť objekt</value>
+  </data>
+  <data name="ErrorBankLength" xml:space="preserve">
+    <value>Súčet dĺžok musí byť</value>
+  </data>
+  <data name="ErrorSameSectorValue" xml:space="preserve">
+    <value>Zhodné číslo sektoru</value>
+  </data>
+  <data name="GeneralOptionsForm_cbAutocCoseEnabled" xml:space="preserve">
+    <value>Zapnuté</value>
+  </data>
+  <data name="GeneralOptionsForm_gbAutoclose" xml:space="preserve">
+    <value>Nastavenie automatického zatvárania záložiek</value>
+  </data>
+  <data name="GeneralOptionsForm_gbColorSettings" xml:space="preserve">
+    <value>Nastavenie farieb</value>
+  </data>
+  <data name="GeneralOptionsForm_labelTimeout" xml:space="preserve">
+    <value>Zatvoriť po čase neaktívnosti</value>
+  </data>
+  <data name="GeneralOptionsForm_lAutocloseRange" xml:space="preserve">
+    <value>Rozsah (1 - 1440) min</value>
+  </data>
+  <data name="AlarmsDialog_tsAcknowledge" xml:space="preserve">
+    <value>Potvrdiť stav</value>
+  </data>
+  <data name="AlarmsDialog_tsBlock" xml:space="preserve">
+    <value>Blokovať</value>
+  </data>
+  <data name="QuestionConfirmBlockAlarm" xml:space="preserve">
+    <value>Nastaviť blokovanie alarmu?</value>
+  </data>
+  <data name="ColumnMustChangePassword" xml:space="preserve">
+    <value>Vynútiť zmenu hesla</value>
+  </data>
+  <data name="LoginEditForm_lMustChangePassword" xml:space="preserve">
+    <value>Vynútiť zmenu hesla</value>
+  </data>
+  <data name="ObjectType_CisNG" xml:space="preserve">
+    <value>Cis.NG</value>
+  </data>
+  <data name="ObjectType_CisNGGroup" xml:space="preserve">
+    <value>Skupina Cis.NG</value>
+  </data>
+  <data name="GeneralOptionsForm_lChangePassEvery" xml:space="preserve">
+    <value>Zmeniť heslo každých</value>
+  </data>
+  <data name="GeneralOptionsForm_lPassDays" xml:space="preserve">
+    <value>dní (0 - 730, 0 je vypnuté)</value>
+  </data>
+  <data name="ObjectType_Login" xml:space="preserve">
+    <value>Prihlásenie</value>
+  </data>
+  <data name="ObjectType_PresentationFormatter" xml:space="preserve">
+    <value>Prezentačný formátor</value>
+  </data>
+  <data name="ObjectType_PresentationGroup" xml:space="preserve">
+    <value>Prezentačná skupina</value>
+  </data>
+  <data name="InfoExpiredSession" xml:space="preserve">
+    <value>Platnosť spojenia vypršala</value>
+  </data>
+  <data name="GeneralOptionsForm_buttonSave" xml:space="preserve">
+    <value>Uložiť</value>
+  </data>
+  <data name="GeneralOptionsForm_cbAutocCoseTurnedOn" xml:space="preserve">
+    <value>Zapnuté</value>
+  </data>
+  <data name="ErrorDeleteLogedLogin" xml:space="preserve">
+    <value>Nie je možné odstrániť prihlásenie, ktoré je aktuálne prihlásené</value>
+  </data>
+  <data name="CardSystemsEditForm_chbHexInputAkey" xml:space="preserve">
+    <value>HEX vstup</value>
+  </data>
+  <data name="CardSystemsEditForm_chbHexInputBkey" xml:space="preserve">
+    <value>HEX vstup</value>
+  </data>
+  <data name="CardSystemsEditForm_lAkey" xml:space="preserve">
+    <value>A-kľúč</value>
+  </data>
+  <data name="CardSystemsEditForm_lBkey" xml:space="preserve">
+    <value>B-kľúč</value>
+  </data>
+  <data name="CardSystemsEditForm_lEncoding" xml:space="preserve">
+    <value>Kódovanie</value>
+  </data>
+  <data name="CardSystemsEditForm_lLength" xml:space="preserve">
+    <value>Dĺžka</value>
+  </data>
+  <data name="CardSystemsEditForm_lOffset" xml:space="preserve">
+    <value>Offset</value>
+  </data>
+  <data name="CardSystemsEditForm_lSector" xml:space="preserve">
+    <value>Sektor</value>
+  </data>
+  <data name="CardSystemsEditForm_tpSmartCardData" xml:space="preserve">
+    <value>Nastavenia pre smart card</value>
+  </data>
+  <data name="ErrorNotValidKeyChar" xml:space="preserve">
+    <value>Nepodporovaný HEX znak pre kľúč.</value>
+  </data>
+  <data name="ErrorWrongKeyLength" xml:space="preserve">
+    <value>Neplatná dĺžka kľúča.</value>
+  </data>
+  <data name="General_tpProperties" xml:space="preserve">
+    <value>Vlastnosti</value>
+  </data>
+  <data name="General_bRefresh" xml:space="preserve">
+    <value>Obnoviť</value>
+  </data>
+  <data name="ObjectsSearchForm_chbFullTextSearch" xml:space="preserve">
+    <value>Fulltextové vyhľadávanie</value>
+  </data>
+  <data name="PersonEditForm_tpActualAccess" xml:space="preserve">
+    <value>Aktuálny zoznam prístupov</value>
+  </data>
+  <data name="ErrorEnterMailAddress" xml:space="preserve">
+    <value>Zadajte mailovú adresu</value>
+  </data>
+  <data name="ErrorSendTestMailFailed" xml:space="preserve">
+    <value>Poslanie testovacieho mailu zlyhalo.</value>
+  </data>
+  <data name="InfoTestMailSend" xml:space="preserve">
+    <value>Mail úspešne odoslaný.</value>
+  </data>
+  <data name="ErrorBirthDateLaterThanNow" xml:space="preserve">
+    <value>Dátum narodenia nemôže byť nastavený na dátum v budúcnosti</value>
+  </data>
+  <data name="ErrorUsedCisNGName" xml:space="preserve">
+    <value>Názov CisNG je už použitý.</value>
+  </data>
+  <data name="ErrorDeleteImplicitDailyPlan" xml:space="preserve">
+    <value>Implicitný denný plán nemôže byť zmazaný.</value>
+  </data>
+  <data name="implicitDailyPlanAlwaysOFF" xml:space="preserve">
+    <value>Vždy vypnutý</value>
+  </data>
+  <data name="implicitDailyPlanAlwaysON" xml:space="preserve">
+    <value>Vždy zapnutý</value>
+  </data>
+  <data name="implicitDailyPlanDaylightON" xml:space="preserve">
+    <value>Cez deň zapnutý</value>
+  </data>
+  <data name="implicitDailyPlanNightON" xml:space="preserve">
+    <value>V noci zapnutý</value>
+  </data>
+  <data name="QuestionSetSMTPNow" xml:space="preserve">
+    <value>Chcete nastaviť SMTP nastavenia teraz?</value>
+  </data>
+  <data name="ObjectType_UserFoldersStructure" xml:space="preserve">
+    <value>Adresárová štruktúra</value>
+  </data>
+  <data name="ErrorInserCisNG" xml:space="preserve">
+    <value>Vloženie  Cis.NG zlyhalo.</value>
+  </data>
+  <data name="CalendarEditForm_lMonth" xml:space="preserve">
+    <value>Mesiac</value>
+  </data>
+  <data name="ErrorAddCisNGGrouptoPG" xml:space="preserve">
+    <value>Pridanie skupiny Cisov zlyhalo.</value>
+  </data>
+  <data name="General_lName" xml:space="preserve">
+    <value>Názov</value>
+  </data>
+  <data name="General_tpSettings" xml:space="preserve">
+    <value>Nastavenia</value>
+  </data>
+  <data name="PresentationGroupEditForm_lEmailAddress" xml:space="preserve">
+    <value>mailová adresa</value>
+  </data>
+  <data name="DateFormDateForm" xml:space="preserve">
+    <value>Kalendár</value>
+  </data>
+  <data name="LocalOptionsForm_lComPort" xml:space="preserve">
+    <value>COM port</value>
+  </data>
+  <data name="LocalOptionsForm_lComPortBaudrate" xml:space="preserve">
+    <value>Maximálna prenosová rýchlosť</value>
+  </data>
+  <data name="LocalOptionsForm_tpCardReaderSettings" xml:space="preserve">
+    <value>Nastavenie snímača kariet</value>
+  </data>
+  <data name="ErrorUnknownWrongCard" xml:space="preserve">
+    <value>Neznáma, alebo nepriradená karta</value>
+  </data>
+  <data name="InfoLoginCREnabled" xml:space="preserve">
+    <value>Prihlásenie pomocou karty umožnené.</value>
+  </data>
+  <data name="_tsiModify" xml:space="preserve">
+    <value>Zmeniť</value>
+  </data>
+  <data name="_tsiCreate" xml:space="preserve">
+    <value>Vytvoriť</value>
+  </data>
+  <data name="_tsiRemove" xml:space="preserve">
+    <value>Odstrániť</value>
+  </data>
+  <data name="ErrorLoginDisabled" xml:space="preserve">
+    <value>Chyba, prihlásenie je deaktivované.</value>
+  </data>
+  <data name="Offline" xml:space="preserve">
+    <value>Odpojený</value>
+  </data>
+  <data name="Online" xml:space="preserve">
+    <value>Pripojený</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>Neznámy</value>
+  </data>
+  <data name="LocalOptionsForm_lCrState" xml:space="preserve">
+    <value>Stav snímača kariet</value>
+  </data>
+  <data name="LocalOptionsForm_lLastCard" xml:space="preserve">
+    <value>Posledná karta</value>
+  </data>
+  <data name="SaveAfterCancel" xml:space="preserve">
+    <value>Chcete uložiť zmeny ?</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>Otázka</value>
+  </data>
+  <data name="ValueChanged" xml:space="preserve">
+    <value>Hodnoty vo formulári boli zmenené.</value>
+  </data>
+  <data name="ErrorInvalidPin" xml:space="preserve">
+    <value>PIN nie je správne zadaný.</value>
+  </data>
+  <data name="ErrorSwipedCardNull" xml:space="preserve">
+    <value>Priložte kartu.</value>
+  </data>
+  <data name="GeneralOptionsForm_cbCardPinLoginRequire" xml:space="preserve">
+    <value>Vyžadovať PIN pri prihlasovaní kartou</value>
+  </data>
+  <data name="LoginPasswordForm_gbCard" xml:space="preserve">
+    <value>Snímač kariet</value>
+  </data>
+  <data name="Description_lSmtpServer" xml:space="preserve">
+    <value>Server pre SMTP</value>
+  </data>
+  <data name="Search_Fulltext" xml:space="preserve">
+    <value>Fulltextové</value>
+  </data>
+  <data name="Search_FulltextSearchByFolderStructure" xml:space="preserve">
+    <value>Fulltextové z adresárovej štruktúry</value>
+  </data>
+  <data name="Search_ParametricalSearchByType" xml:space="preserve">
+    <value>Parametrické podľa typu</value>
+  </data>
+  <data name="ObjectsSearchForm_lSearchType" xml:space="preserve">
+    <value>Typ vyhľadávania</value>
+  </data>
+  <data name="Description_cbCardPinLoginRequire" xml:space="preserve">
+    <value>Špecifikuje či je potrebné zadávať pin kód pri prihlasovaní sa kartou</value>
+  </data>
+  <data name="Description_cbUniqueNotNullPersonalKey" xml:space="preserve">
+    <value>Špecifikuje či osobné ID osoby musí byť nastavené a unikátne</value>
+  </data>
+  <data name="Description_lChangePassEvery" xml:space="preserve">
+    <value>Špecifikuje čas (0 - 730 dní) po ktorom uplynutí je potrebné zmeniť si heslo. Nevzťahuje sa na super admína. (0 zmanená, že sa heslo nemusí meniť nikdy)</value>
+  </data>
+  <data name="relative_unique_identificate_card_reader_tamper_sabotage" xml:space="preserve">
+    <value>Snímač kariet tamper/sabotáž</value>
+  </data>
+  <data name="relative_unique_identificate_ccu_tamper_sabotage" xml:space="preserve">
+    <value>CCU tamper/sabotáž</value>
+  </data>
+  <data name="relative_unique_identificate_dcu_tamper_sabotage" xml:space="preserve">
+    <value>DCU tamper/sabotáž</value>
+  </data>
+  <data name="PersonEditForm_gbLogin" xml:space="preserve">
+    <value>Prihlásenie</value>
+  </data>
+  <data name="General_false" xml:space="preserve">
+    <value>nie</value>
+  </data>
+  <data name="General_true" xml:space="preserve">
+    <value>áno</value>
+  </data>
+  <data name="AlarmsDialog_tsUnblock" xml:space="preserve">
+    <value>Odblokovať</value>
+  </data>
+  <data name="InfoAlarmState" xml:space="preserve">
+    <value>Stav alarmu</value>
+  </data>
+  <data name="InfoBlockedAlarmState" xml:space="preserve">
+    <value>Stav alarmu (blokovaný)</value>
+  </data>
+  <data name="ColumnClientLanguage" xml:space="preserve">
+    <value>Jazyk klienta</value>
+  </data>
+  <data name="AlarmsDialog_lAlarmPriority" xml:space="preserve">
+    <value>Priorita alarmu</value>
+  </data>
+  <data name="UserFoldersStructuresForm_bCreate" xml:space="preserve">
+    <value>Vytvoriť adresár</value>
+  </data>
+  <data name="UserFoldersStructuresForm_bDelete" xml:space="preserve">
+    <value>Zmazať adresár</value>
+  </data>
+  <data name="UserFoldersStructuresForm_bRename" xml:space="preserve">
+    <value>Premenovať adresár</value>
+  </data>
+  <data name="UserFoldersStructuresForm_RootFolderName" xml:space="preserve">
+    <value>Užívateľská adresárova štruktúra</value>
+  </data>
+  <data name="UserFoldersStructuresForm_miUnassignObject" xml:space="preserve">
+    <value>Uvoľniť objekt</value>
+  </data>
+  <data name="UserFoldersStructuresForm_bUnassignObject" xml:space="preserve">
+    <value>Uvoľniť objekt</value>
+  </data>
+  <data name="ColumnstrEventSources" xml:space="preserve">
+    <value>Zdroje udalosti</value>
+  </data>
+  <data name="QuestionStopServer" xml:space="preserve">
+    <value>Zastaviť server</value>
+  </data>
+  <data name="ErorrUserIsNotSuperadmin" xml:space="preserve">
+    <value>Užívateľ nie je superadmin</value>
+  </data>
+  <data name="ErrorLoginExpired" xml:space="preserve">
+    <value>Platnosť loginu vypršala</value>
+  </data>
+  <data name="GeneralOptionsForm_lDemoInfo" xml:space="preserve">
+    <value>Aplikácia je spustená v DEMO režime. Zostávajúci čas:  </value>
+  </data>
+  <data name="General_bClone" xml:space="preserve">
+    <value>Klonovať</value>
+  </data>
+  <data name="ColumnActualState" xml:space="preserve">
+    <value>Aktuálny stav</value>
+  </data>
+  <data name="relative_unique_identificate_dcu_offline" xml:space="preserve">
+    <value>DCU odpojené</value>
+  </data>
+  <data name="DeleteError" xml:space="preserve">
+    <value>Chyba pri mazaní</value>
+  </data>
+  <data name="QuestionCloseEditedForm" xml:space="preserve">
+    <value>sa edituje, ukončiť editáciu?</value>
+  </data>
+  <data name="QuestionMultiselectDeleteConfirm" xml:space="preserve">
+    <value>Zmazať vybrané záznamy</value>
+  </data>
+  <data name="General_bCreateCard" xml:space="preserve">
+    <value>Vytvoriť kartu</value>
+  </data>
+  <data name="ErrorNoAccessCreateCard" xml:space="preserve">
+    <value>Nedostatočné práva pre vytvorenie karty</value>
+  </data>
+  <data name="ErrorMsgTextEmpty" xml:space="preserve">
+    <value>Text správy je prázdny</value>
+  </data>
+  <data name="ErrorNotsetCisNG" xml:space="preserve">
+    <value>Skupina Cisov nemá priradený žiadny CisNG</value>
+  </data>
+  <data name="General_bSend" xml:space="preserve">
+    <value>Poslať</value>
+  </data>
+  <data name="General_gbCisMessage" xml:space="preserve">
+    <value>Typ správy</value>
+  </data>
+  <data name="General_gbExpirationType" xml:space="preserve">
+    <value>Typ platnosti</value>
+  </data>
+  <data name="General_gbInfoMessage" xml:space="preserve">
+    <value>Správa</value>
+  </data>
+  <data name="General_tpSendInfoMessage" xml:space="preserve">
+    <value>Zasielanie spravy pre CisNG</value>
+  </data>
+  <data name="ApplicationLock" xml:space="preserve">
+    <value>Zadajte užívateľské meno a heslo s právami na zatvorenie aplikácie</value>
+  </data>
+  <data name="General_chbFullscreen" xml:space="preserve">
+    <value>Celá obrazovka</value>
+  </data>
+  <data name="General_chbIdle" xml:space="preserve">
+    <value>Neobsadený</value>
+  </data>
+  <data name="General_chbImmediate" xml:space="preserve">
+    <value>Okamžitý</value>
+  </data>
+  <data name="General_chbNoscroling" xml:space="preserve">
+    <value>Vypnúť rolovania</value>
+  </data>
+  <data name="General_chbPriorityOverride" xml:space="preserve">
+    <value>Nahradiť</value>
+  </data>
+  <data name="General_lClass" xml:space="preserve">
+    <value>Trieda</value>
+  </data>
+  <data name="General_lCyclecount" xml:space="preserve">
+    <value>Počet cyklov</value>
+  </data>
+  <data name="General_lDate" xml:space="preserve">
+    <value>Dátum</value>
+  </data>
+  <data name="General_lDays" xml:space="preserve">
+    <value>Dni</value>
+  </data>
+  <data name="General_lGroup" xml:space="preserve">
+    <value>Skupina</value>
+  </data>
+  <data name="General_lHour" xml:space="preserve">
+    <value>Hodina</value>
+  </data>
+  <data name="General_lHours" xml:space="preserve">
+    <value>Hodiny</value>
+  </data>
+  <data name="General_lMinutes" xml:space="preserve">
+    <value>Minúty</value>
+  </data>
+  <data name="General_lPriority" xml:space="preserve">
+    <value>Priorita</value>
+  </data>
+  <data name="General_lSeconds" xml:space="preserve">
+    <value>Sekundy</value>
+  </data>
+  <data name="General_lShowtime" xml:space="preserve">
+    <value>Čas zobrazenia</value>
+  </data>
+  <data name="General_lTimeOut" xml:space="preserve">
+    <value>Prerušenia</value>
+  </data>
+  <data name="General_rbCyclecount" xml:space="preserve">
+    <value>Počet cyklov</value>
+  </data>
+  <data name="General_rbDatetime" xml:space="preserve">
+    <value>Dátum ukončenia</value>
+  </data>
+  <data name="General_rbLifetime" xml:space="preserve">
+    <value>Doba životnosti</value>
+  </data>
+  <data name="General_rbUnicitygroup" xml:space="preserve">
+    <value>Jednoznačná skupina</value>
+  </data>
+  <data name="QuestionClearAllCisNGs" xml:space="preserve">
+    <value>Odstrániť všetky CisNG z prezentačnej skupiny</value>
+  </data>
+  <data name="PresentationGroupEditForm_bCreateCisNG" xml:space="preserve">
+    <value>Vytvoriť CisNG</value>
+  </data>
+  <data name="PresentationGroupEditForm_bCreateCisNGGroup" xml:space="preserve">
+    <value>Vytvoriť skupinu CisNG</value>
+  </data>
+  <data name="PresentationGroupEditForm_bRemoveCisNg" xml:space="preserve">
+    <value>Odstrániť</value>
+  </data>
+  <data name="FormLicenceRequest_lConnectionCount" xml:space="preserve">
+    <value>Maximálny povolený počet pripojených klientov</value>
+  </data>
+  <data name="FormLicenceRequest_lDoorEnvironmentCount" xml:space="preserve">
+    <value>Maximálny povolený počet dverných prostredí</value>
+  </data>
+  <data name="General_Enable" xml:space="preserve">
+    <value>Povoliť</value>
+  </data>
+  <data name="CalendarEditForm_bCreateDayType" xml:space="preserve">
+    <value>Vytvoriť typ dňa</value>
+  </data>
+  <data name="TimeZonesEditForm_bRefreshDays" xml:space="preserve">
+    <value>Obnoviť dni</value>
+  </data>
+  <data name="CancelCheckDependencies" xml:space="preserve">
+    <value>Chyba prístupov, zrušiť označené závislosti</value>
+  </data>
+  <data name="CheckDependencies" xml:space="preserve">
+    <value>Chyba pristupov, označiť závislosti</value>
+  </data>
+  <data name="ClientVersion" xml:space="preserve">
+    <value>Klient</value>
+  </data>
+  <data name="ServerVersion" xml:space="preserve">
+    <value>Server</value>
+  </data>
+  <data name="ColumnFullCardNumber" xml:space="preserve">
+    <value>Celé čislo karty</value>
+  </data>
+  <data name="CgpClientMainForm_about" xml:space="preserve">
+    <value>O aplikácii</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Verzia</value>
+  </data>
+  <data name="UnknownVersion" xml:space="preserve">
+    <value>Neznáma</value>
+  </data>
+  <data name="NoExpiration" xml:space="preserve">
+    <value>Bez expirácie</value>
+  </data>
+  <data name="ColumnStringOnlineState" xml:space="preserve">
+    <value>Stav pripojenia</value>
+  </data>
+  <data name="PersonEditForm_lCompany" xml:space="preserve">
+    <value>Firma</value>
+  </data>
+  <data name="PersonEditForm_lDepartment" xml:space="preserve">
+    <value>Oddelenie</value>
+  </data>
+  <data name="PersonEditForm_lEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="PersonEditForm_lMiddleName" xml:space="preserve">
+    <value>Stredné meno</value>
+  </data>
+  <data name="PersonEditForm_lPhoneNumber" xml:space="preserve">
+    <value>Telefónne číslo</value>
+  </data>
+  <data name="PersonEditForm_lTitle" xml:space="preserve">
+    <value>Titul</value>
+  </data>
+  <data name="ErrorInvalidPhoneNumber" xml:space="preserve">
+    <value>Telefónne číslo nie je platné.</value>
+  </data>
+  <data name="ColumnFullCompanyCode" xml:space="preserve">
+    <value>Celý prefix karty</value>
+  </data>
+  <data name="relative_unique_identificate_dcu_waiting_for_upgrade" xml:space="preserve">
+    <value>DCU čaká na upgrade</value>
+  </data>
+  <data name="ErrorOnLicenceProperty" xml:space="preserve">
+    <value>Nastavenie atribútu licencie zlyhalo (skontrolujte popisný súbor)</value>
+  </data>
+  <data name="GeneralRequestedType" xml:space="preserve">
+    <value>Očakávaný typ je</value>
+  </data>
+  <data name="ClientUpgradeFormClientUpgradeForm" xml:space="preserve">
+    <value>Upgrade klienta</value>
+  </data>
+  <data name="ClientUpgradeForm_lUpgradeStage" xml:space="preserve">
+    <value>...sťahovanie upgrade balíčka</value>
+  </data>
+  <data name="ClosingClientApplication" xml:space="preserve">
+    <value>...zatváranie aplikácie klienta</value>
+  </data>
+  <data name="DirectoryDoesNotExist" xml:space="preserve">
+    <value>Adresár neexistuje</value>
+  </data>
+  <data name="Exception" xml:space="preserve">
+    <value>Vyskytla sa výnimka</value>
+  </data>
+  <data name="FileDoesNotExist" xml:space="preserve">
+    <value>Súbor sa nenašiel</value>
+  </data>
+  <data name="GetDataFromServerFailed" xml:space="preserve">
+    <value>Pokus o získanie dát zo servra zlyhal</value>
+  </data>
+  <data name="ServerUnavailable" xml:space="preserve">
+    <value>Server nie je dostupný</value>
+  </data>
+  <data name="LocalOptionsForm_chbAutoUpgradeClient" xml:space="preserve">
+    <value>Automaticky upgradovať klienta</value>
+  </data>
+  <data name="LocalOptionsForm_tpOtherSettings" xml:space="preserve">
+    <value>Ostatné</value>
+  </data>
+  <data name="QuestionUpgradeClient" xml:space="preserve">
+    <value>K dispozícii je nová verzia klienta. Chcete upgradovať?</value>
+  </data>
+  <data name="ColumnCompany" xml:space="preserve">
+    <value>Firma</value>
+  </data>
+  <data name="ColumnCostCenter" xml:space="preserve">
+    <value>Daňové číslo</value>
+  </data>
+  <data name="ColumnDepartment" xml:space="preserve">
+    <value>Oddelenie</value>
+  </data>
+  <data name="ColumnEmployeeNumber" xml:space="preserve">
+    <value>Čislo zamestnanca</value>
+  </data>
+  <data name="ColumnEmploymentBeginningDate" xml:space="preserve">
+    <value>Dátum nástupu do zamestnania</value>
+  </data>
+  <data name="ColumnEmploymentEndDate" xml:space="preserve">
+    <value>Dátum ukončenia zamestnania</value>
+  </data>
+  <data name="ColumnLastName" xml:space="preserve">
+    <value>Priezvisko</value>
+  </data>
+  <data name="ColumnMiddleName" xml:space="preserve">
+    <value>Stredné meno</value>
+  </data>
+  <data name="ColumnPersonalID" xml:space="preserve">
+    <value>Osobné ID</value>
+  </data>
+  <data name="ColumnRelativeSuperior" xml:space="preserve">
+    <value>Príbuzný/nadriadený</value>
+  </data>
+  <data name="ColumnRelativeSuperiorsPhoneNumber" xml:space="preserve">
+    <value>Telefónne číslo príbuzného/nadriad.</value>
+  </data>
+  <data name="ColumnRole" xml:space="preserve">
+    <value>Funkcia v zamestnaní</value>
+  </data>
+  <data name="CSVImportDialogCSVImportDialog" xml:space="preserve">
+    <value>Importovanie údajov o osobách z CSV súboru</value>
+  </data>
+  <data name="CSVImportDialog_lDateFormat" xml:space="preserve">
+    <value>Formát dátumu</value>
+  </data>
+  <data name="CSVImportDialog_lDepartmentFolder" xml:space="preserve">
+    <value>Záložka pre oddelenie</value>
+  </data>
+  <data name="CSVImportDialog_lFilePath" xml:space="preserve">
+    <value>Cesta k súboru</value>
+  </data>
+  <data name="CSVImportDialog_lImportType" xml:space="preserve">
+    <value>Typ importu</value>
+  </data>
+  <data name="CSVImportDialog_lSeparator" xml:space="preserve">
+    <value>Oddeľovač</value>
+  </data>
+  <data name="CSVImportDialog_lTemplate" xml:space="preserve">
+    <value>Šablóna pre import</value>
+  </data>
+  <data name="ErrorEntryDateFormat" xml:space="preserve">
+    <value>Zadajte formát dátumu</value>
+  </data>
+  <data name="ErrorEntryFilePath" xml:space="preserve">
+    <value>Zadajte cestu k súboru</value>
+  </data>
+  <data name="ErrorEntryImportType" xml:space="preserve">
+    <value>Zadajte typ importu</value>
+  </data>
+  <data name="ErrorEntrySeparator" xml:space="preserve">
+    <value>Zadajte oddeľovač</value>
+  </data>
+  <data name="ErrorFileNotFound" xml:space="preserve">
+    <value>Súbor sa nenašiel</value>
+  </data>
+  <data name="ErrorNoDataForImport" xml:space="preserve">
+    <value>Nie sú žiadne dáta pre import</value>
+  </data>
+  <data name="General_bImport" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="General_bLoadFile" xml:space="preserve">
+    <value>Načítať súbor</value>
+  </data>
+  <data name="General_bOpenFile" xml:space="preserve">
+    <value>Otvoriť súbor</value>
+  </data>
+  <data name="ImportType_AddAll" xml:space="preserve">
+    <value>Pridať všetko</value>
+  </data>
+  <data name="ImportType_IgnoreOnConflict" xml:space="preserve">
+    <value>Ignorovať pri konflikte</value>
+  </data>
+  <data name="ImportType_OverwriteOnConflict" xml:space="preserve">
+    <value>Prepísať údaje pri konflikte</value>
+  </data>
+  <data name="InfoAnotherClientImportsCSVFile" xml:space="preserve">
+    <value>Iný klient práve importuje CSV súbor</value>
+  </data>
+  <data name="InfoImportSuccessed" xml:space="preserve">
+    <value>Import skončil úspešne</value>
+  </data>
+  <data name="PersonEditForm_lCostCenter" xml:space="preserve">
+    <value>Daňové číslo</value>
+  </data>
+  <data name="PersonEditForm_lEmployeeNumber" xml:space="preserve">
+    <value>Číslo zamestnanaca</value>
+  </data>
+  <data name="PersonEditForm_lEmploymentBeginningDate" xml:space="preserve">
+    <value>Dátum nástupu do zamestnania</value>
+  </data>
+  <data name="PersonEditForm_lEmploymentEndDate" xml:space="preserve">
+    <value>Dátum ukončenia zamestnania</value>
+  </data>
+  <data name="PersonEditForm_lRelativeSuperior" xml:space="preserve">
+    <value>Príbuzný/nadriadený</value>
+  </data>
+  <data name="PersonEditForm_lRelativeSuperiorsPhoneNumber" xml:space="preserve">
+    <value>Tel. číslo príbuzného/nadriad.</value>
+  </data>
+  <data name="PersonEditForm_lRole" xml:space="preserve">
+    <value>Funkcia v zamestaní</value>
+  </data>
+  <data name="PersonsForm_bCSVImport" xml:space="preserve">
+    <value>CSV import</value>
+  </data>
+  <data name="CSVImportDialog_cbParseBirthdateFromPersonId" xml:space="preserve">
+    <value>Parsovať dátum narodenia z osobného ID</value>
+  </data>
+  <data name="General_tsHome" xml:space="preserve">
+    <value>Domov</value>
+  </data>
+  <data name="Description_lDemoInfo" xml:space="preserve">
+    <value>Po oplynutí tohoto času sa odstráni celá konfigurácia</value>
+  </data>
+  <data name="Description_lLicenceExpiration" xml:space="preserve">
+    <value>Po tomto dátume bude licenčný súbor invalidný</value>
+  </data>
+  <data name="Description_lLicenceFile" xml:space="preserve">
+    <value>Cesta k licenčnému súboru</value>
+  </data>
+  <data name="Description_LoginCount" xml:space="preserve">
+    <value>Maximálny počet loginov</value>
+  </data>
+  <data name="Disabled" xml:space="preserve">
+    <value>Zakázaný</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>Povolený</value>
+  </data>
+  <data name="GeneralOptionsForm_LoginCount" xml:space="preserve">
+    <value>Počet loginov</value>
+  </data>
+  <data name="_CgpNCASServerplugin" xml:space="preserve">
+    <value>Plugin prístupového systému</value>
+  </data>
+  <data name="_ConnectionCount" xml:space="preserve">
+    <value>Maximálny povolený počet pripojených klientov</value>
+  </data>
+  <data name="_DoorEnvironmentCount" xml:space="preserve">
+    <value>Maximálny povolený počet dverných prostredí</value>
+  </data>
+  <data name="QuestionDeleteSingleFolder" xml:space="preserve">
+    <value>Vymazať adresár?</value>
+  </data>
+  <data name="ErrorEntryDNSHostname" xml:space="preserve">
+    <value>Zadajte DNS hostname</value>
+  </data>
+  <data name="ErrorEntryIpAddress" xml:space="preserve">
+    <value>Zadajte IP adresu</value>
+  </data>
+  <data name="ErrorIpAddressAlreadyAdded" xml:space="preserve">
+    <value>Táto IP adresa je už vložená</value>
+  </data>
+  <data name="ErrorNotValidDNSHostname" xml:space="preserve">
+    <value>DNS hostname nie je platný</value>
+  </data>
+  <data name="ErrorNotValidIpAddress" xml:space="preserve">
+    <value>IP adresa nie je platná</value>
+  </data>
+  <data name="GeneralOptionsForm_gbNtpSettings" xml:space="preserve">
+    <value>NTP nastavenia</value>
+  </data>
+  <data name="GeneralOptionsForm_lIpAddress" xml:space="preserve">
+    <value>IP adresa</value>
+  </data>
+  <data name="QuestionDeleteIpAddressConfirm" xml:space="preserve">
+    <value>Vynazať IP adresu</value>
+  </data>
+  <data name="ErrorSaveNtpIpAddresses" xml:space="preserve">
+    <value>Uloženie NTP adries zlyhalo.</value>
+  </data>
+  <data name="GeneralOptionsForm_bResolve" xml:space="preserve">
+    <value>Analyzovať</value>
+  </data>
+  <data name="GeneralOptionsForm_gbSmtpSettings" xml:space="preserve">
+    <value>SMTP nastavenia</value>
+  </data>
+  <data name="General_lHoursExp" xml:space="preserve">
+    <value>Hodina</value>
+  </data>
+  <data name="CloseDialog_bCancel" xml:space="preserve">
+    <value>Zrušiť</value>
+  </data>
+  <data name="CloseDialog_bClose" xml:space="preserve">
+    <value>Zavreť</value>
+  </data>
+  <data name="CloseDialog_bLogout" xml:space="preserve">
+    <value>Odhlásiť</value>
+  </data>
+  <data name="CloseDialog_lQuestionCloseApp" xml:space="preserve">
+    <value>Chcete sa odhlásiť alebo zavrieť aplikáciu ?</value>
+  </data>
+  <data name="QuestionCloseAppShort" xml:space="preserve">
+    <value>Chcete zavrieť aplikáciu ?</value>
+  </data>
+  <data name="CloseDialogCloseDialog" xml:space="preserve">
+    <value>Odhlásenie</value>
+  </data>
+  <data name="Description_cbLockClientApplication" xml:space="preserve">
+    <value>Špecifikuje, či je nutná autentifikácia pre uzamknutie klientskej aplikácie</value>
+  </data>
+  <data name="GeneralOptionsForm_cbLockClientApplication" xml:space="preserve">
+    <value>Uzamknutie klientskej aplikácie</value>
+  </data>
+  <data name="CloseAppDialogCloseAppDialog" xml:space="preserve">
+    <value>Otázka</value>
+  </data>
+  <data name="ErrorDNS" xml:space="preserve">
+    <value>Chyba analyzovania DNS</value>
+  </data>
+  <data name="Column" xml:space="preserve">
+    <value>Stĺpec</value>
+  </data>
+  <data name="ColumnImportResult" xml:space="preserve">
+    <value>Výsledok importu</value>
+  </data>
+  <data name="ColumnImportRow" xml:space="preserve">
+    <value>Importovať riadok</value>
+  </data>
+  <data name="CSVImportDialog_tpImport" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="CSVImportDialog_tpReport" xml:space="preserve">
+    <value>Výsledok importu</value>
+  </data>
+  <data name="CSVImportResult_Added" xml:space="preserve">
+    <value>Pridaný</value>
+  </data>
+  <data name="CSVImportResult_IgnoreConflict" xml:space="preserve">
+    <value>Import bol ignorovaný. Objekt už existuje</value>
+  </data>
+  <data name="CSVImportResult_Overwritten" xml:space="preserve">
+    <value>Objekt bol prepísaný</value>
+  </data>
+  <data name="ImportType_OverwriteNonEmptyData" xml:space="preserve">
+    <value>Prepísať len vyplnené údaje pri konflikte</value>
+  </data>
+  <data name="ErrorSectorInvalidValue" xml:space="preserve">
+    <value>Hodnota sektoru musí byť 1 alebo väčšia</value>
+  </data>
+  <data name="CloseAppDialog_bCancel" xml:space="preserve">
+    <value>Zrušiť</value>
+  </data>
+  <data name="CloseAppDialog_bClose" xml:space="preserve">
+    <value>Zavrieť</value>
+  </data>
+  <data name="CloseAppDialog_bLogout" xml:space="preserve">
+    <value>Odhlásiť</value>
+  </data>
+  <data name="ErrorUserAlreadyLogged" xml:space="preserve">
+    <value>Užívateľ už je prihlásený</value>
+  </data>
+  <data name="GeneralOptionsForm_gbDatabaseBackup" xml:space="preserve">
+    <value>Záloha databázy</value>
+  </data>
+  <data name="GeneralOptionsForm_tpDatabaseOptions" xml:space="preserve">
+    <value>Nastavenia databázy</value>
+  </data>
+  <data name="ErrorNotTimeZoneEventlogExpiration" xml:space="preserve">
+    <value>Časovú zónu je potrebné zadať</value>
+  </data>
+  <data name="GeneralOptionsForm_bForceEvenlogExpirationClean" xml:space="preserve">
+    <value>Spustiť čistenie eventlogov</value>
+  </data>
+  <data name="GeneralOptionsForm_bSaveEventlogExpiration" xml:space="preserve">
+    <value>Uložiť</value>
+  </data>
+  <data name="GeneralOptionsForm_gbEventLogExpiration" xml:space="preserve">
+    <value>Expirácia záznamov v eventlogu</value>
+  </data>
+  <data name="GeneralOptionsForm_lCalculatedValue" xml:space="preserve">
+    <value>Aktuálny limit pre počet eventlogov</value>
+  </data>
+  <data name="GeneralOptionsForm_lDaysExpiration" xml:space="preserve">
+    <value>Počet dní do expirácie</value>
+  </data>
+  <data name="GeneralOptionsForm_lExponent" xml:space="preserve">
+    <value>Exponent</value>
+  </data>
+  <data name="GeneralOptionsForm_lInfoEventlogExpirationTimeZone" xml:space="preserve">
+    <value>Eventlogy sa vymažú pri každom prechode časovej zóny do stavu ON</value>
+  </data>
+  <data name="GeneralOptionsForm_lMaxEventlogsRecords" xml:space="preserve">
+    <value>Multiplikátor</value>
+  </data>
+  <data name="ErrorForceEventlogExpirationFail" xml:space="preserve">
+    <value>Čistenie záznamov eventlogov skončilo zlyhalo.</value>
+  </data>
+  <data name="InfoForceEventlogExpirationSuccess" xml:space="preserve">
+    <value>Čistenie záznamov eventlogov skončilo úspešne.</value>
+  </data>
+  <data name="RunForceEventlogExpiration" xml:space="preserve">
+    <value>Spustiť čistenie záznamov eventlogov?</value>
+  </data>
+  <data name="ConnectionCount" xml:space="preserve">
+    <value>Maximálny počet pripojených klientov</value>
+  </data>
+  <data name="ErrorCanNotObtainLicencePropertyInfo" xml:space="preserve">
+    <value>Nepodailo sa získať informácie o funkčnej vlastnosti licencie</value>
+  </data>
+  <data name="LicenceCanNotImportData" xml:space="preserve">
+    <value>Import dát nie je povolený (licenčné obmedzenie)</value>
+  </data>
+  <data name="LicenceCanNotSendMessagesToCIS" xml:space="preserve">
+    <value>Integrácia CIS nie je povolená (licenčné obmedzenie)</value>
+  </data>
+  <data name="ColumnExplicitDailyPlan" xml:space="preserve">
+    <value>Explicitný denný plán</value>
+  </data>
+  <data name="TimeZonesEditForm_cbExplicitDailyPlan" xml:space="preserve">
+    <value>Explicitný denný plán</value>
+  </data>
+  <data name="CardSystemsEditForm_cbExplicitSmartCardDataPopulation" xml:space="preserve">
+    <value>Explicitné šírenie smartcard dát</value>
+  </data>
+  <data name="CardGenerationFinished" xml:space="preserve">
+    <value>Operácia skončila . Počet vložených kariet:</value>
+  </data>
+  <data name="CardsAlreadyGenerating" xml:space="preserve">
+    <value>Karty sa už generujú</value>
+  </data>
+  <data name="CardSystemEditForm_bGenerate" xml:space="preserve">
+    <value>Generuj</value>
+  </data>
+  <data name="CardSystemsEditForm_lCardRange" xml:space="preserve">
+    <value>Rozsah čísla kariet</value>
+  </data>
+  <data name="CardSystemsEditForm_tpCardGeneration" xml:space="preserve">
+    <value>Generovanie</value>
+  </data>
+  <data name="General_lFrom" xml:space="preserve">
+    <value>Od</value>
+  </data>
+  <data name="General_lTo" xml:space="preserve">
+    <value>Do</value>
+  </data>
+  <data name="SqlServerDisconnected" xml:space="preserve">
+    <value>Databáza odpojená </value>
+  </data>
+  <data name="relative_unique_identificate_ccu_outdated_firmware" xml:space="preserve">
+    <value>Firmware verzia na CCU je zastaralá</value>
+  </data>
+  <data name="relative_unique_identificate_dcu_outdated_firmware" xml:space="preserve">
+    <value>Firmware verzia na DCU je zastaralá</value>
+  </data>
+  <data name="CardsForm_bCSVImport" xml:space="preserve">
+    <value>CSV import</value>
+  </data>
+  <data name="ColumnCardNumber" xml:space="preserve">
+    <value>Kartové číslo</value>
+  </data>
+  <data name="ColumnControlCode" xml:space="preserve">
+    <value>Kontrolný kód</value>
+  </data>
+  <data name="ColumnIdCard" xml:space="preserve">
+    <value>Id karty</value>
+  </data>
+  <data name="ColumnPersonalNumber" xml:space="preserve">
+    <value>Osobné číslo</value>
+  </data>
+  <data name="ColumnPIN" xml:space="preserve">
+    <value>PIN</value>
+  </data>
+  <data name="CombinedPersonalId" xml:space="preserve">
+    <value>Spojené osobné ID</value>
+  </data>
+  <data name="CSVCardImportDialogCSVCardImportDialog" xml:space="preserve">
+    <value>Import kariet z CSV</value>
+  </data>
+  <data name="CSVCardImportDialog_bImport" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="CSVCardImportDialog_bOpenFile" xml:space="preserve">
+    <value>Otvoriť súbor</value>
+  </data>
+  <data name="CSVCardImportDialog_chbCardSystem" xml:space="preserve">
+    <value>Prideliť kartový systém</value>
+  </data>
+  <data name="CSVCardImportDialog_lCardSystem" xml:space="preserve">
+    <value>Kartový systém</value>
+  </data>
+  <data name="CSVCardImportDialog_lFilePath" xml:space="preserve">
+    <value>Cesta k súboru</value>
+  </data>
+  <data name="CSVCardImportDialog_lSeparator" xml:space="preserve">
+    <value>Oddelovač</value>
+  </data>
+  <data name="CSVCardImportDialog_lTemplate" xml:space="preserve">
+    <value>Šablóna</value>
+  </data>
+  <data name="CSVCardImportDialog_tpImport" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="CSVCardImportDialog_tpReport" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="CSVImportResult_Failed" xml:space="preserve">
+    <value>Zlyhal</value>
+  </data>
+  <data name="MixedColumn" xml:space="preserve">
+    <value>Skladaný stĺpec</value>
+  </data>
+  <data name="ParsedColumn" xml:space="preserve">
+    <value>Parsovaný stĺpec</value>
+  </data>
+  <data name="SeparatedPersonalId" xml:space="preserve">
+    <value>Oddelené osobné ID</value>
+  </data>
+  <data name="Description_cbCcuConfigurationToServerByPassword" xml:space="preserve">
+    <value>Špecifikuje možnosť kofigurovať CCU len po zadaní hesla</value>
+  </data>
+  <data name="GeneralOptionsForm_cbCcuConfigurationToServerByPassword" xml:space="preserve">
+    <value>Konfigurácia CCU pre server chránená heslom</value>
+  </data>
+  <data name="CentralEuropeStatesConvention" xml:space="preserve">
+    <value>Stredoeurópska konvencia (/)</value>
+  </data>
+  <data name="NordicCountriesConvention" xml:space="preserve">
+    <value>Severské štáty (-)</value>
+  </data>
+  <data name="WithoutSeparator" xml:space="preserve">
+    <value>Bez oddeľovača</value>
+  </data>
+  <data name="CSVCardImportDialog_lPersonalIdSeparator" xml:space="preserve">
+    <value>Oddeľovač pre ID</value>
+  </data>
+  <data name="CSVImportResult_InvalidCardNumberLength" xml:space="preserve">
+    <value>Neplatná dĺžka čísla karty</value>
+  </data>
+  <data name="CSVImportResult_InvalidPersonalIdFormat" xml:space="preserve">
+    <value>Neplatný formát pre Osobné ID</value>
+  </data>
+  <data name="CSVImportResult_NonExistingPersonalId" xml:space="preserve">
+    <value>Neexistujúce Osobné ID </value>
+  </data>
+  <data name="CSVImportResult_PinInvalidFormat" xml:space="preserve">
+    <value>Neplatný formát pre PIN</value>
+  </data>
+  <data name="CSVImportResult_PinNotSecure" xml:space="preserve">
+    <value>PIN nie je bezpečný</value>
+  </data>
+  <data name="Description_cbRequiredSecurePin" xml:space="preserve">
+    <value>Zapína kontrolu bezpečného PINu</value>
+  </data>
+  <data name="GeneralOptionsForm_cbRequiredSecurePin" xml:space="preserve">
+    <value>Vyžadoný bezpečný PIN</value>
+  </data>
+  <data name="NonStandard" xml:space="preserve">
+    <value>Bez štandardu</value>
+  </data>
+  <data name="LocalOptionsForm_lFirmware" xml:space="preserve">
+    <value>Verzia firmwaru</value>
+  </data>
+  <data name="LocalOptionsForm_lProtocolVersion" xml:space="preserve">
+    <value>Verzia protokolu</value>
+  </data>
+  <data name="LocalOptionsForm_lTypeCR" xml:space="preserve">
+    <value>Typ snímača kariet</value>
+  </data>
+  <data name="QuestionSaveCardSystemBeforeCreateCard" xml:space="preserve">
+    <value>Musíte uložiť kartový systém pred vytvorením karty. Uložiť kartový systém?</value>
+  </data>
+  <data name="AlarmStates_NotAcknowledged" xml:space="preserve">
+    <value>Nepotvrdený</value>
+  </data>
+  <data name="LocalOptionsForm_lAlarmTypeInvocation" xml:space="preserve">
+    <value>Typ alarmu pre vyvolanie zvukovaj notifikácie</value>
+  </data>
+  <data name="LocalOptionsForm_bSelect" xml:space="preserve">
+    <value>Vybrať</value>
+  </data>
+  <data name="LocalOptionsForm_lSoundFile" xml:space="preserve">
+    <value>Súbor so zvukom</value>
+  </data>
+  <data name="SoundExplorerSoundExplorer" xml:space="preserve">
+    <value>Výber zvukového súboru</value>
+  </data>
+  <data name="InfoInEditedCsGenerationCanceled" xml:space="preserve">
+    <value>Generovanie kariet nepovolené, uložte zmeny v kartovom systéme pred generovaním kariet</value>
+  </data>
+  <data name="Description_cbCcuPnPEnabled" xml:space="preserve">
+    <value>Špecifikuje možnosť automatického vyhľadávania CCU</value>
+  </data>
+  <data name="GeneralOptionsForm_cbCcuPnPEnabled" xml:space="preserve">
+    <value>Automatické priradenie Plug'n'Play CCU</value>
+  </data>
+  <data name="QuestionReplaceLoginForPerson" xml:space="preserve">
+    <value>Zmeniť prihlásenie pre osobu? Táto osoba už má pridelené prihlásenie:</value>
+  </data>
+  <data name="QuestionBlockAlarm" xml:space="preserve">
+    <value>Ste si istí, že chcete blokovať tento alarm ?</value>
+  </data>
+  <data name="QuestionBlockAlarms" xml:space="preserve">
+    <value>Ste si istí, že chcete blokovať tieto alarmy ?</value>
+  </data>
+  <data name="QuestionUnblockAlarm" xml:space="preserve">
+    <value>Ste si istí, že chcete odblokovať tento alarm ?</value>
+  </data>
+  <data name="QuestionUnblockAlarms" xml:space="preserve">
+    <value>Ste si istí, že chcete odblokovať tieto alarmy ?</value>
+  </data>
+  <data name="Description_cbListOnlyUnassignedCardsInPersonForm" xml:space="preserve">
+    <value>Špecifikuje možnosti výberu kariet pre osobu</value>
+  </data>
+  <data name="GeneralOptionsForm_cbListOnlyUnassignedCardsInPersonForm" xml:space="preserve">
+    <value>Zobraziť iba nepriradené karty vo formulári osôb</value>
+  </data>
+  <data name="PersonEditFormDeleteCardsConfirm" xml:space="preserve">
+    <value>Vymazať karty pre tohto užívateľa</value>
+  </data>
+  <data name="CloneFilterFormCloneFilterForm" xml:space="preserve">
+    <value>Výber položiek pre klonovanie</value>
+  </data>
+  <data name="CloneFilterForm_bNext" xml:space="preserve">
+    <value>Ďalej</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>Firma</value>
+  </data>
+  <data name="CostCenter" xml:space="preserve">
+    <value>Daňové číslo</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>Oddelenie</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EmploymentBeginningDate" xml:space="preserve">
+    <value>Dátum nástupu do zamestnania</value>
+  </data>
+  <data name="EmpoymentEndDate" xml:space="preserve">
+    <value>Dátum ukončenia zamestania</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Telefónne číslo</value>
+  </data>
+  <data name="Relative_superior" xml:space="preserve">
+    <value>Príbuzný-nadriadený</value>
+  </data>
+  <data name="Relative_superiorsPhoneNumber" xml:space="preserve">
+    <value>Tel. číslo príbuzného-nadriad.</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Funkcia v zamestnaní</value>
+  </data>
+  <data name="TextInfoClose" xml:space="preserve">
+    <value>Zavrieť</value>
+  </data>
+  <data name="CreateCSVImportTemplateFormCreateCSVImportTemplateForm" xml:space="preserve">
+    <value>Vytvoriť šablónu pre CSV import</value>
+  </data>
+  <data name="ErrorInsetTemplateFailed" xml:space="preserve">
+    <value>Vytváranie šablóny zlyhalo</value>
+  </data>
+  <data name="ErrorUpdateTemplateFailed" xml:space="preserve">
+    <value>Editovanie šablóny zlyhalo</value>
+  </data>
+  <data name="CSVImportDialog_bCreateTemplate" xml:space="preserve">
+    <value>Vytvoriť novú štruktúru</value>
+  </data>
+  <data name="CSVImportDialog_bUpdateTemplate" xml:space="preserve">
+    <value>Uložiť aktuálnu šablónu</value>
+  </data>
+  <data name="ErrorTemplateNameAlreadyUsed" xml:space="preserve">
+    <value>Šablóna s týmto menom už existuje</value>
+  </data>
+  <data name="QuestionUpdateTemplate" xml:space="preserve">
+    <value>Chcete uložiť šablónu? Budú zmenené nastavenia šablóny:</value>
+  </data>
+  <data name="CSVImportResult_PersonIdIsNotEntry" xml:space="preserve">
+    <value>Osobné ID nie je zadané</value>
+  </data>
+  <data name="ObjectType_Active" xml:space="preserve">
+    <value>Aktívna</value>
+  </data>
+  <data name="ObjectType_Blocked" xml:space="preserve">
+    <value>Blokovaná</value>
+  </data>
+  <data name="ObjectType_Destroyed" xml:space="preserve">
+    <value>Zničená</value>
+  </data>
+  <data name="ObjectType_Lost" xml:space="preserve">
+    <value>Stratená</value>
+  </data>
+  <data name="ObjectType_SecurityTimeZone" xml:space="preserve">
+    <value>Bezpečnostná časová zóna</value>
+  </data>
+  <data name="ObjectType_Unused" xml:space="preserve">
+    <value>Nepoužívaná</value>
+  </data>
+  <data name="PersonEditForm_bReadCardFromDirectCR" xml:space="preserve">
+    <value>Načítať kartu z priameho CR</value>
+  </data>
+  <data name="DirectCrSwipCardDirectCrSwipCard" xml:space="preserve">
+    <value>Načítanie karty z priameho snímača kariet</value>
+  </data>
+  <data name="DirectCrSwipCard_lWaitingForSwipingCard" xml:space="preserve">
+    <value>Čakanie na priloženie karty: </value>
+  </data>
+  <data name="ColumnAlarmPriorityName" xml:space="preserve">
+    <value>Priorita alarmu</value>
+  </data>
+  <data name="ColumnAlarmTypeName" xml:space="preserve">
+    <value>Typ alarmu</value>
+  </data>
+  <data name="GeneralOptionsForm_gbAlarmSettings" xml:space="preserve">
+    <value>Nastavenie priorít alarmov</value>
+  </data>
+  <data name="ErrorFeatureNotSupportedByLicense" xml:space="preserve">
+    <value>Funkcia nie je podporená aktuálnou licenciou</value>
+  </data>
+  <data name="ColumnEditionName" xml:space="preserve">
+    <value>Názov edície</value>
+  </data>
+  <data name="ColumnFriendlyName" xml:space="preserve">
+    <value>Jednoduché meno</value>
+  </data>
+  <data name="ColumnMachineName" xml:space="preserve">
+    <value>Sieťové meno servera</value>
+  </data>
+  <data name="ColumnMultihoming" xml:space="preserve">
+    <value>Multihoming</value>
+  </data>
+  <data name="ColumnServerVersion" xml:space="preserve">
+    <value>Verzia servera</value>
+  </data>
+  <data name="InfoImportSucceededWithImportPersons" xml:space="preserve">
+    <value>Import skončil úspešne. Počet naimportovaných osôb:</value>
+  </data>
+  <data name="InfoImportSucceededWithNoImportPersons" xml:space="preserve">
+    <value>Import skončil úspešne. Žiadna osoba nebola naimportovaná.</value>
+  </data>
+  <data name="CSVImportDialog_cbAllowCompositPersonalId" xml:space="preserve">
+    <value>Povoliť zložené osobné ID</value>
+  </data>
+  <data name="CSVImportDialog_gbCompositPersonalId" xml:space="preserve">
+    <value>Zložené osobné ID</value>
+  </data>
+  <data name="CSVImportDialog_gbFilePreview" xml:space="preserve">
+    <value>Náhľad súboru</value>
+  </data>
+  <data name="CSVImportDialog_gbImportSettings" xml:space="preserve">
+    <value>Nastavenia pre import</value>
+  </data>
+  <data name="CSVImportDialog_gbPersonalIDValidation" xml:space="preserve">
+    <value>Validácia osobného ID</value>
+  </data>
+  <data name="CSVImportDialog_lFirstColumn" xml:space="preserve">
+    <value>Prvý stĺpec</value>
+  </data>
+  <data name="CSVImportDialog_lSecondColumn" xml:space="preserve">
+    <value>Druhý stĺpec</value>
+  </data>
+  <data name="CSVImportDialog_lValidationType" xml:space="preserve">
+    <value>Typ validácie</value>
+  </data>
+  <data name="ErrorEntryFirstColumnForCompositPersonalId" xml:space="preserve">
+    <value>Prvý stĺpec pre zložené osobné ID musí byť zadaný</value>
+  </data>
+  <data name="ErrorEntrySecondColumnForCompositPersonalId" xml:space="preserve">
+    <value>Druhý stĺpec pre zložené osobné ID musí byť zadaný</value>
+  </data>
+  <data name="ErrorEntryValidationType" xml:space="preserve">
+    <value>Typ validácie pre osbné ID musí byť zadaný</value>
+  </data>
+  <data name="ErrorDeletePresentationGroup" xml:space="preserve">
+    <value>Zmazanie prezentačnej skupiny zlyhalo</value>
+  </data>
+  <data name="ColumnDeleteError" xml:space="preserve">
+    <value>Chyba pri vymazávaní</value>
+  </data>
+  <data name="ColumnObjectName" xml:space="preserve">
+    <value>Názov objektu</value>
+  </data>
+  <data name="ErrorMultiSelectDeleteIsAlreadyRunning" xml:space="preserve">
+    <value>Vymazávanie vybraných záznamov je už spustené</value>
+  </data>
+  <data name="InfoAllSelectedObjetsDeleted" xml:space="preserve">
+    <value>Všetky vybrané záznami boli úspešne vymazané</value>
+  </data>
+  <data name="MultiselectDeleteErrorResultsFormMultiselectDeleteErrorResultsForm" xml:space="preserve">
+    <value>Výsledok vymazávania vybraných záznamov</value>
+  </data>
+  <data name="TimeZonesEditForm_lStatusOff" xml:space="preserve">
+    <value>Vypnuté</value>
+  </data>
+  <data name="TimeZonesEditForm_lStatusOn" xml:space="preserve">
+    <value>Zapnuté</value>
+  </data>
+  <data name="General_bFilter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="General_lObjectType" xml:space="preserve">
+    <value>Typ objektu</value>
+  </data>
+  <data name="General_lText" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="ColumnObjectTypeIcon" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="ErrorDateInPass" xml:space="preserve">
+    <value>Dátum nemôže byť v minulosti</value>
+  </data>
+  <data name="General_bApply" xml:space="preserve">
+    <value>Použiť</value>
+  </data>
+  <data name="AlarmDetailsForm_chbAcknowledged" xml:space="preserve">
+    <value>Potvrdený</value>
+  </data>
+  <data name="AlarmDetailsForm_chbBlocked" xml:space="preserve">
+    <value>Blokovaný</value>
+  </data>
+  <data name="ColumnstrAcknowledged" xml:space="preserve">
+    <value>Stav potvrdenia</value>
+  </data>
+  <data name="ColumnstrBlocked" xml:space="preserve">
+    <value>Stav blokovania</value>
+  </data>
+  <data name="AccessDenied" xml:space="preserve">
+    <value>Prístup zamietnutý</value>
+  </data>
+  <data name="AccessDeniedCardBlockedOrInactive" xml:space="preserve">
+    <value>Prístup zamietnutý karta blokovaná alebo neaktívna</value>
+  </data>
+  <data name="AccessDeniedInvalidEmergencyCode" xml:space="preserve">
+    <value>Prístup zamietnutý nesprávny bezpečnostný kód</value>
+  </data>
+  <data name="AccessDeniedInvalidGIN" xml:space="preserve">
+    <value>Prístup zamietnutý nesprávny GIN</value>
+  </data>
+  <data name="AccessDeniedInvalidPIN" xml:space="preserve">
+    <value>Prístup zamietnuý nesprávny PIN</value>
+  </data>
+  <data name="AccessDeniedSetAlarmAreaInvalidGIN" xml:space="preserve">
+    <value>Prístup zamietnutý nesprávny GIN pre aktivovanie alarmovej zóny</value>
+  </data>
+  <data name="AccessDeniedSetAlarmAreaInvalidPIN" xml:space="preserve">
+    <value>Prístup zamietnutý nesprávny PIN pre aktivovanie alarmovej zóny</value>
+  </data>
+  <data name="AccessDeniedSetAlarmAreaNoRights" xml:space="preserve">
+    <value>Prístup zamietnutý chýba právo na aktiváciu alarmovej zóny</value>
+  </data>
+  <data name="AccessDeniedUnsetAlarmAreaInvalidGIN" xml:space="preserve">
+    <value>Prístup zamietnutý nesprávny GIN pre deaktivovanie alarmovej zóny</value>
+  </data>
+  <data name="AccessDeniedUnsetAlarmAreaInvalidPIN" xml:space="preserve">
+    <value>Prístup zamietnutý nesprávny PIN pre deaktivovanie alarmovej zóny</value>
+  </data>
+  <data name="AccessDeniedUnsetAlarmAreaNoRights" xml:space="preserve">
+    <value>Prístup zamietnutý chýba právo na deaktiváciu alarmovej zóny</value>
+  </data>
+  <data name="AccessGranted" xml:space="preserve">
+    <value>Prístup povolený</value>
+  </data>
+  <data name="ActiveAlarmAcknowledged" xml:space="preserve">
+    <value>Potvrdený aktívný alarm</value>
+  </data>
+  <data name="AlarmAreaActivationStateChanged" xml:space="preserve">
+    <value>Zmena aktivačného stavu alarmovej zóny</value>
+  </data>
+  <data name="AlarmOccured" xml:space="preserve">
+    <value>Nastal alarm</value>
+  </data>
+  <data name="BindingEventFailed" xml:space="preserve">
+    <value>Zlyhalo prepojenie udalosti</value>
+  </data>
+  <data name="CardReadersUpgradeFailed" xml:space="preserve">
+    <value>Upgrade snímača kariet zlyhal</value>
+  </data>
+  <data name="ClientLogin" xml:space="preserve">
+    <value>Prihlásenie klienta</value>
+  </data>
+  <data name="ClientLoginWrongPassword" xml:space="preserve">
+    <value>Zlé heslo pri prihlasovaní</value>
+  </data>
+  <data name="ClientLogout" xml:space="preserve">
+    <value>Odhlásenie klienta</value>
+  </data>
+  <data name="ConnectClient" xml:space="preserve">
+    <value>Pripojenie klienta</value>
+  </data>
+  <data name="ConnectDatabase" xml:space="preserve">
+    <value>Pripojenie databázy</value>
+  </data>
+  <data name="CreatedNewDCU" xml:space="preserve">
+    <value>Vytvorené nové DCU</value>
+  </data>
+  <data name="DCUAutoUpgrading" xml:space="preserve">
+    <value>DCU autoupgrade</value>
+  </data>
+  <data name="DCUCommandNotAck" xml:space="preserve">
+    <value>DCU príkaz nepotvrdený</value>
+  </data>
+  <data name="DCUCommandTimeOut" xml:space="preserve">
+    <value>DCU príkaz vypršal</value>
+  </data>
+  <data name="DCUNodeAssigned" xml:space="preserve">
+    <value>DCU jednotka pridelená</value>
+  </data>
+  <data name="DCUNodeReleased" xml:space="preserve">
+    <value>DCU jednotka uvolnená</value>
+  </data>
+  <data name="DCUNodeRenewed" xml:space="preserve">
+    <value>DCU jednotka obnovená</value>
+  </data>
+  <data name="DCUOffline" xml:space="preserve">
+    <value>DCU odpojené</value>
+  </data>
+  <data name="DCUOnline" xml:space="preserve">
+    <value>DCU pripojené</value>
+  </data>
+  <data name="DCUsUpgradeFailed" xml:space="preserve">
+    <value>DCU upgrade zlyhal</value>
+  </data>
+  <data name="DCUUpgrading" xml:space="preserve">
+    <value>DCU sa upgraduje</value>
+  </data>
+  <data name="DCUWaitingForUpgrade" xml:space="preserve">
+    <value>DCU čaká na upgrade</value>
+  </data>
+  <data name="DisconnectClient" xml:space="preserve">
+    <value>Odpojenie klienta</value>
+  </data>
+  <data name="DisconnectDatabase" xml:space="preserve">
+    <value>Odpojenie databázy</value>
+  </data>
+  <data name="DSMAccessInterrupted" xml:space="preserve">
+    <value>DSM prístup prerušený</value>
+  </data>
+  <data name="DSMAccessPermitted" xml:space="preserve">
+    <value>DSM prístup povolený</value>
+  </data>
+  <data name="DSMAccessRestricted" xml:space="preserve">
+    <value>DSM prístup obmedzený</value>
+  </data>
+  <data name="DSMAccessViolated" xml:space="preserve">
+    <value>DSM prístup porušený</value>
+  </data>
+  <data name="DSMAPASRestored" xml:space="preserve">
+    <value>DSM APAS obnovené</value>
+  </data>
+  <data name="FailedToUpdateStructureOnCCU" xml:space="preserve">
+    <value>Zlyhala aktualizácia štruktúry na CCU</value>
+  </data>
+  <data name="InactiveAlarmAcknowledgedAndRemoved" xml:space="preserve">
+    <value>Neaktívny alarm potvrdený a odstránený</value>
+  </data>
+  <data name="InitializePlugin" xml:space="preserve">
+    <value>Inicializácia pluginu</value>
+  </data>
+  <data name="LoadPluginSuccesful" xml:space="preserve">
+    <value>Úspešné načítanie pluginu</value>
+  </data>
+  <data name="PresentationProcessorError" xml:space="preserve">
+    <value>Chyba prezentačného procesoru</value>
+  </data>
+  <data name="RunMethodFailed" xml:space="preserve">
+    <value>Spustenie metódy zlyhalo</value>
+  </data>
+  <data name="SetAlarmAreaFromCardReader" xml:space="preserve">
+    <value>Aktivácia alarmovej zóny z snímača kariet</value>
+  </data>
+  <data name="UnknownCard" xml:space="preserve">
+    <value>Neznáma karta</value>
+  </data>
+  <data name="UnsetAlarmAreaFromCardReader" xml:space="preserve">
+    <value>Deaktivácia alarmovej zóny z snímača kariet</value>
+  </data>
+  <data name="GeneralOptionsForm_lDelayToSaveAlarmsFromCardReaders" xml:space="preserve">
+    <value>Ukladať alarmy z snímačov kariet za posledných</value>
+  </data>
+  <data name="Description_lDelayToSaveAlarmsFromCardReaders" xml:space="preserve">
+    <value>Alarmy z snímačov kariet staršie ako špecifikovaný čas (v hodinách) nebudú vytvárané</value>
+  </data>
+  <data name="relative_unique_identificate_alarm" xml:space="preserve">
+    <value>Alarm</value>
+  </data>
+  <data name="TimeZonesEditForm_tsiCreate2" xml:space="preserve">
+    <value>Vytvoriť</value>
+  </data>
+  <data name="TimeZonesEditForm_tsiModify2" xml:space="preserve">
+    <value>Zmeniť</value>
+  </data>
+  <data name="ErrorOpenPhotoFileBinarySize" xml:space="preserve">
+    <value>Maximálna veľkost pre súbor s fotografiou je</value>
+  </data>
+  <data name="ErrorOpenPhotoFileFailed" xml:space="preserve">
+    <value>Otváranie súboru pre fotografiu zlyhalo</value>
+  </data>
+  <data name="ErrorOpenPhotoFileResolution" xml:space="preserve">
+    <value>Maximálne rozlíšenie fotografie je</value>
+  </data>
+  <data name="PersonEditForm_bBrowsePhoto" xml:space="preserve">
+    <value>Vybrať fotografiu</value>
+  </data>
+  <data name="ErrorEndDateBeginningDate" xml:space="preserve">
+    <value>Dátum ukončenia zamestnania pred dátumon nástupu</value>
+  </data>
+  <data name="ErrorSelectedPhotoFileBinarySize" xml:space="preserve">
+    <value>Veľkosť vybraného súboru s fotografiou je</value>
+  </data>
+  <data name="ErrorSelectedPhotoFileResolution" xml:space="preserve">
+    <value>Rozlíšenie vybranej fotografie je</value>
+  </data>
+  <data name="GeneralOptionsForm_bEventlogsSave" xml:space="preserve">
+    <value>Uložiť</value>
+  </data>
+  <data name="GeneralOptionsForm_cbEventlogAlarmAreaActivationStateChanged" xml:space="preserve">
+    <value>Ukladať do logov udalostí zmenu aktivačného stavu alarmovej zóny</value>
+  </data>
+  <data name="GeneralOptionsForm_cbEventlogAlarmAreaAlarmStateChanged" xml:space="preserve">
+    <value>Ukladať do logov udalostí zmenu alarmového stavu alarmovej zóny</value>
+  </data>
+  <data name="GeneralOptionsForm_cbEventlogCardReaderOnlineStateChanged" xml:space="preserve">
+    <value>Ukladať do logov udalostí zmenu stavu pripojenia snímača kariet</value>
+  </data>
+  <data name="GeneralOptionsForm_cbEventlogInputStateChanged" xml:space="preserve">
+    <value>Ukladať do logov udalostí zmenu stavu vstupu</value>
+  </data>
+  <data name="GeneralOptionsForm_cbEventlogOutputStateChanged" xml:space="preserve">
+    <value>Ukladať do logov udalostí zmenu výstupu</value>
+  </data>
+  <data name="GeneralOptionsForm_tpEventlogs" xml:space="preserve">
+    <value>Logy udalostí</value>
+  </data>
+  <data name="ServerDirectoryServerDirectory" xml:space="preserve">
+    <value>Výber adresára</value>
+  </data>
+  <data name="DSMNormalAccess" xml:space="preserve">
+    <value>DSM normálny prístup</value>
+  </data>
+  <data name="GeneralOptionsForm_bClearAndSaveDbsBackup" xml:space="preserve">
+    <value>Zrušiť a uložiť</value>
+  </data>
+  <data name="CSVImportResult_MorePersonsWithSameID" xml:space="preserve">
+    <value>Viac osôb s rovnakým osobným ID</value>
+  </data>
+  <data name="LocalOptionsForm_chbAlarmSoundEnabled" xml:space="preserve">
+    <value>Povoliť zvukovú notifikáciu alarmov</value>
+  </data>
+  <data name="InfoUseDbsDefaultBackupPath" xml:space="preserve">
+    <value>Bude použitá predvolená cesta, sql server beži na vzdialenom posnímači</value>
+  </data>
+  <data name="QuestionUseDefaultDbsBackupPath" xml:space="preserve">
+    <value>Databáza bude uložená na predvolenú cestu pre sql server, pokračovať?</value>
+  </data>
+  <data name="LocalOptionsForm_gbAlarmSettings" xml:space="preserve">
+    <value>Alarmové nastavenia</value>
+  </data>
+  <data name="LocalOptionsForm_lFrequencyRepeatAlarmSound" xml:space="preserve">
+    <value>Frekvencia opakovania zvuku alarmu</value>
+  </data>
+  <data name="ColumnAlarmTypeBuzzerName" xml:space="preserve">
+    <value>Trigger vzniku/zániku alarmu</value>
+  </data>
+  <data name="ColumnSoundFileName" xml:space="preserve">
+    <value>Súbor so zvukom</value>
+  </data>
+  <data name="ColumnSoundRepeatCount" xml:space="preserve">
+    <value>Počet opakovaní</value>
+  </data>
+  <data name="ColumnSoundRepeatTillDone" xml:space="preserve">
+    <value>Do zániku alarmu</value>
+  </data>
+  <data name="CSVCardImportDialog_lReplacementPin" xml:space="preserve">
+    <value>Náhradný PIN</value>
+  </data>
+  <data name="InfoImportedCardsCount" xml:space="preserve">
+    <value>Počet úspešne naimportovaných kariet:</value>
+  </data>
+  <data name="InfoImportFinished" xml:space="preserve">
+    <value>Import skončil</value>
+  </data>
+  <data name="InfoInvalidPinAndReplaced" xml:space="preserve">
+    <value>Nesprávny PIN. PIN bol zmenený.</value>
+  </data>
+  <data name="InfoNotImportedCardsCount" xml:space="preserve">
+    <value>Počet neúspešne naimportovaných kariet:</value>
+  </data>
+  <data name="QuestionCardOpenEditFormIfObjectAlreadyExists" xml:space="preserve">
+    <value>Táto karta už v databáze existuje. Otvoriť edit formulár pre túto kartu?</value>
+  </data>
+  <data name="QuestionOpenEditFormIfObjectAlreadyExists" xml:space="preserve">
+    <value>Tento objekt už v databáze existuje. Otvoriť edit formulár pre tento objekt?</value>
+  </data>
+  <data name="GeneralOptionsForm_tpLanguage" xml:space="preserve">
+    <value>Nastavenie jazyka</value>
+  </data>
+  <data name="GeneralOptionsForm_lTimeDiffTolerance" xml:space="preserve">
+    <value>Povolený časový rozdiel servera a CCU (milisekundy)</value>
+  </data>
+  <data name="PersonsForm_lOtherInformationFields" xml:space="preserve">
+    <value>Iné informačné polia</value>
+  </data>
+  <data name="SetAlarmAreaByObjectForAutomaticActivation" xml:space="preserve">
+    <value>Aktivácia alarmovej zóny objektom pre automatickú aktiváciu</value>
+  </data>
+  <data name="UnsetAlarmAreaByObjectForAutomaticActivation" xml:space="preserve">
+    <value>Deaktivácia alarmovej zóny objektom pre automatickú aktiváciu</value>
+  </data>
+  <data name="CardSystemAdded" xml:space="preserve">
+    <value>Kartový systém pridaný</value>
+  </data>
+  <data name="CardSystemRemoved" xml:space="preserve">
+    <value>Kartový systém odobraný</value>
+  </data>
+  <data name="AlarmAreasFormAlarmAreasForm" xml:space="preserve">
+    <value>Alarmová zóna</value>
+  </data>
+  <data name="CgpClientMainForm_globalAlarmInstructionsForm" xml:space="preserve">
+    <value>Globálne alarmové inštrukcie</value>
+  </data>
+  <data name="ErrorGlobalAlarmInstructionIsAlreadAddedToThisObject" xml:space="preserve">
+    <value>Globálna alarmová inštrukcia je už priradená tomuto objektu</value>
+  </data>
+  <data name="ErrorInsertGlobalAlarmInstructionToObjectFailed" xml:space="preserve">
+    <value>Vkladanie globálnej alarmovej inštrukcie k tomuto objeku zlyhalo</value>
+  </data>
+  <data name="General_lGlobalInstructions" xml:space="preserve">
+    <value>Globálne inštrukcie</value>
+  </data>
+  <data name="General_lLocalInstruction" xml:space="preserve">
+    <value>Lokálna inštrukcia</value>
+  </data>
+  <data name="General_tpAlarmInstructions" xml:space="preserve">
+    <value>Alarmové inštrukcie</value>
+  </data>
+  <data name="GlobalAlarmInstructionEditFormGlobalAlarmInstructionEditForm" xml:space="preserve">
+    <value>Editovanie globálnej alarmovej inštrukcie</value>
+  </data>
+  <data name="GlobalAlarmInstructionEditFormInsertText" xml:space="preserve">
+    <value>Vytváranie globálnej alarmovej inštrukcie</value>
+  </data>
+  <data name="GlobalAlarmInstructionsFormGlobalAlarmInstructionsForm" xml:space="preserve">
+    <value>Globálne alarmové inštrukcie</value>
+  </data>
+  <data name="AlarmDetailsForm_tpParameters" xml:space="preserve">
+    <value>Parametre</value>
+  </data>
+  <data name="GlobalAlarmInstructionEditForm_tpInstructions" xml:space="preserve">
+    <value>Alarmové inštrukcie</value>
+  </data>
+  <data name="ObjectType_GlobalAlarmInstruction" xml:space="preserve">
+    <value>Globálne alarmové inštrukcie</value>
+  </data>
+  <data name="ColumnTcpPort" xml:space="preserve">
+    <value>TCP port servera</value>
+  </data>
+  <data name="ColumnInstructions" xml:space="preserve">
+    <value>Alarmové inštrukcie</value>
+  </data>
+  <data name="ErrorObjectAlreadyAdded" xml:space="preserve">
+    <value>Tento objekt už je pridaný</value>
+  </data>
+  <data name="EventlogsForm_AddEventSourceObjectText" xml:space="preserve">
+    <value>Objekty zdrojov udalostí</value>
+  </data>
+  <data name="EventlogsForm_bClearList" xml:space="preserve">
+    <value>Vyčistiť zoznam</value>
+  </data>
+  <data name="EventlogsForm_tpFulltextSearch" xml:space="preserve">
+    <value>Vyhľadávanie podľa reťazca</value>
+  </data>
+  <data name="EventlogsForm_tpParametricSearch" xml:space="preserve">
+    <value>Parametrické vyhľadávanie</value>
+  </data>
+  <data name="TextRecordCount" xml:space="preserve">
+    <value>Počet záznamov</value>
+  </data>
+  <data name="AlarmStates_NotSelected" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="ColumnStringCardState" xml:space="preserve">
+    <value>Stav karty</value>
+  </data>
+  <data name="ColumnFullCardNumber1" xml:space="preserve">
+    <value>Celé číslo karty</value>
+  </data>
+  <data name="ColumnEventlogDateTime" xml:space="preserve">
+    <value>Dátum</value>
+  </data>
+  <data name="General_Assigned" xml:space="preserve">
+    <value>Priradené</value>
+  </data>
+  <data name="General_NotAssigned" xml:space="preserve">
+    <value>Nepriradené</value>
+  </data>
+  <data name="CgpClientMainForm_structuredSiteForm" xml:space="preserve">
+    <value>Štrukturovaná sieť</value>
+  </data>
+  <data name="StructuredSiteFormStructuredSiteForm" xml:space="preserve">
+    <value>Štrukturovaná sieť</value>
+  </data>
+  <data name="AlarmAreaBoughtTimeChanged" xml:space="preserve">
+    <value>Kúpený čas alarmovej zóny bol zmenený</value>
+  </data>
+  <data name="AlarmAreaBoughtTimeExpired" xml:space="preserve">
+    <value>Kúpený čas alarmovej zóny vypršal</value>
+  </data>
+  <data name="AlarmAreaTimeBuyingFailed" xml:space="preserve">
+    <value>Nákup času pre alarmovú zónu zlyhal</value>
+  </data>
+  <data name="Access_AlarmAreasUnconditionalUnset" xml:space="preserve">
+    <value>Základné nastavenia - Bezpodmienečná aktivácia alarmovej zóny</value>
+  </data>
+  <data name="missing" xml:space="preserve">
+    <value>chýbajúci</value>
+  </data>
+  <data name="remaining" xml:space="preserve">
+    <value>zostávajúci</value>
+  </data>
+  <data name="Unlimited" xml:space="preserve">
+    <value>Neobmedzený</value>
+  </data>
+  <data name="Access_AlarmAreasTimeBuying" xml:space="preserve">
+    <value>Základné nastavenia - Nakupovanie času pre alarmovú zónu</value>
+  </data>
+  <data name="AlarmsDialog_tsLoading" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="menuItemGoBack" xml:space="preserve">
+    <value>Choď naspäť</value>
+  </data>
+  <data name="labelOutput" xml:space="preserve">
+    <value>Výstup</value>
+  </data>
+  <data name="columnMessage" xml:space="preserve">
+    <value>Správa</value>
+  </data>
+  <data name="columnSource" xml:space="preserve">
+    <value>Zdroj</value>
+  </data>
+  <data name="columnTime" xml:space="preserve">
+    <value>Čas</value>
+  </data>
+  <data name="error" xml:space="preserve">
+    <value>Chyba</value>
+  </data>
+  <data name="GeneralOptionsForm_gbEventlogReports" xml:space="preserve">
+    <value>Reporty logov udalostí</value>
+  </data>
+  <data name="GeneralOptionsForm_lblReportsTimezone" xml:space="preserve">
+    <value>Časová zóna pre reporty:</value>
+  </data>
+  <data name="GeneralOptionsForm_lblReportsEmails" xml:space="preserve">
+    <value>Emaily pre reporty:</value>
+  </data>
+  <data name="LoginGroupsFormLoginGroupsForm" xml:space="preserve">
+    <value>Skupiny prihlásení</value>
+  </data>
+  <data name="CardTemplatesFormCardTemplatesForm" xml:space="preserve">
+    <value>Šablóny kariet</value>
+  </data>
+  <data name="TextAlarmCount" xml:space="preserve">
+    <value>Počet alarmov</value>
+  </data>
+  <data name="AlarmsDialog_tsAcknowledgeAndBlock" xml:space="preserve">
+    <value>Potvrdiť a blokovať</value>
+  </data>
+  <data name="SelectStructuredSubSiteForm_RootNode" xml:space="preserve">
+    <value>Všetko</value>
+  </data>
+  <data name="CCUExceptionOccurred" xml:space="preserve">
+    <value>Na CCU vznikla výnimka</value>
+  </data>
+  <data name="AccessDeniedInvalidCODE" xml:space="preserve">
+    <value>Prístup zamietnutý, nesprávny Kód</value>
+  </data>
+  <data name="AccessDeniedSetAlarmAreaInvalidCODE" xml:space="preserve">
+    <value>Prístup zamietnutý, nesprávny Kód pre setovanie alarmovej zóny</value>
+  </data>
+  <data name="AccessDeniedUnsetAlarmAreaInvalidCODE" xml:space="preserve">
+    <value>Prístup zamietnutý, nesprávny Kód pre odsetovanie alarmovej zóny</value>
+  </data>
+  <data name="CEUpgradeFailed" xml:space="preserve">
+    <value>Aktualizácia CE zlyhala</value>
+  </data>
+  <data name="CCUUpgradeFailed" xml:space="preserve">
+    <value>Aktualizácia CCU zlyhala</value>
+  </data>
+  <data name="CardEncoded" xml:space="preserve">
+    <value>Karta dekódovaná</value>
+  </data>
+  <data name="ActualStateOfSecurityDailyPlan" xml:space="preserve">
+    <value>Aktuálny stav bezpečnostného denného plánu</value>
+  </data>
+  <data name="ActualStateOfSecurityTimeZone" xml:space="preserve">
+    <value>Aktuálny stav Bezpečnostnje dennej zóny</value>
+  </data>
+  <data name="TimeForNextEvaluatingStatesOfSecurityDailyPlans" xml:space="preserve">
+    <value>Ďalšie vyhodnotenie Bezpečnostného denného plánu</value>
+  </data>
+  <data name="CoprocessorFailureChanged" xml:space="preserve">
+    <value>CCU - Zmena, zlyhanie koprocesora</value>
+  </data>
+  <data name="CCUTimeAdjusted" xml:space="preserve">
+    <value>CCU - Nastavenie času</value>
+  </data>
+  <data name="CCUObjectDeserializeFailed" xml:space="preserve">
+    <value>CCU - Zlyhanie deserializácie objektu</value>
+  </data>
+  <data name="CCUTimingProblem" xml:space="preserve">
+    <value>CCU - Problém s časovaním</value>
+  </data>
+  <data name="DSMStateChanged" xml:space="preserve">
+    <value>DSM - Zmena stavu</value>
+  </data>
+  <data name="CCUAlarmPrimaryPowerMissing" xml:space="preserve">
+    <value>CCU Alarm - Chýbajúce hlavné napájanie</value>
+  </data>
+  <data name="CCUAlarmBatteryIsLow" xml:space="preserve">
+    <value>CCU - Nízke napätie batérie</value>
+  </data>
+  <data name="CCUAlarmFuseOnExtensionBoard" xml:space="preserve">
+    <value>CCU Alarm - Poistka na rozširujúcej doske</value>
+  </data>
+  <data name="CCUTamperStateChanged" xml:space="preserve">
+    <value>CCU - Zmena stavu poistky</value>
+  </data>
+  <data name="DCUTamperStateChanged" xml:space="preserve">
+    <value>DCU - Zmena stavu poistky</value>
+  </data>
+  <data name="CardReaderTamperStateChanged" xml:space="preserve">
+    <value>Snímač - Zmena stavu poistky</value>
+  </data>
+  <data name="CCUReturnedNullInLoadingTheObject" xml:space="preserve">
+    <value>CCU - Null pri načítavaní objektu</value>
+  </data>
+  <data name="CCUDataChannelTransferFailed" xml:space="preserve">
+    <value>CCU - Zlyhanie dátového prenosu</value>
+  </data>
+  <data name="CCUIncomingTransferInfo" xml:space="preserve">
+    <value>CCU - Info o prichádzajpcom prenose</value>
+  </data>
+  <data name="EISDidNotRespondInProperTime" xml:space="preserve">
+    <value>EIS - neodpovedanie v časovom limite</value>
+  </data>
+  <data name="ICCUSendingOfObjectStateFailed" xml:space="preserve">
+    <value>ICCU - Zlyhal prenos stavu objektu</value>
+  </data>
+  <data name="ICCUPortIsAlreadyUsed" xml:space="preserve">
+    <value>ICCU - Port sa už používa</value>
+  </data>
+  <data name="SetAlarmAreaFromCardReaderFailed" xml:space="preserve">
+    <value>Nastavenie alarmovej zóny zo snímača zlyhalo</value>
+  </data>
+  <data name="CCUIncomingAutonomousEvents" xml:space="preserve">
+    <value>Prichádzajúce autonómne udalosti na CCU</value>
+  </data>
+  <data name="CCUAutonomousEventsProcessed" xml:space="preserve">
+    <value>Autonómne udalosti CCU spracované</value>
+  </data>
+  <data name="CCUAutonomousEventsProcessingCanceled" xml:space="preserve">
+    <value>Zlyhalo spracovanie autonómnych udalostí CCU</value>
+  </data>
+  <data name="InputStateChanged" xml:space="preserve">
+    <value>Zmena stavu vstupu</value>
+  </data>
+  <data name="OutputStateChanged" xml:space="preserve">
+    <value>Zmena stavu výstupu</value>
+  </data>
+  <data name="CardReaderOnlineStateChanged" xml:space="preserve">
+    <value>Zmena online stavu snímača</value>
+  </data>
+  <data name="CCUOnline" xml:space="preserve">
+    <value>CCU Online</value>
+  </data>
+  <data name="CCUOffline" xml:space="preserve">
+    <value>CCU Offline</value>
+  </data>
+  <data name="DatabaseBackup" xml:space="preserve">
+    <value>Záloha databázy</value>
+  </data>
+  <data name="CCUMemoryLoad" xml:space="preserve">
+    <value>Zaťaženie pamäte CCU</value>
+  </data>
+  <data name="CCUFilesystemProblem" xml:space="preserve">
+    <value>Problém so súborovým systémom CCU</value>
+  </data>
+  <data name="CCUProcessingOfTheStreamTakesTooLongTime" xml:space="preserve">
+    <value>Spracovanie dát CCU trvá príliš dlho</value>
+  </data>
+  <data name="CCUSDCardNotFound" xml:space="preserve">
+    <value>CCU nenašlo SDkartu</value>
+  </data>
+  <data name="FunctionKeyPressed" xml:space="preserve">
+    <value>Stlačenie funkčnej klávesy</value>
+  </data>
+  <data name="AlarmAreaAlarmStateChanged" xml:space="preserve">
+    <value>Stav alarmu v alarmovej zóne sa zmenil</value>
+  </data>
+  <data name="SetAlarmAreaFromClient" xml:space="preserve">
+    <value>Alarmová zóna nastavená z Klienta</value>
+  </data>
+  <data name="UnsetAlarmAreaFromClient" xml:space="preserve">
+    <value>Alarmová zóna odnastavená z Klienta</value>
+  </data>
+  <data name="AntiPassbackZoneEntry" xml:space="preserve">
+    <value>Vstup do Neprechodnej zóny</value>
+  </data>
+  <data name="AntiPassbackZoneExit" xml:space="preserve">
+    <value>Výstup z Neprechodnej zóny</value>
+  </data>
+  <data name="AntiPassbackZoneTimeOut" xml:space="preserve">
+    <value>Timeout Neprechodnej zóny</value>
+  </data>
+  <data name="CCUAlarmUPSOutputFuse" xml:space="preserve">
+    <value>Alarm CCU výstupná poistka UPS</value>
+  </data>
+  <data name="CCUAlarmUPSBatteryFault" xml:space="preserve">
+    <value>Alarm CCU zlyhanie batérie UPS</value>
+  </data>
+  <data name="CCUAlarmUPSBatteryFuse" xml:space="preserve">
+    <value>Alarm CCU poistka batérie UPS</value>
+  </data>
+  <data name="CCUAlarmUPSOvertemperature" xml:space="preserve">
+    <value>Alarm CCU prehriatie UPS</value>
+  </data>
+  <data name="CCUAlarmUPSTamper" xml:space="preserve">
+    <value>Alarm CCU poistka UPS</value>
+  </data>
+  <data name="AccessDeniedEnterToAAMenuInvalidPIN" xml:space="preserve">
+    <value>Prístup zakázaný do menu pre nastavenie alarmovej zóny, nesprávny PIN</value>
+  </data>
+  <data name="AccessDeniedEnterToAAMenuInvalidCODE" xml:space="preserve">
+    <value>Prístup zakázaný do menu pre nastavenie alarmovej zóny, nesprávny Kód</value>
+  </data>
+  <data name="AccessDeniedEnterToSensorsMenuInvalidPIN" xml:space="preserve">
+    <value>Prístup zakázaný do menu pre senzory, nesprávny PIN</value>
+  </data>
+  <data name="AccessDeniedEnterToSensorsMenuInvalidCODE" xml:space="preserve">
+    <value>Prístup zakázaný do menu pre senzory, nesprávny Kód</value>
+  </data>
+  <data name="AccessDeniedEnterToEventlogsMenuInvalidPIN" xml:space="preserve">
+    <value>Prístup zakázaný do menu pre logy udalostí, nesprávny PIN</value>
+  </data>
+  <data name="AccessDeniedEnterToEventlogsMenuInvalidCODE" xml:space="preserve">
+    <value>Prístup zakázaný do menu pre logy udalostí, nesprávny Kód</value>
+  </data>
+  <data name="TimetecOnlineStateChanged" xml:space="preserve">
+    <value>Timetec - Zmena online stavu systému</value>
+  </data>
+  <data name="TimetecEventTransferFailed" xml:space="preserve">
+    <value>Timetec - Zlyhanie prenosu udalosti</value>
+  </data>
+  <data name="TimetecEventSaveObject" xml:space="preserve">
+    <value>Timetec - Udalosť uloženie objektu</value>
+  </data>
+  <data name="TimetecEventDeleteObject" xml:space="preserve">
+    <value>Timetec - Udalosť zmazanie objektu</value>
+  </data>
+  <data name="CCUAndCEVersionsWereLoaded" xml:space="preserve">
+    <value>Verzie CCU/CE boli načítané</value>
+  </data>
+  <data name="StructuredSiteNode_SubtreeReferencing" xml:space="preserve">
+    <value>Referencované podstromy</value>
+  </data>
+  <data name="StructuredSiteNode_SubSites" xml:space="preserve">
+    <value>Štruktúrovaná sieť</value>
+  </data>
+  <data name="StructuredSiteNode_FolderStructures" xml:space="preserve">
+    <value>Adresárová štruktúra</value>
+  </data>
+  <data name="ObjectType_AntiPassBackZone" xml:space="preserve">
+    <value>Neprechodná zóna</value>
+  </data>
+  <data name="StructuredSiteNode_Hardware" xml:space="preserve">
+    <value>Hardvér</value>
+  </data>
+  <data name="ObjectType_MultiDoor" xml:space="preserve">
+    <value>Skupiny dverí</value>
+  </data>
+  <data name="ObjectType_MultiDoorElement" xml:space="preserve">
+    <value>Prvky skupiny dverí</value>
+  </data>
+  <data name="ObjectType_Scene" xml:space="preserve">
+    <value>Scéna</value>
+  </data>
+  <data name="ObjectType_AlarmTransmitter" xml:space="preserve">
+    <value>Vysielač alarmov</value>
+  </data>
+  <data name="ObjectType_LoginGroup" xml:space="preserve">
+    <value>Skupina prihlásení</value>
+  </data>
+  <data name="InfoNoBrokenReferences" xml:space="preserve">
+    <value>Žiadne objekty s porušenými referenciami</value>
+  </data>
+  <data name="ServerInformationType_VersionOfOperatingSystem" xml:space="preserve">
+    <value>Verzia operačného systému</value>
+  </data>
+  <data name="ServerInformationType_DotNetVersion" xml:space="preserve">
+    <value>Verzia .NET</value>
+  </data>
+  <data name="ServerInformationType_VersionOfDatabaseSever" xml:space="preserve">
+    <value>Verzia databázového servera</value>
+  </data>
+  <data name="ServerInformationType_CPUCoreCount" xml:space="preserve">
+    <value>Počet jadier CPU</value>
+  </data>
+  <data name="ServerInformationType_TotalMemory" xml:space="preserve">
+    <value>Celková pamäť</value>
+  </data>
+  <data name="ServerInformationType_FreeMemory" xml:space="preserve">
+    <value>Voľná pamäť</value>
+  </data>
+  <data name="ServerInformationType_AcutalServerDataTime" xml:space="preserve">
+    <value>Aktuálny dátum a čas servera</value>
+  </data>
+  <data name="TextAll" xml:space="preserve">
+    <value>Všetko</value>
+  </data>
+  <data name="TextNone" xml:space="preserve">
+    <value>Žiadne</value>
+  </data>
+  <data name="WarningNotActualEventlogsData" xml:space="preserve">
+    <value>Údaje v prehľade sa mohli zmeniť kým bolo okno neaktívne</value>
+  </data>
+  <data name="CardStates_Active" xml:space="preserve">
+    <value>Aktívna</value>
+  </data>
+  <data name="CardStates_Blocked" xml:space="preserve">
+    <value>Blokovaná</value>
+  </data>
+  <data name="CardStates_Unused" xml:space="preserve">
+    <value>Nepoužívaná</value>
+  </data>
+  <data name="CardStates_Lost" xml:space="preserve">
+    <value>Stratená</value>
+  </data>
+  <data name="CardStates_Destroyed" xml:space="preserve">
+    <value>Poškodená</value>
+  </data>
+  <data name="CardStates_TemporarilyBlocked" xml:space="preserve">
+    <value>Dočasne blokovaná</value>
+  </data>
+  <data name="CardStates_HybridActive" xml:space="preserve">
+    <value>Aktívna/Hybridná</value>
+  </data>
+  <data name="CardStates_HybridBlocked" xml:space="preserve">
+    <value>Blokovaná/Hybridná</value>
+  </data>
+  <data name="CardStates_HybridUnused" xml:space="preserve">
+    <value>Nepoužívaná/Hybridná</value>
+  </data>
+  <data name="CardStates_HybridLost" xml:space="preserve">
+    <value>Stratená/Hybridná</value>
+  </data>
+  <data name="CardStates_HybridDestroyed" xml:space="preserve">
+    <value>Poškodená/Hybridná</value>
+  </data>
+  <data name="CardStates_HybridTemporarilyBlocked" xml:space="preserve">
+    <value>Dočasne blokovaná/Hybridná</value>
+  </data>
+  <data name="CgpClientMainForm_loginGroupsForm" xml:space="preserve">
+    <value>Skupiny prihlásení</value>
+  </data>
+  <data name="ColumnLoginGroupName" xml:space="preserve">
+    <value>Skupina</value>
+  </data>
+  <data name="ObjectType_ACLGroup" xml:space="preserve">
+    <value>Skupina PP</value>
+  </data>
+  <data name="ObjectType_CardTemplate" xml:space="preserve">
+    <value>Šablóna kariet</value>
+  </data>
+  <data name="ObjectType_AlarmArc" xml:space="preserve">
+    <value>Alarm ARC</value>
+  </data>
+  <data name="StructuredSiteForm_lBrokenReferences" xml:space="preserve">
+    <value>Poškodené referencie</value>
+  </data>
+  <data name="InfoEventlogsExportSucceeded" xml:space="preserve">
+    <value>Export prebehol úspešne</value>
+  </data>
+  <data name="ErrorEventlogsExportFailed" xml:space="preserve">
+    <value>Export zlyhal</value>
+  </data>
+  <data name="InfoDataExportSucceeded" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ExportFailed" xml:space="preserve">
+    <value>Export zlyhal</value>
+  </data>
+  <data name="ExportSucceeded" xml:space="preserve">
+    <value>Export prebehol úspešne</value>
+  </data>
+</root>

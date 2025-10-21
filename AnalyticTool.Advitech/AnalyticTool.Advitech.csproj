@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E11FF1A8-4119-4106-A75E-C01B41AEDBF2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AnalyticTool.Advitech</RootNamespace>
+    <AssemblyName>AnalyticTool.Advitech</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release - Obfuscation|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnalyticToolAdvitechService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnalyticToolAdvitechService.Designer.cs">
+      <DependentUpon>AnalyticToolAdvitechService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationProperties.cs" />
+    <Compile Include="ConfigureNovaObjectsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigureNovaObjectsForm.Designer.cs">
+      <DependentUpon>ConfigureNovaObjectsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core.cs" />
+    <Compile Include="DatabaseAccessor.cs" />
+    <Compile Include="DatabaseEngine.cs" />
+    <Compile Include="DatabaseRecord.cs" />
+    <Compile Include="DatabaseServerSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseServerSettingsForm.Designer.cs">
+      <DependentUpon>DatabaseServerSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDialog.cs" />
+    <Compile Include="InsertLoginAndPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertLoginAndPasswordForm.Designer.cs">
+      <DependentUpon>InsertLoginAndPasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NovaServerHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjectInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectInstaller.Designer.cs">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDatabaseAndTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectDatabaseAndTableForm.Designer.cs">
+      <DependentUpon>SelectDatabaseAndTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServerLoginSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerLoginSettingsForm.Designer.cs">
+      <DependentUpon>ServerLoginSettingsForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cgp.Client.NonVisual\Cgp.Client.NonVisual.csproj">
+      <Project>{81F5A036-DE0F-45DD-9B61-45D541296138}</Project>
+      <Name>Cgp.Client.NonVisual</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.NCAS.Client.NonVisual\Cgp.NCAS.Client.NonVisual.csproj">
+      <Project>{D68E6F26-009C-435F-B3DF-DCB00CAAB7CB}</Project>
+      <Name>Cgp.NCAS.Client.NonVisual</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.NCAS.RemotingCommon\Cgp.NCAS.RemotingCommon.csproj">
+      <Project>{7DA1465B-3029-43E8-801C-BAC87581B99C}</Project>
+      <Name>Cgp.NCAS.RemotingCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.NCAS.Server.Beans\Cgp.NCAS.Server.Beans.csproj">
+      <Project>{2EB9DDDF-0719-4A79-8CB7-FBD410743C92}</Project>
+      <Name>Cgp.NCAS.Server.Beans</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.BaseLib\Cgp.BaseLib.csproj">
+      <Project>{4B649633-3110-4CBD-AC66-43685FFDC808}</Project>
+      <Name>Cgp.BaseLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.Client.Common\Cgp.Client.Common.csproj">
+      <Project>{F13A1A13-4773-4744-820B-43DA34DFAE7B}</Project>
+      <Name>Cgp.Client.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.Globals\Cgp.Globals.csproj">
+      <Project>{869F99AF-FEFA-43D9-98A0-6D8CF0987074}</Project>
+      <Name>Cgp.Globals</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.RemotingCommon\Cgp.RemotingCommon.csproj">
+      <Project>{1A33974B-B787-4E35-BE4B-BCF6F50DB953}</Project>
+      <Name>Cgp.RemotingCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.Server.Beans.Extern\Cgp.Server.Beans.Extern.csproj">
+      <Project>{8DB7364B-5E6B-4869-A3DD-DB9B95DA7064}</Project>
+      <Name>Cgp.Server.Beans.Extern</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.Server.Beans\Cgp.Server.Beans.csproj">
+      <Project>{0A152990-C767-4D19-ABD5-9CC4FDDDBC95}</Project>
+      <Name>Cgp.Server.Beans</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IwQuick\IwQuick.csproj">
+      <Project>{5775202E-96B4-44E8-904D-625154D7D524}</Project>
+      <Name>IwQuick</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SLA.Client\SLA.Client.csproj">
+      <Project>{BC2874D3-EDE1-4BB5-A7E1-EE02E926FBF4}</Project>
+      <Name>SLA.Client</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConfigureNovaObjectsForm.resx">
+      <DependentUpon>ConfigureNovaObjectsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseServerSettingsForm.resx">
+      <DependentUpon>DatabaseServerSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertLoginAndPasswordForm.resx">
+      <DependentUpon>InsertLoginAndPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectInstaller.resx">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDatabaseAndTableForm.resx">
+      <DependentUpon>SelectDatabaseAndTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerLoginSettingsForm.resx">
+      <DependentUpon>ServerLoginSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>if "$(ConfigurationName)"=="Release - Obfuscation" (
+
+RMDIR /Q /S "$(SolutionDir)AnalyticTool.Advitech\obj\$(ConfigurationName)\Secured\"
+
+"C:\Program Files\SecureTeam\AgileDotNet.Console.exe" /Project:"C:\Sources\ContalNova\AgileDotNetProjects\AdvitechAnalyticTool.cls"
+
+)</PostBuildEvent>
+  </PropertyGroup>
+</Project>

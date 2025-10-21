@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="Contal.Cgp.Components.WpfObjectListView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="150" Width="300">
+    
+    <UserControl.Resources>
+        <Style x:Key="NoChromeButton" TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid x:Name="Chrome" Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Foreground" Value="#ADADAD"/>
+                                <Setter Property="Opacity" TargetName="Chrome" Value="0.5"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    
+    <Grid>
+        <ListView Margin="0,0,0,0" Name="_lwObjects" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Name="_mainGrid">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="22"/>
+                            <ColumnDefinition Width="22"/>
+                            <ColumnDefinition Width="22"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        
+                        <CheckBox Name="_checkBox"  IsChecked="{Binding IsSelected}" VerticalAlignment="Center" />
+                        
+                        <Button Style="{DynamicResource NoChromeButton}" Grid.Column="1" Name="_bDelete" VerticalAlignment="Center" Margin="2,2,2,2" 
+                                Visibility="Hidden" Cursor="Hand" Click="_bDelete_OnClick">
+                            <Image Source="Resources/Delete.png" Width="15" Height="15" />
+                        </Button>
+                        
+                        <Image Source="{Binding Icon}" Grid.Column="2" Width="18" Height="18" VerticalAlignment="Center" Margin="2,2,2,2"/>
+                        <TextBlock Grid.Column="3" Text="{Binding Name}" VerticalAlignment="Center" HorizontalAlignment="Stretch" />
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+        <Button Name="_bInsert" Style="{DynamicResource NoChromeButton}" Width="25" Height="25" VerticalAlignment="Bottom" 
+                HorizontalAlignment="Right" Margin="2,2,20,5" Click="_bInsert_OnClick"  Cursor="Hand" Visibility="Collapsed">
+            <Image Source="Resources/Insert.png" />
+        </Button>
+    </Grid>
+</UserControl>

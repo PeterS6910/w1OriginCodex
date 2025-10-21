@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0A152990-C767-4D19-ABD5-9CC4FDDDBC95}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Contal.Cgp.Server.Beans</RootNamespace>
+    <AssemblyName>Cgp.Server.Beans</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Designer|AnyCPU' ">
+    <OutputPath>bin\Designer\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cgp.NCAS.Server.Beans">
+      <HintPath>..\..\Cgp.NCAS.Server.Beans\bin\Debug\Cgp.NCAS.Server.Beans.dll</HintPath>
+    </Reference>
+    <Reference Include="IwQuick.PC45">
+      <HintPath>..\..\lib\IwQuick.PC45.dll</HintPath>
+    </Reference>
+    <Reference Include="LwSerialization2.PC45">
+      <HintPath>..\..\lib\LwSerialization2.PC45.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlarmStateChangedHandler.cs" />
+    <Compile Include="Car.cs" />
+    <Compile Include="CarCards.cs" />
+    <Compile Include="DatabaseServerAlarm.cs" />
+    <Compile Include="AlarmPriorityDatabase.cs" />
+    <Compile Include="AModifyObject.cs" />
+    <Compile Include="AOnOffObject.cs" />
+    <Compile Include="AOrmObject.cs" />
+    <Compile Include="DatabaseGeneralOption.cs" />
+    <Compile Include="CardPair.cs" />
+    <Compile Include="CardTemplate.cs" />
+    <Compile Include="IBaseOrmTable.cs" />
+    <Compile Include="IOrmObjectWithAlarmInstructions.cs" />
+    <Compile Include="Calendar.cs" />
+    <Compile Include="CalendarDateSettings.cs" />
+    <Compile Include="CardSystem.cs" />
+    <Compile Include="CentralNameRegister.cs" />
+    <Compile Include="CisNG.cs" />
+    <Compile Include="Card.cs" />
+    <Compile Include="CisNGGroup.cs" />
+    <Compile Include="AccessControl.cs" />
+    <Compile Include="CSVImportColumn.cs" />
+    <Compile Include="CSVImportSchema.cs" />
+    <Compile Include="GlobalAlarmInstruction.cs" />
+    <Compile Include="IRefExportObject.cs" />
+    <Compile Include="ISetFullTextSearchString.cs" />
+    <Compile Include="ITableOrm.cs" />
+    <Compile Include="LoginGroup.cs" />
+    <Compile Include="MaximumVersionForObjectType.cs" />
+    <Compile Include="MifareSectorData.cs" />
+    <Compile Include="MifareSectorSectorInfo.cs" />
+    <Compile Include="RelationshipGlobalAlarmInstructionObject.cs" />
+    <Compile Include="ServerGeneralOptionsDB.cs" />
+    <Compile Include="StructuredSubSite.cs" />
+    <Compile Include="StructuredSubSiteObject.cs" />
+    <Compile Include="UserFoldersStructureObject.cs" />
+    <Compile Include="UserFoldersStructure.cs" />
+    <Compile Include="SecuritySetting.cs" />
+    <Compile Include="CustomAccessControl.cs" />
+    <Compile Include="DayType.cs" />
+    <Compile Include="SystemVersion.cs" />
+    <Compile Include="TimeZoneDateSetting.cs" />
+    <Compile Include="TimeZone.cs" />
+    <Compile Include="DailyPlan.cs" />
+    <Compile Include="DayInterval.cs" />
+    <Compile Include="Login.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="PresentationFormatter.cs" />
+    <Compile Include="PresentationGroup.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServerGeneralOptions.cs" />
+    <Compile Include="SystemEvent.cs" />
+    <Compile Include="UserOpenedWindow.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Login.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cgp.BaseLib\Cgp.BaseLib.csproj">
+      <Project>{4B649633-3110-4CBD-AC66-43685FFDC808}</Project>
+      <Name>Cgp.BaseLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.Globals\Cgp.Globals.csproj">
+      <Project>{869F99AF-FEFA-43D9-98A0-6D8CF0987074}</Project>
+      <Name>Cgp.Globals</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Person.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Calendar.hbm.xml" />
+    <EmbeddedResource Include="CalendarDateSettings.hbm.xml" />
+    <EmbeddedResource Include="CisNG.hbm.xml" />
+    <EmbeddedResource Include="CardSystem.hbm.xml" />
+    <EmbeddedResource Include="Card.hbm.xml" />
+    <EmbeddedResource Include="CisNGGroup.hbm.xml" />
+    <EmbeddedResource Include="DailyPlan.hbm.xml" />
+    <EmbeddedResource Include="DayInterval.hbm.xml" />
+    <EmbeddedResource Include="TimeZone.hbm.xml" />
+    <EmbeddedResource Include="TimeZoneDateSetting.hbm.xml" />
+    <EmbeddedResource Include="DayType.hbm.xml" />
+    <EmbeddedResource Include="AccessControl.hbm.xml" />
+    <EmbeddedResource Include="CustomAccessControl.hbm.xml" />
+    <EmbeddedResource Include="SecuritySetting.hbm.xml" />
+    <EmbeddedResource Include="SystemVersion.hbm.xml" />
+    <EmbeddedResource Include="SystemEvent.hbm.xml" />
+    <EmbeddedResource Include="PresentationFormatter.hbm.xml" />
+    <EmbeddedResource Include="PresentationGroup.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AlarmPriorityDatabase.hbm.xml" />
+    <EmbeddedResource Include="UserFoldersStructure.hbm.xml" />
+    <EmbeddedResource Include="UserFoldersStructureObject.hbm.xml" />
+    <EmbeddedResource Include="CentralNameRegister.hbm.xml" />
+    <EmbeddedResource Include="CSVImportColumn.hbm.xml" />
+    <EmbeddedResource Include="CSVImportSchema.hbm.xml" />
+    <EmbeddedResource Include="GlobalAlarmInstruction.hbm.xml" />
+    <EmbeddedResource Include="DatabaseGeneralOption.hbm.xml" />
+    <EmbeddedResource Include="CardTemplate.hbm.xml" />
+    <EmbeddedResource Include="CardPair.hbm.xml" />
+    <EmbeddedResource Include="DatabaseServerAlarm.hbm.xml" />
+    <EmbeddedResource Include="Car.hbm.xml" />
+    <EmbeddedResource Include="CarCards.hbm.xml" />
+    <Content Include="Iesi.Collections.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="MifareSectorData.hbm.xml" />
+    <EmbeddedResource Include="MifareSectorSectorInfo.hbm.xml" />
+    <EmbeddedResource Include="LoginGroup.hbm.xml" />
+    <EmbeddedResource Include="MaximumVersionForObjectType.hbm.xml" />
+    <Content Include="NHibernate.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="StructuredSubSite.hbm.xml" />
+    <EmbeddedResource Include="StructuredSubSiteObject.hbm.xml" />
+    <EmbeddedResource Include="RelationshipGlobalAlarmInstructionObject.hbm.xml" />
+    <EmbeddedResource Include="ServerGeneralOptionsDB.hbm.xml" />
+    <EmbeddedResource Include="UserOpenedWindow.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

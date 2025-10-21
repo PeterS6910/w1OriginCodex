@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2EB9DDDF-0719-4A79-8CB7-FBD410743C92}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Contal.Cgp.NCAS.Server.Beans</RootNamespace>
+    <AssemblyName>Cgp.NCAS.Server.Beans</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Designer|AnyCPU' ">
+    <OutputPath>bin\Designer\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CardReaderDrivers.PC45">
+      <HintPath>..\lib\CardReaderDrivers.PC45.dll</HintPath>
+    </Reference>
+    <Reference Include="CardReaderDriversDefinitions.PC45">
+      <HintPath>..\lib\CardReaderDriversDefinitions.PC45.dll</HintPath>
+    </Reference>
+    <Reference Include="IwQuick.PC45">
+      <HintPath>..\lib\IwQuick.PC45.dll</HintPath>
+    </Reference>
+    <Reference Include="LwSerialization2.PC45">
+      <HintPath>..\lib\LwSerialization2.PC45.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AACardReader.cs" />
+    <Compile Include="ExcelReportOutput.cs" />
+    <Compile Include="LprCamera.cs" />
+    <Compile Include="PersonAttributeOutput.cs" />
+    <Compile Include="PersonAttribute.cs" />
+    <Compile Include="AccessZone.cs" />
+    <Compile Include="ACLGroup.cs" />
+    <Compile Include="ACLPerson.cs" />
+    <Compile Include="ACLSettingAA.cs" />
+    <Compile Include="AlarmArc.cs" />
+    <Compile Include="AlarmArea.cs" />
+    <Compile Include="AlarmAreaAlarmArc.cs" />
+    <Compile Include="AlarmTransmitter.cs" />
+    <Compile Include="AntiPassBackZone.cs" />
+    <Compile Include="APBZCardReader.cs" />
+    <Compile Include="CardReader.cs" />
+    <Compile Include="CardReaderAlarmArc.cs" />
+    <Compile Include="CCU.cs" />
+    <Compile Include="AccessControlList.cs" />
+    <Compile Include="ACLSetting.cs" />
+    <Compile Include="AAInput.cs" />
+    <Compile Include="CcuAlarmArc.cs" />
+    <Compile Include="DcuAlarmArc.cs" />
+    <Compile Include="DevicesAlarmSettingAlarmArc.cs" />
+    <Compile Include="DevicesAlarmSetting.cs" />
+    <Compile Include="DoorEnvironmentAlarmArc.cs" />
+    <Compile Include="IAlarmArcForAlarmType.cs" />
+    <Compile Include="ICardReaderObject.cs" />
+    <Compile Include="IGetDcu.cs" />
+    <Compile Include="LookupedAlarmTransmitter.cs" />
+    <Compile Include="ModifyObjects\AlarmArcModifyObj.cs" />
+    <Compile Include="ModifyObjects\AlarmTransmitterModifyObj.cs" />
+    <Compile Include="ModifyObjects\MultiDoorElementModObj.cs" />
+    <Compile Include="ModifyObjects\MultiDoorModifyObj.cs" />
+    <Compile Include="MultiDoor.cs" />
+    <Compile Include="Floor.cs" />
+    <Compile Include="GraphicSymbol.cs" />
+    <Compile Include="GraphicSymbolRawData.cs" />
+    <Compile Include="GraphicSymbolTemplate.cs" />
+    <Compile Include="IPSetting.cs" />
+    <Compile Include="ModifyObjects\FloorModifyObj.cs" />
+    <Compile Include="Shorts\AlarmArcShort.cs" />
+    <Compile Include="Shorts\AlarmTransmitterShort.cs" />
+    <Compile Include="Shorts\FloorShort.cs" />
+    <Compile Include="Shorts\MultiDoorShort.cs" />
+    <Compile Include="MultiDoorElement.cs" />
+    <Compile Include="Scene.cs" />
+    <Compile Include="Shorts\MultiDoorElementShort.cs" />
+    <Compile Include="ReportSetting.cs" />
+    <Compile Include="TimetecSetting.cs" />
+    <Compile Include="DoorEnvironment.cs" />
+    <Compile Include="DCU.cs" />
+    <Compile Include="Input.cs" />
+    <Compile Include="NCASAccess.cs" />
+    <Compile Include="Output.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecurityDailyPlan.cs" />
+    <Compile Include="SecurityDayInterval.cs" />
+    <Compile Include="SecurityTimeZone.cs" />
+    <Compile Include="SecurityTimeZoneDateSetting.cs" />
+    <Compile Include="Support.cs" />
+    <Compile Include="GraphicsView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cgp\Cgp.BaseLib\Cgp.BaseLib.csproj">
+      <Project>{4B649633-3110-4CBD-AC66-43685FFDC808}</Project>
+      <Name>Cgp.BaseLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.NCAS.Definitions\Cgp.NCAS.Definitions.csproj">
+      <Project>{84E07D7F-09B6-4894-BBE4-4FCFA73A85E1}</Project>
+      <Name>Cgp.NCAS.Definitions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.NCAS.Globals\Cgp.NCAS.Globals.csproj">
+      <Project>{08E546F9-45B8-4A33-A0FE-0D83FB132560}</Project>
+      <Name>Cgp.NCAS.Globals</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.Globals\Cgp.Globals.csproj">
+      <Project>{869f99af-fefa-43d9-98a0-6d8cf0987074}</Project>
+      <Name>Cgp.Globals</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.Server.Beans.Extern\Cgp.Server.Beans.Extern.csproj">
+      <Project>{8DB7364B-5E6B-4869-A3DD-DB9B95DA7064}</Project>
+      <Name>Cgp.Server.Beans.Extern</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.Server.Beans\Cgp.Server.Beans.csproj">
+      <Project>{0A152990-C767-4D19-ABD5-9CC4FDDDBC95}</Project>
+      <Name>Cgp.Server.Beans</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CardReader.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CCU.hbm.xml" />
+    <EmbeddedResource Include="DCU.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AccessControlList.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ACLSetting.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Input.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ACLPerson.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Output.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AACardReader.hbm.xml" />
+    <EmbeddedResource Include="AlarmArea.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SecurityDailyPlan.hbm.xml" />
+    <EmbeddedResource Include="SecurityDayInterval.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SecurityTimeZone.hbm.xml" />
+    <EmbeddedResource Include="SecurityTimeZoneDateSetting.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ACLSettingAA.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AccessZone.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AAInput.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DoorEnvironment.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DevicesAlarmSetting.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ACLGroup.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scene.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GraphicSymbol.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GraphicSymbolRawData.hbm.xml" />
+    <EmbeddedResource Include="GraphicSymbolTemplate.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AntiPassBackZone.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Floor.hbm.xml" />
+    <EmbeddedResource Include="MultiDoor.hbm.xml" />
+    <EmbeddedResource Include="MultiDoorElement.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GraphicsView.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AlarmArc.hbm.xml" />
+    <EmbeddedResource Include="AlarmTransmitter.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DevicesAlarmSettingAlarmArc.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AlarmAreaAlarmArc.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CardReaderAlarmArc.hbm.xml" />
+    <EmbeddedResource Include="CcuAlarmArc.hbm.xml" />
+    <EmbeddedResource Include="DcuAlarmArc.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DoorEnvironmentAlarmArc.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TimetecSetting.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PersonAttribute.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ReportSetting.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PersonAttributeOutput.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ExcelReportOutput.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LprCamera.hbm.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

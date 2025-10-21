@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.Server.Beans.StructuredSubSiteObject, Cgp.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdStructuredSubSiteObject">
+      <generator class="identity" />
+    </id>
+    <many-to-one name="StructuredSubSite" column="StructuredSubSite" class="Contal.Cgp.Server.Beans.StructuredSubSite, Cgp.Server.Beans" not-null="false" unique-key="StructuredSubSiteObjectTypeObjectIdIsReference" index="StructuredSubSiteObjectTypeObjectIdIsReference"/>
+    <property name="ObjectType" not-null="true" unique-key="StructuredSubSiteObjectTypeObjectIdIsReference" index="StructuredSubSiteObjectTypeObjectIdIsReference"/>
+    <property name="ObjectId" not-null="true" unique-key="StructuredSubSiteObjectTypeObjectIdIsReference" index="StructuredSubSiteObjectTypeObjectIdIsReference"/>
+    <property name="IsReference" unique-key="StructuredSubSiteObjectTypeObjectIdIsReference" index="StructuredSubSiteObjectTypeObjectIdIsReference"/>
+  </class>
+</hibernate-mapping>

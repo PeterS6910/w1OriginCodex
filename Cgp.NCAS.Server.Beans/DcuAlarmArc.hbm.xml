@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.NCAS.Server.Beans.DcuAlarmArc, Cgp.NCAS.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdDcuAlarmArc">
+      <generator class="guid" />
+    </id>
+    <many-to-one name="Dcu" column="Dcu" class="Contal.Cgp.NCAS.Server.Beans.DCU, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <property name="AlarmType" not-null="false"></property>
+    <many-to-one name="AlarmArc" column="AlarmArc" class="Contal.Cgp.NCAS.Server.Beans.AlarmArc, Cgp.NCAS.Server.Beans" not-null="false"/>
+  </class>
+</hibernate-mapping>
+

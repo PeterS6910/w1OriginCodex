@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{03D83D1D-0315-40A4-8DE0-BE415BAF68C3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Contal.Cgp.DBSCreator</RootNamespace>
+    <AssemblyName>Cgp.DBSCreator</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Designer|AnyCPU' ">
+    <OutputPath>bin\Designer\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>..\Cgp.Components\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="IwQuick.PC45">
+      <HintPath>..\..\lib\IwQuick.PC45.dll</HintPath>
+    </Reference>
+    <Reference Include="SLA.ClientModule">
+      <HintPath>..\..\lib\SLA.ClientModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompareOrmModel.cs" />
+    <Compile Include="ImportData.cs" />
+    <Compile Include="VersionBasedDatabaseConversion.cs" />
+    <Compile Include="DatabaseCommandExecutor.cs" />
+    <Compile Include="DatabaseCreator.cs" />
+    <Compile Include="DatabaseBackupAndRestore.cs" />
+    <Compile Include="DatabaseAccessor.cs" />
+    <Compile Include="DatabaseUpdater.cs" />
+    <Compile Include="FormDbsConversion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDbsConversion.Designer.cs">
+      <DependentUpon>FormDbsConversion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDbsLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDbsLogin.Designer.cs">
+      <DependentUpon>FormDbsLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlterTables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlterTables.designer.cs">
+      <DependentUpon>FormAlterTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBeforeExecution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBeforeExecution.designer.cs">
+      <DependentUpon>FormBeforeExecution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDatabaseSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDatabaseSettings.Designer.cs">
+      <DependentUpon>FormDatabaseSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormServerDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormServerDatabase.Designer.cs">
+      <DependentUpon>FormServerDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormServerLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormServerLogin.Designer.cs">
+      <DependentUpon>FormServerLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormServerSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormServerSelect.designer.cs">
+      <DependentUpon>FormServerSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateDatabase.designer.cs">
+      <DependentUpon>FormUpdateDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreatorProperties.cs" />
+    <Compile Include="ICreateOrUpdateForm.cs" />
+    <Compile Include="IFormBeforeExecution.cs" />
+    <Compile Include="IFormUpdateDatabase.cs" />
+    <Compile Include="Localization.Swedish.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localization.Swedish.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Localization.English.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localization.English.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization.Slovak.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localization.Slovak.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Schema.cs" />
+    <Compile Include="SqlParameterTypeAndValue.cs" />
+    <Compile Include="Support.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormDbsConversion.resx">
+      <DependentUpon>FormDbsConversion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDbsLogin.resx">
+      <DependentUpon>FormDbsLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlterTables.resx">
+      <DependentUpon>FormAlterTables.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBeforeExecution.resx">
+      <DependentUpon>FormBeforeExecution.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDatabaseSettings.resx">
+      <DependentUpon>FormDatabaseSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormServerDatabase.resx">
+      <DependentUpon>FormServerDatabase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormServerLogin.resx">
+      <DependentUpon>FormServerLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormServerSelect.resx">
+      <DependentUpon>FormServerSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateDatabase.resx">
+      <DependentUpon>FormUpdateDatabase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization.English.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.English.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization.Slovak.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.Slovak.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization.Swedish.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.Swedish.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cgp.Globals\Cgp.Globals.csproj">
+      <Project>{869F99AF-FEFA-43D9-98A0-6D8CF0987074}</Project>
+      <Name>Cgp.Globals</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.ORM\Cgp.ORM.csproj">
+      <Project>{91F9BB39-37AA-4831-91AD-882EEE262722}</Project>
+      <Name>Cgp.ORM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CreateDropIndicesProcedure.sql" />
+    <EmbeddedResource Include="CreateDropKeysProcedure.sql" />
+    <EmbeddedResource Include="CreateSchemaIndices.sql" />
+    <EmbeddedResource Include="PrepareSchemaUpdate.sql" />
+    <EmbeddedResource Include="UpdateSchema.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CreateTableSystemVersion.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="contaltimetecnova.cer" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

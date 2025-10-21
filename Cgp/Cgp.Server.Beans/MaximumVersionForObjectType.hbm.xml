@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.Server.Beans.MaximumVersionForObjectType, Cgp.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdMaximumVersionForObjectType">
+      <generator class="guid" />
+    </id>
+    <property name="ObjectType" not-null="true"></property>
+    <property name="Version" not-null="true"></property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.NCAS.Server.Beans.CardReader, Cgp.NCAS.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdCardReader">
+      <generator class="guid" />
+    </id>
+    <property name="FunctionKey1" not-null="false"></property>
+    <property name="FunctionKey2" not-null="false"></property>
+    <property name="GIN" not-null="true" index ="IndexGin"></property>
+    <property name="GinLength" not-null="false"></property>
+    <property name="SecurityLevel" not-null="true"></property>
+    <property name="IsEmergencyCode" not-null="false"></property>
+    <property name="EmergencyCode" not-null="false"></property>
+    <property name="EmergencyCodeLength" not-null="false"></property>
+    <property name="IsForcedSecurityLevel" not-null="true"></property>
+    <property name="ForcedSecurityLevel" not-null="false"></property>
+    <many-to-one name="SecurityDailyPlan" column="SecurityDailyPlan" class="Contal.Cgp.NCAS.Server.Beans.SecurityDailyPlan, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="SecurityTimeZone" column="SecurityTimeZone" class="Contal.Cgp.NCAS.Server.Beans.SecurityTimeZone, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="DCU" column="DCU" class="Contal.Cgp.NCAS.Server.Beans.DCU, Cgp.NCAS.Server.Beans" not-null="false" unique-key="DCUCCUPortAddress"/>
+    <many-to-one name="CCU" column="CCU" class="Contal.Cgp.NCAS.Server.Beans.CCU, Cgp.NCAS.Server.Beans" not-null="false" unique-key="DCUCCUPortAddress"/>
+    <property name="Port" not-null="false" unique-key="DCUCCUPortAddress"></property>
+    <property name="Address" not-null="false" unique-key="DCUCCUPortAddress"></property>
+    <property name="CardReaderHardware" not-null="false"></property>
+    <property name="OnOffObjectType" not-null="false">
+      <column name="OnOffObjectType" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+    <property name="OnOffObjectId" not-null="false"></property>
+
+    <property name="AlarmAccessDenied" not-null="false"></property>
+    <property name="BlockAlarmAccessDenied" not-null="false"></property>
+    <property name="ObjBlockAlarmAccessDeniedObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmAccessDeniedId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmAccessDenied" not-null="false"></property>
+    
+    <property name="AlarmUnknownCard" not-null="false"></property>
+    <property name="BlockAlarmUnknownCard" not-null="false"></property>
+    <property name="ObjBlockAlarmUnknownCardObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmUnknownCardId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmUnknownCard" not-null="false"></property>
+    
+    <property name="AlarmCardBlockedOrInactive" not-null="false"></property>
+    <property name="BlockAlarmCardBlockedOrInactive" not-null="false"></property>
+    <property name="ObjBlockAlarmCardBlockedOrInactiveObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmCardBlockedOrInactiveId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmCardBlockedOrInactive" not-null="false"></property>
+    
+    <property name="AlarmInvalidPIN" not-null="false"></property>
+    <property name="BlockAlarmInvalidPin" not-null="false"></property>
+    <property name="ObjBlockAlarmInvalidPinObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmInvalidPinId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmInvalidPin" not-null="false"></property>
+    
+    <property name="AlarmInvalidGIN" not-null="false"></property>
+    <property name="BlockAlarmInvalidGin" not-null="false"></property>
+    <property name="ObjBlockAlarmInvalidGinObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmInvalidGinId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmInvalidGin" not-null="false"></property>
+    
+    <property name="AlarmInvalidEmergencyCode" not-null="false"></property>
+    <property name="BlockAlarmInvalidEmergencyCode" not-null="false"></property>
+    <property name="ObjBlockAlarmInvalidEmergencyCodeObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmInvalidEmergencyCodeId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmInvalidEmergencyCode" not-null="false"></property>
+    
+    <property name="AlarmAccessPermitted" not-null="false"></property>
+    <property name="BlockAlarmAccessPermitted" not-null="false"></property>
+    <property name="ObjBlockAlarmAccessPermittedObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmAccessPermittedId" not-null="false"></property>
+
+    <property name="AlarmInvalidGinRetriesLimitReached" not-null="false"></property>
+    <property name="BlockAlarmInvalidGinRetriesLimitReached" not-null="false"></property>
+    <property name="ObjBlockAlarmInvalidGinRetriesLimitReachedObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmInvalidGinRetriesLimitReachedId" not-null="false"></property>
+    
+    <property name="CRLanguage" not-null="false"></property>
+    <property name="CardAppliedLED" not-null="false"></property>
+    <property name="CardAppliedKeyboardLight" not-null="false"></property>
+    <property name="CardAppliedInternalBuzzer" not-null="false"></property>
+    <property name="CardAppliedExternalBuzzer" not-null="false"></property>
+    <property name="TamperLED" not-null="false"></property>
+    <property name="TamperKeyboardLight" not-null="false"></property>
+    <property name="TamperInternalBuzzer" not-null="false"></property>
+    <property name="TamperExternalBuzzer" not-null="false"></property>
+    <property name="ResetLED" not-null="false"></property>
+    <property name="ResetKeyboardLight" not-null="false"></property>
+    <property name="ResetInternalBuzzer" not-null="false"></property>
+    <property name="ResetExternalBuzzer" not-null="false"></property>
+    <property name="KeyPressedLED" not-null="false"></property>
+    <property name="KeyPressedKeyboardLight" not-null="false"></property>
+    <property name="KeyPressedInternalBuzzer" not-null="false"></property>
+    <property name="KeyPressedExternalBuzzer" not-null="false"></property>
+    <property name="InternalBuzzerKillswitch" not-null="false"></property>
+    <property name="SlCodeLedPresentation" not-null="false"></property>
+    <property name="SLForEnterToMenu" not-null="false"></property>
+    <property name="UseAccessGinForEnterToMenu" not-null="false"></property>
+    <property name="GinForEnterToMenu" not-null="false" index ="IndexGinForEnterToMenu"></property>
+    <property name="GinLengthForEnterToMenu" not-null="false"></property>
+    <many-to-one name="SecurityDailyPlanForEnterToMenu" column="SecurityDailyPlanForEnterToMenu" class="Contal.Cgp.NCAS.Server.Beans.SecurityDailyPlan, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="SecurityTimeZoneForEnterToMenu" column="SecurityTimeZoneForEnterToMenu" class="Contal.Cgp.NCAS.Server.Beans.SecurityTimeZone, Cgp.NCAS.Server.Beans" not-null="false"/>
+    
+    <property name="AlarmOffline" not-null="false"></property>
+    <property name="BlockAlarmOffline" not-null="false"></property>
+    <property name="ObjBlockAlarmOfflineObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmOfflineId" not-null="false"></property>
+    
+    <property name="AlarmTamper" not-null="false"></property>
+    <property name="BlockAlarmTamper" not-null="false"></property>
+    <property name="ObjBlockAlarmTamperObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmTamperId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmTamper" not-null="false"></property>
+    
+    <property name="QueryDbStamp" not-null="false"></property>
+    
+    <many-to-one name="SpecialOutputForTamper" column="SpecialOutputForTamper" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="SpecialOutputForOffline" column="SpecialOutputForOffline" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+
+    <property name="Description" not-null="false">
+      <column name="Description" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+    <property name="LocalAlarmInstruction" not-null="false">
+      <column name="LocalAlarmInstruction" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+
+    <property name="InvalidGinRetriesLimitEnabled" not-null="false"></property>
+    <property name="InvalidPinRetriesLimitEnabled" not-null="false"></property>
+
+    <property name="DisableScreensaver" not-null="false"></property>
+    <many-to-one name="ReportEventsToTimetec" column="ReportEventsToTimetec" class="Contal.Cgp.NCAS.Server.Beans.TimetecSetting, Cgp.NCAS.Server.Beans" not-null="false"/>
+
+    <bag name="AACardReaders" cascade="all-delete-orphan">
+      <key column="CardReader" />
+      <one-to-many class="Contal.Cgp.NCAS.Server.Beans.AACardReader"  />
+    </bag>
+
+    <bag name="CardReaderAlarmArcs" cascade="all-delete-orphan">
+      <key column="CardReader" />
+      <one-to-many class="Contal.Cgp.NCAS.Server.Beans.CardReaderAlarmArc"  />
+    </bag>
+
+    <property name="Version" not-null="false"></property>
+
+    <join table="CentralNameRegister">
+      <key column="Id" foreign-key="none"/>
+      <property name="Name" column="Name" not-null="true"/>
+      <property name="ObjectType" not-null="true"/>
+      <property name="CkUnique"/>
+    </join>
+  </class>
+</hibernate-mapping>
+

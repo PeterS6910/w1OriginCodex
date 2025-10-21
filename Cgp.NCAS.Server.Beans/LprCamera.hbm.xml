@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.NCAS.Server.Beans.LprCamera, Cgp.NCAS.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdLprCamera">
+      <generator class="guid" />
+    </id>
+
+    <property name="IpAddress" not-null="false"/>
+    <property name="MacAddress" not-null="false"/>
+    <property name="Port" type="String" not-null="false"/>
+    <property name="PortSsl" type="String" not-null="false"/>
+    <property name="CommunicationScope" not-null="false"/>
+    <property name="Locked" not-null="false"/>
+    <property name="LockingClientIp" not-null="false"/>
+    <property name="IsOnline" not-null="false"/>
+    <property name="LastHeartbeatAt" not-null="false"/>
+    <property name="LastLicensePlate" not-null="false"/>
+    <property name="HealthState" not-null="false"/>
+    <property name="EnableParentInFullName" not-null="false"/>
+    <property name="GuidCCU" not-null="false"/>
+    
+    <many-to-one name="CCU" column="CCU" class="Contal.Cgp.NCAS.Server.Beans.CCU, Cgp.NCAS.Server.Beans" not-null="false"/>
+
+    <property name="Description" not-null="false">
+      <column name="Description" sql-type="NVARCHAR(MAX)" />
+    </property>
+    <property name="LocalAlarmInstruction" not-null="false">
+      <column name="LocalAlarmInstruction" sql-type="NVARCHAR(MAX)" />
+    </property>
+
+    <property name="Version" not-null="false"/>
+
+    <join table="CentralNameRegister">
+      <key column="Id" foreign-key="none"/>
+      <property name="Name" column="Name" not-null="true"/>
+      <property name="ObjectType" not-null="true"/>
+      <property name="CkUnique"/>
+    </join>
+  </class>
+</hibernate-mapping>

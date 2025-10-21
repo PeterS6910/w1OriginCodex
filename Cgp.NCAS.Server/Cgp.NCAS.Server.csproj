@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E9AA864F-8019-4281-87BE-6E47085E756C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Contal.Cgp.NCAS.Server</RootNamespace>
+    <AssemblyName>Cgp.NCAS.Server.plugin</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Designer|AnyCPU' ">
+    <OutputPath>bin\Designer\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release - CodeProtection|AnyCPU' ">
+    <OutputPath>bin\Release - CodeProtection\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CardReaderDrivers.PC45">
+      <HintPath>..\lib\CardReaderDrivers.PC45.dll</HintPath>
+    </Reference>
+    <Reference Include="CardReaderDriversDefinitions.PC45">
+      <HintPath>..\lib\CardReaderDriversDefinitions.PC45.dll</HintPath>
+    </Reference>
+    <Reference Include="CatCom.PC45">
+      <HintPath>..\lib\CatCom.PC45.dll</HintPath>
+    </Reference>
+    <Reference Include="CDK.Net, Version=1.0.8409.21267, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\CDK.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=6.1.1.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.6.1.1\lib\net35\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.Interfaces, Version=6.1.1.0, Culture=neutral, PublicKeyToken=a694d7f3b0907a61, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.Interfaces.6.1.1\lib\net35\EPPlus.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.System.Drawing, Version=6.1.1.0, Culture=neutral, PublicKeyToken=2308d35469c9bac0, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.System.Drawing.6.1.1\lib\net35\EPPlus.System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL" />
+    <Reference Include="IwQuick.PC45">
+      <HintPath>..\lib\IwQuick.PC45.dll</HintPath>
+    </Reference>
+    <Reference Include="LwMessaging.PC45">
+      <HintPath>..\lib\LwMessaging.PC45.dll</HintPath>
+    </Reference>
+    <Reference Include="LwRemoting2.PC45">
+      <HintPath>..\lib\LwRemoting2.PC45.dll</HintPath>
+    </Reference>
+    <Reference Include="LwSerialization2.PC45">
+      <HintPath>..\lib\LwSerialization2.PC45.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Cgp\Cgp.ORM\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SLA.ClientModule">
+      <HintPath>..\lib\SLA.ClientModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.WorkflowServices">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DB\ExcelReportOutputs.cs" />
+    <Compile Include="DB\LprCameras.cs" />
+    <Compile Include="DB\PersonAttributeOutputs.cs" />
+    <Compile Include="DB\ReportSettings.cs" />
+    <Compile Include="ExportData\AccessControlListsExportData.cs" />
+    <Compile Include="ExportData\CardReadersExportData.cs" />
+    <Compile Include="ExportData\ExportTableNCASFactory.cs" />
+    <Compile Include="ExportData\DoorEnvironmentAlarmExportData.cs" />
+    <Compile Include="ExportData\PersonAttributeExportData.cs" />
+    <Compile Include="LprCameraDiscoveryHandler.cs" />
+    <Compile Include="MaximumVersionAndIds.cs" />
+    <Compile Include="Notifications\EmailNotificationService.cs" />
+    <Compile Include="DB\PersonAttributes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cgp\Cgp.BaseLib\Cgp.BaseLib.csproj">
+      <Project>{4B649633-3110-4CBD-AC66-43685FFDC808}</Project>
+      <Name>Cgp.BaseLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.Globals\Cgp.Globals.csproj">
+      <Project>{869F99AF-FEFA-43D9-98A0-6D8CF0987074}</Project>
+      <Name>Cgp.Globals</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.NCAS.Definitions\Cgp.NCAS.Definitions.csproj">
+      <Project>{84E07D7F-09B6-4894-BBE4-4FCFA73A85E1}</Project>
+      <Name>Cgp.NCAS.Definitions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.NCAS.Globals\Cgp.NCAS.Globals.csproj">
+      <Project>{08E546F9-45B8-4A33-A0FE-0D83FB132560}</Project>
+      <Name>Cgp.NCAS.Globals</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.NCAS.RemotingCommon\Cgp.NCAS.RemotingCommon.csproj">
+      <Project>{7DA1465B-3029-43E8-801C-BAC87581B99C}</Project>
+      <Name>Cgp.NCAS.RemotingCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.NCAS.Server.Beans\Cgp.NCAS.Server.Beans.csproj">
+      <Project>{2EB9DDDF-0719-4A79-8CB7-FBD410743C92}</Project>
+      <Name>Cgp.NCAS.Server.Beans</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.ORM\Cgp.ORM.csproj">
+      <Project>{91F9BB39-37AA-4831-91AD-882EEE262722}</Project>
+      <Name>Cgp.ORM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.RemotingCommon\Cgp.RemotingCommon.csproj">
+      <Project>{1A33974B-B787-4E35-BE4B-BCF6F50DB953}</Project>
+      <Name>Cgp.RemotingCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.Server.Beans.Extern\Cgp.Server.Beans.Extern.csproj">
+      <Project>{8DB7364B-5E6B-4869-A3DD-DB9B95DA7064}</Project>
+      <Name>Cgp.Server.Beans.Extern</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.Server.Beans\Cgp.Server.Beans.csproj">
+      <Project>{0A152990-C767-4D19-ABD5-9CC4FDDDBC95}</Project>
+      <Name>Cgp.Server.Beans</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.Server\Cgp.Server.csproj">
+      <Project>{e4aa19df-b369-4979-a2a0-d3d2bcfed985}</Project>
+      <Name>Cgp.Server</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WcfServiceNovaConnection\WcfServiceNovaConnection.PC45.csproj">
+      <Project>{2224e287-fbf1-4268-890e-a04a1a194a5d}</Project>
+      <Name>WcfServiceNovaConnection.PC45</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AclGroupModifications.cs" />
+    <Compile Include="AlarmAreaImplicitCCUAndStates.cs" />
+    <Compile Include="Alarms\AlarmAreaAlarm.cs" />
+    <Compile Include="Alarms\AlarmAreaSetByOnOffObjectFailedAlarm.cs" />
+    <Compile Include="Alarms\CatAlarmsManager.cs" />
+    <Compile Include="Alarms\CcuAlarmsOwner.cs" />
+    <Compile Include="Alarms\CcuBatteryLowAlarm.cs" />
+    <Compile Include="Alarms\CcuCatUnreachableAlarm.cs" />
+    <Compile Include="Alarms\CrInvalidPinRetriesLimitReached.cs" />
+    <Compile Include="DB\TimetecSettings.cs" />
+    <Compile Include="Reports\DoorEnviromentAlarmsReportService.cs" />
+    <Compile Include="Reports\PersonAttributesReportService.cs" />
+    <Compile Include="ServerAlarms\AlarmAreaAServerAlarm.cs" />
+    <Compile Include="ServerAlarms\AlarmAreaServerAlarm.cs" />
+    <Compile Include="ServerAlarms\AlarmAreaSetByOnOffObjectFailedServerAlarm.cs" />
+    <Compile Include="ServerAlarms\CcuBatteryLowServerAlarm.cs" />
+    <Compile Include="ServerAlarms\CcuCatUnreachableServerAlarm.cs" />
+    <Compile Include="ServerAlarms\CcuClockUnsynchronizedServerAlarm.cs" />
+    <Compile Include="Alarms\CcuCoprocessorFailureAlarm.cs" />
+    <Compile Include="Alarms\CcuExtFuseAlarm.cs" />
+    <Compile Include="Alarms\CcuFileSystemProblemAlarm.cs" />
+    <Compile Include="Alarms\CcuHighMemoryLoadAlarm.cs" />
+    <Compile Include="ServerAlarms\CcuExtFuseServerAlarm.cs" />
+    <Compile Include="ServerAlarms\CcuOfflineServerAlarm.cs" />
+    <Compile Include="Alarms\CcuPrimaryPowerMissingAlarm.cs" />
+    <Compile Include="Alarms\CcuSdCardNotFoundAlarm.cs" />
+    <Compile Include="Alarms\CcuTamperAlarm.cs" />
+    <Compile Include="Alarms\CcuTransferToArcTimedOutAlarm.cs" />
+    <Compile Include="ServerAlarms\CcuPrimaryPowerMissingServerAlarm.cs" />
+    <Compile Include="ServerAlarms\CcuTamperServerAlarm.cs" />
+    <Compile Include="ServerAlarms\CcuTransferToArcTimedOutServerAlarm.cs" />
+    <Compile Include="ServerAlarms\CcuUnconfiguredServerAlarm.cs" />
+    <Compile Include="Alarms\CcuUpsBatteryFaultAlarm.cs" />
+    <Compile Include="Alarms\CcuUpsBatteryFuseAlarm.cs" />
+    <Compile Include="Alarms\CcuUpsOutputFuseAlarm.cs" />
+    <Compile Include="Alarms\CcuUpsOvertemperatureAlarm.cs" />
+    <Compile Include="Alarms\CcuUpsTamperSabotageAlarm.cs" />
+    <Compile Include="Alarms\CrAccessDeniedAlarm.cs" />
+    <Compile Include="Alarms\CrCardBlockedOrInactiveAlarm.cs" />
+    <Compile Include="Alarms\CrInvalidEmergencyCodeAlarm.cs" />
+    <Compile Include="Alarms\CrInvalidCodeAlarm.cs" />
+    <Compile Include="Alarms\CrInvalidCodeRetriesLimitReached.cs" />
+    <Compile Include="Alarms\CrInvalidPinAlarm.cs" />
+    <Compile Include="Alarms\CrOfflineAlarm.cs" />
+    <Compile Include="Alarms\CrTamperAlarm.cs" />
+    <Compile Include="Alarms\CrUnknownCardAlarm.cs" />
+    <Compile Include="Alarms\DcuOfflineAlarm.cs" />
+    <Compile Include="Alarms\DcuTamperAlarm.cs" />
+    <Compile Include="Alarms\DeDoorAjarAlarm.cs" />
+    <Compile Include="Alarms\DeIntrusionAlarm.cs" />
+    <Compile Include="Alarms\DeSabotageAlarm.cs" />
+    <Compile Include="Alarms\IccuPortAlreadyUsedAlarm.cs" />
+    <Compile Include="Alarms\IccuSendingOfObjectStateFailedAlarm.cs" />
+    <Compile Include="Alarms\InputAlarm.cs" />
+    <Compile Include="Alarms\InputTamperAlarm.cs" />
+    <Compile Include="Alarms\OutputAlarm.cs" />
+    <Compile Include="Alarms\SensorAlarm.cs" />
+    <Compile Include="Alarms\SensorTamperAlarm.cs" />
+    <Compile Include="PersonAccessRightsForCardReader.cs" />
+    <Compile Include="CardReaderState.cs" />
+    <Compile Include="CCUAlarms.cs" />
+    <Compile Include="CCUCallbackRunner.cs" />
+    <Compile Include="CcuDataReplicator\DataReplicationManager.CcuDataReplicator.cs" />
+    <Compile Include="CCUDoorEnvironemntState.cs" />
+    <Compile Include="CCUEvents.cs" />
+    <Compile Include="ComboLicenceManager.cs" />
+    <Compile Include="Alarms\CrAccessPermittedAlarm.cs" />
+    <Compile Include="DB\AlarmArcs.cs" />
+    <Compile Include="DB\AlarmAreaAlarmArcs.cs" />
+    <Compile Include="DB\AlarmTransmitters.cs" />
+    <Compile Include="DB\ANcasBaseOrmTable.cs" />
+    <Compile Include="DB\AntiPassBackZoneContent.cs" />
+    <Compile Include="DB\AntiPassBackZones.cs" />
+    <Compile Include="DB\CardReaderAlarmArcs.cs" />
+    <Compile Include="DB\CcuAlarmArcs.cs" />
+    <Compile Include="DB\DcuAlarmArcs.cs" />
+    <Compile Include="DB\DevicesAlarmSettingAlarmArcs.cs" />
+    <Compile Include="DB\DoorEnvironmentAlarmArcs.cs" />
+    <Compile Include="DB\Floors.cs" />
+    <Compile Include="DB\GraphicSymbolRawDatas.cs" />
+    <Compile Include="DB\GraphicSymbols.cs" />
+    <Compile Include="DB\GraphicSymbolTemplates.cs" />
+    <Compile Include="EventParameters\EventParameters.cs" />
+    <Compile Include="EventParameters\EventParametersForAlarmAreas.cs" />
+    <Compile Include="EventParameters\EventParametersForAlarms.cs" />
+    <Compile Include="EventParameters\EventParametersForAntiPassbackZones.cs" />
+    <Compile Include="EventParameters\EventParametersForCardReaders.cs" />
+    <Compile Include="EventParameters\EventParametersForDcus.cs" />
+    <Compile Include="EventParameters\EventParametersForDoorEnvironments.cs" />
+    <Compile Include="EventParameters\EventParametersForInputs.cs" />
+    <Compile Include="EventParameters\EventParametersForOutputs.cs" />
+    <Compile Include="EventParameters\EventParametersForSystem.cs" />
+    <Compile Include="EventParameters\EventParametersForUpcMonitor.cs" />
+    <Compile Include="EventParameters\EventParametersForUpgrade.cs" />
+    <Compile Include="Alarms\AlarmAreaAAlarm.cs" />
+    <Compile Include="ReferencingAnitPassBackZonesSearch.cs" />
+    <Compile Include="DB\MultiDoors.cs" />
+    <Compile Include="DB\Scenes.cs" />
+    <Compile Include="DateIntervalTimeZone.cs" />
+    <Compile Include="CCUEventsManager.cs" />
+    <Compile Include="CCUSettings.cs" />
+    <Compile Include="DB\AACardReaders.cs" />
+    <Compile Include="DB\AccessZones.cs" />
+    <Compile Include="DB\ACLGroups.cs" />
+    <Compile Include="DB\ACLPersons.cs" />
+    <Compile Include="DB\ACLSettingAAs.cs" />
+    <Compile Include="DB\AlarmAreas.cs" />
+    <Compile Include="DB\CardReaders.cs" />
+    <Compile Include="DB\CCUs.cs" />
+    <Compile Include="DB\AccessControlLists.cs" />
+    <Compile Include="DB\ACLSettings.cs" />
+    <Compile Include="DB\AAInputs.cs" />
+    <Compile Include="DB\DevicesAlarmSettings.cs" />
+    <Compile Include="DB\NcasDbs.cs" />
+    <Compile Include="DB\DoorEnvironments.cs" />
+    <Compile Include="DB\DCUs.cs" />
+    <Compile Include="DB\Inputs.cs" />
+    <Compile Include="DB\Outputs.cs" />
+    <Compile Include="DB\SecurityDailyPlans.cs" />
+    <Compile Include="DB\SecurityDayIntervals.cs" />
+    <Compile Include="DB\SecurityTimeZoneDateSettings.cs" />
+    <Compile Include="DB\SecurityTimeZones.cs" />
+    <Compile Include="DCUState.cs" />
+    <Compile Include="EventOptions.cs" />
+    <Compile Include="InputStates.cs" />
+    <Compile Include="InterCCUCommunication.cs" />
+    <Compile Include="Localization.English.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localization.English.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization.Slovak.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localization.Slovak.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization.Swedish.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localization.Swedish.resx</DependentUpon>
+    </Compile>
+    <Compile Include="CcuDataReplicator\ModifiedObjectsCollection.cs" />
+    <Compile Include="NCASServerRemotingProvider.cs" />
+    <Compile Include="NCASServer.cs" />
+    <Compile Include="DB\MultiDoorElements.cs" />
+    <Compile Include="CcuDataReplicator\DataReplicationManager.cs" />
+    <Compile Include="CcuDataReplicator\ObjectsToSend.cs" />
+    <Compile Include="OutputStates.cs" />
+    <Compile Include="SecurityTimeAxis.cs" />
+    <Compile Include="CCUConfigurationHandler.cs" />
+    <Compile Include="CcuDataReplicator\CcuDataBatch.cs" />
+    <Compile Include="ServerAlarms\CcuUpsBatteryFaultServerAlarm.cs" />
+    <Compile Include="ServerAlarms\CcuUpsBatteryFuseServerAlarm.cs" />
+    <Compile Include="ServerAlarms\CcuUpsOutputFuseServerAlarm.cs" />
+    <Compile Include="ServerAlarms\CcuUpsOvertemperatureServerAlarm.cs" />
+    <Compile Include="ServerAlarms\CcuUpsTamperSabotageServerAlarm.cs" />
+    <Compile Include="ServerAlarms\CrAccessDeniedServerAlarm.cs" />
+    <Compile Include="ServerAlarms\CrAccessPermittedServerAlarm.cs" />
+    <Compile Include="ServerAlarms\CrCardBlockedOrInactiveServerAlarm.cs" />
+    <Compile Include="ServerAlarms\CrInvalidEmergencyCodeServerAlarm.cs" />
+    <Compile Include="ServerAlarms\CrInvalidCodeRetriesLimitReachedServerAlarm.cs" />
+    <Compile Include="ServerAlarms\CrInvalidCodeServerAlarm.cs" />
+    <Compile Include="ServerAlarms\CrInvalidPinRetriesLimitReachedServerAlarm.cs" />
+    <Compile Include="ServerAlarms\CrInvalidPinServerAlarm.cs" />
+    <Compile Include="ServerAlarms\CrOfflineDueCcuOfflineServerAlarm.cs" />
+    <Compile Include="ServerAlarms\CrOfflineServerAlarm.cs" />
+    <Compile Include="ServerAlarms\CrTamperServerAlarm.cs" />
+    <Compile Include="ServerAlarms\CrUnknownCardServerAlarm.cs" />
+    <Compile Include="ServerAlarms\DcuOfflineDueCcuOfflineServerAlarm.cs" />
+    <Compile Include="ServerAlarms\DcuOfflineServerAlarm.cs" />
+    <Compile Include="ServerAlarms\DcuTamperServerAlarm.cs" />
+    <Compile Include="ServerAlarms\DeDoorAjarServerAlarm.cs" />
+    <Compile Include="ServerAlarms\DeIntrusionServerAlarm.cs" />
+    <Compile Include="ServerAlarms\DeSabotageServerAlarm.cs" />
+    <Compile Include="ServerAlarms\InputServerAlarm.cs" />
+    <Compile Include="ServerAlarms\InputTamperServerAlarm.cs" />
+    <Compile Include="ServerAlarms\OutputServerAlarm.cs" />
+    <Compile Include="ServerAlarms\SensorServerAlarm.cs" />
+    <Compile Include="ServerAlarms\SensorTamperServerAlarm.cs" />
+    <Compile Include="Timetec\TimetecCore.cs" />
+    <Compile Include="Timetec\TimetecProviderCallback.cs" />
+    <Compile Include="Timetec\WcfHelper.cs" />
+    <Compile Include="TransferClient.cs" />
+    <Compile Include="DB\GraphicsViews.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DEMO.lkey">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\AlarmArea_unknown.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\AlarmButton_off.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\AlarmButton_on.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\AlarmButton_unknown_input.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\AlarmGlass_off.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\AlarmGlass_on.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\AlarmGlass_unknown_input.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\CapacitiveSensor_off.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\CapacitiveSensor_on.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\CapacitiveSensor_unknown_input.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\CardReader_offline.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\CardReader_online.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\CardReader_tamper.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\CcuC_tamper.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\CcuC_online.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\CcuC_offline_CCU.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\CcuH4C_tamper.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\CcuH4C_online.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\CcuH4C_offline_CCU.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\CcuH4UC_tamper.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\CcuH4UC_online.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\CcuH4UC_offline_CCU.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\CcuUC_tamper.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\CcuUC_online.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\CcuUC_offline_CCU.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\DcuDC_tamper.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\DcuDC_online.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\DcuDC_offline_DCU.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\DcuH4DC_tamper.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\DcuH4DC_online.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\DcuH4DC_offline_DCU.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\DoorEnviromentLeft_ajar.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\DoorEnviromentLeft_intrusion.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\DoorEnviromentLeft_locked.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\DoorEnviromentLeft_opened.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\DoorEnviromentLeft_unknown_DoorEnvironment.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\DoorEnviromentLeft_unlocked.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\DoorEnviromentRight_ajar.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\DoorEnviromentRight_intrusion.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\DoorEnviromentRight_locked.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\DoorEnviromentRight_opened.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\DoorEnviromentRight_unknown_DoorEnvironment.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\DoorEnviromentRight_unlocked.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\ElectricLock_off.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\ElectricLock_on.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\ElectricLock_unknown_output.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\ElectricStrike_off.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\ElectricStrike_on.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\ElectricStrike_unknown_output.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\GlassbreakDetector_off.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\GlassbreakDetector_on.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\GlassbreakDetector_unknown_input.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\IrDetector_off.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\IrDetector_on.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\IrDetector_unknown_input.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\Loudspeaker_off.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\Loudspeaker_on.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\Loudspeaker_unknown_input.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\MagneticsContact_off.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\MagneticsContact_on.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\MagneticsContact_unknown_input.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\MotorizedLock_off.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\MotorizedLock_on.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\MotorizedLock_unknown_output.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\OpticalIndication_off.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\OpticalIndication_on.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\OpticalIndication_unknown_input.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\PushButton_off.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\PushButton_on.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\PushButton_unknown_input.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\Siren_off.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\Siren_on.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\Siren_unknown_input.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\SmokeDetector_off.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\SmokeDetector_on.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Graphics symbols\SmokeDetector_unknown_output.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\CDK.Net.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Ionic.Zip.dll" />
+    <None Include="NativeLib\CDK\x86\CDK.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Localization.English.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.English.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization.Slovak.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.Slovak.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization.Swedish.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.Swedish.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CcuDataReplicator\DataReplicationManager.CcuDataReplicator.Initializer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup Condition="'$(PlatformTarget)'=='x86' OR '$(Platform)'=='x86'">
+    <None Include="NativeLib\CDK\x86\CDK.dll">
+      <!-- skopíruj do koreňa výstupu vedľa server.exe -->
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>CDK.dll</TargetPath>
+      <Link>CDK.dll</Link>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>setlocal
+
+REM Cp stands for code protection
+set CpBuildName=Release - CodeProtection
+
+set UseCodeProtection=false
+
+if "$(ConfigurationName)"=="%25CpBuildName%25" set UseCodeProtection=true
+
+set FinalSubfolder=Final
+
+echo ++ Postbuild for "$(ConfigurationName)" "$(ProjectName)" ++
+
+if %25UseCodeProtection%25==false goto WithoutCodeProtection
+
+echo USING CODE PROTECTION for "$(ProjectName)"
+
+RMDIR /Q /S "$(TargetDir)%25FinalSubfolder%25\"
+mkdir "$(TargetDir)%25FinalSubfolder%25\"
+
+rem ;; License manager should be copied before the obfuscation process, as it's part of it
+C:\Windows\System32\xcopy.exe /C /Y "$(SolutionDir)Cgp\Cgp.ContalNovaLicenseManager\bin\$(ConfigurationName)\ContalNovaLicenseManager.exe" "$(TargetDir)"
+
+set CodeProtectorPath="$(SolutionDir)Tools\Obfuscator Client\ObfuscatorConsoleApp.exe"
+
+if not exist %25CodeProtectorPath%25 goto CodeProtectorNotFound
+
+call %25CodeProtectorPath%25 "$(SolutionDir)\Cgp.NCAS.Server\ServerNCAS.cls"
+
+set CodeProtectionResult=%25errorlevel%25
+if %25CodeProtectionResult%25 neq 0 goto CodeProtectionFailed
+
+REM need to copy files, that are not part of the obfuscation process
+REM C:\Windows\System32\xcopy.exe /C /Y "$(TargetDir)*xmlserializers.dll" "$(TargetDir)\%25FinalSubfolder%25\"
+
+C:\Windows\System32\xcopy.exe /C /Y "$(TargetDir)*pcap*.dll" "$(TargetDir)%25FinalSubfolder%25\"
+C:\Windows\System32\xcopy.exe /C /Y "$(TargetDir)*NHibernate*.dll" "$(TargetDir)%25FinalSubfolder%25\"
+C:\Windows\System32\xcopy.exe /C /Y "$(TargetDir)*Ionic.Zip*.dll" "$(TargetDir)%25FinalSubfolder%25\"
+
+REM need to copy folders, that are not part of the obfuscation process
+REM mkdir "$(SolutionDir)Cgp.NCAS.Client\bin\Release - CodeProtection\%25FinalSubfolder%25\Sounds"
+REM mkdir "$(SolutionDir)Cgp.NCAS.Client\bin\Release - CodeProtection\%25FinalSubfolder%25\Client Upgrader"
+
+goto AfterCodeProtection
+
+:CodeProtectionFailed
+
+echo Code protection failed with result %25CodeProtectionResult%25, trying to replicate unsecure variant
+
+:CodeProtectorNotFound
+
+echo CPNF
+C:\Windows\System32\xcopy.exe /C /Y  "$(TargetDir)*.exe" "$(TargetDir)%25FinalSubfolder%25"
+C:\Windows\System32\xcopy.exe /C /Y  "$(TargetDir)*.dll" "$(TargetDir)%25FinalSubfolder%25"
+echo CPNF-end
+
+:AfterCodeProtection
+
+C:\Windows\System32\xcopy.exe /C /Y  "$(SolutionDir)Cgp\Cgp.Server\*.crt" "$(TargetDir)%25FinalSubfolder%25\"
+C:\Windows\System32\xcopy.exe /C /Y  "$(SolutionDir)Cgp\Cgp.Server\*.ldsc" "$(TargetDir)%25FinalSubfolder%25\"
+
+C:\Windows\System32\xcopy.exe /C /Y /E "$(TargetDir)Graphics symbols" "$(TargetDir)%25FinalSubfolder%25\Graphics symbols\"
+
+C:\Windows\System32\xcopy.exe /C /Y /E "$(SolutionDir)Cgp.NCAS.Client\bin\ClientUpgrade.gz" "$(TargetDir)%25FinalSubfolder%25\Client Upgrades\"
+
+:WithoutCodeProtection
+
+REM === Survision CDK: skopíruj natívne DLL do výstupu ===
+set "SRC=$(ProjectDir)Libs"
+set "DST=$(TargetDir)"
+
+if exist "%25SRC%25\CDK.dll" xcopy /Y /D "%25SRC%25\CDK.dll" "%25DST%25" &gt;nul
+
+
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

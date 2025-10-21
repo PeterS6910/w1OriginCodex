@@ -1,0 +1,304 @@
+﻿<UserControl x:Class="Contal.Cgp.NCAS.WpfGraphicsControl.GraphicsScene"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="539" Width="1059" Loaded="UserControl_Loaded" SizeChanged="UserControl_SizeChanged" Unloaded="UserControl_Unloaded">
+
+    <UserControl.Resources>
+        <Style x:Key="BorderlessButton" TargetType="{x:Type Button}">
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Background" Value="Gainsboro" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Name="border" Background="{TemplateBinding Background}">
+                            <ContentPresenter Name="content" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                      Margin="{TemplateBinding Padding}"
+                                      RecognizesAccessKey="True"
+                                      SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="content" Property="RenderTransform" >
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.0" ScaleY="1.0" />
+                                    </Setter.Value>
+                                </Setter>
+                                <Setter Property="Background" Value="DarkGray"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="content" Property="RenderTransform" >
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX=".95" ScaleY=".95" />
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsFocused" Value="True">
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    
+    <Grid Name="myGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220" MinWidth="220" MaxWidth="420"></ColumnDefinition>
+            <ColumnDefinition Width="13"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+         
+        <ToolBar HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,0" Name="_tbMainMenu" Grid.Row="0" Grid.ColumnSpan="3">
+           <Button  HorizontalAlignment="Left" VerticalAlignment="Top"   Name="_bShowScenes" ToolTip="Show scenes" Click="_bShowScenes_OnClick">
+                <Image Width="50" Height="50" Source="Resources\ShowScenes.png"></Image>
+            </Button>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,0,0,0" Name="_bSwitchToEditMode" ToolTip="Switch to Edit mode" 
+                    Click="_bSwitchToEditMode_OnClick">
+                <Image Width="50" Height="50" Source="Resources\switch_to_editmode.png"></Image>
+            </Button>
+            <Button  HorizontalAlignment="Left" VerticalAlignment="Top"   Name="_bGoHome" ToolTip="Home" Click="_bGoHome_OnClick">
+                <Image Width="50" Height="50" Source="Resources\GoHome.png"></Image>
+            </Button>
+            <Button  HorizontalAlignment="Left" VerticalAlignment="Top"   Name="_bGoBack" ToolTip="Back" Click="_bGoBack_OnClick">
+                <Image Width="50" Height="50" Source="Resources\GoBack.png"></Image>
+            </Button>
+            <Button  HorizontalAlignment="Left" VerticalAlignment="Top"   Name="_bSaveScene" ToolTip="Save scene" Click="_bSaveScene_OnClick">
+                <Image Width="50" Height="50" Source="Resources\save.png"></Image>
+            </Button>
+            <Button  HorizontalAlignment="Left" VerticalAlignment="Top"   Name="_bLoadDfxFile" Click="_bLoadDfxFile_OnClick" ToolTip="Load background">
+                <Image Width="50" Height="50" Source="Resources\LoadBackground.png"></Image>
+            </Button>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top"  Name="_bSceneSettings" Click="_bSceneSettings_OnClick"  ToolTip="Scene settings">
+                <Image Width="50" Height="50" Source="Resources\SceneSettings.png"></Image>
+            </Button>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top"  Name="_bSelectMode" Click="_bSelectMode_OnClick" ToolTip="Select">
+                <Image Width="50" Height="50" Source="Resources\SelectMode.png"></Image>
+            </Button>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top"  Name="_bPanningMode" Click="_bPanningMode_OnClick" ToolTip="Panning">
+                <Image Width="50" Height="50" Source="Resources\PanningMode.png"></Image>
+            </Button>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top"  Name="_bUndo" Click="_bUndo_OnClick" ToolTip="Undo">
+                <Image Width="50" Height="50" Source="Resources\Undo.png"></Image>
+            </Button>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top"  Name="_bDelete" Click="_bDelete_OnClick" ToolTip="Delete">
+                <Image Width="50" Height="50" Source="Resources\Delete.png"></Image>
+            </Button>
+            <Separator Name="_separator1"/>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top"  Name="_bPaintLine" ToolTip="Paint line" Click="_bPaintLine_OnClick">
+                <Image Width="50" Height="50" Source="Resources\PaintLine.png"></Image>
+            </Button>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top"  Name="_bPaintPolyline" ToolTip="Paint polyline" Click="_bPaintPolyline_OnClick">
+                <Image Width="50" Height="50" Source="Resources\PaintPolyline.png"></Image>
+            </Button>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top"  Name="_bPaintRectangle" ToolTip="Paint rectangle" Click="_bPaintRectangle_OnClick">
+                <Image Width="50" Height="50" Source="Resources\PaintRectangle.png"></Image>
+            </Button>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top"  Name="_bPaintEllipse" ToolTip="Paint ellipse" Click="_bPaintEllipse_OnClick">
+                <Image Width="50" Height="50" Source="Resources\PaintEllipse.png"></Image>
+            </Button>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top"  Name="_bInsertText" ToolTip="Insert text" Click="_bInsertText_OnClick">
+                <Image Width="50" Height="50" Source="Resources\InsertText.png"></Image>
+            </Button>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top"  Name="_bPaintAlarmArea" ToolTip="Paint alarm area" Click="_bPaintAlarmArea_OnClick">
+                <Image Width="50" Height="50" Source="Resources\AlarmArea.png"></Image>
+            </Button>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top"  Name="_bPaintSymbol" ToolTip="Add symbol" Click="_bPaintSymbol_OnClick">
+                <Image Width="50" Height="50" Source="Resources\AddSymbol.png"></Image>
+            </Button>
+            <Separator Name="_separator2"/>
+            <StackPanel Name="_panelZoom">
+                <Label HorizontalAlignment="Left" VerticalAlignment="Top" Name="_lZoomValues" Margin="5,0,0,0">Zoom</Label>
+        <ComboBox Margin="5,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"  Name="_cbZoomValues" Width="80" Height="25" SelectedIndex="0" 
+                  SelectionChanged="_cbZoomValues_OnSelectionChanged" IsReadOnly="False" IsEditable="True" StaysOpenOnEdit="True" KeyUp="_cbZoomValues_KeyUp" 
+                  IsTextSearchEnabled="False">
+            <ComboBoxItem Content="Window"></ComboBoxItem>
+            <ComboBoxItem Content="1000%"></ComboBoxItem>
+            <ComboBoxItem Content="900%"></ComboBoxItem>
+            <ComboBoxItem Content="800%"></ComboBoxItem>
+            <ComboBoxItem Content="700%"></ComboBoxItem>
+            <ComboBoxItem Content="600%"></ComboBoxItem>
+            <ComboBoxItem Content="500%"></ComboBoxItem>
+            <ComboBoxItem Content="400%"></ComboBoxItem>
+            <ComboBoxItem Content="300%"></ComboBoxItem>
+            <ComboBoxItem Content="200%"></ComboBoxItem>
+            <ComboBoxItem Content="100%"></ComboBoxItem>
+            <ComboBoxItem Content="90%"></ComboBoxItem>
+            <ComboBoxItem Content="80%"></ComboBoxItem>
+            <ComboBoxItem Content="70%"></ComboBoxItem>
+            <ComboBoxItem Content="60%"></ComboBoxItem>
+            <ComboBoxItem Content="50%"></ComboBoxItem>
+            <ComboBoxItem Content="40%"></ComboBoxItem>
+            <ComboBoxItem Content="30%"></ComboBoxItem>
+            <ComboBoxItem Content="20%"></ComboBoxItem>
+            <ComboBoxItem Content="10%"></ComboBoxItem>
+            <ComboBoxItem Content="5%"></ComboBoxItem>
+            <ComboBoxItem Content="2%"></ComboBoxItem>
+            <ComboBoxItem Content="1%"></ComboBoxItem>
+        </ComboBox>
+            </StackPanel>
+            <StackPanel Name="_panelSizeMode">
+                <Label HorizontalAlignment="Left" VerticalAlignment="Top" Name="_lSizeMode" Margin="10,0,0,0">Size mode</Label>
+                <ComboBox Margin="10,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"  Name="_cbSizeMode" Width="80" Height="25" SelectedIndex="0" 
+                          SelectionChanged="_cbSizeMode_OnSelectionChanged"/>
+            </StackPanel>
+            <StackPanel Name="_panelSizeOfSymbol">
+                <Label Name="_lSizeOfSymbolInFixedSizeMode" Margin="5,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">Size of symbol</Label>
+                <Slider Name="_sliderSizeOfSymbol" Height="22" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="100" Minimum="25" Maximum="100" 
+                        Value="50" ValueChanged="_sliderSizeOfSymbol_ValueChanged" PreviewMouseLeftButtonUp="_sliderSizeOfSymbol_PreviewMouseLeftButtonUp" />
+            </StackPanel>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,0,0,0" Name="_bSwitchToViewMode" ToolTip="Switch to View mode1" 
+                    Click="_bSwitchToViewMode_OnClick">
+                <Image Width="50" Height="50" Source="Resources\SwitchToViewMode.png"></Image>
+            </Button>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,20,0,0" Name="_bInsertSymbol" Click="_bInsertSymbol_OnClick" Visibility="Collapsed">
+                Insert Symbol
+            </Button>
+    </ToolBar>
+        <Label Grid.Column="0" Name="_lLayers"  Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0">Layers:</Label>
+        <ListView Grid.Row="1" Grid.Column="0"  Margin="5,25,1,55" Name="_lbLayers" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                  SelectionChanged="_lbLayers_SelectionChanged" MouseDoubleClick="_lbLayers_OnMouseDoubleClick">
+        <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="20"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        
+                        <CheckBox Grid.Column="0" IsChecked="{Binding Enabled}" Checked="ToggleButton_OnChecked" Unchecked="ToggleButton_OnChecked"/>
+                        <TextBlock Grid.Column="1" Name="textBlock" Text="{Binding Name}"/>
+                        <TextBox Grid.Column="1" Name="textBox"  Text="{Binding Name}" LostFocus="UIElement_OnLostFocus"  Visibility="Collapsed"/>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Label Grid.Column="0" Grid.Row="2" Name="_lCategories" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,25,0,0">Categories:</Label>
+        <ListView Grid.Row="2" Grid.Column="0" Grid.RowSpan="2"  Margin="5,50,1,5" Name="_lbCategories" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="State" >
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox IsChecked="{Binding IsEnable}" Checked="ToggleButton_OnChecked" Unchecked="ToggleButton_OnChecked"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Name" Width="150">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <TextBlock Text="{Binding Name}" />
+                                </Grid>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        
+        <Button Margin="70,0,80,27" Visibility="Hidden" Name="_bRemove" Height="25" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="60" 
+                Click="_bRemove_Click">Remove</Button>
+        <CheckBox Grid.Row="1" Height="16" Margin="0,0,6,35" Name="_chbShowAll" VerticalAlignment="Bottom" Click="_chbShowAll_OnClick" IsEnabled="False" 
+                  HorizontalAlignment="Right" Width="69">Show all</CheckBox>
+        <Label Grid.Row="1" Grid.Column="0" Height="28" Margin="5,0,125,0" Visibility="Hidden" Name="_lAddLayer" VerticalAlignment="Bottom">Layer name</Label>
+        <TextBox Grid.Row="1" Height="23" Margin="10,0,60,-20" Visibility="Hidden" Name="_tbLayerName" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" />
+        <Button Grid.Row="1" Grid.Column="0" Height="25" HorizontalAlignment="Right" Visibility="Hidden" Margin="0,0,5,-20" Name="_bAddLayer" VerticalAlignment="Bottom" 
+                Width="51" Click="_bAddLayer_Click">Add</Button>
+        
+
+        <Canvas Margin="0,0,0,0" Grid.Row="1" Grid.RowSpan="2" Grid.Column="2" Name="_canvasBackground" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" 
+                Background="White"/>
+        <ScrollViewer HorizontalAlignment="Stretch" Grid.RowSpan="2" VerticalAlignment="Stretch" Grid.Row="1" Grid.Column="2" Margin="0,0,0,0" Name="myScrollViewer" 
+                      HorizontalScrollBarVisibility="Visible" ScrollChanged="myScrollViewer_ScrollChanged" PreviewMouseWheel="myScrollViewer_PreviewMouseWheel" 
+                      KeyUp="myScrollViewer_KeyUp">
+            <Canvas Margin="0,0,0,0" Grid.RowSpan="2" Name="_canvasMyShapes" VerticalAlignment="Top" HorizontalAlignment="Left" MouseDown="_canvasMyShapes_OnMouseDown" 
+                    MouseMove="_canvasMyShapes_MouseMove" MouseUp="_canvasMyShapes_OnMouseUp" MouseLeave="_canvasMyShapes_MouseLeave" Drop="_canvasMyShapes_Drop" AllowDrop="True" 
+                    MouseLeftButtonDown="_canvasMyShapes_OnMouseLeftButtonDown" MouseRightButtonDown="_canvasMyShapes_OnMouseRightButtonDown">
+                <Canvas.ContextMenu>
+                <ContextMenu>
+                        <MenuItem Name="_miPolygon" Header="Polygon" Click="MenuItemPolygon_OnClick">
+                            <MenuItem.Icon>
+                                <Image Width="20" Height="20" Source="Resources\AlarmArea.png"></Image>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                            <MenuItem Name="_miRectangle" Header="Rectangle" Click="MenuItemRectangle_OnClick">
+                            <MenuItem.Icon>
+                                <Image Width="20" Height="20" Source="Resources\PaintRectangle.png"></Image>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Name="_miEllipse" Header="Ellipse" Click="MenuItemEllipse_OnClick">
+                            <MenuItem.Icon>
+                                <Image Width="20" Height="20" Source="Resources\PaintEllipse.png"></Image>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Name="_miCardReader" Header="Card reader" Click="MenuItemCardReader_OnClick">
+                            <MenuItem.Icon>
+                                <Image Width="20" Height="20" Source="Resources\Cardreader48.png"></Image>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Name="_miDoorEnvironment" Header="Door environment" Click="_miDoorEnvironment_OnClick">
+                            <MenuItem.Icon>
+                                <Image Width="20" Height="20" Source="Resources\Doorenvironment48.png"></Image>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    <MenuItem Name="_miImportBackground" Header="Import background" Click="MenuItemImportBackground_OnClick">
+                            <MenuItem.Icon>
+                                <Image Width="20" Height="20" Source="Resources\LoadBackground.png"></Image>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    <MenuItem Name="_miSceneSettings" Header="Scene settings" Click="MenuItemSceneSettings_OnClick">
+                        <MenuItem.Icon>
+                            <Image Width="20" Height="20" Source="Resources\SceneSettings.png"></Image>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                        <MenuItem Name="_miBackgroundSettings" Header="Background settings" Click="BackgroundSettingsMenuItem_OnClick"/>
+                </ContextMenu>
+                </Canvas.ContextMenu>
+            </Canvas>
+        </ScrollViewer>
+        <Canvas Margin="40,0,0,65" Grid.RowSpan="2" Grid.Row="1" Grid.Column="2" Name="_canvasUI" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+        <Label Margin="5,5,198,0" VerticalAlignment="Top" Grid.Row="1" Grid.Column="2" Height="47" Name="_lBackgroundEditModeInfo" Visibility="Hidden" 
+               Foreground="Red" FontSize="20">General scene background editing mode</Label>
+           
+        <GroupBox Grid.Column="2" Grid.Row="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Header="Background information" Margin="0,0,0,0" 
+                  Name="_gbBackgroundInfo">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                
+                <Label HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,0,0" Name="_lFile" Width="30" Height="25">File:</Label>
+                <TextBox Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,5,0,0" Name="_tbFilePath" Height="25" Width="390"/>
+                <Button Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="440,5,0,0" Name="_bOpenFile" Width="45" Height="25" 
+                        Click="_bOpenFile_Click">...</Button>              
+                <Button Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,5,5,0" Name="_bInsertBackground" Width="120" Height="25" 
+                        Click="_bInsertBackground_Click">Insert background</Button>
+                
+                <Label Grid.Row="1" Margin="6,0,0,6" Name="_lSizeInfo" Height="27.04" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="165">Size:</Label>
+                <Label HorizontalAlignment="Left" VerticalAlignment="Top" Margin="210,5,0,0" Name="_lSpecifiedScale" Width="190" Grid.Row="1">
+                    Length to be specified (in metres)</Label>
+                <TextBox Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,5,5,0" Name="_tbSpecifiedScaleLength" Height="25" Width="50"/>
+                <Label HorizontalAlignment="Left" VerticalAlignment="Top" Margin="460,5,0,0" Name="_lCountOfPixels" Width="190" Grid.Row="1">for 100 pixels</Label>
+                <Button Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,5,0,0" Name="_bSelectScaleRatio" Width="120" Height="25" 
+                        Click="_bSelectScaleRatio_OnClick">Select scale ratio</Button>
+                
+            </Grid>
+        </GroupBox>
+        
+        <Button Grid.Column="1" Width="8" Grid.Row="1" Grid.RowSpan="3" HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="0,5,0,5" 
+                Name="_bShowAndHidePanel" Style="{StaticResource BorderlessButton}" Click="_bShowAndHidePanel_OnClick">
+            <Image Margin="-2,0,0,0" Width="10" Height="10" Source="Resources\hide12H.png"></Image></Button>
+        
+        <GridSplitter Grid.Column="1" Width="3" Grid.Row="1" Grid.RowSpan="3" Margin="8,5,2,5" Name="gridSplitter1" VerticalAlignment="Stretch" 
+                      HorizontalAlignment="Left" Background="CadetBlue" />
+    </Grid>
+</UserControl>

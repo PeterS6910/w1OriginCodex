@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.Server.Beans.UserOpenedWindow, Cgp.Server.Beans" select-before-update="true">
+    <id name="IdUserOpenedWindow">
+      <generator class="guid"></generator>
+    </id>
+    <property name="WindowIndex" not-null="true"></property>
+    <property name="Modul" not-null="true"></property>
+    <property name="FormName" not-null="true"></property>
+    <property name="ObjectId" not-null="false"></property>
+    <property name="PosTop" not-null="true"></property>
+    <property name="PosLeft" not-null="true"></property>
+    <property name="Width" not-null="true"></property>
+    <property name="Height" not-null="true"></property>
+    <property name="Docked" not-null="true"></property>
+    <property name="Selected" not-null="true"></property>
+    <property name="Monitor" not-null="true"></property>
+    <property name="ShowOption" not-null="true"></property>
+    <property name="BorderStyle" not-null="true"></property>
+    <property name="AllowEdit" not-null="false"></property>
+    <property name="HasParent" not-null="false"></property>
+    <many-to-one name="Login" column="Login" class="Contal.Cgp.Server.Beans.Login, Cgp.Server.Beans" not-null="false"></many-to-one>
+  </class>
+</hibernate-mapping>

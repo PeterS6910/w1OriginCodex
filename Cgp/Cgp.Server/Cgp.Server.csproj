@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E4AA19DF-B369-4979-A2A0-D3D2BCFED985}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Contal.Cgp.Server</RootNamespace>
+    <AssemblyName>Contal Nova Server</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetZone>Internet</TargetZone>
+    <GenerateManifests>false</GenerateManifests>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <ExcludedPermissions>
+    </ExcludedPermissions>
+    <ManifestCertificateThumbprint>B8D35A87D3820C49FDE1BA23CAAD12D2004A5914</ManifestCertificateThumbprint>
+    <ManifestKeyFile>HOUR2021.pfx</ManifestKeyFile>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>IconNovaServer64.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>\\fileserver\users\jannizky\_upload\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Designer|AnyCPU' ">
+    <OutputPath>bin\Designer\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release - CodeProtection|AnyCPU' ">
+    <OutputPath>bin\Release - CodeProtection\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestTimestampUrl>
+    </ManifestTimestampUrl>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>..\Cgp.Components\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=6.1.1.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EPPlus.6.1.1\lib\net35\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.Interfaces, Version=6.1.1.0, Culture=neutral, PublicKeyToken=a694d7f3b0907a61, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EPPlus.Interfaces.6.1.1\lib\net35\EPPlus.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.System.Drawing, Version=6.1.1.0, Culture=neutral, PublicKeyToken=2308d35469c9bac0, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EPPlus.System.Drawing.6.1.1\lib\net35\EPPlus.System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="IwQuick.PC45">
+      <HintPath>..\..\lib\IwQuick.PC45.dll</HintPath>
+    </Reference>
+    <Reference Include="LwDhcp">
+      <HintPath>..\..\lib\LwDhcp.dll</HintPath>
+    </Reference>
+    <Reference Include="LwSerialization2.PC45">
+      <HintPath>..\..\lib\LwSerialization2.PC45.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Cgp.ORM\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SLA.ClientModule">
+      <HintPath>..\..\lib\SLA.ClientModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CgpServer.cs" />
+    <Compile Include="CgpServerService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CgpServerService.Designer.cs">
+      <DependentUpon>CgpServerService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseBackup.cs" />
+    <Compile Include="DbWatcher.cs" />
+    <Compile Include="DB\ABaseOrmTable.cs" />
+    <Compile Include="DB\AlarmPrioritiesDbs.cs" />
+    <Compile Include="DB\BeforeIUDForObjectWithVersion.cs" />
+    <Compile Include="DB\CalendarDateSettings.cs" />
+    <Compile Include="DB\Calendars.cs" />
+    <Compile Include="DB\CarCards.cs" />
+    <Compile Include="DB\CardPairs.cs" />
+    <Compile Include="DB\CardSystemData.cs" />
+    <Compile Include="DB\CardSystems.cs" />
+    <Compile Include="DB\Cards.cs" />
+    <Compile Include="DB\CardTemplates.cs" />
+    <Compile Include="DB\Cars.cs" />
+    <Compile Include="DB\CentralNameRegisters.cs" />
+    <Compile Include="DB\CentralTransactionControl.cs" />
+    <Compile Include="DB\AccessControls.cs" />
+    <Compile Include="DB\ConsecutiteEvents.cs" />
+    <Compile Include="DB\CSVImportColumns.cs" />
+    <Compile Include="DB\CSVImportSchemas.cs" />
+    <Compile Include="DB\DatabaseGeneralOptions.cs" />
+    <Compile Include="DB\EventLogs.FilterSettingsCommandGenerator.cs" />
+    <Compile Include="DB\Eventlogs.ObjTypePriority.cs" />
+    <Compile Include="DB\EventSources.cs" />
+    <Compile Include="DB\GlobalAlarmInstructions.cs" />
+    <Compile Include="DB\OrmObjectsVersionService.cs" />
+    <Compile Include="DB\RelationshipGlobalAlarmInstructionObjects.cs" />
+    <Compile Include="DB\ServerGeneralOptionsDBs.cs" />
+    <Compile Include="DB\AccessChecker.cs" />
+    <Compile Include="DB\UserFoldersStructureObjects.cs" />
+    <Compile Include="DB\UserFoldersStructures.cs" />
+    <Compile Include="DB\SecuritySettings.cs" />
+    <Compile Include="DB\CustomAccessControls.cs" />
+    <Compile Include="DB\ObjectInControl.cs" />
+    <Compile Include="DB\CisNGGroups.cs" />
+    <Compile Include="DB\DayTypes.cs" />
+    <Compile Include="DB\SystemVersions.cs" />
+    <Compile Include="DB\TimeZoneDateSettings.cs" />
+    <Compile Include="DB\TimeZones.cs" />
+    <Compile Include="DB\DailyPlans.cs" />
+    <Compile Include="DB\DayIntervals.cs" />
+    <Compile Include="EventlogExpiration.cs" />
+    <Compile Include="ExcelHelper.cs" />
+    <Compile Include="DB\MaximumVersionForObjectTypes.cs" />
+    <Compile Include="ExportData\CardsExportData.cs" />
+    <Compile Include="ExportData\ExportObjects.cs" />
+    <Compile Include="ExportData\ExportTable.cs" />
+    <Compile Include="ExportData\ExportTableFactory.cs" />
+    <Compile Include="ExportData\IRefExportData.cs" />
+    <Compile Include="MovingOriginDirectories.cs" />
+    <Compile Include="SelectServiceUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectServiceUserForm.Designer.cs">
+      <DependentUpon>SelectServiceUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Licence.cs" />
+    <Compile Include="LicenceRequest.cs" />
+    <Compile Include="Localization.Swedish.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localization.Swedish.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PerformCisNG.cs" />
+    <Compile Include="DB\CisNGs.cs" />
+    <Compile Include="DB\EventlogParameters.cs" />
+    <Compile Include="DB\Eventlogs.cs" />
+    <Compile Include="DB\FilterSettingsToCriteria.cs" />
+    <Compile Include="DB\Logins.cs" />
+    <Compile Include="CgpServerRemotingProvider.cs" />
+    <Compile Include="DB\Persons.cs" />
+    <Compile Include="DB\AOrmRemotingObject.cs" />
+    <Compile Include="DB\PresentationFormatters.cs" />
+    <Compile Include="DB\PresentationGroups.cs" />
+    <Compile Include="DB\SystemEvents.cs" />
+    <Compile Include="GeneralOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralOptionsForm.Designer.cs">
+      <DependentUpon>GeneralOptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginAuthentication.cs" />
+    <Compile Include="PerformPresentationFormatter.cs" />
+    <Compile Include="PerformPresentationGroup.cs" />
+    <Compile Include="PerformPresentationProcessor.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjectInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectInstaller.Designer.cs">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GeneralOptions.cs" />
+    <Compile Include="Localization.English.Designer.cs">
+      <DependentUpon>Localization.English.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Localization.Slovak.Designer.cs">
+      <DependentUpon>Localization.Slovak.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ServerGeneralOptionsProvider.cs" />
+    <Compile Include="ServerInformations.cs" />
+    <Compile Include="SystemEventPerformer.cs" />
+    <Compile Include="TimeAxis.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Cgp.NCAS.RemotingCommon\Cgp.NCAS.RemotingCommon.csproj">
+      <Project>{7da1465b-3029-43e8-801c-bac87581b99c}</Project>
+      <Name>Cgp.NCAS.RemotingCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Cgp.NCAS.Server.Beans\Cgp.NCAS.Server.Beans.csproj">
+      <Project>{2eb9dddf-0719-4a79-8cb7-fbd410743c92}</Project>
+      <Name>Cgp.NCAS.Server.Beans</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.BaseLib\Cgp.BaseLib.csproj">
+      <Project>{4B649633-3110-4CBD-AC66-43685FFDC808}</Project>
+      <Name>Cgp.BaseLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.Components\Cgp.Components.csproj">
+      <Project>{C192E586-21CB-45CA-86C7-9CE602F4726E}</Project>
+      <Name>Cgp.Components</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.DBSCreator\Cgp.DBSCreator.csproj">
+      <Project>{03D83D1D-0315-40A4-8DE0-BE415BAF68C3}</Project>
+      <Name>Cgp.DBSCreator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.Globals\Cgp.Globals.csproj">
+      <Project>{869F99AF-FEFA-43D9-98A0-6D8CF0987074}</Project>
+      <Name>Cgp.Globals</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.ORM\Cgp.ORM.csproj">
+      <Project>{91F9BB39-37AA-4831-91AD-882EEE262722}</Project>
+      <Name>Cgp.ORM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.RemotingCommon\Cgp.RemotingCommon.csproj">
+      <Project>{1A33974B-B787-4E35-BE4B-BCF6F50DB953}</Project>
+      <Name>Cgp.RemotingCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.Server.Beans.Extern\Cgp.Server.Beans.Extern.csproj">
+      <Project>{8DB7364B-5E6B-4869-A3DD-DB9B95DA7064}</Project>
+      <Name>Cgp.Server.Beans.Extern</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.Server.Beans\Cgp.Server.Beans.csproj">
+      <Project>{0A152990-C767-4D19-ABD5-9CC4FDDDBC95}</Project>
+      <Name>Cgp.Server.Beans</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Native\CDK\x86\CDK.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>      
+    </Content>
+    <None Include="App.config" />
+    <None Include="CONTAL_nova.png" />
+    <None Include="CONTAL_NOVA_sb.jpg" />
+    <Content Include="DEMO.lkey">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Client Upgrades\ClientUpgrade.gz" />
+    <None Include="HOUR2021.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CgpServerService.resx">
+      <DependentUpon>CgpServerService.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectServiceUserForm.resx">
+      <DependentUpon>SelectServiceUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralOptionsForm.resx">
+      <DependentUpon>GeneralOptionsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization.English.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.English.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization.Slovak.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.Slovak.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization.Swedish.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.Swedish.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectInstaller.resx">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACgpServerPlugin.cs" />
+    <Compile Include="Alarms\AlarmsManager.cs" />
+    <Compile Include="Alarms\IAlarmsOwner.cs" />
+    <Compile Include="Alarms\ICreateServerAlarm.cs" />
+    <Compile Include="Alarms\IExternalAlarmsOwner.cs" />
+    <Compile Include="Alarms\IGetPresentationGroup.cs" />
+    <Compile Include="Alarms\IServerAlarmsOwner.cs" />
+    <Compile Include="Alarms\ServerAlarm.cs" />
+    <Compile Include="Alarms\ServerAlarmsOwner.cs" />
+    <Compile Include="CgpServerPluginManager.cs" />
+    <Compile Include="DB\ADbBatchWorker.cs" />
+    <Compile Include="DB\DatabaseServerAlarms.cs" />
+    <Compile Include="DB\DbConnectionHolder.cs" />
+    <Compile Include="DB\DbConnectionManager.cs" />
+    <Compile Include="DB\DbCommandFactory.cs" />
+    <Compile Include="DB\EventlogInsertItem.cs" />
+    <Compile Include="DB\EventlogInsertQueue.cs" />
+    <Compile Include="DB\LoginGroups.cs" />
+    <Compile Include="DB\PersonDepartmentChange.cs" />
+    <Compile Include="DB\StructuredSubSiteObjects.cs" />
+    <Compile Include="FirewallController.cs" />
+    <Compile Include="DB\StructuredSubSites.cs" />
+    <Compile Include="DB\ObjectTypeTablesORM.cs" />
+    <Compile Include="StructuredSiteEvaluator\GlobalEvaluator.LocalEvaluatorManager.cs" />
+    <Compile Include="StructuredSiteEvaluator\LocalEvaluator.ClientConnector.cs" />
+    <Compile Include="StructuredSiteEvaluator\LocalEvaluator.LocalSiteInfo.cs" />
+    <Compile Include="StructuredSiteEvaluator\LocalEvaluator.LocalObjectInfo.cs" />
+    <Compile Include="StructuredSiteEvaluator\GlobalEvaluator.GlobalSiteInfo.cs" />
+    <Compile Include="StructuredSiteEvaluator\GlobalEvaluator.cs" />
+    <Compile Include="StructuredSiteEvaluator\GlobalEvaluator.GlobalObjectInfo.cs" />
+    <Compile Include="StructuredSiteEvaluator\ILocalEvaluator.cs" />
+    <Compile Include="StructuredSiteEvaluator\ISiteInfo.cs" />
+    <Compile Include="StructuredSiteEvaluator\LocalEvaluator.cs" />
+    <Compile Include="StructuredSiteEvaluator\AObjectInfo.cs" />
+    <Compile Include="StructuredSiteEvaluator\ReadOnlyProxySubset.cs" />
+    <Compile Include="StructuredSiteEvaluator\SaveableReadOnlyProxySubset.cs" />
+    <Compile Include="StructuredSiteEvaluator\SaveableSubset.cs" />
+    <Compile Include="StructuredSiteEvaluator\Subset.cs" />
+    <Compile Include="StructuredSiteEvaluator\ISubset.cs" />
+    <Compile Include="StructuredSiteEvaluator\IStructuredSiteEvaluator.cs" />
+    <Compile Include="StructuredSiteEvaluator\DifferentialSubset.cs" />
+    <Compile Include="StructuredSiteEvaluator\ASiteInfo.cs" />
+    <Compile Include="StructuredSiteEvaluator\StructuredSiteEvaluator.cs" />
+    <EmbeddedResource Include="DB\DeleteEventlogByExpiratedCount.sql" />
+    <EmbeddedResource Include="DB\DeleteEventlogByExpiratedDays.sql" />
+    <None Include="Gear-wheel.ico" />
+    <None Include="IconNovaServer64.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="NetFwTypeLib">
+      <Guid>{58FBCF7C-E7A9-467C-80B3-FC65E8FCCA08}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>if "$(ConfigurationName)"=="Release - CodeProtection" del "$(TargetDir)ContalNovaLicenseManager.exe"</PreBuildEvent>
+    <PostBuildEvent>xcopy /y /d "$(ProjectDir)Native\CDK\x86\CDK.dll" "$(TargetDir)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

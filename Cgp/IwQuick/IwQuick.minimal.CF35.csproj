@@ -1,0 +1,279 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{099D39BF-96D4-4D3D-A172-44D57B9861B9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>PlatformCE\Properties</AppDesignerFolder>
+    <RootNamespace>Contal.IwQuick</RootNamespace>
+    <AssemblyName>IwQuick.minimal.CF35</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>6.0</OSVersion>
+    <DeployDirSuffix>
+    </DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <DeployDirPrefix>%25CSIDL_PROGRAM_FILES%25</DeployDirPrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;WindowsCE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>WindowsCE,COMPACT_FRAMEWORK</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Designer|AnyCPU' ">
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+    <OutputPath>bin\Designer\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" 1 == 1 ">
+    <DefineConstants>$(DefineConstants),COMPACT_FRAMEWORK</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release - Setup|AnyCPU' ">
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <OutputPath>bin\Release - Setup\</OutputPath>
+    <DefineConstants>TRACE;WindowsCE,COMPACT_FRAMEWORK</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release %28Special%29|AnyCPU' ">
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <OutputPath>bin\Release %28Special%29\</OutputPath>
+    <DefineConstants>TRACE;WindowsCE,COMPACT_FRAMEWORK</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <DocumentationFile>bin\Release %28Special%29\IwQuick.minimal.CF35.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrossPlatform\ABatchWorkerBase.cs" />
+    <Compile Include="CrossPlatform\AGetter.cs" />
+    <Compile Include="CrossPlatform\AGetterSetter.cs" />
+    <Compile Include="CrossPlatform\APoolable.cs" />
+    <Compile Include="CrossPlatform\ASingleton.cs" />
+    <Compile Include="CrossPlatform\Bits.cs" />
+    <Compile Include="CrossPlatform\Data\AObjectPoolWithSizeLimit.cs" />
+    <Compile Include="CrossPlatform\Data\AThreadPoolQueue.cs" />
+    <Compile Include="CrossPlatform\Data\IProcessingQueue.cs" />
+    <Compile Include="CrossPlatform\Data\LwSerialization.cs" />
+    <Compile Include="CrossPlatform\Data\PreallocBdcPool.cs" />
+    <Compile Include="CrossPlatform\Data\StringBuilderPool.cs" />
+    <Compile Include="CrossPlatform\Data\ThreadPoolQueue.cs" />
+    <Compile Include="CrossPlatform\Data\ThreadPoolQueueWithLimit.cs" />
+    <Compile Include="CrossPlatform\EnumHelper.cs" />
+    <Compile Include="CrossPlatform\EventHandlerGroup.cs" />
+    <Compile Include="CrossPlatform\ExtendedArray.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CrossPlatform\Extensions\BinaryRWExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CrossPlatform\Extensions\BoolExtensions.cs" />
+    <Compile Include="CrossPlatform\Extensions\DelegateExtensions.cs" />
+    <Compile Include="CrossPlatform\Extensions\StringBuilderExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CrossPlatform\Extensions\StringExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CrossPlatform\Extensions\XmlReaderExtensions.cs" />
+    <Compile Include="CrossPlatform\Net\ANetworkInfo.cs" />
+    <Compile Include="CrossPlatform\Net\CNMPAgent.cs" />
+    <Compile Include="CrossPlatform\Net\INetworkInfo.cs" />
+    <Compile Include="CrossPlatform\Net\NetworkInfoFactory.cs" />
+    <Compile Include="CrossPlatform\Net\TcpUdpPort.cs" />
+    <Compile Include="CrossPlatform\Sys\FilePackerStream.cs" />
+    <Compile Include="CrossPlatform\Sys\Microsoft\RegistryHelper.cs" />
+    <Compile Include="CrossPlatform\Sys\StopwatchPool.cs" />
+    <Compile Include="CrossPlatform\Threads\ASafeThreadBase.cs" />
+    <Compile Include="CrossPlatform\Threads\DefaultSafeThreadContextFactory.cs" />
+    <Compile Include="CrossPlatform\Threads\ISafeThreadContextFactory.cs" />
+    <Compile Include="CrossPlatform\Threads\ITimer.cs" />
+    <Compile Include="CrossPlatform\Threads\ThreadPool.cs" />
+    <Compile Include="CrossPlatform\Threads\ThreadPoolGetter.cs" />
+    <Compile Include="CrossPlatform\Threads\TimerCarrier.cs" />
+    <Compile Include="CrossPlatform\Threads\TimerManager.cs" />
+    <Compile Include="CrossPlatform\Validator.cs" />
+    <Compile Include="PlatformCE\CompilationVerifier.cs" />
+    <Compile Include="CrossPlatform\ADisposable.cs" />
+    <Compile Include="CrossPlatform\AObjectPool.cs" />
+    <Compile Include="CrossPlatform\BatchWorker.cs" />
+    <Compile Include="CrossPlatform\Crypto\Crc32.cs" />
+    <Compile Include="CrossPlatform\Crypto\CryptoTranformPool.cs" />
+    <Compile Include="CrossPlatform\Data\ByteBufferPool.cs" />
+    <Compile Include="CrossPlatform\Data\ByteConverter.cs" />
+    <Compile Include="CrossPlatform\Data\ByteDataCarrier.cs" />
+    <Compile Include="CrossPlatform\Data\IByteBufferPool.cs" />
+    <Compile Include="CrossPlatform\Data\IWaitCollection.cs" />
+    <Compile Include="CrossPlatform\Data\LevelSortedQueue.cs" />
+    <Compile Include="CrossPlatform\Data\ProcessingQueue.cs" />
+    <Compile Include="CrossPlatform\Data\SyncDictionary.cs" />
+    <Compile Include="CrossPlatform\Data\TimeoutDictionary.cs" />
+    <Compile Include="CrossPlatform\DebugHelper.cs" />
+    <Compile Include="CrossPlatform\Exceptions.cs" />
+    <Compile Include="CrossPlatform\ExtendedVersion.cs" />
+    <Compile Include="CrossPlatform\JetBrainsAnnotations.cs" />
+    <Compile Include="CrossPlatform\Net\DataChannelPeer.cs" />
+    <Compile Include="CrossPlatform\Net\ISimpleTcpConnection.cs" />
+    <Compile Include="CrossPlatform\Net\MessagingPeer.cs" />
+    <Compile Include="CrossPlatform\StringConstants.cs" />
+    <Compile Include="CrossPlatform\Sys\FilePacker.cs" />
+    <Compile Include="CrossPlatform\Sys\FileStreamExtensions.cs" />
+    <Compile Include="CrossPlatform\Sys\HandledExceptionAdapter.cs" />
+    <Compile Include="CrossPlatform\Sys\PatchedFileStream.cs" />
+    <Compile Include="CrossPlatform\Sys\QuickPath.cs" />
+    <Compile Include="CrossPlatform\Sys\RotaryFileLog.cs" />
+    <Compile Include="CrossPlatform\Threads\EventWaitHandlePool.cs" />
+    <Compile Include="CrossPlatform\Threads\InternalThreadAbortKey.cs" />
+    <Compile Include="CrossPlatform\Threads\TimerPool.cs" />
+    <Compile Include="PlatformCE\Crypto\Microsoft\NativeSuperAesV2.cs" />
+    <Compile Include="PlatformCE\Crypto\NativeAes\NativeAesHackedCryptoServiceProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlatformCE\Crypto\NativeAes\NativeAesHackedDecryptor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlatformCE\Crypto\NativeAes\NativeAesHackedEncryptor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlatformCE\Crypto\NativeAes\NativeAesV2Decryptor.cs" />
+    <Compile Include="PlatformCE\Crypto\NativeAes\NativeAesV2Encryptor.cs" />
+    <Compile Include="PlatformCE\Crypto\NativeAes\NativeAesV2CryptoServiceProvider.cs" />
+    <Compile Include="PlatformCE\Crypto\Microsoft\NativeSuperAes.cs" />
+    <Compile Include="PlatformCE\Crypto\PasswordDeriveBytesSHA1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlatformCE\Crypto\QuickCrypto.cs" />
+    <Compile Include="PlatformCE\Crypto\QuickHashes.cs" />
+    <Compile Include="PlatformCE\Crypto\NativeAes\NativeRijndael.cs" />
+    <Compile Include="PlatformCE\Crypto\Sha1ManagedPool.cs" />
+    <Compile Include="PlatformCE\Data\BitHelper.cs" />
+    <Compile Include="PlatformCE\Data\HashHelpers.cs" />
+    <Compile Include="PlatformCE\Data\HashSet.cs" />
+    <Compile Include="PlatformCE\Data\HashSetEqualityComparer.cs" />
+    <Compile Include="PlatformCE\Data\UnifiedFormat.cs" />
+    <Compile Include="CrossPlatform\Delegates.cs" />
+    <Compile Include="CrossPlatform\Enumerations.cs" />
+    <Compile Include="CrossPlatform\ExtendedEnvironment.cs" />
+    <Compile Include="PlatformCE\Exceptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlatformCE\Log.cs" />
+    <Compile Include="PlatformCE\Net\CNMPAgent.cs" />
+    <Compile Include="PlatformCE\Net\CNMPLookupResultItem.cs" />
+    <Compile Include="PlatformCE\Net\CNMPLookupResultList.cs" />
+    <Compile Include="PlatformCE\Net\ASimpleTcpPeer.cs" />
+    <Compile Include="PlatformCE\Net\ISuperSocket.cs" />
+    <Compile Include="PlatformCE\Net\Microsoft\NativeSuperSerial.cs" />
+    <Compile Include="PlatformCE\Net\SimpleTcpConnection.cs" />
+    <Compile Include="PlatformCE\Net\SimpleTcpServer.cs" />
+    <Compile Include="PlatformCE\Net\IAESSettings.cs" />
+    <Compile Include="PlatformCE\Net\ITransportLayer.cs" />
+    <Compile Include="PlatformCE\Net\ITransportSettings.cs" />
+    <Compile Include="PlatformCE\Net\Microsoft\NetworkInterface.cs" />
+    <Compile Include="PlatformCE\Net\Microsoft\CeNetworkManagement.cs" />
+    <Compile Include="PlatformCE\Net\Microsoft\SNTP.cs" />
+    <Compile Include="PlatformCE\Net\PlainLayer.cs" />
+    <Compile Include="PlatformCE\Net\SimpleSslStream.cs" />
+    <Compile Include="PlatformCE\Net\SslHelper2.cs" />
+    <Compile Include="PlatformCE\Net\SslLayer.cs" />
+    <Compile Include="PlatformCE\Net\SuperSocket.cs" />
+    <Compile Include="PlatformCE\Net\Microsoft\NativeSuperSocket.cs" />
+    <Compile Include="PlatformCE\Net\Delegates.cs" />
+    <Compile Include="PlatformCE\Net\Enumerations.cs" />
+    <Compile Include="PlatformCE\Net\Exceptions.cs" />
+    <Compile Include="PlatformCE\Net\IPHelper.cs" />
+    <Compile Include="PlatformCE\Net\ISimpleSerialPort.cs" />
+    <Compile Include="PlatformCE\Net\ISimpleUdpPeer.cs" />
+    <Compile Include="PlatformCE\Net\ISslSettings.cs" />
+    <Compile Include="PlatformCE\Net\Microsoft\EthernetLayer.cs" />
+    <Compile Include="PlatformCE\Net\SimpleTcpClient.cs" />
+    <Compile Include="CrossPlatform\Net\SimpleUdpPeer.cs" />
+    <Compile Include="PlatformCE\Net\SslSettings.cs" />
+    <Compile Include="PlatformCE\Net\SuperSocketStream.cs" />
+    <Compile Include="PlatformCE\Properties\AssemblyInfo.cs" />
+    <Compile Include="PlatformCE\Sys\Microsoft\DllCoredll.cs" />
+    <Compile Include="PlatformCE\Sys\Microsoft\DllIpHlpApi.cs" />
+    <Compile Include="PlatformCE\Sys\Microsoft\DllToolHelp.cs" />
+    <Compile Include="PlatformCE\Sys\Microsoft\FileVersionInfo.cs" />
+    <Compile Include="PlatformCE\Sys\ProcessInfo.cs" />
+    <Compile Include="PlatformCE\Sys\Microsoft\RegistryHelper.cs" />
+    <Compile Include="PlatformCE\Sys\Microsoft\SystemInfo.cs" />
+    <Compile Include="PlatformCE\Sys\Microsoft\SystemTime.cs" />
+    <Compile Include="PlatformCE\Sys\RegistrySerializer.cs" />
+    <Compile Include="PlatformCE\Threads\ASafeThreadBase.cs" />
+    <Compile Include="CrossPlatform\Threads\Enumerations.cs" />
+    <Compile Include="CrossPlatform\Threads\SafeThreadContext.cs" />
+    <Compile Include="PlatformCE\Threads\Delegates.cs" />
+    <Compile Include="PlatformCE\Threads\SafeThread.cs" />
+    <Compile Include="PlatformCE\Threads\SafeThreadT.cs" />
+    <Compile Include="PlatformCE\Threads\SafeThreadTT.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlatformCE\SigningKey.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CrossPlatform\Parsing\" />
+    <Folder Include="PlatformCE\Localization\" />
+    <Folder Include="PlatformCE\Parsing\" />
+    <Folder Include="PlatformCE\Remoting\" />
+    <Folder Include="PlatformCE\Xml\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

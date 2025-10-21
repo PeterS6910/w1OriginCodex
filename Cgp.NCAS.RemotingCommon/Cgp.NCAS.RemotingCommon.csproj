@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7DA1465B-3029-43E8-801C-BAC87581B99C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Contal.Cgp.NCAS.RemotingCommon</RootNamespace>
+    <AssemblyName>Cgp.NCAS.RemotingCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Designer|AnyCPU' ">
+    <OutputPath>bin\Designer\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="IACLGroups.cs" />
+    <Compile Include="IAlarmArcs.cs" />
+    <Compile Include="IAlarmTransmitters.cs" />
+    <Compile Include="IAntiPassBackZones.cs" />
+    <Compile Include="IDoorEnvironments.cs" />
+    <Compile Include="IAAInputs.cs" />
+    <Compile Include="IAACardReaders.cs" />
+    <Compile Include="IAccessZones.cs" />
+    <Compile Include="IACLPersons.cs" />
+    <Compile Include="IACLSettingAAs.cs" />
+    <Compile Include="IACLSettings.cs" />
+    <Compile Include="IAccessControlLists.cs" />
+    <Compile Include="IAlarmAreas.cs" />
+    <Compile Include="ICardReaders.cs" />
+    <Compile Include="ICCUs.cs" />
+    <Compile Include="ICgpNCASRemotingProvider.cs" />
+    <Compile Include="IDCUs.cs" />
+    <Compile Include="IFloors.cs" />
+    <Compile Include="IGraphicSymbolRawDatas.cs" />
+    <Compile Include="IGraphicSymbols.cs" />
+    <Compile Include="IGraphicSymbolTemplates.cs" />
+    <Compile Include="IInputDCUs.cs" />
+    <Compile Include="ILprCameras.cs" />
+    <Compile Include="IMultiDoors.cs" />
+    <Compile Include="IMultiDoorElements.cs" />
+    <Compile Include="IOutputDCUs.cs" />
+    <Compile Include="IExcelReportOutput.cs" />
+    <Compile Include="IPersonAttributeOutput.cs" />
+    <Compile Include="IPersonAttributes.cs" />
+    <Compile Include="IScenes.cs" />
+    <Compile Include="ISecurityDailyPlans.cs" />
+    <Compile Include="ISecurityDayIntervals.cs" />
+    <Compile Include="ISecurityTimeZones.cs" />
+    <Compile Include="ISecurityTimeZoneDateSettings.cs" />
+    <Compile Include="IGraphicsViews.cs" />
+    <Compile Include="IReportSettings.cs" />
+    <Compile Include="ITimetecSettings.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cgp\Cgp.BaseLib\Cgp.BaseLib.csproj">
+      <Project>{4B649633-3110-4CBD-AC66-43685FFDC808}</Project>
+      <Name>Cgp.BaseLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.Globals\Cgp.Globals.csproj">
+      <Project>{869F99AF-FEFA-43D9-98A0-6D8CF0987074}</Project>
+      <Name>Cgp.Globals</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.NCAS.Definitions\Cgp.NCAS.Definitions.csproj">
+      <Project>{84E07D7F-09B6-4894-BBE4-4FCFA73A85E1}</Project>
+      <Name>Cgp.NCAS.Definitions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.NCAS.Globals\Cgp.NCAS.Globals.csproj">
+      <Project>{08E546F9-45B8-4A33-A0FE-0D83FB132560}</Project>
+      <Name>Cgp.NCAS.Globals</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.NCAS.Server.Beans\Cgp.NCAS.Server.Beans.csproj">
+      <Project>{2EB9DDDF-0719-4A79-8CB7-FBD410743C92}</Project>
+      <Name>Cgp.NCAS.Server.Beans</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.ORM\Cgp.ORM.csproj">
+      <Project>{91f9bb39-37aa-4831-91ad-882eee262722}</Project>
+      <Name>Cgp.ORM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.Server.Beans.Extern\Cgp.Server.Beans.Extern.csproj">
+      <Project>{8DB7364B-5E6B-4869-A3DD-DB9B95DA7064}</Project>
+      <Name>Cgp.Server.Beans.Extern</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp\Cgp.Server.Beans\Cgp.Server.Beans.csproj">
+      <Project>{0A152990-C767-4D19-ABD5-9CC4FDDDBC95}</Project>
+      <Name>Cgp.Server.Beans</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WcfServiceNovaConnection\WcfServiceNovaConnection.PC45.csproj">
+      <Project>{2224e287-fbf1-4268-890e-a04a1a194a5d}</Project>
+      <Name>WcfServiceNovaConnection.PC45</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="IwQuick.PC45">
+      <HintPath>..\lib\IwQuick.PC45.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

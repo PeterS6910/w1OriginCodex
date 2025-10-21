@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.NCAS.Server.Beans.ACLPerson, Cgp.NCAS.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdACLPerson">
+      <generator class="guid" />
+    </id>
+
+    <many-to-one name="AccessControlList" column="AccessControlList" class="Contal.Cgp.NCAS.Server.Beans.AccessControlList, Cgp.Server.Beans" not-null="false" unique-key="ACLPerson"/>
+    <many-to-one name="Person" column="Person" class="Contal.Cgp.Server.Beans.Person, Cgp.Server.Beans" not-null="false" unique-key="ACLPerson"/>
+    <property name="DateFrom" not-null="false"></property>
+    <property name="DateTo" not-null="false"></property>
+    <property name="Version" not-null="false"></property>
+  </class>
+</hibernate-mapping>

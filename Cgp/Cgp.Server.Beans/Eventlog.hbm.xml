@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.Server.Beans.Eventlog, Cgp.Server.Beans" select-before-update="true">
+    <!--id is used because combination of name and surname does not have to be unique-->
+    <id name="IdEventlog">
+      <generator class="guid" />
+    </id>
+    <property name="Type" not-null="true"></property>
+    <property name="Date" not-null="true"></property>
+    <property name="CGPSource" not-null="true"></property>
+    <property name="EventSource" not-null="false"></property>
+    <property name="Localization" not-null="false"></property>
+    <property name="Description" not-null="true">
+      <column name="Description" sql-type="NVARCHAR(MAX)" not-null="true"></column>
+    </property>
+    <bag name="EventlogParameters" cascade="all" lazy="true" order-by="Type">
+      <key column="IdEventlog" />
+      <one-to-many class="Contal.Cgp.Server.Beans.EventlogParameter" />
+    </bag>
+  </class>
+</hibernate-mapping>
+
+

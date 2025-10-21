@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.Server.Beans.SystemVersion, Cgp.Server.Beans" select-before-update="true">
+    <id name="IdVersion">
+      <generator class="guid" />
+    </id>
+    <property name="DbsName" not-null="true" unique="true"/>
+    <property name="Version" not-null="true" unique="false"/>
+  </class>
+</hibernate-mapping>

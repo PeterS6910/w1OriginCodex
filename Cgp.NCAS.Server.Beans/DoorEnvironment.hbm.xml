@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.NCAS.Server.Beans.DoorEnvironment, Cgp.NCAS.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdDoorEnvironment">
+      <generator class="guid" />
+    </id>
+    <property name="Number" not-null="true" unique-key="NumberCCUDCU"></property>
+    <many-to-one name="CCU" column="CCU" class="Contal.Cgp.NCAS.Server.Beans.CCU, Cgp.NCAS.Server.Beans" not-null="false" unique-key="NumberCCUDCU"/>
+    <many-to-one name="DCU" column="DCU" class="Contal.Cgp.NCAS.Server.Beans.DCU, Cgp.NCAS.Server.Beans" not-null="false" unique-key="NumberCCUDCU"/>
+    
+    <property name="DoorTimeUnlock" not-null="false"></property>
+    <property name="DoorTimeOpen" not-null="false"></property>
+    <property name="DoorTimePreAlarm" not-null="false"></property>
+    <property name="DoorTimeSirenAjar" not-null="false"></property>
+    <property name="DoorDelayBeforeUnlock" not-null="false"></property>
+    <property name="DoorDelayBeforeLock" not-null="false"></property>
+    <property name="DoorDelayBeforeClose" not-null="false"></property>
+    <property name="DoorDelayBeforeBreakIn" not-null="false"></property>
+    <property name="NotInvokeIntrusionAlarm" not-null="false"></property>
+    
+    <many-to-one name="SensorsLockDoors" column="SensorsLockDoors" class="Contal.Cgp.NCAS.Server.Beans.Input, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="SensorsOpenDoors" column="SensorsOpenDoors" class="Contal.Cgp.NCAS.Server.Beans.Input, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="SensorsOpenMaxDoors" column="SensorsOpenMaxDoors" class="Contal.Cgp.NCAS.Server.Beans.Input, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <property name="SensorsLockDoorsInverted" not-null="false"></property>
+    <property name="SensorsOpenDoorsInverted" not-null="false"></property>
+    <property name="SensorsOpenMaxDoorsInverted" not-null="false"></property>
+    <property name="SensorsLockDoorsBalanced" not-null="false"></property>
+    <property name="SensorsOpenDoorsBalanced" not-null="false"></property>
+    <property name="SensorsOpenMaxDoorsBalanced" not-null="false"></property>
+
+    <property name="ActuatorsDoorEnvironment" not-null="false"></property>
+    <many-to-one name="ActuatorsElectricStrike" column="ActuatorsElectricStrike" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="ActuatorsElectricStrikeOpposite" column="ActuatorsElectricStrikeOpposite" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="ActuatorsExtraElectricStrike" column="ActuatorsExtraElectricStrike" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="ActuatorsExtraElectricStrikeOpposite" column="ActuatorsExtraElectricStrikeOpposite" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="ActuatorsBypassAlarm" column="ActuatorsBypassAlarm" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+
+    <property name="ActuatorsElectricStrikeImpulse" not-null="false"></property>
+    <property name="ActuatorsElectricStrikeImpulseDelay" not-null="false"></property>
+    <property name="ActuatorsExtraElectricStrikeImpulse" not-null="false"></property>
+    <property name="ActuatorsExtraElectricStrikeImpulseDelay" not-null="false"></property>
+    <property name="ActuatorsElectricStrikeOppositeImpulse" not-null="false"></property>
+    <property name="ActuatorsElectricStrikeOppositeImpulseDelay" not-null="false"></property>
+    <property name="ActuatorsExtraElectricStrikeOppositeImpulse" not-null="false"></property>
+    <property name="ActuatorsExtraElectricStrikeOppositeImpulseDelay" not-null="false"></property>
+    
+    <property name="IntrusionAlarmOn" not-null="false"></property>
+    <property name="BlockAlarmIntrusion" not-null="false"></property>
+    <property name="ObjBlockAlarmIntrusionObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmIntrusionId" not-null="false"></property>
+    
+    <many-to-one name="IntrusionPresentationGroup" column="IntrusionPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="IntrusionOutput" column="IntrusionOutput" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+    
+    <property name="DoorAjarAlarmOn" not-null="false"></property>
+    <property name="BlockAlarmDoorAjar" not-null="false"></property>
+    <property name="ObjBlockAlarmDoorAjarObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmDoorAjarId" not-null="false"></property>
+    
+    <many-to-one name="DoorAjarPresentationGroup" column="DoorAjarPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="DoorAjarOutput" column="DoorAjarOutput" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+    
+    <property name="SabotageAlarmOn" not-null="false"></property>
+    <property name="BlockAlarmSabotage" not-null="false"></property>
+    <property name="ObjBlockAlarmSabotageObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmSabotageId" not-null="false"></property>
+    
+    <many-to-one name="SabotagePresentationGroup" column="SabotagePresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="SabotageOutput" column="SabotageOutput" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+
+    <many-to-one name="CardReaderInternal" column="CardReaderInternal" class="Contal.Cgp.NCAS.Server.Beans.CardReader, Contal.Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="PushButtonInternal" column="PushButtonInternal" class="Contal.Cgp.NCAS.Server.Beans.Input, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="CardReaderExternal" column="CardReaderExternal" class="Contal.Cgp.NCAS.Server.Beans.CardReader, Contal.Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="PushButtonExternal" column="PushButtonExternal" class="Contal.Cgp.NCAS.Server.Beans.Input, Cgp.NCAS.Server.Beans" not-null="false"/>
+
+    <property name="Description" not-null="false">
+      <column name="Description" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+
+    <property name="BlockedByLicence" not-null="false"></property>
+    
+    <property name="LocalAlarmInstruction" not-null="false">
+      <column name="LocalAlarmInstruction" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+
+    <bag name="DoorEnvironmentAlarmArcs" cascade="all-delete-orphan">
+      <key column="DoorEnvironment" />
+      <one-to-many class="Contal.Cgp.NCAS.Server.Beans.DoorEnvironmentAlarmArc"  />
+    </bag>
+
+    <property name="Version" not-null="false"></property>
+
+    <join table="CentralNameRegister">
+      <key column="Id" foreign-key="none"/>
+      <property name="Name" not-null="true"/>
+      <property name="ObjectType" not-null="true"/>
+      <property name="CkUnique"/>
+    </join>
+    
+  </class>
+</hibernate-mapping>

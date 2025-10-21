@@ -1,0 +1,1258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FABCD5E9-CFDE-40D6-9BEF-9D57F24276A9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Contal.Cgp.Client</RootNamespace>
+    <AssemblyName>Contal Nova Client</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>IconNovaClient64.ico</ApplicationIcon>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Designer|AnyCPU' ">
+    <OutputPath>bin\Designer\</OutputPath>
+    <DefineConstants>DESIGNER</DefineConstants>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release - CodeProtection|AnyCPU' ">
+    <OutputPath>bin\Release - CodeProtection\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B8D35A87D3820C49FDE1BA23CAAD12D2004A5914</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>HOUR2021.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestTimestampUrl>
+    </ManifestTimestampUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WMPLib.1.0.0\lib\AxInterop.WMPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>..\Cgp.Components\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=6.1.1.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EPPlus.6.1.1\lib\net35\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.Interfaces, Version=6.1.1.0, Culture=neutral, PublicKeyToken=a694d7f3b0907a61, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EPPlus.Interfaces.6.1.1\lib\net35\EPPlus.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.System.Drawing, Version=6.1.1.0, Culture=neutral, PublicKeyToken=2308d35469c9bac0, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EPPlus.System.Drawing.6.1.1\lib\net35\EPPlus.System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WMPLib.1.0.0\lib\Interop.WMPLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="IwQuick.PC45">
+      <HintPath>..\..\lib\IwQuick.PC45.dll</HintPath>
+    </Reference>
+    <Reference Include="LwDhcp">
+      <HintPath>..\..\lib\LwDhcp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.XML" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccessPanelControl.cs" />
+    <Compile Include="ACgpEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACgpTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlarmDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlarmDetailsForm.Designer.cs">
+      <DependentUpon>AlarmDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlarmsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlarmsDialog.Designer.cs">
+      <DependentUpon>AlarmsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlarmSound.cs" />
+    <Compile Include="AlarmTypeSound.cs" />
+    <Compile Include="BaseFormTransparent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalendarEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalendarEditForm.Designer.cs">
+      <DependentUpon>CalendarEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardIdManagementManager.cs" />
+    <Compile Include="CardPrintAndEncodeManager.cs" />
+    <Compile Include="CardPrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardPrintForm.Designer.cs">
+      <DependentUpon>CardPrintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardTemplatesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardTemplatesForm.Designer.cs">
+      <DependentUpon>CardTemplatesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarEditForm.Designer.cs">
+      <DependentUpon>CarEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarsForm.Designer.cs">
+      <DependentUpon>CarsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckedLisboxFormChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckedLisboxFormChange.Designer.cs">
+      <DependentUpon>CheckedLisboxFormChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClientInstaller.Designer.cs">
+      <DependentUpon>ClientInstaller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientUpgradeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientUpgradeForm.Designer.cs">
+      <DependentUpon>ClientUpgradeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CloneFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CloneFilterForm.Designer.cs">
+      <DependentUpon>CloneFilterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CloneFilterValues.cs" />
+    <Compile Include="CloseAppDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CloseAppDialog.Designer.cs">
+      <DependentUpon>CloseAppDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateCSVImportTemplateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateCSVImportTemplateForm.Designer.cs">
+      <DependentUpon>CreateCSVImportTemplateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CSVCardImportDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CSVCardImportDialog.Designer.cs">
+      <DependentUpon>CSVCardImportDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateFolderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateFolderForm.Designer.cs">
+      <DependentUpon>CreateFolderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CSVImportDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CSVImportDialog.Designer.cs">
+      <DependentUpon>CSVImportDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DbsSupport.cs" />
+    <Compile Include="DirectCrSwipCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DirectCrSwipCard.Designer.cs">
+      <DependentUpon>DirectCrSwipCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportForm.Designer.cs">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EvnetlogsExportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EvnetlogsExportForm.Designer.cs">
+      <DependentUpon>EvnetlogsExportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExceptionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExceptionDialog.Designer.cs">
+      <DependentUpon>ExceptionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderStructureObjectsInfo.cs" />
+    <Compile Include="FormLicenceRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLicenceRequest.Designer.cs">
+      <DependentUpon>FormLicenceRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralOptions.cs" />
+    <Compile Include="GlobalAlarmInstructionEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalAlarmInstructionEditForm.Designer.cs">
+      <DependentUpon>GlobalAlarmInstructionEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalAlarmInstructionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalAlarmInstructionsForm.Designer.cs">
+      <DependentUpon>GlobalAlarmInstructionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IEditFormBase.cs" />
+    <Compile Include="ISpecialReadingOfChildObjectsForObject.cs" />
+    <Compile Include="LoadingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingForm.Designer.cs">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Localization.English.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localization.English.resx</DependentUpon>
+    </Compile>
+    <Compile Include="LocalOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocalOptionsForm.Designer.cs">
+      <DependentUpon>LocalOptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginGroupEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginGroupEditForm.Designer.cs">
+      <DependentUpon>LoginGroupEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginGroupsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginGroupsForm.Designer.cs">
+      <DependentUpon>LoginGroupsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MagneticManager.cs" />
+    <Compile Include="MifareSectorManager.cs" />
+    <Compile Include="MouseAndKeyboardHooks.cs" />
+    <Compile Include="MultiselectDeleteErrorResultsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultiselectDeleteErrorResultsForm.Designer.cs">
+      <DependentUpon>MultiselectDeleteErrorResultsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CgpTranslateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PleaseWaitMonitor.cs" />
+    <Compile Include="PluginSupport\ACgpPluginFullscreenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PluginSupport\ICgpVisualPlugin.cs" />
+    <Compile Include="ObjectImageList.cs" />
+    <Compile Include="ObjectsSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ObjectsSearchForm.Designer.cs">
+      <DependentUpon>ObjectsSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DateForm.Designer.cs">
+      <DependentUpon>DateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalendarsForm.Designer.cs">
+      <DependentUpon>CalendarsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardsEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardsEditForm.Designer.cs">
+      <DependentUpon>CardsEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardSystemsEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardSystemsEditForm.Designer.cs">
+      <DependentUpon>CardSystemsEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardSystemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardSystemsForm.Designer.cs">
+      <DependentUpon>CardSystemsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardsForm.Designer.cs">
+      <DependentUpon>CardsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CgpClient.cs" />
+    <Compile Include="CgpClientMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CgpClientMainForm.Designer.cs">
+      <DependentUpon>CgpClientMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACgpFullscreenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CisNGEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CisNGEditForm.Designer.cs">
+      <DependentUpon>CisNGEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CisNGsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CisNGsForm.Designer.cs">
+      <DependentUpon>CisNGsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CisNGGroupEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CisNGGroupEditForm.Designer.cs">
+      <DependentUpon>CisNGGroupEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CisNGGroupsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CisNGGroupsForm.Designer.cs">
+      <DependentUpon>CisNGGroupsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailyPlanEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyPlanEditForm.Designer.cs">
+      <DependentUpon>DailyPlanEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailyPlansForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyPlansForm.Designer.cs">
+      <DependentUpon>DailyPlansForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DayTypeEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DayTypeEditForm.Designer.cs">
+      <DependentUpon>DayTypeEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DayTypesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DayTypesForm.Designer.cs">
+      <DependentUpon>DayTypesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventlogParametersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventlogParametersForm.Designer.cs">
+      <DependentUpon>EventlogParametersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventlogsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventlogsForm.Designer.cs">
+      <DependentUpon>EventlogsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListboxFormAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListboxFormAdd.Designer.cs">
+      <DependentUpon>ListboxFormAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPasswordChangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPasswordChangeForm.Designer.cs">
+      <DependentUpon>LoginPasswordChangeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPasswordForm.Designer.cs">
+      <DependentUpon>LoginPasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonEditForm.Designer.cs">
+      <DependentUpon>PersonEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralOptionsForm.Designer.cs">
+      <DependentUpon>GeneralOptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginEditForm.Designer.cs">
+      <DependentUpon>LoginEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginsForm.Designer.cs">
+      <DependentUpon>LoginsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PluginDashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PluginDashboardForm.Designer.cs">
+      <DependentUpon>PluginDashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllPluginsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllPluginsForm.Designer.cs">
+      <DependentUpon>AllPluginsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PluginSupport\ACgpPluginEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PluginSupport\ACgpPluginTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PluginSupport\ACgpVisualPlugin.cs" />
+    <Compile Include="AlarmInstructionsForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AlarmInstructionsForm.Designer.cs">
+      <DependentUpon>AlarmInstructionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PluginSupport\CgpVisualPluginManager.cs" />
+    <Compile Include="IAlarmDetailsForm.cs" />
+    <Compile Include="ICgpClientMainForm.cs" />
+    <Compile Include="ICgpEditForm.cs" />
+    <Compile Include="ICgpTableForm.cs" />
+    <Compile Include="MdiChildForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PluginSupport\IPluginMainForm.cs" />
+    <Compile Include="PluginSupport\PluginMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationFormatterEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationFormatterEditForm.Designer.cs">
+      <DependentUpon>PresentationFormatterEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationFormattersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationFormattersForm.Designer.cs">
+      <DependentUpon>PresentationFormattersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationGroupEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationGroupEditForm.Designer.cs">
+      <DependentUpon>PresentationGroupEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationGroupsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationGroupsForm.Designer.cs">
+      <DependentUpon>PresentationGroupsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlarmDetailsForm.resx">
+      <DependentUpon>AlarmDetailsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlarmsDialog.resx">
+      <DependentUpon>AlarmsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalendarEditForm.resx">
+      <DependentUpon>CalendarEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardPrintForm.resx">
+      <DependentUpon>CardPrintForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardTemplatesForm.resx">
+      <DependentUpon>CardTemplatesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarEditForm.resx">
+      <DependentUpon>CarEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarsForm.resx">
+      <DependentUpon>CarsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckedLisboxFormChange.resx">
+      <DependentUpon>CheckedLisboxFormChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientUpgradeForm.resx">
+      <DependentUpon>ClientUpgradeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CloneFilterForm.resx">
+      <DependentUpon>CloneFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CloseAppDialog.resx">
+      <DependentUpon>CloseAppDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateCSVImportTemplateForm.resx">
+      <DependentUpon>CreateCSVImportTemplateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CSVCardImportDialog.resx">
+      <DependentUpon>CSVCardImportDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateFolderForm.resx">
+      <DependentUpon>CreateFolderForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CSVImportDialog.resx">
+      <DependentUpon>CSVImportDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateForm.resx">
+      <DependentUpon>DateForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalendarsForm.resx">
+      <DependentUpon>CalendarsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardsEditForm.resx">
+      <DependentUpon>CardsEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardsForm.resx">
+      <DependentUpon>CardsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardSystemsEditForm.resx">
+      <DependentUpon>CardSystemsEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardSystemsForm.resx">
+      <DependentUpon>CardSystemsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CgpClientMainForm.resx">
+      <DependentUpon>CgpClientMainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CisNGEditForm.resx">
+      <DependentUpon>CisNGEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CisNGsForm.resx">
+      <DependentUpon>CisNGsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CisNGGroupEditForm.resx">
+      <DependentUpon>CisNGGroupEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CisNGGroupsForm.resx">
+      <DependentUpon>CisNGGroupsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyPlanEditForm.resx">
+      <DependentUpon>DailyPlanEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyPlansForm.resx">
+      <DependentUpon>DailyPlansForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DayTypeEditForm.resx">
+      <DependentUpon>DayTypeEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DayTypesForm.resx">
+      <DependentUpon>DayTypesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DirectCrSwipCard.resx">
+      <DependentUpon>DirectCrSwipCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventlogParametersForm.resx">
+      <DependentUpon>EventlogParametersForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventlogsForm.resx">
+      <DependentUpon>EventlogsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExportForm.resx">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EvnetlogsExportForm.resx">
+      <DependentUpon>EvnetlogsExportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExceptionDialog.resx">
+      <DependentUpon>ExceptionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLicenceRequest.resx">
+      <DependentUpon>FormLicenceRequest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalAlarmInstructionEditForm.resx">
+      <DependentUpon>GlobalAlarmInstructionEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalAlarmInstructionsForm.resx">
+      <DependentUpon>GlobalAlarmInstructionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListboxFormAdd.resx">
+      <DependentUpon>ListboxFormAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingForm.resx">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalOptionsForm.resx">
+      <DependentUpon>LocalOptionsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginGroupEditForm.resx">
+      <DependentUpon>LoginGroupEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginGroupsForm.resx">
+      <DependentUpon>LoginGroupsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPasswordChangeForm.resx">
+      <DependentUpon>LoginPasswordChangeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPasswordForm.resx">
+      <DependentUpon>LoginPasswordForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiselectDeleteErrorResultsForm.resx">
+      <DependentUpon>MultiselectDeleteErrorResultsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObjectsSearchForm.resx">
+      <DependentUpon>ObjectsSearchForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonEditForm.resx">
+      <DependentUpon>PersonEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralOptionsForm.resx">
+      <DependentUpon>GeneralOptionsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginEditForm.resx">
+      <DependentUpon>LoginEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginsForm.resx">
+      <DependentUpon>LoginsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PluginDashboardForm.resx">
+      <DependentUpon>PluginDashboardForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllPluginsForm.resx">
+      <DependentUpon>AllPluginsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlarmInstructionsForm.resx">
+      <DependentUpon>AlarmInstructionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PluginSupport\ACgpPluginEditForm.resx">
+      <DependentUpon>ACgpPluginEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationFormatterEditForm.resx">
+      <DependentUpon>PresentationFormatterEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationFormattersForm.resx">
+      <DependentUpon>PresentationFormattersForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationGroupEditForm.resx">
+      <DependentUpon>PresentationGroupEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationGroupsForm.resx">
+      <DependentUpon>PresentationGroupsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization.English.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Localization.English.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization.Slovak.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.Slovak.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonsForm.resx">
+      <DependentUpon>PersonsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization.Swedish.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.Swedish.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReferencedByForm.resx">
+      <DependentUpon>ReferencedByForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RenameFolderForm.resx">
+      <DependentUpon>RenameFolderForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceGlobal.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceGlobal.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectStructuredSubSiteForm.resx">
+      <DependentUpon>SelectStructuredSubSiteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerDirectory.resx">
+      <DependentUpon>ServerDirectory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoundExplorer.resx">
+      <DependentUpon>SoundExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StructuredSiteForm.resx">
+      <DependentUpon>StructuredSiteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemEventsEditForm.resx">
+      <DependentUpon>SystemEventsEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeZoneCalendarChangeForm.resx">
+      <DependentUpon>TimeZoneCalendarChangeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeZonesEditForm.resx">
+      <DependentUpon>TimeZonesEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeZonesForm.resx">
+      <DependentUpon>TimeZonesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserFoldersStructuresCreateFolder.resx">
+      <DependentUpon>UserFoldersStructuresCreateFolder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserFoldersStructuresForm.resx">
+      <DependentUpon>UserFoldersStructuresForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="HOUR2021.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Localization.Slovak.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localization.Slovak.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonsForm.designer.cs">
+      <DependentUpon>PersonsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Localization.Swedish.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localization.Swedish.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReadRegAlarmSound.cs" />
+    <Compile Include="RecentObjectList.cs" />
+    <Compile Include="ReferencedByForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReferencedByForm.Designer.cs">
+      <DependentUpon>ReferencedByForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RenameFolderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RenameFolderForm.Designer.cs">
+      <DependentUpon>RenameFolderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceGlobal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceGlobal.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectStructuredSubSiteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectStructuredSubSiteForm.Designer.cs">
+      <DependentUpon>SelectStructuredSubSiteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServerDirectory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerDirectory.Designer.cs">
+      <DependentUpon>ServerDirectory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiteNodeInfo.cs" />
+    <Compile Include="SoundExplorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundExplorer.Designer.cs">
+      <DependentUpon>SoundExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialReadingOfChildObjects.cs" />
+    <Compile Include="LgAdminSpecialReadingOfChildObjectObjects.cs" />
+    <Compile Include="StartOnlyOneProcess.cs" />
+    <Compile Include="StructuredSiteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StructuredSiteForm.Designer.cs">
+      <DependentUpon>StructuredSiteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StructuredSiteNode.cs" />
+    <Compile Include="StructuredSiteTreeViews.cs" />
+    <Compile Include="StructuredSubSites\SelectingOfSubSitesSupport.cs" />
+    <Compile Include="SystemEventsEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemEventsEditForm.Designer.cs">
+      <DependentUpon>SystemEventsEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeZoneCalendarChangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeZoneCalendarChangeForm.Designer.cs">
+      <DependentUpon>TimeZoneCalendarChangeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeZonesEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeZonesEditForm.Designer.cs">
+      <DependentUpon>TimeZonesEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeZonesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeZonesForm.Designer.cs">
+      <DependentUpon>TimeZonesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectsPlacementHandler.cs" />
+    <Compile Include="UserFoldersStructuresCreateFolder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserFoldersStructuresCreateFolder.Designer.cs">
+      <DependentUpon>UserFoldersStructuresCreateFolder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserFoldersStructuresForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserFoldersStructuresForm.Designer.cs">
+      <DependentUpon>UserFoldersStructuresForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\CardIdManagement\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Cgp.NCAS.Client.Common\Cgp.NCAS.Client.Common.csproj">
+      <Project>{ae4ef016-b541-4c93-98c1-cdee1c63ac11}</Project>
+      <Name>Cgp.NCAS.Client.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Cgp.NCAS.RemotingCommon\Cgp.NCAS.RemotingCommon.csproj">
+      <Project>{7da1465b-3029-43e8-801c-bac87581b99c}</Project>
+      <Name>Cgp.NCAS.RemotingCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.BaseLib\Cgp.BaseLib.csproj">
+      <Project>{4B649633-3110-4CBD-AC66-43685FFDC808}</Project>
+      <Name>Cgp.BaseLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.Client.Common\Cgp.Client.Common.csproj">
+      <Project>{F13A1A13-4773-4744-820B-43DA34DFAE7B}</Project>
+      <Name>Cgp.Client.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.Components\Cgp.Components.csproj">
+      <Project>{C192E586-21CB-45CA-86C7-9CE602F4726E}</Project>
+      <Name>Cgp.Components</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.Globals\Cgp.Globals.csproj">
+      <Project>{869F99AF-FEFA-43D9-98A0-6D8CF0987074}</Project>
+      <Name>Cgp.Globals</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.RemotingCommon\Cgp.RemotingCommon.csproj">
+      <Project>{1A33974B-B787-4E35-BE4B-BCF6F50DB953}</Project>
+      <Name>Cgp.RemotingCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.Server.Beans.Extern\Cgp.Server.Beans.Extern.csproj">
+      <Project>{8DB7364B-5E6B-4869-A3DD-DB9B95DA7064}</Project>
+      <Name>Cgp.Server.Beans.Extern</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.Server.Beans\Cgp.Server.Beans.csproj">
+      <Project>{0A152990-C767-4D19-ABD5-9CC4FDDDBC95}</Project>
+      <Name>Cgp.Server.Beans</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconPresentation16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ScrollUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ScrollDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="3D-Home.ico" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <Content Include="Client Upgrader\ClientUpgrader.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\ChangePassword16.png" />
+    <None Include="Resources\Calendar16.png" />
+    <None Include="Resources\IconCalendar16.ico" />
+    <None Include="Resources\Calendar48.png" />
+    <None Include="Resources\CisNG48.png" />
+    <None Include="Resources\CisNGGrpup48.png" />
+    <None Include="Resources\CisNG16.png" />
+    <None Include="Resources\CisNGGrpup16.png" />
+    <None Include="CONTAL_nova.png" />
+    <None Include="CONTAL_NOVA_sb.jpg" />
+    <None Include="IconNovaClient64.ico" />
+    <None Include="Resources\CardNewNO_128.ico" />
+    <None Include="Resources\CardNewUNKNOWN_128.ico" />
+    <None Include="Resources\CardNewWARNING_128.ico" />
+    <None Include="Resources\CardNewYES_128.ico" />
+    <None Include="Resources\CardBlank128.ico" />
+    <None Include="Resources\CardsNew.png" />
+    <None Include="Resources\CardsNew48.png" />
+    <None Include="Resources\CardSystemNew48.png" />
+    <None Include="Resources\AlarmInstructions48.png" />
+    <None Include="Resources\CardTemplate48.png" />
+    <None Include="IDExpertSDK_Setup %285.0.0.168%29.exe" />
+    <Content Include="Ionic.Zip.dll" />
+    <None Include="Resources\CleanText.png" />
+    <None Include="Resources\Close16.png" />
+    <None Include="Resources\CONTAL_nova_standard_l.png" />
+    <None Include="Resources\CONTAL_nova_standard_w300.png" />
+    <None Include="Resources\IconCisNG128.ico" />
+    <None Include="Resources\IconCisNGGrpup128.ico" />
+    <None Include="Resources\Information16.png" />
+    <None Include="Resources\LogOn16.png" />
+    <None Include="Resources\FolderStructure16.png" />
+    <None Include="Resources\GeneralOptions16.png" />
+    <None Include="Resources\LocalSettings16.png" />
+    <None Include="Resources\Logins16.png" />
+    <None Include="Resources\Logins48.png" />
+    <None Include="Resources\Persons16.png" />
+    <None Include="Resources\PersonsNew48.png" />
+    <None Include="Resources\Search16.png" />
+    <None Include="Resources\DayType16.png" />
+    <None Include="Resources\IconDayType16.ico" />
+    <None Include="Resources\DayType48.png" />
+    <None Include="Resources\EventLogsNew16.png" />
+    <None Include="Resources\IconEventLogsNew16.ico" />
+    <None Include="Resources\EventLogsNew48.png" />
+    <None Include="Resources\Formater16.png" />
+    <None Include="Resources\IconFormater16.ico" />
+    <None Include="Resources\Formater48.png" />
+    <None Include="Resources\PresentationGroup16.png" />
+    <None Include="Resources\IconPresentationGroup16.ico" />
+    <None Include="Resources\PresentationGroup48.png" />
+    <None Include="Resources\SystemEvents16.png" />
+    <None Include="Resources\TimeZone16.png" />
+    <None Include="Resources\IconTimeZone16.ico" />
+    <None Include="Resources\TimeZone48.png" />
+    <None Include="Resources\DailyPLan16.png" />
+    <None Include="Resources\IconDailyPLan16.ico" />
+    <None Include="Resources\DailyPLan48.png" />
+    <None Include="Resources\IconAlarm16.ico" />
+    <None Include="Resources\IconFolder16.ico" />
+    <None Include="Resources\IconHome128.ico" />
+    <None Include="Resources\IconLogins16.ico" />
+    <None Include="Resources\IconPersonsNew16.ico" />
+    <None Include="Resources\Hide16.png" />
+    <None Include="Resources\Home16.png" />
+    <None Include="Resources\IconCisNG16.ico" />
+    <None Include="Resources\IconCisNGGrpup16.ico" />
+    <None Include="Resources\IconDownload.ico" />
+    <None Include="Resources\IconFolderStruct16.ico" />
+    <None Include="Resources\IconAlarmInstructions16.ico" />
+    <None Include="Resources\HybridCardBlank128.ico" />
+    <None Include="Resources\HybridCardNewNO_128.ico" />
+    <None Include="Resources\HybridCardNewUNKNOWN_128.ico" />
+    <None Include="Resources\IconBlocked16.ico" />
+    <None Include="Resources\IconNewNotAcknowledge16.ico" />
+    <None Include="Resources\IconWarning20.ico" />
+    <None Include="Resources\IconNewBlocked20.ico" />
+    <None Include="Resources\IconNewAcknowledged20.ico" />
+    <None Include="Resources\IconNewPresentationGroup16.ico" />
+    <None Include="Resources\IconCardSystemNew16.ico" />
+    <None Include="Resources\IconCardsNew16.ico" />
+    <None Include="Resources\Show16.png" />
+    <None Include="Resources\IconCardTemplate16.ico" />
+    <None Include="Resources\IconCardPrint16.ico" />
+    <None Include="Resources\Warning.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\Edit.png" />
+    <None Include="Resources\form-loading.gif" />
+    <None Include="Resources\CloseImage16.png" />
+    <None Include="Resources\CloseImage16_on.png" />
+    <Content Include="Resources\Car16.ico" />
+    <Content Include="Resources\Car48.png" />
+    <Content Include="Resources\Hardware.ico" />
+    <None Include="Resources\hide.png" />
+    <None Include="Resources\IconConnected16.ico" />
+    <None Include="Resources\IconDisconnected16.ico" />
+    <Content Include="Resources\IconAcknowledgeInPending20.ico" />
+    <Content Include="Resources\IconBlockingInPending20.ico" />
+    <Content Include="Resources\IconLoginGroup16.ico" />
+    <None Include="Resources\insert.png" />
+    <Content Include="Resources\IconServerAlarm16.ico" />
+    <Content Include="Resources\IconUnblocked20.ico" />
+    <Content Include="Resources\IconUnblockingInPending20.ico" />
+    <Content Include="Resources\LoginGroup16.png" />
+    <Content Include="Resources\LoginGroup48.png" />
+    <None Include="Resources\show.png" />
+    <None Include="Resources\ShowScenes.png" />
+    <None Include="Resources\Scene16.png" />
+    <None Include="Resources\logo-mainform-toolstrip.png" />
+    <Content Include="Resources\Scenes16.png" />
+    <None Include="Resources\splash-loading.gif" />
+    <Content Include="Resources\SubTreeReferencing.ico" />
+    <Content Include="Sounds\Windows Exclamation.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\YelowLogOff16.png" />
+    <None Include="Resources\IconWheel16.ico" />
+    <None Include="Resources\Folder expand.ico" />
+    <None Include="Resources\Folder collaps.ico" />
+    <None Include="Resources\UserFoldersStructure.png" />
+    <None Include="Resources\ScrollRight.png" />
+    <None Include="Resources\ScrollLeft.png" />
+    <None Include="Web References\CardIdManagement\IDProductionService.wsdl" />
+    <None Include="Web References\CardIdManagement\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="NetFwTypeLib">
+      <Guid>{58FBCF7C-E7A9-467C-80B3-FC65E8FCCA08}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:54880/%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CardIdManagement\</RelPath>
+      <UpdateFromURL>http://localhost:54880/%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Contal_Nova_Client_CardIdManagement_IDProductionService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>if "$(ConfigurationName)"=="Release - CodeProtection" C:\Windows\System32\xcopy.exe "$(TargetDir)*.*" "$(ProjectDir)\bin\temp\" /y/i
+
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

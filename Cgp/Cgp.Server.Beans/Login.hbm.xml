@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.Server.Beans.Login, Cgp.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdLogin">
+      <generator class="guid"></generator>
+    </id>
+    <property name="PasswordHash" not-null="true"></property>
+    <property name="PublicKey" not-null="false"></property>
+    <property name="IsDisabled" not-null="true"></property>
+    <property name="MustChangePassword" not-null="false"></property>
+    <property name="ExpirationDate" not-null="false"></property>
+    <property name="LastPasswordChangeDate" not-null="false"></property>
+    <property name="ClientLanguage" not-null="false"></property>
+    <many-to-one name="LoginGroup" column="LoginGroup" class="Contal.Cgp.Server.Beans.LoginGroup, Cgp.Server.Beans"/>
+    <property name="LocalAlarmInstruction" not-null="false">
+      <column name="LocalAlarmInstruction" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+    <property name="Description" not-null="false">
+      <column name="Description" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+    <many-to-one name="Person" column="IdPerson" class="Contal.Cgp.Server.Beans.Person, Cgp.Server.Beans"/>
+
+    <bag name="AccessControls" cascade="all-delete-orphan" lazy="true">
+      <key column="Login" />
+      <one-to-many class="Contal.Cgp.Server.Beans.AccessControl"/>
+    </bag>
+
+    <bag name="UserOpenedWindows" cascade="all-delete-orphan" lazy="false">
+      <key column="Login"/>
+      <one-to-many class="Contal.Cgp.Server.Beans.UserOpenedWindow"/>
+    </bag>
+
+    <!--<map name="QuickMenu" lazy="false">
+      <key column="Username"/>
+      <index column="ButtonName" type="System.String"/>
+      <element column="ButtonClickedCount" type="System.Int32"/>
+    </map> -->
+
+    <join table="CentralNameRegister">
+      <key column="Id" foreign-key="none"/>
+      <property name="Username" column="Name" not-null="true"/>
+      <property name="ObjectType" not-null="true"/>
+    </join>
+  </class>
+</hibernate-mapping>

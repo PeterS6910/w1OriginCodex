@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.Server.Beans.Person, Cgp.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <!--id is used because combination of name and surname does not have to be unique-->
+    <id name="IdPerson">
+      <generator class="guid" />
+    </id>
+    <property name="FirstName" not-null="true"></property>
+    <property name ="Surname" not-null ="false"></property>
+    <property name="MiddleName" not-null="false"></property>
+    <property name="Tiltle" not-null="false">
+      <column name="Tiltle" sql-type="VARCHAR(30)"></column>
+    </property>
+    <property name="Birthday" not-null="false"></property>
+    <property name="Company" not-null="false"></property>
+    <property name="Address" not-null="false"></property>
+    <property name="Email" not-null="false"></property>
+    <property name="PhoneNumber" not-null="false"></property>
+    <property name="Identification" not-null="false"></property>
+    <property name="LocalAlarmInstruction" not-null="false">
+      <column name="LocalAlarmInstruction" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+    <property name="Description" not-null="false">
+      <column name="Description" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+    
+    <bag name="Cards" cascade="none" lazy="true">
+      <key column="Person" />
+      <one-to-many class="Contal.Cgp.Server.Beans.Card"  />
+    </bag>
+
+    <bag name="Logins" cascade="none" lazy="true">
+      <key column="IdPerson" />
+      <one-to-many class="Contal.Cgp.Server.Beans.Login"  />
+    </bag>
+    <property name="EmployeeNumber" not-null="false"></property>
+    <property name="RelativeSuperior" not-null="false"></property>
+    <property name="RelativeSuperiorsPhoneNumber" not-null="false"></property>
+    <property name="CostCenter" not-null="false"></property>
+    <property name="EmploymentBeginningDate" not-null="false"></property>
+    <property name="EmploymentEndDate" not-null="false"></property>
+    <property name="Role" not-null="false"></property>
+    <property name="PhotoFileName" not-null="false"></property>
+    <property name="SynchronizedWithTimetec" not-null="false"></property>
+    <property name="PersonalCodeHash" not-null="false" index ="IndexPersonalCodeHash"></property>
+    <property name="PersonalCodeLength" not-null="false"></property>
+    <property name="Version" not-null="false"></property>
+    <join table="CentralNameRegister">
+      <key column="Id" foreign-key="none"/>
+      <property name="WholeName" column="Name" not-null="true"/>
+      <property name="ObjectType" not-null="true"/>
+      <property name="CkUnique"/>
+    </join>
+    
+  </class>
+</hibernate-mapping>
+
+

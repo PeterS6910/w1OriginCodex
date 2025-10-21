@@ -1,0 +1,26 @@
+https://sources.local.contal.sk:8443/svn/frameworks/LwSerialization/current/LwSerialization2 r4613
+
+https://sources.local.contal.sk:8443/svn/frameworks/LwRemoting/current/LwRemoting2 r4621
+
+https://sources.local.contal.sk:8443/svn/frameworks/LwMessaging/current/LwMessaging r4509
+
+https://sources.local.contal.sk:8443/svn/frameworks/CardReaderDrivers/current/CardReaderDrivers r4690
+
+https://sources.local.contal.sk:8443/svn/cgp-ncas/frameworks/CatCom/current/CatCom r4906
+
+https://sources.local.contal.sk:8443/svn/cgp-ncas/frameworks/DoorStateMachine/current/DoorStateMachine r4992
+
+https://sources.local.contal.sk:8443/svn/frameworks/LwDhcp/current/LwDhcp r4514
+
+https://sources.local.contal.sk:8443/svn/frameworks/SLA/current/SLA.Client r4678
+
+https://sources.local.contal.sk:8443/svn/frameworks/uTcp/current/uTcp r4510
+
+https://sources.local.contal.sk:8443/svn/frameworks/BoolExpressions/current/BoolExpressions r4602
+
+https://sources.local.contal.sk:8443/svn/frameworks/InterCommDrivers/current/InterCommDrivers r4616
+
+Main projects
+https://sources.local.contal.sk:8443/svn/cgp/current r3999
+
+https://sources.local.contal.sk:8443/svn/cgp-ncas/current r5307

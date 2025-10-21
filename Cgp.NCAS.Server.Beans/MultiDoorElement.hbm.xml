@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.NCAS.Server.Beans.MultiDoorElement, Cgp.NCAS.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdMultiDoorElement">
+      <generator class="guid" />
+    </id>
+    <many-to-one name="MultiDoor" column="MultiDoor" class="Contal.Cgp.NCAS.Server.Beans.MultiDoor" not-null="false"/>
+    <many-to-one name="Floor" column="Floor" class="Contal.Cgp.NCAS.Server.Beans.Floor" not-null="false"/>
+    <property name="DoorIndex" not-null="false"/>
+    <many-to-one name="SensorOpenDoor" column="SensorOpenDoor" class="Contal.Cgp.NCAS.Server.Beans.Input" not-null="false"/>
+    <many-to-one name="ElectricStrike" column="ElectricStrike" class="Contal.Cgp.NCAS.Server.Beans.Output" not-null="false"/>
+    <many-to-one name="ExtraElectricStrike" column="ExtraElectricStrike" class="Contal.Cgp.NCAS.Server.Beans.Output" not-null="false"/>
+    <many-to-one name="BlockAlarmArea" column="BlockAlarmArea" class="Contal.Cgp.NCAS.Server.Beans.AlarmArea" not-null="false"/>
+    <property name="BlockOnOffObjectType" not-null="false"/>
+    <property name="BlockOnOffObjectId" not-null="false"/>
+    <property name="Description" not-null="false">
+      <column name="Description" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+
+    <property name="Version" not-null="false"></property>
+
+    <join table="CentralNameRegister">
+      <key column="Id" foreign-key="none"/>
+      <property name="Name" column="Name" not-null="true"/>
+      <property name="ObjectType" not-null="true"/>
+      <property name="CkUnique"/>
+    </join>
+  </class>
+</hibernate-mapping>

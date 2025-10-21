@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.NCAS.Server.Beans.Input, Cgp.NCAS.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdInput">
+      <generator class="guid" />
+    </id>
+    <property name="InputNumber" not-null="true" unique-key="InputNumberCCUDCU"></property>
+    <property name="NickName" not-null="true"></property>
+    <property name="InputType" not-null="true"></property>
+    <property name="Inverted" not-null="true"></property>
+    <property name="HighPriority" not-null="true"></property>
+    <property name="OffACK" not-null="true"></property>
+    <property name="DelayToOn" not-null="true"></property>
+    <property name="DelayToOff" not-null="true"></property>
+    
+    <many-to-one name="AlarmPresentationGroup" column="AlarmPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <property name="AlarmPGPresentationStateInpendentOfAlarm" not-null="false"></property>
+    <many-to-one name="TamperAlarmPresentationGroup" column="TamperAlarmPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.NCAS.Server.Beans" not-null="false"/>
+    
+    <property name="TamperDelayToOn" not-null="true"></property>
+
+    <many-to-one name="DCU" column="DCU" class="Contal.Cgp.NCAS.Server.Beans.DCU, Cgp.NCAS.Server.Beans" not-null="false" unique-key="InputNumberCCUDCU"/>
+    <many-to-one name="CCU" column="CCU" class="Contal.Cgp.NCAS.Server.Beans.CCU, Cgp.NCAS.Server.Beans" not-null="false" unique-key="InputNumberCCUDCU"/>
+    
+    <property name="AlarmOn" not-null="false"></property>
+    <property name="AlarmTamper" not-null="false"></property>
+    
+    <property name="Description" not-null="false">
+      <column name="Description" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+
+    <bag name="AAInputs" cascade="none">
+      <key column="Input" />
+      <one-to-many class="Contal.Cgp.NCAS.Server.Beans.AAInput"/>
+    </bag>
+
+    <property name="BlockingType" not-null="false"></property>
+    <property name="OnOffObjectType" not-null="false">
+      <column name="OnOffObjectType" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+    <property name="OnOffObjectId" not-null="false"></property>
+    <property name="LocalAlarmInstruction" not-null="false">
+      <column name="LocalAlarmInstruction" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+
+    <property name="Version" not-null="false"></property>
+
+    <join table="CentralNameRegister">
+      <key column="Id" foreign-key="none"/>
+      <property name="Name" not-null="true"/>
+      <property name="ObjectType" not-null="true"/>
+      <property name="AlternateName" not-null="false"/>
+      <property name="FullTextSearchString" column="FullTextSearchString" not-null="false"/>
+      <property name="CkUnique"/>
+    </join>
+  </class>
+</hibernate-mapping>

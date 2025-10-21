@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.Server.Beans.Car, Cgp.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdCar">
+      <generator class="guid" />
+    </id>
+    <property name="Brand" not-null="false" />
+    <property name="ValidityDateFrom" not-null="false" />
+    <property name="ValidityDateTo" not-null="false" />
+    <property name="SecurityLevel" not-null="false" />
+    <property name="Description" not-null="false">
+      <column name="Description" sql-type="NVARCHAR(MAX)" />
+    </property>
+    <property name="SynchronizedWithTimetec" not-null="false" />
+    <property name="UtcDateStateLastChange" not-null="false" />
+    <property name="Version" not-null="false" />
+    <join table="CentralNameRegister">
+      <key column="Id" foreign-key="none" />
+      <property name="WholeName" column="Name" not-null="true" />
+      <property name="ObjectType" not-null="true" />
+      <property name="CkUnique" />
+    </join>
+  </class>
+</hibernate-mapping>

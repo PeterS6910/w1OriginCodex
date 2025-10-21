@@ -1,0 +1,4753 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="NCASClientFormlabel1" xml:space="preserve">
+    <value>Testovanie</value>
+  </data>
+  <data name="NCASClientFormNCASClientForm" xml:space="preserve">
+    <value>Plugin formulár</value>
+  </data>
+  <data name="NCASClientFormlabel2" xml:space="preserve">
+    <value>SK Test</value>
+  </data>
+  <data name="NCASCardReadersFormNCASCardReadersForm" xml:space="preserve">
+    <value>Snímače kariet</value>
+  </data>
+  <data name="ColumnDescription" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="ColumnName" xml:space="preserve">
+    <value>Názov</value>
+  </data>
+  <data name="ErrorUsedCardReaderName" xml:space="preserve">
+    <value>Názov snímača kariet je už použitý.</value>
+  </data>
+  <data name="SecurityLevelStates_CARD" xml:space="preserve">
+    <value>Karta</value>
+  </data>
+  <data name="SecurityLevelStates_CARDPIN" xml:space="preserve">
+    <value>Karta + PIN</value>
+  </data>
+  <data name="SecurityLevelStates_GIN" xml:space="preserve">
+    <value>GIN</value>
+  </data>
+  <data name="SecurityLevelStates_Locked" xml:space="preserve">
+    <value>Zamknutý</value>
+  </data>
+  <data name="SecurityLevelStates_SecurityTimeZoneSecurityDailyPlan" xml:space="preserve">
+    <value>Bezpeč. časová zóna / denný plán</value>
+  </data>
+  <data name="SecurityLevelStates_ToggleCard" xml:space="preserve">
+    <value>Preklápacia karta</value>
+  </data>
+  <data name="SecurityLevelStates_ToggleCardPIN" xml:space="preserve">
+    <value>Preklápacia karta + PIN</value>
+  </data>
+  <data name="SecurityLevelStates_Unlocked" xml:space="preserve">
+    <value>Odomknutý</value>
+  </data>
+  <data name="CardReaderEditFormInsertText" xml:space="preserve">
+    <value>Vytvorenie snímača kariet</value>
+  </data>
+  <data name="ErrorGetValuesFailed" xml:space="preserve">
+    <value>Chyba pri čítaní dát z formulára</value>
+  </data>
+  <data name="ErrorInsertCardReader" xml:space="preserve">
+    <value>Vloženie snímača kariet zlyhalo.</value>
+  </data>
+  <data name="ErrorInsertCardReaderName" xml:space="preserve">
+    <value>Zadajte názov snímača kariet</value>
+  </data>
+  <data name="ErrorInsertSecTimeZoneSecDailyPlan" xml:space="preserve">
+    <value>Zadajte bezpecnostnú časovú zónu alebo bezpočnostný denný plán.</value>
+  </data>
+  <data name="ErrorInsertEmergencyCode" xml:space="preserve">
+    <value>Zadajte núdzový kód.</value>
+  </data>
+  <data name="ErrorInsertSecurityLevel" xml:space="preserve">
+    <value>Vyberte bezpečnostnú úroveň.</value>
+  </data>
+  <data name="ErrorSetValuesFailed" xml:space="preserve">
+    <value>Chyba pri nastavovaní dát do formulára</value>
+  </data>
+  <data name="ErrorUpdateCardReader" xml:space="preserve">
+    <value>Editovanie snímača kariet zlyhalo.</value>
+  </data>
+  <data name="ErrorWrongEmergencyCodeLength" xml:space="preserve">
+    <value>Dĺžka núdzového kódu musí byť od {0} do {1} znakov.</value>
+  </data>
+  <data name="ErrorWrongGinLength" xml:space="preserve">
+    <value>Dĺžka GIN musí byť od 4 do 8 znakov.</value>
+  </data>
+  <data name="QuestionLoadActualData" xml:space="preserve">
+    <value>Editovaný objekt bol zmenený iným používateľom. Chcete načítať posledne uložené dáta? Neuložene zmeny budú stratené.</value>
+  </data>
+  <data name="CardReaderFormAddDailyPlan" xml:space="preserve">
+    <value>Nastaviť denný plán do snímača kariet?</value>
+  </data>
+  <data name="CardReaderFormAddObjectOnOff" xml:space="preserve">
+    <value>Nastaviť objekt do snímača kariet?</value>
+  </data>
+  <data name="DailyPlansFormDailyPlansForm" xml:space="preserve">
+    <value>Denné plány</value>
+  </data>
+  <data name="ErrorInsertForcedSecurityLevel" xml:space="preserve">
+    <value>Vyberte vynútenú bezpečnostnú úroveň</value>
+  </data>
+  <data name="ErrorInsertObjectOnOff" xml:space="preserve">
+    <value>Zadajte objekt so stavom On/Off</value>
+  </data>
+  <data name="ErrorWrongObjectType" xml:space="preserve">
+    <value>Nepodporovaný objekt.</value>
+  </data>
+  <data name="General_bAdd" xml:space="preserve">
+    <value>Pridať</value>
+  </data>
+  <data name="General_bCancel" xml:space="preserve">
+    <value>Zrušiť</value>
+  </data>
+  <data name="General_bCreate" xml:space="preserve">
+    <value>Vytvoriť</value>
+  </data>
+  <data name="General_bDelete" xml:space="preserve">
+    <value>Zmazať</value>
+  </data>
+  <data name="General_bEdit" xml:space="preserve">
+    <value>Editovať</value>
+  </data>
+  <data name="General_bFilterClear" xml:space="preserve">
+    <value>Zrušiť</value>
+  </data>
+  <data name="General_bInsert" xml:space="preserve">
+    <value>Vložiť</value>
+  </data>
+  <data name="General_bModify" xml:space="preserve">
+    <value>Zmeniť</value>
+  </data>
+  <data name="General_bOk" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="General_bRemove" xml:space="preserve">
+    <value>Zrušiť</value>
+  </data>
+  <data name="General_bRunFilter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="General_bSave" xml:space="preserve">
+    <value>Uložiť</value>
+  </data>
+  <data name="General_lDescription" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="General_lName" xml:space="preserve">
+    <value>Názov</value>
+  </data>
+  <data name="General_tpDescription" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="General_tbProperties" xml:space="preserve">
+    <value>Vlastnosti</value>
+  </data>
+  <data name="General_tpInformation" xml:space="preserve">
+    <value>Informácie</value>
+  </data>
+  <data name="General_tpSettings" xml:space="preserve">
+    <value>Nastavenia</value>
+  </data>
+  <data name="NCASCardReaderEditForm_chbEmergencyCode" xml:space="preserve">
+    <value>Núdzový kód</value>
+  </data>
+  <data name="NCASCardReaderEditForm_chbForcedSL" xml:space="preserve">
+    <value>Vynútená bezpečnostná úroveň</value>
+  </data>
+  <data name="NCASCardReaderEditForm_lDailyPlan" xml:space="preserve">
+    <value>Bezpeč. časová zóna / denný plán</value>
+  </data>
+  <data name="NCASCardReaderEditForm_lGin" xml:space="preserve">
+    <value>GIN</value>
+  </data>
+  <data name="NCASCardReaderEditForm_lObject" xml:space="preserve">
+    <value>Objekt On/Off</value>
+  </data>
+  <data name="NCASCardReaderEditForm_lSecurityLevel" xml:space="preserve">
+    <value>Bezpečnostná úroveň</value>
+  </data>
+  <data name="TimeZonesFormTimeZonesForm" xml:space="preserve">
+    <value>Časové zóny</value>
+  </data>
+  <data name="NCASCardReaderEditForm_chbAllowCardPin" xml:space="preserve">
+    <value>Povolená karta s PIN kódom</value>
+  </data>
+  <data name="NCASCardReaderEditFormNCASCardReaderEditForm" xml:space="preserve">
+    <value>Editovanie snímača kariet</value>
+  </data>
+  <data name="NCASCardReadersFormNCASCardReadersForm1" xml:space="preserve">
+    <value>Snímače kariet</value>
+  </data>
+  <data name="QuestionDeleteConfirm" xml:space="preserve">
+    <value>Zmazať záznam</value>
+  </data>
+  <data name="CCUEditFormAddTimeZone" xml:space="preserve">
+    <value>CCU nastavenie časovej zóny</value>
+  </data>
+  <data name="CcuEditFormInsertText" xml:space="preserve">
+    <value>Vytvorenie CCU</value>
+  </data>
+  <data name="ColumnIPAddress" xml:space="preserve">
+    <value>IP Adresa</value>
+  </data>
+  <data name="ErrorInsertCCU" xml:space="preserve">
+    <value>Vloženie CCU zlyhalo.</value>
+  </data>
+  <data name="ErrorInsertCcuName" xml:space="preserve">
+    <value>Názov CCU je nutné zadať.</value>
+  </data>
+  <data name="ErrorInsertIPAddress" xml:space="preserve">
+    <value>IP adresu je nutné zadať.</value>
+  </data>
+  <data name="ErrorUpdateCCU" xml:space="preserve">
+    <value>Editovanie CCU zlyhalo.</value>
+  </data>
+  <data name="ErrorUsedCCUName" xml:space="preserve">
+    <value>Názov CCU je už použitý.</value>
+  </data>
+  <data name="ErrorUsedIPAddress" xml:space="preserve">
+    <value>IP addresa je už použitá.</value>
+  </data>
+  <data name="General_bRefresh" xml:space="preserve">
+    <value>Obnoviť</value>
+  </data>
+  <data name="General_bReset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="General_bUpgrade" xml:space="preserve">
+    <value>Upgrade</value>
+  </data>
+  <data name="General_gbDevice" xml:space="preserve">
+    <value>Zariadenie</value>
+  </data>
+  <data name="General_gbFirmware" xml:space="preserve">
+    <value>Firmware</value>
+  </data>
+  <data name="General_lIPAddress" xml:space="preserve">
+    <value>IP adresa</value>
+  </data>
+  <data name="General_lLogicalAddress" xml:space="preserve">
+    <value>Logická adresa</value>
+  </data>
+  <data name="General_tpControl" xml:space="preserve">
+    <value>Riadenie</value>
+  </data>
+  <data name="NCASCCUEditFormNCASCCUEditForm" xml:space="preserve">
+    <value>Editovanie CCU</value>
+  </data>
+  <data name="NCASCCUEditForm_lHours" xml:space="preserve">
+    <value>Hodiny</value>
+  </data>
+  <data name="NCASCCUEditForm_lMinutes" xml:space="preserve">
+    <value>Minúty</value>
+  </data>
+  <data name="NCASCCUEditForm_lTimeShift" xml:space="preserve">
+    <value>Časový posun</value>
+  </data>
+  <data name="NCASCCUEditForm_lTimeZone" xml:space="preserve">
+    <value>Časová zóna</value>
+  </data>
+  <data name="CardReadersFormCardReadersForm" xml:space="preserve">
+    <value>Snímač kariet</value>
+  </data>
+  <data name="DcuEditFormInsertText" xml:space="preserve">
+    <value>Vytvorenie DCU</value>
+  </data>
+  <data name="DCUFormAddCardReader" xml:space="preserve">
+    <value>DCU pridanie snímača kariet</value>
+  </data>
+  <data name="ErrorInsertDCU" xml:space="preserve">
+    <value>Vytvorenie DCU zlyhalo.</value>
+  </data>
+  <data name="ErrorInsertDCUName" xml:space="preserve">
+    <value>Názov DCU je nutné zadať.</value>
+  </data>
+  <data name="ErrorUpdateDCU" xml:space="preserve">
+    <value>Editovanie DCU zlyhalo.</value>
+  </data>
+  <data name="ErrorUsedDCUName" xml:space="preserve">
+    <value>Názov DCU je už použitý.</value>
+  </data>
+  <data name="NCASCCUsFormNCASCCUsForm" xml:space="preserve">
+    <value>CCU</value>
+  </data>
+  <data name="NCASDCUEditFormNCASDCUEditForm" xml:space="preserve">
+    <value>Editovanie DCU </value>
+  </data>
+  <data name="NCASDCUEditForm_gbDoorsDelays" xml:space="preserve">
+    <value>Dverné oneskorenia</value>
+  </data>
+  <data name="NCASDCUEditForm_gbDoorsTimes" xml:space="preserve">
+    <value>Dverné časy</value>
+  </data>
+  <data name="NCASDCUEditForm_lCardReaders" xml:space="preserve">
+    <value>Snímače kariet</value>
+  </data>
+  <data name="NCASDCUEditForm_lInputCount" xml:space="preserve">
+    <value>Počet vstupov</value>
+  </data>
+  <data name="NCASDCUEditForm_lOutputCount" xml:space="preserve">
+    <value>Počet výstupov</value>
+  </data>
+  <data name="NCASDCUEditForm_lSuperiorCCU" xml:space="preserve">
+    <value>Nadradené CCU</value>
+  </data>
+  <data name="NCASDCUEditForm_lVersion" xml:space="preserve">
+    <value>Verzia</value>
+  </data>
+  <data name="NCASDCUEditForm_tpDoorsTiming" xml:space="preserve">
+    <value>Časovanie dverí</value>
+  </data>
+  <data name="NCASDCUsFormNCASDCUsForm" xml:space="preserve">
+    <value>DCU</value>
+  </data>
+  <data name="ConfirmRemoveCardReader" xml:space="preserve">
+    <value>Odobrať snímač kariet z DCU?</value>
+  </data>
+  <data name="ErrorRemoveCardReader" xml:space="preserve">
+    <value>Odobranie snímača kariet zlyhalo.</value>
+  </data>
+  <data name="ErrorAddCardReader" xml:space="preserve">
+    <value>Pridanie snímača kariet zlyhalo.</value>
+  </data>
+  <data name="NCASDCUEditForm_chbElectricStrikeImpulse" xml:space="preserve">
+    <value>Spínať impulzom</value>
+  </data>
+  <data name="NCASDCUEditForm_chbExtraElectricStrikeImpulse" xml:space="preserve">
+    <value>Spínať impulzom</value>
+  </data>
+  <data name="NCASDCUEditForm_gbActuators" xml:space="preserve">
+    <value>Aktivátory</value>
+  </data>
+  <data name="NCASDCUEditForm_gbSensors" xml:space="preserve">
+    <value>Senzory</value>
+  </data>
+  <data name="NCASDCUEditForm_lBypassAlarm" xml:space="preserve">
+    <value>Preklenutie alarmu</value>
+  </data>
+  <data name="NCASDCUEditForm_lElectricStrike" xml:space="preserve">
+    <value>Elektrický zámok</value>
+  </data>
+  <data name="NCASDCUEditForm_lExtraElectricStrike" xml:space="preserve">
+    <value>Extra elektrický zámok</value>
+  </data>
+  <data name="NCASDCUEditForm_lLockDoor" xml:space="preserve">
+    <value>Dvere zamknuté</value>
+  </data>
+  <data name="NCASDCUEditForm_lOpenDoor" xml:space="preserve">
+    <value>Dvere otvorené</value>
+  </data>
+  <data name="NCASDCUEditForm_lOpenDoorMax" xml:space="preserve">
+    <value>Dvere otvorené na maximum</value>
+  </data>
+  <data name="NCASDCUEditForm_tpApas" xml:space="preserve">
+    <value>APAS</value>
+  </data>
+  <data name="NCASDCUEditForm_tpInpupOutputSettings" xml:space="preserve">
+    <value>Nastavenie vstupov / výstupov</value>
+  </data>
+  <data name="DCUAddCardReader" xml:space="preserve">
+    <value>DCU pridanie snímača kariet</value>
+  </data>
+  <data name="InputCountText" xml:space="preserve">
+    <value>Vstup</value>
+  </data>
+  <data name="OutputCountText" xml:space="preserve">
+    <value>Výstup</value>
+  </data>
+  <data name="DCUSetCCU" xml:space="preserve">
+    <value>DCU nastaviť CCU</value>
+  </data>
+  <data name="General_bSet" xml:space="preserve">
+    <value>Nastaviť</value>
+  </data>
+  <data name="ErrorWrongIPAddress" xml:space="preserve">
+    <value>Zadajte správnu IP adresu.</value>
+  </data>
+  <data name="Access_Devices_Admin" xml:space="preserve">
+    <value>zariadenia - editovanie</value>
+  </data>
+  <data name="Access_Devices_View" xml:space="preserve">
+    <value>zariadenia - prezeranie</value>
+  </data>
+  <data name="NCASDCUEditForm_chbLockDoorBalanced" xml:space="preserve">
+    <value>Vyvážený</value>
+  </data>
+  <data name="NCASDCUEditForm_chbLockDoorInverted" xml:space="preserve">
+    <value>Invertovaný</value>
+  </data>
+  <data name="NCASDCUEditForm_chbOpenDoorBalanced" xml:space="preserve">
+    <value>Vyvážený</value>
+  </data>
+  <data name="NCASDCUEditForm_chbOpenDoorInverted" xml:space="preserve">
+    <value>Invertovaný</value>
+  </data>
+  <data name="NCASDCUEditForm_chbOpenMaxDoorBalanced" xml:space="preserve">
+    <value>Vyvážený</value>
+  </data>
+  <data name="NCASDCUEditForm_chbOpenMaxDoorInterder" xml:space="preserve">
+    <value>Invertovaný</value>
+  </data>
+  <data name="General_tpTimeSettings" xml:space="preserve">
+    <value>Časové nastavenia</value>
+  </data>
+  <data name="AccessControlListEditFormInsertText" xml:space="preserve">
+    <value>Vytváranie zoznamu prístupových práv</value>
+  </data>
+  <data name="ColumnCardReaderObject" xml:space="preserve">
+    <value>Objekt pre snímač kariet</value>
+  </data>
+  <data name="ColumnstrDisabled" xml:space="preserve">
+    <value>Zablokovaný</value>
+  </data>
+  <data name="ColumnTimeZone" xml:space="preserve">
+    <value>Časová zóna</value>
+  </data>
+  <data name="ErrorEntryACLName" xml:space="preserve">
+    <value>Názov zoznamu prístupových práv musí byť zadaný</value>
+  </data>
+  <data name="ErrorEntryCardReader" xml:space="preserve">
+    <value>Snímač kariet musí byť zadaný</value>
+  </data>
+  <data name="ErrorUsedACLName" xml:space="preserve">
+    <value>Tento názov zoznamu prístupových práv je už použitý</value>
+  </data>
+  <data name="ErrorUsedCardReaderAndTimeZone" xml:space="preserve">
+    <value>Objekt pre snímač kariet v kombinácii s touto časovou zónou je už vložený</value>
+  </data>
+  <data name="General_bUpdate" xml:space="preserve">
+    <value>Uložiť zmeny</value>
+  </data>
+  <data name="NCASAccessControlListEditFormNCASAccessControlListEditForm" xml:space="preserve">
+    <value>Editácia zoznamu prístupových práv</value>
+  </data>
+  <data name="NCASAccessControlListEditForm_bCancelEdit" xml:space="preserve">
+    <value>Ukončiť editáciu</value>
+  </data>
+  <data name="NCASAccessControlListEditForm_cbDisabled" xml:space="preserve">
+    <value>Zablokovaný</value>
+  </data>
+  <data name="NCASAccessControlListEditForm_lCardReader" xml:space="preserve">
+    <value>Objekt pre snímač kariet</value>
+  </data>
+  <data name="NCASAccessControlListEditForm_lTimeZone" xml:space="preserve">
+    <value>Časová zóna</value>
+  </data>
+  <data name="NCASAccessControlListsFormNCASAccessControlListsForm" xml:space="preserve">
+    <value>Zoznamy prístupových práv</value>
+  </data>
+  <data name="QuestionAddCardReader" xml:space="preserve">
+    <value>Vložiť kortový snímač</value>
+  </data>
+  <data name="QuestionAddTimeZone" xml:space="preserve">
+    <value>Vložiť časovú zónu</value>
+  </data>
+  <data name="QuestionRemoveTimeZone" xml:space="preserve">
+    <value>Vymazať časovú zónu</value>
+  </data>
+  <data name="ErrorInsertInputName" xml:space="preserve">
+    <value>Zadajte názov DCU vstupu.</value>
+  </data>
+  <data name="ErrorSelectDIBSIState" xml:space="preserve">
+    <value>Vyberte typ vstupu DI/BSI</value>
+  </data>
+  <data name="ErrorUsedInputName" xml:space="preserve">
+    <value>Názov vstupu je už použitý.</value>
+  </data>
+  <data name="InputEditFormInsertText" xml:space="preserve">
+    <value>Vytvorenie DCU vstupu</value>
+  </data>
+  <data name="InputFormAddPresentationGroup" xml:space="preserve">
+    <value>Nastaviť prezentačnú skupinu DCU vstupu?</value>
+  </data>
+  <data name="NCASInputEditFormNCASInputEditForm" xml:space="preserve">
+    <value>Editovanie DCU vstupu</value>
+  </data>
+  <data name="NCASInputEditForm_chbHighPriority" xml:space="preserve">
+    <value>Vysoká priorita</value>
+  </data>
+  <data name="NCASInputEditForm_chbInverted" xml:space="preserve">
+    <value>Invertovaný</value>
+  </data>
+  <data name="NCASInputEditForm_chbOffACK" xml:space="preserve">
+    <value>Off ACK</value>
+  </data>
+  <data name="NCASInputEditForm_gbAlarmPresentationGroup" xml:space="preserve">
+    <value>Prezentačná skupina alarmu</value>
+  </data>
+  <data name="NCASInputEditForm_gbAlarmTimening" xml:space="preserve">
+    <value>Časovanie alarmov</value>
+  </data>
+  <data name="NCASInputEditForm_gbInputType" xml:space="preserve">
+    <value>Typ vstupu</value>
+  </data>
+  <data name="NCASInputEditForm_gbTamperDelay" xml:space="preserve">
+    <value>Oneskorenie</value>
+  </data>
+  <data name="NCASInputEditForm_gbTamperPresentationGroup" xml:space="preserve">
+    <value>Prezentačná skupina sabotážneho alarmu</value>
+  </data>
+  <data name="NCASInputEditForm_lNickName" xml:space="preserve">
+    <value>Skrátená prezývka</value>
+  </data>
+  <data name="NCASInputEditForm_lStatusActivation" xml:space="preserve">
+    <value>Stav aktivácie</value>
+  </data>
+  <data name="NCASInputEditForm_lStatusOnOff" xml:space="preserve">
+    <value>Stav On / Off</value>
+  </data>
+  <data name="NCASInputEditForm_rbBSI" xml:space="preserve">
+    <value>BSI</value>
+  </data>
+  <data name="NCASInputEditForm_rbDI" xml:space="preserve">
+    <value>DI</value>
+  </data>
+  <data name="NCASDCUEditForm_gbInputDCU" xml:space="preserve">
+    <value>DCU vstupy</value>
+  </data>
+  <data name="NCASInputEditForm_tpAlarmSettings" xml:space="preserve">
+    <value>Nastavenia alarmov</value>
+  </data>
+  <data name="NCASInputEditForm_tpTamper" xml:space="preserve">
+    <value>Tamper</value>
+  </data>
+  <data name="General_False" xml:space="preserve">
+    <value>Nie</value>
+  </data>
+  <data name="General_True" xml:space="preserve">
+    <value>Áno</value>
+  </data>
+  <data name="ColumnStatusActivated" xml:space="preserve">
+    <value>Stav aktivácie</value>
+  </data>
+  <data name="ColumnStatusOnOff" xml:space="preserve">
+    <value>Stav On/Off</value>
+  </data>
+  <data name="NCASInputEditForm_DelayToOf" xml:space="preserve">
+    <value>Oneskorenie do vypnutia</value>
+  </data>
+  <data name="NCASInputEditForm_lDelayToOn" xml:space="preserve">
+    <value>Oneskorenie do zapnutia</value>
+  </data>
+  <data name="NCASCardReaderEditForm_bLastUsedcard" xml:space="preserve">
+    <value>Posledná karta</value>
+  </data>
+  <data name="NCASCardReaderEditForm_gbLastCard" xml:space="preserve">
+    <value>Posledná použitá karta</value>
+  </data>
+  <data name="NCASCardReaderEditForm_lFirmware" xml:space="preserve">
+    <value>Verzia firmwaru</value>
+  </data>
+  <data name="NCASCardReaderEditForm_lOpenCR" xml:space="preserve">
+    <value>Stav otvorenia snímača kariet</value>
+  </data>
+  <data name="NCASCardReaderEditForm_lStatusCR" xml:space="preserve">
+    <value>Stav snímača kariet</value>
+  </data>
+  <data name="NCASCardReaderEditForm_lTypeCR" xml:space="preserve">
+    <value>Typ snímača kariet</value>
+  </data>
+  <data name="ErrorInsertAnotherInputName" xml:space="preserve">
+    <value>Názov môže spôsobiť kolíziu, použite iný</value>
+  </data>
+  <data name="ColumnAccessControlList" xml:space="preserve">
+    <value>Zoznam prístupových práv</value>
+  </data>
+  <data name="ColumnDateFrom" xml:space="preserve">
+    <value>Dátum od</value>
+  </data>
+  <data name="ColumnDateTo" xml:space="preserve">
+    <value>Dátum do</value>
+  </data>
+  <data name="ColumnState" xml:space="preserve">
+    <value>Stav</value>
+  </data>
+  <data name="ColumnstrSecurityLevel" xml:space="preserve">
+    <value>Bezpečnostná úroveň</value>
+  </data>
+  <data name="ErrorDateToGreaterThanDateFrom" xml:space="preserve">
+    <value>Dátum do musí byť väčší alebo rovný ako dútum od</value>
+  </data>
+  <data name="ErrorEntryAccessControlList" xml:space="preserve">
+    <value>Zadajte zoznam prístupových práv</value>
+  </data>
+  <data name="ErrorUsedAccessControlListPerson" xml:space="preserve">
+    <value>Užívateľ už má pridelený tento zoznam prístupových práv</value>
+  </data>
+  <data name="General_bCancelEdit" xml:space="preserve">
+    <value>Ukončiť editáciu</value>
+  </data>
+  <data name="NCASACLPersonEditFormAddAccessControlList" xml:space="preserve">
+    <value>Vložíť zoznam prístupových práv</value>
+  </data>
+  <data name="Offline" xml:space="preserve">
+    <value>Odpojený</value>
+  </data>
+  <data name="Online" xml:space="preserve">
+    <value>Pripojený</value>
+  </data>
+  <data name="QuestionInsertACLPerson" xml:space="preserve">
+    <value>Pridať zoznam prístupových práv pre tohto užívateľa ?</value>
+  </data>
+  <data name="QuestionUpdateACLPerson" xml:space="preserve">
+    <value>Uložíť zmeny</value>
+  </data>
+  <data name="_lAccessControlList" xml:space="preserve">
+    <value>Zoznam prístupových práv</value>
+  </data>
+  <data name="_lDateFrom" xml:space="preserve">
+    <value>Dátum od</value>
+  </data>
+  <data name="_lDateTo" xml:space="preserve">
+    <value>Dátum do</value>
+  </data>
+  <data name="OutputTypes_frequency" xml:space="preserve">
+    <value>Frekvenčný</value>
+  </data>
+  <data name="OutputTypes_pulsed" xml:space="preserve">
+    <value>Impulzný</value>
+  </data>
+  <data name="OutputTypes_level" xml:space="preserve">
+    <value>Úrovňový</value>
+  </data>
+  <data name="DoorEnvironmentTypes_Rotating" xml:space="preserve">
+    <value>Rotátory / Dvojsmerové</value>
+  </data>
+  <data name="DoorEnvironmentTypes_Standard" xml:space="preserve">
+    <value>Štandard</value>
+  </data>
+  <data name="ErrorInsertOutputName" xml:space="preserve">
+    <value>Názov výstupu je nutné zadať.</value>
+  </data>
+  <data name="NCASOutputEditFormNCASOutputEditForm" xml:space="preserve">
+    <value>Editovanie DCU výstupu</value>
+  </data>
+  <data name="NCASOutputEditForm_chbForcedToOff" xml:space="preserve">
+    <value>Vynútené</value>
+  </data>
+  <data name="NCASOutputEditForm_gbAlarmPresentationGroup" xml:space="preserve">
+    <value>Prezentačná skupina alarmu</value>
+  </data>
+  <data name="NCASOutputEditForm_gbAlarmTimening" xml:space="preserve">
+    <value>Časovanie alarmov</value>
+  </data>
+  <data name="NCASOutputEditForm_lAdditionalImpulseLength" xml:space="preserve">
+    <value>Dodatočná dĺžka impulzu</value>
+  </data>
+  <data name="NCASOutputEditForm_lDelayToOff" xml:space="preserve">
+    <value>Oneskorenie do vypnutia</value>
+  </data>
+  <data name="NCASOutputEditForm_lDelayToOn" xml:space="preserve">
+    <value>Oneskorenie do zapnutia</value>
+  </data>
+  <data name="NCASOutputEditForm_lSettingsDelayToOff" xml:space="preserve">
+    <value>Trvanie do vypnutia</value>
+  </data>
+  <data name="NCASOutputEditForm_lSettingsDelayToOn" xml:space="preserve">
+    <value>Trvanie do zapnutia</value>
+  </data>
+  <data name="NCASOutputEditForm_lOutputType" xml:space="preserve">
+    <value>Typ výstupu</value>
+  </data>
+  <data name="NCASOutputEditForm_tpAlarmSettings" xml:space="preserve">
+    <value>Alarmové nastavenia</value>
+  </data>
+  <data name="NCASOutputEditForm_tpSettings" xml:space="preserve">
+    <value>Nastavenia</value>
+  </data>
+  <data name="OutputEditFormInsertText" xml:space="preserve">
+    <value>Vytvorenie DCU výstupu</value>
+  </data>
+  <data name="ErrorInsertElectricStrikeOpposite" xml:space="preserve">
+    <value>Electric strike opposite must be selected</value>
+  </data>
+  <data name="NCASDCUEditForm_chbElectricStrikeOppositeImpulse" xml:space="preserve">
+    <value>Spínať impulzom</value>
+  </data>
+  <data name="NCASDCUEditForm_chbExtraElectricStrikeOppositeImpulse" xml:space="preserve">
+    <value>Spínať impulzom</value>
+  </data>
+  <data name="NCASDCUEditForm_lDoorEnvironment" xml:space="preserve">
+    <value>Zariadenie dvier</value>
+  </data>
+  <data name="NCASDCUEditForm_lElectricStrikeOpposite" xml:space="preserve">
+    <value>Elektrický zámok obrátený</value>
+  </data>
+  <data name="NCASDCUEditForm_lExtraElectricStrikeOpposite" xml:space="preserve">
+    <value>Extra elektrický zámok obrátený</value>
+  </data>
+  <data name="NCASSecurityDailyPlanEditFormInsertText" xml:space="preserve">
+    <value>Vytvorenie bezpečnostného denného plánu</value>
+  </data>
+  <data name="NCASSecurityDailyPlansFormNCASSecurityDailyPlansForm" xml:space="preserve">
+    <value>Bezpečnostné denné plány</value>
+  </data>
+  <data name="ErrorSelectControledObject" xml:space="preserve">
+    <value>Zadajte objekt riadenia výstupu.</value>
+  </data>
+  <data name="ErrorSelectOutputControlType" xml:space="preserve">
+    <value>Zvoľte riadenie výstupu.</value>
+  </data>
+  <data name="NCASOutputEditForm_gbControlObject" xml:space="preserve">
+    <value>Objekt riadenia výstupu</value>
+  </data>
+  <data name="NCASOutputEditForm_lCcuName" xml:space="preserve">
+    <value>Názov CCU</value>
+  </data>
+  <data name="NCASOutputEditForm_lControlType" xml:space="preserve">
+    <value>Typ riadenia výstupu</value>
+  </data>
+  <data name="NCASOutputEditForm_lDcuName" xml:space="preserve">
+    <value>DCU</value>
+  </data>
+  <data name="NCASOutputEditForm_tpOutputControl" xml:space="preserve">
+    <value>Riadenie výstupu</value>
+  </data>
+  <data name="OutputControlTypes_controledByDoorEnvironment" xml:space="preserve">
+    <value>Riadený dverným automatom</value>
+  </data>
+  <data name="OutputControlTypes_controledByObject" xml:space="preserve">
+    <value>Riadený objektom</value>
+  </data>
+  <data name="OutputControlTypes_forcedOn" xml:space="preserve">
+    <value>Vnútený (ON)</value>
+  </data>
+  <data name="OutputControlTypes_manualBlocked" xml:space="preserve">
+    <value>Manuálne blokovaný</value>
+  </data>
+  <data name="OutputControlTypes_unblocked" xml:space="preserve">
+    <value>Neblokovaný</value>
+  </data>
+  <data name="NCASAlarmAreasFormNCASAlarmAreasForm" xml:space="preserve">
+    <value>Alarmové zóny</value>
+  </data>
+  <data name="NCASSecurityTimeZonesFormNCASSecurityTimeZonesForm" xml:space="preserve">
+    <value>Bezpečnostné časové zóny</value>
+  </data>
+  <data name="ErrorInsertSecurityDailyPlanName" xml:space="preserve">
+    <value>Zadajte názov bezpečnostného denného plánu.</value>
+  </data>
+  <data name="ErrorUsedSecurityDailyPlanName" xml:space="preserve">
+    <value>Názov bezpečnostného denného plánu je už použitý, zvoľte iný.</value>
+  </data>
+  <data name="NCASSecurityDailyPlanEditForm_gbInfo" xml:space="preserve">
+    <value>Nastavenie farieb</value>
+  </data>
+  <data name="NCASSecurityDailyPlanEditForm_lCard" xml:space="preserve">
+    <value>Karta</value>
+  </data>
+  <data name="NCASSecurityDailyPlanEditForm_lCardPin" xml:space="preserve">
+    <value>Karta + PIN</value>
+  </data>
+  <data name="NCASSecurityDailyPlanEditForm_lGin" xml:space="preserve">
+    <value>Gin</value>
+  </data>
+  <data name="NCASSecurityDailyPlanEditForm_lLocked" xml:space="preserve">
+    <value>Zamknuté</value>
+  </data>
+  <data name="NCASSecurityDailyPlanEditForm_lMouse" xml:space="preserve">
+    <value>Tlačidlá myš</value>
+  </data>
+  <data name="NCASSecurityDailyPlanEditForm_lSchedule" xml:space="preserve">
+    <value>Plán</value>
+  </data>
+  <data name="NCASSecurityDailyPlanEditForm_lSelectHour" xml:space="preserve">
+    <value>Hodiny</value>
+  </data>
+  <data name="NCASSecurityDailyPlanEditForm_lToggleCard" xml:space="preserve">
+    <value>Preklápacia karta</value>
+  </data>
+  <data name="NCASSecurityDailyPlanEditForm_lToggleCardPin" xml:space="preserve">
+    <value>Preklápacia karta + PIN</value>
+  </data>
+  <data name="NCASSecurityDailyPlanEditForm_lUnlocked" xml:space="preserve">
+    <value>Odomknuté</value>
+  </data>
+  <data name="NCASSecurityDailyPlanEditForm_tpSchedule" xml:space="preserve">
+    <value>Plán</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditFormAddCalendar" xml:space="preserve">
+    <value>Pridať kalendár do časovej zóny?</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditFormAddDailyPlan" xml:space="preserve">
+    <value>Pridat denný plán</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditForm_bCalendar" xml:space="preserve">
+    <value>Kalendár</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditForm_bCancelEdit" xml:space="preserve">
+    <value>Zrušiť editáciu</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditForm_bCreateDateSetting" xml:space="preserve">
+    <value>Vytvoriť dátumové nastavenie</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditForm_bUpdateDateSetting" xml:space="preserve">
+    <value>Uložiť zmeny v dátumovom nastavení</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditForm_lCalendar" xml:space="preserve">
+    <value>Kalendár</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditForm_lSecurityDailyPlan" xml:space="preserve">
+    <value>Bezpečnostný denný plán</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditForm_lDate" xml:space="preserve">
+    <value>Dátum</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditForm_lDay" xml:space="preserve">
+    <value>Deň</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditForm_lDescriptionDateSettings" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditForm_lMonth" xml:space="preserve">
+    <value>Mesiac</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditForm_lName" xml:space="preserve">
+    <value>Názov</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditForm_lStatus" xml:space="preserve">
+    <value>Stav</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditForm_lWeek" xml:space="preserve">
+    <value>Týždeň</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditForm_lYear" xml:space="preserve">
+    <value>Rok</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditForm_tbDailyStatus" xml:space="preserve">
+    <value>Denné stavy</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditForm_tbDateSettings" xml:space="preserve">
+    <value>Dátumové nastavenia</value>
+  </data>
+  <data name="NCASSecurityTimeZonesForm_lDescriptionFilter" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="NCASSecurityTimeZonesForm_lNameFilter" xml:space="preserve">
+    <value>Názov</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditFormAddSecurityDailyPlan" xml:space="preserve">
+    <value>Pridat bezpečnostný denný plán?</value>
+  </data>
+  <data name="ColumnUnconditionalSet" xml:space="preserve">
+    <value>Bezpodmienečná aktivácia a. z.</value>
+  </data>
+  <data name="ColumnAASet" xml:space="preserve">
+    <value>Aktivovanie a. z.</value>
+  </data>
+  <data name="ColumnPermanentlyUnlock" xml:space="preserve">
+    <value>Implicitný člen</value>
+  </data>
+  <data name="ColumnShortName" xml:space="preserve">
+    <value>Skrátené meno</value>
+  </data>
+  <data name="ColumnAAUnset" xml:space="preserve">
+    <value>Deaktivovanie a.z</value>
+  </data>
+  <data name="ErrorAddAreaInput" xml:space="preserve">
+    <value>Chyba pri vkladaní čidla alarmovej zóny</value>
+  </data>
+  <data name="ErrorAreaInputAlreadyInList" xml:space="preserve">
+    <value>Toto čidlo zóny je už vložené</value>
+  </data>
+  <data name="ErrorCardReaderAlreadyInAlarmArea" xml:space="preserve">
+    <value>Tento snímač kariet je už vložený do alarmovej zóny</value>
+  </data>
+  <data name="ErrorDeleteAreaInput" xml:space="preserve">
+    <value>Chyba pri vymazávaní čidla alarmovej zóny</value>
+  </data>
+  <data name="ErrorUsedAlarmAreaName" xml:space="preserve">
+    <value>Tento názov alarmovej zóny je už použitý</value>
+  </data>
+  <data name="General_bUnset" xml:space="preserve">
+    <value>Vymazať</value>
+  </data>
+  <data name="General_lActualState" xml:space="preserve">
+    <value>Aktuálny stav</value>
+  </data>
+  <data name="General_lShortName" xml:space="preserve">
+    <value>Skrátené meno</value>
+  </data>
+  <data name="General_tpAlarmSettings" xml:space="preserve">
+    <value>Alarmové nastavenia</value>
+  </data>
+  <data name="General_tpBasicSettings" xml:space="preserve">
+    <value>Základné nastavenia</value>
+  </data>
+  <data name="General_tpBasicTiming" xml:space="preserve">
+    <value>Základné časovnia</value>
+  </data>
+  <data name="NCASAlaramAreaEditFormAddAreaInput" xml:space="preserve">
+    <value>Vložiť čidlo alarmovej zóny</value>
+  </data>
+  <data name="NCASAlaramAreaEditFormAddCardReader" xml:space="preserve">
+    <value>Vložíť snímač kariet</value>
+  </data>
+  <data name="NCASAlaramAreaEditFormAddObjAutomaticAct" xml:space="preserve">
+    <value>Vložiť objekt pre automatickú aktiváciu</value>
+  </data>
+  <data name="NCASAlaramAreaEditFormAddPresentationGroup" xml:space="preserve">
+    <value>Vložiť prezentačnú skupinu</value>
+  </data>
+  <data name="NCASAlarmAreaEditFormDeleteAreaInputConfirm" xml:space="preserve">
+    <value>Vymazať čidlo alarmovej zóny</value>
+  </data>
+  <data name="NCASAlarmAreaEditFormInsertText" xml:space="preserve">
+    <value>Vytvorenie alarmovej zóny</value>
+  </data>
+  <data name="NCASAlarmAreaEditFormNCASAlarmAreaEditForm" xml:space="preserve">
+    <value>Editovanie alarmovej zóny</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_bAlarmAreaUnconditionalSet" xml:space="preserve">
+    <value>Bezpodmienečné aktivovanie</value>
+  </data>
+  <data name="General_cbUnconditionalSet" xml:space="preserve">
+    <value>Bezpodmienečná aktivácia a. z.</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_cbAcknowledgeOFF" xml:space="preserve">
+    <value>Vyptnúť potvrdzovanie</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_cbAutomaticDeactivate" xml:space="preserve">
+    <value>Automatická deaktívacia keď objekt prejde do OFF stavu</value>
+  </data>
+  <data name="General_cbAlarmAreaSet" xml:space="preserve">
+    <value>Aktivovanie a. z.</value>
+  </data>
+  <data name="General_cbPermanentlyUnlock" xml:space="preserve">
+    <value>Vždy odomknutý</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_cbPrealamOn" xml:space="preserve">
+    <value>Zapnutý</value>
+  </data>
+  <data name="General_cbAlarmAreaUnset" xml:space="preserve">
+    <value>Deaktivovanie a. z.</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_gbAreaInputs" xml:space="preserve">
+    <value>Čidla zóny</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_gbCardReaders" xml:space="preserve">
+    <value>Snímače kariet</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_gbObjAutomaticAct" xml:space="preserve">
+    <value>Objekt pre automatickú aktiváciu</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_gbPrealarm" xml:space="preserve">
+    <value>Varovanie pred alarmom</value>
+  </data>
+  <data name="General_lPresentationGroup" xml:space="preserve">
+    <value>Prezentačná skupina</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_lTemporaryUnsetExitDuration" xml:space="preserve">
+    <value>Doba deaktivácie alarmu pri aktivácii zóny</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_lTimeBuyingDuration" xml:space="preserve">
+    <value>Doba nakúpu času</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_lTemporaryUnsetEntryDuration" xml:space="preserve">
+    <value>Doba varovania pred spustením alarmu</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_rbDailyPlan" xml:space="preserve">
+    <value>Denný plán</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_rbInput" xml:space="preserve">
+    <value>DI/BSI</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_rbOutput" xml:space="preserve">
+    <value>DO</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_rbTimeZone" xml:space="preserve">
+    <value>Časová zóna</value>
+  </data>
+  <data name="NCASInputsFormNCASInputsForm" xml:space="preserve">
+    <value>Vstupy</value>
+  </data>
+  <data name="NCASOutputsFormNCASOutputsForm" xml:space="preserve">
+    <value>Výstupy</value>
+  </data>
+  <data name="ColumnstrDay" xml:space="preserve">
+    <value>Deň</value>
+  </data>
+  <data name="ColumnstrDayType" xml:space="preserve">
+    <value>Typ dňa</value>
+  </data>
+  <data name="ColumnstrMonth" xml:space="preserve">
+    <value>Mesiac</value>
+  </data>
+  <data name="ColumnSecurityDailyPlan" xml:space="preserve">
+    <value>Bezp. denný plán</value>
+  </data>
+  <data name="ColumnStringState" xml:space="preserve">
+    <value>Stav</value>
+  </data>
+  <data name="ColumnstrWeek" xml:space="preserve">
+    <value>Týždeň</value>
+  </data>
+  <data name="ColumnstrYear" xml:space="preserve">
+    <value>Rok</value>
+  </data>
+  <data name="General_tpProperties" xml:space="preserve">
+    <value>Vlastnosti</value>
+  </data>
+  <data name="SecurityTimeZonesEditFormInsertText" xml:space="preserve">
+    <value>Vytvorenie bezpečnostnej časovej zóny</value>
+  </data>
+  <data name="ErrorAlarmaAreaAlreadyInCardReader" xml:space="preserve">
+    <value>Táto alarmová zóna je už pridanú tomuto čitaču kariet</value>
+  </data>
+  <data name="ErrorEntryAlarmArea" xml:space="preserve">
+    <value>Zadajte alarmovú zónu</value>
+  </data>
+  <data name="General_tpAlarmAreas" xml:space="preserve">
+    <value>Alarmové zóny</value>
+  </data>
+  <data name="NCASAlaramAreaEditFormListObjectForAutomaticActivationText" xml:space="preserve">
+    <value>Objekty pre automatickú aktiváciu</value>
+  </data>
+  <data name="NCASCardReaderEditFormAddAlarmArea" xml:space="preserve">
+    <value>Vložiť alarmovú zónu</value>
+  </data>
+  <data name="AlarmAreaActivationStates_Set" xml:space="preserve">
+    <value>Aktivovaná</value>
+  </data>
+  <data name="AlarmAreaActivationStates_Unset" xml:space="preserve">
+    <value>Deaktivovaná</value>
+  </data>
+  <data name="AlarmAreaActivationStates_UnsetBoughtTime" xml:space="preserve">
+    <value>Deaktivovaná nákupom času</value>
+  </data>
+  <data name="AlarmAreaActualStates_Alarm" xml:space="preserve">
+    <value>Alarm</value>
+  </data>
+  <data name="AlarmAreaActualStates_Normal" xml:space="preserve">
+    <value>Normálny</value>
+  </data>
+  <data name="AlarmAreaActivationStates_Prewarning" xml:space="preserve">
+    <value>Varovanie pred aktiváciou</value>
+  </data>
+  <data name="AlarmAreaActivationStates_TemporaryUnsetEntry" xml:space="preserve">
+    <value>Varovanie pred spustením alarmu</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_lActivationState" xml:space="preserve">
+    <value>Aktivačný stav</value>
+  </data>
+  <data name="NCASSecurityTimeZoneCalendarChangeForm_bNewCalendar" xml:space="preserve">
+    <value>Nový kalendár</value>
+  </data>
+  <data name="NCASSecurityTimeZoneCalendarChangeForm_bOldCalendar" xml:space="preserve">
+    <value>Pôvodný kalendár</value>
+  </data>
+  <data name="NCASSecurityTimeZoneCalendarChangeForm_lInfo" xml:space="preserve">
+    <value>Kalendár neobsahuje nasledovné typy dní:</value>
+  </data>
+  <data name="QuestionSetNewCalendar" xml:space="preserve">
+    <value>Nastaviť bezpečnostnej časovej zóne nový kalendár?</value>
+  </data>
+  <data name="QuestionSetOldCalendar" xml:space="preserve">
+    <value>Ponechať pôvodný kalendár pre bezpečnostnú časovú zónu?</value>
+  </data>
+  <data name="card" xml:space="preserve">
+    <value>Karta</value>
+  </data>
+  <data name="cardpin" xml:space="preserve">
+    <value>Karta + PIN</value>
+  </data>
+  <data name="gin" xml:space="preserve">
+    <value>GIN</value>
+  </data>
+  <data name="locked" xml:space="preserve">
+    <value>Zamknutá</value>
+  </data>
+  <data name="togglecard" xml:space="preserve">
+    <value>Preklápacia karta</value>
+  </data>
+  <data name="togglecardpin" xml:space="preserve">
+    <value>Preklápacia karta + PIN</value>
+  </data>
+  <data name="unlocked" xml:space="preserve">
+    <value>Odomknutá</value>
+  </data>
+  <data name="NCASOutputEditFormListObjectForAutomaticActivationText" xml:space="preserve">
+    <value>On/Off objekt</value>
+  </data>
+  <data name="OutputDCUAddObjectOnOff" xml:space="preserve">
+    <value>Nastaviť on/off objekt pre DCU výstup?</value>
+  </data>
+  <data name="NCASExpressionsFormNCASExpressionsForm" xml:space="preserve">
+    <value>Logické výrazy</value>
+  </data>
+  <data name="ErrorInsertExpressionName" xml:space="preserve">
+    <value>Zadajte názov výrazu.</value>
+  </data>
+  <data name="ErrorInsertLogicalExpression" xml:space="preserve">
+    <value>Logický výraz je nutné zadať.</value>
+  </data>
+  <data name="ErrorUsedExpressionName" xml:space="preserve">
+    <value>Názov logického výrazu je už použitý.</value>
+  </data>
+  <data name="ErrorWrongLogicalExpression" xml:space="preserve">
+    <value>Logický výraz nie je správny.</value>
+  </data>
+  <data name="ExpressionEditFormInsertText" xml:space="preserve">
+    <value>Vytvorenie výrazu</value>
+  </data>
+  <data name="ExpressionFormAddPresentationGroup" xml:space="preserve">
+    <value>Nastaviť prezentačnú skupinu pre výraz?</value>
+  </data>
+  <data name="NCASExpressionEditFormNCASExpressionEditForm" xml:space="preserve">
+    <value>Logický výraz</value>
+  </data>
+  <data name="NCASExpressionEditForm_gbAlarmPresentationGroup" xml:space="preserve">
+    <value>Prezentačná skupina alarmu</value>
+  </data>
+  <data name="NCASExpressionEditForm_gbTimeSettings" xml:space="preserve">
+    <value>Časové nastavenia</value>
+  </data>
+  <data name="NCASExpressionEditForm_lDelayToOff" xml:space="preserve">
+    <value>Zdržanie do zapnutia</value>
+  </data>
+  <data name="NCASExpressionEditForm_lDelayToOn" xml:space="preserve">
+    <value>Zdržanie do vypnutia</value>
+  </data>
+  <data name="NCASExpressionEditForm_lStatus" xml:space="preserve">
+    <value>Stav</value>
+  </data>
+  <data name="NCASExpressionEditForm_tpAlarmSettings" xml:space="preserve">
+    <value>Alarmové nastavenia</value>
+  </data>
+  <data name="NCASExpressionEditForm_tpBaseSettings" xml:space="preserve">
+    <value>Základné nastavenia</value>
+  </data>
+  <data name="NCASExpressionEditForm_tpLogicalExpression" xml:space="preserve">
+    <value>Logický výraz</value>
+  </data>
+  <data name="NCASExpressionEditForm_lFilter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="NCASExpressionEditForm_lType" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="General_cbFilterShowOnlySetAA" xml:space="preserve">
+    <value>Zobraziť iba alarmové zóny s definovanými právami</value>
+  </data>
+  <data name="General_gbFilterSettings" xml:space="preserve">
+    <value>Nastavenia filtra</value>
+  </data>
+  <data name="General_lAlarmAreasACK" xml:space="preserve">
+    <value>ACK</value>
+  </data>
+  <data name="General_lAlarmAreasAlarmAcknowledge" xml:space="preserve">
+    <value>Potvrdzovanie alarmov</value>
+  </data>
+  <data name="General_lAlarmAreasPermanentlyUnlock" xml:space="preserve">
+    <value>Vždy odomknutý</value>
+  </data>
+  <data name="General_lAlarmAreasSet" xml:space="preserve">
+    <value>Aktivovanie a. z.</value>
+  </data>
+  <data name="General_lAlarmAreasUnconditionalSet" xml:space="preserve">
+    <value>Bezpod. aktivácia</value>
+  </data>
+  <data name="General_lAlarmAreasUnset" xml:space="preserve">
+    <value>Deaktivovanie a. z.</value>
+  </data>
+  <data name="QuestionAddACLPerson" xml:space="preserve">
+    <value>Pridať tento zoznam prístupových práv s predvolenými nastaveniami</value>
+  </data>
+  <data name="QuestionAddACLSetting" xml:space="preserve">
+    <value>Pridať tento snímač kariet s predvolenými nastaveniami</value>
+  </data>
+  <data name="QuestionAddSecurityTimeZoneDateSetting" xml:space="preserve">
+    <value>Pridať tento bezpečnostný denný plán s predvolenými nastaveniami</value>
+  </data>
+  <data name="ErrorUsedAccessZonePair" xml:space="preserve">
+    <value>Dvojica snímač kariet a časová zóna je už použitá</value>
+  </data>
+  <data name="NCASAccessZonePersonEditForm_lCardReader" xml:space="preserve">
+    <value>Objekt pre snímač kariet</value>
+  </data>
+  <data name="NCASAccessZonePersonEditForm_lTimeZone" xml:space="preserve">
+    <value>Časová zóna</value>
+  </data>
+  <data name="InputCCUEditFormCCUText" xml:space="preserve">
+    <value>Editovanie CCU vstupu</value>
+  </data>
+  <data name="InputCCUEditFormInsertText" xml:space="preserve">
+    <value>Vytvorenie CCU výstupu</value>
+  </data>
+  <data name="OutputCCUEditFormCCUText" xml:space="preserve">
+    <value>Editovanie CCU výstupu</value>
+  </data>
+  <data name="OutputCCUEditFormInsertText" xml:space="preserve">
+    <value>Vytvorenie CCU výstupu</value>
+  </data>
+  <data name="NCASCCUEditForm_gbInputsCCU" xml:space="preserve">
+    <value>Vstupy CCU</value>
+  </data>
+  <data name="NCASCCUEditForm_gbOutputsCCU" xml:space="preserve">
+    <value>Výstupy CCU</value>
+  </data>
+  <data name="NCASCCUEditForm_lInputCount" xml:space="preserve">
+    <value>Počet vstupov</value>
+  </data>
+  <data name="NCASCCUEditForm_lOutputCount" xml:space="preserve">
+    <value>Počet výstupov</value>
+  </data>
+  <data name="NCASCCUEditForm_tpInputOutput" xml:space="preserve">
+    <value>Vstupy / výstupy</value>
+  </data>
+  <data name="Activated" xml:space="preserve">
+    <value>Aktivovaný</value>
+  </data>
+  <data name="InputAlarm" xml:space="preserve">
+    <value>Alarm</value>
+  </data>
+  <data name="Deactivated" xml:space="preserve">
+    <value>Deaktivovaný</value>
+  </data>
+  <data name="InputNormal" xml:space="preserve">
+    <value>Normálny</value>
+  </data>
+  <data name="InputShort" xml:space="preserve">
+    <value>Short</value>
+  </data>
+  <data name="TextTemplateCat12BSISettings" xml:space="preserve">
+    <value>CAT12 BSI nastavenia</value>
+  </data>
+  <data name="TextTemplateContalBSISettings" xml:space="preserve">
+    <value>Contal BSI nastavenia</value>
+  </data>
+  <data name="ErrorNormalBiggerAlarmValue" xml:space="preserve">
+    <value>Nastavnie pre úroveň normal je väčšie ako pre úroveň alarm</value>
+  </data>
+  <data name="ErrorShortBiggerNormalValue" xml:space="preserve">
+    <value>Nastavnie pre úroveň short je väčšie ako pre úroveň normal</value>
+  </data>
+  <data name="NCASCCUEditForm_bSet" xml:space="preserve">
+    <value>Nastaviť</value>
+  </data>
+  <data name="NCASCCUEditForm_gbBsiLevelInfo" xml:space="preserve">
+    <value>Informácie o BSI úrovniach</value>
+  </data>
+  <data name="NCASCCUEditForm_gbBsiLevelSet" xml:space="preserve">
+    <value>Nastavenia</value>
+  </data>
+  <data name="NCASCCUEditForm_lAlarm" xml:space="preserve">
+    <value>Alarm</value>
+  </data>
+  <data name="NCASCCUEditForm_lInfoAlarm" xml:space="preserve">
+    <value>Alarm</value>
+  </data>
+  <data name="NCASCCUEditForm_lInfoBreak" xml:space="preserve">
+    <value>Prerušenie</value>
+  </data>
+  <data name="NCASCCUEditForm_lInfoNormal" xml:space="preserve">
+    <value>Normálny</value>
+  </data>
+  <data name="NCASCCUEditForm_lInfoShort" xml:space="preserve">
+    <value>Skrat</value>
+  </data>
+  <data name="NCASCCUEditForm_lNormal" xml:space="preserve">
+    <value>Normalny</value>
+  </data>
+  <data name="NCASCCUEditForm_lShort" xml:space="preserve">
+    <value>Skrat</value>
+  </data>
+  <data name="NCASCCUEditForm_lTpSettings" xml:space="preserve">
+    <value>Nastavenia</value>
+  </data>
+  <data name="NCASCCUEditForm_tpLevelBSI" xml:space="preserve">
+    <value>Nastavenia BSI úrovní</value>
+  </data>
+  <data name="NCASCCUEditForm_lBreak" xml:space="preserve">
+    <value>Prerušenie</value>
+  </data>
+  <data name="NCASOutputCCUEditForm_lState" xml:space="preserve">
+    <value>Stav</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>Neznámy</value>
+  </data>
+  <data name="NameLAdditionalImpulseLength" xml:space="preserve">
+    <value>Dodatočná dĺžka impulzu</value>
+  </data>
+  <data name="NameLDelayToOff" xml:space="preserve">
+    <value>Trvanie do vypnutia</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_bAlarmAreaSet" xml:space="preserve">
+    <value>Aktivovať</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_bAlarmAreaUnset" xml:space="preserve">
+    <value>Deaktivovať</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_cbPrewarningOn" xml:space="preserve">
+    <value>Zapnutý</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_gbPrewarning" xml:space="preserve">
+    <value>Varovanie pred aktiváciou</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_lPrewarningDuration" xml:space="preserve">
+    <value>Doba varovania pred aktiváciou</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_SetFailed" xml:space="preserve">
+    <value>Aktivácia alarmovej zóny zlyhala</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_SetSucceeded" xml:space="preserve">
+    <value>Aktivacia alarmovej zóny prebehla úspešne</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_UnconditionalSetFailed" xml:space="preserve">
+    <value>Bezpodmienečná aktivácia alarmovej zóny zlyhala</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_UnconditionalSetSucceeded" xml:space="preserve">
+    <value>Bezpodmienečná aktivácia alarmovej zóny prebehla úspešne</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_UnsetFailed" xml:space="preserve">
+    <value>Deaktivácia alarmovej zóny zlyhala</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_UnsetSucceeded" xml:space="preserve">
+    <value>Deaktivácia alarmovej zóný prebehla úspešne</value>
+  </data>
+  <data name="NCASCCUEditForm_chbNotConfigured" xml:space="preserve">
+    <value>CCU nenakonfigurované</value>
+  </data>
+  <data name="NCASCCUEditForm_chbCcuOffline" xml:space="preserve">
+    <value>CCU offline</value>
+  </data>
+  <data name="NCASCCUEditForm_gbDisableAlarms" xml:space="preserve">
+    <value>Zakázať alarmy</value>
+  </data>
+  <data name="NCASCCUEditForm_tpAlarmSettings" xml:space="preserve">
+    <value>Alarmové nastavenia</value>
+  </data>
+  <data name="NCASDCUEditForm_chbDcuOffline" xml:space="preserve">
+    <value>DCU offline</value>
+  </data>
+  <data name="NCASDCUEditForm_gbDisableAlarms" xml:space="preserve">
+    <value>Zakázať alarmy</value>
+  </data>
+  <data name="NCASDCUEditForm_tpAlarmSettings" xml:space="preserve">
+    <value>Alarmové nastavenia</value>
+  </data>
+  <data name="NCASInputEditForm_chbAlarmTamper" xml:space="preserve">
+    <value>Tamper</value>
+  </data>
+  <data name="NCASInputEditForm_chbDIAlarmOn" xml:space="preserve">
+    <value>On / alarm</value>
+  </data>
+  <data name="NCASOutputEditForm_chbAlarmCBOOn" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="NCASOutputEditForm_gbDisableAlarms" xml:space="preserve">
+    <value>Zakázať alarmy</value>
+  </data>
+  <data name="NCASCCUEditForm_chbDeviceOffline" xml:space="preserve">
+    <value>Zariadenie offline</value>
+  </data>
+  <data name="NCASCCUEditForm_chbDeviceUnconfigured" xml:space="preserve">
+    <value>Zariadenie nenakonfigurované</value>
+  </data>
+  <data name="NCASDCUEditForm_chbDeviceOffline" xml:space="preserve">
+    <value>Zariadenie offline</value>
+  </data>
+  <data name="Off" xml:space="preserve">
+    <value>Vypnutý</value>
+  </data>
+  <data name="On" xml:space="preserve">
+    <value>Zapnutý</value>
+  </data>
+  <data name="ColumnRealStatusOnOff" xml:space="preserve">
+    <value>Skutočný stav On/Off</value>
+  </data>
+  <data name="NCASOutputEditForm_lRealStatusOnOff" xml:space="preserve">
+    <value>Skutočný stav On/Off</value>
+  </data>
+  <data name="NCASOutputEditForm_lStatusActivation" xml:space="preserve">
+    <value>Stav aktivácie</value>
+  </data>
+  <data name="NCASOutputEditForm_lStatusOnOff" xml:space="preserve">
+    <value>Stav On/Off</value>
+  </data>
+  <data name="NCASOutputEditForm_cbSendRealStateChanges" xml:space="preserve">
+    <value>Posielať zmeny reálneho stavu výstupu</value>
+  </data>
+  <data name="ObjectsSearchForm_bDockUndock" xml:space="preserve">
+    <value>Ukotviť</value>
+  </data>
+  <data name="ObjectsSearchForm_bUndock" xml:space="preserve">
+    <value>Uvoľniť</value>
+  </data>
+  <data name="AlarmAreaActivationStates_Unknown" xml:space="preserve">
+    <value>Neznámy</value>
+  </data>
+  <data name="AlarmAreaActualStates_Unknown" xml:space="preserve">
+    <value>Neznámy</value>
+  </data>
+  <data name="ErrorZeroPulseDelay" xml:space="preserve">
+    <value>Doba medzi implzami musi byť väčšia ako nula</value>
+  </data>
+  <data name="ErrorZeroPulseLength" xml:space="preserve">
+    <value>Dĺžka implzu musi byť väčšia ako nula</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_cbTimeBuyingOn" xml:space="preserve">
+    <value>Zapnutý</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_gbTimeBuying" xml:space="preserve">
+    <value>Nákup času</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_lImplicitManager" xml:space="preserve">
+    <value>Implicitný správca</value>
+  </data>
+  <data name="NCASOutputEditForm_gbTimingSettings" xml:space="preserve">
+    <value>Nastavenie časovania</value>
+  </data>
+  <data name="NCASOutputEditForm_lSettingsPulseDelay" xml:space="preserve">
+    <value>Doba medzi implzami</value>
+  </data>
+  <data name="NCASOutputEditForm_lSettingsPulseLength" xml:space="preserve">
+    <value>Dĺžka implzu</value>
+  </data>
+  <data name="TextInfoDock" xml:space="preserve">
+    <value>Ukotviť okno</value>
+  </data>
+  <data name="TextInfoMaximize" xml:space="preserve">
+    <value>Maximalizovať</value>
+  </data>
+  <data name="TextInfoNormalSize" xml:space="preserve">
+    <value>Pôvodná veľkosť</value>
+  </data>
+  <data name="TextInfoUndock" xml:space="preserve">
+    <value>Uvoľniť okno</value>
+  </data>
+  <data name="AlarmAreaActivationStates_TemporaryUnsetExit" xml:space="preserve">
+    <value>Dočasná deaktivácia alarmu pri aktivácii zóny</value>
+  </data>
+  <data name="ColumnInput" xml:space="preserve">
+    <value>Vstup</value>
+  </data>
+  <data name="ColumnNoCriticalInput" xml:space="preserve">
+    <value>Vchodovo/východový senzor</value>
+  </data>
+  <data name="ErrorEntryAreaInput" xml:space="preserve">
+    <value>Čidlo alarmovej zóny musi byť zadané</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_lResultOfAction" xml:space="preserve">
+    <value>Výsledok akcie:</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_SetFailedCCUOffline" xml:space="preserve">
+    <value>Aktivácia alarmovej zóny zlyhala. CCU nie je pripojené.</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_SetFailedInputInAlarm" xml:space="preserve">
+    <value>Aktivácia alarmovej zóny zlyhala. Niektorý zo vstupov je v alarmovom stave.</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_SetFailedNoImplicitManager" xml:space="preserve">
+    <value>Aktivácia alarmovej zóny zlyhala. Alarmová zóna nema žiadneho implicitného správcu.</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_UnconditionalSetFailedCCUOffline" xml:space="preserve">
+    <value>Bezpodmienečná aktivácia alarmovej zóny zlyhala. CCU nie je pripojené.</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_UnconditionalSetFailedNoImplicitManager" xml:space="preserve">
+    <value>Bezpodmienečná aktivácia alarmovej zóny zlyhala. Alarmová zóna nema žiadneho implicitného správcu.</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_UnsetFailedCCUOffline" xml:space="preserve">
+    <value>Deaktivácia alarmovej zóny zlyhala. CCU nie je pripojené.</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_UnsetFailedNoImplicitManager" xml:space="preserve">
+    <value>Deaktivácia alarmovej zóny zlyhala. Alarmová zóna nema žiadneho implicitného správcu.</value>
+  </data>
+  <data name="General_bApply" xml:space="preserve">
+    <value>Použiť</value>
+  </data>
+  <data name="Error_NoValidObject" xml:space="preserve">
+    <value>Neplatný objek:</value>
+  </data>
+  <data name="NCASCCUEditForm_gbAlarmPGDeviceOffline" xml:space="preserve">
+    <value>Prezentačná skupina zariadenie odpojené</value>
+  </data>
+  <data name="NCASCCUEditForm_gbPGDeviceUnconfigured" xml:space="preserve">
+    <value>Prezentačná skupina zariadenie nenakonfigurované</value>
+  </data>
+  <data name="NCASDCUEditForm_gbAlarmPGDeviceOffline" xml:space="preserve">
+    <value>Prezentačná skupina zariadenie odpojené</value>
+  </data>
+  <data name="CCUConfigured_ConfiguredForAnotherServer" xml:space="preserve">
+    <value>Konfigurované pre iný server</value>
+  </data>
+  <data name="CCUConfigured_ConfiguredForThisServer" xml:space="preserve">
+    <value>Konfigurované pre tento server</value>
+  </data>
+  <data name="CCUConfigured_Unconfigured" xml:space="preserve">
+    <value>Nenakonfigurované</value>
+  </data>
+  <data name="NCASCCUEditForm_bConfigureForThisServer" xml:space="preserve">
+    <value>Nakonfiguruj pre tento server</value>
+  </data>
+  <data name="NCASCCUEditForm_bUnconfigure" xml:space="preserve">
+    <value>Odkonfiguruj</value>
+  </data>
+  <data name="NCASCCUEditForm_ConfigureForThisServerFailed" xml:space="preserve">
+    <value>Chyba pri konfigurácii pre tento server. Autentifikovaný server je pripojený na CCU.</value>
+  </data>
+  <data name="NCASCCUEditForm_ConfigureForThisServerSucceeded" xml:space="preserve">
+    <value>Konfigurácia pre tento server prebehla úspešne</value>
+  </data>
+  <data name="NCASCCUEditForm_gbConfiguration" xml:space="preserve">
+    <value>Konfigurácia</value>
+  </data>
+  <data name="NCASCCUEditForm_lConfigured" xml:space="preserve">
+    <value>Konfigurované</value>
+  </data>
+  <data name="NCASCCUEditForm_lResultOfAction" xml:space="preserve">
+    <value>Výsledok akcie</value>
+  </data>
+  <data name="NCASCCUEditForm_QuestionConfigureForThisServer" xml:space="preserve">
+    <value>Konfiguruj pre tento server</value>
+  </data>
+  <data name="NCASCCUEditForm_QuestionUnconfigure" xml:space="preserve">
+    <value>Odkofiguruj CCU</value>
+  </data>
+  <data name="NCASCCUEditForm_UnconfigureFailed" xml:space="preserve">
+    <value>Chyba pri odkonfigurovaní</value>
+  </data>
+  <data name="NCASCCUEditForm_UnconfigureSucceeded" xml:space="preserve">
+    <value>Odkonfigurovanie prebehlo úspešne</value>
+  </data>
+  <data name="NCASCCUEditForm_tpDoorEnvironments" xml:space="preserve">
+    <value>Dverné prostredia</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditFormNCASDoorEnvironmentEditForm" xml:space="preserve">
+    <value>Editovanie dverného automatu</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_chbElectricStrikeImpulse" xml:space="preserve">
+    <value>Spínať impulzom</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_chbElectricStrikeOppositeImpulse" xml:space="preserve">
+    <value>Spínať impulzom</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_chbExtraElectricStrikeImpulse" xml:space="preserve">
+    <value>Spínať impulzom</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_chbExtraElectricStrikeOppositeImpulse" xml:space="preserve">
+    <value>Spínať impulzom</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_chbLockDoorBalanced" xml:space="preserve">
+    <value>Vyvážený</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_chbLockDoorInverted" xml:space="preserve">
+    <value>Invertovaný</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_chbOpenDoorBalanced" xml:space="preserve">
+    <value>Vyvážený</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_chbOpenDoorInverted" xml:space="preserve">
+    <value>Invertovaný</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_chbOpenMaxDoorBalanced" xml:space="preserve">
+    <value>Vyvážený</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_chbOpenMaxDoorInterder" xml:space="preserve">
+    <value>Invertovaný</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_gbActuators" xml:space="preserve">
+    <value>Aktivátory</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_gbDoorsDelays" xml:space="preserve">
+    <value>Dverné oneskorenia</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_gbDoorsTimes" xml:space="preserve">
+    <value>Dverné časy</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_gbSensors" xml:space="preserve">
+    <value>Senzory</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_lBypassAlarm" xml:space="preserve">
+    <value>Preklenutie alarmu</value>
+  </data>
+  <data name="General_lDelayBeforeBreakIn" xml:space="preserve">
+    <value>Pred vlámaním (ms.)</value>
+  </data>
+  <data name="General_lDelayBeforeClose" xml:space="preserve">
+    <value>Pred zatvorením (ms.)</value>
+  </data>
+  <data name="General_lDelayBeforeUnlock" xml:space="preserve">
+    <value>Pred odomknutím (ms.)</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_lDoorEnvironment" xml:space="preserve">
+    <value>Zariadenie dvier</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_lElectricStrike" xml:space="preserve">
+    <value>Elektrický zámok</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_lElectricStrikeOpposite" xml:space="preserve">
+    <value>Elektrický zámok obrátený</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_lExtraElectricStrike" xml:space="preserve">
+    <value>Extra elektrický zámok</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_lExtraElectricStrikeOpposite" xml:space="preserve">
+    <value>Extra elektrický zámok obrátený</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_lLockDoor" xml:space="preserve">
+    <value>Dvere zamknuté</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_lOpenDoor" xml:space="preserve">
+    <value>Dvere otvorené</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_lOpenDoorMax" xml:space="preserve">
+    <value>Dvere otvorené na maximum</value>
+  </data>
+  <data name="General_lTimeOpen" xml:space="preserve">
+    <value>Otvorenie (sec.)</value>
+  </data>
+  <data name="General_lTimePreAlarm" xml:space="preserve">
+    <value>Pre-Alarm (sec.)</value>
+  </data>
+  <data name="General_lTimeSirenAjar" xml:space="preserve">
+    <value>Oddialenie alarmu dlho otvorenych dverí (sec.)</value>
+  </data>
+  <data name="General_lTimeUnlock" xml:space="preserve">
+    <value>Odomknutie (sec.)</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_tpApas" xml:space="preserve">
+    <value>APAS</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_tpDoorsTiming" xml:space="preserve">
+    <value>Časovanie dverí</value>
+  </data>
+  <data name="DoorEnvironmentStateBeforeDoorAjar" xml:space="preserve">
+    <value>Pred alarmom dvere otvorené</value>
+  </data>
+  <data name="DoorEnvironmentStateBeforeIntrusion" xml:space="preserve">
+    <value>Pred vlámaním</value>
+  </data>
+  <data name="DoorEnvironmentStateDoorAjar" xml:space="preserve">
+    <value>Dvere príliš dlho otvorené</value>
+  </data>
+  <data name="DoorEnvironmentStateDoorAjarPrewarning" xml:space="preserve">
+    <value>Varovanie dvere otvorené</value>
+  </data>
+  <data name="DoorEnvironmentStateIntrusion" xml:space="preserve">
+    <value>Vlámanie</value>
+  </data>
+  <data name="DoorEnvironmentStateLocked" xml:space="preserve">
+    <value>Zamknuté</value>
+  </data>
+  <data name="DoorEnvironmentStateLocking" xml:space="preserve">
+    <value>Zamyká sa</value>
+  </data>
+  <data name="DoorEnvironmentStateOpened" xml:space="preserve">
+    <value>Dvere otvorené</value>
+  </data>
+  <data name="DoorEnvironmentStateUnlocked" xml:space="preserve">
+    <value>Odomknuté</value>
+  </data>
+  <data name="DoorEnvironmentStateUnlocking" xml:space="preserve">
+    <value>Odomyká sa</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_AccessGrantedFailed" xml:space="preserve">
+    <value>Povolenie prístupu zlyhalo</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_AccessGrantedSuccess" xml:space="preserve">
+    <value>Povolenie prístupu bolo úspešné</value>
+  </data>
+  <data name="General_bAccessGranted" xml:space="preserve">
+    <value>Povolený prístup</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_lActualState" xml:space="preserve">
+    <value>Aktuálny stav</value>
+  </data>
+  <data name="General_lResultOfAction" xml:space="preserve">
+    <value>Výsledok akcie</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_tpControl" xml:space="preserve">
+    <value>Riadenie</value>
+  </data>
+  <data name="General_gbCardReaders" xml:space="preserve">
+    <value>Prístupové spínače</value>
+  </data>
+  <data name="General_lExternalCardReader" xml:space="preserve">
+    <value>Vonkajší prístupový spínač</value>
+  </data>
+  <data name="General_lInternalCardReader" xml:space="preserve">
+    <value>Vnútorný prístupový spínač</value>
+  </data>
+  <data name="ColumnConfigured" xml:space="preserve">
+    <value>Konfigurovaný</value>
+  </data>
+  <data name="General_chbDoorAjar" xml:space="preserve">
+    <value>Otvorené dvere</value>
+  </data>
+  <data name="General_chbIntrusion" xml:space="preserve">
+    <value>Vlámanie</value>
+  </data>
+  <data name="General_gbAlarmPGDoorAjar" xml:space="preserve">
+    <value>Prezentačná skupina dvere otvorené</value>
+  </data>
+  <data name="General_gbAlarmPGIntrusion" xml:space="preserve">
+    <value>Prezentačná skupina vlámanie</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Nie</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Áno</value>
+  </data>
+  <data name="General_bUnconfigureDoorEnvironment" xml:space="preserve">
+    <value>Odkonfiguruj dverné prostredie</value>
+  </data>
+  <data name="QuestionUnconfigureDoorEnvironment" xml:space="preserve">
+    <value>Odkonfigurovať dverné prostredie</value>
+  </data>
+  <data name="ErrorInsertActuatorsElectricStrike" xml:space="preserve">
+    <value>Prosím, zadajte aktivátor pre elektrický zámok</value>
+  </data>
+  <data name="ErrorInsertSensorOpenDoor" xml:space="preserve">
+    <value>Prosím, zadajte senzor pre otvorené dvere</value>
+  </data>
+  <data name="General_chbSabotage" xml:space="preserve">
+    <value>Sabotáž</value>
+  </data>
+  <data name="General_gbAlarmPGSabotage" xml:space="preserve">
+    <value>Prezentačná skupina sabotáž</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_gbOutputDoorAjar" xml:space="preserve">
+    <value>Výstup dvere otvorené</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_gbOutputIntrusion" xml:space="preserve">
+    <value>Výstup vlámanie</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_gbOutputSabotage" xml:space="preserve">
+    <value>Výstup sabotáž</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_lOutput" xml:space="preserve">
+    <value>Výstup</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_tpSpecialOutputs" xml:space="preserve">
+    <value>Špeciálne výstupy</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_gbOutputActivation" xml:space="preserve">
+    <value>Výstup aktivácia</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_gbOutputAlarmState" xml:space="preserve">
+    <value>Výstup alarmový stav</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_gbOutputPrewarning" xml:space="preserve">
+    <value>Výstup varovanie pred aktiváciou</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_gbOutputTmpUnsetEntry" xml:space="preserve">
+    <value>Výstup varovanie pred spustením alarmu</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_gbOutputTmpUnsetExit" xml:space="preserve">
+    <value>Výstup dočasná deaktivácia alrmu pri aktivácii zóny</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_lOutput" xml:space="preserve">
+    <value>Výstup</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_tpSpecialOutputs" xml:space="preserve">
+    <value>Špeciálne výstupy</value>
+  </data>
+  <data name="General_chbNotInvokeIntrusionAlarm" xml:space="preserve">
+    <value>Nevyvolať alarm vlámanie</value>
+  </data>
+  <data name="NCASCCUsForm_bCCUsLookUp" xml:space="preserve">
+    <value>Nájsť všetky CCU</value>
+  </data>
+  <data name="NCASCardReaderEditForm_lLastCard" xml:space="preserve">
+    <value>Posledná karta</value>
+  </data>
+  <data name="NCASCardReaderEditForm_lProtocolVersion" xml:space="preserve">
+    <value>Verzia protokolu</value>
+  </data>
+  <data name="ASPMonotolaProximityFull" xml:space="preserve">
+    <value>ASP Monotola Proximity s displejom a klávesnicou</value>
+  </data>
+  <data name="ASPMonotolaProximityMini" xml:space="preserve">
+    <value>ASP Monotola Proximity malý bez klávesnice a displeja</value>
+  </data>
+  <data name="HIDProximityFull" xml:space="preserve">
+    <value>BCR HID Prox II (Plnál verzia)</value>
+  </data>
+  <data name="BCROemWiegandInterface" xml:space="preserve">
+    <value>BCR OEM interface (wiegand card interface)</value>
+  </data>
+  <data name="ProximityBigTouch" xml:space="preserve">
+    <value>Proximity veľký dotykový</value>
+  </data>
+  <data name="ProximityFull" xml:space="preserve">
+    <value>BCR Proximity (Plná verzia)</value>
+  </data>
+  <data name="ProximityMini" xml:space="preserve">
+    <value>BCR Proximity (Mini verzia)</value>
+  </data>
+  <data name="SmartBigTouch" xml:space="preserve">
+    <value>Mifare + SmartCard veľký dotykový</value>
+  </data>
+  <data name="SmartFull" xml:space="preserve">
+    <value>BCR Smart/Mifare (Plná verzia)</value>
+  </data>
+  <data name="SmartMini" xml:space="preserve">
+    <value>Mifare + SmartCard malý bez klávesnice a displeja</value>
+  </data>
+  <data name="SmartQTouchKeyboard" xml:space="preserve">
+    <value>BCR Smart/Mifare QTOUCH (Siedle)</value>
+  </data>
+  <data name="NCASCardReaderEditForm_chbCrAccessDenied" xml:space="preserve">
+    <value>Prístup zamietnutý</value>
+  </data>
+  <data name="NCASCardReaderEditForm_chbCrCardBlockedOrInactive" xml:space="preserve">
+    <value>Karta blokovaná alebo neaktívna</value>
+  </data>
+  <data name="NCASCardReaderEditForm_chbCrInvalidGin" xml:space="preserve">
+    <value>Neplatný GIN</value>
+  </data>
+  <data name="NCASCardReaderEditForm_chbCrInvalidPin" xml:space="preserve">
+    <value>Neplatný PIN</value>
+  </data>
+  <data name="NCASCardReaderEditForm_chbCrUnknownCard" xml:space="preserve">
+    <value>Neznáma karta</value>
+  </data>
+  <data name="General_gbEnableAlarms" xml:space="preserve">
+    <value>Dovoliť alarmy</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_chbABAlarmHandling" xml:space="preserve">
+    <value>Povoliť A-B alarmy</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_gbABAlarmHandling" xml:space="preserve">
+    <value>A-B alarmy</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_gbOutputAAlarm" xml:space="preserve">
+    <value>Výstup A-alarm</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_lPercentageSensorsToAAlarm" xml:space="preserve">
+    <value>Počet senzorov na vyvolanie A-alarmu</value>
+  </data>
+  <data name="NCASCardReaderEditForm_chbCardAppliedExternalBuzzer" xml:space="preserve">
+    <value>Vonkajší bzučiak</value>
+  </data>
+  <data name="NCASCardReaderEditForm_chbCardAppliedInternalBuzzer" xml:space="preserve">
+    <value>Vnútorný bzučiak</value>
+  </data>
+  <data name="NCASCardReaderEditForm_chbCardAppliedKeyboardLight" xml:space="preserve">
+    <value>Osvetlenie klávesnice</value>
+  </data>
+  <data name="NCASCardReaderEditForm_chbCardAppliedLED" xml:space="preserve">
+    <value>LED</value>
+  </data>
+  <data name="NCASCardReaderEditForm_chbKeyPressedExternalBuzzer" xml:space="preserve">
+    <value>Vonkajší bzučiak</value>
+  </data>
+  <data name="NCASCardReaderEditForm_chbKeyPressedInternalBuzzer" xml:space="preserve">
+    <value>Vnútorný bzučiak</value>
+  </data>
+  <data name="NCASCardReaderEditForm_chbKeyPressedKeyboardLight" xml:space="preserve">
+    <value>Osvetlenie klávesnice</value>
+  </data>
+  <data name="NCASCardReaderEditForm_chbKeyPressedLED" xml:space="preserve">
+    <value>LED</value>
+  </data>
+  <data name="NCASCardReaderEditForm_chbResetExternalBuzzer" xml:space="preserve">
+    <value>Vonkajší bzučiak</value>
+  </data>
+  <data name="NCASCardReaderEditForm_chbResetInternalBuzzer" xml:space="preserve">
+    <value>Vnútorný bzučiak</value>
+  </data>
+  <data name="NCASCardReaderEditForm_chbResetKeyboardLight" xml:space="preserve">
+    <value>Osvetlenie klávesnice</value>
+  </data>
+  <data name="NCASCardReaderEditForm_chbResetLED" xml:space="preserve">
+    <value>LED</value>
+  </data>
+  <data name="NCASCardReaderEditForm_chbTamperInternalBuzzer" xml:space="preserve">
+    <value>Vnútorný bzučiak</value>
+  </data>
+  <data name="NCASCardReaderEditForm_chbTamperKeyboardLight" xml:space="preserve">
+    <value>Osvetlenie klávesnice</value>
+  </data>
+  <data name="NCASCardReaderEditForm_chbTamperLED" xml:space="preserve">
+    <value>LED</value>
+  </data>
+  <data name="NCASCardReaderEditForm_chbTamperExternalBuzzer" xml:space="preserve">
+    <value>Vonkajší bzučiak</value>
+  </data>
+  <data name="NCASCardReaderEditForm_gbCardApplied" xml:space="preserve">
+    <value>Použitie karty</value>
+  </data>
+  <data name="NCASCardReaderEditForm_gbCRLanguageSettings" xml:space="preserve">
+    <value>Nastavenie jazyka pre snímač kariet</value>
+  </data>
+  <data name="NCASCardReaderEditForm_gbKeyPressed" xml:space="preserve">
+    <value>Stlačenie klávesy</value>
+  </data>
+  <data name="NCASCardReaderEditForm_gbReset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="NCASCardReaderEditForm_gbTamper" xml:space="preserve">
+    <value>Sabotáž</value>
+  </data>
+  <data name="NCASCardReaderEditForm_rbCRLanguageDanish" xml:space="preserve">
+    <value>Dansk</value>
+  </data>
+  <data name="NCASCardReaderEditForm_rbCRLanguageEnglish" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="NCASCardReaderEditForm_rbCRLanguageFinnish" xml:space="preserve">
+    <value>Suomalainen</value>
+  </data>
+  <data name="NCASCardReaderEditForm_rbCRLanguageNorwegian" xml:space="preserve">
+    <value>Norsk</value>
+  </data>
+  <data name="NCASCardReaderEditForm_rbCRLanguageSlovak" xml:space="preserve">
+    <value>Slovenský</value>
+  </data>
+  <data name="NCASCardReaderEditForm_rbCRLanguageSwedish" xml:space="preserve">
+    <value>Svensk</value>
+  </data>
+  <data name="NCASCardReaderEditForm_tpEventSettings" xml:space="preserve">
+    <value>Nastavenie prezentácie udalostí</value>
+  </data>
+  <data name="NCASCardReaderEditForm_tpLanguagesettings" xml:space="preserve">
+    <value>Nastavenie jazyka</value>
+  </data>
+  <data name="NCASCCUEditForm_lComPortBaudRate" xml:space="preserve">
+    <value>Prenosová rýchlosť COM portu</value>
+  </data>
+  <data name="NCASCCUEditForm_tpPortSettings" xml:space="preserve">
+    <value>Nastavenie portov</value>
+  </data>
+  <data name="General_lExternalPushButton" xml:space="preserve">
+    <value>Vonkajšie tlačidlo</value>
+  </data>
+  <data name="General_lInternalPushButton" xml:space="preserve">
+    <value>Vnútorné tlačidlo</value>
+  </data>
+  <data name="NCASCardReaderEditForm_lCRLogicalAddress" xml:space="preserve">
+    <value>Logická adresa</value>
+  </data>
+  <data name="NCASCardReaderEditForm_lCRParentObject" xml:space="preserve">
+    <value>Nadredený objekt</value>
+  </data>
+  <data name="NCASCardReaderEditForm_lCRPortName" xml:space="preserve">
+    <value>Názov portu</value>
+  </data>
+  <data name="StringNotUsed" xml:space="preserve">
+    <value>nepoužitý</value>
+  </data>
+  <data name="ColumnSecurityLevelDSM" xml:space="preserve">
+    <value>Bezpečnostná úroveň</value>
+  </data>
+  <data name="ErrorSelectSecurityLevel" xml:space="preserve">
+    <value>Bepečnostná úroveň nie je zadaná</value>
+  </data>
+  <data name="NCASCCUEditForm_bForceReconfiguration" xml:space="preserve">
+    <value>Vynútená rekonfigurácia</value>
+  </data>
+  <data name="NCASCCUEditForm_ForceReconfigurationFailed" xml:space="preserve">
+    <value>Vynútená rekonfigurácia zlyhala</value>
+  </data>
+  <data name="NCASCCUEditForm_ForceReconfigurationSucceeded" xml:space="preserve">
+    <value>Vynútená rekonfigurácia prebelha úspešne</value>
+  </data>
+  <data name="NCASCCUEditForm_WarningQuestionForceReconfiguration" xml:space="preserve">
+    <value>Vynútená rekonfigurácia vymaže udalosti uložené na CCU počas autonómneho behu!!! (môže to trvať niekoľko minút)</value>
+  </data>
+  <data name="ErrorCardReaderAlreadyUsed" xml:space="preserve">
+    <value>Snímač kariet je už použitý</value>
+  </data>
+  <data name="ErrorInputAlreadyUsed" xml:space="preserve">
+    <value>Vstup je už použitý</value>
+  </data>
+  <data name="NCASDoorEnvironmentEditForm_ModifyCardReaderPushButton" xml:space="preserve">
+    <value>Snímače kariet a tlačidlá</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsFormNCASDevicesAlarmSettingsForm" xml:space="preserve">
+    <value>Nastavenie alarmov</value>
+  </data>
+  <data name="General_lDelayBeforeLock" xml:space="preserve">
+    <value>Pred zamknutím (ms.)</value>
+  </data>
+  <data name="LockUnlockAASecurityLevel_Card" xml:space="preserve">
+    <value>Karta</value>
+  </data>
+  <data name="LockUnlockAASecurityLevel_CardPin" xml:space="preserve">
+    <value>Karta + PIN</value>
+  </data>
+  <data name="LockUnlockAASecurityLevel_Gin" xml:space="preserve">
+    <value>GIN</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_gbLockAA" xml:space="preserve">
+    <value>Aktivácia alarmovej zóny</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_gbUnlockAA" xml:space="preserve">
+    <value>Deaktiváaci alarmovej zóny</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_lLockUnlockAAGin" xml:space="preserve">
+    <value>GIN pre aktiváciu, deaktiváciu</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_lSecurityLevel" xml:space="preserve">
+    <value>Bezpečnostná úroveň</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_tpLockUnlockSettings" xml:space="preserve">
+    <value>Nastavenia pre aktiváciu, deaktiváciu</value>
+  </data>
+  <data name="NCASCardReaderEditForm_chbCrAccessPermitted" xml:space="preserve">
+    <value>Prístup povolený</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_chbCcuClockUnsynchronized" xml:space="preserve">
+    <value>CCU hodiny nezosynchronizované</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_chbCcuOffline" xml:space="preserve">
+    <value>CCU offline</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_chbCcuUnconfigured" xml:space="preserve">
+    <value>CCU nenakonfigurované</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_chbCrOffline" xml:space="preserve">
+    <value>Snímač kariet offline</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_chbDcuOffline" xml:space="preserve">
+    <value>DCU offline</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_chbDcuUnconfigured" xml:space="preserve">
+    <value>DCU nenakonfigurované</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_gbAlarmCcuClockUnsynchronized" xml:space="preserve">
+    <value>CCU hodiny nezosynchronizované prezentačná skupina</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_gbAlarmPGCcuOffline" xml:space="preserve">
+    <value>CCU offline prezentačná skupina</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_gbCrOfflinePG" xml:space="preserve">
+    <value>Snímač kariet offline prezentačná skupina</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_gbDcuOfflinePG" xml:space="preserve">
+    <value>DCU offline prezentačná skupina</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_gbDcuUnconfiguredPG" xml:space="preserve">
+    <value>DCU nenakonfigurované prezentačná skupina</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_gbPGCcuUnconfigured" xml:space="preserve">
+    <value>CCU nenakonfigurované prezentačná skupina</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_tpCcuAlarms" xml:space="preserve">
+    <value>Alarmy pre CCU</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_tpCrAlarms" xml:space="preserve">
+    <value>Alarmy pre čítace kariet</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_tpDcuAlarms" xml:space="preserve">
+    <value>Alarmy pre DCU</value>
+  </data>
+  <data name="NCASCardReaderEditForm_lSLForEnterToMenu" xml:space="preserve">
+    <value>Bez. úroveň pre vstup do menu</value>
+  </data>
+  <data name="SLForEnterToMenu_Card" xml:space="preserve">
+    <value>Karta</value>
+  </data>
+  <data name="SLForEnterToMenu_CardPin" xml:space="preserve">
+    <value>Karta + PIN</value>
+  </data>
+  <data name="NCASDoorEnvironmentsFormNCASDoorEnvironmentsForm" xml:space="preserve">
+    <value>Dverné prostredia</value>
+  </data>
+  <data name="Access_AA_Admin" xml:space="preserve">
+    <value>Alarmové zóny - editovanie</value>
+  </data>
+  <data name="Access_AA_View" xml:space="preserve">
+    <value>Alarmové zóny - prezeranie</value>
+  </data>
+  <data name="Access_ACL_Admin" xml:space="preserve">
+    <value>Zoznam prístupových práv - editovanie</value>
+  </data>
+  <data name="Access_ACL_View" xml:space="preserve">
+    <value>Zoznam prístupových práv - prezeranie</value>
+  </data>
+  <data name="NCASAccessControlListEditForm_CardReaderObjects" xml:space="preserve">
+    <value>Objekty pre snímač kariet</value>
+  </data>
+  <data name="NCASCardReaderEditForm_lMasterAA" xml:space="preserve">
+    <value>Hlavná alarmová zóna</value>
+  </data>
+  <data name="InfoAllDcus" xml:space="preserve">
+    <value>Iba DCU</value>
+  </data>
+  <data name="NCASDoorEnvironmentsForm_lControlUnit" xml:space="preserve">
+    <value>Riadiaca jednotka</value>
+  </data>
+  <data name="ErrorEntryDNSHostname" xml:space="preserve">
+    <value>Zadajte DNS hostname</value>
+  </data>
+  <data name="ErrorEntryIpAddress" xml:space="preserve">
+    <value>Zadajte IP adresu</value>
+  </data>
+  <data name="ErrorDNSHostnameAlreadyAdded" xml:space="preserve">
+    <value>Tento DNS hostname je už vložený</value>
+  </data>
+  <data name="ErrorIpAddressAlreadyAdded" xml:space="preserve">
+    <value>Táto IP adresa je už vložená</value>
+  </data>
+  <data name="ErrorNotValidDNSHostname" xml:space="preserve">
+    <value>DNS hostname nie je platný</value>
+  </data>
+  <data name="ErrorNotValidIpAddress" xml:space="preserve">
+    <value>IP adresa nie je platná</value>
+  </data>
+  <data name="NCASCCUEditForm_lDNSHostname" xml:space="preserve">
+    <value>DNS hostname</value>
+  </data>
+  <data name="QuestionDeleteDNSHostnameConfirm" xml:space="preserve">
+    <value>Vymazať DNS hostname</value>
+  </data>
+  <data name="QuestionDeleteIpAddressConfirm" xml:space="preserve">
+    <value>Vynazať IP adresu</value>
+  </data>
+  <data name="ErrorInsertSubnetMask" xml:space="preserve">
+    <value>Prosím, vložte masku podsiete</value>
+  </data>
+  <data name="ErrorWrongGateway" xml:space="preserve">
+    <value>Zadajte správnu predvolenú bránu</value>
+  </data>
+  <data name="ErrorWrongSubnetMask" xml:space="preserve">
+    <value>Zadajte správnu masku podsiete</value>
+  </data>
+  <data name="NCASCCUEditForm_ApplyIPSettingsFailed" xml:space="preserve">
+    <value>Aplikovanie nastavení IP na CCU zlyhalo</value>
+  </data>
+  <data name="NCASCCUEditForm_ApplyIPSettingsSucceeded" xml:space="preserve">
+    <value>Aplikovanie nastavení IP na CCU prebehlo úspešne</value>
+  </data>
+  <data name="NCASCCUEditForm_ApplyIPSettingsTheSameIPSettings" xml:space="preserve">
+    <value>Tieto IP nastavenia sú rovanké ako IP nastavenia na CCU</value>
+  </data>
+  <data name="NCASCCUEditForm_gbStaticIPSettings" xml:space="preserve">
+    <value>Statické IP nastavenia</value>
+  </data>
+  <data name="NCASCCUEditForm_lGateway" xml:space="preserve">
+    <value>Predvolená brána</value>
+  </data>
+  <data name="NCASCCUEditForm_lMask" xml:space="preserve">
+    <value>Maska podsiete</value>
+  </data>
+  <data name="NCASCCUEditForm_lResultOfApplyIPSettings" xml:space="preserve">
+    <value>Výsledok aplikácie IP nastavení</value>
+  </data>
+  <data name="NCASCCUEditForm_QuestionApplyIPSettings" xml:space="preserve">
+    <value>Aplikovať nastavenia IP na CCU</value>
+  </data>
+  <data name="NCASCCUEditForm_rbDHCP" xml:space="preserve">
+    <value>Prideľovaná DHCP</value>
+  </data>
+  <data name="NCASCCUEditForm_rbStatic" xml:space="preserve">
+    <value>Statická</value>
+  </data>
+  <data name="NCASCCUEditForm_tpIPSettings" xml:space="preserve">
+    <value>CCU IP nastavenia</value>
+  </data>
+  <data name="General_lNameFilter" xml:space="preserve">
+    <value>Názov</value>
+  </data>
+  <data name="ColumnFullName" xml:space="preserve">
+    <value>Celý názov</value>
+  </data>
+  <data name="NCASInputEditForm_lDoorEnvironment" xml:space="preserve">
+    <value>Dverné prostredie</value>
+  </data>
+  <data name="NCASOutputEditForm_lDoorEnvironment" xml:space="preserve">
+    <value>Dverné prostredie</value>
+  </data>
+  <data name="ErrorEntryTimeZoneDailyPlan" xml:space="preserve">
+    <value>Bezpečnostný denný plán musí byť zadaný</value>
+  </data>
+  <data name="NCASSecurityDailyPlanEditFormNCASSecurityDailyPlanEditForm" xml:space="preserve">
+    <value>Editovanie bezpečnostného denného plánu</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditFormNCASSecurityTimeZoneEditForm" xml:space="preserve">
+    <value>Editovanie bezpečnostnej časovej zóny</value>
+  </data>
+  <data name="NCASCCUEditForm_chbEnabledComPort" xml:space="preserve">
+    <value>Povoliť COM port</value>
+  </data>
+  <data name="NCASCCUEditForm_gbComPortSettings" xml:space="preserve">
+    <value>Nastavenia COM portu</value>
+  </data>
+  <data name="NCASCCUEditForm_gbSntpSettings" xml:space="preserve">
+    <value>Nastavenia SNTP</value>
+  </data>
+  <data name="ErrorSecurityWeakGin" xml:space="preserve">
+    <value>GIN nie je dostatočne bezpečný.</value>
+  </data>
+  <data name="ErrorSecurityWeakEmergencyCode" xml:space="preserve">
+    <value>Núdzový kód nie je dostatočne bezpečný.</value>
+  </data>
+  <data name="NCASCardReaderEditForm_chbCrInvalidEmergencyCode" xml:space="preserve">
+    <value>Neplatný núdzový kód</value>
+  </data>
+  <data name="General_bRoClear" xml:space="preserve">
+    <value>Zrušiť</value>
+  </data>
+  <data name="General_bRoRefresh" xml:space="preserve">
+    <value>Obnoviť</value>
+  </data>
+  <data name="General_bRoSearch" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="General_lRoText" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="General_tpReferencedBy" xml:space="preserve">
+    <value>Referencie</value>
+  </data>
+  <data name="General_tpUserFolders" xml:space="preserve">
+    <value>Umiestnenia objektu</value>
+  </data>
+  <data name="General_chbPushButtonExternalBalanced" xml:space="preserve">
+    <value>Vyvážený</value>
+  </data>
+  <data name="General_chbPushButtonExternalInverted" xml:space="preserve">
+    <value>Invertovaný</value>
+  </data>
+  <data name="General_chbPushButtonInternalBalanced" xml:space="preserve">
+    <value>Vyvážený</value>
+  </data>
+  <data name="General_chbPushButtonInternalInverted" xml:space="preserve">
+    <value>Invertovaný</value>
+  </data>
+  <data name="NCASDCUEditForm_gbDoorEnvironment" xml:space="preserve">
+    <value>Dverné prostredie</value>
+  </data>
+  <data name="ObjectType_AACardReader" xml:space="preserve">
+    <value>AA snímač kariet</value>
+  </data>
+  <data name="ObjectType_AAInput" xml:space="preserve">
+    <value>AA vstup</value>
+  </data>
+  <data name="ObjectType_AccessControlList" xml:space="preserve">
+    <value>Prístupový kontrolný list</value>
+  </data>
+  <data name="ObjectType_AccessZone" xml:space="preserve">
+    <value>Prístupová zóna</value>
+  </data>
+  <data name="ObjectType_ACLPerson" xml:space="preserve">
+    <value>ZPP osoba</value>
+  </data>
+  <data name="ObjectType_ACLSetting" xml:space="preserve">
+    <value>ZPP nastavenie</value>
+  </data>
+  <data name="ObjectType_ACLSettingAA" xml:space="preserve">
+    <value>ZPP nastavenie AA</value>
+  </data>
+  <data name="ObjectType_AlarmArea" xml:space="preserve">
+    <value>Alarmová zóna</value>
+  </data>
+  <data name="ObjectType_CardReader" xml:space="preserve">
+    <value>Snímač kariet</value>
+  </data>
+  <data name="ObjectType_CCU" xml:space="preserve">
+    <value>CCU</value>
+  </data>
+  <data name="ObjectType_DCU" xml:space="preserve">
+    <value>DCU</value>
+  </data>
+  <data name="ObjectType_DevicesAlarmSetting" xml:space="preserve">
+    <value>Nastavenie alarmov zariadení</value>
+  </data>
+  <data name="ObjectType_DoorEnvironment" xml:space="preserve">
+    <value>Dverné prostredia</value>
+  </data>
+  <data name="ObjectType_Expression" xml:space="preserve">
+    <value>Logický výraz</value>
+  </data>
+  <data name="ObjectType_Input" xml:space="preserve">
+    <value>Vstup</value>
+  </data>
+  <data name="ObjectType_Output" xml:space="preserve">
+    <value>Výstup</value>
+  </data>
+  <data name="ObjectType_SecurityDailyPlan" xml:space="preserve">
+    <value>Bezpečnostný denný plán</value>
+  </data>
+  <data name="ObjectType_SecurityDayInterval" xml:space="preserve">
+    <value>Bezpečnostný denný interval</value>
+  </data>
+  <data name="ObjectType_SecurityTimeZone" xml:space="preserve">
+    <value>Bezpečnostná časová zóna</value>
+  </data>
+  <data name="ObjectType_SecurityTimeZoneDateSetting" xml:space="preserve">
+    <value>Bezpečnostná časová zóna dátumové nastavenie</value>
+  </data>
+  <data name="ErrorDateFromSmallerThanDateTo" xml:space="preserve">
+    <value>Dátum od musí byť menší alebo rovný ako dátum do</value>
+  </data>
+  <data name="ColumnLogicalAddress" xml:space="preserve">
+    <value>Logická adresa</value>
+  </data>
+  <data name="ColumnOnlineState" xml:space="preserve">
+    <value>Stav pripojenia</value>
+  </data>
+  <data name="ColumnUsed" xml:space="preserve">
+    <value>Použitý</value>
+  </data>
+  <data name="NCASCCUEditForm_lDirectCardReaders" xml:space="preserve">
+    <value>Vlastné snímače kariet</value>
+  </data>
+  <data name="NCASCCUEditForm_lDCUs" xml:space="preserve">
+    <value>DCU</value>
+  </data>
+  <data name="NCASCCUEditForm_lMainBoardType" xml:space="preserve">
+    <value>Typ dosky</value>
+  </data>
+  <data name="NCASDCUEditForm_lPhysicalAddress" xml:space="preserve">
+    <value>Fyzická adresa</value>
+  </data>
+  <data name="ErrorDoorEnvironmentHasNotCardReaders" xml:space="preserve">
+    <value>Dverné protstredie neobsahuje žiadny snímač kariet</value>
+  </data>
+  <data name="ErrorControledObjectCrossRelation" xml:space="preserve">
+    <value>Chyba riadený objekt je v krížovej väzbe, vyberte iný.</value>
+  </data>
+  <data name="ErrorAlarmAreaHasNotCardReaders" xml:space="preserve">
+    <value>Alarmová zóna neobsahuje žiadny snímač kariet</value>
+  </data>
+  <data name="ErrorUsedSecurityTimeZoneName" xml:space="preserve">
+    <value>Názov bezpečnostnej časovej zóny je už použitý, zvoľte iný.</value>
+  </data>
+  <data name="ErrorInsertCardReaderObject" xml:space="preserve">
+    <value>Objekt pre snímač kariet sa nepodarilo pridať.</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_bClose" xml:space="preserve">
+    <value>Zavrieť</value>
+  </data>
+  <data name="DoorEnvironmentStateSatotage" xml:space="preserve">
+    <value>Sabotáž</value>
+  </data>
+  <data name="NCASDCUEditForm_tpSpecialOutputs" xml:space="preserve">
+    <value>Špeciálne výstupy</value>
+  </data>
+  <data name="DoorEnvironmentTypes_StandardWithMaxOpened" xml:space="preserve">
+    <value>Štandard (senzor pre maximálne otvorenie dvier)</value>
+  </data>
+  <data name="DoorEnvironmentTypes_StandardWithLocking" xml:space="preserve">
+    <value>Štandard (zamykanie iba zamykacím senzorom)</value>
+  </data>
+  <data name="_tsiCreate" xml:space="preserve">
+    <value>Vytvoriť</value>
+  </data>
+  <data name="_tsiModify" xml:space="preserve">
+    <value>Zmeniť</value>
+  </data>
+  <data name="_tsiRemove" xml:space="preserve">
+    <value>Odstrániť</value>
+  </data>
+  <data name="_tsiCreateDebug" xml:space="preserve">
+    <value>Vytvoriť (DEBUG)</value>
+  </data>
+  <data name="SaveAfterCancel" xml:space="preserve">
+    <value>Chcete uložiť zmeny ?</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>Otázka</value>
+  </data>
+  <data name="ValueChanged" xml:space="preserve">
+    <value>Hodnoty vo formulári boli zmenené.</value>
+  </data>
+  <data name="ErrorDCUHasNotCardReaders" xml:space="preserve">
+    <value>DCU neobsahuje žiadny snímač kariet</value>
+  </data>
+  <data name="NCASDCUEditForm_lDoorEnvironmentState" xml:space="preserve">
+    <value>Stav dverného prostredia</value>
+  </data>
+  <data name="ColumnStringDoorEnvironmentState" xml:space="preserve">
+    <value>Stav dverného prostredia</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_chbCcuTamperSabotage" xml:space="preserve">
+    <value>CCU tamper/sabotáž</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_chbCrTamperSabotage" xml:space="preserve">
+    <value>Snímač kariet tamper/sabotáž</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_chbDcuTamperSabotage" xml:space="preserve">
+    <value>DCU tamper/sabotáž</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_gbAlarmCCUTamperSabotage" xml:space="preserve">
+    <value>CCU tamper/sabotáž prezentačná skupina</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_gbCrTamperSabotagePG" xml:space="preserve">
+    <value>Snímač kariet tamper/sabotáž prezentačná skupina</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_gbDcuTamperSabotagePG" xml:space="preserve">
+    <value>DCU tamper/sabotáž prezentačná skupina</value>
+  </data>
+  <data name="DoorEnvironmentTypes_Minimal" xml:space="preserve">
+    <value>Minimálne dverné prostredie</value>
+  </data>
+  <data name="NCASDoorEnviromentEditForm_ModifyCardReaderPushButton" xml:space="preserve">
+    <value>Objekt pre snímač kariet</value>
+  </data>
+  <data name="ErrorInsertSensorLockDoor" xml:space="preserve">
+    <value>Prosím, zadajte senzor pre zamknuté dvere</value>
+  </data>
+  <data name="ErrorInsertSensorOpenMaxDoor" xml:space="preserve">
+    <value>Prosím, zadajte senzor pre maximálne otvorené dvere</value>
+  </data>
+  <data name="InfoCannotRemoveUsedObject" xml:space="preserve">
+    <value>Objekt je použitý iným objektom, nie je možné ho odstrániť.</value>
+  </data>
+  <data name="InfoRemoveObjectFailed" xml:space="preserve">
+    <value>Odstránenie objektu zlyhalo.</value>
+  </data>
+  <data name="NCASCCUEditForm_bCrMarkAsDead" xml:space="preserve">
+    <value>Zrušiť CR</value>
+  </data>
+  <data name="NCASCCUEditForm_bDcuMarkAsDead" xml:space="preserve">
+    <value>Zrušiť DCU</value>
+  </data>
+  <data name="HasDisplay" xml:space="preserve">
+    <value>Má displej</value>
+  </data>
+  <data name="HasKeyboard" xml:space="preserve">
+    <value>Má klávesnicu</value>
+  </data>
+  <data name="HasNotDisplay" xml:space="preserve">
+    <value>Nemá displej</value>
+  </data>
+  <data name="HasNotKeyboard" xml:space="preserve">
+    <value>Nemá klávesnicu</value>
+  </data>
+  <data name="NCASCardReaderEditForm_lDisplay" xml:space="preserve">
+    <value>Displej</value>
+  </data>
+  <data name="NCASCardReaderEditForm_lKeyboard" xml:space="preserve">
+    <value>Klávesnica</value>
+  </data>
+  <data name="NCASCCUEditForm_bTimeRefresh" xml:space="preserve">
+    <value>Obnoviť</value>
+  </data>
+  <data name="NCASCCUEditForm_lTime" xml:space="preserve">
+    <value>Dátum a čas</value>
+  </data>
+  <data name="QuestionDCUObjectsOpenedCloseBeforeDelete" xml:space="preserve">
+    <value>Zavrieť editovanie objektov DCU</value>
+  </data>
+  <data name="QuestionDCUOpenedCloseBeforeDelete" xml:space="preserve">
+    <value>Zavrieť editované DCU</value>
+  </data>
+  <data name="QuestionDeleteMarkAsDeadCR" xml:space="preserve">
+    <value>Zrušiť vybraný snímač kariet, snímač kariet bude zmazaný.</value>
+  </data>
+  <data name="QuestionDeleteMarkAsDeadDCU" xml:space="preserve">
+    <value>Zrušiť vybrané DCU, DCU bude zmazané. </value>
+  </data>
+  <data name="QuestionCardReaderOpenedCloseBeforeDelete" xml:space="preserve">
+    <value>Snímač kariet sa edituje, zavrieť pred zrušením</value>
+  </data>
+  <data name="ReportingSupressed" xml:space="preserve">
+    <value>Nepodporovaný</value>
+  </data>
+  <data name="OutputControlTypes_watchdog" xml:space="preserve">
+    <value>Watchdog spojenie so serverom</value>
+  </data>
+  <data name="NCASCCUEditForm_gbServerWatchdog" xml:space="preserve">
+    <value>Spojenie so serverom</value>
+  </data>
+  <data name="NCASCCUEditForm_lWatchdogOutput" xml:space="preserve">
+    <value>Výstup</value>
+  </data>
+  <data name="General_bClone" xml:space="preserve">
+    <value>Klonovať</value>
+  </data>
+  <data name="CardReaderCommands_AlarmAreaSet" xml:space="preserve">
+    <value>Alarmová zóna je aktivovaná</value>
+  </data>
+  <data name="CardReaderCommands_AlarmDoorAjar" xml:space="preserve">
+    <value>Dvere príliš dlho otvorené</value>
+  </data>
+  <data name="CardReaderCommands_AlarmIntrusion" xml:space="preserve">
+    <value>Vlámanie</value>
+  </data>
+  <data name="CardReaderCommands_DoorLocked" xml:space="preserve">
+    <value>Dvere zamknuté</value>
+  </data>
+  <data name="CardReaderCommands_DoorLocking" xml:space="preserve">
+    <value>Dvere sa zamykajú</value>
+  </data>
+  <data name="CardReaderCommands_DoorOpened" xml:space="preserve">
+    <value>Dvere otvorené</value>
+  </data>
+  <data name="CardReaderCommands_DoorUnlocked" xml:space="preserve">
+    <value>Dvere odomknuté</value>
+  </data>
+  <data name="CardReaderCommands_DoorUnlocking" xml:space="preserve">
+    <value>Dvere sa odomykajú</value>
+  </data>
+  <data name="CardReaderCommands_WaitingForCard" xml:space="preserve">
+    <value>Karta</value>
+  </data>
+  <data name="CardReaderCommands_WaitingForCardPin" xml:space="preserve">
+    <value>Karta + PIN</value>
+  </data>
+  <data name="CardReaderCommands_WaitingForGIN" xml:space="preserve">
+    <value>GIN</value>
+  </data>
+  <data name="CardReaderCommands_WarningDoorAjar" xml:space="preserve">
+    <value>Varovanie dvere otvorené</value>
+  </data>
+  <data name="General_chbAlarmOffline" xml:space="preserve">
+    <value>Offline</value>
+  </data>
+  <data name="General_chbAlarmSabotage" xml:space="preserve">
+    <value>Tamper / sabotáž</value>
+  </data>
+  <data name="General_gbEnableAlarmsOverride" xml:space="preserve">
+    <value>Dovoliť alarmy (predefinovať nastavenie alarmov zariadení)</value>
+  </data>
+  <data name="ErrorUsedLogicalAddress" xml:space="preserve">
+    <value>Logická adresa je už použitá</value>
+  </data>
+  <data name="NCASCCUEditForm_bPrecreateDCU" xml:space="preserve">
+    <value>Predvytvoriť DCU</value>
+  </data>
+  <data name="NCASDCUEditForm_bPrecreateCR" xml:space="preserve">
+    <value>Predvytvoriť CR</value>
+  </data>
+  <data name="NCASCCUEditForm_bStopTransfer" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="NCASCCUEditForm_bUpgrade" xml:space="preserve">
+    <value>Upgrade</value>
+  </data>
+  <data name="NCASCCUEditForm_gbDeviceUpgrade" xml:space="preserve">
+    <value>CCU firmware upgrade</value>
+  </data>
+  <data name="NCASCCUEditForm_lAvailableVersions" xml:space="preserve">
+    <value>Dostupné verzie</value>
+  </data>
+  <data name="NCASCCUEditForm_lTransferProgress" xml:space="preserve">
+    <value>Priebeh prenosu</value>
+  </data>
+  <data name="NCASCCUEditForm_lUpgradeProgress" xml:space="preserve">
+    <value>Priebeh rozbalenia</value>
+  </data>
+  <data name="NCASDCUEditForm_bCRMarkAsDead" xml:space="preserve">
+    <value>Zrušiť CR</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditForm_bRefreshDays" xml:space="preserve">
+    <value>Obnoviť dni</value>
+  </data>
+  <data name="NCASSecurityTimeZoneCalendarChangeFormNCASSecurityTimeZoneCalendarChangeForm" xml:space="preserve">
+    <value>Zmena kalendára</value>
+  </data>
+  <data name="General_bStop" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="NCASDCUEditForm_gbDcuUpgrade" xml:space="preserve">
+    <value>DCU firmware</value>
+  </data>
+  <data name="NCASDCUEditForm_lDcuUpgradeFile" xml:space="preserve">
+    <value>Súbory na upgrade DCU</value>
+  </data>
+  <data name="NCASDCUEditForm_lTransferProgress" xml:space="preserve">
+    <value>Priebeh prenosu</value>
+  </data>
+  <data name="NCASDCUEditForm_lUpgradeProgress" xml:space="preserve">
+    <value>Priebeh upgrade-u</value>
+  </data>
+  <data name="ErrorUsedACLSettings" xml:space="preserve">
+    <value>Duplicitné nastavenie ZPP</value>
+  </data>
+  <data name="ColumnStringOnlineState" xml:space="preserve">
+    <value>Stav pripojenia</value>
+  </data>
+  <data name="ErrorMaxExpectedDCUCount" xml:space="preserve">
+    <value>Maximálny počet predpokladaných DCU nesmie byť menší ako počet DCU</value>
+  </data>
+  <data name="NCASCCUEditForm_lMaximumExpectedDCUCount" xml:space="preserve">
+    <value>Maximálny počet očakávaných DCU</value>
+  </data>
+  <data name="CCUConfigured_Upgrading" xml:space="preserve">
+    <value>Upgraduje sa</value>
+  </data>
+  <data name="DeviceAlreadyUpgrading" xml:space="preserve">
+    <value>Zariadenie sa už upgraduje</value>
+  </data>
+  <data name="ErrorNoDeadCCU" xml:space="preserve">
+    <value>Nepodarilo sa nájsť žiadne nefunkčné CCU</value>
+  </data>
+  <data name="DeviceUpgradeFailed" xml:space="preserve">
+    <value>Upgrade zariadenia zlyhal</value>
+  </data>
+  <data name="Upgrading" xml:space="preserve">
+    <value>Upgraduje sa</value>
+  </data>
+  <data name="WaitingForUpgrade" xml:space="preserve">
+    <value>Čaká na upgrade</value>
+  </data>
+  <data name="AutoUpgrading" xml:space="preserve">
+    <value>Automatické upgradovanie</value>
+  </data>
+  <data name="NCASDCUEditForm_gbOutputDCU" xml:space="preserve">
+    <value>DCU výstupy</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_QuestionConfirmUnsetAA" xml:space="preserve">
+    <value>Alarmová zóna bude deaktivovaná, pokračovať?</value>
+  </data>
+  <data name="ErrorUnsetAABlocksSaveData" xml:space="preserve">
+    <value>Deaktivácia alarmovej zóny zlyhala (dáta nebudú uložené)</value>
+  </data>
+  <data name="ColumnAAUnconditionalSet" xml:space="preserve">
+    <value>Bezpodmienečná aktivácia a. z.</value>
+  </data>
+  <data name="ErrorCCUDoesNotContainSpecificPath" xml:space="preserve">
+    <value>CCU neobsahuje špecifickú cestu</value>
+  </data>
+  <data name="DeviceUpgradeSucceeded" xml:space="preserve">
+    <value>Upgrade zariadenia prebehol úspešne</value>
+  </data>
+  <data name="ErrorDeviceResetFailed" xml:space="preserve">
+    <value>Reset zariadenia zlyhal</value>
+  </data>
+  <data name="ErrorSameCEUpgradeFile" xml:space="preserve">
+    <value>Posledný CE upgrade súbor je rovnaký ako zvolený súbor</value>
+  </data>
+  <data name="NCASCCUEditForm_bCEUpgrade" xml:space="preserve">
+    <value>Upgrade</value>
+  </data>
+  <data name="NCASCCUEditForm_bStopTransferCEFile" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="NCASCCUEditForm_gbCEUpgrade" xml:space="preserve">
+    <value>Upgrade windows CE obrazu</value>
+  </data>
+  <data name="NCASCCUEditForm_lAvailableCEFiles" xml:space="preserve">
+    <value>Dostupné súbory</value>
+  </data>
+  <data name="NCASCCUEditForm_lTransferPercents" xml:space="preserve">
+    <value>Priebeh prenosu</value>
+  </data>
+  <data name="InputBreak" xml:space="preserve">
+    <value>Prerušenie</value>
+  </data>
+  <data name="ASPMotorolaProximityFull" xml:space="preserve">
+    <value>BCR Proximity (podpora karty ASP Motorola, Plná verzia)</value>
+  </data>
+  <data name="ASPMotorolaProximityMini" xml:space="preserve">
+    <value>BCR Proximity (podpora karty ASP Motorola, Mini verzia)</value>
+  </data>
+  <data name="ComboSmartProximityFull" xml:space="preserve">
+    <value>BCR Combo Smart/Mifare &amp; Proximity (Plná verzia)</value>
+  </data>
+  <data name="HIDProximity8LineLCDFull" xml:space="preserve">
+    <value>CACR HID prox II (Plná verzia)</value>
+  </data>
+  <data name="HIDProximity8LineLCDMini" xml:space="preserve">
+    <value>CACR HID prox II (Mini verzia)</value>
+  </data>
+  <data name="HIDProximityMini" xml:space="preserve">
+    <value>BCR HID Prox II (Mini verzia)</value>
+  </data>
+  <data name="HIDProximityMiniUSB" xml:space="preserve">
+    <value>BCR HID Prox II (USB, Mini verzia)</value>
+  </data>
+  <data name="Proximity8LineLcd" xml:space="preserve">
+    <value>CACR Proximity (Plná verzia)</value>
+  </data>
+  <data name="ProximityFullUSB" xml:space="preserve">
+    <value>BCR Proximity (USB, Plná verzia)</value>
+  </data>
+  <data name="ProximityLiteCCR" xml:space="preserve">
+    <value>CCR Proximity Lite</value>
+  </data>
+  <data name="ProximityMiniCCR" xml:space="preserve">
+    <value>CCR-P Slim</value>
+  </data>
+  <data name="ProximityMiniUSB" xml:space="preserve">
+    <value>CR14P-U</value>
+  </data>
+  <data name="ProximityPremiumCCR" xml:space="preserve">
+    <value>CCR-PD Premium</value>
+  </data>
+  <data name="Smart8LineLCD" xml:space="preserve">
+    <value>CACR Smart/Mifare (Plná verzia)</value>
+  </data>
+  <data name="SmartFullUSB" xml:space="preserve">
+    <value>BCR Smart/Mifare (Mini verzia)</value>
+  </data>
+  <data name="SmartLiteCCR" xml:space="preserve">
+    <value>CCR Smart/Mifare Lite</value>
+  </data>
+  <data name="SmartMiniCCR" xml:space="preserve">
+    <value>CCR-S Slim</value>
+  </data>
+  <data name="SmartMiniUSB" xml:space="preserve">
+    <value>CR14S-U</value>
+  </data>
+  <data name="SmartPremiumCCR" xml:space="preserve">
+    <value>CCR-SD Premium</value>
+  </data>
+  <data name="SmartQTouchCCR" xml:space="preserve">
+    <value>CCR Smart/Mifare QTOUCH with wiegand interface</value>
+  </data>
+  <data name="ErrorInputAlreadyUsedAsObjForAutAct" xml:space="preserve">
+    <value>Vstup je už nastavený ako objekt pre automatickú aktiváciu alarmovej zóny</value>
+  </data>
+  <data name="ErrorObjectAlreadyUsedAsAlarmAreaInput" xml:space="preserve">
+    <value>Objekt je už nastavený ako čidlo alarmovej zóny</value>
+  </data>
+  <data name="NCASCCUEditForm_bResolve" xml:space="preserve">
+    <value>Analyzovať</value>
+  </data>
+  <data name="NCASCCUEditForm_chbInheritedGeneralNtpSettings" xml:space="preserve">
+    <value>Zahrnúť všeobecné NTP nastavenie</value>
+  </data>
+  <data name="NCASCCUEditForm_gbNtpSettings" xml:space="preserve">
+    <value>NTP nastavenia</value>
+  </data>
+  <data name="ColumnstrState" xml:space="preserve">
+    <value>Stav</value>
+  </data>
+  <data name="NCASOutputEditForm_eDCUName" xml:space="preserve">
+    <value>DCU</value>
+  </data>
+  <data name="NCASOutputEditForm_eInputIndex" xml:space="preserve">
+    <value>Index</value>
+  </data>
+  <data name="NCASOutputEditForm_eOutputIndex" xml:space="preserve">
+    <value>Index</value>
+  </data>
+  <data name="ColumnCardReader" xml:space="preserve">
+    <value>Snímač kariet</value>
+  </data>
+  <data name="General_gbOutputDoorAjar" xml:space="preserve">
+    <value>Výstup pre dvere dlho otvorené</value>
+  </data>
+  <data name="General_gbOutputSabotage" xml:space="preserve">
+    <value>Výstup pre sabotáž dverného prostredia</value>
+  </data>
+  <data name="Genera_gbOutputIntrusion" xml:space="preserve">
+    <value>Výstup pre vlámanie</value>
+  </data>
+  <data name="NCASCCUsForm_bSpareForDeadCCU" xml:space="preserve">
+    <value>Nahradiť za mŕtve CCU</value>
+  </data>
+  <data name="ErrorDNS" xml:space="preserve">
+    <value>Chyba analyzovania DNS</value>
+  </data>
+  <data name="Reseting" xml:space="preserve">
+    <value>Resetuje sa</value>
+  </data>
+  <data name="CEAfterAllRetryActionTimeout" xml:space="preserve">
+    <value>Timeout</value>
+  </data>
+  <data name="CEBeginUpgradeMustBeCallFirst" xml:space="preserve">
+    <value>Je potrebné spustiť upgrade</value>
+  </data>
+  <data name="CEChecksumInvalid" xml:space="preserve">
+    <value>Nesprávne CRC</value>
+  </data>
+  <data name="CEFlashingError" xml:space="preserve">
+    <value>Chyba flashovania</value>
+  </data>
+  <data name="CEImageFileNoExist" xml:space="preserve">
+    <value>Súbor neexistuje</value>
+  </data>
+  <data name="CEImageFileNotHaveBuildNumber" xml:space="preserve">
+    <value>Chybný CE súbor</value>
+  </data>
+  <data name="CEInvalidCeImageFile" xml:space="preserve">
+    <value>Chybný CE súbor</value>
+  </data>
+  <data name="CEIsJustRunning" xml:space="preserve">
+    <value>Upgrade už prebieha</value>
+  </data>
+  <data name="CERegistryBackupError" xml:space="preserve">
+    <value>Chyba pri zálohe registrov</value>
+  </data>
+  <data name="CESignatureFileError" xml:space="preserve">
+    <value>Chyba v sig súbore</value>
+  </data>
+  <data name="CEStarted" xml:space="preserve">
+    <value>Spustené</value>
+  </data>
+  <data name="CEStillRunning" xml:space="preserve">
+    <value>Upgrade už prebieha</value>
+  </data>
+  <data name="CESuccess" xml:space="preserve">
+    <value>Úspešne ukončené</value>
+  </data>
+  <data name="CEUnkonwn" xml:space="preserve">
+    <value>Neznámy stav</value>
+  </data>
+  <data name="NCASCCUEditForm_lCEUpgradeProgress" xml:space="preserve">
+    <value>Priebeh upgradu</value>
+  </data>
+  <data name="NCASCardReaderEditForm_lGinOrCard" xml:space="preserve">
+    <value>GIN/Karta</value>
+  </data>
+  <data name="NCASCardReaderEditForm_lGinOrCardPin" xml:space="preserve">
+    <value>GIN/Karta + PIN</value>
+  </data>
+  <data name="SecurityLevelStates_GINORCARD" xml:space="preserve">
+    <value>GIN/Karta</value>
+  </data>
+  <data name="SecurityLevelStates_GINORCARDPIN" xml:space="preserve">
+    <value>GIN/Karta + PIN</value>
+  </data>
+  <data name="CardReaderCommands_WaitingForGinOrCard" xml:space="preserve">
+    <value>GIN/Karta</value>
+  </data>
+  <data name="CardReaderCommands_WaitingForGinOrCardPin" xml:space="preserve">
+    <value>GIN/Karta + PIN</value>
+  </data>
+  <data name="BlockingType_BlockedByObject" xml:space="preserve">
+    <value>Blokovaný objektom</value>
+  </data>
+  <data name="BlockingType_ForcefullyBlocked" xml:space="preserve">
+    <value>Vnútene blokovaný</value>
+  </data>
+  <data name="BlockingType_ForcefullySet" xml:space="preserve">
+    <value>Vnútene nastavený</value>
+  </data>
+  <data name="BlockingType_NotBlocked" xml:space="preserve">
+    <value>Neblokovaný</value>
+  </data>
+  <data name="ErrorInsertOnOffObjectForBlockingInput" xml:space="preserve">
+    <value>Vložte on/off objekt pri blokovanie vstupu</value>
+  </data>
+  <data name="ErrorOnOffObjectForBlockingCanNotBeActualEditingInput" xml:space="preserve">
+    <value>Ono/Off objekt pre blokovanie nemôže byť aktuálne editovaný vstup</value>
+  </data>
+  <data name="NCASInputEditFormListObjectForBlockedInputText" xml:space="preserve">
+    <value>On/Off objekt</value>
+  </data>
+  <data name="NCASInputEditForm_gbControlObject" xml:space="preserve">
+    <value>Objekt riadenia blokovania vstupu</value>
+  </data>
+  <data name="NCASInputEditForm_lBlockingType" xml:space="preserve">
+    <value>Typ blokovania</value>
+  </data>
+  <data name="NCASInputEditForm_tpInputControl" xml:space="preserve">
+    <value>Riadenie vstupu</value>
+  </data>
+  <data name="NCASCCUEditForm_tpDCUsUpgrade" xml:space="preserve">
+    <value>DCU upgrade</value>
+  </data>
+  <data name="ResetFailed" xml:space="preserve">
+    <value>Pokus o reset zlyhal</value>
+  </data>
+  <data name="StopUpgradeTransferFailed" xml:space="preserve">
+    <value>Pokus o zastavenie prenosu zlyhal</value>
+  </data>
+  <data name="ErrorInvalidFrequencyPulseLength" xml:space="preserve">
+    <value>Neplatná hodnota, pre Frekvenčný typ výstupu je minimálna  hodnota 50 ms</value>
+  </data>
+  <data name="ErrorInvalidPulsedPulseLength" xml:space="preserve">
+    <value>Neplatná hodnota, pre Impulzný typ výstupu je minimálna  hodnota 50 ms</value>
+  </data>
+  <data name="ErrorInvalidPulsedPulseLengthRealState" xml:space="preserve">
+    <value>Reportovanie stavov povolené len pre dĺžku impulsu 200ms a viac</value>
+  </data>
+  <data name="ColumnSelect" xml:space="preserve">
+    <value>Označiť</value>
+  </data>
+  <data name="ColumnUpgradeProgress" xml:space="preserve">
+    <value>Priebeh upgradu</value>
+  </data>
+  <data name="NCASCCUEditForm_bRefreshDCUs" xml:space="preserve">
+    <value>Obnoviť</value>
+  </data>
+  <data name="NCASCCUEditForm_lAvailableDCUUpgrades" xml:space="preserve">
+    <value>Dostupné verzie</value>
+  </data>
+  <data name="NCASCCUEditForm_chbSelectAll" xml:space="preserve">
+    <value>Označiť\odznačiť všetky dostupné</value>
+  </data>
+  <data name="NCASCCUEditForm_lDCUsToUpgrade" xml:space="preserve">
+    <value>DCU</value>
+  </data>
+  <data name="WarningDCUUpgradeVersionNotSet" xml:space="preserve">
+    <value>Nie je zvolená verzia pre upgrade DCU</value>
+  </data>
+  <data name="WarningNoDCUSelected" xml:space="preserve">
+    <value>Neoznačili ste DCU na upgrade</value>
+  </data>
+  <data name="FailedToSetDefaultDCUUpgradeVersion" xml:space="preserve">
+    <value>Pokus o nastavenie predvolenej upgradovacej verzie zlyhal</value>
+  </data>
+  <data name="NCASCCUEditForm_bSetDefaultUpgradeVersion" xml:space="preserve">
+    <value>Nastaviť ako predvolený</value>
+  </data>
+  <data name="SetDefaultDCUUpgradeVersionSucceeded" xml:space="preserve">
+    <value>Predvolená verzia pre upgrade bola úspešne nastavená</value>
+  </data>
+  <data name="NCASCCUEditForm_lFirmwareVersion" xml:space="preserve">
+    <value>Firmware verzia</value>
+  </data>
+  <data name="NCASCCUEditForm_lState" xml:space="preserve">
+    <value>Stav</value>
+  </data>
+  <data name="NCASDCUEditForm_lFirmwareVersion" xml:space="preserve">
+    <value>Firmware verzia</value>
+  </data>
+  <data name="WarningDoorEnvironmentLicenceRestriction" xml:space="preserve">
+    <value>Už nie je možné nakonfigurovat ďalšie dverné prostredie (licenčné obmedzenie)</value>
+  </data>
+  <data name="ErrorDayIntervalsUnsupportedByCardReader" xml:space="preserve">
+    <value>Bezpečnostný denný plán obsahuje intervaly ktoré nie sú podporované referencovanými snímačmi kariet</value>
+  </data>
+  <data name="ErrorSecDailyPlanUnsupportedIntervals" xml:space="preserve">
+    <value>Bezpečnostný denný plán obsahuje intervaly ktoré nie sú podporované týmto snímačom kariet</value>
+  </data>
+  <data name="ErrorSecTimeZoneUnsupportedIntervals" xml:space="preserve">
+    <value>Bezpečnostná časová zóna obsahuje intervaly ktoré nie sú podporované týmto snímačom kariet</value>
+  </data>
+  <data name="NCASCardReaderEditFormModifySecTimeZoneSecDailyPlan" xml:space="preserve">
+    <value>Bezpeč. časové zóny / denné plány</value>
+  </data>
+  <data name="NCASCardReaderEditForm_tsiCreateSecDailyPlan" xml:space="preserve">
+    <value>Vytvoriť bezpeč. denný plán</value>
+  </data>
+  <data name="NCASCardReaderEditForm_tsiCreateSecDailyPlan5" xml:space="preserve">
+    <value>Vytvoriť bezpeč. denný plán</value>
+  </data>
+  <data name="NCASCardReaderEditForm_tsiCreateSecTimeZone" xml:space="preserve">
+    <value>Vytvoriť bezpeč. časovú zónu</value>
+  </data>
+  <data name="NCASCardReaderEditForm_tsiCreateSecTimeZone5" xml:space="preserve">
+    <value>Vytvoriť bezpeč. časovú zónu</value>
+  </data>
+  <data name="ErrorDcuHasNoInputs" xml:space="preserve">
+    <value>DCU neobsahuje žiadne vstupy</value>
+  </data>
+  <data name="ErrorSpecifyDcu" xml:space="preserve">
+    <value>DCU je nutné zadať</value>
+  </data>
+  <data name="NCASInputsForm_bPreCreateInput" xml:space="preserve">
+    <value>Predvytvoriť DCU vstup</value>
+  </data>
+  <data name="NCASOutputsForm_bPreCreateOutput" xml:space="preserve">
+    <value>Predvytvoriť DCU výstup</value>
+  </data>
+  <data name="ErrorDcuHasNoOutputs" xml:space="preserve">
+    <value>DCU neobsahuje žiadne výstupy</value>
+  </data>
+  <data name="ErrorInputIndexUsed" xml:space="preserve">
+    <value>Index vtupu je už existuje</value>
+  </data>
+  <data name="ErrorOutputIndexUsed" xml:space="preserve">
+    <value>Index výstupu už existuje</value>
+  </data>
+  <data name="InterCCUCommunicationNotEnabled" xml:space="preserve">
+    <value>Komunikácia medzi CCU nie je povolená</value>
+  </data>
+  <data name="NCASCCUEditForm_bCcuMsgRetry" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="NCASCCUEditForm_bCcuResetDeserializeError" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="NCASCCUEditForm_bCcuResetReceived" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="NCASCCUEditForm_bCcuResetReceivedError" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="NCASCCUEditForm_bCcuResetSended" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="NCASCCUEditForm_bRefreshCommunicationStatistic" xml:space="preserve">
+    <value>Obnoviť</value>
+  </data>
+  <data name="NCASCCUEditForm_bResetAll" xml:space="preserve">
+    <value>Reset všetky</value>
+  </data>
+  <data name="NCASCCUEditForm_bResetServerMsgRetry" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="NCASCCUEditForm_bResetServerSended" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="NCASCCUEditForm_bServerResetDeserializeError" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="NCASCCUEditForm_bServerResetReceived" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="NCASCCUEditForm_bServerResetReceivedError" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="NCASCCUEditForm_gbCommunicationStatistic" xml:space="preserve">
+    <value>Štatistika komunikácie</value>
+  </data>
+  <data name="NCASCCUEditForm_lCcuDeserializeError" xml:space="preserve">
+    <value>CCU chyba deserializácie</value>
+  </data>
+  <data name="NCASCCUEditForm_lCcuMsgRetry" xml:space="preserve">
+    <value>CCU opakovanie správy</value>
+  </data>
+  <data name="NCASCCUEditForm_lCcuReceived" xml:space="preserve">
+    <value>CCU prijaté</value>
+  </data>
+  <data name="NCASCCUEditForm_lCcuReceivedError" xml:space="preserve">
+    <value>CCU chybne prijaté</value>
+  </data>
+  <data name="NCASCCUEditForm_lCcuSended" xml:space="preserve">
+    <value>CCU poslané</value>
+  </data>
+  <data name="NCASCCUEditForm_lServerDeserializeError" xml:space="preserve">
+    <value>Server chyba deserializácie</value>
+  </data>
+  <data name="NCASCCUEditForm_lServerMsgRetry" xml:space="preserve">
+    <value>Server opakovanie správy</value>
+  </data>
+  <data name="NCASCCUEditForm_lServerReceived" xml:space="preserve">
+    <value>Server prijaté</value>
+  </data>
+  <data name="NCASCCUEditForm_lServerReceivedError" xml:space="preserve">
+    <value>Server chybne prijaté</value>
+  </data>
+  <data name="NCASCCUEditForm_lServerSended" xml:space="preserve">
+    <value>Server poslané</value>
+  </data>
+  <data name="ErrorOutputAlreadyUsed" xml:space="preserve">
+    <value>Výstup je už použitý</value>
+  </data>
+  <data name="ModifyOutput" xml:space="preserve">
+    <value>Vyberte výstup</value>
+  </data>
+  <data name="NCASCCUEditForm_bCcuStartsCountRefresh" xml:space="preserve">
+    <value>Obnoviť</value>
+  </data>
+  <data name="NCASCCUEditForm_bCcuStartsCountReset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="NCASCCUEditForm_gbCcuStartsCount" xml:space="preserve">
+    <value>Počet štartov CCU</value>
+  </data>
+  <data name="NCASCCUEditForm_lCcuStartCount" xml:space="preserve">
+    <value>Počet</value>
+  </data>
+  <data name="NCASDCUEditForm_bDcuMemoryLoadRefresh" xml:space="preserve">
+    <value>Obnoviť</value>
+  </data>
+  <data name="NCASDCUEditForm_gbDcuMemoryLoad" xml:space="preserve">
+    <value>Dcu stav zaťaženia pamäte</value>
+  </data>
+  <data name="NCASDCUEditForm_lDcuMemoryLoad" xml:space="preserve">
+    <value>Využitie pamäte</value>
+  </data>
+  <data name="WarningTmpUnsetEntryExitFunctionality" xml:space="preserve">
+    <value>Alarmová zóna nemá žiadny vchodovo/východový senzor, funkcionalita pre varovanie pred alarmom a aktiváciuou zóny sa reálne neprejaví.
+Pokračovať?</value>
+  </data>
+  <data name="NCASCCUEditForm_lCcuStartsCount" xml:space="preserve">
+    <value>Počet</value>
+  </data>
+  <data name="SourceName" xml:space="preserve">
+    <value>Prístup</value>
+  </data>
+  <data name="NCASInputEditForm_lTemporiralyBlockedInput" xml:space="preserve">
+    <value>Vnútene blokovaný (dočasne)</value>
+  </data>
+  <data name="NCASCCUEditForm_lImageVersion" xml:space="preserve">
+    <value>Verzia obrazu</value>
+  </data>
+  <data name="NCASInputEditForm_lAlarmArea" xml:space="preserve">
+    <value>Alarmová zóna</value>
+  </data>
+  <data name="NCASInputEditForm_lAlarmForTamperWillBeGenerate" xml:space="preserve">
+    <value>Alarm pre tamper sa bude generovať</value>
+  </data>
+  <data name="NCASInputEditForm_lAlarmWillBeGenerate" xml:space="preserve">
+    <value>Alarm sa bude generovať ak je aktivovaná zóna</value>
+  </data>
+  <data name="ErrorFailedToStartUpgrade" xml:space="preserve">
+    <value>Nepodarilo sa spustiť upgrade</value>
+  </data>
+  <data name="General_Failed" xml:space="preserve">
+    <value>Nepodarilo sa</value>
+  </data>
+  <data name="General_Succeeded" xml:space="preserve">
+    <value>Úspešne ukončené</value>
+  </data>
+  <data name="NCASCCUEditForm_lUpgradeFinalisation" xml:space="preserve">
+    <value>Dokončenie upgradu</value>
+  </data>
+  <data name="CcuConfigurePasswordCcuConfigurePassword" xml:space="preserve">
+    <value>Heslo pre CCU konfiguráciu</value>
+  </data>
+  <data name="CcuConfigurePassword_lCcuPassword" xml:space="preserve">
+    <value>Heslo</value>
+  </data>
+  <data name="ConfigureDisableServerConfigurePswSettings" xml:space="preserve">
+    <value>CCU nie je možné nakofigurovať pre server, ktorý nemá povolenú konfiguráciu CCU s heslom</value>
+  </data>
+  <data name="ErrorConfigurePassword" xml:space="preserve">
+    <value>Heslo pre konfiguráciu musí mať aspoň 8 znakov</value>
+  </data>
+  <data name="QeustionCancelConfigurePassword" xml:space="preserve">
+    <value>Zrušiť konfiguračné heslo pe CCU</value>
+  </data>
+  <data name="ErrorDCUUnsuportedFirmwareVersion" xml:space="preserve">
+    <value>Upgrade nie je povolený. Prepálte DCU s verziou firmwaru 1.6.1328 alebo vyššou manuálne.</value>
+  </data>
+  <data name="StringNewCcuPassword" xml:space="preserve">
+    <value>Nové heslo pre CCU</value>
+  </data>
+  <data name="StringSetCcuPassword" xml:space="preserve">
+    <value>CCU konfiguračné heslo</value>
+  </data>
+  <data name="StringVerifyCcuPassword" xml:space="preserve">
+    <value>Potvrdenie hesla CCU</value>
+  </data>
+  <data name="ErrorCcuWinCeImageIsActual" xml:space="preserve">
+    <value>Verzia WinCE obrazu je aktuálna</value>
+  </data>
+  <data name="FailedToTransferUpgradeFile" xml:space="preserve">
+    <value>Zlyhal pokus o prenos súboru pre upgrade na CCU</value>
+  </data>
+  <data name="NCASDCUEditForm_bCRUpgrade" xml:space="preserve">
+    <value>Upgrade</value>
+  </data>
+  <data name="NCASDCUEditForm_bUpgradeCRRefresh" xml:space="preserve">
+    <value>Obnoviť</value>
+  </data>
+  <data name="NCASDCUEditForm_chbSelectAll" xml:space="preserve">
+    <value>Označiť\odznačiť všetky dostupné</value>
+  </data>
+  <data name="NCASDCUEditForm_lAvailableCRUpradeVersions" xml:space="preserve">
+    <value>Dostupné verzie</value>
+  </data>
+  <data name="NCASDCUEditForm_tpCRUpgrades" xml:space="preserve">
+    <value>Upgrade snímačov kariet</value>
+  </data>
+  <data name="WarningCRUpgradeVersionNotSet" xml:space="preserve">
+    <value>Nie je zvolená verzia pre upgrade snímačov kariet</value>
+  </data>
+  <data name="WarningNoCRSelected" xml:space="preserve">
+    <value>Neoznačili ste snímač kariet pre upgrade</value>
+  </data>
+  <data name="CcuConfigurePassword_lCcuRetypePassword" xml:space="preserve">
+    <value>Potvrdenie hesla</value>
+  </data>
+  <data name="ErrorRetypeVerifyPassword" xml:space="preserve">
+    <value>Heslo sa nezhoduje s potvrdenim hesla</value>
+  </data>
+  <data name="InfoMaximumCrCount" xml:space="preserve">
+    <value>Maximálny počet očakávaných CR</value>
+  </data>
+  <data name="QuestionMaxCrChanged" xml:space="preserve">
+    <value>Zmena maximalneho počtu CR spôsobí reštart všetkých CR pripojených k CCU, pokračovať?</value>
+  </data>
+  <data name="CRUpgradeResultBootloaderAfterUpgradeAgain" xml:space="preserve">
+    <value>Bootloader sa naštartoval po upgrade</value>
+  </data>
+  <data name="CRUpgradeResultCardReaderWentOffline" xml:space="preserve">
+    <value>Snímač kariet prešiel do stavu odpojený</value>
+  </data>
+  <data name="CRUpgradeResultFailedToReadBinaryFile" xml:space="preserve">
+    <value>Čítanie binárneho súboru zlyhalo</value>
+  </data>
+  <data name="CRUpgradeResultFlashingAcknowledgeTimedOut" xml:space="preserve">
+    <value>Vypršal čas na potvrdenie prepalovania</value>
+  </data>
+  <data name="CRUpgradeResultFlashingOnCRFailed" xml:space="preserve">
+    <value>Prepalovanie snímača kariet zlyhalo</value>
+  </data>
+  <data name="CRUpgradeResultResetToApplicationTimedOut" xml:space="preserve">
+    <value>Vypršal čas na reset do aplikácie</value>
+  </data>
+  <data name="CRUpgradeResultUnableToEnterBootloader" xml:space="preserve">
+    <value>Vstup do botloaderu sa nepodaril</value>
+  </data>
+  <data name="CRUpgradeResultUnknown" xml:space="preserve">
+    <value>Neznáma chyba</value>
+  </data>
+  <data name="UnpackUpgradePackageFailedChecksumDoesNotMatch" xml:space="preserve">
+    <value>Kontrolný súčet nie je validný</value>
+  </data>
+  <data name="UnpackUpgradePackageFailedGetChecksumFailed" xml:space="preserve">
+    <value>Načítanie kontrolného súčtu zlyhalo</value>
+  </data>
+  <data name="UnpackUpgradePackageFailedOther" xml:space="preserve">
+    <value>Neznáma chyba</value>
+  </data>
+  <data name="UnpackUpgradePackageFailedUnpackFailed" xml:space="preserve">
+    <value>Rozbaľovanie balíčka zlyhalo</value>
+  </data>
+  <data name="UnpackUpgradePackageFailedUnsupportedHeaderFormat" xml:space="preserve">
+    <value>Nepodporovaný formát hlavičky balíka</value>
+  </data>
+  <data name="ErrorUsedCardReader" xml:space="preserve">
+    <value>Snímač kariet je použitý v inom dvernom prostredí</value>
+  </data>
+  <data name="ErrorUsedInput" xml:space="preserve">
+    <value>Vstup je použitý v inom dvernom prostredí</value>
+  </data>
+  <data name="ErrorUsedOutput" xml:space="preserve">
+    <value>Výstup je použitý v inom dvernom prostredí</value>
+  </data>
+  <data name="NoAccessChangeCcuPassword" xml:space="preserve">
+    <value>Nemáte právo na zmenu hesla na CCU</value>
+  </data>
+  <data name="NCASCCUEditForm_gbCoprocessorVersion" xml:space="preserve">
+    <value>Verzia koprocesora</value>
+  </data>
+  <data name="NCASCCUEditForm_lActualBuildNumber" xml:space="preserve">
+    <value>Aktuálne číslo buildu</value>
+  </data>
+  <data name="NCASCCUEditForm_lUpgradeResult" xml:space="preserve">
+    <value>Posledný výsledok upgradu</value>
+  </data>
+  <data name="NCASCCUEditForm_tpStatistics" xml:space="preserve">
+    <value>Štatistiky</value>
+  </data>
+  <data name="NCASCCUEditForm_gbSimulationCardSwiped" xml:space="preserve">
+    <value>Simulácia priloženia karty</value>
+  </data>
+  <data name="NCASCCUEditForm_lCardNumber" xml:space="preserve">
+    <value>Celé číslo karty</value>
+  </data>
+  <data name="NCASCCUEditForm_lCardReader" xml:space="preserve">
+    <value>Snímač kariet</value>
+  </data>
+  <data name="NCASCCUEditForm_lResult" xml:space="preserve">
+    <value>Výsledok: CCU</value>
+  </data>
+  <data name="NCASCCUEditForm_lResultDB" xml:space="preserve">
+    <value>Výsledok: databáza</value>
+  </data>
+  <data name="CRUpgradeResultFlashingFinishedSuccessfuly" xml:space="preserve">
+    <value>Napaľovanie prebehlo úspešne</value>
+  </data>
+  <data name="CRUpgradeResultSuccess" xml:space="preserve">
+    <value>Upgrade zariadenia prebehol úspešne</value>
+  </data>
+  <data name="NCASCCUEditForm_bCRUpgrade" xml:space="preserve">
+    <value>Upgrade</value>
+  </data>
+  <data name="NCASCCUEditForm_bUpgradeCRRefresh" xml:space="preserve">
+    <value>Obnoviť</value>
+  </data>
+  <data name="NCASCCUEditForm_chbCRSelectAll" xml:space="preserve">
+    <value>Označiť\odznačiť všetky dostupné</value>
+  </data>
+  <data name="NCASCCUEditForm_lAvailableCRUpradeVersions" xml:space="preserve">
+    <value>Dostupné verzie</value>
+  </data>
+  <data name="ginorcard" xml:space="preserve">
+    <value>GIN/Karta</value>
+  </data>
+  <data name="ginorcardpin" xml:space="preserve">
+    <value>GIN/Karta + PIN</value>
+  </data>
+  <data name="CRUpgradeResultIncorrectCardReaderType" xml:space="preserve">
+    <value>Nesprávny typ snímača kariet</value>
+  </data>
+  <data name="NCASCCUEditForm_bPrecreateCardReader" xml:space="preserve">
+    <value>Predvytvoriť CR</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_chbCrAccessDenied" xml:space="preserve">
+    <value>Prístup zamietnutý</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_chbCrAccessPermitted" xml:space="preserve">
+    <value>Prístup povolený</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_chbCrCardBlockedOrInactive" xml:space="preserve">
+    <value>Karta blokovaná alebo neaktívna</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_chbCrInvalidEmergencyCode" xml:space="preserve">
+    <value>Neplatný núdzový kód</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_chbCrInvalidGin" xml:space="preserve">
+    <value>Neplatný GIN</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_chbCrInvalidPin" xml:space="preserve">
+    <value>Neplatný PIN</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_chbCrUnknownCard" xml:space="preserve">
+    <value>Neznáma karta</value>
+  </data>
+  <data name="CCUConfigured_ForceReconfiguration" xml:space="preserve">
+    <value>Vynútená rekonfigurácia</value>
+  </data>
+  <data name="AccessControlList" xml:space="preserve">
+    <value>Zoznam prístupových práv</value>
+  </data>
+  <data name="AccessZone" xml:space="preserve">
+    <value>Prístupová zóna</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_chbLowSecurityInput" xml:space="preserve">
+    <value>Vchodovo/východový senzor</value>
+  </data>
+  <data name="TextInfoClose" xml:space="preserve">
+    <value>Zavrieť</value>
+  </data>
+  <data name="NCASDCUsForm_lDcuState" xml:space="preserve">
+    <value>Stav DCU</value>
+  </data>
+  <data name="ErrorOnOffObjectForAutomaticActivationCanNotBeActualEditingOutput" xml:space="preserve">
+    <value>Ono/Off objekt pre automatickú aktiváciu nemôže byť aktuálne editovaný výstup</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_gbControl" xml:space="preserve">
+    <value>Riadenie</value>
+  </data>
+  <data name="CcuWasDeleted" xml:space="preserve">
+    <value>bolo zmazané</value>
+  </data>
+  <data name="CcuDeleteFailed" xml:space="preserve">
+    <value>zmazanie zlyhalo</value>
+  </data>
+  <data name="InfoCcuIsDeleting" xml:space="preserve">
+    <value>CCU sa momentálne maže</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_chbUnconditional" xml:space="preserve">
+    <value>Bezpodmienečne</value>
+  </data>
+  <data name="SmartSlimCCR" xml:space="preserve">
+    <value>CCR-SC Slim</value>
+  </data>
+  <data name="NCASSecurityDailyPlanEditForm_lGinOrCard" xml:space="preserve">
+    <value>GIN/Karta</value>
+  </data>
+  <data name="NCASSecurityDailyPlanEditForm_lGinOrCardPin" xml:space="preserve">
+    <value>GIN/Karta + PIN</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditForm_lCard" xml:space="preserve">
+    <value>Karta</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditForm_lCardPin" xml:space="preserve">
+    <value>Karta + PIN</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditForm_lGin" xml:space="preserve">
+    <value>GIN</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditForm_lGinOrCard" xml:space="preserve">
+    <value>GIN/Karta</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditForm_lGinOrCardPin" xml:space="preserve">
+    <value>GIN/Karta + PIN</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditForm_lLocked" xml:space="preserve">
+    <value>Zamknuté</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditForm_lUnlocked" xml:space="preserve">
+    <value>Odomknuté</value>
+  </data>
+  <data name="ACLPersonUpdateFailed" xml:space="preserve">
+    <value>Aktualizácia zoznamu prístupových práv pre osobu zlyhala</value>
+  </data>
+  <data name="QuestionUpdateACLDateTo" xml:space="preserve">
+    <value>Dátum ukončenia platnosti zoznamu prístupových práv je neskorší ako dátum ukončenia zamestnania, pokračovať?</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_cbAutomaticDeactivateInverted" xml:space="preserve">
+    <value>Automatická deaktívacia keď objekt prejde do ON stavu</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_cbOfAAInverted" xml:space="preserve">
+    <value>Invertovaný</value>
+  </data>
+  <data name="General_bHardReset" xml:space="preserve">
+    <value>Tvrdý reset</value>
+  </data>
+  <data name="General_bSoftReset" xml:space="preserve">
+    <value>Mäkký reset</value>
+  </data>
+  <data name="QuestionHardResetCCU" xml:space="preserve">
+    <value>Naozaj chcete spustiť tvrdý reset na CCU?</value>
+  </data>
+  <data name="QuestionSoftResetCCU" xml:space="preserve">
+    <value>Naozaj chcete spustiť mäkký reset na CCU?</value>
+  </data>
+  <data name="NCASAccessControlListEditForm_lSensorHandling" xml:space="preserve">
+    <value>Ovládanie senzorov</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditForm_tsiCreate2" xml:space="preserve">
+    <value>Vytvoriť</value>
+  </data>
+  <data name="NCASSecurityTimeZoneEditForm_tsiModify2" xml:space="preserve">
+    <value>Zmeniť</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_cbImplicitMember" xml:space="preserve">
+    <value>Implicitný člen</value>
+  </data>
+  <data name="NCASCardReaderEditForm_lAlarmAreasImplicitMember" xml:space="preserve">
+    <value>Implicitný člen</value>
+  </data>
+  <data name="LookupedCCUsFormLookupedCCUsForm" xml:space="preserve">
+    <value>Nájdené CCU</value>
+  </data>
+  <data name="LookupedLprCamerasFormLookupedLprCamerasForm" xml:space="preserve">
+    <value>Nájdené LPR kamery</value>
+  </data>
+  <data name="LookupedCCUsForm_cbSelectUnselectAll" xml:space="preserve">
+    <value>Označiť / odznačiť všetky</value>
+  </data>
+  <data name="LookupedLprCamerasForm_cbSelectUnselectAll" xml:space="preserve">
+    <value>Označiť / odznačiť všetky</value>
+  </data>
+  <data name="ErrorCcuHasNoInputs" xml:space="preserve">
+    <value>CCU neobsahuje žiadne vstupy</value>
+  </data>
+  <data name="ErrorCcuHasNoOutputs" xml:space="preserve">
+    <value>CCU neobsahuje žiadne výstupy</value>
+  </data>
+  <data name="ErrorSpecifyCcu" xml:space="preserve">
+    <value>CCU je nutné zadať</value>
+  </data>
+  <data name="NCASInputsForm_bPrecreateCCUInput" xml:space="preserve">
+    <value>Predvytvoriť CCU vstup</value>
+  </data>
+  <data name="NCASOutputsForm_bPrecreateCCUOutput" xml:space="preserve">
+    <value>Predvytvoriť CCU výstup</value>
+  </data>
+  <data name="CreateCCUInput" xml:space="preserve">
+    <value>Vytvorenie CCU vstupu</value>
+  </data>
+  <data name="CreateCCUOutput" xml:space="preserve">
+    <value>Vytvorenie CCU výstupu</value>
+  </data>
+  <data name="CreateDCUInput" xml:space="preserve">
+    <value>Vytvorenie DCU vstupu</value>
+  </data>
+  <data name="CreateDCUOutput" xml:space="preserve">
+    <value>Vytvorenie DCU výstupu</value>
+  </data>
+  <data name="ColumnMacAddress" xml:space="preserve">
+    <value>MAC adresa</value>
+  </data>
+  <data name="ColumnMainboardType" xml:space="preserve">
+    <value>Typ dosky</value>
+  </data>
+  <data name="NCASCCUEditForm_lCCUNotAcnknowledgedEvents" xml:space="preserve">
+    <value>CCU nepotvrdené udalosti</value>
+  </data>
+  <data name="NCASCCUEditForm_lServerEventsQueueSize" xml:space="preserve">
+    <value>Server veľkosť fronty udalostí</value>
+  </data>
+  <data name="General_lOnlineStateFilter" xml:space="preserve">
+    <value>Stav pripojenia</value>
+  </data>
+  <data name="ErrorInsertTimeZoneDailyPlan" xml:space="preserve">
+    <value>Vyberte časovú zónu (bezpečnostnú č.z.) alebo denný plán (bezpečnostný d.p.)</value>
+  </data>
+  <data name="NCASCCUEditForm_AddTimeZoneDailyPlan" xml:space="preserve">
+    <value>Časové zóny (bezpečnostné č.z.), denné plány (bezpečnostné d.p.)</value>
+  </data>
+  <data name="NCASCCUEditForm_bGetState" xml:space="preserve">
+    <value>Vráť stav</value>
+  </data>
+  <data name="NCASCCUEditForm_gbTimeZonesDailyPlansState" xml:space="preserve">
+    <value>Stavy časových zón a denných plánov</value>
+  </data>
+  <data name="NCASCCUEditForm_lStateOnCCU" xml:space="preserve">
+    <value>Stav na CCU</value>
+  </data>
+  <data name="NCASCCUEditForm_lStateOnServer" xml:space="preserve">
+    <value>Stav na serveri</value>
+  </data>
+  <data name="NCASCCUEditForm_lTimeZoneDailyPlan" xml:space="preserve">
+    <value>Časová zóna (bezpeč. č.z.), denný plán (bezpeč. d.p.)</value>
+  </data>
+  <data name="State_card" xml:space="preserve">
+    <value>Karta</value>
+  </data>
+  <data name="State_cardpin" xml:space="preserve">
+    <value>Karta + PIN</value>
+  </data>
+  <data name="State_gin" xml:space="preserve">
+    <value>GIN</value>
+  </data>
+  <data name="State_gincard" xml:space="preserve">
+    <value>GIN/Karta</value>
+  </data>
+  <data name="State_gincardpin" xml:space="preserve">
+    <value>GIN/Karta + PIN</value>
+  </data>
+  <data name="State_locked" xml:space="preserve">
+    <value>Zamknutý</value>
+  </data>
+  <data name="State_Off" xml:space="preserve">
+    <value>Vypnutý</value>
+  </data>
+  <data name="State_On" xml:space="preserve">
+    <value>Zapnutý</value>
+  </data>
+  <data name="State_togglecard" xml:space="preserve">
+    <value>Preklápacia karta</value>
+  </data>
+  <data name="State_togglecardpin" xml:space="preserve">
+    <value>Preklápacia karta + PIN</value>
+  </data>
+  <data name="State_Unknown" xml:space="preserve">
+    <value>Neznámy</value>
+  </data>
+  <data name="State_unlocked" xml:space="preserve">
+    <value>Odomknutý</value>
+  </data>
+  <data name="ErrorACLDateRange" xml:space="preserve">
+    <value>Dátum musí byť väčší alebo rovný od dátumu od</value>
+  </data>
+  <data name="PersonAclAssignmentErrors" xml:space="preserve">
+    <value>Priradenie skončilo s chybami</value>
+  </data>
+  <data name="PersonAclAssignmentOk" xml:space="preserve">
+    <value>Priradenie úspešne ukončené</value>
+  </data>
+  <data name="PersonAclAssignmentPersonAclAssignment" xml:space="preserve">
+    <value>Priradenie ZPP osobám </value>
+  </data>
+  <data name="DcuActualDeleting" xml:space="preserve">
+    <value>DCU ja aktuálne mazané</value>
+  </data>
+  <data name="NCASCCUEditForm_ErrorQuestionForceReconfiguration" xml:space="preserve">
+    <value>Nie je doporučované vykonanie vynútenej rekonfigurácie, okrem špeciálnych prípadoch vymenovaných pod riešením problémov v dokumentácii. Konzultovanie s podporou Contal Nova je obzvlášť doporučené!</value>
+  </data>
+  <data name="QuestionContinueAnyway" xml:space="preserve">
+    <value>Chcete pokračovať?</value>
+  </data>
+  <data name="NCASCCUEditForm_gpAlarms" xml:space="preserve">
+    <value>Indikátory alarmov</value>
+  </data>
+  <data name="NCASCCUEditForm_gpMaintenance" xml:space="preserve">
+    <value>Indikátory údržby</value>
+  </data>
+  <data name="NCASCCUEditForm_gpValues" xml:space="preserve">
+    <value>Indikátory hodnôt</value>
+  </data>
+  <data name="NCASCCUEditForm_lBatteryCurrent" xml:space="preserve">
+    <value>Prúd batérie</value>
+  </data>
+  <data name="NCASCCUEditForm_lBatteryEmpty" xml:space="preserve">
+    <value>Vybitá batéria</value>
+  </data>
+  <data name="NCASCCUEditForm_lBatteryFault" xml:space="preserve">
+    <value>Porucha batérie</value>
+  </data>
+  <data name="NCASCCUEditForm_lBatteryFuse" xml:space="preserve">
+    <value>Poistka batérie</value>
+  </data>
+  <data name="NCASCCUEditForm_lBatteryVoltage" xml:space="preserve">
+    <value>Napätie batérie</value>
+  </data>
+  <data name="NCASCCUEditForm_lEstimatedBatterycapacity" xml:space="preserve">
+    <value>Predpokladaná kapacita batérie</value>
+  </data>
+  <data name="NCASCCUEditForm_lInputVoltage" xml:space="preserve">
+    <value>Vstupné napätie</value>
+  </data>
+  <data name="NCASCCUEditForm_lLoadCurrent" xml:space="preserve">
+    <value>Záťažový prúd</value>
+  </data>
+  <data name="NCASCCUEditForm_lMode" xml:space="preserve">
+    <value>Režim</value>
+  </data>
+  <data name="NCASCCUEditForm_lOnlineState" xml:space="preserve">
+    <value>Stav pripojenia</value>
+  </data>
+  <data name="NCASCCUEditForm_lOutputFuse" xml:space="preserve">
+    <value>Výstupna poistka</value>
+  </data>
+  <data name="NCASCCUEditForm_lOutputOutOfTollerance" xml:space="preserve">
+    <value>Výstup mino tolerancie</value>
+  </data>
+  <data name="NCASCCUEditForm_lOutputVoltage" xml:space="preserve">
+    <value>Výstupné napätie</value>
+  </data>
+  <data name="NCASCCUEditForm_lOvertemperature" xml:space="preserve">
+    <value>Prehrievanie</value>
+  </data>
+  <data name="NCASCCUEditForm_lPrimaryPowerMissing" xml:space="preserve">
+    <value>Odpojený primárny zdroj</value>
+  </data>
+  <data name="NCASCCUEditForm_lResets" xml:space="preserve">
+    <value>Resety</value>
+  </data>
+  <data name="NCASCCUEditForm_lSuccessRate" xml:space="preserve">
+    <value>Úspešnosť</value>
+  </data>
+  <data name="NCASCCUEditForm_lTamper" xml:space="preserve">
+    <value>Sabotáž</value>
+  </data>
+  <data name="NCASCCUEditForm_lTemperature" xml:space="preserve">
+    <value>Teplota</value>
+  </data>
+  <data name="NCASCCUEditForm_tpUpsMonitor" xml:space="preserve">
+    <value>UPS monitor</value>
+  </data>
+  <data name="NCASCCUEditForm_lUpsOnlineState" xml:space="preserve">
+    <value>Neznámy</value>
+  </data>
+  <data name="AllDevicesUpgradeFailed" xml:space="preserve">
+    <value>Upgrade označených zariadení zlyhal</value>
+  </data>
+  <data name="UpgradeErrorDeviceOffline" xml:space="preserve">
+    <value>Upgrade zariadenia zlyhal: zariadenie je odpojené</value>
+  </data>
+  <data name="WarningQuestionUnlockDoorEnvironment" xml:space="preserve">
+    <value>Nastavenie bezpečnostnej úrovne na odomknuté spôsobí odomknutie celeho dverného prostredia !
+Chcete pokračovať ?</value>
+  </data>
+  <data name="WarningQuestionUnlockLockedDoorEnvironment" xml:space="preserve">
+    <value>Druhý snímač kariet dverného prostredia je v stave zamknutý, a zabraňuje odomknutiu dverného prostredia.
+Pokiaľ bude v tomto stave, tento snímač kariet zostane zamknutý tiež.
+Naozaj chcete aplikovať bezpečnostnú úroveň odomknutý ?</value>
+  </data>
+  <data name="WarningQuestionUnlockLockedDoorEnvironmentByAA" xml:space="preserve">
+    <value>Dverné prostredie je zamknuté alarmovou zónou, a tá zabraňuje odomknutiu dverného prostredia.
+Pokiaľ bude alarmová zóna zasetovana,  tento snímač kariet zostane zamknutý.
+Naozaj chcete aplikovať bezpečnostnú úroveň odomknutý ?</value>
+  </data>
+  <data name="NCASDCUEditForm_gbOutputSabotageDCU" xml:space="preserve">
+    <value>Výstup pre tamper DCU krytu</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_chbAllowSensorReportingDuringAAUnset" xml:space="preserve">
+    <value>Povoliť reportovanie senzorov ak je alarmová zóna deaktivovaná</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_chbAlarmAreaReportingToCRs" xml:space="preserve">
+    <value>Povoliť alarmovej zóne reportovanie stavov na svojich snímačoch kariet</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_tpAlarmAreaAlarms" xml:space="preserve">
+    <value>Alarmy pre alarmové zóny</value>
+  </data>
+  <data name="General_tpTesting" xml:space="preserve">
+    <value>Testovanie</value>
+  </data>
+  <data name="NCASCCUEditForm_bRefreshAll" xml:space="preserve">
+    <value>Obnoviť</value>
+  </data>
+  <data name="NCASCCUEditForm_gbOtherStatistics" xml:space="preserve">
+    <value>Výkonové CCU štatistiky</value>
+  </data>
+  <data name="NCASCCUEditForm_lCommandTimeoutCount" xml:space="preserve">
+    <value>Timeouty</value>
+  </data>
+  <data name="NCASCCUEditForm_lFreeMemory" xml:space="preserve">
+    <value>Voľná pamäť</value>
+  </data>
+  <data name="NCASCCUEditForm_lFreeSpace" xml:space="preserve">
+    <value>Voľné miesto</value>
+  </data>
+  <data name="NCASCCUEditForm_lMemoryLoad" xml:space="preserve">
+    <value>Využitie pamäte (získané/prepočítané)</value>
+  </data>
+  <data name="NCASCCUEditForm_lThreadCount" xml:space="preserve">
+    <value>Vlákna</value>
+  </data>
+  <data name="NCASCCUEditForm_lTotalMemory" xml:space="preserve">
+    <value>Veľkosť pamäte</value>
+  </data>
+  <data name="ErrorEnterOldPassword" xml:space="preserve">
+    <value>Zadajte pôvodne heslo pre CCU</value>
+  </data>
+  <data name="ErrorWrongOldPassword" xml:space="preserve">
+    <value>Helso pre CCU sa nezhoduje</value>
+  </data>
+  <data name="CcuConfigurePassword_gbOldPassword" xml:space="preserve">
+    <value>Pôvodné heslo</value>
+  </data>
+  <data name="InfoCcuNoConfigurationPassword" xml:space="preserve">
+    <value>CCU nemá heslo</value>
+  </data>
+  <data name="General_lOutput" xml:space="preserve">
+    <value>Výstup</value>
+  </data>
+  <data name="NCASCardReaderEditForm_gbOutputOffline" xml:space="preserve">
+    <value>Výstup odpojený</value>
+  </data>
+  <data name="NCASCardReaderEditForm_gbOutputSabotage" xml:space="preserve">
+    <value>Výstup sabotáž</value>
+  </data>
+  <data name="NCASCardReaderEditForm_tpSpecialOutputs" xml:space="preserve">
+    <value>Špeciálne výstupy</value>
+  </data>
+  <data name="NCASDCUEditForm_gbOutputOfflineDCU" xml:space="preserve">
+    <value>Výstup odpojené DCU</value>
+  </data>
+  <data name="NCASCCUEditForm_gbSimulationAARights" xml:space="preserve">
+    <value>Simulovanie práv alarmovej zóny</value>
+  </data>
+  <data name="NCASCCUEditForm_lAlarmArea" xml:space="preserve">
+    <value>Alarmová zóna</value>
+  </data>
+  <data name="NCASCCUEditForm_lPerson" xml:space="preserve">
+    <value>Osoba</value>
+  </data>
+  <data name="NCASCCUEditForm_lResultsAADB" xml:space="preserve">
+    <value>Výsledok podľa databázy</value>
+  </data>
+  <data name="NCASCCUEditForm_lResultsCCU" xml:space="preserve">
+    <value>Výsledok na CCU</value>
+  </data>
+  <data name="ColumnCcuVersion" xml:space="preserve">
+    <value>Verzia CCU</value>
+  </data>
+  <data name="ColumnCeVersion" xml:space="preserve">
+    <value>Verzia CE obrazu</value>
+  </data>
+  <data name="ColumnIsChecked" xml:space="preserve">
+    <value>Vybrané</value>
+  </data>
+  <data name="CCUConfigured_ConfiguredForThisServerUpgradeOnly" xml:space="preserve">
+    <value>Konfigurované pre tento server (iba upgrade)</value>
+  </data>
+  <data name="CurrentCCUVersion" xml:space="preserve">
+    <value>Aktuálna verzia CCU</value>
+  </data>
+  <data name="InfoNotSupportedCCUVersionTooNew" xml:space="preserve">
+    <value>Verzia CCU je novšia ako verzia podporovaná serverom</value>
+  </data>
+  <data name="InfoNotSupportedCCUVersionTooOld" xml:space="preserve">
+    <value>Verzia CCU je staršia ako verzia podporovaná serverom</value>
+  </data>
+  <data name="MaximalCCUSupportedVersion" xml:space="preserve">
+    <value>Maximálna podporovaná verzia CCU</value>
+  </data>
+  <data name="MinimalCCUSupportedVersion" xml:space="preserve">
+    <value>Minimálna podporovaná verzia CCU</value>
+  </data>
+  <data name="WarningUpgradingUpgradeOnlyCCU" xml:space="preserve">
+    <value>Upgrade CCU, ktoré je obmedzene podporené, môže spôsobiť, že priebeh upgradu sa nebude správne zobrazovať</value>
+  </data>
+  <data name="ErrorCopyFileForUpgradeFailed" xml:space="preserve">
+    <value>Zlyhalo kopírovanie súboru pre upgrade</value>
+  </data>
+  <data name="ErrorUpgradeFileIsUsedByAnotherClient" xml:space="preserve">
+    <value>So súborom pre upgrade práve pracuje iný klient</value>
+  </data>
+  <data name="General_bBrowse" xml:space="preserve">
+    <value>Vybrať</value>
+  </data>
+  <data name="General_bSend" xml:space="preserve">
+    <value>Poslať</value>
+  </data>
+  <data name="General_lFilePath" xml:space="preserve">
+    <value>Cesta k súboru</value>
+  </data>
+  <data name="InfoSendUpgradeFileToServerSucceeded" xml:space="preserve">
+    <value>Posielanie súboru pre upgrade bolo úspešne ukončené</value>
+  </data>
+  <data name="QuestionOwerriteUpgradeFile" xml:space="preserve">
+    <value>Tento súbor pre upgrade už na serveri existuje. Prepísať ho?</value>
+  </data>
+  <data name="TextFilterForUpgradeCCU" xml:space="preserve">
+    <value>Súbory pre upgrade CCU firmwaru</value>
+  </data>
+  <data name="TextFilterForUpgradeCE" xml:space="preserve">
+    <value>Súbory pre upgrade CE obrazu</value>
+  </data>
+  <data name="TextFilterForUpgradeCR" xml:space="preserve">
+    <value>Súbory pre upgrade firmwaru snímača kariet</value>
+  </data>
+  <data name="TextFilterForUpgradeDCU" xml:space="preserve">
+    <value>Súbory pre upgrade DCU firmwaru</value>
+  </data>
+  <data name="TextTitleOpenFileForUpgradeCCU" xml:space="preserve">
+    <value>Otvoriť súbor pre upgrade CCU frimwaru</value>
+  </data>
+  <data name="TextTitleOpenFileForUpgradeCE" xml:space="preserve">
+    <value>Otvoriť súbor pre upgrade CE obrazu</value>
+  </data>
+  <data name="TextTitleOpenFileForUpgradeCR" xml:space="preserve">
+    <value>Otvoriť súbor pre upgrade frimwaru snímača kariet</value>
+  </data>
+  <data name="TextTitleOpenFileForUpgradeDCU" xml:space="preserve">
+    <value>Otvoriť súbor pre upgrade DCU firmwaru</value>
+  </data>
+  <data name="General_bReboot" xml:space="preserve">
+    <value>Reštart</value>
+  </data>
+  <data name="QuestionResetCardReader" xml:space="preserve">
+    <value>Naozaj chcete reštartovať snímač kariet</value>
+  </data>
+  <data name="NCASOutputEditForm_cbInverted" xml:space="preserve">
+    <value>Invertovaný</value>
+  </data>
+  <data name="NCASCCUEditForm_gbSetTimeManually" xml:space="preserve">
+    <value>Manuálne nastavenie času</value>
+  </data>
+  <data name="QuestionSetTimeManually" xml:space="preserve">
+    <value>Chete nastaviť čas manuálne?
+
+Ak je zapnutá NTP synchronizácia, manuálne nastavený čas môže byť synchronizáciou prestavený.</value>
+  </data>
+  <data name="SetTimeManuallyFailed" xml:space="preserve">
+    <value>Manuálne nastavenie času zlyhalo</value>
+  </data>
+  <data name="SetTimeManuallySucceeded" xml:space="preserve">
+    <value>Manuálne nastavenie času prebehlo úspešne</value>
+  </data>
+  <data name="CCUEventsRemoveFailed" xml:space="preserve">
+    <value>Odstránenie udalostí sa nepodarilo</value>
+  </data>
+  <data name="CCUEventsRemoveSuccess" xml:space="preserve">
+    <value>Udalosti úspešne odstránené</value>
+  </data>
+  <data name="NCASCCUEditForm_bDeleteEvents" xml:space="preserve">
+    <value>Odstrániť udalosti</value>
+  </data>
+  <data name="QuestionConfirmEventsDelete" xml:space="preserve">
+    <value>Chcete odstrániť všetky udalosti z daného CCU?</value>
+  </data>
+  <data name="ColumnBlocksAddedRuntime" xml:space="preserve">
+    <value>Počet pridaných blokov</value>
+  </data>
+  <data name="ColumnBlocksRemovedRuntime" xml:space="preserve">
+    <value>Počet odstránených blokov</value>
+  </data>
+  <data name="NCASCCUEditForm_bClearValues" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="NCASCCUEditForm_bGetBlockFilesInfo" xml:space="preserve">
+    <value>Obnoviť</value>
+  </data>
+  <data name="NCASCCUEditForm_gbBlockFilesInfo" xml:space="preserve">
+    <value>Informácie o blokových súboroch</value>
+  </data>
+  <data name="NCASCCUEditForm_tpCommunicationAndMemory" xml:space="preserve">
+    <value>Komunikácia a výkon</value>
+  </data>
+  <data name="NCASCCUEditForm_tpOtherStatistics" xml:space="preserve">
+    <value>Ostatné</value>
+  </data>
+  <data name="CardReaderCommands_Unknown" xml:space="preserve">
+    <value>Neznámy</value>
+  </data>
+  <data name="ColumnActualState" xml:space="preserve">
+    <value>Aktuálny stav</value>
+  </data>
+  <data name="ColumnStringDisabled" xml:space="preserve">
+    <value>Zablokovaný</value>
+  </data>
+  <data name="AlarmAreaRequestActivationStates_Set" xml:space="preserve">
+    <value>Aktivovaná</value>
+  </data>
+  <data name="AlarmAreaRequestActivationStates_UnconditionalSet" xml:space="preserve">
+    <value>Bezpodmienečne aktivovaná</value>
+  </data>
+  <data name="AlarmAreaRequestActivationStates_Unset" xml:space="preserve">
+    <value>Deaktivovaná</value>
+  </data>
+  <data name="ColumnStringActivationState" xml:space="preserve">
+    <value>Aktivačný stav</value>
+  </data>
+  <data name="ColumnStringAlarmState" xml:space="preserve">
+    <value>Alarmový stav</value>
+  </data>
+  <data name="ColumnStringConfigurationState" xml:space="preserve">
+    <value>Konfiguračný stav</value>
+  </data>
+  <data name="ColumnStringRequestActivationState" xml:space="preserve">
+    <value>Požadovaný aktivačný stav</value>
+  </data>
+  <data name="NCASCCUEditForm_ConfigurationAlreadyRunning" xml:space="preserve">
+    <value>Na CCU konfigurácia už prebieha</value>
+  </data>
+  <data name="ProximitySlimCCR" xml:space="preserve">
+    <value>CCR-PC Slim</value>
+  </data>
+  <data name="BlockingType_Blocked" xml:space="preserve">
+    <value>Blokovaný</value>
+  </data>
+  <data name="NCASInputsForm_cbEnableAlarmsFilter_checked" xml:space="preserve">
+    <value>Zapnuté</value>
+  </data>
+  <data name="NCASInputsForm_cbEnableAlarmsFilter_unchecked" xml:space="preserve">
+    <value>Vypnuté</value>
+  </data>
+  <data name="NCASInputsForm_cbInvertedFilter_false" xml:space="preserve">
+    <value>Nie</value>
+  </data>
+  <data name="NCASInputsForm_cbInvertedFilter_true" xml:space="preserve">
+    <value>Áno</value>
+  </data>
+  <data name="NCASInputsForm_lBlockedByFilter" xml:space="preserve">
+    <value>Blokovaný objektom</value>
+  </data>
+  <data name="NCASInputsForm_lEnableAlarmsFilter" xml:space="preserve">
+    <value>Dovoliť alarmy</value>
+  </data>
+  <data name="NCASInputsForm_lInputControlFilter" xml:space="preserve">
+    <value>Riadenie vstupu</value>
+  </data>
+  <data name="NCASInputsForm_lInputTypeFilter" xml:space="preserve">
+    <value>Typ vstupu</value>
+  </data>
+  <data name="NCASInputsForm_lInvertedFilter" xml:space="preserve">
+    <value>Invertovaný</value>
+  </data>
+  <data name="NCASInputsForm_lPresentationGroupFilter" xml:space="preserve">
+    <value>Prezentačná skupina</value>
+  </data>
+  <data name="NCASInputsForm_lCurrentlyBlockedFilter" xml:space="preserve">
+    <value>Momentálne blokovaný</value>
+  </data>
+  <data name="NCASInputsForm_rbFilterAnd" xml:space="preserve">
+    <value>Zobraziť vstupy ktoré vyhovujú všetkým podmienkam</value>
+  </data>
+  <data name="NCASInputsForm_rbFilterOr" xml:space="preserve">
+    <value>Zobraziť vstupy ktoré vyhovujú aspoň jednej podmienke</value>
+  </data>
+  <data name="NCASScenesFormNCASScenesForm" xml:space="preserve">
+    <value>Scény</value>
+  </data>
+  <data name="LoginGroupsFormLoginGroupsForm" xml:space="preserve">
+    <value>Prihlasovacie skupiny</value>
+  </data>
+  <data name="CardTemplatesFormCardTemplatesForm" xml:space="preserve">
+    <value>Šablóny kariet</value>
+  </data>
+  <data name="NCASInputsForm_lCurrentState" xml:space="preserve">
+    <value>Aktuálny stav</value>
+  </data>
+  <data name="NCASOutputsForm_lControlledByFilter" xml:space="preserve">
+    <value>Riadený</value>
+  </data>
+  <data name="NCASOutputsForm_lCurrentlyControlledFilter" xml:space="preserve">
+    <value>Aktuálne riadený</value>
+  </data>
+  <data name="NCASOutputsForm_lCurrentState" xml:space="preserve">
+    <value>Aktuálny stav</value>
+  </data>
+  <data name="NCASOutputsForm_lEnableAlarmsFilter" xml:space="preserve">
+    <value>Dovoliť alarmy</value>
+  </data>
+  <data name="NCASOutputsForm_lInvertedFilter" xml:space="preserve">
+    <value>Invertovaný</value>
+  </data>
+  <data name="NCASOutputsForm_lOutputControlFilter" xml:space="preserve">
+    <value>Riadenie výstupu</value>
+  </data>
+  <data name="NCASOutputsForm_lOutputTypeFilter" xml:space="preserve">
+    <value>Typ výstupu</value>
+  </data>
+  <data name="NCASOutputsForm_lPresentationGroupFilter" xml:space="preserve">
+    <value>Prezentačná skupina</value>
+  </data>
+  <data name="NCASOutputsForm_rbFilterAnd" xml:space="preserve">
+    <value>Zobraziť výstupy ktoré vyhovujú všetkým podmienkám</value>
+  </data>
+  <data name="NCASOutputsForm_rbFilterOr" xml:space="preserve">
+    <value>Zobraziť výstupy ktoré vyhovujú aspoň jednej podmienke</value>
+  </data>
+  <data name="NCASOutputsForm_cbEnableAlarmsFilter_checked" xml:space="preserve">
+    <value>Zapnuté</value>
+  </data>
+  <data name="NCASOutputsForm_cbEnableAlarmsFilter_unchecked" xml:space="preserve">
+    <value>Vypnuté</value>
+  </data>
+  <data name="NCASOutputsForm_cbInvertedFilter_false" xml:space="preserve">
+    <value>Nie</value>
+  </data>
+  <data name="NCASOutputsForm_cbInvertedFilter_true" xml:space="preserve">
+    <value>Áno</value>
+  </data>
+  <data name="OutOfRange" xml:space="preserve">
+    <value>Mimo rozsah</value>
+  </data>
+  <data name="RealtimeFiltering" xml:space="preserve">
+    <value>Filtorvanie v reálnom čase</value>
+  </data>
+  <data name="UsedByAnotherAplication" xml:space="preserve">
+    <value>Používaný inou aplikáciou</value>
+  </data>
+  <data name="NCASCardReadersForm_lCurrentForcedSecurityLevel" xml:space="preserve">
+    <value>Aktuálne vynútená bezp. úroveň</value>
+  </data>
+  <data name="NCASCardReadersForm_lCurrentSecurityLevelFilter" xml:space="preserve">
+    <value>Aktuálna bezpečnostná úroveň</value>
+  </data>
+  <data name="NCASCardReadersForm_lEmergencyCodeFilter" xml:space="preserve">
+    <value>Núdzový kód</value>
+  </data>
+  <data name="NCASCardReadersForm_lForcedSecurityLevel" xml:space="preserve">
+    <value>Vynútená bezp. úroveň</value>
+  </data>
+  <data name="NCASCardReadersForm_lMemberOfAclFilter" xml:space="preserve">
+    <value>Patriaci do zoznamu prístupových práv</value>
+  </data>
+  <data name="NCASCardReadersForm_lSecurityLevelFilter" xml:space="preserve">
+    <value>Bezpečnostná úroveň</value>
+  </data>
+  <data name="NCASCardReadersForm_rbFilterAnd" xml:space="preserve">
+    <value>Zobraziť snímače kariet ktoré vyhovujú všetkým podmienkám</value>
+  </data>
+  <data name="NCASCardReadersForm_rbFilterOr" xml:space="preserve">
+    <value>Zobraziť snímače kariet ktoré vyhovujú aspoň jednej podmienke</value>
+  </data>
+  <data name="NCASCardReadersForm_lRecordCount" xml:space="preserve">
+    <value>Počet záznamov</value>
+  </data>
+  <data name="NCASInputsForm_lRecordCount" xml:space="preserve">
+    <value>Počet záznamov</value>
+  </data>
+  <data name="NCASOutputsForm_lRecordCount" xml:space="preserve">
+    <value>Počet záznamov</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_UnsetFailedInsufficientRights" xml:space="preserve">
+    <value>Deaktivácia alarmovej zóny zlyhala. Používateľ {0} nemá dostatočné oprávnenia.</value>
+  </data>
+  <data name="AlarmAreaActionResult_FailedAlarmAreaNotFound" xml:space="preserve">
+    <value>Alarmová zóna sa nenašla.</value>
+  </data>
+  <data name="AlarmAreaActionResult_FailedBoughtTimeDurationExceeded" xml:space="preserve">
+    <value>Nakupovaný čas prekročil nastavený limit.</value>
+  </data>
+  <data name="AlarmAreaActionResult_FailedCCUOffline" xml:space="preserve">
+    <value>CCU je offline</value>
+  </data>
+  <data name="AlarmAreaActionResult_FailedDueError" xml:space="preserve">
+    <value>Chyba.</value>
+  </data>
+  <data name="AlarmAreaActionResult_FailedInputInAlarm" xml:space="preserve">
+    <value>Vstup je v alarmovom stave</value>
+  </data>
+  <data name="AlarmAreaActionResult_FailedInsufficientRights" xml:space="preserve">
+    <value>Nedostatočné oprávnenie.</value>
+  </data>
+  <data name="AlarmAreaActionResult_FailedTimeAlreadyBought" xml:space="preserve">
+    <value>Čas bol už nakúpený.</value>
+  </data>
+  <data name="AlarmAreaActionResult_FailedTimeBuyingNotEnabled" xml:space="preserve">
+    <value>Nakupovanie času nie je zapnuté.</value>
+  </data>
+  <data name="AlarmAreaActionResult_FailedTimeToBuyIsZero" xml:space="preserve">
+    <value>Kupovaný čas je nulový.</value>
+  </data>
+  <data name="AlarmAreaActionResult_FailedTotalBoughtTimeReached" xml:space="preserve">
+    <value>Nakupovaný čas prekročil celkový limit alarmovej zóny.</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_EventBoughtTimeChanged" xml:space="preserve">
+    <value>Nakúpený čas: {0}
+Zostávajúci čas: {1}</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_EventTimeBuyingFailed" xml:space="preserve">
+    <value>Zlyhal. Dôvod: {0}
+Nakupovaný čas: {1}, {2} čas: {3}</value>
+  </data>
+  <data name="missing" xml:space="preserve">
+    <value>chýbajúci</value>
+  </data>
+  <data name="remaining" xml:space="preserve">
+    <value>zostávajúci</value>
+  </data>
+  <data name="required" xml:space="preserve">
+    <value>potrebný</value>
+  </data>
+  <data name="NCASAlarmAreaEditFormEnterAmountOfTimeToBuy" xml:space="preserve">
+    <value>Zadajte množstvo nakupovaného času.</value>
+  </data>
+  <data name="Unlimited" xml:space="preserve">
+    <value>Neobmedzený</value>
+  </data>
+  <data name="NCASCCUEditForm_ConfigureForThisServerBlockedByLicence" xml:space="preserve">
+    <value>Konfigurácia pre tento server bola zablokovaná pre nedostatočný počet CCU12 Combo licencií.</value>
+  </data>
+  <data name="TimeBuyingErrors" xml:space="preserve">
+    <value>Nakupovanie času pre niektoré alarmové zóny zlyhalo.</value>
+  </data>
+  <data name="labelOutput" xml:space="preserve">
+    <value>Výstup</value>
+  </data>
+  <data name="columnMessage" xml:space="preserve">
+    <value>Správa</value>
+  </data>
+  <data name="columnSource" xml:space="preserve">
+    <value>Zdroj</value>
+  </data>
+  <data name="columnTime" xml:space="preserve">
+    <value>Čas</value>
+  </data>
+  <data name="NCASDevicesAlarmSettingsForm_tsiCreateSecDailyPlan" xml:space="preserve">
+    <value>Vytvoriť bezpeč. denný plán</value>
+  </data>
+  <data name="ErrorNotTimeZoneReportsSet" xml:space="preserve">
+    <value>Časová zóna pre Reporty musí byť nastavená!</value>
+  </data>
+  <data name="TextAlarmCount" xml:space="preserve">
+    <value>Počet alarmov</value>
+  </data>
+  <data name="MultiDoorType_MultiDoor" xml:space="preserve">
+    <value> Skupina dverí</value>
+  </data>
+  <data name="MultiDoorType_Elevator" xml:space="preserve">
+    <value>Výťah</value>
+  </data>
+  <data name="NCASACLGroupsFormNCASACLGroupsForm" xml:space="preserve">
+    <value>Skupiny ZPP</value>
+  </data>
+  <data name="NCASGraphicsViewsFormNCASGraphicsViewsForm" xml:space="preserve">
+    <value>Grafické zobrazenie</value>
+  </data>
+  <data name="NCASAntiPassBackZonesFormNCASAntiPassBackZonesForm" xml:space="preserve">
+    <value>Neprechodné zóny</value>
+  </data>
+  <data name="NCASMultiDoorsFormNCASMultiDoorsForm" xml:space="preserve">
+    <value>Skupiny dverí</value>
+  </data>
+  <data name="NCASMultiDoorElementsFormNCASMultiDoorElementsForm" xml:space="preserve">
+    <value>Prvky skupiny dverí</value>
+  </data>
+  <data name="NCASFloorsFormNCASFloorsForm" xml:space="preserve">
+    <value>Podlažia</value>
+  </data>
+  <data name="NCASAlarmTransmittersFormNCASAlarmTransmittersForm" xml:space="preserve">
+    <value>Vysielače alarmov</value>
+  </data>
+  <data name="NCASAlarmArcsFormNCASAlarmArcsForm" xml:space="preserve">
+    <value>Prijímače alarmov</value>
+  </data>
+  <data name="NCASTimetecSettingsFormNCASTimetecSettingsForm" xml:space="preserve">
+    <value>Nastavenia Timetec</value>
+  </data>
+  <data name="AlarmType_AlarmArea_AAlarm" xml:space="preserve">
+    <value>Alarmová zóna - A alarm</value>
+  </data>
+  <data name="AlarmType_AlarmArea_Alarm" xml:space="preserve">
+    <value>Alarmová zóna - Alarm</value>
+  </data>
+  <data name="AlarmType_AlarmArea_SetByOnOffObjectFailed" xml:space="preserve">
+    <value>Alarmová zóna - Nastavenie objektom zlyhalo</value>
+  </data>
+  <data name="AlarmType_CardReader_AccessDenied" xml:space="preserve">
+    <value>Snímač - Prístup odmietnutý</value>
+  </data>
+  <data name="AlarmType_CardReader_AccessPermitted" xml:space="preserve">
+    <value>Snímač - Prístup povolený</value>
+  </data>
+  <data name="AlarmType_CardReader_CardBlockedOrInactive" xml:space="preserve">
+    <value>Snímač - Karta zablokovaná alebo neaktívna</value>
+  </data>
+  <data name="AlarmType_CardReader_InvalidCode" xml:space="preserve">
+    <value>Snímač - Nesprávny kód</value>
+  </data>
+  <data name="AlarmType_CardReader_InvalidEmergencyCode" xml:space="preserve">
+    <value>Snímač - Nesprávny bezpečnostný kód</value>
+  </data>
+  <data name="AlarmType_CardReader_InvalidPIN" xml:space="preserve">
+    <value>Snímač -  Nesprávny PIN</value>
+  </data>
+  <data name="AlarmType_CardReader_Offline" xml:space="preserve">
+    <value>Snímač - Offline</value>
+  </data>
+  <data name="AlarmType_CardReader_Offline_Due_CCU_Offline" xml:space="preserve">
+    <value>Snímač - Offline kvôli CCU offline</value>
+  </data>
+  <data name="AlarmType_CardReader_TamperSabotage" xml:space="preserve">
+    <value>Snímač - Poistka/sabotáž</value>
+  </data>
+  <data name="AlarmType_CardReader_UnknownCard" xml:space="preserve">
+    <value>Snímač - Neznáma karta</value>
+  </data>
+  <data name="AlarmType_CCU_BatteryLow" xml:space="preserve">
+    <value>CCU - Nízka úroveň batérie</value>
+  </data>
+  <data name="AlarmType_Ccu_CatUnreachable" xml:space="preserve">
+    <value>CCU - CAT nedosiahnuteľný</value>
+  </data>
+  <data name="AlarmType_CCU_ClockUnsynchronized" xml:space="preserve">
+    <value>CCU - Nezosynchronizované hodiny</value>
+  </data>
+  <data name="AlarmType_CCU_CoprocessorFailure" xml:space="preserve">
+    <value>CCU - Zlyhanie koprocesora</value>
+  </data>
+  <data name="AlarmType_CCU_DataChannelDistrupted" xml:space="preserve">
+    <value>CCU - Poškodený dátový kanál</value>
+  </data>
+  <data name="AlarmType_CCU_ExtFuse" xml:space="preserve">
+    <value>CCU - Externá poistka</value>
+  </data>
+  <data name="AlarmType_CCU_FilesystemProblem" xml:space="preserve">
+    <value>CCU - Problém so súborovým systémom</value>
+  </data>
+  <data name="AlarmType_CCU_HighMemoryLoad" xml:space="preserve">
+    <value>CCU - Vysoké zaťaženie pamäte</value>
+  </data>
+  <data name="AlarmType_CCU_Offline" xml:space="preserve">
+    <value>CCU - Offline</value>
+  </data>
+  <data name="AlarmType_CCU_OutdatedFirmware" xml:space="preserve">
+    <value>CCU - Zastaraný firmvér</value>
+  </data>
+  <data name="AlarmType_CCU_PrimaryPowerMissing" xml:space="preserve">
+    <value>CCU - Chýbajúce hlavné napájanie</value>
+  </data>
+  <data name="AlarmType_CCU_SdCardNotFound" xml:space="preserve">
+    <value>CCU - Chýbajúca SD karta</value>
+  </data>
+  <data name="AlarmType_CCU_TamperSabotage" xml:space="preserve">
+    <value>CCU - Poistka/sabotáž</value>
+  </data>
+  <data name="AlarmType_Ccu_TransferToArcTimedOut" xml:space="preserve">
+    <value>CCU - Alarm sa nepreniesol do prijímača</value>
+  </data>
+  <data name="AlarmType_CCU_Unconfigured" xml:space="preserve">
+    <value>CCU - Nenakonfigurované</value>
+  </data>
+  <data name="AlarmType_Ccu_Ups_BatteryFault" xml:space="preserve">
+    <value>CCU - Zlyhanie batérie UPS</value>
+  </data>
+  <data name="AlarmType_Ccu_Ups_BatteryFuse" xml:space="preserve">
+    <value>CCU - Poistka batérie UPS</value>
+  </data>
+  <data name="AlarmType_Ccu_Ups_OutputFuse" xml:space="preserve">
+    <value>CCU - Výstupná poistka UPS</value>
+  </data>
+  <data name="AlarmType_Ccu_Ups_Overtemperature" xml:space="preserve">
+    <value>CCU - Prehriatie UPS</value>
+  </data>
+  <data name="AlarmType_Ccu_Ups_TamperSabotage" xml:space="preserve">
+    <value>CCU - Poistka/sabotáž UPS</value>
+  </data>
+  <data name="AlarmType_DCU_Offline" xml:space="preserve">
+    <value>DCU - Offline</value>
+  </data>
+  <data name="AlarmType_DCU_Offline_Due_CCU_Offline" xml:space="preserve">
+    <value>DCU - Offline kvôli CCU offline</value>
+  </data>
+  <data name="AlarmType_DCU_OutdatedFirmware" xml:space="preserve">
+    <value>DCU - Zastaraný firmvér</value>
+  </data>
+  <data name="AlarmType_DCU_TamperSabotage" xml:space="preserve">
+    <value>DCU - Poistka/sabotáž</value>
+  </data>
+  <data name="AlarmType_DCU_WaitingForUpgrade" xml:space="preserve">
+    <value>DCU - Čakanie na aktualizáciu</value>
+  </data>
+  <data name="AlarmType_DoorEnvironment_DoorAjar" xml:space="preserve">
+    <value>Dverné prostredie - Ajar dverí</value>
+  </data>
+  <data name="AlarmType_DoorEnvironment_Intrusion" xml:space="preserve">
+    <value>Dverné prostredie - Vniknutie</value>
+  </data>
+  <data name="AlarmType_DoorEnvironment_Sabotage" xml:space="preserve">
+    <value>Dverné prostredie - Sabotáž</value>
+  </data>
+  <data name="AlarmType_GeneralAlarm" xml:space="preserve">
+    <value>Všeobecný alarm</value>
+  </data>
+  <data name="AlarmType_ICCU_PortAlreadyUsed" xml:space="preserve">
+    <value>ICCU - Port sa už používa</value>
+  </data>
+  <data name="AlarmType_ICCU_SendingOfObjectStateFailed" xml:space="preserve">
+    <value>ICCU - Zlyhalo posielanie stavu objektov</value>
+  </data>
+  <data name="AlarmType_Input_Alarm" xml:space="preserve">
+    <value>Vstup - Alarm</value>
+  </data>
+  <data name="AlarmType_Input_Tamper" xml:space="preserve">
+    <value>Vstup - Poistka</value>
+  </data>
+  <data name="AlarmType_Output_Alarm" xml:space="preserve">
+    <value>Výstup - Alarm</value>
+  </data>
+  <data name="AlarmType_Sensor_Alarm" xml:space="preserve">
+    <value>Senzor - Alarm</value>
+  </data>
+  <data name="AlarmType_Sensor_Tamper_Alarm" xml:space="preserve">
+    <value>Senzor - Poistka</value>
+  </data>
+  <data name="CCUExceptionOccurred" xml:space="preserve">
+    <value>Na CCU vznikla výnimka</value>
+  </data>
+  <data name="AccessDeniedInvalidCODE" xml:space="preserve">
+    <value>Prístup zamietnutý, nesprávny Kód</value>
+  </data>
+  <data name="AccessDeniedSetAlarmAreaInvalidCODE" xml:space="preserve">
+    <value>Prístup zamietnutý, nesprávny Kód pre setovanie alarmovej zóny</value>
+  </data>
+  <data name="AccessDeniedUnsetAlarmAreaInvalidCODE" xml:space="preserve">
+    <value>Prístup zamietnutý, nesprávny Kód pre odsetovanie alarmovej zóny</value>
+  </data>
+  <data name="CEUpgradeFailed" xml:space="preserve">
+    <value>Aktualizácia CE zlyhala</value>
+  </data>
+  <data name="CCUUpgradeFailed" xml:space="preserve">
+    <value>Aktualizácia CCU zlyhala</value>
+  </data>
+  <data name="CardEncoded" xml:space="preserve">
+    <value>Karta dekódovaná</value>
+  </data>
+  <data name="ActualStateOfSecurityDailyPlan" xml:space="preserve">
+    <value>Aktuálny stav bezpečnostného denného plánu</value>
+  </data>
+  <data name="ActualStateOfSecurityTimeZone" xml:space="preserve">
+    <value>Aktuálny stav Bezpečnostnje dennej zóny</value>
+  </data>
+  <data name="TimeForNextEvaluatingStatesOfSecurityDailyPlans" xml:space="preserve">
+    <value>Ďalšie vyhodnotenie Bezpečnostného denného plánu</value>
+  </data>
+  <data name="CoprocessorFailureChanged" xml:space="preserve">
+    <value>CCU - Zmena, zlyhanie koprocesora</value>
+  </data>
+  <data name="CCUTimeAdjusted" xml:space="preserve">
+    <value>CCU - Nastavenie času</value>
+  </data>
+  <data name="CCUObjectDeserializeFailed" xml:space="preserve">
+    <value>CCU - Zlyhanie deserializácie objektu</value>
+  </data>
+  <data name="CCUTimingProblem" xml:space="preserve">
+    <value>CCU - Problém s časovaním</value>
+  </data>
+  <data name="DSMStateChanged" xml:space="preserve">
+    <value>DSM - Zmena stavu</value>
+  </data>
+  <data name="CCUAlarmPrimaryPowerMissing" xml:space="preserve">
+    <value>CCU Alarm - Chýbajúce hlavné napájanie</value>
+  </data>
+  <data name="CCUAlarmBatteryIsLow" xml:space="preserve">
+    <value>CCU - Nízke napätie batérie</value>
+  </data>
+  <data name="CCUAlarmFuseOnExtensionBoard" xml:space="preserve">
+    <value>CCU Alarm - Poistka na rozširujúcej doske</value>
+  </data>
+  <data name="CCUTamperStateChanged" xml:space="preserve">
+    <value>CCU - Zmena stavu poistky</value>
+  </data>
+  <data name="DCUTamperStateChanged" xml:space="preserve">
+    <value>DCU - Zmena stavu poistky</value>
+  </data>
+  <data name="CardReaderTamperStateChanged" xml:space="preserve">
+    <value>Snímač - Zmena stavu poistky</value>
+  </data>
+  <data name="CCUReturnedNullInLoadingTheObject" xml:space="preserve">
+    <value>CCU - Null pri načítavaní objektu</value>
+  </data>
+  <data name="CCUDataChannelTransferFailed" xml:space="preserve">
+    <value>CCU - Zlyhanie dátového prenosu</value>
+  </data>
+  <data name="CCUIncomingTransferInfo" xml:space="preserve">
+    <value>CCU - Info o prichádzajpcom prenose</value>
+  </data>
+  <data name="EISDidNotRespondInProperTime" xml:space="preserve">
+    <value>EIS - neodpovedanie v časovom limite</value>
+  </data>
+  <data name="ICCUSendingOfObjectStateFailed" xml:space="preserve">
+    <value>ICCU - Zlyhal prenos stavu objektu</value>
+  </data>
+  <data name="ICCUPortIsAlreadyUsed" xml:space="preserve">
+    <value>ICCU - Port sa už používa</value>
+  </data>
+  <data name="SetAlarmAreaFromCardReaderFailed" xml:space="preserve">
+    <value>Nastavenie alarmovej zóny zo snímača zlyhalo</value>
+  </data>
+  <data name="CCUIncomingAutonomousEvents" xml:space="preserve">
+    <value>Prichádzajúce autonómne udalosti na CCU</value>
+  </data>
+  <data name="CCUAutonomousEventsProcessed" xml:space="preserve">
+    <value>Autonómne udalosti CCU spracované</value>
+  </data>
+  <data name="CCUAutonomousEventsProcessingCanceled" xml:space="preserve">
+    <value>Zlyhalo spracovanie autonómnych udalostí CCU</value>
+  </data>
+  <data name="InputStateChanged" xml:space="preserve">
+    <value>Zmena stavu vstupu</value>
+  </data>
+  <data name="OutputStateChanged" xml:space="preserve">
+    <value>Zmena stavu výstupu</value>
+  </data>
+  <data name="CardReaderOnlineStateChanged" xml:space="preserve">
+    <value>Zmena online stavu snímača</value>
+  </data>
+  <data name="CCUOnline" xml:space="preserve">
+    <value>CCU Online</value>
+  </data>
+  <data name="CCUOffline" xml:space="preserve">
+    <value>CCU Offline</value>
+  </data>
+  <data name="DatabaseBackup" xml:space="preserve">
+    <value>Záloha databázy</value>
+  </data>
+  <data name="CCUMemoryLoad" xml:space="preserve">
+    <value>Zaťaženie pamäte CCU</value>
+  </data>
+  <data name="CCUFilesystemProblem" xml:space="preserve">
+    <value>Problém so súborovým systémom CCU</value>
+  </data>
+  <data name="CCUProcessingOfTheStreamTakesTooLongTime" xml:space="preserve">
+    <value>Spracovanie dát CCU trvá príliš dlho</value>
+  </data>
+  <data name="CCUSDCardNotFound" xml:space="preserve">
+    <value>CCU nenašlo SDkartu</value>
+  </data>
+  <data name="FunctionKeyPressed" xml:space="preserve">
+    <value>Stlačenie funkčnej klávesy</value>
+  </data>
+  <data name="AlarmAreaAlarmStateChanged" xml:space="preserve">
+    <value>Stav alarmu v alarmovej zóne sa zmenil</value>
+  </data>
+  <data name="SetAlarmAreaFromClient" xml:space="preserve">
+    <value>Alarmová zóna nastavená z Klienta</value>
+  </data>
+  <data name="UnsetAlarmAreaFromClient" xml:space="preserve">
+    <value>Alarmová zóna odnastavená z Klienta</value>
+  </data>
+  <data name="AntiPassbackZoneEntry" xml:space="preserve">
+    <value>Vstup do Neprechodnej zóny</value>
+  </data>
+  <data name="AntiPassbackZoneExit" xml:space="preserve">
+    <value>Výstup z Neprechodnej zóny</value>
+  </data>
+  <data name="AntiPassbackZoneTimeOut" xml:space="preserve">
+    <value>Timeout Neprechodnej zóny</value>
+  </data>
+  <data name="CCUAlarmUPSOutputFuse" xml:space="preserve">
+    <value>Alarm CCU výstupná poistka UPS</value>
+  </data>
+  <data name="CCUAlarmUPSBatteryFault" xml:space="preserve">
+    <value>Alarm CCU zlyhanie batérie UPS</value>
+  </data>
+  <data name="CCUAlarmUPSBatteryFuse" xml:space="preserve">
+    <value>Alarm CCU poistka batérie UPS</value>
+  </data>
+  <data name="CCUAlarmUPSOvertemperature" xml:space="preserve">
+    <value>Alarm CCU prehriatie UPS</value>
+  </data>
+  <data name="CCUAlarmUPSTamper" xml:space="preserve">
+    <value>Alarm CCU poistka UPS</value>
+  </data>
+  <data name="AccessDeniedEnterToAAMenuInvalidPIN" xml:space="preserve">
+    <value>Prístup zakázaný do menu pre nastavenie alarmovej zóny, nesprávny PIN</value>
+  </data>
+  <data name="AccessDeniedEnterToAAMenuInvalidCODE" xml:space="preserve">
+    <value>Prístup zakázaný do menu pre nastavenie alarmovej zóny, nesprávny Kód</value>
+  </data>
+  <data name="AccessDeniedEnterToSensorsMenuInvalidPIN" xml:space="preserve">
+    <value>Prístup zakázaný do menu pre senzory, nesprávny PIN</value>
+  </data>
+  <data name="AccessDeniedEnterToSensorsMenuInvalidCODE" xml:space="preserve">
+    <value>Prístup zakázaný do menu pre senzory, nesprávny Kód</value>
+  </data>
+  <data name="AccessDeniedEnterToEventlogsMenuInvalidPIN" xml:space="preserve">
+    <value>Prístup zakázaný do menu pre logy udalostí, nesprávny PIN</value>
+  </data>
+  <data name="AccessDeniedEnterToEventlogsMenuInvalidCODE" xml:space="preserve">
+    <value>Prístup zakázaný do menu pre logy udalostí, nesprávny Kód</value>
+  </data>
+  <data name="TimetecOnlineStateChanged" xml:space="preserve">
+    <value>Timetec - Zmena online stavu systému</value>
+  </data>
+  <data name="TimetecEventTransferFailed" xml:space="preserve">
+    <value>Timetec - Zlyhanie prenosu udalosti</value>
+  </data>
+  <data name="TimetecEventSaveObject" xml:space="preserve">
+    <value>Timetec - Udalosť uloženie objektu</value>
+  </data>
+  <data name="TimetecEventDeleteObject" xml:space="preserve">
+    <value>Timetec - Udalosť zmazanie objektu</value>
+  </data>
+  <data name="CCUAndCEVersionsWereLoaded" xml:space="preserve">
+    <value>Verzie CCU/CE boli načítané</value>
+  </data>
+  <data name="SecurityLevelStates_CODEORCARD" xml:space="preserve">
+    <value>Kód alebo karta</value>
+  </data>
+  <data name="ObjectState_Unknown" xml:space="preserve">
+    <value>Neznámy</value>
+  </data>
+  <data name="ColumnLoginGroup" xml:space="preserve">
+    <value>Skupina</value>
+  </data>
+  <data name="QuestionStartUpgrading" xml:space="preserve">
+    <value>Naozaj chcete spustiť upgrade?</value>
+  </data>
+  <data name="Succeeded" xml:space="preserve">
+    <value>Úspešné</value>
+  </data>
+  <data name="ColumnSectionId" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="ColumnAlarmAreaId" xml:space="preserve">
+    <value>Alarmová zóna ID</value>
+  </data>
+  <data name="CardReaderCommands_AlarmPanelState" xml:space="preserve">
+    <value>Alarmový panel</value>
+  </data>
+  <data name="AlarmAreaAutomaticActivationMode_TryToSetAreaUntilNotCalm" xml:space="preserve">
+    <value>Nastaviť alarmovú zónu až do utíšenia???</value>
+  </data>
+  <data name="AlarmAreaAutomaticActivationMode_UnconditionalSet" xml:space="preserve">
+    <value>Nepodmienené nastavenie</value>
+  </data>
+  <data name="NCASAlarmAreaEditForm_OutputSetByObjectForAaFailed" xml:space="preserve">
+    <value>Nastavenie výstupu objektom pre automatické aktiváciu zlyhalo</value>
+  </data>
+  <data name="WarningNoEntryExitSensor" xml:space="preserve">
+    <value>Dočasné vstupno/výstupné stavy sa nepoužijú pretože neexistuje vstupno/výstupný senzor</value>
+  </data>
+  <data name="General_On" xml:space="preserve">
+    <value>Zap</value>
+  </data>
+  <data name="TimeBuyingInfo" xml:space="preserve">
+    <value>Kúpenie času je dostupné ak je referencovaný objekt {0}</value>
+  </data>
+  <data name="SensorPurpose_Inherit" xml:space="preserve">
+    <value>Zdedené???</value>
+  </data>
+  <data name="SensorPurpose_BurglaryAlarm" xml:space="preserve">
+    <value>Lúpež</value>
+  </data>
+  <data name="SensorPurpose_FireAlarm" xml:space="preserve">
+    <value>Požiar</value>
+  </data>
+  <data name="SensorPurpose_SprinklerAlarm" xml:space="preserve">
+    <value>Postrek</value>
+  </data>
+  <data name="SensorPurpose_WaterAlarm" xml:space="preserve">
+    <value>Voda</value>
+  </data>
+  <data name="SensorPurpose_HeatAlarm" xml:space="preserve">
+    <value>Teplo</value>
+  </data>
+  <data name="SensorPurpose_GasAlarm" xml:space="preserve">
+    <value>Plyn</value>
+  </data>
+  <data name="SensorPurpose_HoldUpAlarm" xml:space="preserve">
+    <value>Zadržať???</value>
+  </data>
+  <data name="SensorPurpose_PanicAlarm" xml:space="preserve">
+    <value>Panika</value>
+  </data>
+  <data name="SensorPurpose_FreezeAlarm" xml:space="preserve">
+    <value>Mráz</value>
+  </data>
+  <data name="BlockTemporarilyUntilType_AreaUnset" xml:space="preserve">
+    <value>Alarmová zóna je odsetovaná</value>
+  </data>
+  <data name="WarningTimeBuyingUnsetActionNoO4AA" xml:space="preserve">
+    <value>Odsetovanie je dostupné len ľuďom s právom na odsetovanie, ak objekt s možnosťou kúpenia času neponúka kúpenie času</value>
+  </data>
+  <data name="BlockTemporarilyUntilType_SensorStateNormal" xml:space="preserve">
+    <value>Stav snímača je normálny</value>
+  </data>
+  <data name="CardReaderCommands_WaitingForCodeOrCard" xml:space="preserve">
+    <value>Čakanie na kartu</value>
+  </data>
+  <data name="SecurityLevelStates_CODE" xml:space="preserve">
+    <value>Kód</value>
+  </data>
+  <data name="SecurityLevelStates_CODEORCARDPIN" xml:space="preserve">
+    <value>Kód alebo PIN</value>
+  </data>
+  <data name="InfoSensorTemporarilyBlockingOnlyInSabotage" xml:space="preserve">
+    <value>Senzor bude dočasne zablokovaný len počas sabotáže</value>
+  </data>
+  <data name="SensorBlockingType_Unblocked" xml:space="preserve">
+    <value>Neblokovaný</value>
+  </data>
+  <data name="State_Alarm" xml:space="preserve">
+    <value>Alarm</value>
+  </data>
+  <data name="TimeBuyingMatrixState_O4TBA_ON" xml:space="preserve">
+    <value>Deaktivovanie alebo zakúpenie času je dostupné podľa práv užívateľa</value>
+  </data>
+  <data name="State_Normal" xml:space="preserve">
+    <value>Normálny</value>
+  </data>
+  <data name="CardStates_Active" xml:space="preserve">
+    <value>Aktívna</value>
+  </data>
+  <data name="CardStates_Blocked" xml:space="preserve">
+    <value>Blokovaná</value>
+  </data>
+  <data name="CardStates_Unused" xml:space="preserve">
+    <value>Nepoužívaná</value>
+  </data>
+  <data name="CardStates_Lost" xml:space="preserve">
+    <value>Stratená</value>
+  </data>
+  <data name="CardStates_Destroyed" xml:space="preserve">
+    <value>Zničená</value>
+  </data>
+  <data name="NotAHybridCard" xml:space="preserve">
+    <value>Nie je hybridná</value>
+  </data>
+  <data name="DoorEnvironmentStateUnknown" xml:space="preserve">
+    <value>Neznámy</value>
+  </data>
+  <data name="InheritFromAlarmSettings" xml:space="preserve">
+    <value>Zdediť z nastavení alarmu</value>
+  </data>
+  <data name="SecurityLevelStates_255" xml:space="preserve">
+    <value>Zdediť z nastavení alarmu</value>
+  </data>
+  <data name="none" xml:space="preserve">
+    <value>Žiadne</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Chyba</value>
+  </data>
+  <data name="NCASInputEditForm_lDCUName" xml:space="preserve">
+    <value>Meno DCU</value>
+  </data>
+  <data name="ExcelExportForm_cbColumnBD" xml:space="preserve">
+    <value>Dátum narodenia</value>
+  </data>
+  <data name="ExcelExportForm_cbColumnDepartment" xml:space="preserve">
+    <value>Oddelenie</value>
+  </data>
+  <data name="ExcelExportForm_cbColumnID" xml:space="preserve">
+    <value>Osobné číslo</value>
+  </data>
+  <data name="ExcelExportForm_cbColumnPhone" xml:space="preserve">
+    <value>Telefón</value>
+  </data>
+  <data name="NCASAccessControlListsForm_bExportExcel" xml:space="preserve">
+    <value>Exportovať do Excelu</value>
+  </data>
+  <data name="NCASCardReadersForm_bExportExcel" xml:space="preserve">
+    <value>Exportovať do Excelu</value>
+  </data>
+  <data name="TextRecordCount" xml:space="preserve">
+    <value>Počet záznamov</value>
+  </data>
+  <data name="NCASLprCamerasFormNCASLprCamerasForm" xml:space="preserve">
+    <value>LPR kamery</value>
+  </data>
+  <data name="NCASLprCamerasForm_lRecordCount" xml:space="preserve">
+    <value>Počet záznamov:</value>
+  </data>
+  <data name="NCASLprCamerasForm_bFilterClear" xml:space="preserve">
+    <value>Zrušiť</value>
+  </data>
+  <data name="NCASLprCamerasForm_bRunFilter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="NCASLprCamerasForm_bFindAll" xml:space="preserve">
+    <value>Nájsť všetky ŠPZ Kamery</value>
+  </data>
+  <data name="NCASLprCamerasForm_bLookupLprCameras" xml:space="preserve">
+    <value>Vyhľadať kamery</value>
+  </data>
+  <data name="NCASLprCamerasForm_rbFilterOr" xml:space="preserve">
+    <value>ALEBO</value>
+  </data>
+  <data name="NCASLprCamerasForm_rbFilterAnd" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="NCASLprCamerasForm_lLocationFilter" xml:space="preserve">
+    <value>Umiestnenie</value>
+  </data>
+  <data name="NCASLprCamerasForm_lOnlineStateFilter" xml:space="preserve">
+    <value>Stav pripojenia</value>
+  </data>
+  <data name="NCASLprCamerasForm_lNameFilter" xml:space="preserve">
+    <value>Názov</value>
+  </data>
+</root>

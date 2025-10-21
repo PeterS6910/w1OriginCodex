@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.Server.Beans.CSVImportSchema, Cgp.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdCSVImportSchema">
+      <generator class="guid" />
+    </id>
+    <property name="DateFormat" not-null="true"></property>
+    <property name="DepartmentFolder" not-null="true"></property>
+    <property name="Separator" not-null="true"></property>
+    <property name="ParseBirthDateFromPersonId" not-null="true"></property>
+    <property name="AllowCompositPersonalId" not-null="false"></property>
+    <property name="CompositPersonalIdFirstColumn" not-null="false"></property>
+    <property name="CompositPersonalIdSecondColumn" not-null="false"></property>
+    <property name="PersonalIdValidationType" not-null="false"></property>
+    <bag name="CSVImportColumns" cascade="all-delete-orphan">
+      <key column="IdCSVImportSchema" />
+      <one-to-many class="Contal.Cgp.Server.Beans.CSVImportColumn"  />
+    </bag>
+
+    <join table="CentralNameRegister">
+      <key column="Id" foreign-key="none"/>
+      <property name="CSVImportSchemaName" column="Name" not-null="true"/>
+      <property name="ObjectType" not-null="true"/>
+    </join>
+
+  </class>
+</hibernate-mapping>

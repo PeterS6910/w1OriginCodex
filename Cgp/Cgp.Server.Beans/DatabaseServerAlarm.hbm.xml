@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.Server.Beans.DatabaseServerAlarm, Cgp.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <composite-id>
+      <key-property name="IdOwner" />
+      <key-property name="IdAlarm" />
+    </composite-id>
+    <property name="RawData" not-null="true" length="2147483647"></property>
+  </class>
+</hibernate-mapping>
