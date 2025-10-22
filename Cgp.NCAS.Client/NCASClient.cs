@@ -1183,10 +1183,6 @@ namespace Contal.Cgp.NCAS.Client
                     {
                         formToOpen = NCASCardReadersForm.Singleton;
                     }
-                    else if (openedWindow.FormName == typeof(NCASLprCamerasForm).Name)
-                    {
-                        formToOpen = NCASLprCamerasForm.Singleton;
-                    }
                     else if (openedWindow.FormName == typeof(NCASCCUsForm).Name)
                     {
                         formToOpen = NCASCCUsForm.Singleton;

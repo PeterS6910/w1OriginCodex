@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -823,14 +823,6 @@
       <DependentUpon>NCASInputsForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="NCASLprCameraEditForm.resx">
-      <DependentUpon>NCASLprCameraEditForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NCASLprCamerasForm.resx">
-      <DependentUpon>NCASLprCamerasForm.cs</DependentUpon>
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>NCASLprCamerasForm.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="NCASMultiDoorEditForm.resx">
       <DependentUpon>NCASMultiDoorEditForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -875,17 +867,17 @@
     <EmbeddedResource Include="PersonAclAssignment .resx">
       <DependentUpon>PersonAclAssignment .cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ResourceGlobal.resx">
-      <SubType>Designer</SubType>
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>ResourceGlobal.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="NCASSecurityTimeZoneEditForm.resx">
       <DependentUpon>NCASSecurityTimeZoneEditForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="NCASSecurityTimeZoneCalendarChangeForm.resx">
       <DependentUpon>NCASSecurityTimeZoneCalendarChangeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceGlobal.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceGlobal.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="SelectDCUHWTypeDialog.resx">
@@ -1015,7 +1007,7 @@
     <None Include="Resources\clienticon.ico_128x128.png" />
     <Content Include="Resources\camera-icon-9199.png" />
     <Content Include="Resources\camera.ico" />
-    <Content Include="Resources\lprCamera_48.png" />
+    <Content Include="Resources\carReader_48.png" />
     <Content Include="Resources\IconACLGroup16.ico" />
     <None Include="Resources\IconAntiPassBackZone16.ico" />
     <None Include="Resources\IconFloor16.ico" />
@@ -1027,7 +1019,9 @@
     <None Include="Resources\IconAlarmArc16.ico" />
     <None Include="Resources\insert.png" />
     <None Include="Resources\information.png" />
+    <Content Include="Resources\IconCarReader_48.ico" />
     <Content Include="Resources\IconLprCamera_48.ico" />
+    <Content Include="Resources\lprCamera_48.png" />
     <Content Include="Resources\Scenes.ico" />
     <None Include="Resources\Warning.png" />
     <None Include="Resources\Scene48.png" />

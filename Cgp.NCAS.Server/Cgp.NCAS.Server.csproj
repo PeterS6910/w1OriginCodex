@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -88,7 +88,7 @@
     </Reference>
     <Reference Include="CDK.Net, Version=1.0.8409.21267, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Libs\CDK.Net.dll</HintPath>
+      <HintPath>..\..\w1hour2\Cgp.NCAS.Server\Libs\CDK.Net.dll</HintPath>
     </Reference>
     <Reference Include="EPPlus, Version=6.1.1.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
       <HintPath>..\packages\EPPlus.6.1.1\lib\net35\EPPlus.dll</HintPath>
@@ -627,13 +627,8 @@
     <Content Include="Graphics symbols\SmokeDetector_unknown_output.svg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\CDK.Net.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Libs\CDK.Net.dll" />
     <Content Include="Libs\Ionic.Zip.dll" />
-    <None Include="NativeLib\CDK\x86\CDK.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Localization.English.resx">
@@ -689,15 +684,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup />
-  <ItemGroup Condition="'$(PlatformTarget)'=='x86' OR '$(Platform)'=='x86'">
-    <None Include="NativeLib\CDK\x86\CDK.dll">
-      <!-- skopíruj do koreňa výstupu vedľa server.exe -->
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <TargetPath>CDK.dll</TargetPath>
-      <Link>CDK.dll</Link>
-    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -774,13 +760,6 @@ C:\Windows\System32\xcopy.exe /C /Y /E "$(TargetDir)Graphics symbols" "$(TargetD
 C:\Windows\System32\xcopy.exe /C /Y /E "$(SolutionDir)Cgp.NCAS.Client\bin\ClientUpgrade.gz" "$(TargetDir)%25FinalSubfolder%25\Client Upgrades\"
 
 :WithoutCodeProtection
-
-REM === Survision CDK: skopíruj natívne DLL do výstupu ===
-set "SRC=$(ProjectDir)Libs"
-set "DST=$(TargetDir)"
-
-if exist "%25SRC%25\CDK.dll" xcopy /Y /D "%25SRC%25\CDK.dll" "%25DST%25" &gt;nul
-
 
 </PostBuildEvent>
   </PropertyGroup>

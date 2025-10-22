@@ -88,5 +88,5 @@ namespace Contal.Cgp.Globals
         LprCamera = 148,
         NotSupport = 201,
         AllObjectTypes = 202
-    }
+    }   
 }

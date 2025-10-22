@@ -629,7 +629,6 @@ namespace Contal.Cgp.NCAS.Server
             lookupFinishedHandler?.RunEvent(lookupedCameras, lookupingClients);
         }
 
-
         public static void RunCcuMACAddressChanged(
             ARemotingCallbackHandler remoteHandler,
             object[] info)

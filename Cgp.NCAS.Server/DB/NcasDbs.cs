@@ -1,13 +1,13 @@
-using Contal.Cgp.Globals;
-using Contal.Cgp.NCAS.RemotingCommon;
-using Contal.Cgp.NCAS.Server.Beans;
-using Contal.Cgp.Server.Beans;
-using Contal.Cgp.Server.DB;
-using Contal.IwQuick;
-using Contal.IwQuick.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Contal.Cgp.Server.Beans;
+using Contal.Cgp.NCAS.Server.Beans;
+using Contal.Cgp.Server.DB;
+using Contal.Cgp.Globals;
+using Contal.IwQuick;
+using Contal.IwQuick.Data;
+
 using Calendar = Contal.Cgp.Server.Beans.Calendar;
 using TimeZone = Contal.Cgp.Server.Beans.TimeZone;
 
@@ -63,7 +63,7 @@ namespace Contal.Cgp.NCAS.Server.DB
                         ObjectType.CardReader,
                         CardReaders.Singleton
                     },
-                                        {
+                    {
                         ObjectType.LprCamera,
                         LprCameras.Singleton
                     },

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -413,10 +413,10 @@ namespace Contal.Cgp.BaseLib
                                     InitializePlugin(plugin);
                                 }
                             }
-                            catch (Exception ex)
+                            catch
                             {
-                                failedDesc = path + "/" + (cgpDesignation ?? "unknown");
-                                InvokePluginFailed(failedDesc + " (" + ex.GetType().FullName + ": " + ex.Message + ")");
+                                failedDesc = path + "/" + cgpDesignation ?? "unknown";
+                                InvokePluginFailed(failedDesc);
 
                                 if (null != failedPlugins)
                                     failedPlugins.AddLast(failedDesc);
@@ -424,7 +424,7 @@ namespace Contal.Cgp.BaseLib
                         }
                         catch (Exception ex)
                         {
-                            InvokePluginFailed(path + " (" + ex.GetType().FullName + ": " + ex.Message + ")");
+                            InvokePluginFailed(path);
                             if (null != failedPlugins)
                                 failedPlugins.AddLast(path);
                         }

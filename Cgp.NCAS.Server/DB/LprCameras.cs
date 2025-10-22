@@ -171,7 +171,7 @@ namespace Contal.Cgp.NCAS.Server.DB
 
         public void LprCamerasLookup(Guid clientId)
         {
-            LprCameraDiscoveryHandler.Singleton.Lookup(clientId);
+            //LprCameraDiscoveryHandler.Singleton.Lookup(clientId);
         }
 
         public void CreateLookupedLprCameras(
