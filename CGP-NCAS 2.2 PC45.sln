@@ -213,7 +213,6 @@ Global
 		{C1AE4E71-C8DB-4FE1-84D5-CBA1ACA62086}.Designer|Any CPU.ActiveCfg = Debug|Any CPU
 		{C1AE4E71-C8DB-4FE1-84D5-CBA1ACA62086}.Designer|Any CPU.Build.0 = Debug|Any CPU
 		{C1AE4E71-C8DB-4FE1-84D5-CBA1ACA62086}.Release - CodeProtection|Any CPU.ActiveCfg = Release|Any CPU
-		{C1AE4E71-C8DB-4FE1-84D5-CBA1ACA62086}.Release - CodeProtection|Any CPU.Build.0 = Release|Any CPU
 		{C1AE4E71-C8DB-4FE1-84D5-CBA1ACA62086}.Release - SetupBuildOnly|Any CPU.ActiveCfg = Release|Any CPU
 		{C1AE4E71-C8DB-4FE1-84D5-CBA1ACA62086}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1AE4E71-C8DB-4FE1-84D5-CBA1ACA62086}.Release|Any CPU.Build.0 = Release|Any CPU

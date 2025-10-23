@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 using Contal.Cgp.Client.Common;
@@ -133,7 +133,6 @@ namespace Contal.Cgp.NCAS.Client.Common
                 _remotingProviderInterface.AttachCallbackHandler(CRUpgradeProgressChangedHandler.Singleton);
                 _remotingProviderInterface.AttachCallbackHandler(CCULookupFinishedHandler.Singleton);
                 _remotingProviderInterface.AttachCallbackHandler(AlarmTransmittersLookupFinishedHandler.Singleton);
-                _remotingProviderInterface.AttachCallbackHandler(LprCameraLookupFinishedHandler.Singleton);
                 _remotingProviderInterface.AttachCallbackHandler(CCUUpsMonitorValuesChangedHandler.Singleton);
                 _remotingProviderInterface.AttachCallbackHandler(CCUUpsMonitorOnlineStateChangedHandler.Singleton);
                 _remotingProviderInterface.AttachCallbackHandler(CCUUpsMonitorAlarmStateChangedHandler.Singleton);
@@ -188,7 +187,6 @@ namespace Contal.Cgp.NCAS.Client.Common
                 _remotingProviderInterface.AttachCallbackHandler(CRUpgradeProgressChangedHandler.Singleton);
                 _remotingProviderInterface.AttachCallbackHandler(CCULookupFinishedHandler.Singleton);
                 _remotingProviderInterface.AttachCallbackHandler(AlarmTransmittersLookupFinishedHandler.Singleton);
-                _remotingProviderInterface.AttachCallbackHandler(LprCameraLookupFinishedHandler.Singleton);
                 _remotingProviderInterface.AttachCallbackHandler(CCUUpsMonitorValuesChangedHandler.Singleton);
                 _remotingProviderInterface.AttachCallbackHandler(CCUUpsMonitorOnlineStateChangedHandler.Singleton);
                 _remotingProviderInterface.AttachCallbackHandler(CCUUpsMonitorAlarmStateChangedHandler.Singleton);
