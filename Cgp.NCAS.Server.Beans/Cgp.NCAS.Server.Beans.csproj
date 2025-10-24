@@ -290,7 +290,7 @@
     <EmbeddedResource Include="ExcelReportOutput.hbm.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="LprCamera.hbm.xml" />
+    <EmbeddedResource Include="LprCamera.hbm.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
