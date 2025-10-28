@@ -627,17 +627,15 @@
     <Content Include="Graphics symbols\SmokeDetector_unknown_output.svg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Libs\CDK.Net.dll">
+    <None Include="Libs\CDK64.Net.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    </None>
     <Content Include="Libs\Ionic.Zip.dll" />
-    <Content Include="NativeLibs\CDK.dll">
+    <None Include="NativeLibs\CDK64.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    </None>
   </ItemGroup>
-  <ItemGroup>
-    <NativeLibrary Include="NativeLibs\*.dll" />
-  </ItemGroup>
+  <ItemGroup />
   <Target Name="CopyNativeLibraries" AfterTargets="Build">
     <Copy SourceFiles="@(NativeLibrary)" DestinationFolder="$(OutDir)" SkipUnchangedFiles="true" />
   </Target>
