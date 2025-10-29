@@ -12,19 +12,11 @@ using CDKDOTNET;
 
 namespace Contal.Cgp.NCAS.Server
 {
-    internal interface ILprCameraDiscoveryStrategy
-    {
-        string Name { get; }
-
-        IEnumerable<LookupedLprCamera> Discover(TimeSpan timeout, CancellationToken cancellationToken);
-    }
-
     internal sealed class LprCameraDiscoveryHandler
     {
         private static readonly Lazy<LprCameraDiscoveryHandler> _instance =
             new Lazy<LprCameraDiscoveryHandler>(() => new LprCameraDiscoveryHandler());
 
-        private readonly List<ILprCameraDiscoveryStrategy> _strategies;
         private readonly HashSet<Guid> _lookupingClients;
         private readonly object _syncRoot;
 
@@ -34,39 +26,11 @@ namespace Contal.Cgp.NCAS.Server
 
         private LprCameraDiscoveryHandler()
         {
-            _strategies = new List<ILprCameraDiscoveryStrategy>();
             _lookupingClients = new HashSet<Guid>();
             _syncRoot = new object();
-
-            try
-            {
-                RegisterStrategy(new Nanopack5LprCameraDiscoveryStrategy());
-            }
-            catch (BadImageFormatException badImage)
-            {
-                HandledExceptionAdapter.Examine(badImage);
-            }
-            catch (DllNotFoundException dllNotFound)
-            {
-                HandledExceptionAdapter.Examine(dllNotFound);
-            }
         }
 
         public static LprCameraDiscoveryHandler Singleton => _instance.Value;
-
-        public void RegisterStrategy(ILprCameraDiscoveryStrategy strategy)
-        {
-            if (strategy == null)
-                return;
-
-            lock (_strategies)
-            {
-                if (_strategies.Any(existing => existing.GetType() == strategy.GetType()))
-                    return;
-
-                _strategies.Add(strategy);
-            }
-        }
 
         public void Lookup(Guid clientId)
         {
@@ -88,36 +52,8 @@ namespace Contal.Cgp.NCAS.Server
             ICollection<Guid> clients = null;
 
             try
-            {
+            {                               
                 var aggregated = new Dictionary<string, LookupedLprCamera>(StringComparer.OrdinalIgnoreCase);
-
-                List<ILprCameraDiscoveryStrategy> strategies;
-                lock (_strategies)
-                {
-                    strategies = _strategies.ToList();
-                }
-
-                foreach (var strategy in strategies)
-                {
-                    try
-                    {
-                        var discoveredCameras = strategy.Discover(DefaultLookupTimeout, CancellationToken.None)
-                       ?? Array.Empty<LookupedLprCamera>();
-                        foreach (var camera in strategy.Discover(DefaultLookupTimeout, CancellationToken.None)
-                                 ?? Enumerable.Empty<LookupedLprCamera>())
-                        {
-                            if (camera == null || string.IsNullOrWhiteSpace(camera.IpAddress))
-                                continue;
-
-                            aggregated[camera.IpAddress.Trim()] = camera;
-                        }
-                    }
-                    catch (Exception discoveryError)
-                    {
-                        HandledExceptionAdapter.Examine(discoveryError);
-                    }
-                }
-
                 lock (_syncRoot)
                 {
                     clients = _lookupingClients.ToList();
@@ -128,7 +64,7 @@ namespace Contal.Cgp.NCAS.Server
                 if (clients.Count == 0)
                     return;
 
-                NotifyClients(aggregated.Values.ToList(), clients);
+                NotifyClients(aggregated, clients);
             }
             catch (Exception error)
             {
@@ -145,6 +81,49 @@ namespace Contal.Cgp.NCAS.Server
                     return;
 
                 NotifyClients(new List<LookupedLprCamera>(), clients);
+            }
+        }
+
+        private static List<LookupedLprCamera> DiscoverAllCameraTypes(
+    TimeSpan timeout,
+    CancellationToken cancellationToken)
+        {
+            var aggregated = new Dictionary<string, LookupedLprCamera>(StringComparer.OrdinalIgnoreCase);
+
+            DiscoverWith(() =>
+            {
+                var directDiscovery = new Nanopack5LprCameraDiscoveryStrategy();
+                return directDiscovery.Discover(timeout, cancellationToken);
+            }, aggregated);
+
+            return aggregated.Values.ToList();
+        }
+
+        private static void DiscoverWith(
+            Func<IEnumerable<LookupedLprCamera>> discovery,
+            IDictionary<string, LookupedLprCamera> aggregated)
+        {
+            try
+            {
+                foreach (var camera in discovery() ?? Enumerable.Empty<LookupedLprCamera>())
+                {
+                    if (camera == null || string.IsNullOrWhiteSpace(camera.IpAddress))
+                        continue;
+
+                    aggregated[camera.IpAddress.Trim()] = camera;
+                }
+            }
+            catch (BadImageFormatException badImage)
+            {
+                HandledExceptionAdapter.Examine(badImage);
+            }
+            catch (DllNotFoundException dllNotFound)
+            {
+                HandledExceptionAdapter.Examine(dllNotFound);
+            }
+            catch (Exception discoveryError)
+            {
+                HandledExceptionAdapter.Examine(discoveryError);
             }
         }
 
@@ -171,7 +150,7 @@ namespace Contal.Cgp.NCAS.Server
         }
     }
 
-    internal sealed class Nanopack5LprCameraDiscoveryStrategy : ILprCameraDiscoveryStrategy
+    internal sealed class Nanopack5LprCameraDiscoveryStrategy
     {
         private const int DefaultMaxDevices = 32;
         private static readonly TimeSpan DefaultResponseDelay = TimeSpan.FromSeconds(2);
@@ -189,8 +168,6 @@ namespace Contal.Cgp.NCAS.Server
             _maxDevices = maxDevices;
             _responseDelay = responseDelay;
         }
-
-        public string Name => "Nanopack 5";
 
         public IEnumerable<LookupedLprCamera> Discover(TimeSpan timeout, CancellationToken cancellationToken)
         {
