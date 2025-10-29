@@ -86,9 +86,9 @@
     <Reference Include="CatCom.PC45">
       <HintPath>..\lib\CatCom.PC45.dll</HintPath>
     </Reference>
-    <Reference Include="CDK.Net, Version=1.0.8409.21267, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\w1hour2\Cgp.NCAS.Server\Libs\CDK.Net.dll</HintPath>
+    <Reference Include="CDK64.Net">
+      <HintPath>Libs\CDK64.Net.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EPPlus, Version=6.1.1.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
       <HintPath>..\packages\EPPlus.6.1.1\lib\net35\EPPlus.dll</HintPath>
