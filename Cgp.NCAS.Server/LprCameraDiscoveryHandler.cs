@@ -64,7 +64,7 @@ namespace Contal.Cgp.NCAS.Server
                 if (clients.Count == 0)
                     return;
 
-                NotifyClients(aggregated, clients);
+                NotifyClients(aggregated?.Values, clients);
             }
             catch (Exception error)
             {
