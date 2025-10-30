@@ -50,10 +50,8 @@ namespace Contal.Cgp.NCAS.Server
         private void PerformLookup()
         {
             ICollection<Guid> clients = null;
-
             try
             {                               
-                var aggregated = new Dictionary<string, LookupedLprCamera>(StringComparer.OrdinalIgnoreCase);
                 lock (_syncRoot)
                 {
                     clients = _lookupingClients.ToList();
@@ -64,7 +62,8 @@ namespace Contal.Cgp.NCAS.Server
                 if (clients.Count == 0)
                     return;
 
-                NotifyClients(aggregated?.Values, clients);
+                var cameras = DiscoverAllCameraTypes(DefaultLookupTimeout, CancellationToken.None);
+                NotifyClients(cameras, clients);
             }
             catch (Exception error)
             {
@@ -84,19 +83,16 @@ namespace Contal.Cgp.NCAS.Server
             }
         }
 
-        private static List<LookupedLprCamera> DiscoverAllCameraTypes(
-    TimeSpan timeout,
-    CancellationToken cancellationToken)
+        private static List<LookupedLprCamera> DiscoverAllCameraTypes( TimeSpan timeout, CancellationToken cancellationToken)
         {
-            var aggregated = new Dictionary<string, LookupedLprCamera>(StringComparer.OrdinalIgnoreCase);
+            var aggregatedCameras = new Dictionary<string, LookupedLprCamera>(StringComparer.OrdinalIgnoreCase);
+            var nanopackDiscovery = new Nanopack5LprCameraDiscoveryStrategy();
 
-            DiscoverWith(() =>
-            {
-                var directDiscovery = new Nanopack5LprCameraDiscoveryStrategy();
-                return directDiscovery.Discover(timeout, cancellationToken);
-            }, aggregated);
+            DiscoverWith(
+                () => nanopackDiscovery.Discover(timeout, cancellationToken),
+                aggregatedCameras);
 
-            return aggregated.Values.ToList();
+            return aggregatedCameras.Values.ToList();
         }
 
         private static void DiscoverWith(
@@ -152,7 +148,7 @@ namespace Contal.Cgp.NCAS.Server
 
     internal sealed class Nanopack5LprCameraDiscoveryStrategy
     {
-        private const int DefaultMaxDevices = 32;
+        private const int DefaultMaxDevices = 16;
         private static readonly TimeSpan DefaultResponseDelay = TimeSpan.FromSeconds(2);
 
         private readonly int _maxDevices;
@@ -169,107 +165,105 @@ namespace Contal.Cgp.NCAS.Server
             _responseDelay = responseDelay;
         }
 
-        public IEnumerable<LookupedLprCamera> Discover(TimeSpan timeout, CancellationToken cancellationToken)
+        public IEnumerable<LookupedLprCamera> Discover(TimeSpan timeout, CancellationToken ct)
         {
-            var context = CDKDiscover.CDKDiscoverCreate();
-            if (context == IntPtr.Zero)
-                return Enumerable.Empty<LookupedLprCamera>();
+            var ctx = CDKDiscover.CDKDiscoverCreate();
+            if (ctx == IntPtr.Zero) return Array.Empty<LookupedLprCamera>();
 
             var results = new List<LookupedLprCamera>();
+            var seen = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
             var started = false;
 
             try
             {
-                if (CDKDiscover.CDKDiscoverStart(context) == 0)
-                    return results;
-
+                if (CDKDiscover.CDKDiscoverStart(ctx) == 0) return results;
                 started = true;
 
-                var effectiveDelay = _responseDelay;
-                if (timeout > TimeSpan.Zero && timeout < _responseDelay)
-                    effectiveDelay = timeout;
-
-                if (effectiveDelay > TimeSpan.Zero)
+                // základné čakanie (warm-up) – kratšie z timeout a _responseDelay
+                var initialDelay = (_responseDelay > TimeSpan.Zero &&
+                                   (timeout == TimeSpan.Zero || _responseDelay < timeout))
+                                   ? _responseDelay : timeout;
+                if (initialDelay > TimeSpan.Zero)
                 {
-                    if (cancellationToken.WaitHandle.WaitOne(effectiveDelay))
-                        return results;
+                    if (ct.WaitHandle.WaitOne(initialDelay)) return results;
                 }
 
-                var messages = new IntPtr[_maxDevices];
-                var discoveredResult = CDKDiscover.CDKDiscoverGetDiscovered(context, messages, out var discoveredCount);
+                var sw = System.Diagnostics.Stopwatch.StartNew();
+                var poll = TimeSpan.FromMilliseconds(250);
+                bool rebroadcasted = false;
 
-                if (discoveredResult == 0 || discoveredCount <= 0)
-                    return results;
-
-                for (var index = 0; index < discoveredCount && index < messages.Length; index++)
+                while ((timeout == TimeSpan.Zero || sw.Elapsed < timeout) && !ct.IsCancellationRequested)
                 {
-                    var message = messages[index];
-                    if (message == IntPtr.Zero)
-                        continue;
+                    var messages = new IntPtr[_maxDevices];
+                    var ok = CDKDiscover.CDKDiscoverGetDiscovered(ctx, messages, out var count);
 
-                    try
+                    if (ok != 0 && count > 0)
                     {
-                        var element = CDKMsg.CDKMsgChild(message);
-                        if (element == IntPtr.Zero)
-                            continue;
-
-                        var camera = new LookupedLprCamera
+                        for (int i = 0; i < count && i < messages.Length; i++)
                         {
-                            UniqueKey = CDKMsg.CDKMsgElementAttributeValue(element, "uniqueKey"),
-                            InterfaceSource = CDKMsg.CDKMsgElementAttributeValue(element, "interfaceSource"),
-                            Name = CDKMsg.CDKMsgElementAttributeValue(element, "name"),
-                            Port = CDKMsg.CDKMsgElementAttributeValue(element, "port"),
-                            PortSsl = CDKMsg.CDKMsgElementAttributeValue(element, "portSSL"),
-                            Equipment = CDKMsg.CDKMsgElementAttributeValue(element, "equipment"),
-                            Version = CDKMsg.CDKMsgElementAttributeValue(element, "version"),
-                            Locked = CDKMsg.CDKMsgElementAttributeValue(element, "locked"),
-                            LockingClientIp = CDKMsg.CDKMsgElementAttributeValue(element, "lockingClientIP"),
-                            MacAddress = CDKMsg.CDKMsgElementAttributeValue(element, "macAddress"),
-                            Serial = CDKMsg.CDKMsgElementAttributeValue(element, "serial"),
-                            IpAddress = CDKMsg.CDKMsgElementAttributeValue(element, "ipAddress"),
-                            Model = CDKMsg.CDKMsgElementAttributeValue(element, "model"),
-                            Type = CDKMsg.CDKMsgElementAttributeValue(element, "type"),
-                            Build = CDKMsg.CDKMsgElementAttributeValue(element, "build")
-                        };
+                            var msg = messages[i];
+                            if (msg == IntPtr.Zero) continue;
 
-                        if (!string.IsNullOrWhiteSpace(camera.IpAddress))
-                            results.Add(camera);
+                            try
+                            {
+                                var el = CDKMsg.CDKMsgChild(msg);
+                                if (el == IntPtr.Zero) continue;
+
+                                var cam = new LookupedLprCamera
+                                {
+                                    UniqueKey = CDKMsg.CDKMsgElementAttributeValue(el, "uniqueKey"),
+                                    InterfaceSource = CDKMsg.CDKMsgElementAttributeValue(el, "interfaceSource"),
+                                    Name = CDKMsg.CDKMsgElementAttributeValue(el, "name"),
+                                    Port = CDKMsg.CDKMsgElementAttributeValue(el, "port"),
+                                    PortSsl = CDKMsg.CDKMsgElementAttributeValue(el, "portSSL"),
+                                    Equipment = CDKMsg.CDKMsgElementAttributeValue(el, "equipment"),
+                                    Version = CDKMsg.CDKMsgElementAttributeValue(el, "version"),
+                                    Locked = CDKMsg.CDKMsgElementAttributeValue(el, "locked"),
+                                    LockingClientIp = CDKMsg.CDKMsgElementAttributeValue(el, "lockingClientIP"),
+                                    MacAddress = CDKMsg.CDKMsgElementAttributeValue(el, "macAddress"),
+                                    Serial = CDKMsg.CDKMsgElementAttributeValue(el, "serial"),
+                                    IpAddress = CDKMsg.CDKMsgElementAttributeValue(el, "ipAddress"),
+                                    Model = CDKMsg.CDKMsgElementAttributeValue(el, "model"),
+                                    Type = CDKMsg.CDKMsgElementAttributeValue(el, "type"),
+                                    Build = CDKMsg.CDKMsgElementAttributeValue(el, "build")
+                                };
+
+                                var key = string.IsNullOrWhiteSpace(cam.UniqueKey) ? cam.IpAddress : cam.UniqueKey;
+                                if (!string.IsNullOrWhiteSpace(cam.IpAddress) && seen.Add(key))
+                                    results.Add(cam);
+                            }
+                            finally
+                            {
+                                try { CDKMsg.CDKMsgDestroy(msg); } catch { }
+                            }
+                        }
+
+                        // ak už máme aspoň jednu, môžeme skončiť (alebo zbierať do timeoutu – podľa potreby)
+                        if (results.Count > 0) break;
                     }
-                    finally
+
+                    // jednorazový re-broadcast po ~1 s, keď nič nechodí
+                    if (!rebroadcasted && sw.Elapsed > TimeSpan.FromSeconds(1))
                     {
-                        try
-                        {
-                            CDKMsg.CDKMsgDestroy(message);
-                        }
-                        catch
-                        {
-                        }
+                        try { CDKDiscover.CDKDiscoverStop(ctx); } catch { }
+                        if (CDKDiscover.CDKDiscoverStart(ctx) != 0) rebroadcasted = true;
                     }
+
+                    // čakaj ďalšie kolo
+                    var remaining = (timeout == TimeSpan.Zero) ? poll : TimeSpan.FromMilliseconds(
+                        Math.Max(0, (timeout - sw.Elapsed).TotalMilliseconds));
+                    if (remaining <= TimeSpan.Zero) break;
+                    ct.WaitHandle.WaitOne(remaining > poll ? poll : remaining);
                 }
             }
             finally
             {
-                if (started)
-                {
-                    try
-                    {
-                        CDKDiscover.CDKDiscoverStop(context);
-                    }
-                    catch
-                    {
-                    }
-                }
-
-                try
-                {
-                    CDKDiscover.CDKDiscoverDestroy(context);
-                }
-                catch
-                {
-                }
+                if (started) { try { CDKDiscover.CDKDiscoverStop(ctx); } catch { } }
+                try { CDKDiscover.CDKDiscoverDestroy(ctx); } catch { }
             }
 
             return results;
         }
+
     }
 }
