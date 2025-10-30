@@ -1,3 +1,4 @@
+using CDKDOTNET;
 using Contal.Cgp.BaseLib;
 using Contal.Cgp.NCAS.Server.Beans;
 using Contal.Cgp.Server;
@@ -7,8 +8,10 @@ using Contal.IwQuick.Threads;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.ExceptionServices;
+using System.Runtime.InteropServices;
+using System.Security;
 using System.Threading;
-using CDKDOTNET;
 
 namespace Contal.Cgp.NCAS.Server
 {
@@ -258,12 +261,64 @@ namespace Contal.Cgp.NCAS.Server
             }
             finally
             {
-                if (started) { try { CDKDiscover.CDKDiscoverStop(ctx); } catch { } }
-                try { CDKDiscover.CDKDiscoverDestroy(ctx); } catch { }
+                StopAndDestroyDiscoverContext(ctx, started);
             }
 
             return results;
         }
 
+        [HandleProcessCorruptedStateExceptions]
+        [SecurityCritical]
+        private static void StopAndDestroyDiscoverContext(IntPtr ctx, bool started)
+        {
+            if (ctx == IntPtr.Zero)
+                return;
+
+            if (started)
+            {
+                try
+                {
+                    CDKDiscover.CDKDiscoverStop(ctx);
+                }
+                catch (DllNotFoundException dllError)
+                {
+                    HandledExceptionAdapter.Examine(dllError);
+                }
+                catch (BadImageFormatException badImage)
+                {
+                    HandledExceptionAdapter.Examine(badImage);
+                }
+                catch (SEHException seh)
+                {
+                    HandledExceptionAdapter.Examine(seh);
+                }
+                catch (AccessViolationException accessViolation)
+                {
+                    HandledExceptionAdapter.Examine(accessViolation);
+                    return;
+                }
+            }
+
+            try
+            {
+                CDKDiscover.CDKDiscoverDestroy(ctx);
+            }
+            catch (DllNotFoundException dllError)
+            {
+                HandledExceptionAdapter.Examine(dllError);
+            }
+            catch (BadImageFormatException badImage)
+            {
+                HandledExceptionAdapter.Examine(badImage);
+            }
+            catch (SEHException seh)
+            {
+                HandledExceptionAdapter.Examine(seh);
+            }
+            catch (AccessViolationException accessViolation)
+            {
+                HandledExceptionAdapter.Examine(accessViolation);
+            }
+        }
     }
 }
