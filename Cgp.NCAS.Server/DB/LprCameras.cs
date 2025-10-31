@@ -17,6 +17,7 @@ namespace Contal.Cgp.NCAS.Server.DB
         ANcasBaseOrmTableWithAlarmInstruction<LprCameras, LprCamera>,
         ILprCameras
     {
+        private readonly object _createLookupedLprCameraLock = new object();
         private LprCameras()
             : base(
                   null,
@@ -181,22 +182,34 @@ namespace Contal.Cgp.NCAS.Server.DB
             if (lookupedCameras == null || lookupedCameras.Count == 0)
                 return;
 
-            foreach (var lookupedCamera in lookupedCameras)
+            foreach (var lookupedCamera in lookupedCameras)            
+                CreateLookupedLprCamera(
+                    lookupedCamera,
+                    idStructuredSubSite);
+        }
+
+        private void CreateLookupedLprCamera(LookupedLprCamera lookupedCamera, int? idStructuredSubSite)
+        {
+            if (lookupedCamera == null
+                || string.IsNullOrWhiteSpace(lookupedCamera.IpAddress))
             {
-                if (lookupedCamera == null
-                    || string.IsNullOrWhiteSpace(lookupedCamera.IpAddress))
-                {
-                    continue;
-                }
+                return;
+            }
 
-                var ipAddress = lookupedCamera.IpAddress.Trim();
-                var normalizedIpAddress = ipAddress.ToLowerInvariant();
+            var ipAddress = lookupedCamera.IpAddress.Trim();
+            lock (_createLookupedLprCameraLock)
+            {
+                var existingCameras = SelectByCriteria(
+                    new List<FilterSettings>
+                    {
+                        new FilterSettings(
+                            LprCamera.COLUMNIPADDRESS,
+                            ipAddress,
+                            ComparerModes.EQUALL)
+                    });
 
-                var existingCamera = SelectLinq<LprCamera>(
-                    camera => camera.IpAddress != null && camera.IpAddress.ToLower() == normalizedIpAddress)?.FirstOrDefault();
-
-                if (existingCamera != null)
-                    continue;
+                if (existingCameras != null && existingCameras.Count > 0)
+                    return;
 
                 var newCamera = new LprCamera
                 {
