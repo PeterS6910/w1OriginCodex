@@ -190,21 +190,20 @@ namespace Contal.Cgp.NCAS.Server.DB
 
         private void CreateLookupedLprCamera(LookupedLprCamera lookupedCamera, int? idStructuredSubSite)
         {
-            if (lookupedCamera == null
-                || string.IsNullOrWhiteSpace(lookupedCamera.IpAddress))
+            if (lookupedCamera == null || string.IsNullOrWhiteSpace(lookupedCamera.MacAddress))
             {
                 return;
             }
 
-            var ipAddress = lookupedCamera.IpAddress.Trim();
+            var macAddress = lookupedCamera.MacAddress.Trim();
             lock (_createLookupedLprCameraLock)
             {
                 var existingCameras = SelectByCriteria(
                     new List<FilterSettings>
                     {
                         new FilterSettings(
-                            LprCamera.COLUMNIPADDRESS,
-                            ipAddress,
+                            LprCamera.COLUMNMACADDRESS,
+                            macAddress,
                             ComparerModes.EQUALL)
                     });
 
@@ -215,12 +214,13 @@ namespace Contal.Cgp.NCAS.Server.DB
                 {
                     Name = !string.IsNullOrWhiteSpace(lookupedCamera.Name)
                         ? lookupedCamera.Name
-                        : ipAddress,
-                    IpAddress = ipAddress,
+                        : lookupedCamera.MacAddress,
+                    IpAddress = lookupedCamera.IpAddress,
                     Port = lookupedCamera.Port,
                     PortSsl = lookupedCamera.PortSsl,
                     MacAddress = lookupedCamera.MacAddress,
-                    Description = BuildDescription(lookupedCamera)
+                    Description = BuildDescription(lookupedCamera),
+                    IsOnline = true
                 };
 
                 Insert(ref newCamera, idStructuredSubSite);

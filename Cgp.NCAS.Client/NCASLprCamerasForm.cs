@@ -470,7 +470,7 @@ namespace Contal.Cgp.NCAS.Client
                 if (selectedCameras == null || selectedCameras.Count == 0)
                     return;
 
-                Plugin.MainServerProvider.CreateLookupedLprCameras(
+                Plugin.MainServerProvider.LprCameras.CreateLookupedLprCameras(
                     selectedCameras,
                     lookupedForm.IdSelectedSubSite);
 

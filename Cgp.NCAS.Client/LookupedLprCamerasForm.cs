@@ -166,9 +166,9 @@ namespace Contal.Cgp.NCAS.Client
             if (CgpClient.Singleton.IsConnectionLost(false))
                 return;
 
-            var provider = _plugin?.MainServerProvider;
+            var lprCameras = _plugin?.MainServerProvider?.LprCameras;
 
-            if (provider?.LprCameras == null)
+            if (lprCameras == null)
             {
                 MessageBox.Show("Main Server Provider not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -176,7 +176,7 @@ namespace Contal.Cgp.NCAS.Client
 
             try
             {
-                provider.CreateLookupedLprCameras(
+                lprCameras.CreateLookupedLprCameras(
                     _selectedCameras,
                     _idSelectedSubSite);
 
