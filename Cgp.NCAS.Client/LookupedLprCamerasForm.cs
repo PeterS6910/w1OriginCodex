@@ -11,13 +11,16 @@ namespace Contal.Cgp.NCAS.Client
 {
     public partial class LookupedLprCamerasForm : CgpTranslateForm
     {
+        private readonly NCASClient _plugin;
         private BindingSource _bindingSource;
         private IList<LookupedLprCamera> _selectedCameras;
         private int? _idSelectedSubSite;
+        private bool _camerasAddedToDatabase;
 
         public IList<LookupedLprCamera> SelectedCameras => _selectedCameras ?? new List<LookupedLprCamera>();
 
         public int? IdSelectedSubSite => _idSelectedSubSite;
+        public bool CamerasAddedToDatabase => _camerasAddedToDatabase;
 
         public LookupedLprCamerasForm(NCASClient plugin)
             : base(NCASClient.LocalizationHelper)
@@ -25,6 +28,7 @@ namespace Contal.Cgp.NCAS.Client
             if (plugin == null)
                 throw new ArgumentNullException(nameof(plugin));
 
+            _plugin = plugin;
             InitializeComponent();
         }
 
@@ -128,6 +132,8 @@ namespace Contal.Cgp.NCAS.Client
 
         private void _bAdd_Click(object sender, EventArgs e)
         {
+            _camerasAddedToDatabase = false;
+
             _selectedCameras = _bindingSource.Cast<LookupedLprCamera>()
                 .Where(camera => camera.IsChecked)
                 .Select(CloneLookupedCamera)
@@ -148,8 +154,38 @@ namespace Contal.Cgp.NCAS.Client
             _idSelectedSubSite = selectedSubSites != null
                 ? (int?)selectedSubSites.FirstOrDefault()
                 : null;
-
+            AddSelectedCamerasToDatabase();
             DialogResult = DialogResult.OK;
+        }
+
+        private void AddSelectedCamerasToDatabase()
+        {
+            if (_selectedCameras == null || _selectedCameras.Count == 0)
+                return;
+
+            if (CgpClient.Singleton.IsConnectionLost(false))
+                return;
+
+            var lprCameras = _plugin?.MainServerProvider?.LprCameras;
+
+            if (lprCameras == null)
+            {
+                MessageBox.Show("Main Server Provider not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            try
+            {
+                lprCameras.CreateLookupedLprCameras(
+                    _selectedCameras,
+                    _idSelectedSubSite);
+
+                _camerasAddedToDatabase = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void _bCancel_Click(object sender, EventArgs e)

@@ -459,6 +459,12 @@ namespace Contal.Cgp.NCAS.Client
                 if (lookupedForm.ShowDialog(lookupedCameras) != DialogResult.OK)
                     return;
 
+                if (lookupedForm.CamerasAddedToDatabase)
+                {
+                    SafeThread.StartThread(ShowData);
+                    return;
+                }
+
                 var selectedCameras = lookupedForm.SelectedCameras;
 
                 if (selectedCameras == null || selectedCameras.Count == 0)

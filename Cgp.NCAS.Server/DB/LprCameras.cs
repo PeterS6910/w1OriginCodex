@@ -190,10 +190,10 @@ namespace Contal.Cgp.NCAS.Server.DB
                 }
 
                 var ipAddress = lookupedCamera.IpAddress.Trim();
+                var normalizedIpAddress = ipAddress.ToLowerInvariant();
 
                 var existingCamera = SelectLinq<LprCamera>(
-                    camera => string.Equals(camera.IpAddress, ipAddress, StringComparison.OrdinalIgnoreCase))
-                    ?.FirstOrDefault();
+                    camera => camera.IpAddress != null && camera.IpAddress.ToLower() == normalizedIpAddress)?.FirstOrDefault();
 
                 if (existingCamera != null)
                     continue;
