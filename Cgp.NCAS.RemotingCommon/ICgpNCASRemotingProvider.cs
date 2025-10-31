@@ -78,6 +78,7 @@ namespace Contal.Cgp.NCAS.RemotingCommon
         bool UpgradeCRs(string selectedVersion, byte crHwVersion, Guid upgradeID, string ccuIpAddress, List<Guid> ccusCardReadersToUpgrade, Dictionary<byte, List<byte>> dcusCardReadersToUpgrade, out Exception ex);
         bool GetEnableParentInFullName();
         void InsertLookupedCCUs(List<string> ipAddresses, int? idStructuredSubSite);
+        void CreateLookupedLprCameras(ICollection<LookupedLprCamera> lookupedCameras, int? idStructuredSubSite);
         void DeviceAlarmSettingsChanged(Dictionary<AlarmType, bool> changedSettings);
         string CheckAlarmAreaActivationRights(Guid guidCCU, Guid guidPerson, Guid guidAlarmArea);
         void GetCCUSupportedVersions(out string minimalSupportedCCUVersion, out string maximalSupportedCCUVersion, out string minCCUVersionForWinCeChecking, out string minimalSupportedCeVersion);

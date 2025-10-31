@@ -750,6 +750,15 @@ namespace Contal.Cgp.NCAS.Server
                 idStructuredSubSite);
         }
 
+        public void CreateLookupedLprCameras(
+            ICollection<LookupedLprCamera> lookupedCameras,
+            int? idStructuredSubSite)
+        {
+            DB.LprCameras.Singleton.CreateLookupedLprCameras(
+                lookupedCameras,
+                idStructuredSubSite);
+        }
+
         public string CheckAlarmAreaActivationRights(Guid guidCCU, Guid guidPerson, Guid guidAlarmArea)
         {
             return CCUConfigurationHandler.Singleton.CheckAlarmAreaActivationRights(guidCCU, guidPerson, guidAlarmArea).ToString();
