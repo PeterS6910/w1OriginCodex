@@ -208,17 +208,77 @@ namespace Contal.Cgp.NCAS.Server.DB
                     });
 
                 if (existingCameras != null && existingCameras.Count > 0)
+                {
+                    foreach (var existingCamera in existingCameras)
+                    {
+                        if (existingCamera == null || existingCamera.IsOnline)
+                            continue;
+
+                        var updated = false;
+                        var newName = !string.IsNullOrWhiteSpace(lookupedCamera.Name)
+                            ? lookupedCamera.Name
+                            : lookupedCamera.MacAddress;
+
+                        if (!string.Equals(existingCamera.Name, newName, StringComparison.Ordinal))
+                        {
+                            existingCamera.Name = newName;
+                            updated = true;
+                        }
+
+                        if (!string.Equals(existingCamera.IpAddress, lookupedCamera.IpAddress, StringComparison.OrdinalIgnoreCase))
+                        {
+                            existingCamera.IpAddress = lookupedCamera.IpAddress;
+                            updated = true;
+                        }
+
+                        if (!string.Equals(existingCamera.Port, lookupedCamera.Port, StringComparison.Ordinal))
+                        {
+                            existingCamera.Port = lookupedCamera.Port;
+                            updated = true;
+                        }
+
+                        if (!string.Equals(existingCamera.PortSsl, lookupedCamera.PortSsl, StringComparison.Ordinal))
+                        {
+                            existingCamera.PortSsl = lookupedCamera.PortSsl;
+                            updated = true;
+                        }
+
+                        if (!string.Equals(existingCamera.MacAddress, macAddress, StringComparison.OrdinalIgnoreCase))
+                        {
+                            existingCamera.MacAddress = macAddress;
+                            updated = true;
+                        }
+
+                        var newDescription = BuildDescription(lookupedCamera);
+                        if (!string.Equals(existingCamera.Description, newDescription, StringComparison.Ordinal))
+                        {
+                            existingCamera.Description = newDescription;
+                            updated = true;
+                        }
+
+                        if (!existingCamera.IsOnline)
+                        {
+                            existingCamera.IsOnline = true;
+                            updated = true;
+                        }
+
+                        if (updated)
+                            Update(existingCamera);
+
+                        return;
+                    }
                     return;
+                }
 
                 var newCamera = new LprCamera
                 {
                     Name = !string.IsNullOrWhiteSpace(lookupedCamera.Name)
                         ? lookupedCamera.Name
-                        : lookupedCamera.MacAddress,
+                        : macAddress,
                     IpAddress = lookupedCamera.IpAddress,
                     Port = lookupedCamera.Port,
                     PortSsl = lookupedCamera.PortSsl,
-                    MacAddress = lookupedCamera.MacAddress,
+                    MacAddress = macAddress,
                     Description = BuildDescription(lookupedCamera),
                     IsOnline = true
                 };

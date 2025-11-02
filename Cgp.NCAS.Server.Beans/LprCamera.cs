@@ -211,6 +211,15 @@ namespace Contal.Cgp.NCAS.Server.Beans
         public const string COLUMN_DESCRIPTION = "Description";
         public const string COLUMN_SYMBOL = "Symbol";
         public const string COLUMN_GUID_CCU = "GuidCCU";
+        public const string COLUMN_IP_ADDRESS = "IpAddress";
+        public const string COLUMN_MAC_ADDRESS = "MacAddress";
+        public const string COLUMN_PORT = "Port";
+        public const string COLUMN_PORT_SSL = "PortSsl";
+        public const string COLUMN_COMMUNICATION_SCOPE = "CommunicationScope";
+        public const string COLUMN_LOCKED = "Locked";
+        public const string COLUMN_LOCKING_CLIENT_IP = "LockingClientIp";
+        public const string COLUMN_LAST_HEARTBEAT_AT = "LastHeartbeatAt";
+        public const string COLUMN_HEALTH_STATE = "HealthState";
 
         [LwSerialize]
         public Guid IdLprCamera { get; set; }
@@ -232,6 +241,24 @@ namespace Contal.Cgp.NCAS.Server.Beans
         public string Description { get; set; }
         [LwSerialize]
         public Image Symbol { get; set; }
+        [LwSerialize]
+        public string IpAddress { get; set; }
+        [LwSerialize]
+        public string MacAddress { get; set; }
+        [LwSerialize]
+        public string Port { get; set; }
+        [LwSerialize]
+        public string PortSsl { get; set; }
+        [LwSerialize]
+        public CommunicationScope CommunicationScope { get; set; }
+        [LwSerialize]
+        public bool Locked { get; set; }
+        [LwSerialize]
+        public string LockingClientIp { get; set; }
+        [LwSerialize]
+        public DateTime? LastHeartbeatAt { get; set; }
+        [LwSerialize]
+        public HealthState HealthState { get; set; }
 
         public ObjectType ObjectType
         {
@@ -275,7 +302,16 @@ namespace Contal.Cgp.NCAS.Server.Beans
                 GuidCCU = camera.GuidCCU,
                 Location = camera.CCU != null ? camera.CCU.ToString() : null,
                 LastLicensePlate = camera.LastLicensePlate,
-                OnlineState = camera.IsOnline ? OnlineState.Online : OnlineState.Offline
+                OnlineState = camera.IsOnline ? OnlineState.Online : OnlineState.Offline,
+                IpAddress = camera.IpAddress,
+                MacAddress = camera.MacAddress,
+                Port = camera.Port,
+                PortSsl = camera.PortSsl,
+                CommunicationScope = camera.CommunicationScope,
+                Locked = camera.Locked,
+                LockingClientIp = camera.LockingClientIp,
+                LastHeartbeatAt = camera.LastHeartbeatAt,
+                HealthState = camera.HealthState
             };
         }
 
@@ -392,6 +428,117 @@ namespace Contal.Cgp.NCAS.Server.Beans
                 var property = type.GetProperty("Description");
                 if (property != null)
                     result.Description = property.GetValue(value, null) as string;
+            }
+            catch
+            {
+            }
+            try
+            {
+                var property = type.GetProperty("IpAddress");
+                if (property != null)
+                    result.IpAddress = property.GetValue(value, null) as string;
+            }
+            catch
+            {
+            }
+
+            try
+            {
+                var property = type.GetProperty("MacAddress");
+                if (property != null)
+                    result.MacAddress = property.GetValue(value, null) as string;
+            }
+            catch
+            {
+            }
+
+            try
+            {
+                var property = type.GetProperty("Port");
+                if (property != null)
+                    result.Port = property.GetValue(value, null) as string;
+            }
+            catch
+            {
+            }
+
+            try
+            {
+                var property = type.GetProperty("PortSsl");
+                if (property != null)
+                    result.PortSsl = property.GetValue(value, null) as string;
+            }
+            catch
+            {
+            }
+
+            try
+            {
+                var property = type.GetProperty("CommunicationScope");
+                if (property != null)
+                {
+                    var communicationScope = property.GetValue(value, null);
+                    if (communicationScope is CommunicationScope)
+                        result.CommunicationScope = (CommunicationScope)communicationScope;
+                    else if (communicationScope is byte)
+                        result.CommunicationScope = (CommunicationScope)(byte)communicationScope;
+                }
+            }
+            catch
+            {
+            }
+
+            try
+            {
+                var property = type.GetProperty("Locked");
+                if (property != null)
+                {
+                    var lockedValue = property.GetValue(value, null);
+                    if (lockedValue is bool)
+                        result.Locked = (bool)lockedValue;
+                }
+            }
+            catch
+            {
+            }
+
+            try
+            {
+                var property = type.GetProperty("LockingClientIp");
+                if (property != null)
+                    result.LockingClientIp = property.GetValue(value, null) as string;
+            }
+            catch
+            {
+            }
+
+            try
+            {
+                var property = type.GetProperty("LastHeartbeatAt");
+                if (property != null)
+                {
+                    var heartbeatValue = property.GetValue(value, null);
+                    if (heartbeatValue is DateTime)
+                        result.LastHeartbeatAt = (DateTime)heartbeatValue;
+                    else if (heartbeatValue is DateTime?)
+                        result.LastHeartbeatAt = (DateTime?)heartbeatValue;
+                }
+            }
+            catch
+            {
+            }
+
+            try
+            {
+                var property = type.GetProperty("HealthState");
+                if (property != null)
+                {
+                    var healthStateValue = property.GetValue(value, null);
+                    if (healthStateValue is HealthState)
+                        result.HealthState = (HealthState)healthStateValue;
+                    else if (healthStateValue is byte)
+                        result.HealthState = (HealthState)(byte)healthStateValue;
+                }
             }
             catch
             {

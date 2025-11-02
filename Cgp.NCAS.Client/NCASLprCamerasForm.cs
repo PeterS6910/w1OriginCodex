@@ -357,6 +357,10 @@ namespace Contal.Cgp.NCAS.Client
                 LprCameraShort.COLUMN_SYMBOL,
                 LprCameraShort.COLUMN_FULL_NAME,
                 LprCameraShort.COLUMN_STRING_ONLINE_STATE,
+                LprCameraShort.COLUMN_IP_ADDRESS,
+                LprCameraShort.COLUMN_MAC_ADDRESS,
+                LprCameraShort.COLUMN_PORT,
+                LprCameraShort.COLUMN_PORT_SSL,                
                 LprCameraShort.COLUMN_LAST_LICENSE_PLATE,
                 LprCameraShort.COLUMN_LOCATION,
                 LprCameraShort.COLUMN_DESCRIPTION);
