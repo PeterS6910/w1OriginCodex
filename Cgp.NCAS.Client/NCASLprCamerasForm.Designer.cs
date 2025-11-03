@@ -112,6 +112,8 @@ namespace Contal.Cgp.NCAS.Client
             //
             resources.ApplyResources(this._eMacAddressFilter, "_eMacAddressFilter");
             this._eMacAddressFilter.Name = "_eMacAddressFilter";
+            this._eMacAddressFilter.TextChanged += new System.EventHandler(this.FilterValueChanged);
+            this._eMacAddressFilter.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FilterKeyDown);
             //
             // _lMacAddressFilter
             //
@@ -122,6 +124,8 @@ namespace Contal.Cgp.NCAS.Client
             //
             resources.ApplyResources(this._eIpAddressFilter, "_eIpAddressFilter");
             this._eIpAddressFilter.Name = "_eIpAddressFilter";
+            this._eIpAddressFilter.TextChanged += new System.EventHandler(this.FilterValueChanged);
+            this._eIpAddressFilter.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FilterKeyDown);
             //
             // _lIpAddressFilter
             //
@@ -134,6 +138,8 @@ namespace Contal.Cgp.NCAS.Client
             this._cbOnlineStateFilter.FormattingEnabled = true;
             resources.ApplyResources(this._cbOnlineStateFilter, "_cbOnlineStateFilter");
             this._cbOnlineStateFilter.Name = "_cbOnlineStateFilter";
+            this._cbOnlineStateFilter.SelectedIndexChanged += new System.EventHandler(this.FilterValueChanged);
+            this._cbOnlineStateFilter.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FilterKeyDown);
             // 
             // _lOnlineStateFilter
             // 
@@ -144,6 +150,8 @@ namespace Contal.Cgp.NCAS.Client
             // 
             resources.ApplyResources(this._eNameFilter, "_eNameFilter");
             this._eNameFilter.Name = "_eNameFilter";
+            this._eNameFilter.TextChanged += new System.EventHandler(this.FilterValueChanged);
+            this._eNameFilter.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FilterKeyDown);
             // 
             // _lNameFilter
             // 

@@ -26,6 +26,8 @@ namespace Contal.Cgp.NCAS.Client
         ACgpPluginTableForm<NCASClient, LprCamera, LprCameraShort>
 #endif
     {
+        private const string TranslationError = "TRANSLATION_ERROR";
+        private const string NoTranslationPrefix = "(!T)";
         private readonly ICollection<FilterSettings>[] _filterSettingsWithJoin;
         private LogicalOperators _filterSettingsJoinOperator = LogicalOperators.AND;
 
@@ -293,11 +295,23 @@ namespace Contal.Cgp.NCAS.Client
             foreach (var key in keys)
             {
                 var localized = GetString(key);
-                if (!string.Equals(localized, key, StringComparison.OrdinalIgnoreCase))
-                    return localized;
+
+                if (string.IsNullOrWhiteSpace(localized))
+                    continue;
+
+                if (string.Equals(localized, key, StringComparison.OrdinalIgnoreCase))
+                    continue;
+
+                if (localized.StartsWith(NoTranslationPrefix, StringComparison.Ordinal))
+                    continue;
+
+                if (string.Equals(localized, TranslationError, StringComparison.OrdinalIgnoreCase))
+                    continue;
+
+                return localized;
             }
 
-            return GetString("All");
+            return keys.Last();
         }
 
         protected override bool Compare(LprCamera obj1, LprCamera obj2)
