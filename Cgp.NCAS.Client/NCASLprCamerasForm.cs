@@ -68,7 +68,7 @@ namespace Contal.Cgp.NCAS.Client
             _cdgvData.CgpDataGridEvents = this;
             _cdgvData.EnabledInsertButton = true;
             _cdgvData.EnabledDeleteButton = false;
-            _cdgvData.AutoOpenEditFormByDoubleClick = false;
+            _cdgvData.AutoOpenEditFormByDoubleClick = true;
             _cdgvData.DataGrid.MouseDoubleClick += DataGrid_MouseDoubleClick;
         }
 
@@ -567,8 +567,15 @@ namespace Contal.Cgp.NCAS.Client
         {
             try
             {
-                if (CgpClient.Singleton.IsLoggedIn
-                    && CgpClient.Singleton.MainServerProvider != null)
+                if (!CgpClient.Singleton.IsLoggedIn)
+                    return false;
+
+                var table = GetLprCameraTable();
+
+                if (table != null)
+                    return table.HasAccessView();
+
+                if (CgpClient.Singleton.MainServerProvider != null)
                     return CgpClient.Singleton.MainServerProvider.HasAccess(
                         NCASAccess.GetAccess(AccessNCAS.LprCamerasView));
             }
@@ -582,6 +589,21 @@ namespace Contal.Cgp.NCAS.Client
 
         public override bool HasAccessView(LprCamera lprCamera)
         {
+            try
+            {
+                if (!CgpClient.Singleton.IsLoggedIn)
+                    return false;
+
+                var table = GetLprCameraTable();
+
+                if (table != null)
+                    return table.HasAccessViewForObject(lprCamera);
+            }
+            catch (Exception error)
+            {
+                HandledExceptionAdapter.Examine(error);
+            }
+
             return HasAccessView();
         }
 
