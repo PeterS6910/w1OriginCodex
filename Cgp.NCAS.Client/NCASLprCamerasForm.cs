@@ -355,7 +355,20 @@ namespace Contal.Cgp.NCAS.Client
 
         protected override void DeleteObj(LprCamera obj)
         {
-            throw new NotSupportedException();
+            var table = GetLprCameraTable();
+            if (table == null)
+            {
+                throw new InvalidOperationException("Lpr cameras provider is not available.");
+            }
+
+            Exception error;
+            if (!table.Delete(obj, out error))
+            {
+                if (error != null)
+                    throw error;
+
+                throw new InvalidOperationException("Deleting LPR camera failed.");
+            }
         }
 
         protected override ACgpPluginEditForm<NCASClient, LprCamera> CreateEditForm(LprCamera obj, ShowOptionsEditForm showOption)
@@ -540,10 +553,14 @@ namespace Contal.Cgp.NCAS.Client
 
         protected override void ClearFilterEdits()
         {
+            _currentOnlineStateFilter = null;
+            _currentIpAddressFilter = null;
+            _currentMacAddressFilter = null;
             _eNameFilter.Text = string.Empty;
             _eIpAddressFilter.Text = string.Empty;
             _eMacAddressFilter.Text = string.Empty;
-            SetOnlineStateFilterToDefault();
+            if (_cbOnlineStateFilter.DataSource != null)
+                _cbOnlineStateFilter.SelectedIndex = 0;
         }
 
         public override bool HasAccessView()
@@ -603,42 +620,67 @@ namespace Contal.Cgp.NCAS.Client
 
         private void DataGrid_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            if (_cdgvData.DataGrid.HitTest(e.X, e.Y).RowIndex < 0)
+            var hitTest = _cdgvData.DataGrid.HitTest(e.X, e.Y);
+
+            if (hitTest.RowIndex < 0)
                 return;
 
-            EditSelectedRows();
+            EditSelectedRows(hitTest.RowIndex);
         }
 
-        private void EditSelectedRows()
+        private void EditSelectedRows(int clickedRowIndex)
         {
+            if (_cdgvData?.DataGrid == null)
+            {
+                base.EditClick();
+                return;
+            }
+
+            var bindingSource = BindingSource;
+
+            if (bindingSource != null
+                && clickedRowIndex >= 0
+                && clickedRowIndex < bindingSource.Count)
+            {
+                bindingSource.Position = clickedRowIndex;
+            }
+
             var selectedRows = _cdgvData.DataGrid.SelectedRows;
 
             if (selectedRows == null || selectedRows.Count == 0)
             {
-                EditClick();
+                base.EditClick();
                 return;
             }
 
             var rowIndexes = selectedRows
                 .OfType<DataGridViewRow>()
                 .Select(row => row.Index)
-                .Where(index => index >= 0)
-                .Distinct()
+                   .Where(index => index >= 0
+                    && bindingSource != null
+                    && index < bindingSource.Count)
+                                .Distinct()
                 .OrderBy(index => index)
                 .ToList();
 
             if (rowIndexes.Count <= 1)
             {
-                EditClick();
+                if (rowIndexes.Count == 1 && bindingSource != null && rowIndexes[0] < bindingSource.Count)
+                {
+                    bindingSource.Position = rowIndexes[0];
+                }
+
+                base.EditClick(rowIndexes);
                 return;
             }
 
-            EditClick(rowIndexes);
+            base.EditClick(rowIndexes);
         }
 
         public override void EditClick()
         {
-            EditSelectedRows();
+            var position = BindingSource != null ? BindingSource.Position : -1;
+            EditSelectedRows(position);
         }
 
         protected override void RegisterEvents()

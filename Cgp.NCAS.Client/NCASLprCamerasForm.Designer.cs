@@ -77,6 +77,7 @@ namespace Contal.Cgp.NCAS.Client
             this._pFilter.Controls.Add(this._eNameFilter);
             this._pFilter.Controls.Add(this._lNameFilter);
             resources.ApplyResources(this._pFilter, "_pFilter");
+            this._pFilter.Size = new System.Drawing.Size(1522, 120);
             this._pFilter.Name = "_pFilter";
             // 
             // _lRecordCount
@@ -104,6 +105,7 @@ namespace Contal.Cgp.NCAS.Client
             // 
             this._bLookupLprCameras.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this._bLookupLprCameras, "_bLookupLprCameras");
+            this._bLookupLprCameras.Location = new System.Drawing.Point(917, 68);
             this._bLookupLprCameras.Name = "_bFindAll";
             this._bLookupLprCameras.UseVisualStyleBackColor = false;
             this._bLookupLprCameras.Click += new System.EventHandler(this._bLookupLprCameras_Click);
