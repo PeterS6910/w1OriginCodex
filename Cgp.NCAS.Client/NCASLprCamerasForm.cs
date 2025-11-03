@@ -55,6 +55,7 @@ namespace Contal.Cgp.NCAS.Client
 
             InitCGPDataGridView();
             PopulateOnlineStateFilter();
+            SetOnlineStateFilterToDefault();
         }
 
         private void InitCGPDataGridView()
@@ -76,15 +77,14 @@ namespace Contal.Cgp.NCAS.Client
             var allLabel = GetAllFilterLabel();
             var items = new List<KeyValuePair<string, OnlineState?>>
             {
-                new KeyValuePair<string, OnlineState?>(allLabel, null),
-                new KeyValuePair<string, OnlineState?>(GetString(OnlineState.Online.ToString()), OnlineState.Online),
-                new KeyValuePair<string, OnlineState?>(GetString(OnlineState.Offline.ToString()), OnlineState.Offline)
+                new KeyValuePair<string, OnlineState?>(GetAllFilterLabel(), null),
+                new KeyValuePair<string, OnlineState?>(GetTranslatedOnlineState(OnlineState.Online), OnlineState.Online),
+                new KeyValuePair<string, OnlineState?>(GetTranslatedOnlineState(OnlineState.Offline), OnlineState.Offline)
             };
 
             _cbOnlineStateFilter.DisplayMember = "Key";
             _cbOnlineStateFilter.ValueMember = "Value";
             _cbOnlineStateFilter.DataSource = items;
-            SetOnlineStateFilterToDefault();
         }
 
         void _cdgvData_BeforeGridModified(BindingSource bindingSource)
@@ -294,18 +294,12 @@ namespace Contal.Cgp.NCAS.Client
 
             foreach (var key in keys)
             {
-                var localized = GetString(key);
+                var localized = TryGetTranslation(key);
 
                 if (string.IsNullOrWhiteSpace(localized))
                     continue;
 
                 if (string.Equals(localized, key, StringComparison.OrdinalIgnoreCase))
-                    continue;
-
-                if (localized.StartsWith(NoTranslationPrefix, StringComparison.Ordinal))
-                    continue;
-
-                if (string.Equals(localized, TranslationError, StringComparison.OrdinalIgnoreCase))
                     continue;
 
                 return localized;
@@ -371,7 +365,54 @@ namespace Contal.Cgp.NCAS.Client
 
         private string GetTranslatedOnlineState(OnlineState onlineState)
         {
-            return GetString(onlineState.ToString());
+            return TryGetTranslation(onlineState.ToString()) ?? onlineState.ToString();
+        }
+
+        private string TryGetTranslation(string key)
+        {
+            var localized = GetString(key);
+
+            if (string.IsNullOrWhiteSpace(localized))
+                return null;
+
+            if (localized.StartsWith(NoTranslationPrefix, StringComparison.Ordinal))
+                return null;
+
+            return string.Equals(localized, TranslationError, StringComparison.OrdinalIgnoreCase)
+                ? null
+                : localized;
+        }
+
+        protected override void AfterTranslateForm()
+        {
+            base.AfterTranslateForm();
+
+            if (_cbOnlineStateFilter == null)
+                return;
+
+            var selectAll = _cbOnlineStateFilter.DataSource != null
+                             && _cbOnlineStateFilter.SelectedIndex == 0
+                             && _cbOnlineStateFilter.SelectedValue == null;
+
+            var selectedState = _cbOnlineStateFilter.SelectedValue is OnlineState state
+                ? (OnlineState?)state
+                : (OnlineState?)null;
+
+            PopulateOnlineStateFilter();
+
+            if (selectAll)
+            {
+                if (_cbOnlineStateFilter.Items.Count > 0)
+                    _cbOnlineStateFilter.SelectedIndex = 0;
+            }
+            else if (selectedState.HasValue)
+            {
+                _cbOnlineStateFilter.SelectedValue = selectedState.Value;
+            }
+            else
+            {
+                SetOnlineStateFilterToDefault();
+            }
         }
 
         private ILprCameras GetLprCameraTable()
