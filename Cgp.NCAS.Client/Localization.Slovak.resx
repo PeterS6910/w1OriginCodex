@@ -4741,8 +4741,11 @@ Nakupovaný čas: {1}, {2} čas: {3}</value>
   <data name="NCASLprCamerasForm_rbFilterAnd" xml:space="preserve">
     <value>A</value>
   </data>
-  <data name="NCASLprCamerasForm_lLocationFilter" xml:space="preserve">
-    <value>Umiestnenie</value>
+  <data name="NCASLprCamerasForm_lIpAddressFilter" xml:space="preserve">
+    <value>IP adresa</value>
+  </data>
+  <data name="NCASLprCamerasForm_lMacAddressFilter" xml:space="preserve">
+    <value>MAC adresa</value>
   </data>
   <data name="NCASLprCamerasForm_lOnlineStateFilter" xml:space="preserve">
     <value>Stav pripojenia</value>

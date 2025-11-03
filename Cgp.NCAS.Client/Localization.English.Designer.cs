@@ -15079,11 +15079,20 @@ namespace Contal.Cgp.NCAS.Client {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Location.
+        ///   Looks up a localized string similar to IP Address.
         /// </summary>
-        internal static string NCASLprCamerasForm_lLocationFilter {
+        internal static string NCASLprCamerasForm_lIpAddressFilter {
             get {
-                return ResourceManager.GetString("NCASLprCamerasForm_lLocationFilter", resourceCulture);
+                return ResourceManager.GetString("NCASLprCamerasForm_lIpAddressFilter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MAC Address.
+        /// </summary>
+        internal static string NCASLprCamerasForm_lMacAddressFilter {
+            get {
+                return ResourceManager.GetString("NCASLprCamerasForm_lMacAddressFilter", resourceCulture);
             }
         }
         

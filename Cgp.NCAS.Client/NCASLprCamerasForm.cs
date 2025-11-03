@@ -30,7 +30,8 @@ namespace Contal.Cgp.NCAS.Client
         private LogicalOperators _filterSettingsJoinOperator = LogicalOperators.AND;
 
         private OnlineState? _currentOnlineStateFilter;
-        private Guid? _currentLocationFilter;
+        private string _currentIpAddressFilter;
+        private string _currentMacAddressFilter;
         private Action<ICollection<LookupedLprCamera>, ICollection<Guid>> _eventLprCameraLookupFinished;
 
         public NCASLprCamerasForm()
@@ -64,7 +65,8 @@ namespace Contal.Cgp.NCAS.Client
             _cdgvData.CgpDataGridEvents = this;
             _cdgvData.EnabledInsertButton = true;
             _cdgvData.EnabledDeleteButton = false;
-            _cdgvData.AutoOpenEditFormByDoubleClick = true;                        
+            _cdgvData.AutoOpenEditFormByDoubleClick = false;
+            _cdgvData.DataGrid.MouseDoubleClick += DataGrid_MouseDoubleClick;
         }
 
         private void PopulateOnlineStateFilter()
@@ -80,6 +82,7 @@ namespace Contal.Cgp.NCAS.Client
             _cbOnlineStateFilter.DisplayMember = "Key";
             _cbOnlineStateFilter.ValueMember = "Value";
             _cbOnlineStateFilter.DataSource = items;
+            SetOnlineStateFilterToDefault();
         }
 
         void _cdgvData_BeforeGridModified(BindingSource bindingSource)
@@ -101,78 +104,17 @@ namespace Contal.Cgp.NCAS.Client
 
         private void AfterDataChanged(IList dataSourceList)
         {
-            SafeThread<IList>.StartThread(UpdateLocationFilter, dataSourceList);
-        }
+            var count = dataSourceList?.Count ?? 0;
 
-        private void UpdateLocationFilter(IList dataSourceList)
-        {
-            var selectedValue = _cbLocationFilter.InvokeRequired
-                ? (Guid?)_cbLocationFilter.Invoke(new Func<Guid?>(() =>
-                    _cbLocationFilter.SelectedValue is Guid guid ? guid : (Guid?)null))
-                : _cbLocationFilter.SelectedValue as Guid?;
-
-            var items = new List<KeyValuePair<string, Guid?>>
-            {
-                new KeyValuePair<string, Guid?>(GetAllFilterLabel(), null)
-            };
-
-            if (dataSourceList != null)
-            {
-                var locationPairs = new Dictionary<Guid, string>();
-
-                foreach (LprCameraShort camera in dataSourceList)
-                {
-                    if (!camera.GuidCCU.HasValue)
-                        continue;
-
-                    if (!locationPairs.ContainsKey(camera.GuidCCU.Value))
-                    {
-                        locationPairs.Add(
-                            camera.GuidCCU.Value,
-                            string.IsNullOrEmpty(camera.Location)
-                                ? camera.GuidCCU.Value.ToString()
-                                : camera.Location);
-                    }
-                }
-
-                items.AddRange(locationPairs.Select(pair =>
-                    new KeyValuePair<string, Guid?>(pair.Value, pair.Key)));
-            }
-
-            if (_cbLocationFilter.InvokeRequired)
-            {
-                _cbLocationFilter.BeginInvoke(new Action(() => BindLocationFilter(items, selectedValue)));
-            }
+            if (_lRecordCount.InvokeRequired)
+                _lRecordCount.BeginInvoke(new Action(() => UpdateRecordCount(count)));
             else
-            {
-                BindLocationFilter(items, selectedValue);
-            }
-        }
-
-        private void BindLocationFilter(IEnumerable<KeyValuePair<string, Guid?>> items, Guid? selectedValue)
-        {
-            var itemList = items.ToList();
-
-            _cbLocationFilter.DisplayMember = "Key";
-            _cbLocationFilter.ValueMember = "Value";
-            _cbLocationFilter.DataSource = itemList;
-
-            if (selectedValue.HasValue)
-            {
-                var match = itemList.FirstOrDefault(pair => pair.Value == selectedValue);
-                if (!EqualityComparer<KeyValuePair<string, Guid?>>.Default.Equals(match, default(KeyValuePair<string, Guid?>))
-                    && !string.IsNullOrEmpty(match.Key))
-                {
-                    var index = _cbLocationFilter.FindStringExact(match.Key);
-                    if (index >= 0)
-                        _cbLocationFilter.SelectedIndex = index;
-                }
-            }
+                UpdateRecordCount(count);
         }
 
         protected override LprCamera GetObjectForEdit(LprCameraShort listObj, out bool editAllowed)
         {
-            if (listObj == null)            
+            if (listObj == null)
             {
                 editAllowed = false;
                 return null;
@@ -224,7 +166,7 @@ namespace Contal.Cgp.NCAS.Client
 
         protected override ICollection<LprCameraShort> GetData()
         {
-            var resultList = new List<LprCameraShort>();                        
+            var resultList = new List<LprCameraShort>();
             CheckAccess();
 
             var table = GetLprCameraTable();
@@ -297,8 +239,21 @@ namespace Contal.Cgp.NCAS.Client
             if (_currentOnlineStateFilter.HasValue)
                 filtered = filtered.Where(camera => camera.OnlineState == _currentOnlineStateFilter.Value);
 
-            if (_currentLocationFilter.HasValue)
-                filtered = filtered.Where(camera => camera.GuidCCU == _currentLocationFilter);
+            if (!string.IsNullOrWhiteSpace(_currentIpAddressFilter))
+            {
+                var ipFilter = _currentIpAddressFilter;
+                filtered = filtered.Where(camera =>
+                    !string.IsNullOrEmpty(camera.IpAddress)
+                    && camera.IpAddress.IndexOf(ipFilter, StringComparison.OrdinalIgnoreCase) >= 0);
+            }
+
+            if (!string.IsNullOrWhiteSpace(_currentMacAddressFilter))
+            {
+                var macFilter = _currentMacAddressFilter;
+                filtered = filtered.Where(camera =>
+                    !string.IsNullOrEmpty(camera.MacAddress)
+                    && camera.MacAddress.IndexOf(macFilter, StringComparison.OrdinalIgnoreCase) >= 0);
+            }
 
             if (!string.IsNullOrWhiteSpace(_eNameFilter.Text))
             {
@@ -321,6 +276,14 @@ namespace Contal.Cgp.NCAS.Client
         private void UpdateRecordCount(int count)
         {
             _lRecordCount.Text = string.Format("{0} : {1}", GetString("TextRecordCount"), count);
+        }
+
+        private void SetOnlineStateFilterToDefault()
+        {
+            if (_cbOnlineStateFilter.DataSource == null)
+                return;
+
+            _cbOnlineStateFilter.SelectedValue = OnlineState.Online;
         }
 
         private string GetAllFilterLabel()
@@ -360,9 +323,8 @@ namespace Contal.Cgp.NCAS.Client
                 LprCameraShort.COLUMN_IP_ADDRESS,
                 LprCameraShort.COLUMN_MAC_ADDRESS,
                 LprCameraShort.COLUMN_PORT,
-                LprCameraShort.COLUMN_PORT_SSL,                
+                LprCameraShort.COLUMN_PORT_SSL,
                 LprCameraShort.COLUMN_LAST_LICENSE_PLATE,
-                LprCameraShort.COLUMN_LOCATION,
                 LprCameraShort.COLUMN_DESCRIPTION);
 
             _cdgvData.DataGrid.ColumnHeadersHeight = 34;
@@ -396,7 +358,7 @@ namespace Contal.Cgp.NCAS.Client
         private string GetTranslatedOnlineState(OnlineState onlineState)
         {
             return GetString(onlineState.ToString());
-        }      
+        }
 
         private ILprCameras GetLprCameraTable()
         {
@@ -474,7 +436,7 @@ namespace Contal.Cgp.NCAS.Client
                 if (selectedCameras == null || selectedCameras.Count == 0)
                     return;
 
-                Plugin.MainServerProvider.LprCameras.CreateLookupedLprCameras(
+                Plugin.MainServerProvider.CreateLookupedLprCameras(
                     selectedCameras,
                     lookupedForm.IdSelectedSubSite);
 
@@ -490,12 +452,27 @@ namespace Contal.Cgp.NCAS.Client
                 list.Clear();
 
             _currentOnlineStateFilter = null;
-            _currentLocationFilter = null;
+            _currentIpAddressFilter = null;
+            _currentMacAddressFilter = null;
 
             if (!string.IsNullOrWhiteSpace(_eNameFilter.Text))
             {
                 FilterSettings.Add(
                     new FilterSettings(LprCamera.COLUMNNAME, _eNameFilter.Text.Trim(), ComparerModes.LIKEBOTH));
+            }
+
+            if (!string.IsNullOrWhiteSpace(_eIpAddressFilter.Text))
+            {
+                _currentIpAddressFilter = _eIpAddressFilter.Text.Trim();
+                FilterSettings.Add(
+                    new FilterSettings(LprCamera.COLUMNIPADDRESS, _currentIpAddressFilter, ComparerModes.LIKEBOTH));
+            }
+
+            if (!string.IsNullOrWhiteSpace(_eMacAddressFilter.Text))
+            {
+                _currentMacAddressFilter = _eMacAddressFilter.Text.Trim();
+                FilterSettings.Add(
+                    new FilterSettings(LprCamera.COLUMNMACADDRESS, _currentMacAddressFilter, ComparerModes.LIKEBOTH));
             }
 
             if (_cbOnlineStateFilter.SelectedValue is OnlineState onlineState)
@@ -504,19 +481,14 @@ namespace Contal.Cgp.NCAS.Client
                 FilterSettings.Add(
                     new FilterSettings(LprCamera.COLUMNISONLINE, onlineState == OnlineState.Online, ComparerModes.EQUALL));
             }
-
-            if (_cbLocationFilter.SelectedValue is Guid guid && guid != Guid.Empty)
-            {
-                _currentLocationFilter = guid;
-                FilterSettings.Add(new FilterSettings(LprCamera.COLUMNGUIDCCU, guid, ComparerModes.EQUALL));
-            }
         }
 
         protected override void ClearFilterEdits()
         {
             _eNameFilter.Text = string.Empty;
-            _cbOnlineStateFilter.SelectedIndex = 0;
-            _cbLocationFilter.SelectedIndex = 0;
+            _eIpAddressFilter.Text = string.Empty;
+            _eMacAddressFilter.Text = string.Empty;
+            SetOnlineStateFilterToDefault();
         }
 
         public override bool HasAccessView()
@@ -609,8 +581,13 @@ namespace Contal.Cgp.NCAS.Client
             EditClick(rowIndexes);
         }
 
+        public override void EditClick()
+        {
+            EditSelectedRows();
+        }
+
         protected override void RegisterEvents()
-        {         
+        {
             if (_eventLprCameraLookupFinished == null)
             {
                 _eventLprCameraLookupFinished = LprCameraLookupFinished;
@@ -619,7 +596,7 @@ namespace Contal.Cgp.NCAS.Client
         }
 
         protected override void UnregisterEvents()
-        {            
+        {
             if (_eventLprCameraLookupFinished != null)
             {
                 LprCameraLookupFinishedHandler.Singleton.UnregisterLookupFinished(_eventLprCameraLookupFinished);

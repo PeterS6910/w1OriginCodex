@@ -6862,8 +6862,11 @@ Vill Ni ändra ingångskontroll på {1} till forcerad blockering?</value>
   <data name="NCASLprCamerasForm_rbFilterAnd" xml:space="preserve">
     <value>OCH</value>
   </data>
-  <data name="NCASLprCamerasForm_lLocationFilter" xml:space="preserve">
-    <value>Plats</value>
+  <data name="NCASLprCamerasForm_lIpAddressFilter" xml:space="preserve">
+    <value>IP-adress</value>
+  </data>
+  <data name="NCASLprCamerasForm_lMacAddressFilter" xml:space="preserve">
+    <value>MAC-adress</value>
   </data>
   <data name="NCASLprCamerasForm_lOnlineStateFilter" xml:space="preserve">
     <value>Online status</value>

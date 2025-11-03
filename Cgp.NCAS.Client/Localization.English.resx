@@ -6814,8 +6814,11 @@ Do you want to change the input control of {1} to forcefully blocked ?</value>
   <data name="NCASLprCamerasForm_rbFilterAnd" xml:space="preserve">
     <value>AND</value>
   </data>
-  <data name="NCASLprCamerasForm_lLocationFilter" xml:space="preserve">
-    <value>Location</value>
+  <data name="NCASLprCamerasForm_lIpAddressFilter" xml:space="preserve">
+    <value>IP Address</value>
+  </data>
+  <data name="NCASLprCamerasForm_lMacAddressFilter" xml:space="preserve">
+    <value>MAC Address</value>
   </data>
   <data name="NCASLprCamerasForm_lOnlineStateFilter" xml:space="preserve">
     <value>Online state</value>

@@ -26,8 +26,10 @@ namespace Contal.Cgp.NCAS.Client
             this._bFilterClear = new System.Windows.Forms.Button();
             this._bRunFilter = new System.Windows.Forms.Button();
             this._bLookupLprCameras = new System.Windows.Forms.Button();
-            this._cbLocationFilter = new System.Windows.Forms.ComboBox();
-            this._lLocationFilter = new System.Windows.Forms.Label();
+            this._eMacAddressFilter = new System.Windows.Forms.TextBox();
+            this._lMacAddressFilter = new System.Windows.Forms.Label();
+            this._eIpAddressFilter = new System.Windows.Forms.TextBox();
+            this._lIpAddressFilter = new System.Windows.Forms.Label();
             this._cbOnlineStateFilter = new System.Windows.Forms.ComboBox();
             this._lOnlineStateFilter = new System.Windows.Forms.Label();
             this._eNameFilter = new System.Windows.Forms.TextBox();
@@ -66,8 +68,10 @@ namespace Contal.Cgp.NCAS.Client
             this._pFilter.Controls.Add(this._bFilterClear);
             this._pFilter.Controls.Add(this._bRunFilter);
             this._pFilter.Controls.Add(this._bLookupLprCameras);
-            this._pFilter.Controls.Add(this._cbLocationFilter);
-            this._pFilter.Controls.Add(this._lLocationFilter);
+            this._pFilter.Controls.Add(this._eMacAddressFilter);
+            this._pFilter.Controls.Add(this._lMacAddressFilter);
+            this._pFilter.Controls.Add(this._eIpAddressFilter);
+            this._pFilter.Controls.Add(this._lIpAddressFilter);
             this._pFilter.Controls.Add(this._cbOnlineStateFilter);
             this._pFilter.Controls.Add(this._lOnlineStateFilter);
             this._pFilter.Controls.Add(this._eNameFilter);
@@ -103,18 +107,26 @@ namespace Contal.Cgp.NCAS.Client
             this._bLookupLprCameras.Name = "_bFindAll";
             this._bLookupLprCameras.UseVisualStyleBackColor = false;
             this._bLookupLprCameras.Click += new System.EventHandler(this._bLookupLprCameras_Click);
-            // 
-            // _cbLocationFilter
-            // 
-            this._cbLocationFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this._cbLocationFilter.FormattingEnabled = true;
-            resources.ApplyResources(this._cbLocationFilter, "_cbLocationFilter");
-            this._cbLocationFilter.Name = "_cbLocationFilter";
-            // 
-            // _lLocationFilter
-            // 
-            resources.ApplyResources(this._lLocationFilter, "_lLocationFilter");
-            this._lLocationFilter.Name = "_lLocationFilter";
+            //
+            // _eMacAddressFilter
+            //
+            resources.ApplyResources(this._eMacAddressFilter, "_eMacAddressFilter");
+            this._eMacAddressFilter.Name = "_eMacAddressFilter";
+            //
+            // _lMacAddressFilter
+            //
+            resources.ApplyResources(this._lMacAddressFilter, "_lMacAddressFilter");
+            this._lMacAddressFilter.Name = "_lMacAddressFilter";
+            //
+            // _eIpAddressFilter
+            //
+            resources.ApplyResources(this._eIpAddressFilter, "_eIpAddressFilter");
+            this._eIpAddressFilter.Name = "_eIpAddressFilter";
+            //
+            // _lIpAddressFilter
+            //
+            resources.ApplyResources(this._lIpAddressFilter, "_lIpAddressFilter");
+            this._lIpAddressFilter.Name = "_lIpAddressFilter";
             // 
             // _cbOnlineStateFilter
             // 
@@ -160,8 +172,10 @@ namespace Contal.Cgp.NCAS.Client
         private System.Windows.Forms.Button _bFilterClear;
         private System.Windows.Forms.Button _bRunFilter;
         private System.Windows.Forms.Button _bLookupLprCameras;
-        private System.Windows.Forms.ComboBox _cbLocationFilter;
-        private System.Windows.Forms.Label _lLocationFilter;
+        private System.Windows.Forms.TextBox _eMacAddressFilter;
+        private System.Windows.Forms.Label _lMacAddressFilter;
+        private System.Windows.Forms.TextBox _eIpAddressFilter;
+        private System.Windows.Forms.Label _lIpAddressFilter;
         private System.Windows.Forms.ComboBox _cbOnlineStateFilter;
         private System.Windows.Forms.Label _lOnlineStateFilter;
         private System.Windows.Forms.TextBox _eNameFilter;
