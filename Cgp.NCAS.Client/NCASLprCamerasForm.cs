@@ -692,7 +692,7 @@ namespace Contal.Cgp.NCAS.Client
                     bindingSource.Position = rowIndexes[0];
                 }
 
-                base.EditClick(rowIndexes);
+                base.EditClick();
                 return;
             }
 
