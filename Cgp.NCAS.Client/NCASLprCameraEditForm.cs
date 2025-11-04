@@ -45,6 +45,8 @@ namespace Contal.Cgp.NCAS.Client
 #if !DESIGNER
         private bool _isLoadingValues;
         private IList<CcuComboItem> _ccuItems;
+        private bool _controlsInitialized;
+        private bool _eventsRegistered;
 #endif
 #if DESIGNER
         public NCASLprCameraEditForm()
@@ -64,7 +66,8 @@ namespace Contal.Cgp.NCAS.Client
                 NCASClient.LocalizationHelper)
         {
             InitializeComponent();
-
+            _controlsInitialized = true;
+            RegisterEvents();
             _bApply.Enabled = false;
         }
 #endif
@@ -72,6 +75,9 @@ namespace Contal.Cgp.NCAS.Client
 #if !DESIGNER
         protected override void RegisterEvents()
         {
+            if (!_controlsInitialized || _eventsRegistered)
+                return;
+
             _eName.TextChanged += EditTextChanger;
             _eId.TextChanged += EditTextChanger;
             _eIpAddress.TextChanged += EditTextChanger;
@@ -83,6 +89,8 @@ namespace Contal.Cgp.NCAS.Client
             _cbCommunicationScope.SelectedIndexChanged += ControlChanged;
             _cbCcu.SelectedIndexChanged += ControlChanged;
             _chkEnableParentInFullName.CheckedChanged += ControlChanged;
+
+            _eventsRegistered = true;
         }
 
         protected override void BeforeInsert()
@@ -276,6 +284,9 @@ namespace Contal.Cgp.NCAS.Client
 
         protected override void UnregisterEvents()
         {
+            if (!_eventsRegistered)
+                return;
+
             _eName.TextChanged -= EditTextChanger;
             _eId.TextChanged -= EditTextChanger;
             _eIpAddress.TextChanged -= EditTextChanger;
@@ -287,6 +298,8 @@ namespace Contal.Cgp.NCAS.Client
             _cbCommunicationScope.SelectedIndexChanged -= ControlChanged;
             _cbCcu.SelectedIndexChanged -= ControlChanged;
             _chkEnableParentInFullName.CheckedChanged -= ControlChanged;
+
+            _eventsRegistered = false;
         }
 
         protected override void EditEnd()
