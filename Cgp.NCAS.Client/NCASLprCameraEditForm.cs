@@ -89,16 +89,20 @@ namespace Contal.Cgp.NCAS.Client
             _cbCommunicationScope.SelectedIndexChanged += ControlChanged;
             _cbCcu.SelectedIndexChanged += ControlChanged;
             _chkEnableParentInFullName.CheckedChanged += ControlChanged;
+            _chkLocked.CheckedChanged += ControlChanged;
+            _chkIsOnline.CheckedChanged += ControlChanged;
 
             _eventsRegistered = true;
         }
 
         protected override void BeforeInsert()
         {
+            NCASLprCamerasForm.Singleton.BeforeInsert(this);
         }
 
         protected override void BeforeEdit()
         {
+            NCASLprCamerasForm.Singleton.BeforeEdit(this, _editingObject);
         }
 
         public override void ReloadEditingObject(out bool allowEdit)
@@ -228,6 +232,8 @@ namespace Contal.Cgp.NCAS.Client
     ? scope
     : CommunicationScope.CcuOnly;
             _editingObject.EnableParentInFullName = _chkEnableParentInFullName.Checked;
+            _editingObject.Locked = _chkLocked.Checked;
+            _editingObject.IsOnline = _chkIsOnline.Checked;
 
             var selectedCcuId = GetSelectedCcuId();
             _editingObject.GuidCCU = selectedCcuId;
@@ -298,6 +304,8 @@ namespace Contal.Cgp.NCAS.Client
             _cbCommunicationScope.SelectedIndexChanged -= ControlChanged;
             _cbCcu.SelectedIndexChanged -= ControlChanged;
             _chkEnableParentInFullName.CheckedChanged -= ControlChanged;
+            _chkLocked.CheckedChanged -= ControlChanged;
+            _chkIsOnline.CheckedChanged -= ControlChanged;
 
             _eventsRegistered = false;
         }
@@ -313,10 +321,12 @@ namespace Contal.Cgp.NCAS.Client
 
         protected override void AfterInsert()
         {
+            NCASLprCamerasForm.Singleton.AfterInsert();
         }
 
         protected override void AfterEdit()
         {
+            NCASLprCamerasForm.Singleton.AfterEdit(_editingObject);
         }
 
         protected override string GetLocalAlarmInstruction()

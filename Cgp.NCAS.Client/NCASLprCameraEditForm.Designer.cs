@@ -378,13 +378,13 @@ namespace Contal.Cgp.NCAS.Client
             // _chkLocked
             //
             this._chkLocked.AutoSize = true;
-            this._chkLocked.Enabled = false;
+            this._chkLocked.Enabled = true;
             this._chkLocked.Location = new System.Drawing.Point(163, 440);
             this._chkLocked.Margin = new System.Windows.Forms.Padding(3, 3, 12, 6);
             this._chkLocked.Name = "_chkLocked";
             this._chkLocked.Size = new System.Drawing.Size(15, 14);
             this._chkLocked.TabIndex = 21;
-            this._chkLocked.TabStop = false;
+            this._chkLocked.TabStop = true;
             this._chkLocked.UseVisualStyleBackColor = true;
             //
             // _lLockingClientIp
@@ -424,13 +424,13 @@ namespace Contal.Cgp.NCAS.Client
             // _chkIsOnline
             //
             this._chkIsOnline.AutoSize = true;
-            this._chkIsOnline.Enabled = false;
+            this._chkIsOnline.Enabled = true;
             this._chkIsOnline.Location = new System.Drawing.Point(163, 498);
             this._chkIsOnline.Margin = new System.Windows.Forms.Padding(3, 3, 12, 6);
             this._chkIsOnline.Name = "_chkIsOnline";
             this._chkIsOnline.Size = new System.Drawing.Size(15, 14);
             this._chkIsOnline.TabIndex = 25;
-            this._chkIsOnline.TabStop = false;
+            this._chkIsOnline.TabStop = true;
             this._chkIsOnline.UseVisualStyleBackColor = true;
             //
             // _lLastHeartbeatAt
