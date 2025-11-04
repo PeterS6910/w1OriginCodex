@@ -68,8 +68,7 @@ namespace Contal.Cgp.NCAS.Client
             _cdgvData.CgpDataGridEvents = this;
             _cdgvData.EnabledInsertButton = true;
             _cdgvData.EnabledDeleteButton = false;
-            _cdgvData.AutoOpenEditFormByDoubleClick = true;
-            _cdgvData.DataGrid.MouseDoubleClick += DataGrid_MouseDoubleClick;
+            _cdgvData.AutoOpenEditFormByDoubleClick = true;            
         }
 
         private void PopulateOnlineStateFilter()
@@ -638,71 +637,6 @@ namespace Contal.Cgp.NCAS.Client
             var data = BindingSource.List.Cast<LprCameraShort>();
             var filtered = ApplyRuntimeFiltering(data);
             BindingSource.DataSource = new BindingList<LprCameraShort>(filtered.ToList());
-        }
-
-        private void DataGrid_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            var hitTest = _cdgvData.DataGrid.HitTest(e.X, e.Y);
-
-            if (hitTest.RowIndex < 0)
-                return;
-
-            EditSelectedRows(hitTest.RowIndex);
-        }
-
-        private void EditSelectedRows(int clickedRowIndex)
-        {
-            if (_cdgvData?.DataGrid == null)
-            {
-                base.EditClick();
-                return;
-            }
-
-            var bindingSource = BindingSource;
-
-            if (bindingSource != null
-                && clickedRowIndex >= 0
-                && clickedRowIndex < bindingSource.Count)
-            {
-                bindingSource.Position = clickedRowIndex;
-            }
-
-            var selectedRows = _cdgvData.DataGrid.SelectedRows;
-
-            if (selectedRows == null || selectedRows.Count == 0)
-            {
-                base.EditClick();
-                return;
-            }
-
-            var rowIndexes = selectedRows
-                .OfType<DataGridViewRow>()
-                .Select(row => row.Index)
-                   .Where(index => index >= 0
-                    && bindingSource != null
-                    && index < bindingSource.Count)
-                                .Distinct()
-                .OrderBy(index => index)
-                .ToList();
-
-            if (rowIndexes.Count <= 1)
-            {
-                if (rowIndexes.Count == 1 && bindingSource != null && rowIndexes[0] < bindingSource.Count)
-                {
-                    bindingSource.Position = rowIndexes[0];
-                }
-
-                base.EditClick();
-                return;
-            }
-
-            base.EditClick(rowIndexes);
-        }
-
-        public override void EditClick()
-        {
-            var position = BindingSource != null ? BindingSource.Position : -1;
-            EditSelectedRows(position);
         }
 
         protected override void RegisterEvents()
