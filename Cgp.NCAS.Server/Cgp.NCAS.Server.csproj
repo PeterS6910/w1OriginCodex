@@ -70,7 +70,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release - CodeProtection|AnyCPU' ">
     <OutputPath>bin\Release - CodeProtection\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
@@ -628,14 +628,13 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Libs\CDK64.Net.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Libs\Ionic.Zip.dll" />
     <Content Include="NativeLibs\CDK64.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup />
   <Target Name="CopyNativeLibraries" AfterTargets="Build">
     <Copy SourceFiles="@(NativeLibrary)" DestinationFolder="$(OutDir)" SkipUnchangedFiles="true" />
   </Target>
@@ -704,73 +703,74 @@
   </Target>
   -->
   <PropertyGroup>
-    <PostBuildEvent>setlocal
+    <PostBuildEvent>
+      setlocal
 
-REM Cp stands for code protection
-set CpBuildName=Release - CodeProtection
+      REM Cp stands for code protection
+      set CpBuildName=Release - CodeProtection
 
-set UseCodeProtection=false
+      set UseCodeProtection=false
 
-if "$(ConfigurationName)"=="%25CpBuildName%25" set UseCodeProtection=true
+      if "$(ConfigurationName)"=="%25CpBuildName%25" set UseCodeProtection=true
 
-set FinalSubfolder=Final
+      set FinalSubfolder=Final
 
-echo ++ Postbuild for "$(ConfigurationName)" "$(ProjectName)" ++
+      echo ++ Postbuild for "$(ConfigurationName)" "$(ProjectName)" ++
 
-if %25UseCodeProtection%25==false goto WithoutCodeProtection
+      if %25UseCodeProtection%25==false goto WithoutCodeProtection
 
-echo USING CODE PROTECTION for "$(ProjectName)"
+      echo USING CODE PROTECTION for "$(ProjectName)"
 
-RMDIR /Q /S "$(TargetDir)%25FinalSubfolder%25\"
-mkdir "$(TargetDir)%25FinalSubfolder%25\"
+      RMDIR /Q /S "$(TargetDir)%25FinalSubfolder%25\"
+      mkdir "$(TargetDir)%25FinalSubfolder%25\"
 
-rem ;; License manager should be copied before the obfuscation process, as it's part of it
-C:\Windows\System32\xcopy.exe /C /Y "$(SolutionDir)Cgp\Cgp.ContalNovaLicenseManager\bin\$(ConfigurationName)\ContalNovaLicenseManager.exe" "$(TargetDir)"
+      rem ;; License manager should be copied before the obfuscation process, as it's part of it
+      C:\Windows\System32\xcopy.exe /C /Y "$(SolutionDir)Cgp\Cgp.ContalNovaLicenseManager\bin\$(ConfigurationName)\ContalNovaLicenseManager.exe" "$(TargetDir)"
 
-set CodeProtectorPath="$(SolutionDir)Tools\Obfuscator Client\ObfuscatorConsoleApp.exe"
+      set CodeProtectorPath="$(SolutionDir)Tools\Obfuscator Client\ObfuscatorConsoleApp.exe"
 
-if not exist %25CodeProtectorPath%25 goto CodeProtectorNotFound
+      if not exist %25CodeProtectorPath%25 goto CodeProtectorNotFound
 
-call %25CodeProtectorPath%25 "$(SolutionDir)\Cgp.NCAS.Server\ServerNCAS.cls"
+      call %25CodeProtectorPath%25 "$(SolutionDir)\Cgp.NCAS.Server\ServerNCAS.cls"
 
-set CodeProtectionResult=%25errorlevel%25
-if %25CodeProtectionResult%25 neq 0 goto CodeProtectionFailed
+      set CodeProtectionResult=%25errorlevel%25
+      if %25CodeProtectionResult%25 neq 0 goto CodeProtectionFailed
 
-REM need to copy files, that are not part of the obfuscation process
-REM C:\Windows\System32\xcopy.exe /C /Y "$(TargetDir)*xmlserializers.dll" "$(TargetDir)\%25FinalSubfolder%25\"
+      REM need to copy files, that are not part of the obfuscation process
+      REM C:\Windows\System32\xcopy.exe /C /Y "$(TargetDir)*xmlserializers.dll" "$(TargetDir)\%25FinalSubfolder%25\"
 
-C:\Windows\System32\xcopy.exe /C /Y "$(TargetDir)*pcap*.dll" "$(TargetDir)%25FinalSubfolder%25\"
-C:\Windows\System32\xcopy.exe /C /Y "$(TargetDir)*NHibernate*.dll" "$(TargetDir)%25FinalSubfolder%25\"
-C:\Windows\System32\xcopy.exe /C /Y "$(TargetDir)*Ionic.Zip*.dll" "$(TargetDir)%25FinalSubfolder%25\"
+      C:\Windows\System32\xcopy.exe /C /Y "$(TargetDir)*pcap*.dll" "$(TargetDir)%25FinalSubfolder%25\"
+      C:\Windows\System32\xcopy.exe /C /Y "$(TargetDir)*NHibernate*.dll" "$(TargetDir)%25FinalSubfolder%25\"
+      C:\Windows\System32\xcopy.exe /C /Y "$(TargetDir)*Ionic.Zip*.dll" "$(TargetDir)%25FinalSubfolder%25\"
 
-REM need to copy folders, that are not part of the obfuscation process
-REM mkdir "$(SolutionDir)Cgp.NCAS.Client\bin\Release - CodeProtection\%25FinalSubfolder%25\Sounds"
-REM mkdir "$(SolutionDir)Cgp.NCAS.Client\bin\Release - CodeProtection\%25FinalSubfolder%25\Client Upgrader"
+      REM need to copy folders, that are not part of the obfuscation process
+      REM mkdir "$(SolutionDir)Cgp.NCAS.Client\bin\Release - CodeProtection\%25FinalSubfolder%25\Sounds"
+      REM mkdir "$(SolutionDir)Cgp.NCAS.Client\bin\Release - CodeProtection\%25FinalSubfolder%25\Client Upgrader"
 
-goto AfterCodeProtection
+      goto AfterCodeProtection
 
-:CodeProtectionFailed
+      :CodeProtectionFailed
 
-echo Code protection failed with result %25CodeProtectionResult%25, trying to replicate unsecure variant
+      echo Code protection failed with result %25CodeProtectionResult%25, trying to replicate unsecure variant
 
-:CodeProtectorNotFound
+      :CodeProtectorNotFound
 
-echo CPNF
-C:\Windows\System32\xcopy.exe /C /Y  "$(TargetDir)*.exe" "$(TargetDir)%25FinalSubfolder%25"
-C:\Windows\System32\xcopy.exe /C /Y  "$(TargetDir)*.dll" "$(TargetDir)%25FinalSubfolder%25"
-echo CPNF-end
+      echo CPNF
+      C:\Windows\System32\xcopy.exe /C /Y  "$(TargetDir)*.exe" "$(TargetDir)%25FinalSubfolder%25"
+      C:\Windows\System32\xcopy.exe /C /Y  "$(TargetDir)*.dll" "$(TargetDir)%25FinalSubfolder%25"
+      echo CPNF-end
 
-:AfterCodeProtection
+      :AfterCodeProtection
 
-C:\Windows\System32\xcopy.exe /C /Y  "$(SolutionDir)Cgp\Cgp.Server\*.crt" "$(TargetDir)%25FinalSubfolder%25\"
-C:\Windows\System32\xcopy.exe /C /Y  "$(SolutionDir)Cgp\Cgp.Server\*.ldsc" "$(TargetDir)%25FinalSubfolder%25\"
+      C:\Windows\System32\xcopy.exe /C /Y  "$(SolutionDir)Cgp\Cgp.Server\*.crt" "$(TargetDir)%25FinalSubfolder%25\"
+      C:\Windows\System32\xcopy.exe /C /Y  "$(SolutionDir)Cgp\Cgp.Server\*.ldsc" "$(TargetDir)%25FinalSubfolder%25\"
 
-C:\Windows\System32\xcopy.exe /C /Y /E "$(TargetDir)Graphics symbols" "$(TargetDir)%25FinalSubfolder%25\Graphics symbols\"
+      C:\Windows\System32\xcopy.exe /C /Y /E "$(TargetDir)Graphics symbols" "$(TargetDir)%25FinalSubfolder%25\Graphics symbols\"
 
-C:\Windows\System32\xcopy.exe /C /Y /E "$(SolutionDir)Cgp.NCAS.Client\bin\ClientUpgrade.gz" "$(TargetDir)%25FinalSubfolder%25\Client Upgrades\"
+      C:\Windows\System32\xcopy.exe /C /Y /E "$(SolutionDir)Cgp.NCAS.Client\bin\ClientUpgrade.gz" "$(TargetDir)%25FinalSubfolder%25\Client Upgrades\"
 
-:WithoutCodeProtection
+      :WithoutCodeProtection
 
-</PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>

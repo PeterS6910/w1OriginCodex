@@ -284,7 +284,7 @@ namespace Contal.Cgp.NCAS.Client
             if (_cbOnlineStateFilter.DataSource == null)
                 return;
 
-            _cbOnlineStateFilter.SelectedValue = OnlineState.Online;
+            _cbOnlineStateFilter.SelectedIndex = 0;
         }
 
         private string GetAllFilterLabel()
