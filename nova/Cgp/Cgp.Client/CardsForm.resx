@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="_cbPersonFilter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="_cbPersonFilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>269, 32</value>
+  </data>
+  <data name="_cbPersonFilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 33</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_cbPersonFilter.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_cbPersonFilter.Name" xml:space="preserve">
+    <value>_cbPersonFilter</value>
+  </data>
+  <data name="&gt;&gt;_cbPersonFilter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbPersonFilter.Parent" xml:space="preserve">
+    <value>_pFilter</value>
+  </data>
+  <data name="&gt;&gt;_cbPersonFilter.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_lPersonFilter.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_lPersonFilter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="_lPersonFilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>266, 6</value>
+  </data>
+  <data name="_lPersonFilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 25</value>
+  </data>
+  <data name="_lPersonFilter.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="_lPersonFilter.Text" xml:space="preserve">
+    <value>Person</value>
+  </data>
+  <data name="&gt;&gt;_lPersonFilter.Name" xml:space="preserve">
+    <value>_lPersonFilter</value>
+  </data>
+  <data name="&gt;&gt;_lPersonFilter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lPersonFilter.Parent" xml:space="preserve">
+    <value>_pFilter</value>
+  </data>
+  <data name="&gt;&gt;_lPersonFilter.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_cbCardStateFilter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="_cbCardStateFilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>396, 32</value>
+  </data>
+  <data name="_cbCardStateFilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 33</value>
+  </data>
+  <data name="_cbCardStateFilter.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;_cbCardStateFilter.Name" xml:space="preserve">
+    <value>_cbCardStateFilter</value>
+  </data>
+  <data name="&gt;&gt;_cbCardStateFilter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbCardStateFilter.Parent" xml:space="preserve">
+    <value>_pFilter</value>
+  </data>
+  <data name="&gt;&gt;_cbCardStateFilter.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_lCardState.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_lCardState.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="_lCardState.Location" type="System.Drawing.Point, System.Drawing">
+    <value>393, 6</value>
+  </data>
+  <data name="_lCardState.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 25</value>
+  </data>
+  <data name="_lCardState.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="_lCardState.Text" xml:space="preserve">
+    <value>Card state</value>
+  </data>
+  <data name="&gt;&gt;_lCardState.Name" xml:space="preserve">
+    <value>_lCardState</value>
+  </data>
+  <data name="&gt;&gt;_lCardState.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lCardState.Parent" xml:space="preserve">
+    <value>_pFilter</value>
+  </data>
+  <data name="&gt;&gt;_lCardState.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_cbCardSystemFilter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="_cbCardSystemFilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 32</value>
+  </data>
+  <data name="_cbCardSystemFilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 33</value>
+  </data>
+  <data name="_cbCardSystemFilter.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_cbCardSystemFilter.Name" xml:space="preserve">
+    <value>_cbCardSystemFilter</value>
+  </data>
+  <data name="&gt;&gt;_cbCardSystemFilter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbCardSystemFilter.Parent" xml:space="preserve">
+    <value>_pFilter</value>
+  </data>
+  <data name="&gt;&gt;_cbCardSystemFilter.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="_lCardSystemFilter.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_lCardSystemFilter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="_lCardSystemFilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 6</value>
+  </data>
+  <data name="_lCardSystemFilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 25</value>
+  </data>
+  <data name="_lCardSystemFilter.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_lCardSystemFilter.Text" xml:space="preserve">
+    <value>Card system</value>
+  </data>
+  <data name="&gt;&gt;_lCardSystemFilter.Name" xml:space="preserve">
+    <value>_lCardSystemFilter</value>
+  </data>
+  <data name="&gt;&gt;_lCardSystemFilter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lCardSystemFilter.Parent" xml:space="preserve">
+    <value>_pFilter</value>
+  </data>
+  <data name="&gt;&gt;_lCardSystemFilter.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="_lCardNumberFilter.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_lCardNumberFilter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="_lCardNumberFilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 6</value>
+  </data>
+  <data name="_lCardNumberFilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 25</value>
+  </data>
+  <data name="_lCardNumberFilter.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_lCardNumberFilter.Text" xml:space="preserve">
+    <value>Card number</value>
+  </data>
+  <data name="&gt;&gt;_lCardNumberFilter.Name" xml:space="preserve">
+    <value>_lCardNumberFilter</value>
+  </data>
+  <data name="&gt;&gt;_lCardNumberFilter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lCardNumberFilter.Parent" xml:space="preserve">
+    <value>_pFilter</value>
+  </data>
+  <data name="&gt;&gt;_lCardNumberFilter.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="_eCardNumberFilter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="_eCardNumberFilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 32</value>
+  </data>
+  <data name="_eCardNumberFilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 31</value>
+  </data>
+  <data name="_eCardNumberFilter.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_eCardNumberFilter.Name" xml:space="preserve">
+    <value>_eCardNumberFilter</value>
+  </data>
+  <data name="&gt;&gt;_eCardNumberFilter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_eCardNumberFilter.Parent" xml:space="preserve">
+    <value>_pFilter</value>
+  </data>
+  <data name="&gt;&gt;_eCardNumberFilter.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="_bFilterClear.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="_bFilterClear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>604, 30</value>
+  </data>
+  <data name="_bFilterClear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 32</value>
+  </data>
+  <data name="_bFilterClear.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="_bFilterClear.Text" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="&gt;&gt;_bFilterClear.Name" xml:space="preserve">
+    <value>_bFilterClear</value>
+  </data>
+  <data name="&gt;&gt;_bFilterClear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_bFilterClear.Parent" xml:space="preserve">
+    <value>_pFilter</value>
+  </data>
+  <data name="&gt;&gt;_bFilterClear.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="_bRunFilter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="_bRunFilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>523, 30</value>
+  </data>
+  <data name="_bRunFilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 32</value>
+  </data>
+  <data name="_bRunFilter.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="_bRunFilter.Text" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="&gt;&gt;_bRunFilter.Name" xml:space="preserve">
+    <value>_bRunFilter</value>
+  </data>
+  <data name="&gt;&gt;_bRunFilter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_bRunFilter.Parent" xml:space="preserve">
+    <value>_pFilter</value>
+  </data>
+  <data name="&gt;&gt;_bRunFilter.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_pFilter.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="_pFilter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="_pFilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 403</value>
+  </data>
+  <data name="_pFilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>960, 73</value>
+  </data>
+  <data name="_pFilter.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_pFilter.Name" xml:space="preserve">
+    <value>_pFilter</value>
+  </data>
+  <data name="&gt;&gt;_pFilter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pFilter.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_pFilter.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="bExportExcel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="bExportExcel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>188, 6</value>
+  </data>
+  <data name="bExportExcel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 34</value>
+  </data>
+  <data name="bExportExcel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="bExportExcel.Text" xml:space="preserve">
+    <value>Export To Excel</value>
+  </data>
+  <data name="&gt;&gt;bExportExcel.Name" xml:space="preserve">
+    <value>bExportExcel</value>
+  </data>
+  <data name="&gt;&gt;bExportExcel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bExportExcel.Parent" xml:space="preserve">
+    <value>_pControl</value>
+  </data>
+  <data name="&gt;&gt;bExportExcel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_lRecordCount.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="_lRecordCount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_lRecordCount.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="_lRecordCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>780, 17</value>
+  </data>
+  <data name="_lRecordCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 25</value>
+  </data>
+  <data name="_lRecordCount.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="_lRecordCount.Text" xml:space="preserve">
+    <value>RecordCount</value>
+  </data>
+  <data name="&gt;&gt;_lRecordCount.Name" xml:space="preserve">
+    <value>_lRecordCount</value>
+  </data>
+  <data name="&gt;&gt;_lRecordCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lRecordCount.Parent" xml:space="preserve">
+    <value>_pControl</value>
+  </data>
+  <data name="&gt;&gt;_lRecordCount.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_bPrint.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_bPrint.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="_bPrint.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 6</value>
+  </data>
+  <data name="_bPrint.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 34</value>
+  </data>
+  <data name="_bPrint.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="_bPrint.Text" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="&gt;&gt;_bPrint.Name" xml:space="preserve">
+    <value>_bPrint</value>
+  </data>
+  <data name="&gt;&gt;_bPrint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_bPrint.Parent" xml:space="preserve">
+    <value>_pControl</value>
+  </data>
+  <data name="&gt;&gt;_bPrint.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_bCSVImport.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="_bCSVImport.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 6</value>
+  </data>
+  <data name="_bCSVImport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 34</value>
+  </data>
+  <data name="_bCSVImport.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="_bCSVImport.Text" xml:space="preserve">
+    <value>CSV Import</value>
+  </data>
+  <data name="&gt;&gt;_bCSVImport.Name" xml:space="preserve">
+    <value>_bCSVImport</value>
+  </data>
+  <data name="&gt;&gt;_bCSVImport.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_bCSVImport.Parent" xml:space="preserve">
+    <value>_pControl</value>
+  </data>
+  <data name="&gt;&gt;_bCSVImport.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_pControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="_pControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 476</value>
+  </data>
+  <data name="_pControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>960, 43</value>
+  </data>
+  <data name="_pControl.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_pControl.Name" xml:space="preserve">
+    <value>_pControl</value>
+  </data>
+  <data name="&gt;&gt;_pControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_pControl.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="resource.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="resource.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="resource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="resource.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="resource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>960, 403</value>
+  </data>
+  <data name="resource.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_cdgvData.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="_cdgvData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="_cdgvData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>960, 403</value>
+  </data>
+  <data name="_cdgvData.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_cdgvData.Name" xml:space="preserve">
+    <value>_cdgvData</value>
+  </data>
+  <data name="&gt;&gt;_cdgvData.Type" xml:space="preserve">
+    <value>Contal.Cgp.Components.CgpDataGridView, Cgp.Components, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_cdgvData.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_cdgvData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>960, 519</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AABbVU0AAAAAAAAAAACBbVcKd2NOInVhSyh2YUsodWFMKHRhSyh1YUsodWFLKHZhSyh1YUsodWFLKHRh
+        Syl6ZlAWAAAAAAAAAABvXk0JsYVZlr2NW/++jlv/uYpY/7uLWf+5iVj/uopZ/7mKWP+5iVj/uIhY/7yM
+        Wv+/jlv/sINW/gAAAAAAAAAAi2pHELmMXqDImWn/xplq/qqEXf+0jGL/qYJc/6+IYP+shl3/qINd/6J9
+        Wf+8kWX/yJtt/r+PX/8AAAAAAAAAAIBWLA/DoX2f5M22/+zezv/u3s7/7d7N/+7ezv/t3c3/7t7N/+7e
+        zv/v387/7N3M/+7g0f/Ionv/AAAAAAAAAAB8Th8PzK2On/Xq3///////////////////////////////
+        /////////////////v//////zquI/wAAAAAAAAAAAAD/AKB4WpmyjW3/s5F0/5yAav+afmf/lHpm/5d7
+        Zv+afmj/mX1n/5V7Z/+/nHj/2K+C/8iYZP+EeDoTqpoprqiXKb6hiynloIYp/6CGKP+bgyb/m4Mm/5qC
+        Jv+bgyb/m4Mm/5qBJv+SeiP/Zk85/25SXv9uVGD/lokoRb+sJv++qyb+q5kk/p6NI/+biCL/nIoi/5iF
+        Iv+ejCH/kYAh/56LI/+8qSb/ybQj/0M9N/8GB2j+CAlu/5aJJ0fArSf/wa8u/8GvLf/Cry3/wq8t/8Kv
+        Lf/Cry3/wq8t/8KwLf/Cry3/wa8t/8SyJ/+CaDH5nXVa+JRyWuKWiShHzL1U////////////////////
+        ///////////////////////////////////YzHn/kYASZxQXGw8AAAAAl4onR8q6R//08NX/6+fK/+Xh
+        yf/k4Mn/5eHJ/+fjyf/k4Mn/5uLJ/+fjyv/y7s//0sRi/6CPGF0AAAAAAAAAAIyBLUeyoCv/sJ8q/6WU
+        Kf+WhSj/lIQn/5SDKP+aiSj/k4Mn/5eHKP+aiij/sZ8r/7GfK/+WiCtfAAAiAQAAAAA3NWFHNjJb/zYy
+        Wv82Mlr/NjJa/zYyWv82MVr/NjJa/zYyWv82MVr/NjJa/zYyWv82Mlv/NTJSXywpAAEAAAAAPTlgRVBI
+        Uv9PSFL/T0hS/09IUv9PSFL/T0lS/09IUv9PSFL/T0hS/09IUv9PSFL/TkdS/0hCUGAAAAkAAAAAAGti
+        SwyRgzF1lIcvfZSHL3yUhy98lIcvfJSHL3yUhy98lIcvfJSHL3yUhy98lIcvfY+CMXSDdzYcAAAAAAAA
+        AAD//wMAopQlAqWXIwOllyMDpZcjA6WXIwOllyMDpZcjA6WXIwOllyMDpZcjA6WXIwOilCUCpZUkAAAA
+        AABEP0oA//8AAOAAAADgAAAA4AAAAOAAAADgAAAAgAAAAIAAAACAAAAAgAcAAIAHAACABwAAgAcAAIAH
+        AAD//wAA//8AAA==
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>CarsForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CardsForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

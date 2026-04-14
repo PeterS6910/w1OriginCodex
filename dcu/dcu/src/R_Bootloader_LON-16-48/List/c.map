@@ -1,0 +1,703 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V6.30.3.53228/W32 for ARM              09/Apr/2026  10:49:44 #
+# Copyright 2007-2011 IAR Systems AB.                                         #
+#                                                                             #
+#    Output file  =  C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16-48\Exe\c. #
+#                    out.tmp                                                  #
+#    Map file     =  C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16-48\List\c #
+#                    .map                                                     #
+#    Command line =  C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16-48\Obj\Ca #
+#                    rdReader.o C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-1 #
+#                    6-48\Obj\ClspAPI.o C:\w2OriginDCU\dcu\dcu\src\R_Bootload #
+#                    er_LON-16-48\Obj\CrCommunicator.o                        #
+#                    C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16-48\Obj\Cr #
+#                    Protocol.o C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-1 #
+#                    6-48\Obj\CrQueue.o C:\w2OriginDCU\dcu\dcu\src\R_Bootload #
+#                    er_LON-16-48\Obj\DIPSwitch.o                             #
+#                    C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16-48\Obj\In #
+#                    putLeds.o C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16 #
+#                    -48\Obj\Inputs.o C:\w2OriginDCU\dcu\dcu\src\R_Bootloader #
+#                    _LON-16-48\Obj\LdvSci.o C:\w2OriginDCU\dcu\dcu\src\R_Boo #
+#                    tloader_LON-16-48\Obj\LonControl.o                       #
+#                    C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16-48\Obj\Ou #
+#                    tputs.o C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16-4 #
+#                    8\Obj\Processor.o C:\w2OriginDCU\dcu\dcu\src\R_Bootloade #
+#                    r_LON-16-48\Obj\ShortStackApi.o                          #
+#                    C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16-48\Obj\Sh #
+#                    ortStackDev.o C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LO #
+#                    N-16-48\Obj\ShortStackHandlers.o                         #
+#                    C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16-48\Obj\Sh #
+#                    ortStackInternal.o C:\w2OriginDCU\dcu\dcu\src\R_Bootload #
+#                    er_LON-16-48\Obj\StartApplication.o                      #
+#                    C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16-48\Obj\Ta #
+#                    sks.o C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16-48\ #
+#                    Obj\adc.o C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16 #
+#                    -48\Obj\baseTypes.o C:\w2OriginDCU\dcu\dcu\src\R_Bootloa #
+#                    der_LON-16-48\Obj\clsp485.o                              #
+#                    C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16-48\Obj\cl #
+#                    spGeneric.o C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON- #
+#                    16-48\Obj\communication.o C:\w2OriginDCU\dcu\dcu\src\R_B #
+#                    ootloader_LON-16-48\Obj\core_cm0.o                       #
+#                    C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16-48\Obj\cr #
+#                    Notify.o C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16- #
+#                    48\Obj\cryptoaes.o C:\w2OriginDCU\dcu\dcu\src\R_Bootload #
+#                    er_LON-16-48\Obj\cstartup_M.o                            #
+#                    C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16-48\Obj\dm #
+#                    Handler.o C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16 #
+#                    -48\Obj\dsm.o C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LO #
+#                    N-16-48\Obj\dsmConfig.o C:\w2OriginDCU\dcu\dcu\src\R_Boo #
+#                    tloader_LON-16-48\Obj\exceptionHandling.o                #
+#                    C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16-48\Obj\fl #
+#                    ashStorage.o C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON #
+#                    -16-48\Obj\flashloader.o C:\w2OriginDCU\dcu\dcu\src\R_Bo #
+#                    otloader_LON-16-48\Obj\gpio.o                            #
+#                    C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16-48\Obj\ha #
+#                    shes.o C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16-48 #
+#                    \Obj\i2c.o C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-1 #
+#                    6-48\Obj\iap.o C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_L #
+#                    ON-16-48\Obj\jumpsAsm.o C:\w2OriginDCU\dcu\dcu\src\R_Boo #
+#                    tloader_LON-16-48\Obj\main.o                             #
+#                    C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16-48\Obj\sy #
+#                    sTick.o C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16-4 #
+#                    8\Obj\systemInfo.o C:\w2OriginDCU\dcu\dcu\src\R_Bootload #
+#                    er_LON-16-48\Obj\system_LPC122x.o                        #
+#                    C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16-48\Obj\te #
+#                    stMode.o C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16- #
+#                    48\Obj\testing.o C:\w2OriginDCU\dcu\dcu\src\R_Bootloader #
+#                    _LON-16-48\Obj\timer16.o C:\w2OriginDCU\dcu\dcu\src\R_Bo #
+#                    otloader_LON-16-48\Obj\timer32.o                         #
+#                    C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16-48\Obj\ua #
+#                    rt.o C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16-48\O #
+#                    bj\watchdog.o -o C:\w2OriginDCU\dcu\dcu\src\R_Bootloader #
+#                    _LON-16-48\Exe\c.out.tmp --redirect _Printf=_PrintfFull  #
+#                    --redirect _Scanf=_ScanfFull --keep application          #
+#                    --image_input=C:\w2OriginDCU\dcu\dcu\src\R_Application_L #
+#                    ON-16-48\Exe\DCU.bin,application,.app,4 --map            #
+#                    C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16-48\List\c #
+#                    .map --config C:\w2OriginDCU\dcu\dcu\src\LPC1225_Flash_B #
+#                    ootLoader16.icf --semihosting --entry                    #
+#                    __iar_program_start --inline --vfe                       #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__Heap_Handler  = Basic
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00000000 { ro section .intvec };
+"A2":  place at 0x000002fc { ro section CRP };
+"A3":  place at 0x00003ffc { ro section BOOTLOADER_VER };
+"P1":  place in [from 0x00000124 to 0x000002fb] |
+                [from 0x00000300 to 0x00003fff] { ro };
+"P2":  place in [from 0x00004000 to 0x0000fffe] { section .app };
+"P3":  place in [from 0x10000000 to 0x10001b1f] { rw, block CSTACK, block HEAP };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                       0xbc
+  .intvec            ro code  0x00000000    0xbc  cstartup_M.o [2]
+                            - 0x000000bc    0xbc
+
+"P1", part 1 of 2:                         0x1cc
+  .text              ro code  0x00000124    0x24  Processor.o [2]
+  .text              ro code  0x00000148    0x2e  I32DivMod.o [6]
+  .text              ro code  0x00000176    0x2e  copy_init3.o [6]
+  .text              ro code  0x000001a4    0x14  watchdog.o [2]
+  .text              ro code  0x000001b8    0xe4  sysTick.o [2]
+  .text              ro code  0x0000029c    0x20  adc.o [2]
+  .text              ro code  0x000002bc    0x32  FltToDbl.o [5]
+  .text              ro code  0x000002f0     0x0  cstart_clearlocks.o [6]
+  .rodata            const    0x000002f0     0x0  bwt_init3c.o [6]
+                            - 0x000002f0   0x1cc
+
+"A2":                                        0x4
+  CRP                const    0x000002fc     0x4  main.o [2]
+                            - 0x00000300     0x4
+
+"P1", part 2 of 2:                        0x3748
+  .text              ro code  0x00000300   0x9b0  LdvSci.o [2]
+  .text              ro code  0x00000cb0   0x2b4  gpio.o [2]
+  .text              ro code  0x00000f64   0x4dc  LonControl.o [2]
+  .text              ro code  0x00001440   0x11c  timer32.o [2]
+  .text              ro code  0x0000155c   0x410  uart.o [2]
+  .text              ro code  0x0000196c    0x1c  dmHandler.o [2]
+  .text              ro code  0x00001988   0x2bc  clspGeneric.o [2]
+  .text              ro code  0x00001c44    0xf8  Tasks.o [2]
+  .text              ro code  0x00001d3c   0x504  ShortStackApi.o [2]
+  .text              ro code  0x00002240   0x248  ClspAPI.o [2]
+  .text              ro code  0x00002488    0x5c  ABImemcpy.o [6]
+  .text              ro code  0x000024e4   0x1a8  DblAddSub.o [5]
+  .text              ro code  0x0000268c    0x62  DblToFlt.o [5]
+  .text              ro code  0x000026f0    0x26  FltCmpLe.o [5]
+  .text              ro code  0x00002718    0x1e  I32ToFlt.o [5]
+  .text              ro code  0x00002736    0xb4  FltMul.o [5]
+  .text              ro code  0x000027ea    0xaa  FltDiv.o [5]
+  .text              ro code  0x00002894    0x3a  FltToS32.o [5]
+  .text              ro code  0x000028d0    0x28  FltCmpGe.o [5]
+  .text              ro code  0x000028f8   0x116  FltAddSub.o [5]
+  .text              ro code  0x00002a0e    0x32  xxmemxcalloc.o [4]
+  .text              ro code  0x00002a40    0x8c  xxmemxfree.o [4]
+  .text              ro code  0x00002acc    0x50  baseTypes.o [2]
+  .text              ro code  0x00002b1c    0x34  ShortStackDev.o [2]
+  .text              ro code  0x00002b50    0x42  ShortStackInternal.o [2]
+  .text              ro code  0x00002b92    0x36  ShortStackHandlers.o [2]
+  .text              ro code  0x00002bc8    0xc0  xxmemxmalloc.o [4]
+  .text              ro code  0x00002c88    0x12  xxmemxmemzero.o [4]
+  .text              ro code  0x00002c9c    0x94  xsyslock.o [4]
+  .text              ro code  0x00002d30    0x28  xgetmemchunk.o [4]
+  .text              ro code  0x00002d58   0x280  communication.o [2]
+  .text              ro code  0x00002fd8   0x164  systemInfo.o [2]
+  .text              ro code  0x0000313c   0x134  flashloader.o [2]
+  .text              ro code  0x00003270    0x20  i2c.o [2]
+  .text              ro code  0x00003290    0x20  StartApplication.o [2]
+  .text              ro code  0x000032b0    0x9c  iap.o [2]
+  .text              ro code  0x0000334c   0x19c  jumpsAsm.o [2]
+  .text              ro code  0x000034e8   0x170  system_LPC122x.o [2]
+  .text              ro code  0x00003658   0x148  Inputs.o [2]
+  .text              ro code  0x000037a0    0x68  DIPSwitch.o [2]
+  .text              ro code  0x00003808   0x134  main.o [2]
+  .text              ro code  0x0000393c    0x2c  data_init3.o [6]
+  .text              ro code  0x00003968    0x28  zero_init3.o [6]
+  .iar.init_table    const    0x00003990    0x24  - Linker created -
+  .text              ro code  0x000039b4    0x1e  exceptionHandling.o [2]
+  .text              ro code  0x000039d4    0x16  cmain.o [6]
+  .text              ro code  0x000039ea     0x8  exit.o [4]
+  .text              ro code  0x000039f4     0xe  cexit.o [6]
+  .text              ro code  0x00003a04    0x14  exit.o [7]
+  .text              ro code  0x00003a18     0xc  cstartup_M.o [6]
+  Initializer bytes  ro data  0x00003a24    0x24  <for P3 s0>
+                            - 0x00003a48  0x3748
+
+"A3":                                        0x4
+  BOOTLOADER_VER     const    0x00003ffc     0x4  main.o [2]
+                            - 0x00004000     0x4
+
+"P2":                                     0xa5d8
+  .app               const    0x00004000  0xa5d8  DCU.bin [1]
+                            - 0x0000e5d8  0xa5d8
+
+"P3", part 1 of 3:                          0x24
+  P3 s0                       0x10000000    0x24  <Init block>
+    .data            inited   0x10000000     0xc  main.o [2]
+    .data            inited   0x1000000c     0xc  systemInfo.o [2]
+    .data            inited   0x10000018     0xc  system_LPC122x.o [2]
+                            - 0x10000024    0x24
+
+"P3", part 2 of 3:                         0x6ec
+  .bss               zero     0x10000024   0x150  LdvSci.o [2]
+  .bss               zero     0x10000174   0x150  LdvSci.o [2]
+  .bss               zero     0x100002c4   0x120  Tasks.o [2]
+  .bss               zero     0x100003e4   0x108  Inputs.o [2]
+  .bss               zero     0x100004ec    0x6c  LonControl.o [2]
+  .bss               zero     0x10000558    0x64  clspGeneric.o [2]
+  .bss               zero     0x100005bc    0x50  LdvSci.o [2]
+  .bss               zero     0x1000060c    0x40  iap.o [2]
+  .bss               zero     0x1000064c    0x18  ClspAPI.o [2]
+  .bss               zero     0x10000664    0x18  xsyslock.o [4]
+  .bss               zero     0x1000067c    0x15  ShortStackApi.o [2]
+  .bss               zero     0x10000694    0x10  uart.o [2]
+  .bss               zero     0x100006a4     0xc  Inputs.o [2]
+  .bss               zero     0x100006b0     0xc  adc.o [2]
+  .bss               zero     0x100006bc     0xc  clspGeneric.o [2]
+  .bss               zero     0x100006c8     0xc  clspGeneric.o [2]
+  .bss               zero     0x100006d4     0x8  LdvSci.o [2]
+  .bss               zero     0x100006dc     0x8  flashloader.o [2]
+  .bss               zero     0x100006e4     0x8  systemInfo.o [2]
+  .bss               zero     0x100006ec     0x8  xxmemxmalloc.o [4]
+  .bss               zero     0x100006f4     0x4  LdvSci.o [2]
+  .bss               zero     0x100006f8     0x4  Tasks.o [2]
+  .bss               zero     0x100006fc     0x4  baseTypes.o [2]
+  .bss               zero     0x10000700     0x4  clspGeneric.o [2]
+  .bss               zero     0x10000704     0x4  main.o [2]
+  .bss               zero     0x10000708     0x4  sysTick.o [2]
+  .bss               zero     0x1000070c     0x4  xgetmemchunk.o [4]
+                            - 0x10000710   0x6ec
+
+"P3", part 3 of 3:                         0xba0
+  CSTACK                      0x10000710   0x800  <Block>
+    CSTACK           uninit   0x10000710   0x800  <Block tail>
+  HEAP                        0x10000f10   0x3a0  <Block>
+    HEAP             uninit   0x10000f10   0x3a0  <Block tail>
+                            - 0x100012b0   0xba0
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x6ec:
+          0x10000024  0x6ec
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x24:
+          0x00003a24   0x24
+    1 destination range, total size 0x24:
+          0x10000000   0x24
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                ro code  ro data  rw data
+    ------                -------  -------  -------
+C:\w2OriginDCU\dcu\dcu\src\R_Application_LON-16-48\Exe: [1]
+    DCU.bin                         42 456
+    -----------------------------------------------
+    Total:                          42 456
+
+C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16-48\Obj: [2]
+    ClspAPI.o                 584                24
+    DIPSwitch.o               104
+    Inputs.o                  328               276
+    LdvSci.o                2 480               764
+    LonControl.o            1 244               108
+    Processor.o                36
+    ShortStackApi.o         1 284                21
+    ShortStackDev.o            52
+    ShortStackHandlers.o       54
+    ShortStackInternal.o       66
+    StartApplication.o         32
+    Tasks.o                   248               292
+    adc.o                      32                12
+    baseTypes.o                80                 4
+    clspGeneric.o             700               128
+    communication.o           640
+    cstartup_M.o              188
+    dmHandler.o                28
+    exceptionHandling.o        30
+    flashloader.o             308                 8
+    gpio.o                    692
+    i2c.o                      32
+    iap.o                     156                64
+    jumpsAsm.o                412
+    main.o                    308       20       16
+    sysTick.o                 228                 4
+    systemInfo.o              356       12       20
+    system_LPC122x.o          368       12       12
+    timer32.o                 284
+    uart.o                  1 040                16
+    watchdog.o                 20
+    -----------------------------------------------
+    Total:                 12 414       44    1 769
+
+command line: [3]
+    -----------------------------------------------
+    Total:
+
+dl6M_tln.a: [4]
+    exit.o                      8
+    xgetmemchunk.o             40                 4
+    xsyslock.o                148                24
+    xxmemxcalloc.o             50
+    xxmemxfree.o              140
+    xxmemxmalloc.o            192                 8
+    xxmemxmemzero.o            18
+    -----------------------------------------------
+    Total:                    596                36
+
+m6M_tl.a: [5]
+    DblAddSub.o               424
+    DblToFlt.o                 98
+    FltAddSub.o               278
+    FltCmpGe.o                 40
+    FltCmpLe.o                 38
+    FltDiv.o                  170
+    FltMul.o                  180
+    FltToDbl.o                 50
+    FltToS32.o                 58
+    I32ToFlt.o                 30
+    -----------------------------------------------
+    Total:                  1 366
+
+rt6M_tl.a: [6]
+    ABImemcpy.o                92
+    I32DivMod.o                46
+    bwt_init3c.o
+    cexit.o                    14
+    cmain.o                    22
+    copy_init3.o               46
+    cstart_clearlocks.o
+    cstartup_M.o               12
+    data_init3.o               44
+    zero_init3.o               40
+    -----------------------------------------------
+    Total:                    316
+
+shb_l.a: [7]
+    exit.o                     20
+    -----------------------------------------------
+    Total:                     20
+
+    Gaps                       16                 3
+    Linker created                      36    2 976
+---------------------------------------------------
+    Grand Total:           14 728   42 536    4 784
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+?main                   0x000039d5          Code  Gb  cmain.o [6]
+ADC_IRQHandler          0x00003409          Code  Gb  jumpsAsm.o [2]
+ADC_StartNewConversion  0x0000029d    0x14  Code  Gb  adc.o [2]
+ActivityChecker         0x0000390f    0x12  Code  Gb  main.o [2]
+BOD_IRQHandler          0x00003417          Code  Gb  jumpsAsm.o [2]
+BOOTLOADER_VER          0x00003ffc     0x4  Data  Gb  main.o [2]
+BootLEDIdInit           0x0000388d    0x22  Code  Gb  main.o [2]
+BootLEDIdTask           0x000038af    0x60  Code  Gb  main.o [2]
+BusFault_Handler        0x00003361          Code  Gb  jumpsAsm.o [2]
+CMP_IRQHandler          0x00003403          Code  Gb  jumpsAsm.o [2]
+CSTACK$$Base            0x10000710           --   Gb  - Linker created -
+CSTACK$$Limit           0x10000f10           --   Gb  - Linker created -
+CT16B0_IRQHandler       0x000033db          Code  Gb  jumpsAsm.o [2]
+CT16B1_IRQHandler       0x000033d5          Code  Gb  jumpsAsm.o [2]
+CT32B0_IRQHandler       0x000033e1          Code  Gb  jumpsAsm.o [2]
+CT32B1_IRQHandler       0x000033e7          Code  Gb  jumpsAsm.o [2]
+CT32B1_IRQHandlerBoot   0x00001497    0x34  Code  Gb  timer32.o [2]
+ClspLon_BroadcastUniqueId
+                        0x00002285    0x42  Code  Gb  ClspAPI.o [2]
+ClspLon_CheckDIPChange  0x0000230b    0x32  Code  Gb  ClspAPI.o [2]
+ClspLon_ComposeByFrameAndSend
+                        0x0000236d    0xb2  Code  Gb  ClspAPI.o [2]
+ClspLon_CreateFrameFromData
+                        0x0000241f    0x2a  Code  Gb  ClspAPI.o [2]
+ClspLon_EnqueueAlive    0x000022ed    0x1e  Code  Gb  ClspAPI.o [2]
+ClspLon_ForceNodeRelease
+                        0x00002449    0x28  Code  Gb  ClspAPI.o [2]
+ClspLon_InternalCreateFrame
+                        0x0000233d    0x30  Code  Gb  ClspAPI.o [2]
+ClspLon_SendAlive       0x000022c7    0x26  Code  Gb  ClspAPI.o [2]
+ClspLon_UpdateDomain    0x00002241    0x44  Code  Gb  ClspAPI.o [2]
+Clsp_BindOnFrameReceived
+                        0x000019b9    0x30  Code  Gb  clspGeneric.o [2]
+Clsp_BindOnNodeAssignmentChanged
+                        0x00001989    0x30  Code  Gb  clspGeneric.o [2]
+Clsp_ClearQueues        0x00001b3d    0x44  Code  Gb  clspGeneric.o [2]
+Clsp_CreateFrame        0x00001bb9    0x26  Code  Gb  clspGeneric.o [2]
+Clsp_EnqueueFrame       0x00001a11    0xa6  Code  Gb  clspGeneric.o [2]
+Clsp_EnqueueLLFrame     0x000019e9    0x28  Code  Gb  clspGeneric.o [2]
+Clsp_InternalCreateFrame
+                        0x00001b81    0x38  Code  Gb  clspGeneric.o [2]
+Clsp_PopLinkLayerQueue  0x00001ab7    0x44  Code  Gb  clspGeneric.o [2]
+Clsp_PopQueue           0x00001afb    0x42  Code  Gb  clspGeneric.o [2]
+Comm_FireResultNotifier
+                        0x00002da1    0x14  Code  Gb  communication.o [2]
+Comm_Get16BitValue      0x00002dc9     0xa  Code  Gb  communication.o [2]
+Comm_Init               0x00002fb3    0x10  Code  Gb  communication.o [2]
+Comm_OnFrameReceived    0x00002fa1    0x12  Code  Gb  communication.o [2]
+Comm_OnNodeAssigned     0x00002f8b    0x16  Code  Gb  communication.o [2]
+Comm_ProcessCommand     0x00002e75   0x116  Code  Gb  communication.o [2]
+Comm_ReportBaseAddress  0x00002e4b    0x2a  Code  Gb  communication.o [2]
+Comm_ReportDeviceInfo   0x00002ddd    0x32  Code  Gb  communication.o [2]
+Comm_ReportFWVersion    0x00002e0f    0x3c  Code  Gb  communication.o [2]
+Comm_SendACK            0x00002d59    0x22  Code  Gb  communication.o [2]
+Comm_SendNACK           0x00002d7b    0x26  Code  Gb  communication.o [2]
+Comm_Set16BitValue      0x00002dd3     0xa  Code  Gb  communication.o [2]
+Comm_Set32BitValue      0x00002db5    0x14  Code  Gb  communication.o [2]
+CtsInterruptHandler     0x0000099d    0x52  Code  Gb  LdvSci.o [2]
+CurrentNmNdStatus       0x10000690     0x1  Data  Gb  ShortStackApi.o [2]
+CyclicIncrement         0x00000465    0x60  Code  Lc  LdvSci.o [2]
+DIP_GetFrom             0x000037f1    0x18  Code  Gb  DIPSwitch.o [2]
+DIP_Init                0x000037a1    0x4a  Code  Gb  DIPSwitch.o [2]
+DMA_IRQHandler          0x0000343d          Code  Gb  jumpsAsm.o [2]
+DebugMon_Handler        0x00003373          Code  Gb  jumpsAsm.o [2]
+DelayedPollingTask      0x000012e1    0x1c  Code  Lc  LonControl.o [2]
+Delete                  0x00001977    0x12  Code  Gb  dmHandler.o [2]
+DisableInterrupts       0x0000033d    0x20  Code  Gb  LdvSci.o [2]
+EnableInterrupts        0x0000031d    0x20  Code  Gb  LdvSci.o [2]
+EnableReceiveInterrupt  0x000015c1     0x8  Code  Lc  uart.o [2]
+EnterCriticalSection    0x00002acd    0x12  Code  Gb  baseTypes.o [2]
+FLASH_IRQHandler        0x0000341d          Code  Gb  jumpsAsm.o [2]
+FireNodeAssignmentChanged
+                        0x00001bdf    0x26  Code  Gb  clspGeneric.o [2]
+FireOnFrameReceived     0x00001c05    0x32  Code  Gb  clspGeneric.o [2]
+GPIO_GetValue           0x00000d77    0x3c  Code  Gb  gpio.o [2]
+GPIO_Init               0x00000cbf    0x2c  Code  Gb  gpio.o [2]
+GPIO_IntClear           0x00000ec1    0x2a  Code  Gb  gpio.o [2]
+GPIO_IntDisable         0x00000e65    0x26  Code  Gb  gpio.o [2]
+GPIO_IntEnable          0x00000e3f    0x26  Code  Gb  gpio.o [2]
+GPIO_IntStatus          0x00000e8b    0x36  Code  Gb  gpio.o [2]
+GPIO_SetDir             0x00000ceb    0x5e  Code  Gb  gpio.o [2]
+GPIO_SetInterrupt       0x00000db3    0x8c  Code  Gb  gpio.o [2]
+GPIO_SetValue           0x00000d49    0x2e  Code  Gb  gpio.o [2]
+HEAP$$Base              0x10000f10           --   Gb  - Linker created -
+HEAP$$Limit             0x100012b0           --   Gb  - Linker created -
+HardFault_Handler       0x00003353          Code  Gb  jumpsAsm.o [2]
+HardFault_HandlerBoot   0x000039c9     0xa  Code  Gb  exceptionHandling.o [2]
+I2C_ClearFlag           0x00003283     0x6  Code  Gb  i2c.o [2]
+I2C_DeInit              0x00003271    0x12  Code  Gb  i2c.o [2]
+I2C_IRQHandler          0x000033cf          Code  Gb  jumpsAsm.o [2]
+IAP_CopyRAMToFlash      0x000032df    0x2c  Code  Gb  iap.o [2]
+IAP_ErasePage           0x0000330b    0x34  Code  Gb  iap.o [2]
+IAP_PrepareSector       0x000032b9    0x26  Code  Gb  iap.o [2]
+Inputs_Init             0x00003659    0x92  Code  Gb  Inputs.o [2]
+Inputs_Task             0x000036eb    0xa4  Code  Gb  Inputs.o [2]
+LOCK                    0x000002fc     0x4  Data  Gb  main.o [2]
+LdvAllocateMsg          0x00000695    0x62  Code  Gb  LdvSci.o [2]
+LdvFlushMsgs            0x0000078d    0x84  Code  Gb  LdvSci.o [2]
+LdvGetMsg               0x000005e3    0x56  Code  Gb  LdvSci.o [2]
+LdvInit                 0x000004c5    0xe4  Code  Gb  LdvSci.o [2]
+LdvPutMsg               0x000006f7    0x32  Code  Gb  LdvSci.o [2]
+LdvPutMsgBlocking       0x00000731    0x58  Code  Gb  LdvSci.o [2]
+LdvReleaseMsg           0x00000645    0x44  Code  Gb  LdvSci.o [2]
+LdvReset                0x000005a9    0x3a  Code  Gb  LdvSci.o [2]
+LeaveCriticalSection    0x00002adf    0x18  Code  Gb  baseTypes.o [2]
+LonCtrl_Init            0x00000f65    0x8a  Code  Gb  LonControl.o [2]
+LonCtrl_SendTask        0x000011e1    0xce  Code  Gb  LonControl.o [2]
+LonCtrl_Task            0x00000ff1   0x152  Code  Gb  LonControl.o [2]
+LonDriverReset          0x00000365     0x8  Code  Gb  LdvSci.o [2]
+LonDriverWokeUp         0x0000035d     0x8  Code  Gb  LdvSci.o [2]
+LonEventHandler         0x00001e09   0x192  Code  Gb  ShortStackApi.o [2]
+LonGetAppInitData       0x00002b1d     0x4  Code  Gb  ShortStackDev.o [2]
+LonGetMtTable           0x00002b21     0x4  Code  Gb  ShortStackDev.o [2]
+LonGetUniqueId          0x0000206b    0x1e  Code  Gb  ShortStackApi.o [2]
+LonGoConfigured         0x00002229    0x18  Code  Gb  ShortStackApi.o [2]
+LonGoConfiguredReceived
+                        0x00002bc1     0x8  Code  Gb  ShortStackHandlers.o [2]
+LonInit                 0x00001d3d    0xca  Code  Gb  ShortStackApi.o [2]
+LonMsgArrived           0x00002b9b    0x1e  Code  Gb  ShortStackHandlers.o [2]
+LonMsgCompleted         0x00002bb9     0x8  Code  Gb  ShortStackHandlers.o [2]
+LonResetOccurred        0x00002b93     0x8  Code  Gb  ShortStackHandlers.o [2]
+LonSendMsg              0x00002089   0x104  Code  Gb  ShortStackApi.o [2]
+LonSendResponse         0x00001fa5    0xc6  Code  Gb  ShortStackApi.o [2]
+LonUpdateDomainConfig   0x00002191    0x94  Code  Gb  ShortStackApi.o [2]
+MemManage_Handler       0x0000335b          Code  Gb  jumpsAsm.o [2]
+NMI_Handler             0x0000334d          Code  Gb  jumpsAsm.o [2]
+NVIC_DisableIRQ         0x0000030f     0xe  Code  Lc  LdvSci.o [2]
+NVIC_DisableIRQ         0x00002fd9     0xe  Code  Lc  systemInfo.o [2]
+NVIC_DisableIRQ         0x0000156b     0xe  Code  Lc  uart.o [2]
+NVIC_EnableIRQ          0x00000301     0xe  Code  Lc  LdvSci.o [2]
+NVIC_EnableIRQ          0x00000cb1     0xe  Code  Lc  gpio.o [2]
+NVIC_EnableIRQ          0x00001441     0xe  Code  Lc  timer32.o [2]
+NVIC_EnableIRQ          0x0000155d     0xe  Code  Lc  uart.o [2]
+NVIC_SetPriority        0x000001b9    0x48  Code  Lc  sysTick.o [2]
+NVIC_SetPriority        0x0000144f    0x48  Code  Lc  timer32.o [2]
+NVIC_SetPriority        0x00001579    0x48  Code  Lc  uart.o [2]
+NVIC_SystemReset        0x000039b5     0xc  Code  Lc  exceptionHandling.o [2]
+NVIC_SystemReset        0x00002fe7     0xc  Code  Lc  systemInfo.o [2]
+New                     0x0000196d     0xa  Code  Gb  dmHandler.o [2]
+OnLonDriverReset        0x000011c7     0xa  Code  Gb  LonControl.o [2]
+OnLonDriverWokeUp       0x000011b1    0x16  Code  Gb  LonControl.o [2]
+OnLonGoConfiguredReceived
+                        0x00001143    0x16  Code  Gb  LonControl.o [2]
+OnLonMsgArrived         0x00001305   0x128  Code  Gb  LonControl.o [2]
+OnLonMsgCompleted       0x000012b9    0x22  Code  Gb  LonControl.o [2]
+OnResetAsserted         0x00001159     0x8  Code  Gb  LonControl.o [2]
+OnResetOccurred         0x00001161    0x50  Code  Gb  LonControl.o [2]
+OnRxData                0x000009f5    0xfe  Code  Gb  LdvSci.o [2]
+OnTxReady               0x00000819   0x180  Code  Gb  LdvSci.o [2]
+OneMsTimerHandler       0x00000b55   0x13e  Code  Gb  LdvSci.o [2]
+PIO0_IRQHandler         0x00003423          Code  Gb  jumpsAsm.o [2]
+PIO0_IRQHandlerBoot     0x00000f31    0x34  Code  Gb  gpio.o [2]
+PIO1_IRQHandler         0x0000342b          Code  Gb  jumpsAsm.o [2]
+PIO2_IRQHandler         0x00003431          Code  Gb  jumpsAsm.o [2]
+PMU_IRQHandler          0x00003437          Code  Gb  jumpsAsm.o [2]
+PendSV_Handler          0x00003379          Code  Gb  jumpsAsm.o [2]
+RTC_IRQHandler          0x00003443          Code  Gb  jumpsAsm.o [2]
+Region$$Table$$Base     0x00003990           --   Gb  - Linker created -
+Region$$Table$$Limit    0x000039b4           --   Gb  - Linker created -
+ResetInterruptHandler   0x0000036d    0x24  Code  Gb  LdvSci.o [2]
+ResetMicroServer        0x00000391    0x3c  Code  Gb  LdvSci.o [2]
+ResumeSci               0x00000425    0x40  Code  Gb  LdvSci.o [2]
+SSP0_IRQHandler         0x000033ef          Code  Gb  jumpsAsm.o [2]
+SVC_Handler             0x0000336d          Code  Gb  jumpsAsm.o [2]
+SendLocal               0x00002b51    0x42  Code  Gb  ShortStackInternal.o [2]
+SleepMs                 0x00000125    0x1c  Code  Gb  Processor.o [2]
+StartApplication        0x00003291          Code  Gb  StartApplication.o [2]
+StartBootloader         0x0000329d          Code  Gb  StartApplication.o [2]
+SuspendSci              0x000003cd    0x58  Code  Gb  LdvSci.o [2]
+SysInfo_DelayTask       0x000030dd    0x1c  Code  Gb  systemInfo.o [2]
+SysInfo_DelayingTask    0x00003033    0x22  Code  Gb  systemInfo.o [2]
+SysInfo_DisableAllInterrupts
+                        0x0000305d    0x74  Code  Gb  systemInfo.o [2]
+SysInfo_GetCRPLevel     0x00002ff3    0x34  Code  Gb  systemInfo.o [2]
+SysInfo_GetInputCount   0x00003027     0x6  Code  Gb  systemInfo.o [2]
+SysInfo_GetOutputCount  0x0000302d     0x6  Code  Gb  systemInfo.o [2]
+SysInfo_ResetToApplicationDelayed
+                        0x000030d1     0xc  Code  Gb  systemInfo.o [2]
+SysInfo_RestartDCUDelayed
+                        0x00003055     0x8  Code  Gb  systemInfo.o [2]
+SysTick_Config          0x00000201    0x2e  Code  Lc  sysTick.o [2]
+SysTick_GetElapsedTime  0x00000269    0x1e  Code  Gb  sysTick.o [2]
+SysTick_GetTickCount    0x00000263     0x6  Code  Gb  sysTick.o [2]
+SysTick_Handler         0x0000337f          Code  Gb  jumpsAsm.o [2]
+SysTick_HandlerBoot     0x0000022f    0x18  Code  Gb  sysTick.o [2]
+SysTick_InitMainTimer   0x00000247    0x1c  Code  Gb  sysTick.o [2]
+SystemInit              0x00003545    0x6e  Code  Gb  system_LPC122x.o [2]
+SystemPLL_Setup         0x000034e9    0x5c  Code  Gb  system_LPC122x.o [2]
+System_PrepareForApplication
+                        0x000035e1    0x16  Code  Gb  system_LPC122x.o [2]
+System_PrepareForBootloader
+                        0x000035b3    0x2e  Code  Gb  system_LPC122x.o [2]
+Tasks_IncrementCounter  0x00001cdb    0x22  Code  Gb  Tasks.o [2]
+Tasks_Register          0x00001c45    0x62  Code  Gb  Tasks.o [2]
+Tasks_Run               0x00001cfd    0x36  Code  Gb  Tasks.o [2]
+Tasks_Unregister        0x00001ca7    0x34  Code  Gb  Tasks.o [2]
+Timer32_Enable          0x000014cb    0x12  Code  Gb  timer32.o [2]
+Timer32_Init            0x000014dd    0x56  Code  Gb  timer32.o [2]
+UART0_IRQHandler        0x000033f5          Code  Gb  jumpsAsm.o [2]
+UART0_IRQHandlerBoot    0x00000af9    0x50  Code  Gb  LdvSci.o [2]
+UART1_IRQHandler        0x000033fd          Code  Gb  jumpsAsm.o [2]
+UART_CalculateFDRValues
+                        0x000015c9    0xdc  Code  Gb  uart.o [2]
+UART_ClearInterrupts    0x000016b9    0x10  Code  Gb  uart.o [2]
+UART_Init               0x000016c9    0xc8  Code  Gb  uart.o [2]
+UsageFault_Handler      0x00003367          Code  Gb  jumpsAsm.o [2]
+WAKE_UP0_IRQHandler     0x00003387          Code  Gb  jumpsAsm.o [2]
+WAKE_UP10_IRQHandler    0x000033c3          Code  Gb  jumpsAsm.o [2]
+WAKE_UP11_IRQHandler    0x000033c9          Code  Gb  jumpsAsm.o [2]
+WAKE_UP1_IRQHandler     0x0000338d          Code  Gb  jumpsAsm.o [2]
+WAKE_UP2_IRQHandler     0x00003393          Code  Gb  jumpsAsm.o [2]
+WAKE_UP3_IRQHandler     0x00003399          Code  Gb  jumpsAsm.o [2]
+WAKE_UP4_IRQHandler     0x0000339f          Code  Gb  jumpsAsm.o [2]
+WAKE_UP5_IRQHandler     0x000033a5          Code  Gb  jumpsAsm.o [2]
+WAKE_UP6_IRQHandler     0x000033ab          Code  Gb  jumpsAsm.o [2]
+WAKE_UP7_IRQHandler     0x000033b1          Code  Gb  jumpsAsm.o [2]
+WAKE_UP8_IRQHandler     0x000033b7          Code  Gb  jumpsAsm.o [2]
+WAKE_UP9_IRQHandler     0x000033bd          Code  Gb  jumpsAsm.o [2]
+WDT_IRQHandler          0x0000340f          Code  Gb  jumpsAsm.o [2]
+WD_Kick                 0x000001a5    0x14  Code  Gb  watchdog.o [2]
+_UART0_RxCount          0x10000694     0x4  Data  Gb  uart.o [2]
+_UART0_TxCount          0x10000698     0x4  Data  Gb  uart.o [2]
+__aeabi_cfcmple         0x000026f1          Code  Gb  FltCmpLe.o [5]
+__aeabi_cfrcmple        0x000028d1          Code  Gb  FltCmpGe.o [5]
+__aeabi_d2f             0x0000268d          Code  Gb  DblToFlt.o [5]
+__aeabi_dadd            0x000024e5          Code  Gb  DblAddSub.o [5]
+__aeabi_f2d             0x000002bd          Code  Gb  FltToDbl.o [5]
+__aeabi_f2iz            0x00002895          Code  Gb  FltToS32.o [5]
+__aeabi_fdiv            0x000027eb          Code  Gb  FltDiv.o [5]
+__aeabi_fmul            0x00002737          Code  Gb  FltMul.o [5]
+__aeabi_fsub            0x0000295f          Code  Gb  FltAddSub.o [5]
+__aeabi_memcpy          0x00002489          Code  Gb  ABImemcpy.o [6]
+__aeabi_memcpy4         0x000024b1          Code  Gb  ABImemcpy.o [6]
+__aeabi_memcpy8         0x000024b1          Code  Gb  ABImemcpy.o [6]
+__aeabi_ui2f            0x00002719          Code  Gb  I32ToFlt.o [5]
+__aeabi_uidiv           0x00000149          Code  Gb  I32DivMod.o [6]
+__aeabi_uidivmod        0x00000149          Code  Gb  I32DivMod.o [6]
+__cexit_clearlocks      0x000039f7          Code  Gb  cexit.o [6]
+__cmain                 0x000039d5          Code  Gb  cmain.o [6]
+__cstart_clearlocks     0x000002f0          Data  Gb  cstart_clearlocks.o [6]
+__data_Aldata           0x100006ec     0x8  Data  Gb  xxmemxmalloc.o [4]
+__data_GetMemChunk      0x00002d31    0x28  Code  Gb  xgetmemchunk.o [4]
+__data_memzero          0x00002c89    0x12  Code  Gb  xxmemxmemzero.o [4]
+__exit                  0x00003a05    0x14  Code  Gb  exit.o [7]
+__iar_Locksyslock       0x00002ccf    0x46  Code  Gb  xsyslock.o [4]
+__iar_SB                0x000002f0          Data  Gb  bwt_init3c.o [6]
+__iar_Unlocksyslock     0x00002d15    0x16  Code  Gb  xsyslock.o [4]
+__iar_clearlocks        0x00002c9d    0x32  Code  Gb  xsyslock.o [4]
+__iar_copy_init3        0x00000177    0x2e  Code  Gb  copy_init3.o [6]
+__iar_data_init3        0x0000393d    0x2c  Code  Gb  data_init3.o [6]
+__iar_program_start     0x00003a19          Code  Gb  cstartup_M.o [6]
+__iar_ui2f              0x0000271d          Code  Gb  I32ToFlt.o [5]
+__iar_zero_init3        0x00003969    0x28  Code  Gb  zero_init3.o [6]
+__vector_table          0x00000000          Data  Gb  cstartup_M.o [2]
+__vector_table_0x1c     0x0000001c          Data  Gb  cstartup_M.o [2]
+_adcContext             0x100006b0     0xc  Data  Gb  adc.o [2]
+_call_main              0x000039e1          Code  Gb  cmain.o [6]
+_clockSource            0x10000018     0x4  Data  Gb  system_LPC122x.o [2]
+_clspFrameForPossibleRetry
+                        0x100005b0     0x4  Data  Gb  clspGeneric.o [2]
+_clspIsAssigned         0x100005ac     0x4  Data  Gb  clspGeneric.o [2]
+_clspLogicalAddress     0x100005a8     0x4  Data  Gb  clspGeneric.o [2]
+_clspSuggestedAddress   0x10000700     0x4  Data  Gb  clspGeneric.o [2]
+_clspTxCount            0x100005b4     0x4  Data  Gb  clspGeneric.o [2]
+_clspTxLLCount          0x100005b8     0x4  Data  Gb  clspGeneric.o [2]
+_clspTxLLQueue          0x10000598    0x10  Data  Gb  clspGeneric.o [2]
+_clspTxQueue            0x10000558    0x40  Data  Gb  clspGeneric.o [2]
+_criticalSectionCount   0x100006fc     0x4  Data  Gb  baseTypes.o [2]
+_domainContext          0x1000064c    0x18  Data  Gb  ClspAPI.o [2]
+_eventOnFrameReceived   0x100006c8     0xc  Data  Gb  clspGeneric.o [2]
+_eventOnNodeAssignmentChanged
+                        0x100006bc     0xc  Data  Gb  clspGeneric.o [2]
+_exit                   0x000039f5          Code  Gb  cexit.o [6]
+_iap_command            0x10000630    0x18  Data  Gb  iap.o [2]
+_iap_return             0x1000061c    0x14  Data  Gb  iap.o [2]
+_inputChanged           0x100006a8     0x4  Data  Gb  Inputs.o [2]
+_inputCount             0x100006e4     0x4  Data  Gb  systemInfo.o [2]
+_lastUpgradeActivity    0x100006e0     0x4  Data  Gb  flashloader.o [2]
+_ledIdCnt               0x10000004     0x4  Data  Gb  main.o [2]
+_ledIdDir               0x10000008     0x4  Data  Gb  main.o [2]
+_ledIdTimer             0x10000000     0x4  Data  Gb  main.o [2]
+_lonContext             0x100004ec    0x6c  Data  Gb  LonControl.o [2]
+_lonDriverStatus        0x100005bc    0x28  Data  Gb  LdvSci.o [2]
+_lonRxBuffer            0x10000174   0x150  Data  Gb  LdvSci.o [2]
+_lonTxBuffer            0x10000024   0x150  Data  Gb  LdvSci.o [2]
+_main                   0x000039e7          Code  Gb  cmain.o [6]
+_nRxErrors              0x100006f4     0x4  Data  Gb  LdvSci.o [2]
+_nRxTimeout             0x100005e4     0x4  Data  Gb  LdvSci.o [2]
+_nTxBufUnavailable      0x100005e8     0x4  Data  Gb  LdvSci.o [2]
+_nUtilityDownTimer      0x100005fc    0x10  Data  Gb  LdvSci.o [2]
+_nUtilityUpTimer        0x100005ec    0x10  Data  Gb  LdvSci.o [2]
+_outputCount            0x100006e8     0x4  Data  Gb  systemInfo.o [2]
+_partialChecksum        0x100006dc     0x4  Data  Gb  flashloader.o [2]
+_pauseRead              0x100006ac     0x4  Data  Gb  Inputs.o [2]
+_resetAssCnt            0x100006d4     0x4  Data  Gb  LdvSci.o [2]
+_resetDeassCnt          0x100006d8     0x4  Data  Gb  LdvSci.o [2]
+_specialInputState      0x100006a4     0x4  Data  Gb  Inputs.o [2]
+_specialInputs          0x100003e4   0x108  Data  Gb  Inputs.o [2]
+_sysTickCount           0x10000708     0x4  Data  Gb  sysTick.o [2]
+_systemAHBFrequency     0x10000020     0x4  Data  Gb  system_LPC122x.o [2]
+_systemFrequency        0x1000001c     0x4  Data  Gb  system_LPC122x.o [2]
+_taskCount              0x100006f8     0x4  Data  Gb  Tasks.o [2]
+_taskDelay              0x10000010     0x4  Data  Gb  systemInfo.o [2]
+_taskDelayStarted       0x1000000c     0x4  Data  Gb  systemInfo.o [2]
+_taskList               0x100002c4   0x120  Data  Gb  Tasks.o [2]
+_taskToDelay            0x10000014     0x4  Data  Gb  systemInfo.o [2]
+_uartActualBaudrate     0x1000069c     0x8  Data  Gb  uart.o [2]
+_uidArray               0x1000060c    0x10  Data  Gb  iap.o [2]
+_uidRead                0x10000648     0x4  Data  Gb  iap.o [2]
+appInitData             0x00002b24    0x28  Data  Lc  ShortStackDev.o [2]
+application             0x00004000  0xa5d8  Data  Gb  DCU.bin [1]
+calloc                  0x00002a0f    0x32  Code  Gb  xxmemxcalloc.o [4]
+exit                    0x000039eb     0x8  Code  Gb  exit.o [4]
+flash_CheckApplication  0x00003151    0x42  Code  Gb  flashloader.o [2]
+flash_ErasePage         0x00003221    0x44  Code  Gb  flashloader.o [2]
+flash_TimeFromLastActivity
+                        0x0000313d     0xc  Code  Gb  flashloader.o [2]
+flash_WriteData         0x00003193    0x8e  Code  Gb  flashloader.o [2]
+flash_getLastChecksum   0x00003149     0x8  Code  Gb  flashloader.o [2]
+free                    0x00002a41    0x86  Code  Gb  xxmemxfree.o [4]
+iap_entry               0x000032b1     0x8  Code  Gb  iap.o [2]
+lastResetNotification   0x1000067c    0x14  Data  Lc  ShortStackApi.o [2]
+main                    0x00003809    0x84  Code  Gb  main.o [2]
+malloc                  0x00002bc9    0xbc  Code  Gb  xxmemxmalloc.o [4]
+memcpy                  0x00002afd    0x12  Code  Gb  baseTypes.o [2]
+memset                  0x00002b0f     0xe  Code  Gb  baseTypes.o [2]
+mtTable                 0x00002b4c     0x4  Data  Lc  ShortStackDev.o [2]
+mtx                     0x10000668    0x14  Data  Lc  xsyslock.o [4]
+syslock_o               0x10000664     0x4  Data  Lc  xsyslock.o [4]
+
+
+[1] = C:\w2OriginDCU\dcu\dcu\src\R_Application_LON-16-48\Exe
+[2] = C:\w2OriginDCU\dcu\dcu\src\R_Bootloader_LON-16-48\Obj
+[3] = command line
+[4] = dl6M_tln.a
+[5] = m6M_tl.a
+[6] = rt6M_tl.a
+[7] = shb_l.a
+
+  14 728 bytes of readonly  code memory
+  42 536 bytes of readonly  data memory
+   4 784 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

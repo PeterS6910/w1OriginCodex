@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tns="http://www.vps.de/wsdl/IDProductionService/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="IDProductionService" targetNamespace="http://www.vps.de/wsdl/IDProductionService/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types />
+  <wsdl:message name="StandardRequest">
+    <wsdl:part name="RequestData" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="StandardResponse">
+    <wsdl:part name="ResultId" type="xsd:int" />
+    <wsdl:part name="ResultText" type="xsd:string" />
+    <wsdl:part name="ResultData" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:portType name="IDProductionPort">
+    <wsdl:operation name="ImagePreview">
+      <wsdl:input message="tns:StandardRequest" />
+      <wsdl:output message="tns:StandardResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ImageCapture">
+      <wsdl:input message="tns:StandardRequest" />
+      <wsdl:output message="tns:StandardResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="CardComposer">
+      <wsdl:input message="tns:StandardRequest" />
+      <wsdl:output message="tns:StandardResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="CardDesigner">
+      <wsdl:input message="tns:StandardRequest" />
+      <wsdl:output message="tns:StandardResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="EncodingConfigurator">
+      <wsdl:input message="tns:StandardRequest" />
+      <wsdl:output message="tns:StandardResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ConfigurationManager">
+      <wsdl:input message="tns:StandardRequest" />
+      <wsdl:output message="tns:StandardResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="Cards">
+      <wsdl:input message="tns:StandardRequest" />
+      <wsdl:output message="tns:StandardResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="CardJob">
+      <wsdl:input message="tns:StandardRequest" />
+      <wsdl:output message="tns:StandardResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="CardPreview">
+      <wsdl:input message="tns:StandardRequest" />
+      <wsdl:output message="tns:StandardResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="Fields">
+      <wsdl:input message="tns:StandardRequest" />
+      <wsdl:output message="tns:StandardResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="SystemStatus">
+      <wsdl:input message="tns:StandardRequest" />
+      <wsdl:output message="tns:StandardResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="IDProductionBinding" type="tns:IDProductionPort">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="ImagePreview">
+      <soap:operation soapAction="" />
+      <wsdl:input>
+        <soap:body use="literal" namespace="http://www.vps.de/wsdl/IDProductionService/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="http://www.vps.de/wsdl/IDProductionService/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImageCapture">
+      <soap:operation soapAction="" />
+      <wsdl:input>
+        <soap:body use="literal" namespace="http://www.vps.de/wsdl/IDProductionService/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="http://www.vps.de/wsdl/IDProductionService/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CardComposer">
+      <soap:operation soapAction="" />
+      <wsdl:input>
+        <soap:body use="literal" namespace="http://www.vps.de/wsdl/IDProductionService/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="http://www.vps.de/wsdl/IDProductionService/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CardDesigner">
+      <soap:operation soapAction="" />
+      <wsdl:input>
+        <soap:body use="literal" namespace="http://www.vps.de/wsdl/IDProductionService/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="http://www.vps.de/wsdl/IDProductionService/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncodingConfigurator">
+      <soap:operation soapAction="" />
+      <wsdl:input>
+        <soap:body use="literal" namespace="http://www.vps.de/wsdl/IDProductionService/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="http://www.vps.de/wsdl/IDProductionService/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfigurationManager">
+      <soap:operation soapAction="" />
+      <wsdl:input>
+        <soap:body use="literal" namespace="http://www.vps.de/wsdl/IDProductionService/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="http://www.vps.de/wsdl/IDProductionService/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cards">
+      <soap:operation soapAction="" />
+      <wsdl:input>
+        <soap:body use="literal" namespace="http://www.vps.de/wsdl/IDProductionService/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="http://www.vps.de/wsdl/IDProductionService/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CardJob">
+      <soap:operation soapAction="" />
+      <wsdl:input>
+        <soap:body use="literal" namespace="http://www.vps.de/wsdl/IDProductionService/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="http://www.vps.de/wsdl/IDProductionService/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CardPreview">
+      <soap:operation soapAction="" />
+      <wsdl:input>
+        <soap:body use="literal" namespace="http://www.vps.de/wsdl/IDProductionService/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="http://www.vps.de/wsdl/IDProductionService/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fields">
+      <soap:operation soapAction="" />
+      <wsdl:input>
+        <soap:body use="literal" namespace="http://www.vps.de/wsdl/IDProductionService/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="http://www.vps.de/wsdl/IDProductionService/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SystemStatus">
+      <soap:operation soapAction="" />
+      <wsdl:input>
+        <soap:body use="literal" namespace="http://www.vps.de/wsdl/IDProductionService/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="http://www.vps.de/wsdl/IDProductionService/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IDProductionService">
+    <wsdl:documentation>WSDL File for IDProductionService
+		</wsdl:documentation>
+    <wsdl:port name="IDProductionPort" binding="tns:IDProductionBinding">
+      <soap:address location="http://localhost:54880" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.NCAS.Server.Beans.DCU, Cgp.NCAS.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdDCU">
+      <generator class="guid" />
+    </id>
+    
+    <set name="CardReaders" cascade="all-delete-orphan">
+      <key column="DCU" />
+      <one-to-many class="Contal.Cgp.NCAS.Server.Beans.CardReader"  />
+    </set>
+
+    <many-to-one name="CCU" column="CCU" class="Contal.Cgp.NCAS.Server.Beans.CCU, Cgp.NCAS.Server.Beans" not-null="false" unique-key="CCULogicalAddress"/>
+
+    <bag name="DoorEnvironments" cascade="all-delete-orphan">
+      <key column="DCU" />
+      <one-to-many class="Contal.Cgp.NCAS.Server.Beans.DoorEnvironment, Cgp.NCAS.Server.Beans"/>
+    </bag>
+
+    <bag name="Inputs" cascade="all-delete-orphan">
+      <key column="DCU" />
+      <one-to-many class="Contal.Cgp.NCAS.Server.Beans.Input"/>
+    </bag>
+
+    <bag name="Outputs" cascade="all-delete-orphan">
+      <key column="DCU" />
+      <one-to-many class="Contal.Cgp.NCAS.Server.Beans.Output"/>
+    </bag>
+
+    <property name="LogicalAddress" not-null="false" unique-key="CCULogicalAddress"></property>
+    
+    <property name="AlarmOffline" not-null="false"></property>
+    <property name="BlockAlarmOffline" not-null="false"></property>
+    <property name="ObjBlockAlarmOfflineObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmOfflineId" not-null="false"></property>
+
+    <many-to-one name="OfflinePresentationGroup" column="OfflinePresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+
+    <property name="AlarmTamper" not-null="false"></property>
+    <property name="BlockAlarmTamper" not-null="false"></property>
+    <property name="ObjBlockAlarmTamperObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmTamperId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmTamper" not-null="false"></property>
+
+    <many-to-one name="TamperSabotagePresentationGroup" column="TamperSabotagePresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+
+    <property name="InputsCount" not-null="false"></property>
+    <property name="OutputsCount" not-null="false"></property>
+
+    <many-to-one name="DcuSabotageOutput" column="DcuSabotageOutput" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="DcuOfflineOutput" column="DcuOfflineOutput" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="DcuInputsSabotageOutput" column="DcuInputsSabotageOutput" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+
+    <property name="Description" not-null="false">
+      <column name="Description" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+    <property name="LocalAlarmInstruction" not-null="false">
+      <column name="LocalAlarmInstruction" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+
+    <bag name="DcuAlarmArcs" cascade="all-delete-orphan">
+      <key column="Dcu" />
+      <one-to-many class="Contal.Cgp.NCAS.Server.Beans.DcuAlarmArc"  />
+    </bag>
+
+    <property name="Version" not-null="false"></property>
+
+    <join table="CentralNameRegister">
+      <key column="Id" foreign-key="none"/>
+      <property name="Name" column="Name" not-null="true"/>
+      <property name="ObjectType" not-null="true"/>
+      <property name="CkUnique"/>
+    </join>
+  </class>
+</hibernate-mapping>

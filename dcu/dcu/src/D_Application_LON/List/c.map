@@ -1,0 +1,1332 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V6.30.3.53228/W32 for ARM              09/Apr/2026  10:59:52 #
+# Copyright 2007-2011 IAR Systems AB.                                         #
+#                                                                             #
+#    Output file  =  C:\w2OriginDCU\dcu\dcu\src\D_Application_LON\Exe\c.out.t #
+#                    mp                                                       #
+#    Map file     =  C:\w2OriginDCU\dcu\dcu\src\D_Application_LON\List\c.map  #
+#    Command line =  C:\w2OriginDCU\dcu\dcu\src\D_Application_LON\Obj\CardRea #
+#                    der.o C:\w2OriginDCU\dcu\dcu\src\D_Application_LON\Obj\C #
+#                    lspAPI.o C:\w2OriginDCU\dcu\dcu\src\D_Application_LON\Ob #
+#                    j\CrCommunicator.o C:\w2OriginDCU\dcu\dcu\src\D_Applicat #
+#                    ion_LON\Obj\CrProtocol.o C:\w2OriginDCU\dcu\dcu\src\D_Ap #
+#                    plication_LON\Obj\CrQueue.o                              #
+#                    C:\w2OriginDCU\dcu\dcu\src\D_Application_LON\Obj\DIPSwit #
+#                    ch.o C:\w2OriginDCU\dcu\dcu\src\D_Application_LON\Obj\IO #
+#                    Expansion.o C:\w2OriginDCU\dcu\dcu\src\D_Application_LON #
+#                    \Obj\InputLeds.o C:\w2OriginDCU\dcu\dcu\src\D_Applicatio #
+#                    n_LON\Obj\Inputs.o C:\w2OriginDCU\dcu\dcu\src\D_Applicat #
+#                    ion_LON\Obj\LdvSci.o C:\w2OriginDCU\dcu\dcu\src\D_Applic #
+#                    ation_LON\Obj\LonControl.o C:\w2OriginDCU\dcu\dcu\src\D_ #
+#                    Application_LON\Obj\Outputs.o                            #
+#                    C:\w2OriginDCU\dcu\dcu\src\D_Application_LON\Obj\Process #
+#                    or.o C:\w2OriginDCU\dcu\dcu\src\D_Application_LON\Obj\Sh #
+#                    ortStackApi.o C:\w2OriginDCU\dcu\dcu\src\D_Application_L #
+#                    ON\Obj\ShortStackDev.o C:\w2OriginDCU\dcu\dcu\src\D_Appl #
+#                    ication_LON\Obj\ShortStackHandlers.o                     #
+#                    C:\w2OriginDCU\dcu\dcu\src\D_Application_LON\Obj\ShortSt #
+#                    ackInternal.o C:\w2OriginDCU\dcu\dcu\src\D_Application_L #
+#                    ON\Obj\StartApplication.o C:\w2OriginDCU\dcu\dcu\src\D_A #
+#                    pplication_LON\Obj\Tasks.o C:\w2OriginDCU\dcu\dcu\src\D_ #
+#                    Application_LON\Obj\adc.o C:\w2OriginDCU\dcu\dcu\src\D_A #
+#                    pplication_LON\Obj\baseTypes.o                           #
+#                    C:\w2OriginDCU\dcu\dcu\src\D_Application_LON\Obj\clsp485 #
+#                    .o C:\w2OriginDCU\dcu\dcu\src\D_Application_LON\Obj\clsp #
+#                    Generic.o C:\w2OriginDCU\dcu\dcu\src\D_Application_LON\O #
+#                    bj\communication.o C:\w2OriginDCU\dcu\dcu\src\D_Applicat #
+#                    ion_LON\Obj\core_cm0.o C:\w2OriginDCU\dcu\dcu\src\D_Appl #
+#                    ication_LON\Obj\crNotify.o C:\w2OriginDCU\dcu\dcu\src\D_ #
+#                    Application_LON\Obj\cryptoaes.o                          #
+#                    C:\w2OriginDCU\dcu\dcu\src\D_Application_LON\Obj\cstartu #
+#                    p_M.o C:\w2OriginDCU\dcu\dcu\src\D_Application_LON\Obj\d #
+#                    mHandler.o C:\w2OriginDCU\dcu\dcu\src\D_Application_LON\ #
+#                    Obj\dsm.o C:\w2OriginDCU\dcu\dcu\src\D_Application_LON\O #
+#                    bj\dsmConfig.o C:\w2OriginDCU\dcu\dcu\src\D_Application_ #
+#                    LON\Obj\exceptionHandling.o                              #
+#                    C:\w2OriginDCU\dcu\dcu\src\D_Application_LON\Obj\flashSt #
+#                    orage.o C:\w2OriginDCU\dcu\dcu\src\D_Application_LON\Obj #
+#                    \flashloader.o C:\w2OriginDCU\dcu\dcu\src\D_Application_ #
+#                    LON\Obj\gpio.o C:\w2OriginDCU\dcu\dcu\src\D_Application_ #
+#                    LON\Obj\hashes.o C:\w2OriginDCU\dcu\dcu\src\D_Applicatio #
+#                    n_LON\Obj\i2c.o C:\w2OriginDCU\dcu\dcu\src\D_Application #
+#                    _LON\Obj\iap.o C:\w2OriginDCU\dcu\dcu\src\D_Application_ #
+#                    LON\Obj\main.o C:\w2OriginDCU\dcu\dcu\src\D_Application_ #
+#                    LON\Obj\sysTick.o C:\w2OriginDCU\dcu\dcu\src\D_Applicati #
+#                    on_LON\Obj\systemInfo.o C:\w2OriginDCU\dcu\dcu\src\D_App #
+#                    lication_LON\Obj\system_LPC122x.o                        #
+#                    C:\w2OriginDCU\dcu\dcu\src\D_Application_LON\Obj\testMod #
+#                    e.o C:\w2OriginDCU\dcu\dcu\src\D_Application_LON\Obj\tes #
+#                    ting.o C:\w2OriginDCU\dcu\dcu\src\D_Application_LON\Obj\ #
+#                    timer16.o C:\w2OriginDCU\dcu\dcu\src\D_Application_LON\O #
+#                    bj\timer32.o C:\w2OriginDCU\dcu\dcu\src\D_Application_LO #
+#                    N\Obj\uart.o C:\w2OriginDCU\dcu\dcu\src\D_Application_LO #
+#                    N\Obj\watchdog.o -o C:\w2OriginDCU\dcu\dcu\src\D_Applica #
+#                    tion_LON\Exe\c.out.tmp --redirect _Printf=_PrintfFull    #
+#                    --redirect _Scanf=_ScanfFull --map                       #
+#                    C:\w2OriginDCU\dcu\dcu\src\D_Application_LON\List\c.map  #
+#                    --config C:\w2OriginDCU\dcu\dcu\src\LPC1225_Flash.icf    #
+#                    --semihosting --entry __iar_program_start --inline       #
+#                    --no_exceptions --vfe                                    #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__Heap_Handler  = Basic
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00000000 { ro section .intvec };
+"P1":  place in [from 0x00000124 to 0x000002fb] |
+                [from 0x00000300 to 0x0000fffe] { ro };
+"P2":  place in [from 0x10000000 to 0x10001fbf] { rw, block CSTACK, block HEAP };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                       0xbc
+  .intvec            ro code  0x00000000    0xbc  cstartup_M.o [1]
+                            - 0x000000bc    0xbc
+
+"P1", part 1 of 2:                         0x1ac
+  .text              ro code  0x00000124    0x1c  dmHandler.o [1]
+  .text              ro code  0x00000140    0x2e  copy_init3.o [5]
+  .text              ro code  0x00000170    0x9a  DIPSwitch.o [1]
+  .text              ro code  0x0000020a     0x2  cstartup_M.o [1]
+  .text              ro code  0x0000020c    0x3e  hashes.o [1]
+  .text              ro code  0x0000024c    0x1e  I32ToFlt.o [4]
+  .text              ro code  0x0000026a    0x12  xxmemxmemzero.o [3]
+  .text              ro code  0x0000027c    0x2c  data_init3.o [5]
+  Initializer bytes  ro data  0x000002a8    0x28  <for P2 s0>
+                            - 0x000002d0   0x1ac
+
+"P1", part 2 of 2:                        0xc794
+  .text              ro code  0x00000300  0x1c64  dsm.o [1]
+  .text              ro code  0x00001f64  0x1014  Inputs.o [1]
+  .text              ro code  0x00002f78   0xac0  Outputs.o [1]
+  .text              ro code  0x00003a38  0x15c4  CrCommunicator.o [1]
+  .text              ro code  0x00004ffc   0x818  dsmConfig.o [1]
+  .text              ro code  0x00005814   0x14a  baseTypes.o [1]
+  .text              ro code  0x00005960   0x20c  sysTick.o [1]
+  .text              ro code  0x00005b6c   0x154  Tasks.o [1]
+  .text              ro code  0x00005cc0   0x444  systemInfo.o [1]
+  .text              ro code  0x00006104   0x5c4  IOExpansion.o [1]
+  .text              ro code  0x000066c8   0x278  InputLeds.o [1]
+  .text              ro code  0x00006940   0x38c  gpio.o [1]
+  .text              ro code  0x00006ccc   0x33c  adc.o [1]
+  .text              ro code  0x00007008   0x1ee  CrQueue.o [1]
+  .text              ro code  0x000071f6    0xaa  CrProtocol.o [1]
+  .rodata            const    0x000072a0     0x1  CrCommunicator.o [1]
+  .text              ro code  0x000072a4   0x72c  uart.o [1]
+  .text              ro code  0x000079d0    0x56  I32DivMod.o [5]
+  .text              ro code  0x00007a26    0x32  xxmemxcalloc.o [3]
+  .text              ro code  0x00007a58    0x8c  xxmemxfree.o [3]
+  .text              ro code  0x00007ae4    0x80  watchdog.o [1]
+  .text              ro code  0x00007b64   0x13c  iap.o [1]
+  .text              ro code  0x00007ca0   0x164  i2c.o [1]
+  .text              ro code  0x00007e04    0x20  StartApplication.o [1]
+  .text              ro code  0x00007e24   0xc5c  LdvSci.o [1]
+  .text              ro code  0x00008a80   0x550  testing.o [1]
+  .text              ro code  0x00008fd0    0x26  FltToU32.o [4]
+  .text              ro code  0x00008ff8    0x5c  ABImemcpy.o [5]
+  .text              ro code  0x00009054    0x32  FltToDbl.o [4]
+  .text              ro code  0x00009086   0x1a8  DblAddSub.o [4]
+  .text              ro code  0x0000922e    0x62  DblToFlt.o [4]
+  .text              ro code  0x00009290    0x26  FltCmpLe.o [4]
+  .text              ro code  0x000092b6    0xb4  FltMul.o [4]
+  .text              ro code  0x0000936a    0xaa  FltDiv.o [4]
+  .text              ro code  0x00009414    0x3a  FltToS32.o [4]
+  .text              ro code  0x00009450    0x28  FltCmpGe.o [4]
+  .text              ro code  0x00009478   0x120  FltAddSub.o [4]
+  .text              ro code  0x00009598    0xc0  xxmemxmalloc.o [3]
+  .text              ro code  0x00009658    0x94  xsyslock.o [3]
+  .text              ro code  0x000096ec   0xdb8  communication.o [1]
+  .text              ro code  0x0000a4a4   0x64c  LonControl.o [1]
+  .text              ro code  0x0000aaf0    0x20  Processor.o [1]
+  .text              ro code  0x0000ab10   0x1cc  timer32.o [1]
+  .text              ro code  0x0000acdc   0x440  clspGeneric.o [1]
+  .text              ro code  0x0000b11c    0x28  xgetmemchunk.o [3]
+  .text              ro code  0x0000b144   0x1a0  system_LPC122x.o [1]
+  .text              ro code  0x0000b2e4   0x8a6  ShortStackApi.o [1]
+  .text              ro code  0x0000bb8c   0x2a8  ClspAPI.o [1]
+  .text              ro code  0x0000be34    0x28  ShortStackDev.o [1]
+  .text              ro code  0x0000be5c   0x19a  ShortStackInternal.o [1]
+  .text              ro code  0x0000bff6    0x46  ShortStackHandlers.o [1]
+  .text              ro code  0x0000c03c   0x47c  crNotify.o [1]
+  .rodata            const    0x0000c4b8   0x120  uart.o [1]
+  .rodata            const    0x0000c5d8   0x118  ShortStackDev.o [1]
+  .text              ro code  0x0000c6f0    0x80  timer16.o [1]
+  .text              ro code  0x0000c770    0x64  main.o [1]
+  .rodata            const    0x0000c7d4    0x58  ShortStackDev.o [1]
+  .rodata            const    0x0000c82c    0x48  uart.o [1]
+  .rodata            const    0x0000c874    0x48  uart.o [1]
+  .text              ro code  0x0000c8bc    0x3c  exceptionHandling.o [1]
+  .rodata            const    0x0000c8f8    0x28  ShortStackDev.o [1]
+  .text              ro code  0x0000c920    0x28  zero_init3.o [5]
+  .iar.init_table    const    0x0000c948    0x24  - Linker created -
+  .rodata            const    0x0000c96c    0x20  watchdog.o [1]
+  .rodata            const    0x0000c98c    0x18  crNotify.o [1]
+  .text              ro code  0x0000c9a4    0x16  cmain.o [5]
+  .text              ro code  0x0000c9ba     0x8  exit.o [3]
+  .text              ro code  0x0000c9c4     0xe  cexit.o [5]
+  .text              ro code  0x0000c9d4    0x14  exit.o [6]
+  .rodata            const    0x0000c9e8    0x14  crNotify.o [1]
+  .rodata            const    0x0000c9fc    0x14  crNotify.o [1]
+  .rodata            const    0x0000ca10    0x10  crNotify.o [1]
+  .rodata            const    0x0000ca20     0xc  IOExpansion.o [1]
+  .rodata            const    0x0000ca2c     0xc  crNotify.o [1]
+  .rodata            const    0x0000ca38     0xc  crNotify.o [1]
+  .rodata            const    0x0000ca44     0xc  crNotify.o [1]
+  .text              ro code  0x0000ca50     0xc  cstartup_M.o [5]
+  .rodata            const    0x0000ca5c     0x8  CrCommunicator.o [1]
+  .rodata            const    0x0000ca64     0x8  CrCommunicator.o [1]
+  .rodata            const    0x0000ca6c     0x8  crNotify.o [1]
+  .rodata            const    0x0000ca74     0x8  crNotify.o [1]
+  .rodata            const    0x0000ca7c     0x4  IOExpansion.o [1]
+  .rodata            const    0x0000ca80     0x4  IOExpansion.o [1]
+  .rodata            const    0x0000ca84     0x4  IOExpansion.o [1]
+  .rodata            const    0x0000ca88     0x4  ShortStackApi.o [1]
+  .rodata            const    0x0000ca8c     0x4  ShortStackDev.o [1]
+  .rodata            const    0x0000ca90     0x4  crNotify.o [1]
+  .text              ro code  0x0000ca94     0x0  cstart_clearlocks.o [5]
+  .rodata            const    0x0000ca94     0x0  bwt_init3c.o [5]
+                            - 0x0000ca94  0xc794
+
+"P2", part 1 of 3:                          0x28
+  P2 s0                       0x10000000    0x28  <Init block>
+    .data            inited   0x10000000     0x4  CrCommunicator.o [1]
+    .data            inited   0x10000004     0x4  InputLeds.o [1]
+    .data            inited   0x10000008     0x4  communication.o [1]
+    .data            inited   0x1000000c     0x4  systemInfo.o [1]
+    .data            inited   0x10000010     0x4  systemInfo.o [1]
+    .data            inited   0x10000014     0x4  system_LPC122x.o [1]
+    .data            inited   0x10000018     0x4  system_LPC122x.o [1]
+    .data            inited   0x1000001c     0x4  system_LPC122x.o [1]
+    .data            inited   0x10000020     0x4  testing.o [1]
+    .data            inited   0x10000024     0x1  ShortStackDev.o [1]
+    .data            inited   0x10000025     0x1  dsm.o [1]
+                            - 0x10000028    0x28
+
+"P2", part 2 of 3:                        0x1578
+  .bss               zero     0x10000028   0x3c0  Inputs.o [1]
+  .bss               zero     0x100003e8   0x1b0  Outputs.o [1]
+  .bss               zero     0x10000598   0x150  LdvSci.o [1]
+  .bss               zero     0x100006e8   0x150  LdvSci.o [1]
+  .bss               zero     0x10000838   0x120  Tasks.o [1]
+  .bss               zero     0x10000958   0x108  Inputs.o [1]
+  .bss               zero     0x10000a60   0x100  uart.o [1]
+  .bss               zero     0x10000b60   0x100  uart.o [1]
+  .bss               zero     0x10000c60   0x100  uart.o [1]
+  .bss               zero     0x10000d60   0x100  uart.o [1]
+  .bss               zero     0x10000e60    0xa0  CrCommunicator.o [1]
+  .bss               zero     0x10000f00    0x8c  dsmConfig.o [1]
+  .bss               zero     0x10000f8c    0x80  clspGeneric.o [1]
+  .bss               zero     0x1000100c    0x6c  LonControl.o [1]
+  .bss               zero     0x10001078    0x64  CrCommunicator.o [1]
+  .bss               zero     0x100010dc    0x50  CrQueue.o [1]
+  .bss               zero     0x1000112c    0x40  adc.o [1]
+  .bss               zero     0x1000116c    0x34  ShortStackApi.o [1]
+  .bss               zero     0x100011a0    0x30  adc.o [1]
+  .bss               zero     0x100011d0    0x28  LdvSci.o [1]
+  .bss               zero     0x100011f8    0x24  dsm.o [1]
+  .bss               zero     0x1000121c    0x20  clspGeneric.o [1]
+  .bss               zero     0x1000123c    0x18  ClspAPI.o [1]
+  .bss               zero     0x10001254    0x18  iap.o [1]
+  .bss               zero     0x1000126c    0x18  xsyslock.o [3]
+  .bss               zero     0x10001284    0x14  ShortStackApi.o [1]
+  .bss               zero     0x10001298    0x14  iap.o [1]
+  .bss               zero     0x100012ac    0x14  testing.o [1]
+  .bss               zero     0x100012c0    0x10  IOExpansion.o [1]
+  .bss               zero     0x100012d0    0x10  InputLeds.o [1]
+  .bss               zero     0x100012e0    0x10  Inputs.o [1]
+  .bss               zero     0x100012f0    0x10  Inputs.o [1]
+  .bss               zero     0x10001300    0x10  LdvSci.o [1]
+  .bss               zero     0x10001310    0x10  LdvSci.o [1]
+  .bss               zero     0x10001320    0x10  iap.o [1]
+  .bss               zero     0x10001330     0xc  CrCommunicator.o [1]
+  .bss               zero     0x1000133c     0xc  CrCommunicator.o [1]
+  .bss               zero     0x10001348     0xc  CrCommunicator.o [1]
+  .bss               zero     0x10001354     0xc  CrCommunicator.o [1]
+  .bss               zero     0x10001360     0xc  CrCommunicator.o [1]
+  .bss               zero     0x1000136c     0xc  IOExpansion.o [1]
+  .bss               zero     0x10001378     0xc  IOExpansion.o [1]
+  .bss               zero     0x10001384     0xc  Inputs.o [1]
+  .bss               zero     0x10001390     0xc  adc.o [1]
+  .bss               zero     0x1000139c     0xc  clspGeneric.o [1]
+  .bss               zero     0x100013a8     0xc  clspGeneric.o [1]
+  .bss               zero     0x100013b4     0xc  clspGeneric.o [1]
+  .bss               zero     0x100013c0     0x8  CrQueue.o [1]
+  .bss               zero     0x100013c8     0x8  IOExpansion.o [1]
+  .bss               zero     0x100013d0     0x8  InputLeds.o [1]
+  .bss               zero     0x100013d8     0x8  InputLeds.o [1]
+  .bss               zero     0x100013e0     0x8  InputLeds.o [1]
+  .bss               zero     0x100013e8     0x8  ShortStackDev.o [1]
+  .bss               zero     0x100013f0     0x8  uart.o [1]
+  .bss               zero     0x100013f8     0x8  xxmemxmalloc.o [3]
+  .bss               zero     0x10001400     0x4  CrCommunicator.o [1]
+  .bss               zero     0x10001404     0x4  CrCommunicator.o [1]
+  .bss               zero     0x10001408     0x4  CrCommunicator.o [1]
+  .bss               zero     0x1000140c     0x4  CrCommunicator.o [1]
+  .bss               zero     0x10001410     0x4  CrCommunicator.o [1]
+  .bss               zero     0x10001414     0x4  CrCommunicator.o [1]
+  .bss               zero     0x10001418     0x4  CrCommunicator.o [1]
+  .bss               zero     0x1000141c     0x4  CrCommunicator.o [1]
+  .bss               zero     0x10001420     0x4  CrCommunicator.o [1]
+  .bss               zero     0x10001424     0x4  CrCommunicator.o [1]
+  .bss               zero     0x10001428     0x4  CrQueue.o [1]
+  .bss               zero     0x1000142c     0x4  IOExpansion.o [1]
+  .bss               zero     0x10001430     0x4  IOExpansion.o [1]
+  .bss               zero     0x10001434     0x4  IOExpansion.o [1]
+  .bss               zero     0x10001438     0x4  IOExpansion.o [1]
+  .bss               zero     0x1000143c     0x4  Inputs.o [1]
+  .bss               zero     0x10001440     0x4  Inputs.o [1]
+  .bss               zero     0x10001444     0x4  Inputs.o [1]
+  .bss               zero     0x10001448     0x4  Inputs.o [1]
+  .bss               zero     0x1000144c     0x4  Inputs.o [1]
+  .bss               zero     0x10001450     0x4  Inputs.o [1]
+  .bss               zero     0x10001454     0x4  Inputs.o [1]
+  .bss               zero     0x10001458     0x4  Inputs.o [1]
+  .bss               zero     0x1000145c     0x4  LdvSci.o [1]
+  .bss               zero     0x10001460     0x4  LdvSci.o [1]
+  .bss               zero     0x10001464     0x4  LdvSci.o [1]
+  .bss               zero     0x10001468     0x4  LdvSci.o [1]
+  .bss               zero     0x1000146c     0x4  LdvSci.o [1]
+  .bss               zero     0x10001470     0x4  LonControl.o [1]
+  .bss               zero     0x10001474     0x4  Outputs.o [1]
+  .bss               zero     0x10001478     0x4  Outputs.o [1]
+  .bss               zero     0x1000147c     0x4  Outputs.o [1]
+  .bss               zero     0x10001480     0x4  Outputs.o [1]
+  .bss               zero     0x10001484     0x4  Outputs.o [1]
+  .bss               zero     0x10001488     0x4  ShortStackDev.o [1]
+  .bss               zero     0x1000148c     0x4  ShortStackDev.o [1]
+  .bss               zero     0x10001490     0x4  ShortStackDev.o [1]
+  .bss               zero     0x10001494     0x4  ShortStackDev.o [1]
+  .bss               zero     0x10001498     0x4  ShortStackDev.o [1]
+  .bss               zero     0x1000149c     0x4  Tasks.o [1]
+  .bss               zero     0x100014a0     0x4  adc.o [1]
+  .bss               zero     0x100014a4     0x4  adc.o [1]
+  .bss               zero     0x100014a8     0x4  adc.o [1]
+  .bss               zero     0x100014ac     0x4  adc.o [1]
+  .bss               zero     0x100014b0     0x4  adc.o [1]
+  .bss               zero     0x100014b4     0x4  clspGeneric.o [1]
+  .bss               zero     0x100014b8     0x4  clspGeneric.o [1]
+  .bss               zero     0x100014bc     0x4  clspGeneric.o [1]
+  .bss               zero     0x100014c0     0x4  clspGeneric.o [1]
+  .bss               zero     0x100014c4     0x4  clspGeneric.o [1]
+  .bss               zero     0x100014c8     0x4  clspGeneric.o [1]
+  .bss               zero     0x100014cc     0x4  clspGeneric.o [1]
+  .bss               zero     0x100014d0     0x4  communication.o [1]
+  .bss               zero     0x100014d4     0x4  dsm.o [1]
+  .bss               zero     0x100014d8     0x4  dsm.o [1]
+  .bss               zero     0x100014dc     0x4  dsm.o [1]
+  .bss               zero     0x100014e0     0x4  dsm.o [1]
+  .bss               zero     0x100014e4     0x4  dsmConfig.o [1]
+  .bss               zero     0x100014e8     0x4  dsmConfig.o [1]
+  .bss               zero     0x100014ec     0x4  dsmConfig.o [1]
+  .bss               zero     0x100014f0     0x4  dsmConfig.o [1]
+  .bss               zero     0x100014f4     0x4  iap.o [1]
+  .bss               zero     0x100014f8     0x4  sysTick.o [1]
+  .bss               zero     0x100014fc     0x4  sysTick.o [1]
+  .bss               zero     0x10001500     0x4  sysTick.o [1]
+  .bss               zero     0x10001504     0x4  sysTick.o [1]
+  .bss               zero     0x10001508     0x4  systemInfo.o [1]
+  .bss               zero     0x1000150c     0x4  systemInfo.o [1]
+  .bss               zero     0x10001510     0x4  systemInfo.o [1]
+  .bss               zero     0x10001514     0x4  systemInfo.o [1]
+  .bss               zero     0x10001518     0x4  systemInfo.o [1]
+  .bss               zero     0x1000151c     0x4  systemInfo.o [1]
+  .bss               zero     0x10001520     0x4  systemInfo.o [1]
+  .bss               zero     0x10001524     0x4  systemInfo.o [1]
+  .bss               zero     0x10001528     0x4  systemInfo.o [1]
+  .bss               zero     0x1000152c     0x4  testing.o [1]
+  .bss               zero     0x10001530     0x4  testing.o [1]
+  .bss               zero     0x10001534     0x4  testing.o [1]
+  .bss               zero     0x10001538     0x4  testing.o [1]
+  .bss               zero     0x1000153c     0x4  testing.o [1]
+  .bss               zero     0x10001540     0x4  testing.o [1]
+  .bss               zero     0x10001544     0x4  testing.o [1]
+  .bss               zero     0x10001548     0x4  testing.o [1]
+  .bss               zero     0x1000154c     0x4  testing.o [1]
+  .bss               zero     0x10001550     0x4  testing.o [1]
+  .bss               zero     0x10001554     0x4  testing.o [1]
+  .bss               zero     0x10001558     0x4  timer16.o [1]
+  .bss               zero     0x1000155c     0x4  timer16.o [1]
+  .bss               zero     0x10001560     0x4  timer16.o [1]
+  .bss               zero     0x10001564     0x4  timer16.o [1]
+  .bss               zero     0x10001568     0x4  timer32.o [1]
+  .bss               zero     0x1000156c     0x4  timer32.o [1]
+  .bss               zero     0x10001570     0x4  uart.o [1]
+  .bss               zero     0x10001574     0x4  uart.o [1]
+  .bss               zero     0x10001578     0x4  uart.o [1]
+  .bss               zero     0x1000157c     0x4  uart.o [1]
+  .bss               zero     0x10001580     0x4  uart.o [1]
+  .bss               zero     0x10001584     0x4  uart.o [1]
+  .bss               zero     0x10001588     0x4  uart.o [1]
+  .bss               zero     0x1000158c     0x4  watchdog.o [1]
+  .bss               zero     0x10001590     0x4  xgetmemchunk.o [3]
+  .bss               zero     0x10001594     0x2  IOExpansion.o [1]
+  .bss               zero     0x10001596     0x1  IOExpansion.o [1]
+  .bss               zero     0x10001597     0x1  IOExpansion.o [1]
+  .bss               zero     0x10001598     0x1  ShortStackApi.o [1]
+                            - 0x10001599  0x1571
+
+"P2", part 3 of 3:                         0x9a0
+  CSTACK                      0x100015a0   0x600  <Block>
+    CSTACK           uninit   0x100015a0   0x600  <Block tail>
+  HEAP                        0x10001ba0   0x3a0  <Block>
+    HEAP             uninit   0x10001ba0   0x3a0  <Block tail>
+                            - 0x10001f40   0x9a0
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x1571:
+          0x10000028  0x1571
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x28 (105% of destination):
+          0x000002a8    0x28
+    1 destination range, total size 0x26:
+          0x10000000    0x26
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                ro code  ro data  rw data
+    ------                -------  -------  -------
+C:\w2OriginDCU\dcu\dcu\src\D_Application_LON\Obj: [1]
+    ClspAPI.o                 680                24
+    CrCommunicator.o        5 572       21      364
+    CrProtocol.o              170
+    CrQueue.o                 494                92
+    DIPSwitch.o               154
+    IOExpansion.o           1 476       24       68
+    InputLeds.o               632        4       44
+    Inputs.o                4 116             1 300
+    LdvSci.o                3 164               764
+    LonControl.o            1 612               112
+    Outputs.o               2 752               452
+    Processor.o                32
+    ShortStackApi.o         2 214        4       73
+    ShortStackDev.o            40      413       29
+    ShortStackHandlers.o       70
+    ShortStackInternal.o      410
+    StartApplication.o         32
+    Tasks.o                   340               292
+    adc.o                     828               144
+    baseTypes.o               330
+    clspGeneric.o           1 088               224
+    communication.o         3 512        4        8
+    crNotify.o              1 148      136
+    cstartup_M.o              190
+    dmHandler.o                28
+    dsm.o                   7 268        1       53
+    dsmConfig.o             2 072               156
+    exceptionHandling.o        60
+    gpio.o                    908
+    hashes.o                   62
+    i2c.o                     356
+    iap.o                     316                64
+    main.o                    100
+    sysTick.o                 524                16
+    systemInfo.o            1 092        8       44
+    system_LPC122x.o          416       12       12
+    testing.o               1 360        4       68
+    timer16.o                 128                16
+    timer32.o                 460                 8
+    uart.o                  1 836      432    1 060
+    watchdog.o                128       32        4
+    -----------------------------------------------
+    Total:                 48 170    1 095    5 491
+
+command line: [2]
+    -----------------------------------------------
+    Total:
+
+dl6M_tln.a: [3]
+    exit.o                      8
+    xgetmemchunk.o             40                 4
+    xsyslock.o                148                24
+    xxmemxcalloc.o             50
+    xxmemxfree.o              140
+    xxmemxmalloc.o            192                 8
+    xxmemxmemzero.o            18
+    -----------------------------------------------
+    Total:                    596                36
+
+m6M_tl.a: [4]
+    DblAddSub.o               424
+    DblToFlt.o                 98
+    FltAddSub.o               288
+    FltCmpGe.o                 40
+    FltCmpLe.o                 38
+    FltDiv.o                  170
+    FltMul.o                  180
+    FltToDbl.o                 50
+    FltToS32.o                 58
+    FltToU32.o                 38
+    I32ToFlt.o                 30
+    -----------------------------------------------
+    Total:                  1 414
+
+rt6M_tl.a: [5]
+    ABImemcpy.o                92
+    I32DivMod.o                86
+    bwt_init3c.o
+    cexit.o                    14
+    cmain.o                    22
+    copy_init3.o               46
+    cstart_clearlocks.o
+    cstartup_M.o               12
+    data_init3.o               44
+    zero_init3.o               40
+    -----------------------------------------------
+    Total:                    356
+
+shb_l.a: [6]
+    exit.o                     20
+    -----------------------------------------------
+    Total:                     20
+
+    Gaps                       19
+    Linker created                      38    2 464
+---------------------------------------------------
+    Grand Total:           50 575    1 133    7 991
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+?main                   0x0000c9a5         Code  Gb  cmain.o [5]
+ADC_IRQHandler          0x00006ed7   0xce  Code  Gb  adc.o [1]
+ADC_Init                0x00006e25   0x92  Code  Gb  adc.o [1]
+ADC_InitGenerator       0x00006d97   0x10  Code  Gb  adc.o [1]
+ADC_IsValid             0x00006eb7    0x6  Code  Gb  adc.o [1]
+ADC_RandomTask          0x00006da7   0x7e  Code  Gb  adc.o [1]
+ADC_RefreshValidState   0x00002a95   0x70  Code  Gb  Inputs.o [1]
+ADC_SelectInputs        0x00006cdb   0xbc  Code  Gb  adc.o [1]
+ADC_StartNewConversion  0x00006ebd   0x1a  Code  Gb  adc.o [1]
+AnalyzeCrIdentity       0x00004631   0x26  Code  Gb  CrCommunicator.o [1]
+AnalyzeCrNotInitialized
+                        0x0000466f   0xd2  Code  Gb  CrCommunicator.o [1]
+AnalyzeDataReceived     0x0000477d   0x38  Code  Gb  CrCommunicator.o [1]
+AnalyzeKeyPressed       0x00004741   0x3c  Code  Gb  CrCommunicator.o [1]
+AnalyzeProtocolVersion  0x000045ad   0x84  Code  Gb  CrCommunicator.o [1]
+AnalyzeReset            0x00004657   0x18  Code  Gb  CrCommunicator.o [1]
+AnalyzeRspAck           0x000047bd   0x5a  Code  Gb  CrCommunicator.o [1]
+AnalyzeRspServiceAck    0x0000481d   0x76  Code  Gb  CrCommunicator.o [1]
+BOD_IRQHandler          0x0000020b         Code  Wk  cstartup_M.o [1]
+BusFault_Handler        0x0000c8e5    0x4  Code  Gb  exceptionHandling.o [1]
+CMP_IRQHandler          0x0000020b         Code  Wk  cstartup_M.o [1]
+CR_AccessCommand        0x00004173  0x246  Code  Gb  CrCommunicator.o [1]
+CR_ChangeOnlineState    0x00003b45   0x4a  Code  Gb  CrCommunicator.o [1]
+CR_ClearDisplay         0x00004505   0x34  Code  Gb  CrCommunicator.o [1]
+CR_DisplayInfoTab       0x000043d7   0x74  Code  Gb  CrCommunicator.o [1]
+CR_DisplayText          0x00004541   0x6c  Code  Gb  CrCommunicator.o [1]
+CR_HasDisplay           0x00004fb9   0x44  Code  Gb  CrCommunicator.o [1]
+CR_PeripheralMode       0x0000447d   0x5c  Code  Gb  CrCommunicator.o [1]
+CR_RawAccessCommand     0x000043b9   0x1e  Code  Gb  CrCommunicator.o [1]
+CR_RawDisplayInfoTab    0x0000444b   0x32  Code  Gb  CrCommunicator.o [1]
+CR_RawPeripheralMode    0x000044d9   0x2c  Code  Gb  CrCommunicator.o [1]
+CR_SetCountryCode       0x00004125   0x34  Code  Gb  CrCommunicator.o [1]
+CR_SetInitialValues     0x00003ba1   0x56  Code  Gb  CrCommunicator.o [1]
+CR_SetPresentationMask  0x000040f5   0x30  Code  Gb  CrCommunicator.o [1]
+CR_SetState             0x00003bf7   0x3e  Code  Gb  CrCommunicator.o [1]
+CR_SetTime              0x00004091   0x64  Code  Gb  CrCommunicator.o [1]
+CR_ValidateCommandSuitable
+                        0x00004159   0x1a  Code  Gb  CrCommunicator.o [1]
+CSTACK$$Base            0x100015a0          --   Gb  - Linker created -
+CSTACK$$Limit           0x10001ba0          --   Gb  - Linker created -
+CT16B0_IRQHandler       0x0000c6f1   0x34  Code  Gb  timer16.o [1]
+CT16B1_IRQHandler       0x0000c725   0x34  Code  Gb  timer16.o [1]
+CT32B0_IRQHandler       0x0000020b         Code  Wk  cstartup_M.o [1]
+CT32B1_IRQHandler       0x0000abab   0x6e  Code  Gb  timer32.o [1]
+CalculateFilterTime     0x00002975   0x72  Code  Gb  Inputs.o [1]
+CheckIOPresence         0x00006435   0x5c  Code  Gb  IOExpansion.o [1]
+ClspLon_BroadcastUniqueId
+                        0x0000bbdf   0x46  Code  Gb  ClspAPI.o [1]
+ClspLon_CheckDIPChange  0x0000bc6f   0x44  Code  Gb  ClspAPI.o [1]
+ClspLon_ComposeByFrameAndSend
+                        0x0000bce5   0xd0  Code  Gb  ClspAPI.o [1]
+ClspLon_CreateFrameFromData
+                        0x0000bdb5   0x2a  Code  Gb  ClspAPI.o [1]
+ClspLon_EnqueueAlive    0x0000bc51   0x1e  Code  Gb  ClspAPI.o [1]
+ClspLon_ForceNodeRelease
+                        0x0000bddf   0x3c  Code  Gb  ClspAPI.o [1]
+ClspLon_InternalCreateFrame
+                        0x0000bcb3   0x32  Code  Gb  ClspAPI.o [1]
+ClspLon_SendAlive       0x0000bc25   0x2c  Code  Gb  ClspAPI.o [1]
+ClspLon_UpdateDomain    0x0000bb8d   0x52  Code  Gb  ClspAPI.o [1]
+Clsp_BindOnFrameReceived
+                        0x0000ad55   0x3c  Code  Gb  clspGeneric.o [1]
+Clsp_BindOnNodeAddressConflicted
+                        0x0000ad19   0x3c  Code  Gb  clspGeneric.o [1]
+Clsp_BindOnNodeAssignmentChanged
+                        0x0000acdd   0x3c  Code  Gb  clspGeneric.o [1]
+Clsp_ClearQueues        0x0000af51   0x70  Code  Gb  clspGeneric.o [1]
+Clsp_CreateFrame        0x0000b009   0x34  Code  Gb  clspGeneric.o [1]
+Clsp_EnqueueFrame       0x0000adbf   0xe2  Code  Gb  clspGeneric.o [1]
+Clsp_EnqueueLLFrame     0x0000ad91   0x2e  Code  Gb  clspGeneric.o [1]
+Clsp_GetSuggestedAddress
+                        0x0000b0e3    0x6  Code  Gb  clspGeneric.o [1]
+Clsp_InternalCreateFrame
+                        0x0000afcd   0x3c  Code  Gb  clspGeneric.o [1]
+Clsp_IsAssigned         0x0000b0f1    0x6  Code  Gb  clspGeneric.o [1]
+Clsp_IsInConflict       0x0000b0f7    0x6  Code  Gb  clspGeneric.o [1]
+Clsp_PopLinkLayerQueue  0x0000aea1   0x58  Code  Gb  clspGeneric.o [1]
+Clsp_PopQueue           0x0000aef9   0x58  Code  Gb  clspGeneric.o [1]
+Comm_FireMemoryRestore  0x000098f5   0x1e  Code  Gb  communication.o [1]
+Comm_FireMemoryWarning  0x000098d3   0x22  Code  Gb  communication.o [1]
+Comm_FireResultNotifier
+                        0x0000973f   0x14  Code  Gb  communication.o [1]
+Comm_Get16BitValue      0x000099a3    0xc  Code  Gb  communication.o [1]
+Comm_Get32BitValue      0x00009977   0x16  Code  Gb  communication.o [1]
+Comm_Init               0x0000a477   0x16  Code  Gb  communication.o [1]
+Comm_OnCrDataReceived   0x0000987d   0x56  Code  Gb  communication.o [1]
+Comm_OnCrOnlineStateChanged
+                        0x00009821   0x5c  Code  Gb  communication.o [1]
+Comm_OnDIPChanged       0x000097b9   0x1e  Code  Gb  communication.o [1]
+Comm_OnDSMStateChanged  0x000097d7   0x26  Code  Gb  communication.o [1]
+Comm_OnFrameReceived    0x0000a465   0x12  Code  Gb  communication.o [1]
+Comm_OnInputChanged     0x00009753   0x22  Code  Gb  communication.o [1]
+Comm_OnNodeAssigned     0x0000a449   0x1c  Code  Gb  communication.o [1]
+Comm_OnOutputChanged    0x00009797   0x22  Code  Gb  communication.o [1]
+Comm_OnOutputLogicStateChanged
+                        0x000097fd   0x22  Code  Gb  communication.o [1]
+Comm_OnSpecialInputChanged
+                        0x00009775   0x22  Code  Gb  communication.o [1]
+Comm_ProcessCommand     0x00009a79  0x9cc  Code  Gb  communication.o [1]
+Comm_RegisterCallbacks  0x00009913   0x64  Code  Gb  communication.o [1]
+Comm_ReportDeviceInfo   0x000099af   0x34  Code  Gb  communication.o [1]
+Comm_ReportFWVersion    0x000099e3   0x6e  Code  Gb  communication.o [1]
+Comm_SendACK            0x000096ed   0x26  Code  Gb  communication.o [1]
+Comm_SendNACK           0x00009715   0x2a  Code  Gb  communication.o [1]
+Comm_Set32BitValue      0x0000998d   0x16  Code  Gb  communication.o [1]
+ConceptRequest          0x00003c35   0x48  Code  Gb  CrCommunicator.o [1]
+CopyAll                 0x00005869   0x10  Code  Gb  baseTypes.o [1]
+CopySafe                0x00005815   0x54  Code  Gb  baseTypes.o [1]
+CrCommunicator_BindCountryCodeConfirmed
+                        0x00003aed   0x3c  Code  Gb  CrCommunicator.o [1]
+CrCommunicator_BindOnlineStateChanged
+                        0x00003a39   0x3c  Code  Gb  CrCommunicator.o [1]
+CrCommunicator_BindRawDataReceived
+                        0x00003a75   0x3c  Code  Gb  CrCommunicator.o [1]
+CrCommunicator_BindTamperReturn
+                        0x00003ab1   0x3c  Code  Gb  CrCommunicator.o [1]
+CrCommunicator_CheckReceptionTimeoutTask
+                        0x00004d01   0x92  Code  Gb  CrCommunicator.o [1]
+CrCommunicator_ConceptAndEnqueue
+                        0x00003c7d  0x172  Code  Gb  CrCommunicator.o [1]
+CrCommunicator_FireOnlineEvents
+                        0x00004f49   0x50  Code  Gb  CrCommunicator.o [1]
+CrCommunicator_GetCR    0x00003b29   0x1a  Code  Gb  CrCommunicator.o [1]
+CrCommunicator_Init     0x00004e4d   0xf0  Code  Gb  CrCommunicator.o [1]
+CrCommunicator_OnResponseRecieved
+                        0x000048a5  0x216  Code  Gb  CrCommunicator.o [1]
+CrCommunicator_PHDParsing
+                        0x00003df9  0x25a  Code  Gb  CrCommunicator.o [1]
+CrCommunicator_ReceiveTask
+                        0x00004abb    0xe  Code  Gb  CrCommunicator.o [1]
+CrCommunicator_RequestBegin
+                        0x00004add  0x220  Code  Gb  CrCommunicator.o [1]
+CrCommunicator_SendPollingMessage
+                        0x0000406d   0x24  Code  Gb  CrCommunicator.o [1]
+CrCommunicator_TransmitTask
+                        0x00004d99   0xaa  Code  Gb  CrCommunicator.o [1]
+CrNotify_CROnlineStateChanged
+                        0x0000c3b5   0x32  Code  Gb  crNotify.o [1]
+CrNotify_ClspNodeAddressConflicted
+                        0x0000c451   0x24  Code  Gb  crNotify.o [1]
+CrNotify_ClspNodeAssignmentChanged
+                        0x0000c3e7   0x6a  Code  Gb  crNotify.o [1]
+CrNotify_Init           0x0000c475   0x16  Code  Gb  crNotify.o [1]
+CrNotify_ShowCrInfo     0x0000c0dd  0x1e6  Code  Gb  crNotify.o [1]
+CrNotify_ShowLink       0x0000c2c9   0xde  Code  Gb  crNotify.o [1]
+CrNotify_ShowLinkText   0x0000c03d   0xa0  Code  Gb  crNotify.o [1]
+CrProtocol_GetBaudRateEnum
+                        0x00007239   0x68  Code  Gb  CrProtocol.o [1]
+CrQueue_AllocRequest    0x000071d9   0x1e  Code  Gb  CrQueue.o [1]
+CrQueue_Clear           0x00007025   0x4e  Code  Gb  CrQueue.o [1]
+CrQueue_Count           0x00007009   0x1c  Code  Gb  CrQueue.o [1]
+CrQueue_Enqueue         0x00007073   0xee  Code  Gb  CrQueue.o [1]
+CrQueue_Pop             0x00007161   0x6c  Code  Gb  CrQueue.o [1]
+Crc8                    0x0000020d   0x3e  Code  Gb  hashes.o [1]
+CtsInterruptHandler     0x0000863d   0x5c  Code  Gb  LdvSci.o [1]
+CurrentNmNdStatus       0x10001598    0x1  Data  Gb  ShortStackApi.o [1]
+CyclicIncrement         0x00007fa9   0x76  Code  Lc  LdvSci.o [1]
+DIP_GetFrom             0x000001f5   0x16  Code  Gb  DIPSwitch.o [1]
+DIP_Init                0x00000171   0x6a  Code  Gb  DIPSwitch.o [1]
+DMA_IRQHandler          0x0000020b         Code  Wk  cstartup_M.o [1]
+DSM_ActivateActuator    0x00000dbd   0x36  Code  Gb  dsm.o [1]
+DSM_ActivateOutput      0x000057e5   0x24  Code  Gb  dsmConfig.o [1]
+DSM_ActivateSpecialOutput
+                        0x00000dfd   0xf4  Code  Gb  dsm.o [1]
+DSM_AssignCRs           0x000008e9  0x232  Code  Gb  dsm.o [1]
+DSM_BindOnEnabledAlarmChanged
+                        0x0000500f    0x6  Code  Gb  dsmConfig.o [1]
+DSM_BindOnSpecialOutputAdded
+                        0x00005003    0x6  Code  Gb  dsmConfig.o [1]
+DSM_BindOnSpecialOutputRemoved
+                        0x00005009    0x6  Code  Gb  dsmConfig.o [1]
+DSM_BindOnStateChanged  0x00004ffd    0x6  Code  Gb  dsmConfig.o [1]
+DSM_BindOutputToInput   0x00005733   0x12  Code  Gb  dsmConfig.o [1]
+DSM_Callback            0x00000301   0x76  Code  Gb  dsm.o [1]
+DSM_CheckDoorSensorSabotage
+                        0x0000182f   0x3e  Code  Gb  dsm.o [1]
+DSM_CheckPushButton     0x0000150d  0x10e  Code  Gb  dsm.o [1]
+DSM_CheckSensor         0x00000ef1   0x66  Code  Gb  dsm.o [1]
+DSM_CheckSensors        0x0000186d   0xe6  Code  Gb  dsm.o [1]
+DSM_ConfigFrequency     0x0000577b   0x36  Code  Gb  dsmConfig.o [1]
+DSM_ConfigLevel         0x00005757   0x24  Code  Gb  dsmConfig.o [1]
+DSM_ConfigPulse         0x000057b1   0x2e  Code  Gb  dsmConfig.o [1]
+DSM_DeactivateSpecialOutputs
+                        0x000013d9   0x6a  Code  Gb  dsm.o [1]
+DSM_DoBinding           0x000011b7   0x1c  Code  Gb  dsm.o [1]
+DSM_EnableAlarms        0x000054fb   0x68  Code  Gb  dsmConfig.o [1]
+DSM_ForceUnlocked       0x00001675  0x176  Code  Gb  dsm.o [1]
+DSM_GetSignalForState   0x000017f9   0x36  Code  Gb  dsm.o [1]
+DSM_HandleUnlockedState
+                        0x00000861   0x60  Code  Lc  dsm.o [1]
+DSM_HostStateChanged    0x00000377   0x14  Code  Gb  dsm.o [1]
+DSM_InformCR            0x000004a9  0x2b8  Code  Gb  dsm.o [1]
+DSM_InformCRs           0x00000761   0x26  Code  Gb  dsm.o [1]
+DSM_Init                0x00005015   0xe6  Code  Gb  dsmConfig.o [1]
+DSM_InvokeIntrusionAlarm
+                        0x00005247   0x1c  Code  Gb  dsmConfig.o [1]
+DSM_IsAccessGranted     0x000014eb   0x1e  Code  Gb  dsm.o [1]
+DSM_IsCRAssigned        0x0000038b   0x22  Code  Gb  dsm.o [1]
+DSM_IsCRSuppressed      0x000003ad   0x3e  Code  Gb  dsm.o [1]
+DSM_LooseCR             0x00000805   0x58  Code  Gb  dsm.o [1]
+DSM_OnCRCountryCodeConfirmed
+                        0x00001071   0x1c  Code  Gb  dsm.o [1]
+DSM_OnCROnline          0x0000108d   0x16  Code  Gb  dsm.o [1]
+DSM_OnCRTamperReturn    0x00001055   0x16  Code  Gb  dsm.o [1]
+DSM_OnEnabledAlarmChanged
+                        0x100014f0    0x4  Data  Gb  dsmConfig.o [1]
+DSM_OnEnabledAlarmsChanged
+                        0x0000114d   0x6a  Code  Gb  dsm.o [1]
+DSM_OnSpecialOutputAdded
+                        0x100014e8    0x4  Data  Gb  dsmConfig.o [1]
+DSM_OnSpecialOutputAssigned
+                        0x000010a9   0x4e  Code  Gb  dsm.o [1]
+DSM_OnSpecialOutputDeassigned
+                        0x000010f7   0x4e  Code  Gb  dsm.o [1]
+DSM_OnSpecialOutputRemoved
+                        0x100014ec    0x4  Data  Gb  dsmConfig.o [1]
+DSM_OnStateChanged      0x100014e4    0x4  Data  Gb  dsmConfig.o [1]
+DSM_ProcessDoorOpenedState
+                        0x00001c81  0x1ca  Code  Gb  dsm.o [1]
+DSM_ProcessIntrusion    0x0000195d  0x11c  Code  Gb  dsm.o [1]
+DSM_ProcessIntrusionState
+                        0x00001e81   0x86  Code  Gb  dsm.o [1]
+DSM_ProcessLockedState  0x00001a79   0xe6  Code  Gb  dsm.o [1]
+DSM_ProcessLockingState
+                        0x00001e4b   0x32  Code  Gb  dsm.o [1]
+DSM_ProcessUnlockedState
+                        0x00001bdd   0x9e  Code  Gb  dsm.o [1]
+DSM_ProcessUnlockingState
+                        0x00001b65   0x78  Code  Gb  dsm.o [1]
+DSM_RemapBsiStates      0x000056d1   0x20  Code  Gb  dsmConfig.o [1]
+DSM_RemapDiStates       0x0000571d   0x16  Code  Gb  dsmConfig.o [1]
+DSM_ReportActivatorStatuses
+                        0x00000ffd   0x58  Code  Gb  dsm.o [1]
+DSM_SendCRRawCmd        0x00000787   0x2a  Code  Gb  dsm.o [1]
+DSM_SendImplicitCRCommand
+                        0x000003eb   0xb2  Code  Gb  dsm.o [1]
+DSM_SetBsiLevels        0x0000568f   0x12  Code  Gb  dsmConfig.o [1]
+DSM_SetBsiParameters    0x000056a1   0x30  Code  Gb  dsmConfig.o [1]
+DSM_SetBypassAlarm      0x00005451   0x78  Code  Gb  dsmConfig.o [1]
+DSM_SetDiParameters     0x000056f1   0x2c  Code  Gb  dsmConfig.o [1]
+DSM_SetElectricStrike   0x00005359   0xf8  Code  Gb  dsmConfig.o [1]
+DSM_SetImplicitCRCode   0x00000b21  0x29c  Code  Gb  dsm.o [1]
+DSM_SetLocks            0x00001621   0x48  Code  Gb  dsm.o [1]
+DSM_SetPushButton       0x0000517b   0x8c  Code  Gb  dsmConfig.o [1]
+DSM_SetSensor           0x00005263   0x90  Code  Gb  dsmConfig.o [1]
+DSM_SetSpecialOutput    0x00005581   0x82  Code  Gb  dsmConfig.o [1]
+DSM_SetTimming          0x00005563   0x1e  Code  Gb  dsmConfig.o [1]
+DSM_ShouldBeLockedByCrSettings
+                        0x000008c5   0x24  Code  Gb  dsm.o [1]
+DSM_SignalAccessGranted
+                        0x00000f57   0xa0  Code  Gb  dsm.o [1]
+DSM_Start               0x000011e5  0x1ee  Code  Gb  dsm.o [1]
+DSM_Stop                0x00001469   0x82  Code  Gb  dsm.o [1]
+DSM_SuppressCR          0x000007b1   0x50  Code  Gb  dsm.o [1]
+DSM_Task                0x00001f07   0x50  Code  Gb  dsm.o [1]
+DSM_UnbindOutputToInput
+                        0x00005745   0x12  Code  Gb  dsmConfig.o [1]
+DSM_UnsetActuator       0x000054c9   0x32  Code  Gb  dsmConfig.o [1]
+DSM_UnsetAll            0x000050fb   0x80  Code  Gb  dsmConfig.o [1]
+DSM_UnsetInput          0x00005669   0x26  Code  Gb  dsmConfig.o [1]
+DSM_UnsetPushButton     0x00005207   0x40  Code  Gb  dsmConfig.o [1]
+DSM_UnsetSensor         0x00005309   0x46  Code  Gb  dsmConfig.o [1]
+DSM_UnsetSpecialOutput  0x00005609   0x60  Code  Gb  dsmConfig.o [1]
+DebugMon_Handler        0x0000c8f1    0x4  Code  Gb  exceptionHandling.o [1]
+DelayedPollingTask      0x0000a941   0x1e  Code  Lc  LonControl.o [1]
+Delete                  0x0000012f   0x12  Code  Gb  dmHandler.o [1]
+DisableInterrupts       0x00007e61   0x20  Code  Gb  LdvSci.o [1]
+DisableReceiveInterrupt
+                        0x00007363   0x16  Code  Lc  uart.o [1]
+EnableInterrupts        0x00007e41   0x20  Code  Gb  LdvSci.o [1]
+EnableReceiveInterrupt  0x0000734d   0x16  Code  Lc  uart.o [1]
+FLASH_IRQHandler        0x0000020b         Code  Wk  cstartup_M.o [1]
+FindLevelFromValue      0x00002865   0x86  Code  Gb  Inputs.o [1]
+FireNodeAddressConflicted
+                        0x0000b045   0x28  Code  Gb  clspGeneric.o [1]
+FireNodeAssignmentChanged
+                        0x0000b075   0x2c  Code  Gb  clspGeneric.o [1]
+FireOnFrameReceived     0x0000b0a9   0x3a  Code  Gb  clspGeneric.o [1]
+FromBcdByte             0x0000721f   0x1a  Code  Gb  CrProtocol.o [1]
+GPIO_GetValue           0x00006a55   0x3e  Code  Gb  gpio.o [1]
+GPIO_Init               0x0000694f   0x34  Code  Gb  gpio.o [1]
+GPIO_IntClear           0x00006c19   0x32  Code  Gb  gpio.o [1]
+GPIO_IntDisable         0x00006ba1   0x2e  Code  Gb  gpio.o [1]
+GPIO_IntEnable          0x00006b73   0x2e  Code  Gb  gpio.o [1]
+GPIO_IntStatus          0x00006bd5   0x36  Code  Gb  gpio.o [1]
+GPIO_SetDir             0x00006983   0x96  Code  Gb  gpio.o [1]
+GPIO_SetInterrupt       0x00006a93   0xe0  Code  Gb  gpio.o [1]
+GPIO_SetValue           0x00006a19   0x3c  Code  Gb  gpio.o [1]
+GetExtBoardType         0x000061e9    0x6  Code  Gb  IOExpansion.o [1]
+GetFilterValue          0x000028fd   0x72  Code  Gb  Inputs.o [1]
+HEAP$$Base              0x10001ba0          --   Gb  - Linker created -
+HEAP$$Limit             0x10001f40          --   Gb  - Linker created -
+HardFault_Handler       0x0000c8d5    0xa  Code  Gb  exceptionHandling.o [1]
+I2C_ClearFlag           0x00007dc7    0x6  Code  Gb  i2c.o [1]
+I2C_DeInit              0x00007cbd   0x14  Code  Gb  i2c.o [1]
+I2C_GetByte             0x00007db3    0x6  Code  Gb  i2c.o [1]
+I2C_GetI2CStatus        0x00007db9    0x6  Code  Gb  i2c.o [1]
+I2C_IRQHandler          0x000064f9  0x1ac  Code  Gb  IOExpansion.o [1]
+I2C_Init                0x00007cf1   0xba  Code  Gb  i2c.o [1]
+I2C_SendByte            0x00007dab    0x8  Code  Gb  i2c.o [1]
+I2C_SetClock            0x00007cd1   0x20  Code  Gb  i2c.o [1]
+I2C_SetFlag             0x00007dbf    0x8  Code  Gb  i2c.o [1]
+IAP_CopyRAMToFlash      0x00007b95   0x32  Code  Gb  iap.o [1]
+IAP_PrepareSector       0x00007b6d   0x28  Code  Gb  iap.o [1]
+IAP_ReadSerialNumber    0x00007bc7   0xc2  Code  Gb  iap.o [1]
+IOExp_ReadFuse          0x000063b1   0x34  Code  Gb  IOExpansion.o [1]
+IOExp_ReadPower         0x000063f9   0x34  Code  Gb  IOExpansion.o [1]
+IOExp_SetLed            0x000062a1   0x16  Code  Gb  IOExpansion.o [1]
+IOExp_SetLedState       0x000062b7   0x98  Code  Gb  IOExpansion.o [1]
+IOExp_SetOutput         0x0000634f   0x5e  Code  Gb  IOExpansion.o [1]
+InitHigherOutputs       0x000061a9   0x40  Code  Gb  IOExpansion.o [1]
+InitIOExpansion         0x00006495   0x58  Code  Gb  IOExpansion.o [1]
+InitLowInputLEDs        0x0000612d   0x3c  Code  Gb  IOExpansion.o [1]
+InitLowerOutputs        0x00006169   0x40  Code  Gb  IOExpansion.o [1]
+InputLeds_DisableAutoNotification
+                        0x0000676f   0x2e  Code  Gb  InputLeds.o [1]
+InputLeds_EnableAutoNotification
+                        0x0000679d   0x30  Code  Gb  InputLeds.o [1]
+InputLeds_Init          0x000068b9   0x6e  Code  Gb  InputLeds.o [1]
+InputLeds_InternalSetLed
+                        0x000066c9   0x3c  Code  Gb  InputLeds.o [1]
+InputLeds_SetState      0x00006705   0x6a  Code  Gb  InputLeds.o [1]
+InputLeds_Task          0x00006827   0x92  Code  Gb  InputLeds.o [1]
+InputsLeds_UpdateLEDs   0x000067cd   0x5a  Code  Gb  InputLeds.o [1]
+Inputs_ActivateOutputs  0x000029f1   0x9e  Code  Gb  Inputs.o [1]
+Inputs_BindOnDIPChanged
+                        0x00001f71    0x6  Code  Gb  Inputs.o [1]
+Inputs_BindOnInputChanged
+                        0x00001f65    0x6  Code  Gb  Inputs.o [1]
+Inputs_BindOnSpecialInputChanged
+                        0x00001f6b    0x6  Code  Gb  Inputs.o [1]
+Inputs_BindOutputToInput
+                        0x0000242d   0xd2  Code  Gb  Inputs.o [1]
+Inputs_FireAllStatuses  0x00002031   0x80  Code  Gb  Inputs.o [1]
+Inputs_FireInputChange  0x00001f77   0x3a  Code  Gb  Inputs.o [1]
+Inputs_Init             0x00002605  0x256  Code  Gb  Inputs.o [1]
+Inputs_OnDIPChanged     0x10001458    0x4  Data  Gb  Inputs.o [1]
+Inputs_OnInputChanged   0x10001450    0x4  Data  Gb  Inputs.o [1]
+Inputs_OnSpecialInputChanged
+                        0x10001454    0x4  Data  Gb  Inputs.o [1]
+Inputs_RemapBsiStates   0x0000224f   0xa8  Code  Gb  Inputs.o [1]
+Inputs_RemapDiStates    0x00002399   0x8a  Code  Gb  Inputs.o [1]
+Inputs_ResetInput       0x000025cb   0x3a  Code  Gb  Inputs.o [1]
+Inputs_SetBsiLevels     0x0000213b   0x52  Code  Gb  Inputs.o [1]
+Inputs_SetBsiParameters
+                        0x000021a5   0xaa  Code  Gb  Inputs.o [1]
+Inputs_SetDefaultBSI    0x000020b1   0x34  Code  Gb  Inputs.o [1]
+Inputs_SetDefaultDI     0x000020e5   0x20  Code  Gb  Inputs.o [1]
+Inputs_SetDiParameters  0x000022fd   0x92  Code  Gb  Inputs.o [1]
+Inputs_SetReportedInputs
+                        0x00001fb1   0x3c  Code  Gb  Inputs.o [1]
+Inputs_SetReportedInputsEx
+                        0x00001fed    0xe  Code  Gb  Inputs.o [1]
+Inputs_Task             0x00002b21  0x442  Code  Gb  Inputs.o [1]
+Inputs_UnbindAll        0x000025a1   0x2a  Code  Gb  Inputs.o [1]
+Inputs_UnbindOutputToInput
+                        0x00002509   0x94  Code  Gb  Inputs.o [1]
+Inputs_UnsetInput       0x00002105   0x36  Code  Gb  Inputs.o [1]
+Inputs_UnsetReportedInputs
+                        0x00001ffb   0x36  Code  Gb  Inputs.o [1]
+LdvAllocateMsg          0x0000825d   0x70  Code  Gb  LdvSci.o [1]
+LdvFlushMsgs            0x00008389   0x92  Code  Gb  LdvSci.o [1]
+LdvGetMsg               0x0000819d   0x60  Code  Gb  LdvSci.o [1]
+LdvInit                 0x0000801f  0x120  Code  Gb  LdvSci.o [1]
+LdvPutMsg               0x000082d1   0x3a  Code  Gb  LdvSci.o [1]
+LdvPutMsgBlocking       0x00008311   0x6c  Code  Gb  LdvSci.o [1]
+LdvReleaseMsg           0x00008205   0x4c  Code  Gb  LdvSci.o [1]
+LdvReset                0x0000814d   0x48  Code  Gb  LdvSci.o [1]
+LonCtrl_Init            0x0000a4a5   0xe0  Code  Gb  LonControl.o [1]
+LonCtrl_SendTask        0x0000a80d  0x108  Code  Gb  LonControl.o [1]
+LonCtrl_Task            0x0000a585  0x1b2  Code  Gb  LonControl.o [1]
+LonDriverReset          0x00007e89    0x8  Code  Gb  LdvSci.o [1]
+LonDriverWokeUp         0x00007e81    0x8  Code  Gb  LdvSci.o [1]
+LonEventHandler         0x0000b3c9  0x4e8  Code  Gb  ShortStackApi.o [1]
+LonGetAppInitData       0x0000be3f    0x4  Code  Gb  ShortStackDev.o [1]
+LonGetCurrentNvSize     0x0000bfff    0xe  Code  Gb  ShortStackHandlers.o [1]
+LonGetMtTable           0x0000be47    0x4  Code  Gb  ShortStackDev.o [1]
+LonGetNvTable           0x0000be43    0x4  Code  Gb  ShortStackDev.o [1]
+LonGetSiData            0x0000be35    0xa  Code  Gb  ShortStackDev.o [1]
+LonGetUniqueId          0x0000b97d   0x22  Code  Gb  ShortStackApi.o [1]
+LonGoConfigured         0x0000bb71   0x1a  Code  Gb  ShortStackApi.o [1]
+LonGoConfiguredReceived
+                        0x0000c035    0x8  Code  Gb  ShortStackHandlers.o [1]
+LonInit                 0x0000b2e5   0xe0  Code  Gb  ShortStackApi.o [1]
+LonMsgArrived           0x0000c00d   0x20  Code  Gb  ShortStackHandlers.o [1]
+LonMsgCompleted         0x0000c02d    0x8  Code  Gb  ShortStackHandlers.o [1]
+LonResetOccurred        0x0000bff7    0x8  Code  Gb  ShortStackHandlers.o [1]
+LonSendMsg              0x0000b9a9  0x122  Code  Gb  ShortStackApi.o [1]
+LonSendResponse         0x0000b8b1   0xcc  Code  Gb  ShortStackApi.o [1]
+LonUpdateDomainConfig   0x0000bacb   0x9e  Code  Gb  ShortStackApi.o [1]
+MemManage_Handler       0x0000c8e1    0x4  Code  Gb  exceptionHandling.o [1]
+NMI_Handler             0x0000020b         Code  Wk  cstartup_M.o [1]
+NVIC_DisableIRQ         0x00007e33    0xe  Code  Lc  LdvSci.o [1]
+NVIC_DisableIRQ         0x00007caf    0xe  Code  Lc  i2c.o [1]
+NVIC_DisableIRQ         0x00005cc1    0xe  Code  Lc  systemInfo.o [1]
+NVIC_DisableIRQ         0x000072b3    0xe  Code  Lc  uart.o [1]
+NVIC_EnableIRQ          0x00007e25    0xe  Code  Lc  LdvSci.o [1]
+NVIC_EnableIRQ          0x00006ccd    0xe  Code  Lc  adc.o [1]
+NVIC_EnableIRQ          0x00006941    0xe  Code  Lc  gpio.o [1]
+NVIC_EnableIRQ          0x00007ca1    0xe  Code  Lc  i2c.o [1]
+NVIC_EnableIRQ          0x0000ab11    0xe  Code  Lc  timer32.o [1]
+NVIC_EnableIRQ          0x000072a5    0xe  Code  Lc  uart.o [1]
+NVIC_SetPriority        0x00005961   0x8c  Code  Lc  sysTick.o [1]
+NVIC_SetPriority        0x0000ab1f   0x8c  Code  Lc  timer32.o [1]
+NVIC_SetPriority        0x000072c1   0x8c  Code  Lc  uart.o [1]
+NVIC_SystemReset        0x0000c8bd    0xe  Code  Lc  exceptionHandling.o [1]
+NVIC_SystemReset        0x00005ccf    0xe  Code  Lc  systemInfo.o [1]
+New                     0x00000125    0xa  Code  Gb  dmHandler.o [1]
+OnLonDriverReset        0x0000a7f3    0xe  Code  Gb  LonControl.o [1]
+OnLonDriverWokeUp       0x0000a7d5   0x1e  Code  Gb  LonControl.o [1]
+OnLonGoConfiguredReceived
+                        0x0000a737   0x16  Code  Gb  LonControl.o [1]
+OnLonMsgArrived         0x0000a969  0x16a  Code  Gb  LonControl.o [1]
+OnLonMsgCompleted       0x0000a919   0x28  Code  Gb  LonControl.o [1]
+OnResetAsserted         0x0000a74d    0x8  Code  Gb  LonControl.o [1]
+OnResetOccurred         0x0000a761   0x70  Code  Gb  LonControl.o [1]
+OnRxData                0x000086ad  0x154  Code  Gb  LdvSci.o [1]
+OnTxReady               0x0000842d  0x210  Code  Gb  LdvSci.o [1]
+OneMsTimerHandler       0x00008881  0x1d2  Code  Gb  LdvSci.o [1]
+Outputs_ActivateOutput  0x00003535   0xd8  Code  Gb  Outputs.o [1]
+Outputs_BindOnOutputChanged
+                        0x00002f79    0x6  Code  Gb  Outputs.o [1]
+Outputs_BindOnOutputLogicStateChanged
+                        0x00002f7f    0x6  Code  Gb  Outputs.o [1]
+Outputs_ConfigFrequency
+                        0x000033c7   0xa0  Code  Gb  Outputs.o [1]
+Outputs_ConfigLevel     0x00003361   0x66  Code  Gb  Outputs.o [1]
+Outputs_ConfigPulse     0x0000346d   0x94  Code  Gb  Outputs.o [1]
+Outputs_EnsureMinDelayToOn
+                        0x00003501   0x30  Code  Gb  Outputs.o [1]
+Outputs_FireOutputChanged
+                        0x00002f85   0x20  Code  Gb  Outputs.o [1]
+Outputs_FireOutputLogicChanged
+                        0x00002fa5   0x20  Code  Gb  Outputs.o [1]
+Outputs_Init            0x000031cd  0x136  Code  Gb  Outputs.o [1]
+Outputs_IsActivated     0x00003619   0x12  Code  Gb  Outputs.o [1]
+Outputs_OnOutputChanged
+                        0x10001480    0x4  Data  Gb  Outputs.o [1]
+Outputs_OnOutputLogicStateChanged
+                        0x10001484    0x4  Data  Gb  Outputs.o [1]
+Outputs_ProcessState    0x0000362b  0x1ac  Code  Gb  Outputs.o [1]
+Outputs_ReportCurrentLogicState
+                        0x00002fc5   0x18  Code  Gb  Outputs.o [1]
+Outputs_SetBlockedOutputsEx
+                        0x00003175   0x42  Code  Gb  Outputs.o [1]
+Outputs_SetOutput       0x0000310f   0x66  Code  Gb  Outputs.o [1]
+Outputs_SetReportedOutputs
+                        0x00002fdd   0x5e  Code  Gb  Outputs.o [1]
+Outputs_SetReportedOutputsEx
+                        0x0000303b    0xe  Code  Gb  Outputs.o [1]
+Outputs_SetReportedOutputsLogic
+                        0x0000307f   0x4c  Code  Gb  Outputs.o [1]
+Outputs_SetReportedOutputsLogicEx
+                        0x000030cb    0xe  Code  Gb  Outputs.o [1]
+Outputs_Task            0x000037dd  0x256  Code  Gb  Outputs.o [1]
+Outputs_TurnAllOff      0x00003341   0x20  Code  Gb  Outputs.o [1]
+Outputs_TurnOff         0x00003303   0x3e  Code  Gb  Outputs.o [1]
+Outputs_UnsetReportedOutputs
+                        0x00003049   0x36  Code  Gb  Outputs.o [1]
+Outputs_UnsetReportedOutputsLogic
+                        0x000030d9   0x36  Code  Gb  Outputs.o [1]
+PIO0_IRQHandler         0x00006c99   0x34  Code  Gb  gpio.o [1]
+PIO1_IRQHandler         0x0000020b         Code  Wk  cstartup_M.o [1]
+PIO2_IRQHandler         0x0000020b         Code  Wk  cstartup_M.o [1]
+PMU_IRQHandler          0x0000020b         Code  Wk  cstartup_M.o [1]
+PendSV_Handler          0x0000c8f5    0x4  Code  Gb  exceptionHandling.o [1]
+ProcessI2CData          0x00006105   0x28  Code  Gb  IOExpansion.o [1]
+RTC_IRQHandler          0x0000020b         Code  Wk  cstartup_M.o [1]
+Region$$Table$$Base     0x0000c948          --   Gb  - Linker created -
+Region$$Table$$Limit    0x0000c96c          --   Gb  - Linker created -
+ResetInterruptHandler   0x00007e91   0x2a  Code  Gb  LdvSci.o [1]
+ResetMicroServer        0x00007ebb   0x3e  Code  Gb  LdvSci.o [1]
+ResolveExtensionBoardType
+                        0x000061ef   0xb2  Code  Gb  IOExpansion.o [1]
+ResponseData            0x1000116c   0x34  Data  Gb  ShortStackApi.o [1]
+ResumeSci               0x00007f5f   0x4a  Code  Gb  LdvSci.o [1]
+SSP0_IRQHandler         0x0000020b         Code  Wk  cstartup_M.o [1]
+SVC_Handler             0x0000c8ed    0x4  Code  Gb  exceptionHandling.o [1]
+SendLocal               0x0000bf77   0x48  Code  Gb  ShortStackInternal.o [1]
+SendNvPollResponse      0x0000be93   0xe4  Code  Gb  ShortStackInternal.o [1]
+SleepMs                 0x0000aaf1   0x1a  Code  Gb  Processor.o [1]
+StartApplication        0x00007e05         Code  Gb  StartApplication.o [1]
+StartBootloader         0x00007e11         Code  Gb  StartApplication.o [1]
+SuspendSci              0x00007ef9   0x66  Code  Gb  LdvSci.o [1]
+SysInfo_DelayTask       0x00006051   0x20  Code  Gb  systemInfo.o [1]
+SysInfo_DelayingTask    0x00005f85   0x28  Code  Gb  systemInfo.o [1]
+SysInfo_DisableAllInterrupts
+                        0x00005fbd   0x84  Code  Gb  systemInfo.o [1]
+SysInfo_GetBootloaderVersion
+                        0x00006075   0x44  Code  Gb  systemInfo.o [1]
+SysInfo_GetCRPLevel     0x00005d5d   0x36  Code  Gb  systemInfo.o [1]
+SysInfo_GetInputCount   0x00005d93    0x6  Code  Gb  systemInfo.o [1]
+SysInfo_GetOutputCount  0x00005d99    0x6  Code  Gb  systemInfo.o [1]
+SysInfo_Init            0x00005cdd    0xa  Code  Gb  systemInfo.o [1]
+SysInfo_InitLEDs        0x00005d9f   0x30  Code  Gb  systemInfo.o [1]
+SysInfo_ResetToBootloaderDelayed
+                        0x00006045    0xc  Code  Gb  systemInfo.o [1]
+SysInfo_RestartDCUDelayed
+                        0x00005fb5    0x8  Code  Gb  systemInfo.o [1]
+SysInfo_SetCRPLevel     0x00005d07   0x56  Code  Gb  systemInfo.o [1]
+SysInfo_SetInputCount   0x00005ce7   0x10  Code  Gb  systemInfo.o [1]
+SysInfo_SetOutputCount  0x00005cf7   0x10  Code  Gb  systemInfo.o [1]
+SysInfo_SignalAddressConflict
+                        0x00005e93   0x56  Code  Gb  systemInfo.o [1]
+SysInfo_SignalAddressConflictTask
+                        0x00005e35   0x5e  Code  Gb  systemInfo.o [1]
+SysInfo_SignalConnectionDown
+                        0x00005ef1   0x5c  Code  Gb  systemInfo.o [1]
+SysInfo_SignalConnectionDownTask
+                        0x00005dcf   0x4c  Code  Gb  systemInfo.o [1]
+SysInfo_StopSignalling  0x00005f4d   0x20  Code  Gb  systemInfo.o [1]
+SysInfo_SwitchAll       0x00005e1b   0x1a  Code  Gb  systemInfo.o [1]
+SysTick_Config          0x000059ed   0x32  Code  Lc  sysTick.o [1]
+SysTick_GetElapsedTime  0x00005aa9   0x2a  Code  Gb  sysTick.o [1]
+SysTick_GetHour         0x00005ad5   0x10  Code  Gb  sysTick.o [1]
+SysTick_GetMinute       0x00005ae5   0x18  Code  Gb  sysTick.o [1]
+SysTick_GetSecond       0x00005afd   0x10  Code  Gb  sysTick.o [1]
+SysTick_GetTickCount    0x00005aa3    0x6  Code  Gb  sysTick.o [1]
+SysTick_Handler         0x00005a1f   0x62  Code  Gb  sysTick.o [1]
+SysTick_InitMainTimer   0x00005a81   0x22  Code  Gb  sysTick.o [1]
+SysTick_SetTime         0x00005b0d   0x30  Code  Gb  sysTick.o [1]
+SystemInit              0x0000b1d3   0x9c  Code  Gb  system_LPC122x.o [1]
+SystemPLL_Setup         0x0000b145   0x8e  Code  Gb  system_LPC122x.o [1]
+System_RequestUpgrade   0x0000b26f    0x8  Code  Gb  system_LPC122x.o [1]
+Tasks_IncrementCounter  0x00005c29   0x30  Code  Gb  Tasks.o [1]
+Tasks_Register          0x00005b6d   0x86  Code  Gb  Tasks.o [1]
+Tasks_Run               0x00005c59   0x60  Code  Gb  Tasks.o [1]
+Tasks_Unregister        0x00005bf3   0x36  Code  Gb  Tasks.o [1]
+Test_CardGeneratorTask  0x00008dd5  0x130  Code  Gb  testing.o [1]
+Test_CheckInputsStatus  0x00008bcd   0x7a  Code  Gb  testing.o [1]
+Test_FireIOTestOk       0x00008abd   0x1a  Code  Gb  testing.o [1]
+Test_FireIOTestProgressNotifier
+                        0x00008a81   0x1e  Code  Gb  testing.o [1]
+Test_FireIOTestTimeout  0x00008a9f   0x1e  Code  Gb  testing.o [1]
+Test_GetRandomValue     0x00008d71   0x48  Code  Gb  testing.o [1]
+Test_InitRandomGenerator
+                        0x00008d3d   0x28  Code  Gb  testing.o [1]
+Test_InputsTestTask     0x00008c49   0xf4  Code  Gb  testing.o [1]
+Test_StartIOTest        0x00008ad7   0xf6  Code  Gb  testing.o [1]
+Test_ToggleADCGenerator
+                        0x00008f5d   0x4a  Code  Gb  testing.o [1]
+Test_ToggleCardGenerator
+                        0x00008f0d   0x4c  Code  Gb  testing.o [1]
+Timer32_Enable          0x0000ac19   0x18  Code  Gb  timer32.o [1]
+Timer32_Init            0x0000ac31   0x6a  Code  Gb  timer32.o [1]
+ToBcdByte               0x000071f7   0x28  Code  Gb  CrProtocol.o [1]
+UART0_IRQHandler        0x00008801   0x66  Code  Gb  LdvSci.o [1]
+UART1_IRQHandler        0x00007391   0xb0  Code  Gb  uart.o [1]
+UART_CalculateFDRValues
+                        0x000076e5   0xe8  Code  Gb  uart.o [1]
+UART_ClearInterrupts    0x000077e5   0x12  Code  Gb  uart.o [1]
+UART_FlushData          0x000074f9   0xf4  Code  Gb  uart.o [1]
+UART_GetBaudRate        0x00007379   0x18  Code  Gb  uart.o [1]
+UART_Init               0x000077f9  0x180  Code  Gb  uart.o [1]
+UART_Receive            0x00007611   0xbe  Code  Gb  uart.o [1]
+UART_Send               0x00007441   0xa4  Code  Gb  uart.o [1]
+UsageFault_Handler      0x0000c8e9    0x4  Code  Gb  exceptionHandling.o [1]
+VerifyNv                0x0000be5d   0x36  Code  Gb  ShortStackInternal.o [1]
+WAKE_UP0_IRQHandler     0x0000020b         Code  Wk  cstartup_M.o [1]
+WAKE_UP10_IRQHandler    0x0000020b         Code  Wk  cstartup_M.o [1]
+WAKE_UP11_IRQHandler    0x0000020b         Code  Wk  cstartup_M.o [1]
+WAKE_UP1_IRQHandler     0x0000020b         Code  Wk  cstartup_M.o [1]
+WAKE_UP2_IRQHandler     0x0000020b         Code  Wk  cstartup_M.o [1]
+WAKE_UP3_IRQHandler     0x0000020b         Code  Wk  cstartup_M.o [1]
+WAKE_UP4_IRQHandler     0x0000020b         Code  Wk  cstartup_M.o [1]
+WAKE_UP5_IRQHandler     0x0000020b         Code  Wk  cstartup_M.o [1]
+WAKE_UP6_IRQHandler     0x0000020b         Code  Wk  cstartup_M.o [1]
+WAKE_UP7_IRQHandler     0x0000020b         Code  Wk  cstartup_M.o [1]
+WAKE_UP8_IRQHandler     0x0000020b         Code  Wk  cstartup_M.o [1]
+WAKE_UP9_IRQHandler     0x0000020b         Code  Wk  cstartup_M.o [1]
+WDT_IRQHandler          0x0000020b         Code  Wk  cstartup_M.o [1]
+WD_Kick                 0x00007b2d   0x24  Code  Gb  watchdog.o [1]
+WD_MainThread           0x00007ae5   0x3c  Code  Gb  watchdog.o [1]
+WD_Start                0x00007b21    0xc  Code  Gb  watchdog.o [1]
+WriteNvLocal            0x0000bfbf   0x38  Code  Gb  ShortStackInternal.o [1]
+_ADCValue               0x1000112c   0x40  Data  Gb  adc.o [1]
+_I2C_InitStructure      0x100012c0   0x10  Data  Lc  IOExpansion.o [1]
+_I2C_MasterBuffer       0x1000136c    0xc  Data  Gb  IOExpansion.o [1]
+_I2C_MasterState        0x10001597    0x1  Data  Gb  IOExpansion.o [1]
+_I2C_SlaveBuffer        0x10001378    0xc  Data  Gb  IOExpansion.o [1]
+_RdIndex                0x10001434    0x4  Data  Gb  IOExpansion.o [1]
+_ReadLength             0x1000142c    0x4  Data  Gb  IOExpansion.o [1]
+_UART0_RxBuffer         0x10000a60  0x100  Data  Gb  uart.o [1]
+_UART0_RxCount          0x10001570    0x4  Data  Gb  uart.o [1]
+_UART0_Timestamp        0x10001578    0x4  Data  Gb  uart.o [1]
+_UART0_TxBuffer         0x10000b60  0x100  Data  Gb  uart.o [1]
+_UART0_TxCount          0x10001574    0x4  Data  Gb  uart.o [1]
+_UART1_RxBuffer         0x10000c60  0x100  Data  Gb  uart.o [1]
+_UART1_RxCount          0x10001580    0x4  Data  Gb  uart.o [1]
+_UART1_Status           0x1000157c    0x4  Data  Gb  uart.o [1]
+_UART1_Timestamp        0x10001588    0x4  Data  Gb  uart.o [1]
+_UART1_TxBuffer         0x10000d60  0x100  Data  Gb  uart.o [1]
+_UART1_TxCount          0x10001584    0x4  Data  Gb  uart.o [1]
+_WrIndex                0x10001438    0x4  Data  Gb  IOExpansion.o [1]
+_WriteLength            0x10001430    0x4  Data  Gb  IOExpansion.o [1]
+__aeabi_cfcmple         0x00009291         Code  Gb  FltCmpLe.o [4]
+__aeabi_cfrcmple        0x00009451         Code  Gb  FltCmpGe.o [4]
+__aeabi_d2f             0x0000922f         Code  Gb  DblToFlt.o [4]
+__aeabi_dadd            0x00009087         Code  Gb  DblAddSub.o [4]
+__aeabi_f2d             0x00009055         Code  Gb  FltToDbl.o [4]
+__aeabi_f2iz            0x00009415         Code  Gb  FltToS32.o [4]
+__aeabi_f2uiz           0x00008fd1         Code  Gb  FltToU32.o [4]
+__aeabi_fadd            0x00009479         Code  Gb  FltAddSub.o [4]
+__aeabi_fdiv            0x0000936b         Code  Gb  FltDiv.o [4]
+__aeabi_fmul            0x000092b7         Code  Gb  FltMul.o [4]
+__aeabi_fsub            0x000094e9         Code  Gb  FltAddSub.o [4]
+__aeabi_idiv            0x000079d1         Code  Gb  I32DivMod.o [5]
+__aeabi_idivmod         0x000079d1         Code  Gb  I32DivMod.o [5]
+__aeabi_memcpy          0x00008ff9         Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy4         0x00009021         Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy8         0x00009021         Code  Gb  ABImemcpy.o [5]
+__aeabi_ui2f            0x0000024d         Code  Gb  I32ToFlt.o [4]
+__aeabi_uidiv           0x000079f9         Code  Gb  I32DivMod.o [5]
+__aeabi_uidivmod        0x000079f9         Code  Gb  I32DivMod.o [5]
+__cexit_clearlocks      0x0000c9c7         Code  Gb  cexit.o [5]
+__cmain                 0x0000c9a5         Code  Gb  cmain.o [5]
+__cstart_clearlocks     0x0000ca94         Data  Gb  cstart_clearlocks.o [5]
+__data_Aldata           0x100013f8    0x8  Data  Gb  xxmemxmalloc.o [3]
+__data_GetMemChunk      0x0000b11d   0x28  Code  Gb  xgetmemchunk.o [3]
+__data_memzero          0x0000026b   0x12  Code  Gb  xxmemxmemzero.o [3]
+__exit                  0x0000c9d5   0x14  Code  Gb  exit.o [6]
+__iar_Locksyslock       0x0000968b   0x46  Code  Gb  xsyslock.o [3]
+__iar_SB                0x0000ca94         Data  Gb  bwt_init3c.o [5]
+__iar_Unlocksyslock     0x000096d1   0x16  Code  Gb  xsyslock.o [3]
+__iar_clearlocks        0x00009659   0x32  Code  Gb  xsyslock.o [3]
+__iar_copy_init3        0x00000141   0x2e  Code  Gb  copy_init3.o [5]
+__iar_data_init3        0x0000027d   0x2c  Code  Gb  data_init3.o [5]
+__iar_program_start     0x0000ca51         Code  Gb  cstartup_M.o [5]
+__iar_ui2f              0x00000251         Code  Gb  I32ToFlt.o [4]
+__iar_zero_init3        0x0000c921   0x28  Code  Gb  zero_init3.o [5]
+__vector_table          0x00000000         Data  Gb  cstartup_M.o [1]
+__vector_table_0x1c     0x0000001c         Data  Gb  cstartup_M.o [1]
+_adcContext             0x10001390    0xc  Data  Gb  adc.o [1]
+_adcGenMaxInterval      0x100014b0    0x4  Data  Gb  adc.o [1]
+_adcGenMinInterval      0x100014ac    0x4  Data  Gb  adc.o [1]
+_adcIsGeneratorInit     0x100014a8    0x4  Data  Gb  adc.o [1]
+_adcRandomContext       0x100011a0   0x30  Data  Gb  adc.o [1]
+_adcValid               0x100014a4    0x4  Data  Gb  adc.o [1]
+_blockedOutputs         0x1000147c    0x4  Data  Gb  Outputs.o [1]
+_breakTimer             0x100013d8    0x8  Data  Gb  InputLeds.o [1]
+_call_main              0x0000c9b1         Code  Gb  cmain.o [5]
+_cardCount              0x100014d0    0x4  Data  Gb  communication.o [1]
+_cardGenContext         0x100012ac   0x14  Data  Gb  testing.o [1]
+_cardGenContextInit     0x1000154c    0x4  Data  Gb  testing.o [1]
+_cardReaders            0x10000e60   0xa0  Data  Gb  CrCommunicator.o [1]
+_clockSource            0x10000014    0x4  Data  Gb  system_LPC122x.o [1]
+_clspFrameForPossibleRetry
+                        0x100014c4    0x4  Data  Gb  clspGeneric.o [1]
+_clspInConflict         0x100014c0    0x4  Data  Gb  clspGeneric.o [1]
+_clspIsAssigned         0x100014bc    0x4  Data  Gb  clspGeneric.o [1]
+_clspLogicalAddress     0x100014b8    0x4  Data  Gb  clspGeneric.o [1]
+_clspSuggestedAddress   0x100014b4    0x4  Data  Gb  clspGeneric.o [1]
+_clspTxCount            0x100014c8    0x4  Data  Gb  clspGeneric.o [1]
+_clspTxLLCount          0x100014cc    0x4  Data  Gb  clspGeneric.o [1]
+_clspTxLLQueue          0x1000121c   0x20  Data  Gb  clspGeneric.o [1]
+_clspTxQueue            0x10000f8c   0x80  Data  Gb  clspGeneric.o [1]
+_crActualSizes          0x100013c0    0x8  Data  Gb  CrQueue.o [1]
+_crCommFlags            0x10001404    0x4  Data  Gb  CrCommunicator.o [1]
+_crFlashUploadRetries   0x10001424    0x4  Data  Gb  CrCommunicator.o [1]
+_crMaxQueueCount        0x10001428    0x4  Data  Gb  CrQueue.o [1]
+_crOnlineAssigned       0x100014e0    0x4  Data  Gb  dsm.o [1]
+_crPollingState         0x10000000    0x4  Data  Gb  CrCommunicator.o [1]
+_crRequests             0x100010dc   0x50  Data  Gb  CrQueue.o [1]
+_crResponseMessage      0x10001078   0x64  Data  Gb  CrCommunicator.o [1]
+_crXtextPlacement       0x0000ca90    0x4  Data  Gb  crNotify.o [1]
+_defaultBSILevels       0x10001384    0xc  Data  Gb  Inputs.o [1]
+_defaultDILevel         0x1000144c    0x4  Data  Gb  Inputs.o [1]
+_disableAutoNotification
+                        0x10000004    0x4  Data  Gb  InputLeds.o [1]
+_domainContext          0x1000123c   0x18  Data  Gb  ClspAPI.o [1]
+_dsmConfig              0x10000f00   0x8c  Data  Gb  dsmConfig.o [1]
+_dsmIsRunning           0x100014d4    0x4  Data  Gb  dsm.o [1]
+_dsmMachine             0x100011f8   0x24  Data  Gb  dsm.o [1]
+_eventCountryCodeConfirmed
+                        0x10001360    0xc  Data  Gb  CrCommunicator.o [1]
+_eventKeyPressed        0x1000133c    0xc  Data  Gb  CrCommunicator.o [1]
+_eventOnFrameReceived   0x100013a8    0xc  Data  Gb  clspGeneric.o [1]
+_eventOnNodeAddressConflicted
+                        0x100013b4    0xc  Data  Gb  clspGeneric.o [1]
+_eventOnNodeAssignmentChanged
+                        0x1000139c    0xc  Data  Gb  clspGeneric.o [1]
+_eventOnlineStateChanged
+                        0x10001330    0xc  Data  Gb  CrCommunicator.o [1]
+_eventRawDataReceived   0x10001348    0xc  Data  Gb  CrCommunicator.o [1]
+_eventTamperReturn      0x10001354    0xc  Data  Gb  CrCommunicator.o [1]
+_exit                   0x0000c9c5         Code  Gb  cexit.o [5]
+_extensionBoardType     0x10001596    0x1  Data  Gb  IOExpansion.o [1]
+_filterTable            0x100012f0   0x10  Data  Gb  Inputs.o [1]
+_iap_command            0x10001254   0x18  Data  Gb  iap.o [1]
+_iap_return             0x10001298   0x14  Data  Gb  iap.o [1]
+_infoLed                0x100012d0   0x10  Data  Gb  InputLeds.o [1]
+_inputChanged           0x10001440    0x4  Data  Gb  Inputs.o [1]
+_inputCount             0x10001508    0x4  Data  Gb  systemInfo.o [1]
+_inputStates            0x100012e0   0x10  Data  Gb  Inputs.o [1]
+_inputs                 0x10000028  0x3c0  Data  Gb  Inputs.o [1]
+_ioTestState            0x1000152c    0x4  Data  Gb  testing.o [1]
+_isOverThreshold        0x1000158c    0x4  Data  Gb  watchdog.o [1]
+_isRandomInitialized    0x10001548    0x4  Data  Gb  testing.o [1]
+_lastCRAddress          0x10001420    0x4  Data  Gb  CrCommunicator.o [1]
+_lastOutputSeq          0x10000008    0x4  Data  Gb  communication.o [1]
+_lastRequestTimeout     0x10001418    0x4  Data  Gb  CrCommunicator.o [1]
+_lastRequestTimestamp   0x1000141c    0x4  Data  Gb  CrCommunicator.o [1]
+_lastSignalToCR         0x10000025    0x1  Data  Gb  dsm.o [1]
+_ledInitialized         0x10001518    0x4  Data  Gb  systemInfo.o [1]
+_ledStatus              0x100013c8    0x8  Data  Gb  IOExpansion.o [1]
+_lonContext             0x1000100c   0x6c  Data  Gb  LonControl.o [1]
+_lonDriverStatus        0x100011d0   0x28  Data  Gb  LdvSci.o [1]
+_lonRxBuffer            0x100006e8  0x150  Data  Gb  LdvSci.o [1]
+_lonTxBuffer            0x10000598  0x150  Data  Gb  LdvSci.o [1]
+_main                   0x0000c9b7         Code  Gb  cmain.o [5]
+_milisecondsPerSecondCounter
+                        0x10001500    0x4  Data  Gb  sysTick.o [1]
+_nRxErrors              0x1000145c    0x4  Data  Gb  LdvSci.o [1]
+_nRxTimeout             0x10001460    0x4  Data  Gb  LdvSci.o [1]
+_nTxBufUnavailable      0x10001464    0x4  Data  Gb  LdvSci.o [1]
+_nUtilityDownTimer      0x10001310   0x10  Data  Gb  LdvSci.o [1]
+_nUtilityUpTimer        0x10001300   0x10  Data  Gb  LdvSci.o [1]
+_outputCount            0x1000150c    0x4  Data  Gb  systemInfo.o [1]
+_outputId               0x1000153c    0x4  Data  Gb  testing.o [1]
+_outputIdFrom           0x10001540    0x4  Data  Gb  testing.o [1]
+_outputIdTo             0x10001544    0x4  Data  Gb  testing.o [1]
+_outputStatus           0x10001594    0x2  Data  Gb  IOExpansion.o [1]
+_outputsDelay           0x10001568    0x4  Data  Gb  timer32.o [1]
+_outputsDescriptor      0x100003e8  0x1b0  Data  Gb  Outputs.o [1]
+_overflowCount          0x100014fc    0x4  Data  Gb  sysTick.o [1]
+_pauseRead              0x10001448    0x4  Data  Gb  Inputs.o [1]
+_progress               0x10001530    0x4  Data  Gb  testing.o [1]
+_randomX                0x10000020    0x4  Data  Gb  testing.o [1]
+_readingPhase           0x10001400    0x4  Data  Gb  CrCommunicator.o [1]
+_receivedCheckSumHigh   0x10001408    0x4  Data  Gb  CrCommunicator.o [1]
+_receivedCheckSumLow    0x1000140c    0x4  Data  Gb  CrCommunicator.o [1]
+_referenceValue         0x100014a0    0x4  Data  Gb  adc.o [1]
+_remainingDataBytes     0x10001414    0x4  Data  Gb  CrCommunicator.o [1]
+_remainingHeaderBytes   0x10001410    0x4  Data  Gb  CrCommunicator.o [1]
+_reportedInputs         0x10001444    0x4  Data  Gb  Inputs.o [1]
+_reportedOutputs        0x10001474    0x4  Data  Gb  Outputs.o [1]
+_reportedOutputsLogic   0x10001478    0x4  Data  Gb  Outputs.o [1]
+_resetAssCnt            0x10001468    0x4  Data  Gb  LdvSci.o [1]
+_resetDeassCnt          0x1000146c    0x4  Data  Gb  LdvSci.o [1]
+_secondOfTheDay         0x10001504    0x4  Data  Gb  sysTick.o [1]
+_sendTimeoutCnt         0x10001470    0x4  Data  Gb  LonControl.o [1]
+_setImpCnt              0x100014d8    0x4  Data  Gb  dsm.o [1]
+_shortTimer             0x100013d0    0x8  Data  Gb  InputLeds.o [1]
+_signalLedID            0x1000000c    0x4  Data  Gb  systemInfo.o [1]
+_signalStartTime        0x10001510    0x4  Data  Gb  systemInfo.o [1]
+_signalState            0x10001514    0x4  Data  Gb  systemInfo.o [1]
+_signallingAddressConflict
+                        0x1000151c    0x4  Data  Gb  systemInfo.o [1]
+_signallingConnectionDown
+                        0x10001520    0x4  Data  Gb  systemInfo.o [1]
+_specialInputState      0x1000143c    0x4  Data  Gb  Inputs.o [1]
+_specialInputs          0x10000958  0x108  Data  Gb  Inputs.o [1]
+_sysTickCount           0x100014f8    0x4  Data  Gb  sysTick.o [1]
+_systemAHBFrequency     0x1000001c    0x4  Data  Gb  system_LPC122x.o [1]
+_systemFrequency        0x10000018    0x4  Data  Gb  system_LPC122x.o [1]
+_tamperReturnAssigned   0x100014dc    0x4  Data  Gb  dsm.o [1]
+_taskCount              0x1000149c    0x4  Data  Gb  Tasks.o [1]
+_taskDelay              0x10000010    0x4  Data  Gb  systemInfo.o [1]
+_taskDelayStarted       0x10001524    0x4  Data  Gb  systemInfo.o [1]
+_taskList               0x10000838  0x120  Data  Gb  Tasks.o [1]
+_taskToDelay            0x10001528    0x4  Data  Gb  systemInfo.o [1]
+_testADCGenEnabled      0x10001554    0x4  Data  Gb  testing.o [1]
+_testCardGenEnabled     0x10001550    0x4  Data  Gb  testing.o [1]
+_testCase               0x10001534    0x4  Data  Gb  testing.o [1]
+_timeout                0x10001538    0x4  Data  Gb  testing.o [1]
+_timer16_0_capture      0x10001560    0x4  Data  Gb  timer16.o [1]
+_timer16_0_counter      0x10001558    0x4  Data  Gb  timer16.o [1]
+_timer16_1_capture      0x10001564    0x4  Data  Gb  timer16.o [1]
+_timer16_1_counter      0x1000155c    0x4  Data  Gb  timer16.o [1]
+_uartActualBaudrate     0x100013f0    0x8  Data  Gb  uart.o [1]
+_uidArray               0x10001320   0x10  Data  Gb  iap.o [1]
+_uidRead                0x100014f4    0x4  Data  Gb  iap.o [1]
+_unknownTimer           0x100013e0    0x8  Data  Gb  InputLeds.o [1]
+_wdDelay                0x1000156c    0x4  Data  Gb  timer32.o [1]
+appInitData             0x0000c8f8   0x28  Data  Lc  ShortStackDev.o [1]
+calloc                  0x00007a27   0x32  Code  Gb  xxmemxcalloc.o [3]
+exit                    0x0000c9bb    0x8  Code  Gb  exit.o [3]
+free                    0x00007a59   0x86  Code  Gb  xxmemxfree.o [3]
+iap_entry               0x00007b65    0x8  Code  Gb  iap.o [1]
+itoaCustom              0x000058db   0x84  Code  Gb  baseTypes.o [1]
+lastResetNotification   0x10001284   0x14  Data  Lc  ShortStackApi.o [1]
+main                    0x0000c771   0x64  Code  Gb  main.o [1]
+malloc                  0x00009599   0xbc  Code  Gb  xxmemxmalloc.o [3]
+memcpy                  0x00005879   0x14  Code  Gb  baseTypes.o [1]
+memset                  0x0000588d   0x10  Code  Gb  baseTypes.o [1]
+mtTable                 0x0000ca8c    0x4  Data  Lc  ShortStackDev.o [1]
+mtx                     0x10001270   0x14  Data  Lc  xsyslock.o [3]
+nciNetConfig            0x10000024    0x1  Data  Gb  ShortStackDev.o [1]
+nvTable                 0x0000c7d4   0x58  Data  Lc  ShortStackDev.o [1]
+nviLight                0x1000148c    0x4  Data  Gb  ShortStackDev.o [1]
+nviRequest              0x10001488    0x4  Data  Gb  ShortStackDev.o [1]
+nviSwitchFb             0x10001498    0x4  Data  Gb  ShortStackDev.o [1]
+nvoLightFb              0x10001490    0x4  Data  Gb  ShortStackDev.o [1]
+nvoStatus               0x100013e8    0x8  Data  Gb  ShortStackDev.o [1]
+nvoSwitch               0x10001494    0x4  Data  Gb  ShortStackDev.o [1]
+reverse                 0x000058af   0x2c  Code  Gb  baseTypes.o [1]
+siData                  0x0000c5d8  0x118  Data  Lc  ShortStackDev.o [1]
+strlen                  0x0000589d   0x12  Code  Gb  baseTypes.o [1]
+syslock_o               0x1000126c    0x4  Data  Lc  xsyslock.o [3]
+
+
+[1] = C:\w2OriginDCU\dcu\dcu\src\D_Application_LON\Obj
+[2] = command line
+[3] = dl6M_tln.a
+[4] = m6M_tl.a
+[5] = rt6M_tl.a
+[6] = shb_l.a
+
+  50 575 bytes of readonly  code memory
+   1 133 bytes of readonly  data memory
+   7 991 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

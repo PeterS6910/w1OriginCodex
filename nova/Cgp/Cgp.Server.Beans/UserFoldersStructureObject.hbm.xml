@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.Server.Beans.UserFoldersStructureObject, Cgp.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdUserFoldersStructureObject">
+      <generator class="guid" />
+    </id>
+    <many-to-one name="Folder" column="Folder" class="Contal.Cgp.Server.Beans.UserFoldersStructure, Cgp.Server.Beans" not-null="false" unique-key="FolderObjectTypeObjectId"/>
+    <property name="ObjectType" not-null="true" unique-key="FolderObjectTypeObjectId"/>
+    <property name="ObjectId" not-null="true" unique-key="FolderObjectTypeObjectId"/>
+  </class>
+</hibernate-mapping>

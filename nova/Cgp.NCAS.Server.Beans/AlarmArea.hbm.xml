@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.NCAS.Server.Beans.AlarmArea, Cgp.NCAS.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdAlarmArea">
+      <generator class="guid" />
+    </id>
+
+    <property name="Purpose" not-null="false"></property>
+    
+    <bag name="AAInputs" cascade="all-delete-orphan">
+      <key column="AlarmArea" />
+      <one-to-many class="Contal.Cgp.NCAS.Server.Beans.AAInput"  />
+    </bag>
+
+    <bag name="AACardReaders" cascade="all-delete-orphan">
+      <key column="AlarmArea" />
+      <one-to-many class="Contal.Cgp.NCAS.Server.Beans.AACardReader"  />
+    </bag>
+
+    <property name="EnableEventlogsInCR" not-null="false"></property>
+    <property name="Id" not-null="true" unique="true"></property>
+
+    <property name="AaSet" not-null="false"></property>
+    <property name="AaUnset" not-null="false"></property>
+    <property name="AaAlarm" not-null="false"></property>
+    <property name="AaNormal" not-null="false"></property>
+    <property name="AaAcknowledged" not-null="false"></property>
+    <property name="AaUnconditionalSet" not-null="false"></property>
+
+    <property name="SensorAlarm" not-null="false"></property>
+    <property name="SensorNormal" not-null="false"></property>
+    <property name="SensorAcknowledged" not-null="false"></property>
+    <property name="SensorUnblocked" not-null="false"></property>
+    <property name="SensorTemporarilyBlocked" not-null="false"></property>
+    <property name="SensorPermanentlyBlocked" not-null="false"></property>
+
+    <property name="ObjForAutomaticActType" not-null="false">
+      <column name="ObjForAutomaticActType" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+    <property name="ObjForAutomaticActId" not-null="false"></property>
+    <property name="IsInvertedObjForAutomaticAct" not-null="false"></property>
+    <property name="AutomaticDeactive" not-null="true"></property>
+
+    <property name="ObjForForcedTimeBuyingType" not-null="false">
+      <column name="ObjForForcedTimeBuyingType" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+    <property name="ObjForForcedTimeBuyingId" not-null="false"></property>
+    <property name="IsInvertedObjForForcedTimeBuying" not-null="false"></property>
+    <property name="NotForcedTimeBuyingProvideOnlyUnset" not-null="false"></property>
+
+    <property name="PreAlarm" not-null="true"></property>
+    <property name="PreAlarmDuration" not-null="false"></property>
+    <property name="TemporaryUnsetDuration" not-null="false"></property>
+    <property name="PreWarning" not-null="true"></property>
+    <property name="PreWarningDuration" not-null="false"></property>
+    <property name="TimeBuyingEnabled" not-null="false"></property>
+    <property name="TimeBuyingMaxDuration" not-null="false"></property>
+    <property name="TimeBuyingTotalMax" not-null="false"></property>
+    <property name="TimeBuyingOnlyInPrewarning" not-null="false"></property>
+    <many-to-one name="PresentationGroup" column="PresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <property name="AcknowledgeOFF" not-null="true"></property>
+    <property name="ABAlarmHandling" not-null="false"></property>
+    <property name="PercentageSensorsToAAlarm" not-null="false"></property>
+    <property name="Description" not-null="false">
+      <column name="Description" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+    <many-to-one name="OutputActivation" column="OutputActivation" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="OutputAlarmState" column="OutputAlarmState" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="OutputPrewarning" column="OutputPrewarning" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="OutputTmpUnsetEntry" column="OutputTmpUnsetEntry" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="OutputTmpUnsetExit" column="OutputTmpUnsetExit" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="OutputAAlarm" column="OutputAAlarm" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="OutputSiren" column="OutputSiren" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <property name="SirenMaxOnPeriod" not-null="false"></property>
+    <many-to-one name="OutputSabotage" column="OutputSabotage" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="OutputNotAcknowledged" column="OutputNotAcknowledged" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="OutputMotion" column="OutputMotion" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="OutputSetByObjectForAaFailed" column="OutputSetByObjectForAaFailed" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <property name="OutputSetNotCalmAaByObjectForAaOnPeriod" not-null="false"></property>
+
+    <property name="AllowSendingStateToCRs" not-null="false"></property>
+    
+    <property name="UseEIS" not-null="false"></property>
+    <property name="FilterTimeEIS" not-null="false"></property>
+    <property name="ActivationStateInputEIS" not-null="false"></property>
+    <property name="SetUnsetOutputEIS" not-null="false"></property>
+    
+    <property name="LocalAlarmInstruction" not-null="false">
+      <column name="LocalAlarmInstruction" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+
+    <property name="AutomaticActivationMode" not-null="false"></property>
+    <property name="AlarmAreaSetByOnOffObjectFailed" not-null="false"></property>
+    <property name="BlockAlarmAreaSetByOnOffObjectFailed" not-null="false"></property>
+    <property name="ObjBlockAlarmAreaSetByOnOffObjectFailedObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmAreaSetByOnOffObjectFailedId" not-null="false"></property>
+    <property name="AlwaysProvideUnsetForTimeBuying" not-null="false"></property>
+    <many-to-one name="AlarmAreaSetByOnOffObjectFailedPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+
+    <many-to-one name="SensorAlarmPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="SensorTamperAlarmPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    
+    <bag name="AlarmAreaAlarmArcs" cascade="all-delete-orphan">
+      <key column="AlarmArea" />
+      <one-to-many class="Contal.Cgp.NCAS.Server.Beans.AlarmAreaAlarmArc"  />
+    </bag>
+
+    <property name="Version" not-null="false"></property>
+
+    <join table="CentralNameRegister">
+      <key column="Id" foreign-key="none"/>
+      <property name="Name" column="Name" not-null="true"/>
+      <property name="ShortName" column="AlternateName"/>
+      <property name="FullTextSearchString" column="FullTextSearchString" not-null="false"/>
+      <property name="ObjectType" not-null="true"/>
+    </join>  
+  </class>
+</hibernate-mapping>

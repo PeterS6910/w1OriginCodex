@@ -1,0 +1,26 @@
+bin
+obj
+.svn
+.vs
+*.csproj.user
+*.suo
+Release/
+
+# VS build output (v hocijakom projekte)
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+
+# Tvoje špecifické konfigurácie/priečinky s medzerami
+**/Release - Setup/
+**/Release - CodeProtection/
+
+# Inštalátory a build artefakty (ak ich nechceš v Gite)
+*.msi
+setup.exe
+
+# NuGet (ak nepoužívate commitovanie packages)
+packages/
+*.nupkg
+*.p7s

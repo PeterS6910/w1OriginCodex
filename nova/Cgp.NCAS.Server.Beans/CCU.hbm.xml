@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.NCAS.Server.Beans.CCU, Cgp.NCAS.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdCCU">
+      <generator class="guid" />
+    </id>
+    <property name="IndexCCU" not-null="true" unique="true"></property>
+    <property name="IPAddress" not-null="true" unique="true"></property>
+    <property name="TimeZoneInfo" not-null="false"></property>
+    <property name="TimeShift" not-null="false"></property>
+
+    <property name="CrEventlogSize" not-null="false"></property>
+    <property name="CrLastEventTimeForMarkAlarmArea" not-null="false"></property>
+
+    <bag name="DCUs" cascade="all-delete-orphan">
+      <key column="CCU" />
+      <one-to-many class="Contal.Cgp.NCAS.Server.Beans.DCU"  />
+    </bag>
+
+    <bag name="Inputs" cascade="all-delete-orphan">
+      <key column="CCU" />
+      <one-to-many class="Contal.Cgp.NCAS.Server.Beans.Input"/>
+    </bag>
+
+    <bag name="Outputs" cascade="all-delete-orphan">
+      <key column="CCU" />
+      <one-to-many class="Contal.Cgp.NCAS.Server.Beans.Output"/>
+    </bag>
+
+    <bag name="DoorEnvironments" cascade="all-delete-orphan">
+      <key column="CCU" />
+      <one-to-many class="Contal.Cgp.NCAS.Server.Beans.DoorEnvironment"/>
+    </bag>
+
+    <set name="CardReaders" cascade="all-delete-orphan">
+      <key column="CCU" />
+      <one-to-many class="Contal.Cgp.NCAS.Server.Beans.CardReader"  />
+    </set>
+
+    <property name="ShortNormal" not-null="false"></property>
+    <property name="NormalAlarm" not-null="false"></property>
+    <property name="AlarmBreak" not-null="false"></property>
+    <property name="R1" not-null="false"></property>
+    <property name="R2" not-null="false"></property>
+    <property name="PortBaudRateCom" not-null="false"></property>
+    <property name="EnabledComPort" not-null="false"></property>
+
+    <property name="SNTPIpAddresses" not-null="false">
+      <column name="SNTPIpAddresses" sql-type="NVARCHAR(MAX)"></column>
+    </property>    
+    <property name="InheritGeneralNtpSettings" not-null="false"></property>
+    
+    <many-to-one name="WatchdogOutput" column="WatchdogOutput" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+    
+    <property name="Description" not-null="false">
+      <column name="Description" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+
+    <property name="AlarmOffline" not-null="false"></property>
+    <property name="BlockAlarmOffline" not-null="false"></property>
+    <property name="ObjBlockAlarmOfflineObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmOfflineId" not-null="false"></property>
+    
+    <property name="AlarmTamper" not-null="false"></property>
+    <property name="BlockAlarmTamper" not-null="false"></property>
+    <property name="ObjBlockAlarmTamperObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmTamperId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmTamper" not-null="false"></property>
+    
+    <many-to-one name="OutputTamper" column="OutputTamper" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+
+    <property name="AlarmPrimaryPowerMissing" not-null="false"></property>
+    <property name="BlockAlarmPrimaryPowerMissing" not-null="false"></property>
+    <property name="ObjBlockAlarmPrimaryPowerMissingObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmPrimaryPowerMissingId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmPrimaryPowerMissing" not-null="false"></property>
+
+    <many-to-one name="OutputPrimaryPowerMissing" column="OutputPrimaryPowerMissing" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+
+    <property name="AlarmBatteryIsLow" not-null="false"></property>
+    <property name="BlockAlarmBatteryIsLow" not-null="false"></property>
+    <property name="ObjBlockAlarmBatteryIsLowObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmBatteryIsLowId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmBatteryIsLow" not-null="false"></property>
+
+    <many-to-one name="OutputBatteryIsLow" column="OutputBatteryIsLow" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+
+    <property name="AlarmUpsOutputFuse" not-null="false"></property>
+    <property name="BlockAlarmUpsOutputFuse" not-null="false"></property>
+    <property name="ObjBlockAlarmUpsOutputFuseObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmUpsOutputFuseId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmUpsOutputFuse" not-null="false"></property>
+
+    <many-to-one name="OutputUpsOutputFuse" column="OutputUpsOutputFuse" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+
+    <property name="AlarmUpsBatteryFault" not-null="false"></property>
+    <property name="BlockAlarmUpsBatteryFault" not-null="false"></property>
+    <property name="ObjBlockAlarmUpsBatteryFaultObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmUpsBatteryFaultId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmUpsBatteryFault" not-null="false"></property>
+
+    <many-to-one name="OutputUpsBatteryFault" column="OutputUpsBatteryFault" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+
+    <property name="AlarmUpsBatteryFuse" not-null="false"></property>
+    <property name="BlockAlarmUpsBatteryFuse" not-null="false"></property>
+    <property name="ObjBlockAlarmUpsBatteryFuseObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmUpsBatteryFuseId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmUpsBatteryFuse" not-null="false"></property>
+
+    <many-to-one name="OutputUpsBatteryFuse" column="OutputUpsBatteryFuse" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+
+    <property name="AlarmUpsOvertemperature" not-null="false"></property>
+    <property name="BlockAlarmUpsOvertemperature" not-null="false"></property>
+    <property name="ObjBlockAlarmUpsOvertemperatureObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmUpsOvertemperatureId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmUpsOvertemperature" not-null="false"></property>
+
+    <many-to-one name="OutputUpsOvertemperature" column="OutputUpsOvertemperature" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+
+    <property name="AlarmUpsTamperSabotage" not-null="false"></property>
+    <property name="BlockAlarmUpsTamperSabotage" not-null="false"></property>
+    <property name="ObjBlockAlarmUpsTamperSabotageObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmUpsTamperSabotageId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmUpsTamperSabotage" not-null="false"></property>
+
+    <many-to-one name="OutputUpsTamperSabotage" column="OutputUpsTamperSabotage" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+
+    <property name="AlarmFuseOnExtensionBoard" not-null="false"></property>
+    <property name="BlockAlarmFuseOnExtensionBoard" not-null="false"></property>
+    <property name="ObjBlockAlarmFuseOnExtensionBoardObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmFuseOnExtensionBoardId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmFuseOnExtensionBoard" not-null="false"></property>
+
+    <many-to-one name="OutputFuseOnExtensionBoard" column="OutputFuseOnExtensionBoard" class="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" not-null="false"/>
+
+    <property name="AlarmCcuCatUnreachable" not-null="false"></property>
+    <many-to-one name="AlarmCcuCatUnreachablePresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+
+    <property name="AlarmCcuTransferToArcTimedOut" not-null="false"></property>
+    <many-to-one name="AlarmCcuTransferToArcTimedOutPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+
+    <property name="IsConfigured" not-null="false"></property>
+    <property name="MACAddress" not-null="false"></property>
+    <property name="MaxNodeLookupSequence" not-null="false"></property>
+    <property name="CcuMainboardType" not-null="false"></property>
+
+    <property name="InputsCount" not-null="false"></property>
+    <property name="OutputsCount" not-null="false"></property>
+    <property name="LocalAlarmInstruction" not-null="false">
+      <column name="LocalAlarmInstruction" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+    <property name="SyncingTimeFromServer" not-null="false"></property>
+
+    <property name="Cat12ComboLicence" not-null="false">
+      <column name="Cat12ComboLicence" sql-type="BINARY(32)"></column>
+    </property>
+    
+    <many-to-one name="AlarmTransmitter" column="AlarmTransmitter" class="Contal.Cgp.NCAS.Server.Beans.AlarmTransmitter, Cgp.NCAS.Server.Beans" not-null="false"/>
+
+    <bag name="CcuAlarmArcs" cascade="all-delete-orphan">
+      <key column="Ccu" />
+      <one-to-many class="Contal.Cgp.NCAS.Server.Beans.CcuAlarmArc"  />
+    </bag>
+
+    <property name="Version" not-null="false"></property>
+
+    <join table="CentralNameRegister">
+      <key column="Id" foreign-key="none"/>
+      <property name="Name" column="Name" not-null="true"/>
+      <property name="FullTextSearchString" column="FullTextSearchString" not-null="false"/>
+      <property name="ObjectType" not-null="true"/>
+    </join>
+  </class>
+</hibernate-mapping>

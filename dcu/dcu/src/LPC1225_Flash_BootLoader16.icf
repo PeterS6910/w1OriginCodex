@@ -1,0 +1,61 @@
+/*###ICF### Section handled by ICF editor, don't touch! ****/
+/*-Editor annotation file-*/
+/* IcfEditorFile="$TOOLKIT_DIR$\config\ide\IcfEditor\cortex_v1_0.xml" */
+/*-Specials-*/
+define symbol __ICFEDIT_intvec_start__ = 0x00000000;
+/*-Memory Regions-*/
+define symbol __ICFEDIT_region_ROM_start__   = 0x00000124;
+define symbol __ICFEDIT_region_ROM_end__     = 0x0000FFFF;
+/*-Sizes-*/
+define symbol __ICFEDIT_size_cstack__ = 0x0800;
+define symbol __ICFEDIT_size_heap__   = 0x03a0;
+/**** End of ICF editor section. ###ICF###*/
+
+define memory mem with size = 4G;
+
+/* FLASH regions */
+define symbol __CRP_LOCATION__              = 0x2FC;
+define symbol __BOOTLOADER_VER_LOCATION__   = 0x3FFC;
+define symbol __BOOT_ROM_END__              = 0x00003FFF;
+define symbol __APP_ROM_START__             = __BOOT_ROM_END__ + 1;
+define symbol __APP_LENGTH__                = 0x0000EFF8;
+define symbol __CHECKSUM_START__            = 0x0000EFFC;
+define symbol __STORAGE_LOCATION_START__    = 0x0000F000;
+
+define region BOOTROM_region    = mem:[from __ICFEDIT_region_ROM_start__    to __CRP_LOCATION__ - 1         ] |
+                                      [from __CRP_LOCATION__ + 4            to __BOOT_ROM_END__             ];
+
+
+define region APPROM_region     = mem:[from __APP_ROM_START__               to __ICFEDIT_region_ROM_end__ - 1   ];
+
+/* RAM regions */
+define symbol __RAM_NORMAL_START__      = 0x10000000;
+define symbol __RAM_NORMAL_END__        = 0x10001B1F;       // change this and make more space for dynamic buffer 
+
+/* RAM area for dynamic allocation */
+/*define symbol __RAM_DM_START__          = __RAM_NORMAL_END__ + 1;   */
+/*define symbol __RAM_DM_END__            = 0x10001FAF;   // DO NOT CHANGE!!*/
+
+/* RAM area for flags, redirection pointer, etc... */
+define symbol __RAM_FLAGS_START__       = 0x10001FB0;   // DO NOT CHANGE!!
+define symbol __RAM_FLAGS_END__         = 0x10001FDF;   // DO NOT CHANGE!!
+
+define region RAM_region        = mem:[from __RAM_NORMAL_START__    to __RAM_NORMAL_END__   ];
+/*define region RAM_dm            = mem:[from __RAM_DM_START__        to __RAM_DM_END__       ];*/
+define region RAM_flags         = mem:[from __RAM_FLAGS_START__     to __RAM_FLAGS_END__    ];
+
+
+define block CSTACK    with alignment = 8, size = __ICFEDIT_size_cstack__   { };
+define block HEAP      with alignment = 8, size = __ICFEDIT_size_heap__     { };
+
+initialize by copy { readwrite };
+do not initialize  { section .noinit };
+
+place at address mem:__ICFEDIT_intvec_start__ { readonly section .intvec };
+place at address mem:__CRP_LOCATION__ { readonly section CRP };
+place at address mem:__BOOTLOADER_VER_LOCATION__ { readonly section BOOTLOADER_VER };
+
+place in BOOTROM_region { readonly      };
+place in APPROM_region  { section .app  };
+
+place in RAM_region     { readwrite, block CSTACK, block HEAP };

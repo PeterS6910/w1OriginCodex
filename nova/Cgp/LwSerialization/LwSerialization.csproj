@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{38042882-D6F7-43C8-8212-2EC611637708}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>PlatformPC\Properties</AppDesignerFolder>
+    <RootNamespace>Contal.LwSerialization</RootNamespace>
+    <AssemblyName>LwSerialization</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Designer|AnyCPU' ">
+    <OutputPath>bin\Designer\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug - EMULATOR|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug - EMULATOR\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release - Setup|AnyCPU' ">
+    <OutputPath>bin\Release - Setup\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release %28Special%29|AnyCPU' ">
+    <OutputPath>bin\Release %28Special%29\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrossPlatform\ALwSerializable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CrossPlatform\Attributes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CrossPlatform\ConstructorCache.cs" />
+    <Compile Include="CrossPlatform\Crc32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CrossPlatform\LwBinaryDeserializeSkipper.cs" />
+    <Compile Include="CrossPlatform\Enumerations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CrossPlatform\IDeserializationBuilder.cs" />
+    <Compile Include="CrossPlatform\LwBinaryDeserialize.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CrossPlatform\LwBinarySerializationFunctions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CrossPlatform\LwBinarySerialize.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CrossPlatform\LwBinarySerializer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CrossPlatform\LwSerializationException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CrossPlatform\LwSerializeAssignCache.cs" />
+    <Compile Include="CrossPlatform\LwSerializeModeCache.cs" />
+    <Compile Include="CrossPlatform\SerializationProperties.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CrossPlatform\StreamTypeInfo.cs" />
+    <Compile Include="CrossPlatform\TypeAttributeCache.cs" />
+    <Compile Include="CrossPlatform\TypeCache.cs" />
+    <Compile Include="CrossPlatform\TypeMembersInfoCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CrossPlatform\TypesCachesByAssemblies.cs" />
+    <Compile Include="PlatformPC\Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IwQuick\IwQuick.csproj">
+      <Project>{5775202E-96B4-44E8-904D-625154D7D524}</Project>
+      <Name>IwQuick</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

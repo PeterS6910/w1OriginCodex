@@ -1,0 +1,32 @@
+__setup ()
+{
+__var tmp;
+    // Disable the PLL.
+    __writeMemory32(0x0000001F, 0x40048080, "Memory");  // AHBCLKCTRL = 0x1F;
+    __writeMemory32(0x00000080, 0x40048028, "Memory");  // IRCCTRL = 128;        
+    __writeMemory32(0x00000180, 0x40048008, "Memory");  // SYSPLLCTRL = (1UL<<7) | (1UL<<8);    
+    __writeMemory32(0x00000000, 0x40048040, "Memory");  // SYSPLLCLKSEL = 0;
+    __writeMemory32(0x00000001, 0x40048044, "Memory");  // SYSPLLUEN = 1;   
+    __writeMemory32(0x00000000, 0x40048070, "Memory");  // MAINCLKSEL = 1;
+    __writeMemory32(0x00000001, 0x40048074, "Memory");  // MAINLUEN = 1;
+    __writeMemory32(0x00000001, 0x40048078, "Memory");  // SYSAHBCLKDIV = 1;
+    __writeMemory32(0x00000002, 0x40048000, "Memory");  // SYSMEMREMAP = 2
+    __readMemory32( 0x00000000, "Memory");
+	
+	/* WWDT Disable */
+    __writeMemory32(0x00000000, 0x40004000, "Memory"); // WDMOD = 0
+    __writeMemory32(0x000000aa, 0x40004008, "Memory"); // WDFEED = 0xAA
+    __writeMemory32(0x00000055, 0x40004008, "Memory"); // WDFEED = 0x55  
+}
+
+execUserFlashInit()
+{   
+    __message "------- Prepare for flashloader -------";
+    __setup();
+}
+
+execUserPreload()
+{   
+    __message "------- Prepare for debug -------";
+    __setup();
+}

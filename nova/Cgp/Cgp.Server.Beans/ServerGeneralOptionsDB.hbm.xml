@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.Server.Beans.ServerGeneralOptionsDB, Cgp.Server.Beans" select-before-update="true">
+    <id name="IdServerGeneralOptionsDB">
+      <generator class="guid" />
+    </id>
+    <property name="NtpIpAddresses" not-null="false">
+      <column name="NtpIpAddresses" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+    <property name="NtpTimeDiffTolerance" not-null="false">
+      <column name="NtpTimeDiffTolerance" default="120000"></column>
+    </property>
+  </class>
+</hibernate-mapping>

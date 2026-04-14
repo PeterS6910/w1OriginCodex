@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.NCAS.Server.Beans.MultiDoor, Cgp.NCAS.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdMultiDoor">
+      <generator class="guid" />
+    </id>
+    <many-to-one name="CardReader" column="CardReader" class="Contal.Cgp.NCAS.Server.Beans.CardReader" not-null="true"/>
+    <property name="Type" not-null="true"/>
+    <many-to-one name="BlockAlarmArea" column="BlockAlarmArea" class="Contal.Cgp.NCAS.Server.Beans.AlarmArea" not-null="false"/>
+
+    <property name="DoorTimeUnlock" not-null="false"/>
+    <property name="DoorTimeOpen" not-null="false"/>
+    <property name="DoorTimePreAlarm" not-null="false"/>
+    <property name="DoorDelayBeforeUnlock" not-null="false"/>
+    <property name="DoorDelayBeforeLock" not-null="false"/>
+    <property name="DoorDelayBeforeClose" not-null="false"/>
+    <property name="SensorsOpenDoorsInverted" not-null="false"/>
+    <property name="SensorsOpenDoorsBalanced" not-null="false"/>
+    <property name="ElectricStrikeImpulse" not-null="false"/>
+    <property name="ElectricStrikeImpulseDelay" not-null="false"/>
+    <property name="ExtraElectricStrikeImpulse" not-null="false"/>
+    <property name="ExtraElectricStrikeImpulseDelay" not-null="false"/>
+
+    <set name="Doors" cascade="all-delete-orphan" lazy="true">
+      <key column="MultiDoor"/>
+      <one-to-many class="Contal.Cgp.NCAS.Server.Beans.MultiDoorElement"/>
+    </set>
+    
+    <property name="Description" not-null="false">
+      <column name="Description" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+
+    <property name="Version" not-null="false"></property>
+
+    <join table="CentralNameRegister">
+      <key column="Id" foreign-key="none"/>
+      <property name="Name" column="Name" not-null="true"/>
+      <property name="ObjectType" not-null="true"/>
+    </join>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+execUserReset()
+{
+    /* WWDT Disable */
+    __writeMemory32(0x00000000, 0x40004000, "Memory"); // WDMOD = 0
+    __writeMemory32(0x000000aa, 0x40004008, "Memory"); // WDFEED = 0xAA
+    __writeMemory32(0x00000055, 0x40004008, "Memory"); // WDFEED = 0x55  
+    
+     /*System memory remap vectors in flash*/
+    __writeMemory32(0x00000002, 0x40048000, "Memory");  // SYSMEMREMAP = 2
+}
+
+execUserPreload()
+{   
+    /* WWDT Disable */
+    __writeMemory32(0x00000000, 0x40004000, "Memory"); // WDMOD = 0
+    __writeMemory32(0x000000aa, 0x40004008, "Memory"); // WDFEED = 0xAA
+    __writeMemory32(0x00000055, 0x40004008, "Memory"); // WDFEED = 0x55
+    
+    /*System memory remap vectors in flash*/ 
+    __writeMemory32(0x00000002, 0x40048000, "Memory"); // SYSMEMREMAP = 2
+}

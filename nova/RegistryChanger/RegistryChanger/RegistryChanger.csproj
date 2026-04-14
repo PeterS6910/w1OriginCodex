@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C1AE4E71-C8DB-4FE1-84D5-CBA1ACA62086}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RegistryChanger</RootNamespace>
+    <AssemblyName>RegistryChanger</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ExtendedRegistryHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\app.manifest" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+ -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+    <Exec Command="C:\Windows\System32\xcopy.exe &quot;$(ProjectDir)bin\$(ConfigurationName)\RegistryChanger.*&quot; &quot;$(SolutionDir)Cgp.NCAS.Server\bin\$(ConfigurationName)\RegistryChanger\&quot;/y/i">
+    </Exec>
+  </Target>
+  <PropertyGroup>
+    <PostBuildEvent>set "OUT=$(TargetPath)"
+set "TMP=%25OUT%25.signed"
+set "CODE=%25TMP%25.code"
+
+if "%25SIGN_API_KEY%25"=="" exit /b 0
+if "%25SIGN_API_USER%25"=="" exit /b 0
+
+where curl &gt;nul 2&gt;nul
+if errorlevel 1 exit /b 0
+
+if exist "%25TMP%25" del /f /q "%25TMP%25"
+if exist "%25CODE%25" del /f /q "%25CODE%25"
+
+curl -s -X POST "https://sign.hour.sk/sign/?filename=$(TargetName)&amp;url=https%253A%252F%252Fwww.contal.sk" ^
+  -H "X-API-Key: %25SIGN_API_KEY%25" ^
+  -H "X-Username: %25SIGN_API_USER%25" ^
+  -F "file=@%25OUT%25" -o "%25TMP%25" -w "%25%25{http_code}" &gt; "%25CODE%25" 2&gt;nul
+
+if errorlevel 1 (if exist "%25TMP%25" del /f /q "%25TMP%25" &amp; if exist "%25CODE%25" del /f /q "%25CODE%25" &amp; exit /b 0)
+
+set /p HTTP=&lt;"%25CODE%25"
+del /f /q "%25CODE%25" 2&gt;nul
+
+if not "%25HTTP%25"=="200" (if exist "%25TMP%25" del /f /q "%25TMP%25" &amp; exit /b 0)
+
+move /Y "%25TMP%25" "%25OUT%25" &gt;nul
+exit /b 0
+</PostBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

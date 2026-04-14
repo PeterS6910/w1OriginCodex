@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.Server.Beans.StructuredSubSite, Cgp.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdStructuredSubSite">
+      <generator class="identity" />
+    </id>
+    <many-to-one name="ParentSite" column="ParentSite" class="Contal.Cgp.Server.Beans.StructuredSubSite, Cgp.Server.Beans" not-null="false"/>
+    <property name="Name" not-null="true"/>
+
+    <bag name="StructuredSubSiteObjects" cascade="all-delete-orphan">
+      <key column="StructuredSubSite" />
+      <one-to-many class="Contal.Cgp.Server.Beans.StructuredSubSiteObject, Cgp.Server.Beans"/>
+    </bag>
+  </class>
+</hibernate-mapping>

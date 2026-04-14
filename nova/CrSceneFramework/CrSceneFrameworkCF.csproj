@@ -1,0 +1,147 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ADA63675-FC96-4F70-9D77-5381171C35C0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>PlatformCE\Properties</AppDesignerFolder>
+    <RootNamespace>CrSceneFrameworkCF</RootNamespace>
+    <AssemblyName>CrSceneFrameworkCF</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.0</OSVersion>
+    <DeployDirSuffix>CrSceneFrameworkCF</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;WindowsCE;COMPACT_FRAMEWORK</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;WindowsCE;COMPACT_FRAMEWORK</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CardReaderDrivers.CF35, Version=1.5.8319.15038, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\CardReaderDrivers.CF35.dll</HintPath>
+    </Reference>
+    <Reference Include="CardReaderDriversDefinitions.CF35, Version=1.0.8319.15037, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\CardReaderDriversDefinitions.CF35.dll</HintPath>
+    </Reference>
+    <Reference Include="IwQuick.CF35, Version=2.9.7815.12474, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\IwQuick.CF35.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AAuthorizationProcessBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ACrAuthorizationSceneGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ACrSceneContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ACrSceneGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ACrSceneRoute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ACrSequentialSceneGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ALazyInstance.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CrSceneAdvanceRoute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CrSceneGroupExitRoute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CrSceneGroupReturnRoute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CrSimpleSceneGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Scenes\CrWaitForEmergencyCodeScene.cs" />
+    <Compile Include="DelayedInitReference.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ICrScene.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ICrSceneGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IInstanceProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlatformCE\Properties\AssemblyInfo.cs" />
+    <Compile Include="Scenes\CrMenuScene.cs" />
+    <Compile Include="Scenes\ACrMenuSceneItem.cs" />
+    <Compile Include="Scenes\ACrWaitForCodeScene.cs" />
+    <Compile Include="Scenes\CrAuthorizeBaseSceneDecorator.cs" />
+    <Compile Include="Scenes\CrAuthorizeByCardSceneDecorator.cs" />
+    <Compile Include="Scenes\CrAuthorizeByCodeSceneDecorator.cs" />
+    <Compile Include="Scenes\CrBaseScene.cs" />
+    <Compile Include="Scenes\CrSceneDecorator.cs" />
+    <Compile Include="Scenes\CrWaitForCardScene.cs" />
+    <Compile Include="Scenes\CrWaitForCodeScene.cs" />
+    <Compile Include="Scenes\CrWaitForPinScene.cs" />
+    <Compile Include="Scenes\ICrAuthorizationSceneGroup.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

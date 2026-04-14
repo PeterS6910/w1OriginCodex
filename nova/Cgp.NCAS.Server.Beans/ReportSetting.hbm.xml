@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.NCAS.Server.Beans.ReportSetting, Cgp.NCAS.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdReportSetting"></id>
+    
+    <property name="DateFrom" not-null="false"></property>
+    <property name="DateTo" not-null="false"></property>
+    <property name="LastId" not-null="false"></property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.Server.Beans.CSVImportColumn, Cgp.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdCSVImportColumn">
+      <generator class="guid"></generator>
+    </id>
+    <property name="ColumnIndex" not-null="true"></property>
+    <property name="FirstColumn" not-null="true"></property>
+    <property name="SecondColumn" not-null="true"></property>
+    <property name="Separator" not-null="false"></property>
+    <many-to-one name="CSVImportSchema" column="IdCSVImportSchema" class="Contal.Cgp.Server.Beans.CSVImportSchema, Cgp.Server.Beans" not-null="false"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AAcannotBeSet" xml:space="preserve">
+    <value>AZ nemôže byť zasetovaná, niektoré senzory sú aktívne.</value>
+  </data>
+  <data name="AlarmAreaHasBeenInAlarmStateDuringSetPeriod" xml:space="preserve">
+    <value>Alarmová zóna bola v alarmovom stave počas aktivácie.</value>
+  </data>
+  <data name="AlarmAreaSetFailed" xml:space="preserve">
+    <value>Aktivovanie a. zóny zlyhalo.</value>
+  </data>
+  <data name="AlarmAreaUnsetFailed" xml:space="preserve">
+    <value>Deaktivovanie a.zóny zlyhalo.</value>
+  </data>
+  <data name="Bought" xml:space="preserve">
+    <value>Kúpený</value>
+  </data>
+  <data name="BoughtTime" xml:space="preserve">
+    <value>Kúpený čas</value>
+  </data>
+  <data name="DoorEnvironmentBlockedByLicence" xml:space="preserve">
+    <value>Dverné prostredie blokované licenciou</value>
+  </data>
+  <data name="EISWaiting" xml:space="preserve">
+    <value>EIS-Čaká sa</value>
+  </data>
+  <data name="FailedAlarmAreaNotFound" xml:space="preserve">
+    <value>Alarmová zóna sa nenašla.</value>
+  </data>
+  <data name="FailedBoughtTimeDurationExceeded" xml:space="preserve">
+    <value>Nakup. čas prekročil limit jedného nákupu.</value>
+  </data>
+  <data name="FailedCCUOffline" xml:space="preserve">
+    <value>CCU je offline.</value>
+  </data>
+  <data name="FailedDueError" xml:space="preserve">
+    <value>Chyba.</value>
+  </data>
+  <data name="FailedInputInAlarm" xml:space="preserve">
+    <value>Vstup je v alarm stave.</value>
+  </data>
+  <data name="FailedInsufficientRights" xml:space="preserve">
+    <value>Nedostatočné oprávnenie.</value>
+  </data>
+  <data name="FailedTimeAlreadyBought" xml:space="preserve">
+    <value>Čas bol už nakúpený.</value>
+  </data>
+  <data name="FailedTimeBuyingNotEnabled" xml:space="preserve">
+    <value>Nakupovanie času nie je zapnuté.</value>
+  </data>
+  <data name="FailedTimeToBuyIsZero" xml:space="preserve">
+    <value>Nakupovaný čas je nula.</value>
+  </data>
+  <data name="FailedTotalBoughtTimeReached" xml:space="preserve">
+    <value>Nakup. čas prekročil celkový limit a.zóny.</value>
+  </data>
+  <data name="MENUTIMEBUYING1HOD" xml:space="preserve">
+    <value>Kúpiť čas 01:00</value>
+  </data>
+  <data name="MENUTIMEBUYING1MIN" xml:space="preserve">
+    <value>Kúpiť čas 00:01</value>
+  </data>
+  <data name="MENUTIMEBUYING30MIN" xml:space="preserve">
+    <value>Kúpiť čas 00:30</value>
+  </data>
+  <data name="MENUTIMEBUYINGUNSET" xml:space="preserve">
+    <value>Deaktivovanie</value>
+  </data>
+  <data name="Missing" xml:space="preserve">
+    <value>Chýba</value>
+  </data>
+  <data name="NoAAtoSetOrUnset" xml:space="preserve">
+    <value>Žiadne a. zóny pre aktivovanie alebo deaktivovanie</value>
+  </data>
+  <data name="NoActionForCurrentCard" xml:space="preserve">
+    <value>Žiadna akcia pre aktuálnu kartu.</value>
+  </data>
+  <data name="PerformAction" xml:space="preserve">
+    <value>Vykonať akciu?</value>
+  </data>
+  <data name="Remining" xml:space="preserve">
+    <value>Zostáva</value>
+  </data>
+  <data name="SetAAfailed" xml:space="preserve">
+    <value>Aktivovanie a. zóny zlyhalo</value>
+  </data>
+  <data name="SetAAsucceeded" xml:space="preserve">
+    <value>Aktivovanie a. zóny prebehlo úspešne</value>
+  </data>
+  <data name="SetFailure" xml:space="preserve">
+    <value>Aktivovanie a. zón zlyhalo. Aktivované a. zóny: {0}</value>
+  </data>
+  <data name="SetSuccess" xml:space="preserve">
+    <value>Aktivovanie a. zón prebehlo úspešne</value>
+  </data>
+  <data name="TimeBuyingFailed" xml:space="preserve">
+    <value>Nakupovanie času zlyhalo. Dôvod:</value>
+  </data>
+  <data name="TimeBuyingRequired" xml:space="preserve">
+    <value>Niektoré alarm. zóny vyžadujú nákup času.</value>
+  </data>
+  <data name="TimeBuyingSucceeded" xml:space="preserve">
+    <value>Nakupovanie času bolo úspešné.</value>
+  </data>
+  <data name="UnconditionalSetAAfailed" xml:space="preserve">
+    <value>Bezpod. aktivovanie a. zóny zlyhalo</value>
+  </data>
+  <data name="UnconditionalSetAAsucceeded" xml:space="preserve">
+    <value>Bezpod. aktivovanie a. zóny bolo úspešne</value>
+  </data>
+  <data name="UNKNOWN" xml:space="preserve">
+    <value>NEZNÁMY</value>
+  </data>
+  <data name="UnsetAAfailed" xml:space="preserve">
+    <value>Deaktivovanie a.zóny zlyhalo.</value>
+  </data>
+  <data name="UnsetAAsucceeded" xml:space="preserve">
+    <value>Deaktivovanie a.zóny prebehlo úspešne</value>
+  </data>
+  <data name="UnsetFailure" xml:space="preserve">
+    <value>Deaktivovanie a. zón zlyhalo. Deaktivované a. zóny: {0}</value>
+  </data>
+  <data name="UnsetSuccess" xml:space="preserve">
+    <value>Daktivovanie a. zón prebehlo úspešne</value>
+  </data>
+  <data name="WaitingForEIS" xml:space="preserve">
+    <value>Čaká sa na EIS</value>
+  </data>
+  <data name="TimeBuyingErrors" xml:space="preserve">
+    <value>Nakupovanie času pre niektoré alarmové zóny zlyhalo.</value>
+  </data>
+  <data name="Unlimited" xml:space="preserve">
+    <value>Neobmedzený</value>
+  </data>
+  <data name="MissingTime" xml:space="preserve">
+    <value>Chýbajúci čas</value>
+  </data>
+  <data name="RemainingTime" xml:space="preserve">
+    <value>Zostávajúci čas</value>
+  </data>
+  <data name="QuestionDoYouWantToProceedWithUnblockingInput" xml:space="preserve">
+    <value>Na stav tohto vstupu sú naviazané ďalšie akcie, ktoré budú v dôsledku jeho odblokovania vykonané. Chcete vstup napriek tomu odblokovať?</value>
+  </data>
+  <data name="QuestionDoYouWantToProceedWithUnblockingInputs" xml:space="preserve">
+    <value>Na stav niektorých vstupov sú naviazané ďalšie akcie, ktoré budú v dôsledku ich odblokovania vykonané. Chcete vstupy napriek tomu odblokovať?</value>
+  </data>
+  <data name="MenuAlarmAreaPanel" xml:space="preserve">
+    <value>Alarm panel</value>
+  </data>
+</root>

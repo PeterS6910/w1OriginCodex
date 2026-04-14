@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.NCAS.Server.Beans.ExcelReportOutput, Cgp.NCAS.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="Id">
+      <generator class="guid"/>
+    </id>
+    <property name="IsEnabled" not-null="false"></property>
+    <property name="Interval" not-null="false"></property>
+    <property name="Type" not-null="false">
+      <column name="Type" sql-type="NVARCHAR(50)"></column></property>
+    <property name="Output" not-null="false">
+      <column name="Output" sql-type="NVARCHAR(MAX)"></column></property>
+    <property name="Filename" not-null="false">
+      <column name="Filename" sql-type="NVARCHAR(120)"></column></property>
+    <property name="Param" not-null="false">
+      <column name="Param" sql-type="NVARCHAR(MAX)"></column></property>
+    <many-to-one name="TimeZone" column="TimeZone"  class="Contal.Cgp.Server.Beans.TimeZone, Cgp.Server.Beans" not-null="false"/>
+  </class>
+</hibernate-mapping>

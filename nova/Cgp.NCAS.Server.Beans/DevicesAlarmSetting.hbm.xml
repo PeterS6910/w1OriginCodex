@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.NCAS.Server.Beans.DevicesAlarmSetting, Cgp.NCAS.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdDevicesAlarmSetting">
+      <generator class="guid" />
+    </id>
+    <property name="Name" not-null="true" unique="true"></property>
+
+    <property name="AlarmCCUOffline" not-null="false"></property>
+    <property name="BlockAlarmCCUOffline" not-null="false"></property>
+    <property name="ObjBlockAlarmCCUOfflineObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmCCUOfflineId" not-null="false"></property>
+
+    <property name="AlarmCCUUnconfigured" not-null="false"></property>
+    <property name="BlockAlarmCCUUnconfigured" not-null="false"></property>
+    <property name="ObjBlockAlarmCCUUnconfiguredObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmCCUUnconfiguredId" not-null="false"></property>
+
+    <property name="AlarmCCUClockUnsynchronized" not-null="false"></property>
+    <property name="BlockAlarmCCUClockUnsynchronized" not-null="false"></property>
+    <property name="ObjBlockAlarmCCUClockUnsynchronizedObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmCCUClockUnsynchronizedId" not-null="false"></property>
+
+    <property name="AlarmCCUTamperSabotage" not-null="false"></property>
+    <property name="BlockAlarmCCUTamperSabotage" not-null="false"></property>
+    <property name="ObjBlockAlarmCCUTamperSabotageObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmCCUTamperSabotageId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmCCUTamperSabotage" not-null="false"></property>
+    
+    <property name="AlarmPrimaryPowerMissing" not-null="false"></property>
+    <property name="BlockAlarmPrimaryPowerMissing" not-null="false"></property>
+    <property name="ObjBlockAlarmPrimaryPowerMissingObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmPrimaryPowerMissingId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmPrimaryPowerMissing" not-null="false"></property>
+
+    <property name="AlarmBatteryIsLow" not-null="false"></property>
+    <property name="BlockAlarmBatteryIsLow" not-null="false"></property>
+    <property name="ObjBlockAlarmBatteryIsLowObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmBatteryIsLowId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmBatteryIsLow" not-null="false"></property>
+
+    <property name="AlarmUpsOutputFuse" not-null="false"></property>
+    <property name="BlockAlarmUpsOutputFuse" not-null="false"></property>
+    <property name="ObjBlockAlarmUpsOutputFuseObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmUpsOutputFuseId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmUpsOutputFuse" not-null="false"></property>
+
+    <property name="AlarmUpsBatteryFault" not-null="false"></property>
+    <property name="BlockAlarmUpsBatteryFault" not-null="false"></property>
+    <property name="ObjBlockAlarmUpsBatteryFaultObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmUpsBatteryFaultId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmUpsBatteryFault" not-null="false"></property>
+
+    <property name="AlarmUpsBatteryFuse" not-null="false"></property>
+    <property name="BlockAlarmUpsBatteryFuse" not-null="false"></property>
+    <property name="ObjBlockAlarmUpsBatteryFuseObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmUpsBatteryFuseId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmUpsBatteryFuse" not-null="false"></property>
+
+    <property name="AlarmUpsOvertemperature" not-null="false"></property>
+    <property name="BlockAlarmUpsOvertemperature" not-null="false"></property>
+    <property name="ObjBlockAlarmUpsOvertemperatureObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmUpsOvertemperatureId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmUpsOvertemperature" not-null="false"></property>
+
+    <property name="AlarmUpsTamperSabotage" not-null="false"></property>
+    <property name="BlockAlarmUpsTamperSabotage" not-null="false"></property>
+    <property name="ObjBlockAlarmUpsTamperSabotageObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmUpsTamperSabotageId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmUpsTamperSabotage" not-null="false"></property>
+
+    <property name="AlarmFuseOnExtensionBoard" not-null="false"></property>
+    <property name="BlockAlarmFuseOnExtensionBoard" not-null="false"></property>
+    <property name="ObjBlockAlarmFuseOnExtensionBoardObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmFuseOnExtensionBoardId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmFuseOnExtensionBoard" not-null="false"></property>
+
+    <property name="AlarmCcuCatUnreachable" not-null="false"></property>
+
+    <property name="AlarmCcuTransferToArcTimedOut" not-null="false"></property>
+
+    <property name="AlarmDCUOffline" not-null="false"></property>
+    <property name="BlockAlarmDCUOffline" not-null="false"></property>
+    <property name="ObjBlockAlarmDCUOfflineObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmDCUOfflineId" not-null="false"></property>
+    
+    <property name="AlarmDCUTamperSabotage" not-null="false"></property>
+    <property name="BlockAlarmDCUTamperSabotage" not-null="false"></property>
+    <property name="ObjBlockAlarmDCUTamperSabotageObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmDCUTamperSabotageId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmDCUTamperSabotage" not-null="false"></property>
+
+    <property name="AlarmDEIntrusion" not-null="false"></property>
+    <property name="BlockAlarmDEIntrusion" not-null="false"></property>
+    <property name="ObjBlockAlarmDEIntrusionObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmDEIntrusionId" not-null="false"></property>
+
+    <property name="AlarmDEDoorAjar" not-null="false"></property>
+    <property name="BlockAlarmDEDoorAjar" not-null="false"></property>
+    <property name="ObjBlockAlarmDEDoorAjarObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmDEDoorAjarId" not-null="false"></property>
+
+    <property name="AlarmDESabotage" not-null="false"></property>
+    <property name="BlockAlarmDESabotage" not-null="false"></property>
+    <property name="ObjBlockAlarmDESabotageObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmDESabotageId" not-null="false"></property>
+
+    <property name="SecurityLevelForEnterToMenu" not-null="false"></property>
+    <property name="GinForEnterToMenu" not-null="false" index ="IndexGinForEnterToMenu"></property>
+    <property name="GinLengthForEnterToMenu" not-null="false"></property>
+    <many-to-one name="SecurityDailyPlanForEnterToMenu" column="SecurityDailyPlanForEnterToMenu" class="Contal.Cgp.NCAS.Server.Beans.SecurityDailyPlan, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="SecurityTimeZoneForEnterToMenu" column="SecurityTimeZoneForEnterToMenu" class="Contal.Cgp.NCAS.Server.Beans.SecurityTimeZone, Cgp.NCAS.Server.Beans" not-null="false"/>
+    
+    <property name="AlarmCROffline" not-null="false"></property>
+    <property name="BlockAlarmCROffline" not-null="false"></property>
+    <property name="ObjBlockAlarmCROfflineObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmCROfflineId" not-null="false"></property>
+
+    <property name="AlarmCRTamperSabotage" not-null="false"></property>
+    <property name="BlockAlarmCRTamperSabotage" not-null="false"></property>
+    <property name="ObjBlockAlarmCRTamperSabotageObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmCRTamperSabotageId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmCRTamperSabotage" not-null="false"></property>
+    
+    <property name="AlarmCrAccessDenied" not-null="false"></property>
+    <property name="BlockAlarmCrAccessDenied" not-null="false"></property>
+    <property name="ObjBlockAlarmCrAccessDeniedObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmCrAccessDeniedId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmCrAccessDenied" not-null="false"></property>
+    
+    <property name="AlarmCrUnknownCard" not-null="false"></property>
+    <property name="BlockAlarmCrUnknownCard" not-null="false"></property>
+    <property name="ObjBlockAlarmCrUnknownCardObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmCrUnknownCardId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmCrUnknownCard" not-null="false"></property>
+    
+    <property name="AlarmCrCardBlockedOrInactive" not-null="false"></property>
+    <property name="BlockAlarmCrCardBlockedOrInactive" not-null="false"></property>
+    <property name="ObjBlockAlarmCrCardBlockedOrInactiveObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmCrCardBlockedOrInactiveId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmCrCardBlockedOrInactive" not-null="false"></property>
+    
+    <property name="AlarmCrInvalidPin" not-null="false"></property>
+    <property name="BlockAlarmCrInvalidPin" not-null="false"></property>
+    <property name="ObjBlockAlarmCrInvalidPinObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmCrInvalidPinId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmCrInvalidPin" not-null="false"></property>
+    
+    <property name="AlarmCrInvalidGin" not-null="false"></property>
+    <property name="BlockAlarmCrInvalidGin" not-null="false"></property>
+    <property name="ObjBlockAlarmCrInvalidGinObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmCrInvalidGinId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmCrInvalidGin" not-null="false"></property>
+    
+    <property name="AlarmCrInvalidEmergencyCode" not-null="false"></property>
+    <property name="BlockAlarmCrInvalidEmergencyCode" not-null="false"></property>
+    <property name="ObjBlockAlarmCrInvalidEmergencyCodeObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmCrInvalidEmergencyCodeId" not-null="false"></property>
+    <property name="EventlogDuringBlockAlarmCrInvalidEmergencyCode" not-null="false"></property>
+    
+    <property name="AlarmCrAccessPermitted" not-null="false"></property>
+    <property name="BlockAlarmCrAccessPermitted" not-null="false"></property>
+    <property name="ObjBlockAlarmCrAccessPermittedObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmCrAccessPermittedId" not-null="false"></property>
+
+    <property name="AlarmInvalidPinRetriesLimitReached" not-null="false"></property>
+    <property name="BlockAlarmInvalidPinRetriesLimitReached" not-null="false"></property>
+    <property name="ObjBlockAlarmInvalidPinRetriesLimitReachedObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmInvalidPinRetriesLimitReachedId" not-null="false"></property>
+
+    <property name="AlarmInvalidGinRetriesLimitReached" not-null="false"></property>
+    <property name="BlockAlarmInvalidGinRetriesLimitReached" not-null="false"></property>
+    <property name="ObjBlockAlarmInvalidGinRetriesLimitReachedObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmInvalidGinRetriesLimitReachedId" not-null="false"></property>
+
+    <property name="AllowAAToCRsReporting" not-null="false"></property>
+
+    <property name="InvalidPinRetriesLimitEnabled" not-null="false"></property>
+    <property name="InvalidPinRetriesCount" not-null="false"></property>
+    <property name="InvalidPinRetriesLimitReachedTimeout" not-null="false"></property>
+
+    <property name="InvalidGinRetriesLimitEnabled" not-null="false"></property>
+    <property name="InvalidGinRetriesCount" not-null="false"></property>
+    <property name="InvalidGinRetriesLimitReachedTimeout" not-null="false"></property>
+
+    <property name="AlarmAreaSetByOnOffObjectFailed" not-null="false"></property>
+    <property name="BlockAlarmAreaSetByOnOffObjectFailed" not-null="false"></property>
+    <property name="ObjBlockAlarmAreaSetByOnOffObjectFailedObjectType" not-null="false"></property>
+    <property name="ObjBlockAlarmAreaSetByOnOffObjectFailedId" not-null="false"></property>
+
+    <many-to-one name="AlarmAreaAlarmPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmAreaSetByOnOffObjectFailedPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="SensorAlarmPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="SensorTamperAlarmPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    
+    <many-to-one name="AlarmCCUOfflinePresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmCCUUnconfiguredPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmCCUClockUnsynchronizedPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmCCUTamperSabotagePresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmCCUPrimaryPowerMissingPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmCCUBatteryIsLowPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmCcuUpsOutputFusePresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmCcuUpsBatteryFaultPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmCcuUpsBatteryFusePresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmCcuUpsOvertemperaturePresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmCcuUpsTamperSabotagePresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmCCUFuseOnExtensionBoardPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmCcuCatUnreachablePresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmCcuTransferToArcTimedOutPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    
+    <many-to-one name="AlarmDCUOfflinePresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmDCUTamperSabotagePresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmDEDoorAjarPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmDEIntrusionPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmDESabotagePresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    
+    <many-to-one name="AlarmCROfflinePresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmCRTamperSabotagePresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmCRAccessDeniedPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmCRUnknownCardPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmCRCardBlockedOrInactivePresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmCRInvalidPINPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmCRInvalidGINPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmCRInvalidEmergencyCodePresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmCRAccessPermittedPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="PgAlarmInvalidPinRetriesLimitReached" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+    <many-to-one name="PgAlarmInvalidGinRetriesLimitReached" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.Server.Beans" not-null="false"/>
+
+    <bag name="DevicesAlarmSettingAlarmArcs" cascade="all-delete-orphan">
+      <key column="DevicesAlarmSetting" />
+      <one-to-many class="Contal.Cgp.NCAS.Server.Beans.DevicesAlarmSettingAlarmArc"  />
+    </bag>
+
+    <property name="Version" not-null="false"></property>
+
+    <property name="Description" not-null="false">
+      <column name="Description" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+  </class>
+</hibernate-mapping>

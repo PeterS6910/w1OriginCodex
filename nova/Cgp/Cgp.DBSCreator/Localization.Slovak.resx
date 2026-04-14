@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="FormAlterTablesAlterDatabaseFailed" xml:space="preserve">
+    <value>Chyba pri alterácii databázy.</value>
+  </data>
+  <data name="FormAlterTablesAlterDatabaseFinished" xml:space="preserve">
+    <value>Alterácia databázy je ukončená.</value>
+  </data>
+  <data name="FormAlterTablesColumn" xml:space="preserve">
+    <value>stĺpec</value>
+  </data>
+  <data name="FormAlterTablesDatabaseConstainErrors" xml:space="preserve">
+    <value>Databáza obsahuje chyby.</value>
+  </data>
+  <data name="FormAlterTablesDatabaseOK" xml:space="preserve">
+    <value>Databáza je OK.</value>
+  </data>
+  <data name="FormAlterTablesfAlterTables" xml:space="preserve">
+    <value>Upravenie tabuliek databázy</value>
+  </data>
+  <data name="FormAlterTablesTable" xml:space="preserve">
+    <value>Tabuľka</value>
+  </data>
+  <data name="FormAlterTables_bCancel" xml:space="preserve">
+    <value>Skončiť</value>
+  </data>
+  <data name="FormAlterTables_bListErrors" xml:space="preserve">
+    <value>Zobraz</value>
+  </data>
+  <data name="FormAlterTables_bRunAlter" xml:space="preserve">
+    <value>Opraviť</value>
+  </data>
+  <data name="FormBeforeExecutionCreationTablesFail" xml:space="preserve">
+    <value>Chyba pri vytváraní tabuliek.</value>
+  </data>
+  <data name="FormBeforeExecutionCreationUserFail" xml:space="preserve">
+    <value>Chyba pre vytváraní užívateľa.</value>
+  </data>
+  <data name="FormBeforeExecutionDatabaseCancelled" xml:space="preserve">
+    <value>Databáza zrušená.</value>
+  </data>
+  <data name="FormBeforeExecutionDatabaseCannotByCreated" xml:space="preserve">
+    <value>Databáza nemôže byť vytvorená.</value>
+  </data>
+  <data name="FormBeforeExecutionDatabaseCreated" xml:space="preserve">
+    <value>Databáza vytvorená.</value>
+  </data>
+  <data name="FormBeforeExecutionDatabaseCreationFailed" xml:space="preserve">
+    <value>Chyba pri vytváraní databázy.</value>
+  </data>
+  <data name="FormBeforeExecutionDatabaseExists" xml:space="preserve">
+    <value>Databáza už existuje.</value>
+  </data>
+  <data name="FormBeforeExecutionDropUserFail" xml:space="preserve">
+    <value>Chyba pri rušení užívateľa.</value>
+  </data>
+  <data name="FormBeforeExecutionfBeforeExecution" xml:space="preserve">
+    <value>Vytvorenie databázy</value>
+  </data>
+  <data name="FormBeforeExecutionFinished" xml:space="preserve">
+    <value>Hotovo</value>
+  </data>
+  <data name="FormBeforeExecution_lSqlServer" xml:space="preserve">
+    <value>SQL server:</value>
+  </data>
+  <data name="FormBeforeExecution_lDatabase" xml:space="preserve">
+    <value>Databáza:</value>
+  </data>
+  <data name="FormBeforeExecution_lLogin" xml:space="preserve">
+    <value>Prihlasovacie meno:</value>
+  </data>
+  <data name="FormBeforeExecution_lProgress" xml:space="preserve">
+    <value>Stav:</value>
+  </data>
+  <data name="FormBeforeExecutionTablesCreated" xml:space="preserve">
+    <value>Tabuľky vytvorené.</value>
+  </data>
+  <data name="FormBeforeExecutionUserCancelled" xml:space="preserve">
+    <value>Užívateľ zrušený.</value>
+  </data>
+  <data name="FormBeforeExecutionUserCreated" xml:space="preserve">
+    <value>Užívateľ vytvorený.</value>
+  </data>
+  <data name="FormBeforeExecutionUserExists" xml:space="preserve">
+    <value>Užívateľ už existuje.</value>
+  </data>
+  <data name="FormBeforeExecution_bBack" xml:space="preserve">
+    <value>&lt; Späť</value>
+  </data>
+  <data name="FormBeforeExecution_bCancel" xml:space="preserve">
+    <value>Skončiť</value>
+  </data>
+  <data name="FormBeforeExecution_bPerform" xml:space="preserve">
+    <value>Vykonať</value>
+  </data>
+  <data name="FormBeforeExecution_bUndoDatabase" xml:space="preserve">
+    <value>Späť</value>
+  </data>
+  <data name="FormBeforeExecution_bUndoUser" xml:space="preserve">
+    <value>Späť</value>
+  </data>
+  <data name="FormBeforeExecution_cbAlterLogin" xml:space="preserve">
+    <value>Prepísať existujúcu</value>
+  </data>
+  <data name="FormBeforeExecutionDropDatabaseFail" xml:space="preserve">
+    <value>Chyba pri rušení databázy.</value>
+  </data>
+  <data name="FormConfirmationfConfirmation" xml:space="preserve">
+    <value>Nastavenia pre SQL server</value>
+  </data>
+  <data name="FormConfirmationlabel1" xml:space="preserve">
+    <value>Nastavenia pre SQL server sú hotové.</value>
+  </data>
+  <data name="FormConfirmationlabel2" xml:space="preserve">
+    <value>Stačte Hotovo pre vytvorenie databázy.</value>
+  </data>
+  <data name="FormConfirmation_bBack" xml:space="preserve">
+    <value>&lt; Späť</value>
+  </data>
+  <data name="FormConfirmation_bCancel" xml:space="preserve">
+    <value>Skončiť</value>
+  </data>
+  <data name="FormConfirmation_bNext" xml:space="preserve">
+    <value>Hotovo</value>
+  </data>
+  <data name="FormDatabaseSettingsfDatabaseSettings" xml:space="preserve">
+    <value>Nastavenia pre SQL server</value>
+  </data>
+  <data name="FormDatabaseSettings_lMainInfo" xml:space="preserve">
+    <value>Nastavenia pre databázu</value>
+  </data>
+  <data name="FormDatabaseSettings_lSqlServer" xml:space="preserve">
+    <value>SQL server:</value>
+  </data>
+  <data name="FormDatabaseSettings_lDatabaseName" xml:space="preserve">
+    <value>Názov databázy:</value>
+  </data>
+  <data name="FormDatabaseSettings_lPath" xml:space="preserve">
+    <value>Cesta k súborom databázy</value>
+  </data>
+  <data name="FormDatabaseSettings_bBack" xml:space="preserve">
+    <value>&lt; Späť</value>
+  </data>
+  <data name="FormDatabaseSettings_bCancel" xml:space="preserve">
+    <value>Skončiť</value>
+  </data>
+  <data name="FormDatabaseSettings_bNext" xml:space="preserve">
+    <value>Ďalej &gt;</value>
+  </data>
+  <data name="FormServerDatabaseEnterDatabaseName" xml:space="preserve">
+    <value>Prosím zadajte meno databázy!</value>
+  </data>
+  <data name="FormServerDatabasefServerDatabase" xml:space="preserve">
+    <value>Nastavenia pre SQL server</value>
+  </data>
+  <data name="FormServerDatabase_lSqlServer" xml:space="preserve">
+    <value>SQL server:</value>
+  </data>
+  <data name="FormServerDatabase_lDatabaseName" xml:space="preserve">
+    <value>Meno databázy:</value>
+  </data>
+  <data name="FormServerDatabase_bBack" xml:space="preserve">
+    <value>&lt; Späť</value>
+  </data>
+  <data name="FormServerDatabase_bCancel" xml:space="preserve">
+    <value>Skončiť</value>
+  </data>
+  <data name="FormServerDatabase_bNext" xml:space="preserve">
+    <value>Ďalej &gt;</value>
+  </data>
+  <data name="FormServerDatabase_lProgress" xml:space="preserve">
+    <value>vyhľadávam databázy ...</value>
+  </data>
+  <data name="FormServerLoginfServerLogin" xml:space="preserve">
+    <value>Nastavenia pre SQL server</value>
+  </data>
+  <data name="FormServerLogin_lSqlServer" xml:space="preserve">
+    <value>SQL server:</value>
+  </data>
+  <data name="FormServerLogin_lLoginName" xml:space="preserve">
+    <value>Prihlasovacie meno:</value>
+  </data>
+  <data name="FormServerLogin_lPassword" xml:space="preserve">
+    <value>Heslo:</value>
+  </data>
+  <data name="FormServerLogin_lMainInfo" xml:space="preserve">
+    <value>Nastavenia pre prihlásenie sa do databázy</value>
+  </data>
+  <data name="FormServerLoginUserNotValid" xml:space="preserve">
+    <value>Chybný užívateľ.</value>
+  </data>
+  <data name="FormServerLogin_bBack" xml:space="preserve">
+    <value>&lt; Späť</value>
+  </data>
+  <data name="FormServerLogin_bCancel" xml:space="preserve">
+    <value>Skončiť</value>
+  </data>
+  <data name="FormServerLogin_bNext" xml:space="preserve">
+    <value>Ďalej &gt;</value>
+  </data>
+  <data name="FormServerSelectfServerSelect" xml:space="preserve">
+    <value>Nastavenia pre SQL server</value>
+  </data>
+  <data name="FormServerSelectSelectSQLServer" xml:space="preserve">
+    <value>Prosím vyberte SQL server!</value>
+  </data>
+  <data name="FormServerSelect_bCancel" xml:space="preserve">
+    <value>Skončiť</value>
+  </data>
+  <data name="FormServerSelect_bNext" xml:space="preserve">
+    <value>Ďalej &gt;</value>
+  </data>
+  <data name="FormServerSelect_lMainInfo" xml:space="preserve">
+    <value>Vyberte SQL server</value>
+  </data>
+  <data name="FormServerSelect_lProgress" xml:space="preserve">
+    <value>Vyhľadám SQL servery ...</value>
+  </data>
+  <data name="FormServerSelect_lServerInfo" xml:space="preserve">
+    <value>SQL server pre databázu</value>
+  </data>
+  <data name="FormUdateDatabaseDatabaseAltered" xml:space="preserve">
+    <value>Databáza bola úspešne altrovaná.</value>
+  </data>
+  <data name="FormUpdateDatabaseClose" xml:space="preserve">
+    <value>Zavri</value>
+  </data>
+  <data name="FormUpdateDatabaseErrorsDatabaseAlter" xml:space="preserve">
+    <value>Vyskytli sa chyby pri altrovaní databázy.</value>
+  </data>
+  <data name="FormUpdateDatabasefUpdateDatabase" xml:space="preserve">
+    <value>Upravenie schémy databázy</value>
+  </data>
+  <data name="FormUpdateDatabase_lSqlServer" xml:space="preserve">
+    <value>SQL server:</value>
+  </data>
+  <data name="FormUpdateDatabase_lDatabase" xml:space="preserve">
+    <value>Databáza:</value>
+  </data>
+  <data name="FormUpdateDatabase_lLogin" xml:space="preserve">
+    <value>Prihlasovacie meno:</value>
+  </data>
+  <data name="FormUpdateDatabase_lProgress" xml:space="preserve">
+    <value>Stav:</value>
+  </data>
+  <data name="FormUpdateDatabaseORMMissColumns" xml:space="preserve">
+    <value>Chýbajúce stĺpce v Orm</value>
+  </data>
+  <data name="FormUpdateDatabaseSQLMissColumns" xml:space="preserve">
+    <value>Chýbajúce stĺpce v SQL databáze</value>
+  </data>
+  <data name="FormUpdateDatabaseWrongColumns" xml:space="preserve">
+    <value>Chybné stĺpce, stĺpce v schéme nezodpovedajú stĺpcom v databáze (nemôže vytvoriť nový NOT NULL alebo UNIQUE stĺpec)</value>
+  </data>
+  <data name="FormUpdateDatabase_bBack" xml:space="preserve">
+    <value>&lt; Späť</value>
+  </data>
+  <data name="FormUpdateDatabase_bCancel" xml:space="preserve">
+    <value>Skončiť</value>
+  </data>
+  <data name="FormUpdateDatabase_bFixDbs" xml:space="preserve">
+    <value>Upraviť DBS</value>
+  </data>
+  <data name="FormUpdateDatabase_bPerform" xml:space="preserve">
+    <value>Vykonať</value>
+  </data>
+  <data name="FormUserSettingsEnterLoginName" xml:space="preserve">
+    <value>Prosím zadajte prihlasovacie meno.</value>
+  </data>
+  <data name="FormUserSettingsfUserSettings" xml:space="preserve">
+    <value>Nastavenia pre SQL server</value>
+  </data>
+  <data name="FormUserSettingslabel1" xml:space="preserve">
+    <value>Prihlasovacie meno:</value>
+  </data>
+  <data name="FormUserSettingslabel2" xml:space="preserve">
+    <value>Nastavenia pre prihlásenie</value>
+  </data>
+  <data name="FormUserSettings_bBack" xml:space="preserve">
+    <value>&lt; Späť</value>
+  </data>
+  <data name="FormUserSettings_bCancel" xml:space="preserve">
+    <value>Skončiť</value>
+  </data>
+  <data name="FormUserSettings_bNext" xml:space="preserve">
+    <value>Ďalej &gt;</value>
+  </data>
+  <data name="searchingForSqlServers" xml:space="preserve">
+    <value>Systém hľadá dostupné SQL servery</value>
+  </data>
+  <data name="FormUpdateDatabaseErrorAlterLogin" xml:space="preserve">
+    <value>Úprava loginu je nutná!</value>
+  </data>
+  <data name="FormUpdateDatabase_cbAlterLogin" xml:space="preserve">
+    <value>Upraviť</value>
+  </data>
+  <data name="FormUpdateDatabaseErrorUserAlter" xml:space="preserve">
+    <value>Login je potrebné upraviť</value>
+  </data>
+  <data name="ErrorAlterLogin" xml:space="preserve">
+    <value>Úprava užívateľa zlyhala.</value>
+  </data>
+  <data name="QuestionAlterLogin" xml:space="preserve">
+    <value>Je potrebné upraviť login:</value>
+  </data>
+  <data name="ErrorDatabaseAlreadyExists" xml:space="preserve">
+    <value>Databáza už existuje</value>
+  </data>
+  <data name="ErrorDirectoryCreationFailed" xml:space="preserve">
+    <value>Nedá sa vytvoriť adresár pre databázy</value>
+  </data>
+  <data name="QuestionSetRightsForSQL" xml:space="preserve">
+    <value>Nastaviť práva nad adresárom pre SQL Server</value>
+  </data>
+  <data name="General_bBrowse" xml:space="preserve">
+    <value>Prezerať</value>
+  </data>
+  <data name="FormBeforeExecutionQuestionDeleteUser" xml:space="preserve">
+    <value>Zrušiť užívateľa</value>
+  </data>
+  <data name="FormBeforeExecutionQuestionDropDatabase" xml:space="preserve">
+    <value>Zrušiť databázu</value>
+  </data>
+  <data name="FormAlterTables_eAlterInfo" xml:space="preserve">
+    <value>Databáza obsahuje sĺpce, ktoré nie sú v hbm schéme, Úprava tabuľky ich odstráni.</value>
+  </data>
+  <data name="InfoDbsHasAllTable" xml:space="preserve">
+    <value>Databáza obsahuje všetky ORM tabuľky.</value>
+  </data>
+  <data name="InfoFixNotSupported" xml:space="preserve">
+    <value>Oprava nie je podporovaná.</value>
+  </data>
+  <data name="InfoMissedTable" xml:space="preserve">
+    <value>Chýbajúce tabuľky v databáze:</value>
+  </data>
+  <data name="InfoNoComparer" xml:space="preserve">
+    <value>Comparer nenačítaný</value>
+  </data>
+  <data name="InfoNoErrors" xml:space="preserve">
+    <value>žiadne chyby</value>
+  </data>
+  <data name="InfoTable" xml:space="preserve">
+    <value>Tabuľka: </value>
+  </data>
+  <data name="InfoTableMissColumn" xml:space="preserve">
+    <value>Tabuľky s chýbajúcimi stĺpcami:</value>
+  </data>
+  <data name="InfoTableUselessColumn" xml:space="preserve">
+    <value>Tabuľky so zbytočnými stĺpcami:</value>
+  </data>
+  <data name="InfoTableWrongColumns" xml:space="preserve">
+    <value>Tabuľky s nesprávnymi stĺpcami:</value>
+  </data>
+  <data name="ErrorEntryLogin" xml:space="preserve">
+    <value>Zadajte prihlasovacie meno</value>
+  </data>
+  <data name="ErrorEntryPassword" xml:space="preserve">
+    <value>Zadajte heslo</value>
+  </data>
+  <data name="FormServerExternalDatabaseLoginUserNotValid" xml:space="preserve">
+    <value>Prihlásenie na server pre separovanú databázu pre logy udalostí zlyhalo. Užívateľ nie je platný</value>
+  </data>
+  <data name="FormServerSelect_chbEnableExternalDatabase" xml:space="preserve">
+    <value>Povoliť separovanú databázu pre logy udalostí</value>
+  </data>
+  <data name="FormServerSelect_lServerForExternalDatabase" xml:space="preserve">
+    <value>SQL server pre separovanú databázu pre logy udalostí</value>
+  </data>
+  <data name="FormServerSelect_lServerInfoExternalDatabase" xml:space="preserve">
+    <value>SQL server pre separovanú databázu pre logy udalostí</value>
+  </data>
+  <data name="General_gbExternalDatabase" xml:space="preserve">
+    <value>Separovaná databáza pre logy udalostí</value>
+  </data>
+  <data name="General_gbMainDatabase" xml:space="preserve">
+    <value>Hlavná databáza</value>
+  </data>
+  <data name="FormServerDatabaseEnterExternalDatabaseName" xml:space="preserve">
+    <value>Prosím zadajte meno databázy pre separovanú databázu pre logy udalostí!</value>
+  </data>
+  <data name="cgpCorrection1" xml:space="preserve">
+    <value>Oprava tabuľky SystemVersion</value>
+  </data>
+  <data name="cgpCorrection1fail" xml:space="preserve">
+    <value>Oprava tabuľky SystemVersion zlyhala</value>
+  </data>
+  <data name="cgpCorrection1success" xml:space="preserve">
+    <value>Oprava tabuľky SystemVersion vykonaná</value>
+  </data>
+  <data name="DbsConversionDbsConversion" xml:space="preserve">
+    <value>Konverzia databázy</value>
+  </data>
+  <data name="PerformConversion" xml:space="preserve">
+    <value>Konverzia databázy je potrebná, stlačte Vykonať pre zavolanie konverzie</value>
+  </data>
+  <data name="DbsConversion_bContinue" xml:space="preserve">
+    <value>Pokračovať</value>
+  </data>
+  <data name="QuestionAlterLoginEnd" xml:space="preserve">
+    <value>, vykonať operáciu?</value>
+  </data>
+  <data name="QuestionDropExternDbs" xml:space="preserve">
+    <value>Zmazať tabuľky eventlogov z konfiguračnej databázy?</value>
+  </data>
+  <data name="ErrorExternDbsNameEqualToMainDbs" xml:space="preserve">
+    <value>Chyba extrená databáza musí byť iná ako hlavná databáza</value>
+  </data>
+  <data name="DbsLoginDbsLogin" xml:space="preserve">
+    <value>Dbs login</value>
+  </data>
+  <data name="DbsLogin_bCancel" xml:space="preserve">
+    <value>Zrušiť</value>
+  </data>
+  <data name="DbsLogin_bgDbsLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="DbsLogin_bOk" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="DbsLogin_lName" xml:space="preserve">
+    <value>Meno</value>
+  </data>
+  <data name="DbsLogin_lPassword" xml:space="preserve">
+    <value>Heslo</value>
+  </data>
+  <data name="DbsLogin_rbCustomDbsLogin" xml:space="preserve">
+    <value>Voliteľný login</value>
+  </data>
+  <data name="DbsLogin_rbGenrateNewCglLogin" xml:space="preserve">
+    <value>Generovať nový cgpLogin</value>
+  </data>
+  <data name="ErrorAlterUserFailed" xml:space="preserve">
+    <value>Upravenie loginu zlyhalo</value>
+  </data>
+  <data name="ErrorCreateUserFailed" xml:space="preserve">
+    <value>Vytvorenie loginu zlyhalo</value>
+  </data>
+  <data name="ErrorFailedGenerateLogin" xml:space="preserve">
+    <value>Zlyhalo generovanie nového loginu</value>
+  </data>
+  <data name="ErrorNameNotAllowed" xml:space="preserve">
+    <value>Meno nie je povolené</value>
+  </data>
+  <data name="QuestionAlterDbsLogin" xml:space="preserve">
+    <value>Upraviť login: </value>
+  </data>
+  <data name="GenerateNewPassword" xml:space="preserve">
+    <value>Vygenerovať nové heslo pre login</value>
+  </data>
+  <data name="cgpCorrectionContinueAnyway" xml:space="preserve">
+    <value>Chcete pokračovať napriek tomu ?</value>
+  </data>
+  <data name="cgpCorrectionDatabaseHasCorrectStructure" xml:space="preserve">
+    <value>Uistite sa, že má databáza správnu štruktúru</value>
+  </data>
+  <data name="cgpCorrectionPart" xml:space="preserve">
+    <value>Oprava tabuliek pre verziu</value>
+  </data>
+  <data name="cgpCorrectionPartFailed" xml:space="preserve">
+    <value>zlyhala</value>
+  </data>
+  <data name="cgpCorrectionPartSucceeded" xml:space="preserve">
+    <value>bola vykonaná úspešne</value>
+  </data>
+  <data name="cgpEventlogCorrectionPart" xml:space="preserve">
+    <value>Oprava tabuliek logovej databázy pre verziu</value>
+  </data>
+  <data name="cgpNCASCorrectionPart" xml:space="preserve">
+    <value>Oprava NCAS tabuliek pre verziu</value>
+  </data>
+  <data name="QuestionCancelDbConfiguration" xml:space="preserve">
+    <value>Zastaviť process databázovej konfigurácie?</value>
+  </data>
+  <data name="QuestionBackupDatabase" xml:space="preserve">
+    <value>Chcete zálohovať databázu?</value>
+  </data>
+  <data name="QuestionBackupDatabaseFailedContinueUpdate" xml:space="preserve">
+    <value>Nepodarilo sa zálohovať databázu. Chcete pokračovať v aktualizácii databázy?</value>
+  </data>  
+</root>

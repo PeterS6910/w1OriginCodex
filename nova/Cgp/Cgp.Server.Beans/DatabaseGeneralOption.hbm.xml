@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.Server.Beans.DatabaseGeneralOption, Cgp.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdDatabaseGeneralOption"></id>
+    <property name="IntValue" not-null="false"></property>
+    <property name="StringValue" not-null="false"></property>
+  </class>
+</hibernate-mapping>

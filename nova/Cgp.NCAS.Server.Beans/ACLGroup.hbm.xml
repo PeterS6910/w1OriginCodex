@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.NCAS.Server.Beans.ACLGroup, Cgp.NCAS.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdACLGroup">
+      <generator class="guid" />
+    </id>
+
+    <property name="IsImplicit" not-null="false"></property>
+    <property name="UseForAllPerson" not-null="false"></property>
+    <property name="RemoveAllAcls" not-null="false"></property>
+    <property name="UseDepartmentAclGroupRelation" not-null="false"></property>
+    <property name="RemoveWhenDepartmentChange" not-null="false"></property>
+    <property name="RemoveWhenDepartmentRemove" not-null="false"></property>
+    <property name="ApplyEndlessValidity" not-null="false"></property>
+    <property name="YearsOfValidity" not-null="false"></property>
+    <property name="MonthsOfValidity" not-null="false"></property>
+    <property name="DaysOfValidity" not-null="false"></property>
+
+    <set name="Departments" table="ACLGroupDepartmentRelation" cascade="none">
+      <key column="IdACLGroup"></key>
+      <many-to-many column="IdDepartment" class="Contal.Cgp.Server.Beans.UserFoldersStructure"></many-to-many>
+    </set>
+    
+    <set name="AccessControlLists" table="ACLGroupACLRelation" cascade="none">
+      <key column="IdACLGroup"></key>
+      <many-to-many column="IdAccessControlList" class="Contal.Cgp.NCAS.Server.Beans.AccessControlList"></many-to-many>
+    </set>
+
+    <property name="Description" not-null="false">
+      <column name="Description" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+
+    <join table="CentralNameRegister">
+      <key column="Id" foreign-key="none"/>
+      <property name="Name" column="Name" not-null="true"/>
+      <property name="ObjectType" not-null="true"/>
+    </join>
+  </class>
+</hibernate-mapping>

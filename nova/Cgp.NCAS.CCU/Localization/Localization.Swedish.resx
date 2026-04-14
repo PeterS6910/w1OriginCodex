@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AAcannotBeSet" xml:space="preserve">
+    <value>Larmzon kan inte tillkopplas. Sektioner i larm.</value>
+  </data>
+  <data name="AlarmAreaHasBeenInAlarmStateDuringSetPeriod" xml:space="preserve">
+    <value>Larmzon har larmat under tillkopplingsperioden.</value>
+  </data>
+  <data name="AlarmAreaSetFailed" xml:space="preserve">
+    <value>Tillkoppla larmzon misslyckades.</value>
+  </data>
+  <data name="AlarmAreaUnsetFailed" xml:space="preserve">
+    <value>Frånkoppla larmzon misslyckades.</value>
+  </data>
+  <data name="DoorEnvironmentBlockedByLicence" xml:space="preserve">
+    <value>Dörrmiljö blockerad av licensrestriktion</value>
+  </data>
+  <data name="EISWaiting" xml:space="preserve">
+    <value>Väntar</value>
+  </data>
+  <data name="MENUACKNOWLEDGESENSORALARM" xml:space="preserve">
+    <value>Kvittera sektion</value>
+  </data>
+  <data name="MENUALALARMSTATEACKNOWLEDGE" xml:space="preserve">
+    <value>Kvittera larm</value>
+  </data>
+  <data name="MENUALALARMSTATEACKNOWLEDGEANDBLOCK" xml:space="preserve">
+    <value>Kvittera&amp;block. larm</value>
+  </data>
+  <data name="MENUALALARMSTATEBLOCK" xml:space="preserve">
+    <value>Blockera larm</value>
+  </data>
+  <data name="MENUALALARMSTATEUNSETAA" xml:space="preserve">
+    <value>Frånkoppla larmzon</value>
+  </data>
+  <data name="MENUALARMAREAS" xml:space="preserve">
+    <value>Larmzoner</value>
+  </data>
+  <data name="MENUALARMAREASGIN" xml:space="preserve">
+    <value>Larmzoner GIN</value>
+  </data>
+  <data name="MENUALARMAREASPIN" xml:space="preserve">
+    <value>Larmzoner (+Kod)</value>
+  </data>
+  <data name="MENUBLOCKSENSORPERMANENTLY" xml:space="preserve">
+    <value>Perm. blockering</value>
+  </data>
+  <data name="MENUBLOCKSENSORTEMPORARILYAREAUNSET" xml:space="preserve">
+    <value>Temp. blockering `29</value>
+  </data>
+  <data name="MENUBLOCKSENSORTEMPORARILYSENSORSTATENORMAL" xml:space="preserve">
+    <value>Temp. blockering `31</value>
+  </data>
+  <data name="MENUEMERGENCYCODE" xml:space="preserve">
+    <value>Akutkod</value>
+  </data>
+  <data name="MENUSENSORS" xml:space="preserve">
+    <value>Sektioner</value>
+  </data>
+  <data name="MENUSENSORSGIN" xml:space="preserve">
+    <value>Sektioner GIN</value>
+  </data>
+  <data name="MENUSENSORSPIN" xml:space="preserve">
+    <value>Sektioner (+Kod)</value>
+  </data>
+  <data name="MENUSET" xml:space="preserve">
+    <value>Tillkoppla</value>
+  </data>
+  <data name="MENUSETALL" xml:space="preserve">
+    <value>Tillkoppla alla</value>
+  </data>
+  <data name="MENUTIMEBUYINGUNSET" xml:space="preserve">
+    <value>Frånkoppling</value>
+  </data>
+  <data name="MENUUNBLOCKINPUT" xml:space="preserve">
+    <value>Återinkoppla</value>
+  </data>
+  <data name="MENUUNSET" xml:space="preserve">
+    <value>Frånkoppla</value>
+  </data>
+  <data name="MENUUNSETALL" xml:space="preserve">
+    <value>Frånkoppla alla</value>
+  </data>
+  <data name="NoAAtoSetOrUnset" xml:space="preserve">
+    <value>Inga larmzoner att till/från-koppla</value>
+  </data>
+  <data name="PerformAction" xml:space="preserve">
+    <value>Utför åtgärd?</value>
+  </data>
+  <data name="PerformedBy" xml:space="preserve">
+    <value>Utfört av:</value>
+  </data>
+  <data name="SeeClientForMoreInfo" xml:space="preserve">
+    <value>Se Klient för mer info</value>
+  </data>
+  <data name="SetAAfailed" xml:space="preserve">
+    <value>Tillkoppla larmzon misslyckades</value>
+  </data>
+  <data name="SetAAsucceeded" xml:space="preserve">
+    <value>Tillkoppla larmzon lyckades</value>
+  </data>
+  <data name="SetFailure" xml:space="preserve">
+    <value>Tillkoppla larmzoner misslyckades. Tillkopplade larmzoner: {0}</value>
+  </data>
+  <data name="SetSuccess" xml:space="preserve">
+    <value>Tillkoppla larmzoner lyckades</value>
+  </data>
+  <data name="TimeBuyingRequired" xml:space="preserve">
+    <value>Vissa larmzoner kräver tidsköp</value>
+  </data>
+  <data name="UnconditionalSetAAfailed" xml:space="preserve">
+    <value>Forcerad tillkoppling misslyckades</value>
+  </data>
+  <data name="UnconditionalSetAAsucceeded" xml:space="preserve">
+    <value>Forcerad tillkoppling lyckades</value>
+  </data>
+  <data name="UNKNOWN" xml:space="preserve">
+    <value>Okänd</value>
+  </data>
+  <data name="UnsetAAfailed" xml:space="preserve">
+    <value>Frånkoppla larmzon misslyckades</value>
+  </data>
+  <data name="UnsetAAsucceeded" xml:space="preserve">
+    <value>Frånkoppla larmzon lyckades</value>
+  </data>
+  <data name="UnsetFailure" xml:space="preserve">
+    <value>Frånkoppla larmzoner misslyckades. Frånkopplade larmzoner: {0}</value>
+  </data>
+  <data name="UnsetSuccess" xml:space="preserve">
+    <value>Frånkoppla larmzoner lyckades</value>
+  </data>
+  <data name="WaitingForEIS" xml:space="preserve">
+    <value>Väntar på externt system</value>
+  </data>
+  <data name="MENUALARMAREASINALARMSTATE" xml:space="preserve">
+    <value>Larmzon i larm</value>
+  </data>
+  <data name="MENUALARMAREASNOTACKNOWLEDGED" xml:space="preserve">
+    <value>Larmzon ej kvitterad</value>
+  </data>
+  <data name="MENUACKNOWLEDGEANDPERMANENTLYBLOCKSENSORALARM" xml:space="preserve">
+    <value>Kvittera&amp;perm.bl.</value>
+  </data>
+  <data name="MENUACKNOWLEDGEANDTEMPORARILYBLOCKSENSORALARM" xml:space="preserve">
+    <value>Kvittera&amp;temp.bl.</value>
+  </data>
+  <data name="MENUACKNOWLEDGEAA" xml:space="preserve">
+    <value>Kvittera Larmzon</value>
+  </data>
+  <data name="MENUSENSORACKNOWLEDGEALL" xml:space="preserve">
+    <value>Kvittera alla</value>
+  </data>
+  <data name="MENUACKNOWLEDGEALL" xml:space="preserve">
+    <value>Kvittera alla</value>
+  </data>
+  <data name="MENUSENSORACKNOWLEDGEANDBLOCKALL" xml:space="preserve">
+    <value>Kvitt. och block. alla</value>
+  </data>
+  <data name="Alarm" xml:space="preserve">
+    <value>Larm</value>
+  </data>
+  <data name="MENUALARMAREAEDIT" xml:space="preserve">
+    <value>Larmzon redigera</value>
+  </data>
+  <data name="FailedAlarmAreaNotFound" xml:space="preserve">
+    <value>Larmzon hittades inte.</value>
+  </data>
+  <data name="Block" xml:space="preserve">
+    <value>Blockera</value>
+  </data>
+  <data name="MENUSENSORBLOCKALL" xml:space="preserve">
+    <value>Blockera alla(temp.bl.)</value>
+  </data>
+  <data name="BoughtTime" xml:space="preserve">
+    <value>Köpt tid</value>
+  </data>
+  <data name="Break" xml:space="preserve">
+    <value>Avbrott</value>
+  </data>
+  <data name="MENUTIMEBUYINGMAX" xml:space="preserve">
+    <value>Max. tid</value>
+  </data>
+  <data name="MENUTIMEBUYING1MIN" xml:space="preserve">
+    <value>00:01</value>
+  </data>
+  <data name="MENUTIMEBUYING30MIN" xml:space="preserve">
+    <value>00:30</value>
+  </data>
+  <data name="MENUTIMEBUYING1HOD" xml:space="preserve">
+    <value>01:00</value>
+  </data>
+  <data name="FailedCCUOffline" xml:space="preserve">
+    <value>CCU är offline.</value>
+  </data>
+  <data name="FailedDueError" xml:space="preserve">
+    <value>Fel.</value>
+  </data>
+  <data name="MENUEVENTLOGEDIT" xml:space="preserve">
+    <value>Redigera händelselogg</value>
+  </data>
+  <data name="MENUEVENTLOGS" xml:space="preserve">
+    <value>Händelselogg</value>
+  </data>
+  <data name="FailedInputInAlarm" xml:space="preserve">
+    <value>Sektion larmar.</value>
+  </data>
+  <data name="FailedInsufficientRights" xml:space="preserve">
+    <value>Rättighet saknar.</value>
+  </data>
+  <data name="intrusion" xml:space="preserve">
+    <value>Intrång</value>
+  </data>
+  <data name="Missing" xml:space="preserve">
+    <value>Saknas</value>
+  </data>
+  <data name="NoActionForCurrentCard" xml:space="preserve">
+    <value>Ingen åtgärd för aktuellt kort.</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="Object" xml:space="preserve">
+    <value>Objekt:</value>
+  </data>
+  <data name="Remining" xml:space="preserve">
+    <value>Återstående</value>
+  </data>
+  <data name="FailedTotalBoughtTimeReached" xml:space="preserve">
+    <value>Begärd tid är större än max tillåtet tidsköp för larmzonen.</value>
+  </data>
+  <data name="FailedBoughtTimeDurationExceeded" xml:space="preserve">
+    <value>Begärd tid är större än max tillåtet tidsköp per gång.</value>
+  </data>
+  <data name="sabotage" xml:space="preserve">
+    <value>Sabotage</value>
+  </data>
+  <data name="MENUSENSORINALARM" xml:space="preserve">
+    <value>Sektion i larm</value>
+  </data>
+  <data name="MENUSENSORNOTACKNOWLEDGED" xml:space="preserve">
+    <value>Sektion ej kvitterad</value>
+  </data>
+  <data name="MENUSENSORPERMANENTLYBLOCKED" xml:space="preserve">
+    <value>Sektion perm. blockerad</value>
+  </data>
+  <data name="MENUSENSORTEMPORARILYBLOCKED" xml:space="preserve">
+    <value>Sektion temp.block.</value>
+  </data>
+  <data name="MENUSENSORINSABOTAGE" xml:space="preserve">
+    <value>Sektion i sabotage</value>
+  </data>
+  <data name="MENUSETAA" xml:space="preserve">
+    <value>Tillkoppla larmzon</value>
+  </data>
+  <data name="MENUSETAANOPREWARNING" xml:space="preserve">
+    <value>Tillk. utan förvarning</value>
+  </data>
+  <data name="Short" xml:space="preserve">
+    <value>Kortslutning</value>
+  </data>
+  <data name="MENUSHOWEVENTLOGS" xml:space="preserve">
+    <value>Alla händelseloggar</value>
+  </data>
+  <data name="MENUSHOWSENSORS" xml:space="preserve">
+    <value>Visa sektioner</value>
+  </data>
+  <data name="Tamper" xml:space="preserve">
+    <value>Sabotage</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Tid</value>
+  </data>
+  <data name="TimeBuyingFailed" xml:space="preserve">
+    <value>Köp tid misslyckades. Anledning:</value>
+  </data>
+  <data name="FailedTimeBuyingNotEnabled" xml:space="preserve">
+    <value>Köp tid är inte aktiverat.</value>
+  </data>
+  <data name="TimeBuyingSucceeded" xml:space="preserve">
+    <value>Köp tid lyckades.</value>
+  </data>
+  <data name="FailedTimeToBuyIsZero" xml:space="preserve">
+    <value>Tid att köpa är noll.</value>
+  </data>
+  <data name="FailedTimeAlreadyBought" xml:space="preserve">
+    <value>Köp tid har redan utförts.</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Typ:</value>
+  </data>
+  <data name="MENUSENSORUNBLOCKALL" xml:space="preserve">
+    <value>Återinkoppla alla</value>
+  </data>
+  <data name="MENUUNCONDINTIONALSET" xml:space="preserve">
+    <value>Forcerad tillkoppling</value>
+  </data>
+  <data name="MENUUNSETAA" xml:space="preserve">
+    <value>Frånkoppla larmzon</value>
+  </data>
+  <data name="MENUUNSETANDACKNOWLEDGEAA" xml:space="preserve">
+    <value>Frånkoppla och kvittera</value>
+  </data>
+  <data name="Acknowledge" xml:space="preserve">
+    <value>Kvittera</value>
+  </data>
+  <data name="MENUSENSORACKNOWLEDGEALLALARMAREAS" xml:space="preserve">
+    <value>Kvittera alla</value>
+  </data>
+  <data name="AcknowledgeAndBlock" xml:space="preserve">
+    <value>Kvitt. och blockera</value>
+  </data>
+  <data name="AcknowledgeInputAlarm" xml:space="preserve">
+    <value>Kvittera sektions larm</value>
+  </data>
+  <data name="BuyTime" xml:space="preserve">
+    <value>Köp tid</value>
+  </data>
+  <data name="Card" xml:space="preserve">
+    <value>Kort</value>
+  </data>
+  <data name="AlarmAreaAlarmStateChanged" xml:space="preserve">
+    <value>Larmzon larmstatus ändrad</value>
+  </data>
+  <data name="AlarmAreaBoughtTimeChanged" xml:space="preserve">
+    <value>Larmzon köpt tid ändrad</value>
+  </data>
+  <data name="AlarmAreaBoughtTimeExpired" xml:space="preserve">
+    <value>Larmzon köpt tid utgånget</value>
+  </data>
+  <data name="AlarmAreaSabotageStateChanged" xml:space="preserve">
+    <value>Larmzon sabotage status ändrad</value>
+  </data>
+  <data name="AlarmAreaSetFromCRFailed" xml:space="preserve">
+    <value>Larmzon tillkoppla från KL misslyckades</value>
+  </data>
+  <data name="AlarmAreaAlarmStateChangeAlarm" xml:space="preserve">
+    <value>Larmzon status ändrad larm</value>
+  </data>
+  <data name="AlarmAreaTimeBuyingFailed" xml:space="preserve">
+    <value>Larmzon tidsköp misslyckades</value>
+  </data>
+  <data name="BlockedInputChanged" xml:space="preserve">
+    <value>Blockerad sektion ändrad</value>
+  </data>
+  <data name="InputStateChanged" xml:space="preserve">
+    <value>Sektion status ändrad</value>
+  </data>
+  <data name="lastBoughtTime" xml:space="preserve">
+    <value>Senast köpta tid</value>
+  </data>
+  <data name="locked" xml:space="preserve">
+    <value>blockerad</value>
+  </data>
+  <data name="NotConfirmSetUnsetAAFromEIS" xml:space="preserve">
+    <value>Externt system bekräftade inte till/från-koppling</value>
+  </data>
+  <data name="ObjectType" xml:space="preserve">
+    <value>Objekt typ</value>
+  </data>
+  <data name="Off" xml:space="preserve">
+    <value>Från</value>
+  </data>
+  <data name="On" xml:space="preserve">
+    <value>Till</value>
+  </data>
+  <data name="Prewarning" xml:space="preserve">
+    <value>Förvarning</value>
+  </data>
+  <data name="RemainingTime" xml:space="preserve">
+    <value>Återstående tid</value>
+  </data>
+  <data name="Set" xml:space="preserve">
+    <value>Tillkoppla</value>
+  </data>
+  <data name="SetAlarmAreaFromCardReader" xml:space="preserve">
+    <value>Tillkoppla larmzon</value>
+  </data>
+  <data name="SetAlarmAreaByObjectForAutomaticActivation" xml:space="preserve">
+    <value>Larmzon tillkopplad med objekt för automatisk tillkoppling</value>
+  </data>
+  <data name="SetAlarmAreaFromClient" xml:space="preserve">
+    <value>Larmzon tillkopplad från klient</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>Status:</value>
+  </data>
+  <data name="TemporarilyBlockedInputChanged" xml:space="preserve">
+    <value>Temporärt blockerad sektion ändrad</value>
+  </data>
+  <data name="TimeToBuy" xml:space="preserve">
+    <value>Tid att köpa</value>
+  </data>
+  <data name="totalBoughtTime" xml:space="preserve">
+    <value>Total tid köpt</value>
+  </data>
+  <data name="UnconditionaSet" xml:space="preserve">
+    <value>Forcerad tillkoppling</value>
+  </data>
+  <data name="unlocked" xml:space="preserve">
+    <value>återinkopplad</value>
+  </data>
+  <data name="Unset" xml:space="preserve">
+    <value>Frånkoppla</value>
+  </data>
+  <data name="UnsetAlarmAreaByObjectForAutomaticActivation" xml:space="preserve">
+    <value>Larmzon frånkopplad med objekt för automatisk tillkoppling</value>
+  </data>
+  <data name="UnsetAlarmAreaFromCardReader" xml:space="preserve">
+    <value>Frånkoppla larmzon med kortläsare</value>
+  </data>
+  <data name="UnsetAlarmAreaFromClient" xml:space="preserve">
+    <value>Frånkoppla larmzon från klient</value>
+  </data>
+  <data name="UsedTime" xml:space="preserve">
+    <value>Använd tid</value>
+  </data>
+  <data name="EventlogState_Set" xml:space="preserve">
+    <value>Tillkopplad</value>
+  </data>
+  <data name="EventlogState_Unset" xml:space="preserve">
+    <value>Frånkopplad</value>
+  </data>
+  <data name="AlarmArea" xml:space="preserve">
+    <value>Larmzon</value>
+  </data>
+  <data name="AlarmAreaCanNotBeSet" xml:space="preserve">
+    <value>Larmzon kan inte tillkopplas, vissa sektioner är i larm</value>
+  </data>
+  <data name="Blocked" xml:space="preserve">
+    <value>Blockerad</value>
+  </data>
+  <data name="Unblocked" xml:space="preserve">
+    <value>Återinkopplad</value>
+  </data>
+  <data name="Unlimited" xml:space="preserve">
+    <value>Obegränsad</value>
+  </data>
+  <data name="MENUEVENTLOGEMPTY" xml:space="preserve">
+    <value>Ingen händelselogg</value>
+  </data>
+  <data name="Acknowledged" xml:space="preserve">
+    <value>Kvitterad</value>
+  </data>
+  <data name="MENUSENSORSINALARM" xml:space="preserve">
+    <value>Sektioner i larm</value>
+  </data>
+  <data name="MENUSENSORSINSABOTAGE" xml:space="preserve">
+    <value>S:er i sabotage</value>
+  </data>
+  <data name="MENUSENSORSNOTACKNOWLEDGED" xml:space="preserve">
+    <value>S:er ej kvitterade</value>
+  </data>
+  <data name="MENUSENSORSPERMANENTLYBLOCKED" xml:space="preserve">
+    <value>S:er perm.block.</value>
+  </data>
+  <data name="MENUSENSORSTEMPORARILYBLOCKED" xml:space="preserve">
+    <value>S:er temp.block.</value>
+  </data>
+  <data name="MenuAlarmAreaPanel" xml:space="preserve">
+    <value>Manöverpanel</value>
+  </data>
+  <data name="AlarmAreaSensorAlarmAcknowledged" xml:space="preserve">
+    <value>Sektion kvitterad</value>
+  </data>
+  <data name="AlarmAreaSensorBlockingTypeChanged" xml:space="preserve">
+    <value>Sektions blockeringsstatus ändrad</value>
+  </data>
+  <data name="AlarmAreaSensorStateChangedOnlyForCardReader" xml:space="preserve">
+    <value>Sektions status ändrad</value>
+  </data>
+  <data name="NoItemsToDisplay" xml:space="preserve">
+    <value>Det finns inga objekt att visa</value>
+  </data>
+</root>

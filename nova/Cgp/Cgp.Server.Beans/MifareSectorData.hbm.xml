@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.Server.Beans.MifareSectorData, Cgp.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="Id"></id>
+    <property name="Aid" not-null="false"></property>
+    <property name="GeneralAKey" type="BinaryBlob" length="8"></property>
+    <property name="GeneralBKey" type="BinaryBlob" length="8"></property>
+    <property name="Encoding" not-null="true"></property>
+    <property name="CypherData" not-null="false"></property>
+    <property name="SizeKB" not-null="false"></property>
+    <bag name="SectorsInfo" cascade="all-delete-orphan" lazy="false">
+      <key column="MifareSectorData" />
+      <one-to-many class="Contal.Cgp.Server.Beans.MifareSectorSectorInfo"/>
+    </bag>
+  </class>
+</hibernate-mapping>

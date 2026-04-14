@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.Server.Beans.CardSystem, Cgp.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdCardSystem">
+      <generator class="guid" />
+    </id>
+    <property name="CardSystemNumber" not-null="true" unique="true"></property>
+    <property name="LengthCardData" not-null="true" unique-key="CardTypeCardSubTypeCompanyCode"></property>
+    <property name="LengthCompanyCode" not-null="true"></property>
+    <property name="CompanyCode" not-null="true" unique-key="CardTypeCardSubTypeCompanyCode"></property>
+    <property name="CardType" not-null="true" unique-key="CardTypeCardSubTypeCompanyCode"></property>
+    <property name="CardSubType" not-null="true" unique-key="CardTypeCardSubTypeCompanyCode"></property>
+    <property name="Description" not-null="false">
+      <column name="Description" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+    <bag name="Cards" cascade="all">
+      <key column="CardSystem" />
+      <one-to-many class="Contal.Cgp.Server.Beans.Card"  />
+    </bag>
+    <property name="ExplicitSmartCardDataPopulation" not-null="false"></property>
+    <property name="LocalAlarmInstruction" not-null="false">
+      <column name="LocalAlarmInstruction" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+    <property name="Version" not-null="false"></property>
+    <join table="CentralNameRegister">
+      <key column="Id" foreign-key="none"/>
+      <property name="Name" column="Name" not-null="true"/>
+      <property name="ObjectType" not-null="true"/>
+    </join>
+
+  </class>
+</hibernate-mapping>

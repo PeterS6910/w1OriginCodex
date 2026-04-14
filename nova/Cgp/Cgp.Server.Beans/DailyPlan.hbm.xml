@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.Server.Beans.DailyPlan, Cgp.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdDailyPlan">
+      <generator class="guid" />
+    </id>
+    <bag name="DayIntervals" cascade="all-delete-orphan">
+      <key column="IdDailyPlan" />
+      <one-to-many class="Contal.Cgp.Server.Beans.DayInterval"  />
+    </bag>
+    <property name="Description" not-null="false">
+      <column name="Description" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+    
+    <property name="Version" not-null="false"></property>
+
+    <join table="CentralNameRegister">
+      <key column="Id" foreign-key="none"/>
+      <property name="DailyPlanName" column="Name" not-null="true"/>
+      <property name="ObjectType" not-null="true"/>
+    </join>
+
+  </class>
+</hibernate-mapping>

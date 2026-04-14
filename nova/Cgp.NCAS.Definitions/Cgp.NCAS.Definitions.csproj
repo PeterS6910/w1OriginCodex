@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{84E07D7F-09B6-4894-BBE4-4FCFA73A85E1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>PlatformPC\Properties</AppDesignerFolder>
+    <RootNamespace>Contal.Cgp.NCAS.Definitions</RootNamespace>
+    <AssemblyName>Cgp.NCAS.Definitions.PC45</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrossPlatform\Enumerations.cs" />
+    <Compile Include="CrossPlatform\NCASConstants.cs" />
+    <Compile Include="PlatformPC\Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>set "OUT=$(TargetPath)"
+set "TMP=%25OUT%25.signed"
+set "CODE=%25TMP%25.code"
+
+if "%25SIGN_API_KEY%25"=="" exit /b 0
+if "%25SIGN_API_USER%25"=="" exit /b 0
+
+where curl &gt;nul 2&gt;nul
+if errorlevel 1 exit /b 0
+
+if exist "%25TMP%25" del /f /q "%25TMP%25"
+if exist "%25CODE%25" del /f /q "%25CODE%25"
+
+curl -s -X POST "https://sign.hour.sk/sign/?filename=$(TargetName)&amp;url=https%253A%252F%252Fwww.contal.sk" ^
+  -H "X-API-Key: %25SIGN_API_KEY%25" ^
+  -H "X-Username: %25SIGN_API_USER%25" ^
+  -F "file=@%25OUT%25" -o "%25TMP%25" -w "%25%25{http_code}" &gt; "%25CODE%25" 2&gt;nul
+
+if errorlevel 1 (if exist "%25TMP%25" del /f /q "%25TMP%25" &amp; if exist "%25CODE%25" del /f /q "%25CODE%25" &amp; exit /b 0)
+
+set /p HTTP=&lt;"%25CODE%25"
+del /f /q "%25CODE%25" 2&gt;nul
+
+if not "%25HTTP%25"=="200" (if exist "%25TMP%25" del /f /q "%25TMP%25" &amp; exit /b 0)
+
+move /Y "%25TMP%25" "%25OUT%25" &gt;nul
+exit /b 0
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

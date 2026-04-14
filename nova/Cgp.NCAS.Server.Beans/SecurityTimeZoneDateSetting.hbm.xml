@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.NCAS.Server.Beans.SecurityTimeZoneDateSetting, Cgp.NCAS.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdSecurityTimeZoneDateSetting">
+      <generator class="guid" />
+    </id>
+    <property name="SetYear" not-null="false" unique-key="SecureTimeZoneSet"></property>
+    <property name="Year" not-null="false" unique-key="SecureTimeZoneSet"></property>
+    <property name="Month" not-null="false" unique-key="SecureTimeZoneSet"></property>
+    <property name="Week" not-null="false" unique-key="SecureTimeZoneSet"></property>
+    <property name="Day" not-null="false" unique-key="SecureTimeZoneSet"></property>
+    <property name="ExplicitSecurityDailyPlan" not-null="false"></property>
+
+    <many-to-one name="SecurityTimeZone" column="SecurityTimeZone" class="Contal.Cgp.NCAS.Server.Beans.SecurityTimeZone, Cgp.NCAS.Server.Beans" not-null="false" unique-key="SecureTimeZoneSet"/>
+    <many-to-one name="SecurityDailyPlan" column="SecurityDailyPlan" class="Contal.Cgp.NCAS.Server.Beans.SecurityDailyPlan, Cgp.NCAS.Server.Beans" not-null="true" unique-key="SecureTimeZoneSet"/>
+    <many-to-one name="DayType" column="DayType" class="Contal.Cgp.Server.Beans.DayType, Cgp.Server.Beans" not-null="false" unique-key="SecureTimeZoneSet"/>
+    <property name="Description" not-null="false">
+      <column name="Description" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+
+    <property name="Version" not-null="false"></property>
+  </class>
+</hibernate-mapping>

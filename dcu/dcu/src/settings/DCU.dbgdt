@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Project>
+  <Desktop>
+    <Static>
+      <Debug-Log>
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1477</ColumnWidth1></Debug-Log>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1107</ColumnWidth1><ColumnWidth2>295</ColumnWidth2><ColumnWidth3>73</ColumnWidth3></Build>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>219</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Disassembly>
+        <col-names>
+          
+          
+        <item>Disassembly</item><item>_I0</item></col-names>
+        <col-widths>
+          
+          
+        <item>500</item><item>20</item></col-widths>
+        <DisasmHistory/>
+        
+        
+      <ShowCodeCoverage>0</ShowCodeCoverage><ShowInstrProfiling>0</ShowInstrProfiling></Disassembly>
+      <StaticWatch>
+        <expressions>
+          
+          
+          
+        <item>AES_KEY</item><item>_extensionBoardType</item><item></item></expressions>
+        <col-names>
+          
+          
+          
+          
+        <item>Expression</item><item>Location</item><item>Type</item><item>Value</item></col-names>
+        <col-widths>
+          
+          
+          
+          
+        <item>100</item><item>150</item><item>100</item><item>100</item></col-widths>
+      </StaticWatch>
+      <WATCH_1>
+        <expressions>
+          <item>AES_KEY</item>
+          <item/>
+        </expressions>
+        <col-names>
+          <item>Expression</item>
+          <item>Location</item>
+          <item>Type</item>
+          <item>Value</item>
+        </col-names>
+        <col-widths>
+          <item>100</item>
+          <item>150</item>
+          <item>100</item>
+          <item>100</item>
+        </col-widths>
+      </WATCH_1>
+    </Static>
+    <Windows>
+      
+      
+      
+      
+    <Wnd4>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-15189-31859</Identity>
+            <TabName>Debug Log</TabName>
+            <Factory>Debug-Log</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-14667-31869</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd4><Wnd5>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-25938-31862</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>DCU</ExpandedNode><ExpandedNode>DCU/DSM</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd5><Wnd6>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-3918-31866</Identity>
+            <TabName>Disassembly</TabName>
+            <Factory>Disassembly</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd6><Wnd7>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-22864-32329</Identity>
+            <TabName>Live Watch</TabName>
+            <Factory>StaticWatch</Factory>
+          </Tab>
+          <Tab>
+            <Identity>TabID-8456-32395</Identity>
+            <TabName>Watch 1</TabName>
+            <Factory>WATCH_1</Factory>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd7></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\CardReaders\CrCommunicator.c</Filename><XPos>0</XPos><YPos>2421</YPos><SelStart>82594</SelStart><SelEnd>82594</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\core_cm0.h</Filename><XPos>0</XPos><YPos>14</YPos><SelStart>1051</SelStart><SelEnd>1051</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\System\UART\uart.c</Filename><XPos>0</XPos><YPos>569</YPos><SelStart>15847</SelStart><SelEnd>15847</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Communication\Clsp485\clsp485.c</Filename><XPos>0</XPos><YPos>884</YPos><SelStart>33483</SelStart><SelEnd>33483</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\main.c</Filename><XPos>0</XPos><YPos>68</YPos><SelStart>2219</SelStart><SelEnd>2219</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\IO\IOExpansion.c</Filename><XPos>0</XPos><YPos>322</YPos><SelStart>8004</SelStart><SelEnd>8004</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\app_version.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>76</SelStart><SelEnd>76</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\DSM\dsm.c</Filename><XPos>0</XPos><YPos>75</YPos><SelStart>252</SelStart><SelEnd>252</SelEnd></Tab><ActiveTab>7</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-04d158a8><key>iaridepm.enu1</key></Toolbar-04d158a8></Sizes></Row0><Row1><Sizes><Toolbar-04d097c8><key>debuggergui.enu1</key></Toolbar-04d097c8></Sizes></Row1><Row2><Sizes><Toolbar-1f3a5210><key>armjlink.enu1</key></Toolbar-1f3a5210></Sizes></Row2></Top><Left><Row0><Sizes><Wnd5><Rect><Top>-2</Top><Left>-2</Left><Bottom>632</Bottom><Right>310</Right><x>-2</x><y>-2</y><xscreen>222</xscreen><yscreen>253</yscreen><sizeHorzCX>130053</sizeHorzCX><sizeHorzCY>259221</sizeHorzCY><sizeVertCX>182777</sizeVertCX><sizeVertCY>649590</sizeVertCY></Rect></Wnd5></Sizes></Row0></Left><Right><Row0><Sizes><Wnd7><Rect><Top>-2</Top><Left>-2</Left><Bottom>316</Bottom><Right>485</Right><x>-2</x><y>-2</y><xscreen>222</xscreen><yscreen>253</yscreen><sizeHorzCX>130053</sizeHorzCX><sizeHorzCY>259221</sizeHorzCY><sizeVertCX>285296</sizeVertCX><sizeVertCY>325820</sizeVertCY></Rect></Wnd7><Wnd6><Rect><Top>314</Top><Left>-2</Left><Bottom>632</Bottom><Right>485</Right><x>-2</x><y>314</y><xscreen>222</xscreen><yscreen>253</yscreen><sizeHorzCX>130053</sizeHorzCX><sizeHorzCY>259221</sizeHorzCY><sizeVertCX>285296</sizeVertCX><sizeVertCY>325820</sizeVertCY></Rect></Wnd6></Sizes></Row0></Right><Bottom><Row0><Sizes><Wnd4><Rect><Top>-2</Top><Left>-2</Left><Bottom>251</Bottom><Right>1709</Right><x>-2</x><y>-2</y><xscreen>1711</xscreen><yscreen>253</yscreen><sizeHorzCX>1002343</sizeHorzCX><sizeHorzCY>259221</sizeHorzCY><sizeVertCX>130053</sizeVertCX><sizeVertCY>259221</sizeVertCY></Rect></Wnd4></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Project>
+
+

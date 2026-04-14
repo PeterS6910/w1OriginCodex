@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\DCU.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>Final DCU</name>
+      <member>
+        <project>DCU</project>
+        <configuration>Bootloader</configuration>
+      </member>
+      <member>
+        <project>Bootloader</project>
+        <configuration>Release</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>
+
+

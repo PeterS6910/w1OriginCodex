@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.NCAS.Server.Beans.Output, Cgp.NCAS.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdOutput">
+      <generator class="guid" />
+    </id>
+    <property name="OutputNumber" not-null="true" unique-key="OutputNumberCCUDCU"></property>
+    <property name="OutputType" not-null="true"></property>
+    <property name="SettingsForcedToOff" not-null="false"></property>
+    <property name="SettingsDelayToOn" not-null="false"></property>
+    <property name="SettingsDelayToOff" not-null="false"></property>
+    <property name="SettingsPulseLength" not-null="false"></property>
+    <property name="SettingsPulseDelay" not-null="false"></property>
+    <property name="Inverted" not-null="false"></property>
+    <many-to-one name="AlarmPresentationGroup" column="AlarmPresentationGroup" class="Contal.Cgp.Server.Beans.PresentationGroup, Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="DCU" column="DCU" class="Contal.Cgp.NCAS.Server.Beans.DCU, Cgp.NCAS.Server.Beans" not-null="false" unique-key="OutputNumberCCUDCU"/>
+    <many-to-one name="CCU" column="CCU" class="Contal.Cgp.NCAS.Server.Beans.CCU, Cgp.NCAS.Server.Beans" not-null="false" unique-key="OutputNumberCCUDCU"/>
+    <property name="ControlType" not-null="true"></property>
+    <property name="OnOffObjectType" not-null="false">
+      <column name="OnOffObjectType" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+    <property name="OnOffObjectId" not-null="false"></property>
+    <property name="AlarmControlByObjOn" not-null="false"></property>
+    <property name="RealStateChanges" not-null="false"></property>
+    <property name="Description" not-null="false">
+      <column name="Description" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+    <property name="LocalAlarmInstruction" not-null="false">
+      <column name="LocalAlarmInstruction" sql-type="NVARCHAR(MAX)"></column>
+    </property>
+
+    <property name="Version" not-null="false"></property>
+
+    <join table="CentralNameRegister">
+      <key column="Id" foreign-key="none"/>
+      <property name="Name" not-null="true"/>
+      <property name="ObjectType" not-null="true"/>
+      <property name="CkUnique"/>
+    </join>
+  </class>
+</hibernate-mapping>
+

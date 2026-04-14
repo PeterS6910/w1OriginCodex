@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>DCU/D_Application_LON</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>311</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+    <Build><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1107</ColumnWidth1><ColumnWidth2>295</ColumnWidth2><ColumnWidth3>73</ColumnWidth3></Build><Find-in-Files><ColumnWidth0>529</ColumnWidth0><ColumnWidth1>75</ColumnWidth1><ColumnWidth2>908</ColumnWidth2></Find-in-Files><Debug-Log><ColumnWidth0>19</ColumnWidth0><ColumnWidth1>1478</ColumnWidth1></Debug-Log><TerminalIO/></Static>
+    <Windows>
+      
+      
+    <Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-8761-10915</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>DCU</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-31813-27454</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+          <Session/></Tab>
+        <Tab><Identity>TabID-16778-28554</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab><Tab><Identity>TabID-14018-31062</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd3></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\CardReaders\CrCommunicator.c</Filename><XPos>0</XPos><YPos>2421</YPos><SelStart>82594</SelStart><SelEnd>82594</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\core_cm0.h</Filename><XPos>0</XPos><YPos>14</YPos><SelStart>1051</SelStart><SelEnd>1051</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\System\UART\uart.c</Filename><XPos>0</XPos><YPos>569</YPos><SelStart>15847</SelStart><SelEnd>15847</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Communication\Clsp485\clsp485.c</Filename><XPos>0</XPos><YPos>884</YPos><SelStart>33483</SelStart><SelEnd>33483</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\main.c</Filename><XPos>0</XPos><YPos>68</YPos><SelStart>2219</SelStart><SelEnd>2219</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\IO\IOExpansion.c</Filename><XPos>0</XPos><YPos>322</YPos><SelStart>8004</SelStart><SelEnd>8004</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\app_version.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>76</SelStart><SelEnd>76</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\DSM\dsm.c</Filename><XPos>0</XPos><YPos>75</YPos><SelStart>252</SelStart><SelEnd>252</SelEnd></Tab><ActiveTab>7</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-04d158a8><key>iaridepm.enu1</key></Toolbar-04d158a8></Sizes></Row0><Row1><Sizes/></Row1></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>727</Bottom><Right>385</Right><x>-2</x><y>-2</y><xscreen>122</xscreen><yscreen>121</yscreen><sizeHorzCX>71470</sizeHorzCX><sizeHorzCY>123975</sizeHorzCY><sizeVertCX>226714</sizeVertCX><sizeVertCY>746926</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>204</Bottom><Right>1709</Right><x>-2</x><y>-2</y><xscreen>1711</xscreen><yscreen>206</yscreen><sizeHorzCX>1002343</sizeHorzCX><sizeHorzCY>211066</sizeHorzCY><sizeVertCX>71470</sizeVertCX><sizeVertCY>123975</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

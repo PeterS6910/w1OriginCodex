@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.NCAS.Server.Beans.ACLSettingAA, Cgp.NCAS.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="IdACLSettingAA">
+      <generator class="guid" />
+    </id>
+
+    <many-to-one name="AccessControlList" column="AccessControlList" class="Contal.Cgp.NCAS.Server.Beans.AccessControlList, Contal.Cgp.NCAS.Server.Beans" not-null="false"/>
+    <many-to-one name="AlarmArea" column="AlarmArea" class="Contal.Cgp.NCAS.Server.Beans.AlarmArea, Contal.Cgp.NCAS.Server.Beans" not-null="true"/>
+    <property name="AlarmAreaSet" not-null="false"></property>
+    <property name="AlarmAreaUnset" not-null="false"></property>
+    <property name="AlarmAreaUnconditionalSet" not-null="false"></property>
+    <property name="AlarmAreaAlarmAcknowledge" not-null="false"></property>
+    <property name="SensorHandling" not-null="false"></property>
+    <property name="CREventLogHandling" not-null="false"></property>
+    <property name="AlarmAreaTimeBuying" not-null="false"></property>
+    <property name="Version" not-null="false"></property>
+  </class>
+</hibernate-mapping>
+

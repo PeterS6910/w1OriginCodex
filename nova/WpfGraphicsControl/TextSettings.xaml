@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="Cgp.NCAS.WpfGraphicsControl.TextSettings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" Width="300" Loaded="TextSettings_OnLoaded" 
+             Background="White" BorderBrush="CadetBlue" BorderThickness="1">
+    <Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="30"></RowDefinition>
+        <RowDefinition Height="30"></RowDefinition>
+        <RowDefinition Height="65"></RowDefinition>
+        <RowDefinition Height="30"></RowDefinition>
+        <RowDefinition Height="30"></RowDefinition>
+        <RowDefinition Height="30"></RowDefinition>
+        <RowDefinition Height="80"></RowDefinition>
+        <RowDefinition Height="*"></RowDefinition>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="70"></ColumnDefinition>
+        <ColumnDefinition></ColumnDefinition>
+    </Grid.ColumnDefinitions>        
+        <Label Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="0,0,0,0" Name="_lTextSettings" VerticalAlignment="Top" Width="120" FontSize="12" FontStyle="Normal" FontWeight="Bold">Text settings</Label>
+        
+        <Label Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" Margin="0,0,0,0" Name="_lFontFamily" VerticalAlignment="Top" >Font family</Label>
+        <ComboBox Grid.Row="1" Grid.Column="1" Height="23" HorizontalAlignment="Stretch" Margin="0,2,5,0" Name="_cbFontFamily" VerticalAlignment="Top" />
+        
+        <Label Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" Margin="0,0,0,0" Name="_lFontStyle" VerticalAlignment="Top" >Font style</Label>
+        <CheckBox Grid.Row="2" Grid.Column="1" Height="16" HorizontalAlignment="Left" Margin="5,5,0,0" Name="_chbBold" VerticalAlignment="Top" Width="120">Bold</CheckBox>
+        <CheckBox Grid.Row="2" Grid.Column="1" Height="16" HorizontalAlignment="Left" Margin="5,25,0,0" Name="_chbItalic" VerticalAlignment="Top" Width="120">Italic</CheckBox>
+        <CheckBox Grid.Row="2" Grid.Column="1" Height="16" HorizontalAlignment="Left" Margin="5,45,0,0" Name="_chbUnderline" VerticalAlignment="Top" Width="120">Underline</CheckBox>
+        
+        <Label Grid.Row="3" Grid.Column="0" HorizontalAlignment="Left" Margin="0,0,0,0" Name="_lFontSize" VerticalAlignment="Top" >Font size</Label>
+        <TextBox  Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,5,0,1" Name="_tbFontSize" Width="100" />
+        
+        <Label Grid.Row="4" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="0,0,0,0" Name="_lTextColor" VerticalAlignment="Top" >Text color</Label>
+        <xctk:ColorPicker Grid.Row="4" Grid.ColumnSpan="2" Height="22" Width="47" Margin="65,5,0,0" Name="_cpTextColor" VerticalAlignment="Top" HorizontalAlignment="Left" />       
+        <Label Grid.Row="4" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="140,0,0,0" Name="_lBackgroundColor" VerticalAlignment="Top" >Background color</Label>
+        <xctk:ColorPicker Grid.Row="4" Grid.ColumnSpan="2" Height="22" Width="47" Margin="0,5,5,0" Name="_cpBackgroundColor" VerticalAlignment="Top" HorizontalAlignment="Right" />
+        
+        <Label Grid.Row="5" Grid.Column="0" HorizontalAlignment="Left" Margin="0,0,0,0" Name="_lLayer" VerticalAlignment="Top" >Layer</Label>
+        <ComboBox Grid.Row="5" Grid.Column="1" Height="23" HorizontalAlignment="Stretch" Margin="0,2,5,0" Name="_cbLayers" VerticalAlignment="Top" />
+        
+        <Label Grid.Row="6" Grid.ColumnSpan="2" Margin="0,0,0,0" Name="_lSelectedScene" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Height="25.96">
+            Selected scene</Label>
+        <ComboBox Grid.Row="6" Grid.ColumnSpan="2" Margin="12,25,5,0" VerticalAlignment="Top" HorizontalAlignment="Stretch" Name="_cbScenes" />
+        <Button Grid.Row="6" Grid.ColumnSpan="2" Height="23" HorizontalAlignment="Right" Margin="85,8,5,5" Name="_bRemoveScene" VerticalAlignment="Bottom" Width="100" Click="_bRemoveScene_Click">Remove scene</Button>
+        
+        <Button Grid.ColumnSpan="2" Grid.Row="7" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,5,90,5" Name="_bApply" Width="75" Height="23" Click="_bApply_Click">Apply</Button>
+        <Button Grid.ColumnSpan="2" Grid.Row="7" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,5,5,5" Name="_bCancel" Width="75" Height="23" Click="_bCancel_Click">Close</Button>
+    </Grid>
+</UserControl>

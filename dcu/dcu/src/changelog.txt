@@ -1,0 +1,8 @@
+11.10.2021 - DCU_121011_1586
+    - force node release on unpolled timeout
+
+10.10.2012 - DCU_121010_1584RL
+	- I2C interrupt fixed
+
+10.10.2012 - DCU_121010_1570_withGEN + DCU_121010_1571
+    - corrected address conflict, no dip address, etc. signalling on reader

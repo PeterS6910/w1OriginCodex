@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Contal.Cgp.Server.Beans.Extern, Contal.Cgp.Server.Beans" select-before-update="true">
+    <cache usage="read-write"/>
+    <id name="">
+      <generator class="guid" />
+    </id>
+
+
+  </class>
+</hibernate-mapping>

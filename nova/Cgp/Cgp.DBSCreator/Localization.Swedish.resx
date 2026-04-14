@@ -1,0 +1,684 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="QuestionAlterLoginEnd" xml:space="preserve">
+    <value>. utför processen?</value>
+  </data>
+  <data name="FormConfirmation_bBack" xml:space="preserve">
+    <value>&lt; Bakåt</value>
+  </data>
+  <data name="FormDatabaseSettings_bBack" xml:space="preserve">
+    <value>&lt; Bakåt</value>
+  </data>
+  <data name="FormServerDatabase_bBack" xml:space="preserve">
+    <value>&lt; Bakåt</value>
+  </data>
+  <data name="FormServerLogin_bBack" xml:space="preserve">
+    <value>&lt; Bakåt</value>
+  </data>
+  <data name="FormUserSettings_bBack" xml:space="preserve">
+    <value>&lt; Bakåt</value>
+  </data>
+  <data name="FormUpdateDatabase_bBack" xml:space="preserve">
+    <value>&lt; Bakåt</value>
+  </data>
+  <data name="FormBeforeExecution_bBack" xml:space="preserve">
+    <value>&lt; Bakåt</value>
+  </data>
+  <data name="FormUpdateDatabase_cbAlterLogin" xml:space="preserve">
+    <value>Ändra</value>
+  </data>
+  <data name="FormAlterTablesfAlterTables" xml:space="preserve">
+    <value>Ändring av databas</value>
+  </data>
+  <data name="FormAlterTablesAlterDatabaseFailed" xml:space="preserve">
+    <value>Ändring av databas misslyckades.</value>
+  </data>
+  <data name="FormAlterTablesAlterDatabaseFinished" xml:space="preserve">
+    <value>Ändring av databas slutfördes.</value>
+  </data>
+  <data name="FormUpdateDatabase_bFixDbs" xml:space="preserve">
+    <value>Ändring av DBS</value>
+  </data>
+  <data name="FormBeforeExecution_cbAlterLogin" xml:space="preserve">
+    <value>Ändra existerande</value>
+  </data>
+  <data name="ErrorAlterLogin" xml:space="preserve">
+    <value>Ändra inloggning misslyckades.</value>
+  </data>
+  <data name="FormUpdateDatabaseErrorAlterLogin" xml:space="preserve">
+    <value>Ändra inloggning krävs!</value>
+  </data>
+  <data name="General_bBrowse" xml:space="preserve">
+    <value>Bläddra</value>
+  </data>
+  <data name="FormServerDatabase_bCancel" xml:space="preserve">
+    <value>Avbryt</value>
+  </data>
+  <data name="FormConfirmation_bCancel" xml:space="preserve">
+    <value>Avbryt</value>
+  </data>
+  <data name="FormServerSelect_bCancel" xml:space="preserve">
+    <value>Avbryt</value>
+  </data>
+  <data name="FormServerLogin_bCancel" xml:space="preserve">
+    <value>Avbryt</value>
+  </data>
+  <data name="FormUserSettings_bCancel" xml:space="preserve">
+    <value>Avbryt</value>
+  </data>
+  <data name="FormUpdateDatabase_bCancel" xml:space="preserve">
+    <value>Avbryt</value>
+  </data>
+  <data name="FormDatabaseSettings_bCancel" xml:space="preserve">
+    <value>Avbryt</value>
+  </data>
+  <data name="FormBeforeExecution_bCancel" xml:space="preserve">
+    <value>Avbryt</value>
+  </data>
+  <data name="FormAlterTables_bCancel" xml:space="preserve">
+    <value>Avbryt</value>
+  </data>
+  <data name="FormUpdateDatabaseClose" xml:space="preserve">
+    <value>Stäng</value>
+  </data>
+  <data name="FormAlterTablesColumn" xml:space="preserve">
+    <value>kolumn</value>
+  </data>
+  <data name="DbsConversion_bContinue" xml:space="preserve">
+    <value>Fortsätt</value>
+  </data>
+  <data name="PerformConversion" xml:space="preserve">
+    <value>Konvertering krävs, tryck på Utför för att starta konverteringsmodulerna</value>
+  </data>
+  <data name="cgpNCASCorrection" xml:space="preserve">
+    <value>Korrigerar NCAS tabeller för version</value>
+  </data>
+  <data name="FormBeforeExecutionfBeforeExecution" xml:space="preserve">
+    <value>Skapa databas</value>
+  </data>
+  <data name="FormBeforeExecutionCreationTablesFail" xml:space="preserve">
+    <value>Skapa tabeller misslyckades</value>
+  </data>
+  <data name="cgpCorrection1" xml:space="preserve">
+    <value>Korrigerar tabell System version</value>
+  </data>
+  <data name="cgpCorrection1fail" xml:space="preserve">
+    <value>Korrigering av tabell System version misslyckades</value>
+  </data>
+  <data name="cgpCorrection1success" xml:space="preserve">
+    <value>Korrigering av tabell System version lyckades</value>
+  </data>
+  <data name="ErrorDirectoryCreationFailed" xml:space="preserve">
+    <value>Skapa mapp för databasen misslyckades</value>
+  </data>
+  <data name="FormBeforeExecutionCreationUserFail" xml:space="preserve">
+    <value>Skapa användare misslyckas</value>
+  </data>
+  <data name="FormBeforeExecutionDatabaseExists" xml:space="preserve">
+    <value>Databas finns redan.</value>
+  </data>
+  <data name="FormBeforeExecutionDatabaseCancelled" xml:space="preserve">
+    <value>Databas avbruten.</value>
+  </data>
+  <data name="FormBeforeExecutionDatabaseCannotByCreated" xml:space="preserve">
+    <value>Databas kan ej skapas.</value>
+  </data>
+  <data name="FormAlterTablesDatabaseConstainErrors" xml:space="preserve">
+    <value>Databasen innehåller fel.</value>
+  </data>
+  <data name="FormBeforeExecutionDatabaseCreated" xml:space="preserve">
+    <value>Databas skapad.</value>
+  </data>
+  <data name="FormAlterTablesDatabaseOK" xml:space="preserve">
+    <value>Databas är OK.</value>
+  </data>
+  <data name="FormServerDatabase_lDatabaseName" xml:space="preserve">
+    <value>Databas namn:</value>
+  </data>
+  <data name="FormDatabaseSettings_lDatabaseName" xml:space="preserve">
+    <value>Databas namn:</value>
+  </data>
+  <data name="FormDatabaseSettings_lMainInfo" xml:space="preserve">
+    <value>Databas inställningar</value>
+  </data>
+  <data name="FormUdateDatabaseDatabaseAltered" xml:space="preserve">
+    <value>Databas ändring lyckades</value>
+  </data>
+  <data name="FormUpdateDatabase_lDatabase" xml:space="preserve">
+    <value>Databas:</value>
+  </data>
+  <data name="FormBeforeExecution_lDatabase" xml:space="preserve">
+    <value>Databas:</value>
+  </data>
+  <data name="DbsConversionDbsConversion" xml:space="preserve">
+    <value>Databas konvertering</value>
+  </data>
+  <data name="FormBeforeExecutionQuestionDeleteUser" xml:space="preserve">
+    <value>Ta bort användaren</value>
+  </data>
+  <data name="FormBeforeExecutionDropDatabaseFail" xml:space="preserve">
+    <value>Frigör databas misslyckades</value>
+  </data>
+  <data name="FormBeforeExecutionQuestionDropDatabase" xml:space="preserve">
+    <value>Frigör databas</value>
+  </data>
+  <data name="FormBeforeExecutionDropUserFail" xml:space="preserve">
+    <value>Frigör användare misslyckas</value>
+  </data>
+  <data name="FormServerSelect_chbEnableExternalDatabase" xml:space="preserve">
+    <value>Använd separat databas för händelselogg</value>
+  </data>
+  <data name="ErrorEntryLogin" xml:space="preserve">
+    <value>Ange inloggning</value>
+  </data>
+  <data name="ErrorEntryPassword" xml:space="preserve">
+    <value>Ange lösenord</value>
+  </data>
+  <data name="FormConfirmation_bNext" xml:space="preserve">
+    <value>Klar</value>
+  </data>
+  <data name="FormBeforeExecutionFinished" xml:space="preserve">
+    <value>Färdig</value>
+  </data>
+  <data name="FormAlterTables_bRunAlter" xml:space="preserve">
+    <value>Åtgärda</value>
+  </data>
+  <data name="InfoFixNotSupported" xml:space="preserve">
+    <value>Åtgärda fel stöds ej</value>
+  </data>
+  <data name="FormUpdateDatabaseErrorUserAlter" xml:space="preserve">
+    <value>Login måste ändras.</value>
+  </data>
+  <data name="QuestionAlterLogin" xml:space="preserve">
+    <value>Login måste ändras:</value>
+  </data>
+  <data name="FormUserSettingslabel1" xml:space="preserve">
+    <value>Inloggningsnamn:</value>
+  </data>
+  <data name="FormServerLogin_lLoginName" xml:space="preserve">
+    <value>Inloggningsnamn:</value>
+  </data>
+  <data name="FormServerExternalDatabaseLoginUserNotValid" xml:space="preserve">
+    <value>Login för separat händelselogg databas misslyckades. Användare är inte giltlig</value>
+  </data>
+  <data name="FormUpdateDatabase_lLogin" xml:space="preserve">
+    <value>Login:</value>
+  </data>
+  <data name="FormBeforeExecution_lLogin" xml:space="preserve">
+    <value>Login:</value>
+  </data>
+  <data name="General_gbMainDatabase" xml:space="preserve">
+    <value>Huvuddatabas</value>
+  </data>
+  <data name="InfoMissedTable" xml:space="preserve">
+    <value>Saknade tabeller i databas:</value>
+  </data>
+  <data name="FormServerLogin_bNext" xml:space="preserve">
+    <value>Nästa &gt;</value>
+  </data>
+  <data name="FormServerSelect_bNext" xml:space="preserve">
+    <value>Nästa &gt;</value>
+  </data>
+  <data name="FormUserSettings_bNext" xml:space="preserve">
+    <value>Nästa &gt;</value>
+  </data>
+  <data name="FormServerDatabase_bNext" xml:space="preserve">
+    <value>Nästa &gt;</value>
+  </data>
+  <data name="FormDatabaseSettings_bNext" xml:space="preserve">
+    <value>Nästa &gt;</value>
+  </data>
+  <data name="InfoNoErrors" xml:space="preserve">
+    <value>Inga fel</value>
+  </data>
+  <data name="FormUpdateDatabaseORMMissColumns" xml:space="preserve">
+    <value>Saknade kolumner</value>
+  </data>
+  <data name="FormServerLogin_lPassword" xml:space="preserve">
+    <value>Lösenord:</value>
+  </data>
+  <data name="FormDatabaseSettings_lPath" xml:space="preserve">
+    <value>Sökväg till databasfiler</value>
+  </data>
+  <data name="FormUpdateDatabase_bPerform" xml:space="preserve">
+    <value>Utför</value>
+  </data>
+  <data name="FormBeforeExecution_bPerform" xml:space="preserve">
+    <value>Utför</value>
+  </data>
+  <data name="FormServerDatabaseEnterExternalDatabaseName" xml:space="preserve">
+    <value>Vänligen ange databasnamn för separat databas händelselogg!</value>
+  </data>
+  <data name="FormServerDatabaseEnterDatabaseName" xml:space="preserve">
+    <value>Vänligen ange databasnamn!</value>
+  </data>
+  <data name="FormUserSettingsEnterLoginName" xml:space="preserve">
+    <value>Vänligen ange inloggningsnamn.</value>
+  </data>
+  <data name="FormServerSelectSelectSQLServer" xml:space="preserve">
+    <value>Vänligen välj SQL Server!</value>
+  </data>
+  <data name="FormConfirmationlabel2" xml:space="preserve">
+    <value>Tryck på Klar för att skapa databas</value>
+  </data>
+  <data name="FormUpdateDatabase_lProgress" xml:space="preserve">
+    <value>Pågår:</value>
+  </data>
+  <data name="FormBeforeExecution_lProgress" xml:space="preserve">
+    <value>Pågår:</value>
+  </data>
+  <data name="FormServerDatabase_lProgress" xml:space="preserve">
+    <value>Söker efter databaser ....</value>
+  </data>
+  <data name="FormServerSelect_lProgress" xml:space="preserve">
+    <value>Söker efter SQL Servrar ...</value>
+  </data>
+  <data name="FormServerSelect_lMainInfo" xml:space="preserve">
+    <value>Välj SQL Server</value>
+  </data>
+  <data name="General_gbExternalDatabase" xml:space="preserve">
+    <value>Separat databas för händelselogg</value>
+  </data>
+  <data name="QuestionSetRightsForSQL" xml:space="preserve">
+    <value>Ange rättigheter på katalogen för SQL Servern</value>
+  </data>
+  <data name="FormServerLogin_lMainInfo" xml:space="preserve">
+    <value>Inställningar för databasinloggning</value>
+  </data>
+  <data name="FormUserSettingslabel2" xml:space="preserve">
+    <value>Inställningar för inloggning</value>
+  </data>
+  <data name="FormAlterTables_bListErrors" xml:space="preserve">
+    <value>Visa</value>
+  </data>
+  <data name="InfoNoComparer" xml:space="preserve">
+    <value>tyvärr finns Ingen Comparer laddad</value>
+  </data>
+  <data name="FormUpdateDatabaseSQLMissColumns" xml:space="preserve">
+    <value>SQL saknar kolumner</value>
+  </data>
+  <data name="FormServerSelect_lServerInfo" xml:space="preserve">
+    <value>SQL Server för databas</value>
+  </data>
+  <data name="FormServerSelect_lServerInfoExternalDatabase" xml:space="preserve">
+    <value>SQL Server för separat databas händelselogg</value>
+  </data>
+  <data name="FormServerSelect_lServerForExternalDatabase" xml:space="preserve">
+    <value>SQL Server för separat databas händelselogg</value>
+  </data>
+  <data name="FormUserSettingsfUserSettings" xml:space="preserve">
+    <value>SQL Server inställningar</value>
+  </data>
+  <data name="FormServerLoginfServerLogin" xml:space="preserve">
+    <value>SQL Server inställningar</value>
+  </data>
+  <data name="FormServerSelectfServerSelect" xml:space="preserve">
+    <value>SQL Server inställningar</value>
+  </data>
+  <data name="FormServerDatabasefServerDatabase" xml:space="preserve">
+    <value>SQL Server inställningar</value>
+  </data>
+  <data name="FormDatabaseSettingsfDatabaseSettings" xml:space="preserve">
+    <value>SQL Server inställningar</value>
+  </data>
+  <data name="FormConfirmationfConfirmation" xml:space="preserve">
+    <value>SQL Server inställningar</value>
+  </data>
+  <data name="FormServerLogin_lSqlServer" xml:space="preserve">
+    <value>SQL Server:</value>
+  </data>
+  <data name="FormUpdateDatabase_lSqlServer" xml:space="preserve">
+    <value>SQL Server:</value>
+  </data>
+  <data name="FormDatabaseSettings_lSqlServer" xml:space="preserve">
+    <value>SQL Server:</value>
+  </data>
+  <data name="FormServerDatabase_lSqlServer" xml:space="preserve">
+    <value>SQL Server:</value>
+  </data>
+  <data name="FormBeforeExecution_lSqlServer" xml:space="preserve">
+    <value>SQL Server:</value>
+  </data>
+  <data name="searchingForSqlServers" xml:space="preserve">
+    <value>Contal Nova letar efter SQL Servrar</value>
+  </data>
+  <data name="FormAlterTablesTable" xml:space="preserve">
+    <value>Tabell</value>
+  </data>
+  <data name="InfoTableWrongColumns" xml:space="preserve">
+    <value>Tabell med felaktiga kolumner i databas:</value>
+  </data>
+  <data name="InfoTable" xml:space="preserve">
+    <value>Tabell:</value>
+  </data>
+  <data name="FormBeforeExecutionTablesCreated" xml:space="preserve">
+    <value>Tabeller skapade.</value>
+  </data>
+  <data name="InfoTableMissColumn" xml:space="preserve">
+    <value>Tabeller som inte har alla ORM kolumner i databas:</value>
+  </data>
+  <data name="InfoTableUselessColumn" xml:space="preserve">
+    <value>Tabeller med oanvända kolumner i databasen:</value>
+  </data>
+  <data name="FormConfirmationlabel1" xml:space="preserve">
+    <value>Konfigurationen av SQL Servern är klar.</value>
+  </data>
+  <data name="FormBeforeExecutionDatabaseCreationFailed" xml:space="preserve">
+    <value>Skapa databas misslyckades.</value>
+  </data>
+  <data name="ErrorDatabaseAlreadyExists" xml:space="preserve">
+    <value>Databasen finns redan</value>
+  </data>
+  <data name="InfoDbsHasAllTable" xml:space="preserve">
+    <value>Databasen innehåller alla ORM tabeller</value>
+  </data>
+  <data name="FormAlterTables_eAlterInfo" xml:space="preserve">
+    <value>Databasen innehåller oanvända kolumner som inte finns i hbm schemat. Dessa tas bort vid ändring av databas.</value>
+  </data>
+  <data name="FormUpdateDatabaseErrorsDatabaseAlter" xml:space="preserve">
+    <value>Det uppstod fel vid ändring av databas.</value>
+  </data>
+  <data name="FormBeforeExecution_bUndoUser" xml:space="preserve">
+    <value>Ångra</value>
+  </data>
+  <data name="FormBeforeExecution_bUndoDatabase" xml:space="preserve">
+    <value>Ångra</value>
+  </data>
+  <data name="FormUpdateDatabasefUpdateDatabase" xml:space="preserve">
+    <value>Uppdatera databas</value>
+  </data>
+  <data name="FormBeforeExecutionUserCancelled" xml:space="preserve">
+    <value>Användare avbröts.</value>
+  </data>
+  <data name="FormBeforeExecutionUserCreated" xml:space="preserve">
+    <value>Användare skapad</value>
+  </data>
+  <data name="FormBeforeExecutionUserExists" xml:space="preserve">
+    <value>Användare finns</value>
+  </data>
+  <data name="FormServerLoginUserNotValid" xml:space="preserve">
+    <value>Användare ej giltlig</value>
+  </data>
+  <data name="FormUpdateDatabaseWrongColumns" xml:space="preserve">
+    <value>Fel kolumner, kolumner i systemet stämmer ej med kolumnerna i databasen (det går ej att skapa nya tomma eller unika kolumner)</value>
+  </data>
+  <data name="QuestionDropExternDbs" xml:space="preserve">
+    <value>Frigör händelselog från huvuddatabasen?</value>
+  </data>
+  <data name="ErrorExternDbsNameEqualToMainDbs" xml:space="preserve">
+    <value>Fel, extern databas måste vara annan än huvuddatabasen</value>
+  </data>
+  <data name="QuestionAlterDbsLogin" xml:space="preserve">
+    <value>Ändra inloggning:</value>
+  </data>
+  <data name="ErrorAlterUserFailed" xml:space="preserve">
+    <value>Ändra användare misslyckades</value>
+  </data>
+  <data name="TextBackupDatabase" xml:space="preserve">
+    <value>Databas backup</value>
+  </data>
+  <data name="QuestionBackupDatabaseFailedContinueUpdate" xml:space="preserve">
+    <value>Backup av databas misslyckades. Vill du fortsätta uppdatering av databas?</value>
+  </data>
+  <data name="TextBackupDatabaseSucceeded" xml:space="preserve">
+    <value>Backup av databas lyckades</value>
+  </data>
+  <data name="DbsLogin_bCancel" xml:space="preserve">
+    <value>Avbryt</value>
+  </data>
+  <data name="cgpCorrectionPart" xml:space="preserve">
+    <value>Korrigerar tabeller för versionen</value>
+  </data>
+  <data name="ErrorCreateUserFailed" xml:space="preserve">
+    <value>Skapa användare misslyckades</value>
+  </data>
+  <data name="DbsLogin_rbCustomDbsLogin" xml:space="preserve">
+    <value>Anpassad inloggning</value>
+  </data>
+  <data name="DbsLoginDbsLogin" xml:space="preserve">
+    <value>Dbs inloggning</value>
+  </data>
+  <data name="QuestionBackupDatabase" xml:space="preserve">
+    <value>Vill Ni göra en backup av databasen?</value>
+  </data>
+  <data name="cgpCorrectionPartFailed" xml:space="preserve">
+    <value>misslyckades</value>
+  </data>
+  <data name="ErrorFailedGenerateLogin" xml:space="preserve">
+    <value>Misslyckades att skapa ny cgpInloggning </value>
+  </data>
+  <data name="DbsLogin_rbGenrateNewCglLogin" xml:space="preserve">
+    <value>Skapa nu cgpInloggning</value>
+  </data>
+  <data name="GenerateNewPassword" xml:space="preserve">
+    <value>Skapa nytt lösenord för inloggning</value>
+  </data>
+  <data name="DbsLogin_bgDbsLogin" xml:space="preserve">
+    <value>Inloggning</value>
+  </data>
+  <data name="DbsLogin_lName" xml:space="preserve">
+    <value>Namn</value>
+  </data>
+  <data name="ErrorNameNotAllowed" xml:space="preserve">
+    <value>Namn ej tillåtet</value>
+  </data>
+  <data name="DbsLogin_bOk" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="DbsLogin_lPassword" xml:space="preserve">
+    <value>Lösenord</value>
+  </data>
+  <data name="TextRestoreDatabase" xml:space="preserve">
+    <value>Återställ databas</value>
+  </data>
+  <data name="TextRestoreDatabaseFailed" xml:space="preserve">
+    <value>Återställning av databas misslyckades</value>
+  </data>
+  <data name="TextRestoreDatabaseSucceeded" xml:space="preserve">
+    <value>Återställning av databas lyckades</value>
+  </data>
+  <data name="cgpCorrectionPartSucceeded" xml:space="preserve">
+    <value>lyckades</value>
+  </data>
+  <data name="QuestionUpdateFailedRestoreDatabase" xml:space="preserve">
+    <value>Uppdatering av databas misslyckades. Vill Ni återställa databasen?</value>
+  </data>
+  <data name="TextBackupDatabaseFailed" xml:space="preserve">
+    <value>Backup av databas misslyckades</value>
+  </data>
+  <data name="cgpEventlogCorrectionPart" xml:space="preserve">
+    <value>Korrigerar händelselogg tabeller för version</value>
+  </data>
+  <data name="QuestionCreateDbsLogin" xml:space="preserve">
+    <value>Skapa inloggning:</value>
+  </data>
+  <data name="DbsLogin_rbCreateLogin" xml:space="preserve">
+    <value>Skapa ny inloggning</value>
+  </data>
+  <data name="FormServerLogin_rbUseCustomLogin" xml:space="preserve">
+    <value>Anpassad databas inloggning</value>
+  </data>
+  <data name="DbsLogin_gbDbsLogin" xml:space="preserve">
+    <value>Databas inloggning</value>
+  </data>
+  <data name="FormServerLogin_rbUseSaLogin" xml:space="preserve">
+    <value>Systemadministratörs login (anges ovan)</value>
+  </data>
+  <data name="TextInDatabaseAreUselessColumns" xml:space="preserve">
+    <value>Det finns oanvända kolumner i databasen</value>
+  </data>
+  <data name="ErrorLoginAlreadyExist" xml:space="preserve">
+    <value>Login finns redan</value>
+  </data>
+  <data name="FormServerLogin_gbLoginForDatabase" xml:space="preserve">
+    <value>Login för Contal Nova Server i databas</value>
+  </data>
+  <data name="TextNotSetLoginName" xml:space="preserve">
+    <value>Anpassad databas inloggning anges i nästa steg</value>
+  </data>
+  <data name="FormServerLogin_rbUseCGPLogin" xml:space="preserve">
+    <value>Standard databas inloggning för CONTAL NOVA</value>
+  </data>
+  <data name="TextStartBackupDatabase" xml:space="preserve">
+    <value>Starta databas backup</value>
+  </data>
+  <data name="TextStartRestoreDatabase" xml:space="preserve">
+    <value>Starta återställning av databas</value>
+  </data>
+  <data name="ErrorWrondConfirmPassword" xml:space="preserve">
+    <value>Lösenord och bekräftat lösenord matchar ej</value>
+  </data>
+  <data name="FormServerLoginSQLServerVersionNotValid" xml:space="preserve">
+    <value>Version av Microsoft SQL server stöds ej. Microsoft SQL Server 2008 eller senare krävs.</value>
+  </data>
+  <data name="DbsLogin_rbExistLogin" xml:space="preserve">
+    <value>Använd befintlig inloggning</value>
+  </data>
+  <data name="ErrorWrongLoginNameOrPassword" xml:space="preserve">
+    <value>Fel användarnamn eller lösenord</value>
+  </data>
+  <data name="cgpCorrectionContinueAnyway" xml:space="preserve">
+    <value>Vill Ni fortsätta ändå?</value>
+  </data>
+  <data name="cgpCorrectionDatabaseHasCorrectStructure" xml:space="preserve">
+    <value>Säkerställ att databasen har korrekt struktur!</value>
+  </data>
+  <data name="FormDbsLoginFormDbsLogin" xml:space="preserve">
+    <value>Anpassad inloggning i databas</value>
+  </data>
+  <data name="FormDbsLogin_rbExistLogin" xml:space="preserve">
+    <value>Använd befintlig inloggning (autentiseringsuppgifter kontrolleras först)</value>
+  </data>
+  <data name="QuestionCancelDbConfiguration" xml:space="preserve">
+    <value>Avbryt konfigurering av databas?</value>
+  </data>
+  <data name="cgpNCASCorrectionPart" xml:space="preserve">
+    <value>Korrigerar NCAS tabell för version</value>
+  </data>
+  <data name="ErrorTableSystemVersionInConfigurationDatabaseCorrupted" xml:space="preserve">
+    <value>Tabell SystemVersion i konfigurationsdatabasen är korrupt</value>
+  </data>
+  <data name="ErrorTableSystemVersionInEventlogDatabaseCorrupted" xml:space="preserve">
+    <value>Tabell SystemVersion i händelseloggen är korrupt</value>
+  </data>
+  <data name="ErrorQuestionSqlServerNotFoundRunDatabaseConfiguration" xml:space="preserve">
+    <value>SQL servern hittades inte eller var inte tillgänglig. Vill Ni köra databas konfiguration?</value>
+  </data>
+</root>

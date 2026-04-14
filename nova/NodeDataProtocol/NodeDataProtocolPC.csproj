@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7D112F14-3844-4722-B396-F3222B3E8283}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>PlatformPC\Properties</AppDesignerFolder>
+    <RootNamespace>Contal.Cgp.NCAS.NodeDataProtocolPC</RootNamespace>
+    <AssemblyName>NodeDataProtocolPC</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;PC</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;PC</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release - Setup|AnyCPU' ">
+    <OutputPath>bin\Release - Setup\</OutputPath>
+    <DefineConstants>TRACE;PC</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release %28Special%29|AnyCPU' ">
+    <OutputPath>bin\Release %28Special%29\</OutputPath>
+    <DefineConstants>TRACE;PC</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompilationVerifier.cs" />
+    <Compile Include="CrossPlatform\ClspDriversExtensions.cs" />
+    <Compile Include="CrossPlatform\Enumerations.cs" />
+    <Compile Include="CrossPlatform\NodeCommunicator.cs" />
+    <Compile Include="CrossPlatform\NodeFrame.cs" />
+    <Compile Include="PlatformPC\Properties\AssemblyInfo.cs" />
+    <Compile Include="CrossPlatform\UpgradeContext.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CardReaderDriversPC\CardReaderDriversPC.csproj">
+      <Project>{2A3C3ECF-5B90-4A14-A4FF-514629738201}</Project>
+      <Name>CardReaderDriversPC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgp.NCAS.Definitions\Cgp.NCAS.Definitions.csproj">
+      <Project>{84E07D7F-09B6-4894-BBE4-4FCFA73A85E1}</Project>
+      <Name>Cgp.NCAS.Definitions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClspDriversPC\ClspDriversPC.csproj">
+      <Project>{AB971295-B113-4F45-A74B-DAB0BAFF1105}</Project>
+      <Name>ClspDriversPC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IwQuick\IwQuick.csproj">
+      <Project>{5775202E-96B4-44E8-904D-625154D7D524}</Project>
+      <Name>IwQuick</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LPC3250Drivers\LPC3250Drivers.csproj">
+      <Project>{7CA5C345-EF94-4CE8-A0E8-469ED55AE8EF}</Project>
+      <Name>LPC3250Drivers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
